@@ -1,0 +1,31 @@
+{
+  "base_config": "vanilla",
+  "base_config_sha256": "f659e13afe36c335d3ab54441898378164a51c2c469a1a368a51c8a005310bb3",
+  "verified_assets": [
+    {
+      "asset_id": "851735C03E050852",
+      "archive": "d\\mods\\mod0",
+      "size": 10468,
+      "sha256": "c199732999d3d6cf5b0b9dae77361577a880a9421a6896b18262314a6891db96"
+    },
+    {
+      "asset_id": "8B203B05CA2AEB50",
+      "archive": "d\\mods\\mod0",
+      "size": 10468,
+      "sha256": "c199732999d3d6cf5b0b9dae77361577a880a9421a6896b18262314a6891db96"
+    },
+    {
+      "asset_id": "905EBDB8C12D66E0",
+      "archive": "d\\mods\\mod0",
+      "size": 10468,
+      "sha256": "c199732999d3d6cf5b0b9dae77361577a880a9421a6896b18262314a6891db96"
+    },
+    {
+      "asset_id": "AED6101948AAFA54",
+      "archive": "d\\mods\\mod1",
+      "size": 263280,
+      "sha256": "7e1538b0742262daec41965bdce20d4a0252502a2eded61c87d97fe56373d7c5"
+    }
+  ],
+  "installed_via_overstrike": true
+}

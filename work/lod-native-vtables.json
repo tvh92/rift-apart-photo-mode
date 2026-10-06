@@ -1,0 +1,133 @@
+{
+  "PerfSpecData": [
+    {
+      "COL": "0x4b02218",
+      "object_offset": 0,
+      "vtables": [
+        {
+          "vtable": "0x3138258",
+          "methods": [
+            "0xc5e4c0",
+            "0xc5e4e0",
+            "0xc5e480",
+            "0xc5e4a0",
+            "0xc5e400",
+            "0xc5e510",
+            "0xc5e520",
+            "0xc5e500",
+            "0xc5e550",
+            "0xc5e5a0",
+            "0xc5e7d0",
+            "0xc5e3e0",
+            "0xc5e000"
+          ]
+        }
+      ]
+    }
+  ],
+  "NxSettingsImpl@nx": [
+    {
+      "COL": "0x4b75ad0",
+      "object_offset": 0,
+      "vtables": [
+        {
+          "vtable": "0x457aa68",
+          "methods": [
+            "0x16d9b80",
+            "0x16dc250",
+            "0x16dcc00",
+            "0x16dc850",
+            "0x16dccd0",
+            "0x16dcc90",
+            "0x16dc7e0",
+            "0x16dc790",
+            "0x16dc780",
+            "0x16dc770",
+            "0x16dc700",
+            "0x16dc440",
+            "0x16dc2f0",
+            "0x16ddce0",
+            "0x16de0a0",
+            "0x16de080",
+            "0x16de070",
+            "0x16ddec0",
+            "0x16ddbe0",
+            "0x16d9f20",
+            "0x16d9c70",
+            "0x16dc150",
+            "0x16da630",
+            "0x16da010",
+            "0x16dc140"
+          ]
+        }
+      ]
+    }
+  ],
+  "NxRenderer": [
+    {
+      "COL": "0x4b4c020",
+      "object_offset": 0,
+      "vtables": [
+        {
+          "vtable": "0x32d7fb0",
+          "methods": [
+            "0x10de740",
+            "0x10de360",
+            "0x10de370",
+            "0x10de380",
+            "0x10de3c0",
+            "0x10de3e0",
+            "0x10de3f0",
+            "0x10de400",
+            "0x10de5d0",
+            "0x10de660",
+            "0x10de6b0",
+            "0x10de6f0",
+            "0x10de700",
+            "0x10de710",
+            "0x10de720",
+            "0x10de730"
+          ]
+        }
+      ]
+    }
+  ],
+  "RendererBackend@renoir": [
+    {
+      "COL": "0x4c1a190",
+      "object_offset": 0,
+      "vtables": [
+        {
+          "vtable": "0x4a49e40",
+          "methods": [
+            "0x279640",
+            "0x2d27a9f",
+            "0x2d27a9f",
+            "0x2d27a9f",
+            "0x2d27a9f",
+            "0x2d27a9f",
+            "0x2d27a9f",
+            "0x2d27a9f",
+            "0x2d27a9f",
+            "0x2d27a9f",
+            "0x2d27a9f",
+            "0x2d27a9f",
+            "0x2d27a9f",
+            "0x2d27a9f",
+            "0x2d27a9f",
+            "0x2d27a9f",
+            "0x2d27a9f",
+            "0x2d27a9f",
+            "0x2d27a9f",
+            "0x2d27a9f",
+            "0x2d27a9f",
+            "0x2d27a9f",
+            "0x2d27a9f",
+            "0x2d27a9f",
+            "0x2d27a9f"
+          ]
+        }
+      ]
+    }
+  ]
+}

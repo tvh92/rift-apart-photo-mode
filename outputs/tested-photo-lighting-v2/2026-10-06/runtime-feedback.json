@@ -1,0 +1,8 @@
+{
+  "recorded_utc": "2026-10-05T22:42:43.291764+00:00",
+  "dll_sha256": "16dcd44057c3114b123e25974b9b563afc487650686d3985784614caba5f7cbd",
+  "user_report": "can confirm the notice works well, but the lighting stuff stays the same as before",
+  "indicator_status": "User-confirmed working in game.",
+  "lighting_status": "No additional visible lighting improvement over the prior RGB-only fix; remaining cutoff unresolved.",
+  "runtime_evidence": "Both light hooks installed; Photo/Ctrl and notice initialized; shared light counter291014 at teardown. Counter does not distinguish ordinary/type4 hits."
+}

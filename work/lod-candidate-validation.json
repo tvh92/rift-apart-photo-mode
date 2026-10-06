@@ -1,0 +1,25 @@
+{
+  "local_date": "2026-10-04",
+  "checks": [
+    {
+      "name": "Lifecycle",
+      "exit_code": 0,
+      "output": "PASS: Photo entry/loading/active gate, before/after close checks, closed/unknown/setup/type/disable rejection, focused comparison toggle without repeats, teardown clear, lazy callback initialization, and callback conflict refusal.\r\n"
+    },
+    {
+      "name": "Behavior",
+      "exit_code": 0,
+      "output": "PASS: owner filtering, normal/Shift/release speeds, baseline restore, replacement camera identity, and hotkey restoration of collision plus both geometry selectors.\r\n"
+    },
+    {
+      "name": "Geometry",
+      "exit_code": 0,
+      "output": "PASS: exact/aligned guards, atomic eight-byte jumps, concurrent renderer pause/restore, native stack MOV, Photo gate, restore/conflict rollback, page protection, and chained unwind at every relay instruction boundary.\r\n"
+    },
+    {
+      "name": "GeometryUnwind",
+      "exit_code": 0,
+      "output": "PASS: both relay unwind chains exactly match the real game's complete GPR/XMM/stack contexts at all eight instruction boundaries; executable mapped read-only and never patched.\r\n"
+    }
+  ]
+}

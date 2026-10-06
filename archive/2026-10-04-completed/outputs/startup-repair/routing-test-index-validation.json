@@ -1,0 +1,12 @@
+{
+  "both_packages_install": true,
+  "original_and_short_indices_byte_identical": true,
+  "both_backups_pristine": true,
+  "toc_sha1": "78ee66e82f32eedf237490a7239c8d7f7760ebff",
+  "payload_only_variable": true,
+  "in_game_tests": "complete",
+  "original_routing_in_game_result": "Main menu loads after original intro",
+  "short_routing_in_game_result": "Black screen",
+  "two_second_routing_in_game_result": "Short intro then menu loads",
+  "permanent_combined_result": "Short intro and both camera speeds work"
+}

@@ -1,0 +1,216 @@
+FUNCTION 0xfb2f20 ROOT None RANGES [(16461600, 16461728, 0)]
+00FB2F20 mov al,0F0h
+00FB2F22 ret
+00FB2F23 int3
+00FB2F24 int3
+00FB2F25 int3
+00FB2F26 int3
+00FB2F27 int3
+00FB2F28 int3
+00FB2F29 int3
+00FB2F2A int3
+00FB2F2B int3
+00FB2F2C int3
+00FB2F2D int3
+00FB2F2E int3
+00FB2F2F int3
+00FB2F30 lea rax,[rel 6241EB0h]
+00FB2F37 ret
+00FB2F38 int3
+00FB2F39 int3
+00FB2F3A int3
+00FB2F3B int3
+00FB2F3C int3
+00FB2F3D int3
+00FB2F3E int3
+00FB2F3F int3
+00FB2F40 mov eax,[rel 6241CF0h]
+00FB2F46 ret
+00FB2F47 int3
+00FB2F48 int3
+00FB2F49 int3
+00FB2F4A int3
+00FB2F4B int3
+00FB2F4C int3
+00FB2F4D int3
+00FB2F4E int3
+00FB2F4F int3
+00FB2F50 movsxd rax,r8d
+00FB2F53 lea r9,[rel 0]
+00FB2F5A lea r8,[rax*8]
+00FB2F62 mov rax,[r8+r9+6241480h]
+00FB2F6A mov [rcx],rax
+00FB2F6D mov rax,[r8+r9+6240D00h]
+00FB2F75 mov [rdx],rax
+00FB2F78 ret
+00FB2F79 int3
+00FB2F7A int3
+00FB2F7B int3
+00FB2F7C int3
+00FB2F7D int3
+00FB2F7E int3
+00FB2F7F int3
+00FB2F80 mov [rsp+8],rbx
+00FB2F85 mov r10d,edx
+00FB2F88 lea rbx,[rel 6241EB0h]
+00FB2F8F mov r11,rcx
+00FB2F92 xor eax,eax
+00FB2F94 nop dword [rax]
+00FB2F98 nop dword [rax+rax]
+FUNCTION 0xfb2f30 ROOT None RANGES [(16461616, 16461744, 0)]
+00FB2F30 lea rax,[rel 6241EB0h]
+00FB2F37 ret
+00FB2F38 int3
+00FB2F39 int3
+00FB2F3A int3
+00FB2F3B int3
+00FB2F3C int3
+00FB2F3D int3
+00FB2F3E int3
+00FB2F3F int3
+00FB2F40 mov eax,[rel 6241CF0h]
+00FB2F46 ret
+00FB2F47 int3
+00FB2F48 int3
+00FB2F49 int3
+00FB2F4A int3
+00FB2F4B int3
+00FB2F4C int3
+00FB2F4D int3
+00FB2F4E int3
+00FB2F4F int3
+00FB2F50 movsxd rax,r8d
+00FB2F53 lea r9,[rel 0]
+00FB2F5A lea r8,[rax*8]
+00FB2F62 mov rax,[r8+r9+6241480h]
+00FB2F6A mov [rcx],rax
+00FB2F6D mov rax,[r8+r9+6240D00h]
+00FB2F75 mov [rdx],rax
+00FB2F78 ret
+00FB2F79 int3
+00FB2F7A int3
+00FB2F7B int3
+00FB2F7C int3
+00FB2F7D int3
+00FB2F7E int3
+00FB2F7F int3
+00FB2F80 mov [rsp+8],rbx
+00FB2F85 mov r10d,edx
+00FB2F88 lea rbx,[rel 6241EB0h]
+00FB2F8F mov r11,rcx
+00FB2F92 xor eax,eax
+00FB2F94 nop dword [rax]
+00FB2F98 nop dword [rax+rax]
+00FB2FA0 mov r9d,eax
+00FB2FA3 add r9,r9
+00FB2FA6 mov rcx,[rbx+r9*8+8]
+00FB2FAB test rcx,rcx
+00FB2FAE je short 0000000000FB2FC6h
+FUNCTION 0xfb2ff0 ROOT None RANGES [(16461808, 16461936, 0)]
+00FB2FF0 lea rax,[rel 6241C00h]
+00FB2FF7 ret
+00FB2FF8 int3
+00FB2FF9 int3
+00FB2FFA int3
+00FB2FFB int3
+00FB2FFC int3
+00FB2FFD int3
+00FB2FFE int3
+00FB2FFF int3
+00FB3000 movsxd r9,r8d
+00FB3003 lea r8,[rel 6241EB0h]
+00FB300A add r9,r9
+00FB300D mov rax,[r8+r9*8+8]
+00FB3012 mov [rcx],rax
+00FB3015 movzx eax,byte [r8+r9*8+4]
+00FB301B mov [rdx],eax
+00FB301D ret
+00FB301E int3
+00FB301F int3
+00FB3020 mov [rsp+8],rbx
+00FB3025 mov [rsp+10h],rsi
+00FB302A mov [rsp+18h],rdi
+00FB302F xor r9d,r9d
+00FB3032 lea rbx,[rel 6241C00h]
+00FB3039 mov edi,r9d
+00FB303C lea rax,[rel 6241EB4h]
+00FB3043 mov r11d,r9d
+00FB3046 lea rsi,[rel 0]
+00FB304D mov r10d,r9d
+00FB3050 mov r8,[rax+4]
+00FB3054 test r8,r8
+00FB3057 je short 0000000000FB3077h
+00FB3059 mov rcx,[r8+50h]
+00FB305D movzx edx,byte [rax]
+00FB3060 mov rcx,[rcx+rdx*8]
+00FB3064 mov [r10+rsi+6240D00h],rcx
+00FB306C mov rcx,[r8]
+00FB306F (bad)
+FUNCTION 0x11d6180 ROOT None RANGES [(18702720, 18702848, 0)]
+011D6180 movss xmm1,[rdx+4]
+011D6185 movaps xmm0,xmm2
+011D6188 movss xmm3,[rdx+8]
+011D618D mov r10,rcx
+011D6190 mulss xmm0,[rdx]
+011D6194 movsxd rax,[rsp+28h]
+011D6199 mulss xmm1,xmm2
+011D619D mulss xmm3,xmm2
+011D61A1 lea r8,[rax+rax*2]
+011D61A5 mov rax,[rcx+18h]
+011D61A9 movsxd rcx,r9d
+011D61AC addss xmm0,[rax+r8*4]
+011D61B2 addss xmm1,[rax+r8*4+4]
+011D61B9 addss xmm3,[rax+r8*4+8]
+011D61C0 movss [rax+r8*4],xmm0
+011D61C6 movss [rax+r8*4+4],xmm1
+011D61CD movss [rax+r8*4+8],xmm3
+011D61D4 mov rax,[r10]
+011D61D7 addss xmm2,[rax+rcx*4]
+011D61DC movss [rax+rcx*4],xmm2
+011D61E1 ret
+011D61E2 int3
+011D61E3 int3
+011D61E4 int3
+011D61E5 int3
+011D61E6 int3
+011D61E7 int3
+011D61E8 int3
+011D61E9 int3
+011D61EA int3
+011D61EB int3
+011D61EC int3
+011D61ED int3
+011D61EE int3
+011D61EF int3
+011D61F0 mov rax,[rcx+8]
+011D61F4 movaps xmm0,xmm2
+011D61F7 mulss xmm0,[rdx]
+011D61FB movsxd r8,[rsp+28h]
+FUNCTION 0x11d6360 ROOT None RANGES [(18703200, 18703328, 0)]
+011D6360 movss xmm0,[rel 4A4A198h]
+011D6368 movaps xmm5,xmm3
+011D636B movsxd rax,[rsp+28h]
+011D6370 movaps xmm4,xmm0
+011D6373 divss xmm4,xmm5
+011D6377 lea r9,[rax+rax*2]
+011D637B mov rax,[rdx+18h]
+011D637F mov edx,r8d
+011D6382 minss xmm5,xmm0
+011D6386 movaps xmm2,xmm4
+011D6389 movaps xmm1,xmm4
+011D638C mulss xmm4,[rax+r9*4]
+011D6392 mulss xmm2,[rax+r9*4+4]
+011D6399 mulss xmm1,[rax+r9*4+8]
+011D63A0 subss xmm4,[rdx+rcx]
+011D63A5 subss xmm2,[rdx+rcx+4]
+011D63AB subss xmm1,[rdx+rcx+8]
+011D63B1 mulss xmm4,xmm5
+011D63B5 mulss xmm2,xmm5
+011D63B9 addss xmm4,[rdx+rcx]
+011D63BE mulss xmm1,xmm5
+011D63C2 addss xmm2,[rdx+rcx+4]
+011D63C8 addss xmm1,[rdx+rcx+8]
+011D63CE movss [rdx+rcx],xmm4
+011D63D3 movss [rdx+rcx+4],xmm2
+011D63D9 movss [rdx+rcx+8],xmm1
+011D63DF ret

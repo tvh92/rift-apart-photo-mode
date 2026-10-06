@@ -1,0 +1,31 @@
+Read-only review: primary-view Photo light queue capture
+
+Reviewed `work/capture_photo_lights_readonly.py` against `work/light-queue-owner-capture-main.txt`, the verified FillLightLookup/caller traces, and the queue layout at exact-build RVA 0x1215870. Review is static; I did not run the capture or change/install any game files.
+
+Disposition
+
+No blocker for the coordinated read-only capture. The current script's queue header and archived-segment decoders match 0x1215870: the per-view queue at `view+0x1430` is pointer Q, identity I, count H, capacity H; the global archive header at RVA 0x67313C0 is descriptor pointer Q, count I, capacity I; each archived descriptor is pointer Q, count I, identity I. The function archives the current backing segment as pointer/count/identity and queues entries as 16-byte records with pass ID in the high 16 bits of the packed key, low 48 bits carrying the pointer key, and the full parameter pointer in the second QWORD. Filtering archive descriptors by current queue identity and selecting pass ID from `packed_key >> 48` are consistent with that evidence.
+
+Ownership and access
+
+The script opens only the supplied PID with access mask 0x1010 (`PROCESS_QUERY_LIMITED_INFORMATION | PROCESS_VM_READ`), checks the executable path, validates the on-disk executable and installed DLL hashes, and only calls `ReadProcessMemory`. It does not request VM_WRITE, suspend the renderer, inject code, or scan the heap. It gets the primary view from RVA 0x6739B10, reads that view's queue, checks the ordinary Photo Mode signature/state, and accepts a LightSubmitQuery only when its first pointer equals that same primary view. The frame job's query pointer at `param+0x18` matches the 0x12BC71E caller trace; the query's owner pointer check matches 0x10BB6CA.
+
+Pass-67 records are read through the queued parameter pointer and decoded as 0x170-byte LightSubmit records. The stored position at record+0xB0 is directly copied from source+0x30 at 0x10BE1DE..0x10BE1F1, so the reported record position and query source translation share a supported coordinate field. This is a field correspondence, not a source-identity link for every record.
+
+Bounds and race behavior
+
+The current script rejects queue capacities over 128, archive headers/counts over 8192, individual query arrays over 8192, and a combined primary queue over 8192 entries. Each process read is limited to 0x20000 bytes. The requested 1-10 second sampling window is checked by the read closure, and the script collects at most six successful samples. These are fail-closed bounds; the 8192-entry limits are capture safety ceilings, not native engine limits established by this trace.
+
+It rereads the current queue header, archive header/descriptors, queue segment bytes, primary-view pointer, view position, and Photo Mode state before accepting a sample. It also rereads query headers and their arrays. This detects many mutations, but the capture is not atomic: queue segments or objects can be retired/reused during reads, ABA changes can escape byte-equality checks, and individual source/LightSubmit fields are not reread as a stable unit. Per-object read failures are retained as errors; some segment/header failures discard that sample. The report correctly marks `atomic` false and treats source fields as transient.
+
+Interpretation limit
+
+Comparing the captured pass-67 count with 512 is a correlation check only. The FillLightLookup callback's 512 cap is real, but this capture does not prove that all same-identity queue entries become one callback batch, the callback's final processing order, which records land after index 511, or that any omitted record explains a visible surface-light loss. `callback_order_proven` is false and the output explicitly warns that a count above 512 does not establish causation. Keep those limitations in any near/far interpretation.
+
+The script does not observe or validate Ctrl state. The capture operator must hold that state constant and use the labels/notes to identify the requested setup; no result should claim that the script verified Ctrl. Subject to that operational note and the transient-field caveat, the read-only capture is suitable for the requested bounded observation.
+
+Parent correction after live capture, 6 October:
+The passBB/framejob-query assertion above is retracted:12BC6BF queues a null-argument marker, not the returned frame job. Current observer removes that path. Reserved archive capacity16384 is permitted while populated count is bounded8192. Typed request slots use callback12B8740/manager674EC10, output slot68 and counter slot70; no source query has passed current array-pointer equality.18 isolated tests pass. See completed bridge captures in work/lighting-fog-current.md.
+
+Offline follow-up: work/bridge-light-query-handle-proof-main-luna.txt proves fixed request token at query+70 and optional token at query+68; token encodes registry generation/index/bit and matches slot+0. Existing metadata captures only query+28, so this cannot be validated retrospectively. Current observer remains fail-closed. Use the documented token validation plan for the next concrete reader update; fixed pointer mismatch remains unresolved.
+

@@ -1,0 +1,867 @@
+
+=== slot 0 fn 0x1096bd0 bounds 0x1096bd0-0x1096c7f ===
+01096bd0 mov [rsp+8],rbx
+01096bd5 push rdi
+01096bd6 sub rsp,30h
+01096bda movsxd rax,edx
+01096bdd lea r8,[rel 32D2668h]
+01096be4 mov rdi,rcx
+01096be7 mov ebx,edx
+01096be9 mov edx,40h
+01096bee lea rcx,[rax+rax*2]
+01096bf2 shl rcx,5
+01096bf6 call 00000000010DB820h
+01096bfb mov [rdi+110h],rax
+01096c02 test rax,rax
+01096c05 je short 0000000001096C72h
+01096c07 xor edx,edx
+01096c09 test ebx,ebx
+01096c0b jle short 0000000001096C41h
+01096c0d add rax,30h
+01096c11 lea r8,[rel 678E5C0h]
+01096c18 mov ecx,ebx
+01096c1a lea r9,[rel 678D3C0h]
+01096c21 mov [rax],r8
+01096c24 mov [rax+8],r9
+01096c28 mov [rax+10h],rdx
+01096c2c mov [rax+20h],rdx
+01096c30 lea rax,[rax+60h]
+01096c34 sub rcx,1
+01096c38 jne short 0000000001096C21h
+01096c3a mov rax,[rdi+110h]
+01096c41 mov [rdi+118h],rdx
+01096c48 mov r9d,ebx
+01096c4b mov [rsp+20h],dx
+01096c50 mov r8d,60h
+01096c56 mov rdx,rax
+01096c59 mov rcx,rdi
+01096c5c call 0000000000FA75B0h
+01096c61 test al,al
+01096c63 je short 0000000001096C72h
+01096c65 mov al,1
+01096c67 mov rbx,[rsp+40h]
+01096c6c add rsp,30h
+01096c70 pop rdi
+01096c71 ret
+01096c72 mov rbx,[rsp+40h]
+01096c77 xor al,al
+01096c79 add rsp,30h
+01096c7d pop rdi
+01096c7e ret
+
+=== slot 1 fn 0x1096c80 bounds 0x1096c80-0x1096ca6 ===
+01096c80 push rbx
+01096c82 sub rsp,20h
+01096c86 mov rbx,rcx
+01096c89 call 0000000000FA8390h
+01096c8e mov rcx,rbx
+01096c91 mov qword [rbx+110h],0
+01096c9c add rsp,20h
+01096ca0 pop rbx
+01096ca1 jmp 0000000000FA8720h
+
+=== slot 2 fn 0xfa8000 bounds 0xfa8000-0xfa8080 ===
+00fa8000 ret 0
+00fa8010 ret 0
+00fa8020 mov [rsp+8],rbx
+00fa8025 push rdi
+00fa8026 sub rsp,20h
+00fa802a mov rbx,rdx
+00fa802d mov rdi,rcx
+00fa8030 mov edx,[rel 683842Ch]
+00fa8036 cmp qword [rcx+40h],0
+00fa803b je short 0000000000FA806Fh
+00fa803d test rbx,rbx
+00fa8040 je short 0000000000FA806Fh
+00fa8042 cmp rbx,[rcx+88h]
+00fa8049 je short 0000000000FA809Bh
+00fa804b cmp byte [rbx],0
+00fa804e je short 0000000000FA806Fh
+00fa8050 mov eax,0FFFFFFFFh
+00fa8055 lock xadd [rbx+4],ax
+00fa805b dec ax
+00fa805e movsx ecx,ax
+00fa8061 add ecx,1
+00fa8064 jne short 0000000000FA807Ch
+00fa8066 lock inc word [rbx+4]
+00fa806b test edx,edx
+00fa806d jne short 0000000000FA809Bh
+00fa806f xor al,al
+00fa8071 mov rbx,[rsp+30h]
+00fa8076 add rsp,20h
+00fa807a pop rdi
+00fa807b ret
+00fa807c cmp ecx,1
+00fa807f (bad)
+
+=== slot 3 fn 0xfa7ff0 bounds 0xfa7ff0-0xfa8070 ===
+00fa7ff0 ret 0
+00fa8000 ret 0
+00fa8010 ret 0
+00fa8020 mov [rsp+8],rbx
+00fa8025 push rdi
+00fa8026 sub rsp,20h
+00fa802a mov rbx,rdx
+00fa802d mov rdi,rcx
+00fa8030 mov edx,[rel 683842Ch]
+00fa8036 cmp qword [rcx+40h],0
+00fa803b je short 0000000000FA806Fh
+00fa803d test rbx,rbx
+00fa8040 je short 0000000000FA806Fh
+00fa8042 cmp rbx,[rcx+88h]
+00fa8049 je short 0000000000FA809Bh
+00fa804b cmp byte [rbx],0
+00fa804e je short 0000000000FA806Fh
+00fa8050 mov eax,0FFFFFFFFh
+00fa8055 lock xadd [rbx+4],ax
+00fa805b dec ax
+00fa805e movsx ecx,ax
+00fa8061 add ecx,1
+00fa8064 jne short 0000000000FA807Ch
+00fa8066 lock inc word [rbx+4]
+00fa806b test edx,edx
+00fa806d jne short 0000000000FA809Bh
+00fa806f (bad)
+
+=== slot 4 fn 0xfa65b0 bounds 0xfa65b0-0xfa6618 ===
+00fa65b0 mov [rsp+8],rbx
+00fa65b5 push rdi
+00fa65b6 sub rsp,20h
+00fa65ba mov ebx,[r8+4]
+00fa65be mov rdi,rdx
+00fa65c1 call 00000000010DB030h
+00fa65c6 xor r9d,r9d
+00fa65c9 lea r8,[rel 32BDCB4h]
+00fa65d0 mov edx,ebx
+00fa65d2 mov rcx,rax
+00fa65d5 call 000000000163ECA0h
+00fa65da mov rcx,rax
+00fa65dd test rax,rax
+00fa65e0 jne short 0000000000FA65EDh
+00fa65e2 mov rbx,[rsp+30h]
+00fa65e7 add rsp,20h
+00fa65eb pop rdi
+00fa65ec ret
+00fa65ed mov rax,[rdi+28h]
+00fa65f1 mov dword [rdi+24h],1
+00fa65f8 mov [rax+8],rbx
+00fa65fc mov rax,[rdi+28h]
+00fa6600 mov rbx,[rsp+30h]
+00fa6605 mov [rax],rcx
+00fa6608 mov rax,[rdi+28h]
+00fa660c mov byte [rax+10h],0
+00fa6610 mov al,1
+00fa6612 add rsp,20h
+00fa6616 pop rdi
+00fa6617 ret
+
+=== slot 5 fn 0xfa6bb0 bounds 0xfa6bb0-0xfa6bd2 ===
+00fa6bb0 push rbx
+00fa6bb2 sub rsp,20h
+00fa6bb6 mov rax,[rdx+28h]
+00fa6bba mov rbx,[rax]
+00fa6bbd call 00000000010DB030h
+00fa6bc2 mov rdx,rbx
+00fa6bc5 mov rcx,rax
+00fa6bc8 add rsp,20h
+00fa6bcc pop rbx
+00fa6bcd jmp 000000000163F4C0h
+
+=== slot 6 fn 0xfa6b20 bounds 0xfa6b20-0xfa6b3e ===
+00fa6b20 push rbx
+00fa6b22 sub rsp,20h
+00fa6b26 mov rbx,rdx
+00fa6b29 call 00000000010DB030h
+00fa6b2e mov rdx,rbx
+00fa6b31 mov rcx,rax
+00fa6b34 add rsp,20h
+00fa6b38 pop rbx
+00fa6b39 jmp 000000000163F4C0h
+
+=== slot 7 fn 0xfa6680 bounds 0xfa6680-0xfa66dd ===
+00fa6680 mov [rsp+8],rbx
+00fa6685 push rdi
+00fa6686 sub rsp,20h
+00fa668a mov edi,[r8+4]
+00fa668e mov rbx,rdx
+00fa6691 mov ecx,edi
+00fa6693 lea rdx,[rel 32BDCC0h]
+00fa669a call 00000000016481D0h
+00fa669f mov rcx,rax
+00fa66a2 test rax,rax
+00fa66a5 jne short 0000000000FA66B2h
+00fa66a7 mov rbx,[rsp+30h]
+00fa66ac add rsp,20h
+00fa66b0 pop rdi
+00fa66b1 ret
+00fa66b2 mov rax,[rbx+28h]
+00fa66b6 mov dword [rbx+24h],1
+00fa66bd mov [rax+8],rdi
+00fa66c1 mov rax,[rbx+28h]
+00fa66c5 mov [rax],rcx
+00fa66c8 mov rax,[rbx+28h]
+00fa66cc mov rbx,[rsp+30h]
+00fa66d1 mov byte [rax+10h],0
+00fa66d5 mov al,1
+00fa66d7 add rsp,20h
+00fa66db pop rdi
+00fa66dc ret
+
+=== slot 8 fn 0xfa6b60 bounds 0xfa6b60-0xfa6be0 ===
+00fa6b60 ret 0
+00fa6b70 sub rsp,28h
+00fa6b74 inc dword [rcx+8]
+00fa6b77 test edx,edx
+00fa6b79 jne short 0000000000FA6BA7h
+00fa6b7b mov rax,[rcx]
+00fa6b7e mov rcx,[rax]
+00fa6b81 test rcx,rcx
+00fa6b84 je short 0000000000FA6BA7h
+00fa6b86 mov [rsp+20h],rbx
+00fa6b8b mov qword [rax],0
+00fa6b92 mov rbx,[rcx]
+00fa6b95 call 00000000010DB390h
+00fa6b9a mov rcx,rbx
+00fa6b9d test rbx,rbx
+00fa6ba0 jne short 0000000000FA6B92h
+00fa6ba2 mov rbx,[rsp+20h]
+00fa6ba7 add rsp,28h
+00fa6bab ret
+00fa6bb0 push rbx
+00fa6bb2 sub rsp,20h
+00fa6bb6 mov rax,[rdx+28h]
+00fa6bba mov rbx,[rax]
+00fa6bbd call 00000000010DB030h
+00fa6bc2 mov rdx,rbx
+00fa6bc5 mov rcx,rax
+00fa6bc8 add rsp,20h
+00fa6bcc pop rbx
+00fa6bcd jmp 000000000163F4C0h
+
+=== slot 9 fn 0xfa66e0 bounds 0xfa66e0-0xfa6727 ===
+00fa66e0 mov [rsp+8],rbx
+00fa66e5 push rdi
+00fa66e6 sub rsp,20h
+00fa66ea movsxd rbx,[rsp+50h]
+00fa66ef mov rax,r8
+00fa66f2 imul rbx,[rcx+48h]
+00fa66f7 mov rdi,rdx
+00fa66fa mov r8d,r9d
+00fa66fd add rbx,[rcx+40h]
+00fa6701 mov rdx,rax
+00fa6704 mov rcx,rdi
+00fa6707 call 0000000002D27AC3h
+00fa670c and qword [rbx+18h],0FFFFh
+00fa6714 shl rdi,10h
+00fa6718 or [rbx+18h],rdi
+00fa671c mov rbx,[rsp+30h]
+00fa6721 add rsp,20h
+00fa6725 pop rdi
+00fa6726 ret
+
+=== slot 10 fn 0xfa8920 bounds 0xfa8920-0xfa89a0 ===
+00fa8920 movzx eax,byte [rcx+78h]
+00fa8924 shr al,5
+00fa8927 test al,1
+00fa8929 je short 0000000000FA8973h
+00fa892b movsxd r9,[rcx+70h]
+00fa892f mov edx,0FFFFFFFFh
+00fa8934 test r9,r9
+00fa8937 js short 0000000000FA8964h
+00fa8939 mov r8,[rcx+90h]
+00fa8940 inc r9
+00fa8943 nop dword [rax]
+00fa8947 nop word [rax+rax]
+00fa8950 mov eax,[r8]
+00fa8953 lea r8,[r8+4]
+00fa8957 cmp edx,eax
+00fa8959 cmovb eax,edx
+00fa895c mov edx,eax
+00fa895e sub r9,1
+00fa8962 jne short 0000000000FA8950h
+00fa8964 mov eax,0FFDFh
+00fa8969 mov [rcx+0F0h],edx
+00fa896f and [rcx+78h],ax
+00fa8973 ret
+00fa8980 push rbx
+00fa8982 sub rsp,20h
+00fa8986 or byte [rdx+3],2
+00fa898a mov r11,r8
+00fa898d movzx eax,byte [rcx+7Ah]
+00fa8991 mov r10d,r9d
+00fa8994 mov [rsp+30h],al
+00fa8998 mov r8,rdx
+00fa899b mov rax,rdx
+00fa899e (bad)
+
+=== slot 11 fn 0xfa85b0 bounds 0xfa85b0-0xfa8630 ===
+00fa85b0 xor al,al
+00fa85b2 ret
+00fa85c0 mov r11,rsp
+00fa85c3 mov [r11+20h],r9
+00fa85c7 push r14
+00fa85c9 push r15
+00fa85cb sub rsp,448h
+00fa85d2 cmp byte [rel 67C2605h],0
+00fa85d9 mov rax,r9
+00fa85dc mov r14,rdx
+00fa85df mov r15,rcx
+00fa85e2 je near 0000000000FA8703h
+00fa85e8 mov [r11-18h],rbx
+00fa85ec lea r9,[r11+28h]
+00fa85f0 mov [r11-20h],rbp
+00fa85f4 lea rcx,[rsp+20h]
+00fa85f9 mov [r11-28h],rsi
+00fa85fd mov ebp,400h
+00fa8602 mov edx,ebp
+00fa8604 mov [r11-30h],rdi
+00fa8608 mov r8,rax
+00fa860b call 000000000159F4D0h
+00fa8610 lea rax,[rsp+20h]
+00fa8615 mov rbx,0FFFFFFFFFFFFFFFFh
+00fa861c nop dword [rax]
+00fa8620 inc rbx
+00fa8623 cmp byte [rax+rbx],0
+00fa8627 jne short 0000000000FA8620h
+00fa8629 mov rdx,rbp
+00fa862c (bad)
+
+=== slot 12 fn 0xfa6140 bounds 0xfa6140-0xfa61c0 ===
+00fa6140 movzx eax,byte [rcx+78h]
+00fa6144 shr al,2
+00fa6147 and al,1
+00fa6149 ret
+00fa6150 mov [rsp+8],rbx
+00fa6155 push rdi
+00fa6156 sub rsp,20h
+00fa615a mov rax,rdx
+00fa615d mov r11,rdx
+00fa6160 sub rax,[rcx+40h]
+00fa6164 mov rbx,rcx
+00fa6167 mov edi,0FFFFh
+00fa616c js short 0000000000FA618Fh
+00fa616e mov r8d,[rbx+70h]
+00fa6172 mov rcx,[rcx+48h]
+00fa6176 inc r8d
+00fa6179 movsxd r9,r8d
+00fa617c imul r9,rcx
+00fa6180 cmp rax,r9
+00fa6183 jge short 0000000000FA618Fh
+00fa6185 xor edx,edx
+00fa6187 div rcx
+00fa618a mov r9,rax
+00fa618d jmp short 0000000000FA6193h
+00fa618f movzx r9d,di
+00fa6193 movzx edx,word [rbx+0B8h]
+00fa619a xor r8d,r8d
+00fa619d cmp r8w,dx
+00fa61a1 jae short 0000000000FA61C9h
+00fa61a3 mov r10,[rbx+0B0h]
+00fa61aa nop word [rax+rax]
+00fa61b0 movzx eax,r8w
+00fa61b4 lea rcx,[rax+rax]
+00fa61b8 cmp [rcx+r10],r9w
+00fa61bd je short 0000000000FA61EAh
+00fa61bf (bad)
+
+=== slot 13 fn 0xfa80b0 bounds 0xfa80b0-0xfa8105 ===
+00fa80b0 mov [rsp+8],rbx
+00fa80b5 push rdi
+00fa80b6 sub rsp,20h
+00fa80ba movzx eax,byte [rdx]
+00fa80bd mov rbx,rdx
+00fa80c0 dec al
+00fa80c2 mov rdi,rcx
+00fa80c5 cmp al,2
+00fa80c7 jbe short 0000000000FA80F8h
+00fa80c9 mov rcx,[rdx+10h]
+00fa80cd test rcx,rcx
+00fa80d0 je short 0000000000FA80F8h
+00fa80d2 call 00000000015DEE50h
+00fa80d7 test rax,rax
+00fa80da je short 0000000000FA80F8h
+00fa80dc or byte [rbx+3],2
+00fa80e0 mov rdx,rbx
+00fa80e3 mov rcx,rdi
+00fa80e6 call 0000000000FA5FB0h
+00fa80eb mov al,1
+00fa80ed mov rbx,[rsp+30h]
+00fa80f2 add rsp,20h
+00fa80f6 pop rdi
+00fa80f7 ret
+00fa80f8 mov rbx,[rsp+30h]
+00fa80fd xor al,al
+00fa80ff add rsp,20h
+00fa8103 pop rdi
+00fa8104 ret
+
+=== slot 14 fn 0xfa6c10 bounds 0xfa6c10-0xfa6c90 ===
+00fa6c10 mov eax,[rcx+0F0h]
+00fa6c16 ret
+00fa6c20 mov [rsp+8],rbx
+00fa6c25 xor r8d,r8d
+00fa6c28 mov rbx,rdx
+00fa6c2b mov r9,rcx
+00fa6c2e mov r10d,r8d
+00fa6c31 cmp r8w,[rcx+0B8h]
+00fa6c39 jae short 0000000000FA6C7Eh
+00fa6c3b mov r11d,r8d
+00fa6c3e xchg ax,ax
+00fa6c40 mov rax,[r9+0B0h]
+00fa6c47 movzx eax,word [r11+rax]
+00fa6c4c imul rax,[r9+48h]
+00fa6c51 add rax,[r9+40h]
+00fa6c55 cmp byte [rax],1
+00fa6c58 jbe short 0000000000FA6C6Ah
+00fa6c5a mov rcx,[rax+8]
+00fa6c5e movzx edx,r8w
+00fa6c62 inc r8w
+00fa6c66 mov [rbx+rdx*8],rcx
+00fa6c6a movzx eax,word [r9+0B8h]
+00fa6c72 inc r10d
+00fa6c75 add r11,2
+00fa6c79 cmp r10d,eax
+00fa6c7c jl short 0000000000FA6C40h
+00fa6c7e mov rbx,[rsp+8]
+00fa6c83 movzx eax,r8w
+00fa6c87 ret
+
+=== slot 15 fn 0xfa77d0 bounds 0xfa77d0-0xfa7850 ===
+00fa77d0 movzx eax,word [rcx+0EAh]
+00fa77d7 or ax,[rcx+0B8h]
+00fa77de setne al
+00fa77e1 ret
+00fa77f0 mov [rsp+8],rbx
+00fa77f5 mov [rsp+18h],rbp
+00fa77fa mov [rsp+20h],rsi
+00fa77ff push rdi
+00fa7800 sub rsp,40h
+00fa7804 mov rsi,r9
+00fa7807 mov rbx,r8
+00fa780a mov rdi,rdx
+00fa780d mov rbp,rcx
+00fa7810 test rdx,rdx
+00fa7813 je short 0000000000FA7850h
+00fa7815 cmp byte [rdx],0
+00fa7818 je short 0000000000FA7850h
+00fa781a lea rcx,[rsp+58h]
+00fa781f call 000000000158F9B0h
+00fa7824 mov eax,[rsp+78h]
+00fa7828 mov r9,rdi
+00fa782b mov rdx,[rsp+58h]
+00fa7830 mov r8,rbx
+00fa7833 mov [rsp+30h],eax
+00fa7837 mov rcx,rbp
+00fa783a mov rax,[rsp+70h]
+00fa783f mov [rsp+28h],rax
+00fa7844 mov [rsp+20h],rsi
+00fa7849 call 0000000000FA7870h
+00fa784e jmp short 0000000000FA7852h
+
+=== slot 16 fn 0xfa6d80 bounds 0xfa6d80-0xfa6df8 ===
+00fa6d80 mov [rsp+8],rbx
+00fa6d85 push rdi
+00fa6d86 sub rsp,20h
+00fa6d8a mov rax,[rcx]
+00fa6d8d mov rdi,rdx
+00fa6d90 mov rbx,rcx
+00fa6d93 call qword [rax+0D0h]
+00fa6d99 mov rax,rdi
+00fa6d9c sub rax,[rbx+40h]
+00fa6da0 js short 0000000000FA6DC3h
+00fa6da2 mov r8d,[rbx+70h]
+00fa6da6 mov rcx,[rbx+48h]
+00fa6daa inc r8d
+00fa6dad movsxd rdx,r8d
+00fa6db0 imul rdx,rcx
+00fa6db4 cmp rax,rdx
+00fa6db7 jge short 0000000000FA6DC3h
+00fa6db9 xor edx,edx
+00fa6dbb div rcx
+00fa6dbe mov r8,rax
+00fa6dc1 jmp short 0000000000FA6DC9h
+00fa6dc3 mov r8d,0FFFFh
+00fa6dc9 movzx eax,word [rbx+0E8h]
+00fa6dd0 cmp eax,[rbx+68h]
+00fa6dd3 jge short 0000000000FA6DEAh
+00fa6dd5 mov ecx,eax
+00fa6dd7 mov rax,[rbx+0E0h]
+00fa6dde mov [rax+rcx*2],r8w
+00fa6de3 inc word [rbx+0E8h]
+00fa6dea mov rbx,[rsp+30h]
+00fa6def mov byte [rdi],5
+00fa6df2 add rsp,20h
+00fa6df6 pop rdi
+00fa6df7 ret
+
+=== slot 17 fn 0xfa6d70 bounds 0xfa6d70-0xfa6df0 ===
+00fa6d70 mov rax,[rcx]
+00fa6d73 jmp qword [rax+40h]
+00fa6d80 mov [rsp+8],rbx
+00fa6d85 push rdi
+00fa6d86 sub rsp,20h
+00fa6d8a mov rax,[rcx]
+00fa6d8d mov rdi,rdx
+00fa6d90 mov rbx,rcx
+00fa6d93 call qword [rax+0D0h]
+00fa6d99 mov rax,rdi
+00fa6d9c sub rax,[rbx+40h]
+00fa6da0 js short 0000000000FA6DC3h
+00fa6da2 mov r8d,[rbx+70h]
+00fa6da6 mov rcx,[rbx+48h]
+00fa6daa inc r8d
+00fa6dad movsxd rdx,r8d
+00fa6db0 imul rdx,rcx
+00fa6db4 cmp rax,rdx
+00fa6db7 jge short 0000000000FA6DC3h
+00fa6db9 xor edx,edx
+00fa6dbb div rcx
+00fa6dbe mov r8,rax
+00fa6dc1 jmp short 0000000000FA6DC9h
+00fa6dc3 mov r8d,0FFFFh
+00fa6dc9 movzx eax,word [rbx+0E8h]
+00fa6dd0 cmp eax,[rbx+68h]
+00fa6dd3 jge short 0000000000FA6DEAh
+00fa6dd5 mov ecx,eax
+00fa6dd7 mov rax,[rbx+0E0h]
+00fa6dde mov [rax+rcx*2],r8w
+00fa6de3 inc word [rbx+0E8h]
+00fa6dea mov rbx,[rsp+30h]
+00fa6def (bad)
+
+=== slot 18 fn 0xf18e10 bounds 0xf18e10-0xf18e90 ===
+00f18e10 ret 0
+00f18e20 mov al,1
+00f18e22 ret
+00f18e30 mov [rsp+8],rbx
+00f18e35 push rdi
+00f18e36 sub rsp,20h
+00f18e3a mov ebx,edx
+00f18e3c mov rdi,rcx
+00f18e3f call 0000000000FA5EC0h
+00f18e44 test bl,1
+00f18e47 je short 0000000000F18E56h
+00f18e49 mov edx,110h
+00f18e4e mov rcx,rdi
+00f18e51 call 0000000002D200A4h
+00f18e56 mov rbx,[rsp+30h]
+00f18e5b mov rax,rdi
+00f18e5e add rsp,20h
+00f18e62 pop rdi
+00f18e63 ret
+00f18e70 mov [rsp+10h],rbx
+00f18e75 mov [rsp+18h],rbp
+00f18e7a mov [rsp+20h],rsi
+00f18e7f push r14
+00f18e81 sub rsp,30h
+00f18e85 mov ebp,edx
+00f18e87 mov rsi,rcx
+00f18e8a call 0000000000F18940h
+00f18e8f (bad)
+
+=== slot 19 fn 0x1096d60 bounds 0x1096d60-0x1096dce ===
+01096d60 mov [rsp+8],rbx
+01096d65 mov [rsp+10h],rsi
+01096d6a push rdi
+01096d6b sub rsp,20h
+01096d6f mov rax,[r8+28h]
+01096d73 mov rbx,rcx
+01096d76 mov rsi,rdx
+01096d79 mov rdi,[rax]
+01096d7c mov rcx,rdi
+01096d7f call 00000000015B30F0h
+01096d84 test al,al
+01096d86 je short 0000000001096DBCh
+01096d88 mov rax,[rbx]
+01096d8b mov r8,rdi
+01096d8e mov rdx,rsi
+01096d91 mov rcx,rbx
+01096d94 call qword [rax+0A0h]
+01096d9a test al,al
+01096d9c je short 0000000001096DBCh
+01096d9e mov rax,[rbx]
+01096da1 mov rdx,rdi
+01096da4 mov rcx,rbx
+01096da7 call qword [rax+30h]
+01096daa mov al,1
+01096dac mov rbx,[rsp+30h]
+01096db1 mov rsi,[rsp+38h]
+01096db6 add rsp,20h
+01096dba pop rdi
+01096dbb ret
+01096dbc mov rbx,[rsp+30h]
+01096dc1 xor al,al
+01096dc3 mov rsi,[rsp+38h]
+01096dc8 add rsp,20h
+01096dcc pop rdi
+01096dcd ret
+
+=== slot 20 fn 0x1096dd0 bounds 0x1096dd0-0x1096e96 ===
+01096dd0 mov [rsp+10h],rbx
+01096dd5 mov [rsp+18h],rbp
+01096dda push rsi
+01096ddb push r12
+01096ddd push r13
+01096ddf push r14
+01096de1 push r15
+01096de3 sub rsp,30h
+01096de7 mov r9,rdx
+01096dea mov rsi,rdx
+01096ded sub r9,[rcx+110h]
+01096df4 mov rax,2AAAAAAAAAAAAAABh
+01096dfe imul r9
+01096e01 mov r14,r8
+01096e04 mov rbp,rcx
+01096e07 sar rdx,4
+01096e0b mov rax,rdx
+01096e0e shr rax,3Fh
+01096e12 add rdx,rax
+01096e15 test edx,edx
+01096e17 js near 0000000001096F77h
+01096e1d cmp edx,[rcx+68h]
+01096e20 jge near 0000000001096F77h
+01096e26 xor r15d,r15d
+01096e29 lea r12,[rel 678E5C0h]
+01096e30 mov [rsi+30h],r12
+01096e34 lea r13,[rel 678D3C0h]
+01096e3b mov [rsi+38h],r13
+01096e3f lea r9,[rel 32BD8B8h]
+01096e46 mov [rsi+40h],r15
+01096e4a mov r8d,567CC2F0h
+01096e50 mov rdx,r14
+01096e53 mov [rsi+50h],r15
+01096e57 mov rcx,rsi
+01096e5a call 0000000000FA2B70h
+01096e5f test al,al
+01096e61 je near 0000000001096F77h
+01096e67 mov edx,1F6A31A6h
+01096e6c mov rcx,r14
+01096e6f call 00000000015B3220h
+01096e74 mov edx,46EFD07Ah
+01096e79 mov rcx,r14
+01096e7c mov rbx,rax
+01096e7f call 00000000015B3220h
+01096e84 test rbx,rbx
+01096e87 je near 0000000001096F77h
+01096e8d test rax,rax
+01096e90 je near 0000000001096F77h
+
+=== slot 21 fn 0xfa7fe0 bounds 0xfa7fe0-0xfa8060 ===
+00fa7fe0 ret 0
+00fa7ff0 ret 0
+00fa8000 ret 0
+00fa8010 ret 0
+00fa8020 mov [rsp+8],rbx
+00fa8025 push rdi
+00fa8026 sub rsp,20h
+00fa802a mov rbx,rdx
+00fa802d mov rdi,rcx
+00fa8030 mov edx,[rel 683842Ch]
+00fa8036 cmp qword [rcx+40h],0
+00fa803b je short 0000000000FA806Fh
+00fa803d test rbx,rbx
+00fa8040 je short 0000000000FA806Fh
+00fa8042 cmp rbx,[rcx+88h]
+00fa8049 je short 0000000000FA809Bh
+00fa804b cmp byte [rbx],0
+00fa804e je short 0000000000FA806Fh
+00fa8050 mov eax,0FFFFFFFFh
+00fa8055 lock xadd [rbx+4],ax
+00fa805b dec ax
+00fa805e (bad)
+
+=== slot 22 fn 0x1096fa0 bounds 0x1096fa0-0x1097019 ===
+01096fa0 push rbx
+01096fa2 sub rsp,20h
+01096fa6 mov rax,[rel 549E380h]
+01096fad mov rbx,rdx
+01096fb0 mov rdx,[rdx+38h]
+01096fb4 cmp rdx,rax
+01096fb7 jb short 0000000001096FD5h
+01096fb9 cmp rdx,[rel 549E458h]
+01096fc0 jae short 0000000001096FD5h
+01096fc2 lea rcx,[rel 549E340h]
+01096fc9 call 0000000000FA8020h
+01096fce mov rax,[rel 549E380h]
+01096fd5 mov rdx,[rbx+30h]
+01096fd9 cmp rdx,rax
+01096fdc jb short 0000000001096FF3h
+01096fde cmp rdx,[rel 549E458h]
+01096fe5 jae short 0000000001096FF3h
+01096fe7 lea rcx,[rel 549E340h]
+01096fee call 0000000000FA8020h
+01096ff3 lea rax,[rel 678E5C0h]
+01096ffa mov [rbx+30h],rax
+01096ffe lea rax,[rel 678D3C0h]
+01097005 mov [rbx+38h],rax
+01097009 xor eax,eax
+0109700b mov [rbx+40h],rax
+0109700f mov [rbx+50h],rax
+01097013 add rsp,20h
+01097017 pop rbx
+01097018 ret
+
+=== slot 23 fn 0x1096cb0 bounds 0x1096cb0-0x1096cc4 ===
+01096cb0 sub rsp,8
+01096cb4 mov r10,rcx
+01096cb7 cmp [rcx+118h],rdx
+01096cbe jne near 0000000001096D4Ch
+
+=== slot 24 fn 0xfa6c00 bounds 0xfa6c00-0xfa6c80 ===
+00fa6c00 mov rax,0FFFFFFFFFFFFFFFFh
+00fa6c07 ret
+00fa6c10 mov eax,[rcx+0F0h]
+00fa6c16 ret
+00fa6c20 mov [rsp+8],rbx
+00fa6c25 xor r8d,r8d
+00fa6c28 mov rbx,rdx
+00fa6c2b mov r9,rcx
+00fa6c2e mov r10d,r8d
+00fa6c31 cmp r8w,[rcx+0B8h]
+00fa6c39 jae short 0000000000FA6C7Eh
+00fa6c3b mov r11d,r8d
+00fa6c3e xchg ax,ax
+00fa6c40 mov rax,[r9+0B0h]
+00fa6c47 movzx eax,word [r11+rax]
+00fa6c4c imul rax,[r9+48h]
+00fa6c51 add rax,[r9+40h]
+00fa6c55 cmp byte [rax],1
+00fa6c58 jbe short 0000000000FA6C6Ah
+00fa6c5a mov rcx,[rax+8]
+00fa6c5e movzx edx,r8w
+00fa6c62 inc r8w
+00fa6c66 mov [rbx+rdx*8],rcx
+00fa6c6a movzx eax,word [r9+0B8h]
+00fa6c72 inc r10d
+00fa6c75 add r11,2
+00fa6c79 cmp r10d,eax
+00fa6c7c jl short 0000000000FA6C40h
+00fa6c7e (bad)
+
+=== slot 25 fn 0xfa8590 bounds 0xfa8590-0xfa8610 ===
+00fa8590 ret 0
+00fa85a0 mov byte [rel 6203E70h],1
+00fa85a7 ret
+00fa85b0 xor al,al
+00fa85b2 ret
+00fa85c0 mov r11,rsp
+00fa85c3 mov [r11+20h],r9
+00fa85c7 push r14
+00fa85c9 push r15
+00fa85cb sub rsp,448h
+00fa85d2 cmp byte [rel 67C2605h],0
+00fa85d9 mov rax,r9
+00fa85dc mov r14,rdx
+00fa85df mov r15,rcx
+00fa85e2 je near 0000000000FA8703h
+00fa85e8 mov [r11-18h],rbx
+00fa85ec lea r9,[r11+28h]
+00fa85f0 mov [r11-20h],rbp
+00fa85f4 lea rcx,[rsp+20h]
+00fa85f9 mov [r11-28h],rsi
+00fa85fd mov ebp,400h
+00fa8602 mov edx,ebp
+00fa8604 mov [r11-30h],rdi
+00fa8608 mov r8,rax
+00fa860b call 000000000159F4D0h
+
+=== slot 26 fn 0xfa8580 bounds 0xfa8580-0xfa8600 ===
+00fa8580 ret 0
+00fa8590 ret 0
+00fa85a0 mov byte [rel 6203E70h],1
+00fa85a7 ret
+00fa85b0 xor al,al
+00fa85b2 ret
+00fa85c0 mov r11,rsp
+00fa85c3 mov [r11+20h],r9
+00fa85c7 push r14
+00fa85c9 push r15
+00fa85cb sub rsp,448h
+00fa85d2 cmp byte [rel 67C2605h],0
+00fa85d9 mov rax,r9
+00fa85dc mov r14,rdx
+00fa85df mov r15,rcx
+00fa85e2 je near 0000000000FA8703h
+00fa85e8 mov [r11-18h],rbx
+00fa85ec lea r9,[r11+28h]
+00fa85f0 mov [r11-20h],rbp
+00fa85f4 lea rcx,[rsp+20h]
+00fa85f9 mov [r11-28h],rsi
+00fa85fd (bad)
+
+=== slot 27 fn 0x1097020 bounds 0x1097020-0x1097054 ===
+01097020 mov [rsp+8],rbx
+01097025 push rdi
+01097026 sub rsp,20h
+0109702a mov ebx,edx
+0109702c mov rdi,rcx
+0109702f call 0000000000FA5EC0h
+01097034 test bl,1
+01097037 je short 0000000001097046h
+01097039 mov edx,120h
+0109703e mov rcx,rdi
+01097041 call 0000000002D200A4h
+01097046 mov rbx,[rsp+30h]
+0109704b mov rax,rdi
+0109704e add rsp,20h
+01097052 pop rdi
+01097053 ret
+
+=== slot 28 fn 0xfa6bf0 bounds 0xfa6bf0-0xfa6c70 ===
+00fa6bf0 ret 0
+00fa6c00 mov rax,0FFFFFFFFFFFFFFFFh
+00fa6c07 ret
+00fa6c10 mov eax,[rcx+0F0h]
+00fa6c16 ret
+00fa6c20 mov [rsp+8],rbx
+00fa6c25 xor r8d,r8d
+00fa6c28 mov rbx,rdx
+00fa6c2b mov r9,rcx
+00fa6c2e mov r10d,r8d
+00fa6c31 cmp r8w,[rcx+0B8h]
+00fa6c39 jae short 0000000000FA6C7Eh
+00fa6c3b mov r11d,r8d
+00fa6c3e xchg ax,ax
+00fa6c40 mov rax,[r9+0B0h]
+00fa6c47 movzx eax,word [r11+rax]
+00fa6c4c imul rax,[r9+48h]
+00fa6c51 add rax,[r9+40h]
+00fa6c55 cmp byte [rax],1
+00fa6c58 jbe short 0000000000FA6C6Ah
+00fa6c5a mov rcx,[rax+8]
+00fa6c5e movzx edx,r8w
+00fa6c62 inc r8w
+00fa6c66 mov [rbx+rdx*8],rcx
+00fa6c6a (bad)
+
+=== slot 29 fn 0xf18e20 bounds 0xf18e20-0xf18ea0 ===
+00f18e20 mov al,1
+00f18e22 ret
+00f18e30 mov [rsp+8],rbx
+00f18e35 push rdi
+00f18e36 sub rsp,20h
+00f18e3a mov ebx,edx
+00f18e3c mov rdi,rcx
+00f18e3f call 0000000000FA5EC0h
+00f18e44 test bl,1
+00f18e47 je short 0000000000F18E56h
+00f18e49 mov edx,110h
+00f18e4e mov rcx,rdi
+00f18e51 call 0000000002D200A4h
+00f18e56 mov rbx,[rsp+30h]
+00f18e5b mov rax,rdi
+00f18e5e add rsp,20h
+00f18e62 pop rdi
+00f18e63 ret
+00f18e70 mov [rsp+10h],rbx
+00f18e75 mov [rsp+18h],rbp
+00f18e7a mov [rsp+20h],rsi
+00f18e7f push r14
+00f18e81 sub rsp,30h
+00f18e85 mov ebp,edx
+00f18e87 mov rsi,rcx
+00f18e8a call 0000000000F18940h
+00f18e8f xor r14d,r14d
+00f18e92 mov dword [rsi+134h],10h
+00f18e9c xor r8d,r8d
+00f18e9f (bad)

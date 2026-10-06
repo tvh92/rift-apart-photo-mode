@@ -1,0 +1,35 @@
+FillLightLookup cutoff follow-up: exact-build static trace
+
+Build: RiftApart.exe SHA256 51299faca61866cf10ea9035a15b8f22600a56557dd5ffc1aad390d5a54e6d82. Read-only exact-build disassembly. No source, game, installation, saves, or live process were changed.
+
+Conclusion
+
+FillLightLookup has a real hard per-invocation cap: it converts at most the first 512 submitted records. That is a concrete selection gate capable of omitting lights from the shader lookup buffer when more than 512 records are submitted. Static evidence does not establish that a relevant Photo Mode view exceeds 512, which lights occupy the first 512 positions, or that this explains the user's remaining far-light loss.
+
+The callback's merge helper also contains a real per-group bit-mask selection gate. An input lookup entry is copied into a group's output only when the corresponding bit is set and that group's current output count is below the callback's input count. This is a discrete membership/index predicate; the fields' full semantic names and any camera-distance meaning are unknown. It is not evidence of a Euclidean range cutoff.
+
+512-record cap
+
+At 0x10B3600, the callback receives a count in EDX, preserves the original count in EDI, and computes R13D = min(EDX, 0x200) at 0x10B3640..0x10B3650. If EDX > 512, the excess is passed through a diagnostic path, while subsequent record conversion uses R13D. The loop at 0x10B37C0..0x10B37F1 processes exactly that capped count, reading successive submitted pointers from the callback list and calling 0x10A9710 once per record. The allocated lookup buffer is sized from the capped count, rounded to 32 records, with 0x80 bytes per entry: 0x10A9560 at 0x10A95B1..0x10A95B8 and 0x10A96B4..0x10A96C5. The callback then finalizes/merges the entries and binds the two resources at slots 0x30 and 0x31 (0x10B37F3..0x10B388C).
+
+Thus, if an invocation supplies N > 512, records at input indices 512 through N-1 do not reach this callback's per-record converter or the corresponding FillLightLookup buffer. The input order is preserved for this loop. The trace does not prove the ordering policy upstream or whether another buffer/path supplies any omitted light.
+
+Lookup merge selection predicate
+
+0x1094200 is called by FillLightLookup after the per-record conversion (0x10B37F3..0x10B3800). Its loop uses a global lookup structure at R13. For each signed group index from 0 to `[R13+0x0F)-1`, it examines entries `i` from 0 to `[R13+0x3D10)-1`. It reads a 16-bit mask at `R13 + 0x3B18 + 0x10*i`, tests bit `group` with BT, and skips the entry when the bit is clear (`0x1094270..0x1094281`, skip to `0x10942A6`). When set, it reads that group's current count from the group's counter array, compares it with the callback input count, and skips if the count is already at or above that bound (`0x1094283..0x1094289`). Otherwise it increments that group's count and calls 0x10C77A0 to generate a 0x80-byte output record (`0x109428B..0x10942A1`). The helper transforms/copies packed lookup fields; its inspected instructions show no view-origin or camera-distance comparison.
+
+This proves mask-based lookup membership and a group output-count bound. It does not identify the mask's semantic producer, prove that a missing surface light fails this mask, or establish a spatial interpretation for the group index. Avoid calling it a z-bin/range test until those fields are independently identified.
+
+LightSubmit context and limits
+
+The earlier 0x109A670 distance predicate is still only a classifier between ranked and secondary arrays; both arrays are packed into one query and iterated by 0x10B9DB0. The 0x10B7330 distance predicate still chooses auxiliary-volume rebuild versus copying existing volume metadata, without dropping the normal 0x170 record. The actual previously established hard spatial rejection remains the conditional clip-volume test at 0x1604440, which can skip an out-of-frustum volume, but has no explicit Euclidean range threshold.
+
+The new 512 cap is the first confirmed hard selection cutoff in the FillLightLookup producer path. No static evidence here connects its count/order to the user's tested Photo camera scene. A runtime count/index capture or equivalent scene-specific evidence would be needed to attribute the visible disappearance to this cap or the lookup masks. These named passes and shader fields do not establish complete surface-shading semantics.
+
+Evidence windows and command
+
+- `work/native_trace_full.py dump 0x10B3600 0x10A9710 0x1094200 0x10A9560 0x10C77A0 0x10BE180 0x10B9DB0`
+- Callback cap/loop/bind: 0x10B3640..0x10B3650, 0x10B37C0..0x10B388C.
+- Count allocation: 0x10A95B1..0x10A95B8, 0x10A96B4..0x10A96C5.
+- Lookup mask/counter selection: 0x1094250..0x10942A6.
+- Prior bridge: `work/surface-light-filllookup-bridge.txt`; prior spatial exclusions: `work/lightsubmit-spatial-gates-luna.txt`.

@@ -1,0 +1,8 @@
+{
+  "recorded_utc": "2026-10-05T22:06:22.513253+00:00",
+  "dll_sha256": "fa3ced0a22083cfe0e9ee68c96e5bdda2c4d13c46f34346c79848693873356b6",
+  "user_report": "I think it works, but lights turn off at a farther Y distance with Ctrl enabled than at native X distance.",
+  "classification": "Partial improvement; complete prevention of light disappearance is NOT confirmed.",
+  "runtime_evidence": "Startup/Photo activation and Ctrl toggles logged; primary light relay applications=867005 at teardown.",
+  "next_request": "Restore a brief fading on/off status indicator; keep Ctrl shortcut and original movies."
+}

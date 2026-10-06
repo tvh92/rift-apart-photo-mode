@@ -1,0 +1,106 @@
+FUNCTION 0x1a59b80 BOUNDS ('0x1a59b80', '0x1a59d09')
+01a59b80 mov [rsp+8],rbx
+01a59b85 mov [rsp+10h],rbp
+01a59b8a mov [rsp+18h],rsi
+01a59b8f push rdi
+01a59b90 push r12
+01a59b92 push r13
+01a59b94 push r14
+01a59b96 push r15
+01a59b98 sub rsp,40h
+01a59b9c mov r13,rcx
+01a59b9f lea rcx,[rsp+30h]
+01a59ba4 call 00000000010DAF10h
+01a59ba9 nop
+01a59baa lea r8,[rel 6890470h]
+01a59bb1 lea rdx,[rsp+20h]
+01a59bb6 lea rcx,[rel 6747580h]
+01a59bbd call 00000000012B9B60h
+01a59bc2 xor r15d,r15d
+01a59bc5 mov edx,[rsp+28h]
+01a59bc9 test edx,edx
+01a59bcb jle near 0000000001A59CDFh
+01a59bd1 xor r12d,r12d
+01a59bd4 mov rax,[rsp+20h]
+01a59bd9 mov r14,[r12+rax]
+01a59bdd test r14,r14
+01a59be0 je near 0000000001A59CCFh
+01a59be6 mov rcx,[r14]
+01a59be9 test rcx,rcx
+01a59bec je short 0000000001A59BF9h
+01a59bee cmp byte [rcx+5Fh],0
+01a59bf2 jne short 0000000001A59BF9h
+01a59bf4 call 00000000010FE690h
+01a59bf9 lea rdx,[rel 68FB640h]
+01a59c00 cmp word [r14+88h],0
+01a59c09 jbe short 0000000001A59C19h
+01a59c0b lea rcx,[r14+80h]
+01a59c12 call 0000000000FFB860h
+01a59c17 jmp short 0000000001A59C22h
+01a59c19 lea rcx,[r14+58h]
+01a59c1d call 0000000000FFCA00h
+01a59c22 mov rsi,rax
+01a59c25 test rax,rax
+01a59c28 je short 0000000001A59C69h
+01a59c2a mov ebp,[rax+4Ch]
+01a59c2d xor edi,edi
+01a59c2f test ebp,ebp
+01a59c31 je short 0000000001A59C69h
+01a59c33 nop dword [rax]
+01a59c37 nop word [rax+rax]
+01a59c40 xor ebx,ebx
+01a59c42 mov r8d,ebx
+01a59c45 mov edx,edi
+01a59c47 mov rcx,rsi
+01a59c4a call 0000000001B091F0h
+01a59c4f test rax,rax
+01a59c52 je short 0000000001A59C5Ch
+01a59c54 mov rcx,rax
+01a59c57 call 00000000010FE690h
+01a59c5c inc ebx
+01a59c5e cmp ebx,2
+01a59c61 jb short 0000000001A59C42h
+01a59c63 inc edi
+01a59c65 cmp edi,ebp
+01a59c67 jb short 0000000001A59C40h
+01a59c69 lea rdx,[rel 624F750h]
+01a59c70 cmp word [r14+88h],0
+01a59c79 jbe short 0000000001A59C89h
+01a59c7b lea rcx,[r14+80h]
+01a59c82 call 0000000000FFB860h
+01a59c87 jmp short 0000000001A59C92h
+01a59c89 lea rcx,[r14+58h]
+01a59c8d call 0000000000FFCA00h
+01a59c92 test rax,rax
+01a59c95 je short 0000000001A59CBBh
+01a59c97 lea rcx,[rax+440h]
+01a59c9e call 0000000000F1A520h
+01a59ca3 test rax,rax
+01a59ca6 je short 0000000001A59CBBh
+01a59ca8 mov rcx,[rax]
+01a59cab test rcx,rcx
+01a59cae je short 0000000001A59CBBh
+01a59cb0 cmp byte [rcx+5Fh],0
+01a59cb4 jne short 0000000001A59CBBh
+01a59cb6 call 00000000010FE690h
+01a59cbb mov rax,[r13]
+01a59cbf mov rdx,r14
+01a59cc2 mov rcx,r13
+01a59cc5 call qword [rax+138h]
+01a59ccb mov edx,[rsp+28h]
+01a59ccf inc r15d
+01a59cd2 add r12,8
+01a59cd6 cmp r15d,edx
+01a59cd9 jl near 0000000001A59BD4h
+01a59cdf lea rcx,[rsp+30h]
+01a59ce4 call 00000000010DAF60h
+01a59ce9 mov rbx,[rsp+70h]
+01a59cee mov rbp,[rsp+78h]
+01a59cf3 mov rsi,[rsp+80h]
+01a59cfb add rsp,40h
+01a59cff pop r15
+01a59d01 pop r14
+01a59d03 pop r13
+01a59d05 pop r12
+01a59d07 pop rdi
+01a59d08 ret

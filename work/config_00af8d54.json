@@ -1,0 +1,353 @@
+{
+  "archive_offset": 11504980,
+  "size": 9676,
+  "type": {
+    "Type": "UIPhotoModeConfig"
+  },
+  "content": {
+    "OptionsPages": [
+      {
+        "Options": [
+          {
+            "Settings": [
+              "PHOTO_CAMTYPE_NULL",
+              "PHOTO_CAMTYPE_ORBIT"
+            ],
+            "Label": "PHOTO_CAMERA_CAMTYPE",
+            "ID": "CameraType"
+          },
+          {
+            "Label": "PHOTO_CAMERA_TILT",
+            "ID": "CameraTilt",
+            "ValueMin": -180,
+            "ValueMax": 180
+          },
+          {
+            "Settings": [
+              "UI_SETTING_ON",
+              "UI_SETTING_OFF"
+            ],
+            "Label": "PHOTO_CAMERA_HEROVISIBILITY",
+            "ID": "HeroAlpha"
+          },
+          {
+            "Settings": [
+              "UI_SETTING_ON",
+              "UI_SETTING_OFF"
+            ],
+            "Label": "PHOTO_CAMERA_HIDE_BOLTS",
+            "ID": "ShowBolts"
+          },
+          {
+            "Settings": [
+              "UI_SETTING_ON",
+              "UI_SETTING_OFF"
+            ],
+            "Label": "PHOTO_CAMERA_HIDE_PICKUPS",
+            "ID": "ShowPickups"
+          },
+          {
+            "Settings": [
+              "PHOTO_CAMERA_VISUALEFFECTS_OPTION_PAUSE",
+              "PHOTO_CAMERA_VISUALEFFECTS_OPTION_PLAY"
+            ],
+            "Label": "PHOTO_CAMERA_VISUALEFFECTS",
+            "ID": "PlayVisualEffects"
+          },
+          {
+            "Settings": [
+              "UI_SETTING_ON",
+              "UI_SETTING_OFF"
+            ],
+            "Label": "PHOTO_CHARACTER_PHANTOMDASH",
+            "ID": "PhantomDashToggle"
+          }
+        ],
+        "Label": "PHOTO_CATEGORY_CAMERA",
+        "Icon": "PhotomodeTabCamera"
+      },
+      {
+        "Options": [
+          {
+            "Label": "PHOTO_LENS_FOV",
+            "ID": "FOV",
+            "ValueMin": 0.3499999940395355,
+            "ValueMax": 2
+          },
+          {
+            "Label": "PHOTO_LENSES_EXPOSURE",
+            "ID": "Exposure",
+            "ValueMax": 4,
+            "ValueMin": -4
+          },
+          {
+            "Label": "PHOTO_LENS_FOCUSDISTANCE",
+            "ID": "DOFRangeFar",
+            "ValueMax": 180,
+            "ValueMin": 1
+          },
+          {
+            "Label": "PHOTO_LENS_APERTURE",
+            "ID": "DOFApertureFar",
+            "ValueMax": 100
+          },
+          {
+            "Label": "PHOTO_LENS_DOFRANGENEAR",
+            "ID": "DOFRangeNear",
+            "ValueMax": 5
+          },
+          {
+            "Label": "PHOTO_LENS_DOFAPERTURENEAR",
+            "ID": "DOFApertureNear",
+            "ValueMax": 100
+          }
+        ],
+        "Label": "PHOTO_CATEGORY_LENS",
+        "Icon": "PhotomodeTabLens"
+      },
+      {
+        "Options": [
+          {
+            "ID": "ColorCorrectionTexture",
+            "Label": "PHOTO_FILTER_TYPE"
+          },
+          {
+            "ID": "ColorCorrectionBlend",
+            "Label": "PHOTO_FILTER_BLEND"
+          },
+          {
+            "Label": "PHOTO_FILTER_FRAMESELECT",
+            "ID": "FrameSelection"
+          },
+          {
+            "Settings": [
+              "PHOTO_FILTER_FRAMELEVEL_TOP",
+              "PHOTO_FILTER_FRAMELEVEL_BOTTOM"
+            ],
+            "Label": "PHOTO_FILTER_FRAMELEVEL",
+            "ID": "FrameLevel"
+          }
+        ],
+        "Label": "PHOTO_CATEGORY_FILTER",
+        "Icon": "PhotomodeTabFilter"
+      },
+      {
+        "Options": [
+          {
+            "Label": "PHOTO_VIGNETTE_INTENSITY",
+            "ID": "VignetteIntensity",
+            "ValueMax": 10
+          },
+          {
+            "Label": "PHOTO_VIGNETTE_CENTERCLEAR",
+            "ID": "VignetteCenterClear"
+          },
+          {
+            "Label": "PHOTO_FILMGRAIN_SIZE",
+            "ID": "FilmGrainSize"
+          },
+          {
+            "Label": "PHOTO_FILMGRAIN_STRENGTH",
+            "ID": "FilmGrainStrength"
+          },
+          {
+            "Label": "PHOTO_EFFECTS_SHARPENING",
+            "ID": "TemporalSharpening",
+            "ValueMax": 7
+          }
+        ],
+        "Label": "PHOTO_CATEGORY_EFFECTS",
+        "Icon": "PhotomodeTabEffects"
+      }
+    ],
+    "Lights": {
+      "LightOptions": [
+        {
+          "Settings": [
+            "PHOTO_LIGHTS_EDIT_TYPE_OPTION_POINT",
+            "PHOTO_LIGHTS_EDIT_TYPE_OPTION_SPOT",
+            "PHOTO_LIGHTS_EDIT_TYPE_OPTION_OFF"
+          ],
+          "Label": "PHOTO_LIGHTS_EDIT_TYPE",
+          "ID": "LightType"
+        },
+        {
+          "Label": "PHOTO_LIGHTS_EDIT_INTENSITY",
+          "ID": "LightIntensity",
+          "FastFidelity": 30,
+          "ValueMax": 20,
+          "ValueMin": -15
+        },
+        {
+          "Settings": [
+            "UI_SETTING_OFF",
+            "UI_SETTING_ON"
+          ],
+          "Label": "PHOTO_LIGHTS_EDIT_SHADOWS",
+          "ID": "LightShadowOn"
+        },
+        {
+          "Label": "PHOTO_LIGHTS_EDIT_COLOR",
+          "ID": "LightColor",
+          "SliderType": "Hue",
+          "Fidelity": 360,
+          "ValueMax": 359,
+          "FastFidelity": 80
+        },
+        {
+          "Label": "PHOTO_LIGHTS_EDIT_SATURATION",
+          "ID": "LightSaturation",
+          "SliderType": "Default",
+          "FastFidelity": 50
+        },
+        {
+          "Label": "PHOTO_LIGHTS_EDIT_CONEANGLE",
+          "ID": "LightConeAngle",
+          "ValueMin": 0.10000000149011612
+        },
+        {
+          "Label": "PHOTO_LIGHTS_EDIT_SOFTNESS",
+          "ID": "LightSoftness",
+          "ValueMin": 0.10000000149011612
+        },
+        {
+          "Label": "PHOTO_LIGHTS_EDIT_DISTANCE",
+          "ID": "LightDistance",
+          "ValueMin": 0.10000000149011612,
+          "ValueMax": 10
+        }
+      ],
+      "KeyLightOptions": [
+        {
+          "Settings": [
+            "UI_SETTING_OFF",
+            "UI_SETTING_ON"
+          ],
+          "Label": "PHOTO_LIGHTS_ENVLIGHT_CUSTOMIZE",
+          "ID": "EnableKeyLightOverrides"
+        },
+        {
+          "Label": "PHOTO_LIGHTS_ENVLIGHT_INTENSITY",
+          "ID": "KeyLightIntensity",
+          "FastFidelity": 30
+        },
+        {
+          "Label": "PHOTO_LIGHTS_ENVLIGHT_ELEVATION",
+          "ID": "KeyLightElevation",
+          "FastFidelity": 45,
+          "Fidelity": 90,
+          "ValueMax": 90
+        },
+        {
+          "Label": "PHOTO_LIGHTS_ENVLIGHT_AZIMUTH",
+          "ID": "KeyLightAzimuth",
+          "Fidelity": 360,
+          "ValueMax": 360
+        },
+        {
+          "Label": "PHOTO_LIGHTS_ENVLIGHT_LIGHTGRIDINTENSITY",
+          "ID": "LightGridIntensity",
+          "FastFidelity": 6,
+          "Fidelity": 12,
+          "ValueMax": 4
+        }
+      ],
+      "AdditionalOptions": [
+        {
+          "Label": "PHOTO_LIGHTS_EDIT_COLOR",
+          "ID": "BlackoutMode"
+        },
+        {
+          "Settings": [
+            "UI_SETTING_OFF",
+            "PHOTO_HEADER_LIGHTMODE",
+            "PHOTO_HEADER_PHOTOMODE"
+          ],
+          "ID": "EnableCameraMovement",
+          "Label": "BTN_PHOTO_MOVECAM"
+        }
+      ]
+    },
+    "CharacterControls": [
+      {
+        "Settings": [
+          "UI_SETTING_OFF",
+          "UI_SETTING_ON"
+        ],
+        "Label": "PHOTO_CHARACTER_ENABLEPOSING",
+        "ID": "CharacterPoseEnabled"
+      },
+      {
+        "ID": "WeaponOverride",
+        "Label": "UI_WEAPONS"
+      },
+      {
+        "Label": "PHOTO_CHARACTER_POSE",
+        "ID": "CharacterPose"
+      },
+      {
+        "Label": "PHOTO_CHARACTER_EXPRESSION",
+        "ID": "CharacterFacePose"
+      },
+      {
+        "Label": "PHOTO_CHARACTER_ROTATION",
+        "ID": "CharacterRotation",
+        "ClampType": "Loop",
+        "Fidelity": 360,
+        "FastFidelity": 30,
+        "ValueMax": 1
+      },
+      {
+        "Settings": [
+          "UI_SETTING_OFF",
+          "UI_SETTING_ON"
+        ],
+        "Label": "ARMOR_SLOT_HEAD",
+        "ID": "HeadArmorToggle"
+      },
+      {
+        "Settings": [
+          "UI_SETTING_OFF",
+          "UI_SETTING_ON"
+        ],
+        "ID": "TorsoArmorToggle",
+        "Label": "ARMOR_SLOT_BODY"
+      },
+      {
+        "Settings": [
+          "UI_SETTING_OFF",
+          "UI_SETTING_ON"
+        ],
+        "Label": "ARMOR_SLOT_LEGS",
+        "ID": "LegArmorToggle"
+      }
+    ],
+    "EditModes": [
+      {
+        "Name": "PHOTO_HEADER_PHOTOMODE",
+        "Icon": "PhotoModeCameraMode"
+      },
+      {
+        "Name": "PHOTO_HEADER_CHARACTERMODE",
+        "Icon": "PhotoModeCharacterMode",
+        "EditModeType": "kCharacter"
+      },
+      {
+        "Name": "PHOTO_HEADER_LIGHTMODE",
+        "Icon": "PhotoModeLightMode",
+        "EditModeType": "kLight"
+      },
+      {
+        "Name": "PHOTO_HEADER_STICKERMODE",
+        "Icon": "PhotoModeStickerMode",
+        "EditModeType": "kStickers"
+      }
+    ]
+  },
+  "toc": {
+    "asset_id": "8E1F557CB712559F",
+    "toc_index": 19993,
+    "toc_size": 9676,
+    "toc_header_offset": 715176
+  }
+}

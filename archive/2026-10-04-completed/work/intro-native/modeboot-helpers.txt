@@ -1,0 +1,117 @@
+FUNCTION 0x10cb0d0 BOUNDS ('0x10cb0d0', '0x10cb150')
+010cb0d0 cmp edx,7
+010cb0d3 ja short 00000000010CB0EBh
+010cb0d5 movsxd rax,edx
+010cb0d8 lea rdx,[rax+rax*4]
+010cb0dc movzx eax,byte [rcx+rdx*8+3Ch]
+010cb0e1 test al,al
+010cb0e3 je short 00000000010CB0EBh
+010cb0e5 cmp al,3
+010cb0e7 sete al
+010cb0ea ret
+010cb0eb xor al,al
+010cb0ed ret
+010cb0ee int3
+010cb0ef int3
+010cb0f0 cmp edx,7
+010cb0f3 ja short 00000000010CB108h
+010cb0f5 movsxd rax,edx
+010cb0f8 lea rdx,[rax+rax*4]
+010cb0fc cmp byte [rcx+rdx*8+3Ch],0
+010cb101 je short 00000000010CB108h
+010cb103 mov byte [rcx+rdx*8+3Dh],1
+010cb108 ret
+010cb109 int3
+010cb10a int3
+010cb10b int3
+010cb10c int3
+010cb10d int3
+010cb10e int3
+010cb10f int3
+010cb110 mov [rsp+8],rbx
+010cb115 push rbp
+010cb116 push rsi
+010cb117 push rdi
+010cb118 push r12
+010cb11a push r13
+010cb11c push r14
+010cb11e push r15
+010cb120 sub rsp,80h
+010cb127 xor r12d,r12d
+010cb12a movaps [rsp+70h],xmm6
+010cb12f mov ebx,r12d
+010cb132 mov rdi,rcx
+010cb135 mov [rsp+0C8h],ebx
+010cb13c mov r13d,r12d
+010cb13f xorps xmm6,xmm6
+010cb142 nop dword [rax]
+010cb146 nop word [rax+rax]
+FUNCTION 0x1304d60 BOUNDS ('0x1304d60', '0x1304dfe')
+01304d60 sub rsp,48h
+01304d64 mov r8d,[rel 533EEE0h]
+01304d6b mov eax,[rel 533EEE4h]
+01304d71 cmp r8d,eax
+01304d74 jne short 0000000001304D9Ah
+01304d76 mov r9,rdx
+01304d79 mov [rsp+20h],eax
+01304d7d mov edx,8D2h
+01304d82 lea r8,[rel 4345720h]
+01304d89 lea rcx,[rel 43444A0h]
+01304d90 call 00000000012E9FA0h
+01304d95 add rsp,48h
+01304d99 ret
+01304d9a mov rax,[rel 533EED8h]
+01304da1 lea r9,[rsp+30h]
+01304da6 mov [rax+r8*4],ecx
+01304daa mov r8d,4
+01304db0 mov eax,[rel 533EEE0h]
+01304db6 mov rcx,[rel 533EED8h]
+01304dbd inc eax
+01304dbf mov [rel 533EEE0h],eax
+01304dc5 mov edx,eax
+01304dc7 lea rax,[rel 159A5F0h]
+01304dce mov [rsp+60h],rax
+01304dd3 lea rax,[rel 13048E0h]
+01304dda mov [rsp+30h],rax
+01304ddf lea rax,[rsp+60h]
+01304de4 mov [rsp+38h],rax
+01304de9 movaps xmm0,[rsp+30h]
+01304dee movdqa [rsp+30h],xmm0
+01304df4 call 000000000159A2F0h
+01304df9 add rsp,48h
+01304dfd ret
+FUNCTION 0x12a06d0 BOUNDS ('0x12a06d0', '0x12a0764')
+012a06d0 push rbx
+012a06d2 sub rsp,20h
+012a06d6 mov rax,[rel 67467E8h]
+012a06dd test rax,rax
+012a06e0 jne short 00000000012A0718h
+012a06e2 mov ecx,[rel 6A9E8A8h]
+012a06e8 mov rax,[gs:58h]
+012a06f1 mov r8d,0A0A0h
+012a06f7 mov rdx,[rax+rcx*8]
+012a06fb lea rbx,[rel 6746860h]
+012a0702 mov eax,[r8+rdx]
+012a0706 cmp [rel 6747400h],eax
+012a070c jg short 00000000012A071Eh
+012a070e mov [rel 67467E8h],rbx
+012a0715 mov rax,rbx
+012a0718 add rsp,20h
+012a071c pop rbx
+012a071d ret
+012a071e lea rcx,[rel 6747400h]
+012a0725 call 0000000002D20350h
+012a072a cmp dword [rel 6747400h],0FFFFFFFFh
+012a0731 jne short 00000000012A070Eh
+012a0733 mov rcx,rbx
+012a0736 call 000000000129E930h
+012a073b lea rcx,[rel 2E2E280h]
+012a0742 call 0000000002D208ACh
+012a0747 nop
+012a0748 lea rcx,[rel 6747400h]
+012a074f call 0000000002D202F0h
+012a0754 mov [rel 67467E8h],rbx
+012a075b mov rax,rbx
+012a075e add rsp,20h
+012a0762 pop rbx
+012a0763 ret

@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-05",
+  "dll_sha256": "7d4234168e04020b65bd2af2a88314bffe9bef2baadeb2994c2901b539008665",
+  "tests": [
+    {
+      "status": "fulfilled",
+      "value": {
+        "name": "Lifecycle",
+        "chunk_id": "f25ee8",
+        "wall_time_seconds": 1.2387968,
+        "exit_code": 0,
+        "original_token_count": 50,
+        "output": "PASS: loading states create no indicator thread; active Photo creates exactly one; lifecycle/teardown gates, focused Ctrl tap/release, chord/focus cancellation, ON/OFF requests and metadata guards.\r\n"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "name": "IndicatorThread",
+        "chunk_id": "38d30e",
+        "wall_time_seconds": 3.3174207,
+        "exit_code": 0,
+        "original_token_count": 75,
+        "output": "Photo status indicator ready after active Photo Mode entry.\r\nPhoto status indicator ready after active Photo Mode entry.\r\nPASS: notifications stay dormant until validated lazy start; duplicate starts rejected; ON/OFF refresh, timer fade, hide, teardown and restart; test windows remained hidden.\r\n"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "name": "Behavior",
+        "chunk_id": "27cbbd",
+        "wall_time_seconds": 1.2580062,
+        "exit_code": 0,
+        "original_token_count": 42,
+        "output": "PASS: owner filtering, normal/Shift/release speeds, baseline restore, replacement camera identity, and hotkey restoration of collision plus both geometry selectors.\r\n"
+      }
+    }
+  ]
+}

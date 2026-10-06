@@ -1,0 +1,25 @@
+{
+  "game": "RCRA",
+  "path": "C:\\Users\\Tim\\Documents\\Codex\\2026-10-04\\prompt-for-the-research-instance-research\\work\\overstrike-audit\\routing\\short\\test-game",
+  "mods": [
+    [
+      "NoIntro-Padded-CurrentBuild.stage",
+      true
+    ]
+  ],
+  "settings": {
+    "suit": {
+      "language": "us",
+      "allow_cross_character_suit_models": false
+    },
+    "scripts": {
+      "enabled": false,
+      "commandline": false
+    }
+  },
+  "suits": {
+    "delete": [],
+    "order": [],
+    "modify": {}
+  }
+}

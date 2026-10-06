@@ -1,0 +1,521 @@
+FUNCTION 0x121eab0 ROOT (18999984, 19000622, 81888664) RANGES [(18999984, 19000622, 81888664)]
+0121EAB0 mov [rsp+8],rbx
+0121EAB5 mov [rsp+10h],rbp
+0121EABA mov [rsp+18h],rsi
+0121EABF push rdi
+0121EAC0 sub rsp,50h
+0121EAC4 movaps [rsp+40h],xmm6
+0121EAC9 mov rdi,rcx
+0121EACC movaps xmm6,[rel 6732C10h]
+0121EAD3 movaps [rsp+30h],xmm7
+0121EAD8 movaps xmm7,[rel 6732C20h]
+0121EADF movaps [rsp+20h],xmm8
+0121EAE5 movaps xmm8,[rel 6732C30h]
+0121EAED call 000000000122EB00h
+0121EAF2 mov rcx,[rel 6732C40h]
+0121EAF9 mov esi,eax
+0121EAFB movzx ebp,byte [rel 6732B3Ch]
+0121EB02 test rcx,rcx
+0121EB05 je short 000000000121EB0Ch
+0121EB07 call 00000000012371D0h
+0121EB0C mov rdx,[rdi+8]
+0121EB10 lea rcx,[rel 67326D0h]
+0121EB17 mov rbx,[rel 6732ED8h]
+0121EB1E mov r8d,870h
+0121EB24 call 0000000002D27ABDh
+0121EB29 or [rel 6732B3Ch],bpl
+0121EB30 mov eax,1B4E81B5h
+0121EB35 mov [rel 6732ED8h],rbx
+0121EB3C mov rbx,[rel 6732C40h]
+0121EB43 movaps [rel 6732C10h],xmm6
+0121EB4A movaps [rel 6732C20h],xmm7
+0121EB51 movaps [rel 6732C30h],xmm8
+0121EB59 mov [rel 6732D3Ch],esi
+0121EB5F imul dword [rbx+0F98h]
+0121EB65 mov dword [rel 6732F14h],0FFFFFFFFh
+0121EB6F sar edx,3
+0121EB72 mov eax,edx
+0121EB74 shr eax,1Fh
+0121EB77 add edx,eax
+0121EB79 mov [rel 6732D44h],edx
+0121EB7F call 0000000001220000h
+0121EB84 cmp byte [rbx+1B9Eh],0
+0121EB8B je short 000000000121EBB7h
+0121EB8D cmp byte [rel 6732D59h],0
+0121EB94 je short 000000000121EB9Bh
+0121EB96 call 000000000122FE10h
+0121EB9B mov qword [rel 6732EA8h],0
+0121EBA6 mov byte [rel 6732ECBh],0
+0121EBAD call 00000000011D0450h
+0121EBB2 jmp 000000000121ECECh
+0121EBB7 cmp byte [rel 673291Ch],0
+0121EBBE xorps xmm6,xmm6
+0121EBC1 je short 000000000121EBD9h
+0121EBC3 mov rcx,[rel 6732C48h]
+0121EBCA xorps xmm3,xmm3
+0121EBCD mov dword [rel 6732EA8h],0
+0121EBD7 jmp short 000000000121EC0Ah
+0121EBD9 mov rax,[rel 6732C48h]
+0121EBE0 mov rcx,rbx
+0121EBE3 movss xmm0,[rax+234h]
+0121EBEB movss [rel 6732EA8h],xmm0
+0121EBF3 call 0000000001235990h
+0121EBF8 mov rcx,[rel 6732C48h]
+0121EBFF movaps xmm3,xmm0
+0121EC02 mulss xmm3,[rcx+238h]
+0121EC0A mov r8d,[rel 6732D40h]
+0121EC11 xor edx,edx
+0121EC13 mov eax,r8d
+0121EC16 movss [rel 6732EACh],xmm3
+0121EC1E sub eax,[rbx+2018h]
+0121EC24 test eax,eax
+0121EC26 cmovg edx,eax
+0121EC29 cmp edx,20h
+0121EC2C jge short 000000000121EC59h
+0121EC2E movd xmm0,edx
+0121EC32 cvtdq2ps xmm0,xmm0
+0121EC35 mulss xmm0,[rel 32D31C4h]
+0121EC3D maxss xmm0,xmm6
+0121EC41 minss xmm0,[rel 4A4A198h]
+0121EC49 comiss xmm0,xmm3
+0121EC4C jae short 000000000121EC59h
+0121EC4E movss [rel 6732EACh],xmm0
+0121EC56 movaps xmm3,xmm0
+0121EC59 cmp dword [rel 67326F8h],1Fh
+0121EC60 movss xmm0,[rel 6732E38h]
+0121EC68 sete dl
+0121EC6B cmp [rbx+1D08h],r8d
+0121EC72 sete al
+0121EC75 comiss xmm0,xmm6
+0121EC78 ja short 000000000121ECD2h
+0121EC7A movss xmm2,[rbx+42Ch]
+0121EC82 movss xmm1,[rbx+428h]
+0121EC8A andps xmm2,[rel 2E6B300h]
+0121EC91 andps xmm1,[rel 2E6B300h]
+0121EC98 addss xmm2,xmm1
+0121EC9C comiss xmm2,xmm6
+0121EC9F ja short 000000000121ECD2h
+0121ECA1 comiss xmm3,xmm6
+0121ECA4 ja short 000000000121ECD2h
+0121ECA6 comiss xmm6,[rcx+204h]
+0121ECAD jae short 000000000121ECC1h
+0121ECAF comiss xmm6,[rcx+208h]
+0121ECB6 jae short 000000000121ECC1h
+0121ECB8 cmp dword [rel 53395A8h],1
+0121ECBF jge short 000000000121ECD2h
+0121ECC1 cmp byte [rel 6732EC7h],0
+0121ECC8 jne short 000000000121ECD2h
+0121ECCA test dl,dl
+0121ECCC jne short 000000000121ECD2h
+0121ECCE test al,al
+0121ECD0 je short 000000000121ECE5h
+0121ECD2 mov rcx,rbx
+0121ECD5 mov byte [rel 6732ECBh],1
+0121ECDC call 00000000011D0640h
+0121ECE1 test al,al
+0121ECE3 je short 000000000121ECECh
+0121ECE5 mov byte [rel 6732ECBh],0
+0121ECEC mov rcx,rbx
+0121ECEF call 0000000001237140h
+0121ECF4 mov r8d,[rel 6732D3Ch]
+0121ECFB mov dl,1
+0121ECFD mov rcx,rbx
+0121ED00 call 0000000001239160h
+0121ED05 mov rbx,[rsp+60h]
+0121ED0A mov rbp,[rsp+68h]
+0121ED0F mov rsi,[rsp+70h]
+0121ED14 movaps xmm6,[rsp+40h]
+0121ED19 movaps xmm7,[rsp+30h]
+0121ED1E movaps xmm8,[rsp+20h]
+0121ED24 add rsp,50h
+0121ED28 pop rdi
+0121ED29 jmp 000000000121F110h
+FUNCTION 0x121f110 ROOT (19001616, 19003729, 81888148) RANGES [(19001616, 19003729, 81888148)]
+0121F110 mov [rsp+10h],rbx
+0121F115 mov [rsp+18h],rdi
+0121F11A push rbp
+0121F11B mov rbp,rsp
+0121F11E sub rsp,30h
+0121F122 lea rcx,[rel 6745B20h]
+0121F129 call 0000000001209890h
+0121F12E mov edx,3Fh
+0121F133 lea rcx,[rel 6745B20h]
+0121F13A call 0000000001209700h
+0121F13F lea rcx,[rel 6745B20h]
+0121F146 call 00000000012082C0h
+0121F14B mov edx,1Fh
+0121F150 lea rcx,[rel 6745B20h]
+0121F157 call 0000000001209540h
+0121F15C lea rax,[rel 678E700h]
+0121F163 mov dword [rsp+20h],10h
+0121F16B mov edx,3
+0121F170 mov [rel 6732E98h],rax
+0121F177 lea r9,[rbp+10h]
+0121F17B mov [rbp+10h],rax
+0121F17F lea rcx,[rel 6745B20h]
+0121F186 lea r8d,[rdx-2]
+0121F18A call 0000000001208F50h
+0121F18F mov edx,4
+0121F194 mov dword [rsp+20h],10h
+0121F19C lea rbx,[rel 678E600h]
+0121F1A3 lea r9,[rbp+10h]
+0121F1A7 mov [rbp+10h],rbx
+0121F1AB lea rcx,[rel 6745B20h]
+0121F1B2 lea r8d,[rdx-3]
+0121F1B6 call 0000000001208F50h
+0121F1BB mov edx,44h
+0121F1C0 mov dword [rsp+20h],1Fh
+0121F1C8 lea r9,[rel 678E410h]
+0121F1CF lea rcx,[rel 6745B20h]
+0121F1D6 lea r8d,[rdx-43h]
+0121F1DA call 0000000001208A80h
+0121F1DF mov edx,54h
+0121F1E4 mov dword [rsp+20h],1Fh
+0121F1EC lea r9,[rel 678F410h]
+0121F1F3 lea rcx,[rel 6745B20h]
+0121F1FA lea r8d,[rdx-53h]
+0121F1FE call 0000000001208A80h
+0121F203 mov edx,20h
+0121F208 mov dword [rsp+20h],1Fh
+0121F210 lea r9,[rel 678EB10h]
+0121F217 lea rcx,[rel 6745B20h]
+0121F21E lea r8d,[rdx-1Fh]
+0121F222 call 0000000001208A80h
+0121F227 xor edi,edi
+0121F229 mov dword [rsp+20h],1Fh
+0121F231 lea rax,[rel 678EB00h]
+0121F238 mov [rel 6732E68h],rdi
+0121F23F mov [rel 6732CB0h],rax
+0121F246 lea rcx,[rel 6745B20h]
+0121F24D mov rax,[rel 6732E58h]
+0121F254 mov r9,rbx
+0121F257 test rax,rax
+0121F25A lea edx,[rdi+34h]
+0121F25D lea r8d,[rdi+1]
+0121F261 cmovne r9,rax
+0121F265 add r9,10h
+0121F269 call 0000000001208A80h
+0121F26E mov rax,[rel 6732E60h]
+0121F275 lea edx,[rdi+35h]
+0121F278 test rax,rax
+0121F27B mov dword [rsp+20h],1Fh
+0121F283 lea r8d,[rdi+1]
+0121F287 cmovne rbx,rax
+0121F28B lea rcx,[rel 6745B20h]
+0121F292 lea r9,[rbx+10h]
+0121F296 call 0000000001208A80h
+0121F29B lea r9,[rel 678E610h]
+0121F2A2 mov dword [rsp+20h],1Fh
+0121F2AA lea edx,[rdi+3Bh]
+0121F2AD lea r8d,[rdi+1]
+0121F2B1 lea rcx,[rel 6745B20h]
+0121F2B8 call 0000000001208A80h
+0121F2BD lea r9,[rel 678EB10h]
+0121F2C4 mov dword [rsp+20h],1Fh
+0121F2CC lea edx,[rdi+3Ah]
+0121F2CF lea r8d,[rdi+1]
+0121F2D3 lea rcx,[rel 6745B20h]
+0121F2DA call 0000000001208A80h
+0121F2DF mov rax,[rel 678E710h]
+0121F2E6 lea r9,[rbp+10h]
+0121F2EA mov [rbp+10h],rax
+0121F2EE lea edx,[rdi+45h]
+0121F2F1 mov dword [rsp+20h],1Fh
+0121F2F9 lea r8d,[rdi+1]
+0121F2FD lea rcx,[rel 6745B20h]
+0121F304 call 0000000001208A80h
+0121F309 mov rax,[rel 6732F30h]
+0121F310 lea r9,[rel 678D800h]
+0121F317 test rax,rax
+0121F31A mov dword [rsp+20h],1Fh
+0121F322 lea edx,[rdi+21h]
+0121F325 cmovne r9,rax
+0121F329 lea r8d,[rdi+1]
+0121F32D add r9,10h
+0121F331 lea rcx,[rel 6745B20h]
+0121F338 call 0000000001208A80h
+0121F33D mov rax,[rel 6732C40h]
+0121F344 lea edx,[rdi+22h]
+0121F347 mov dword [rsp+20h],1Fh
+0121F34F mov ebx,98h
+0121F354 lea r8d,[rdi+1]
+0121F358 lea rcx,[rel 6745B20h]
+0121F35F test rax,rax
+0121F362 je short 000000000121F3A2h
+0121F364 mov rax,[rax+1690h]
+0121F36B cmp [rax+6700h],edi
+0121F371 lea r9,[rax+65C8h]
+0121F378 cmove r9,rbx
+0121F37C call 0000000001208A80h
+0121F381 mov rax,[rel 6732C40h]
+0121F388 mov rcx,[rax+1690h]
+0121F38F cmp [rcx+68F0h],edi
+0121F395 lea r9,[rcx+67B8h]
+0121F39C cmove r9,rbx
+0121F3A0 jmp short 000000000121F3B5h
+0121F3A2 lea r9,[rel 678E610h]
+0121F3A9 call 0000000001208A80h
+0121F3AE lea r9,[rel 678E610h]
+0121F3B5 mov edx,25h
+0121F3BA mov dword [rsp+20h],1Fh
+0121F3C2 lea rcx,[rel 6745B20h]
+0121F3C9 lea r8d,[rdx-24h]
+0121F3CD call 0000000001208A80h
+0121F3D2 mov edx,23h
+0121F3D7 mov dword [rsp+20h],1Fh
+0121F3DF lea r9,[rel 549E480h]
+0121F3E6 lea rcx,[rel 6745B20h]
+0121F3ED lea r8d,[rdx-22h]
+0121F3F1 call 0000000001208A80h
+0121F3F6 mov rax,[rel 678FB08h]
+0121F3FD lea r9,[rbp+10h]
+0121F401 mov edx,26h
+0121F406 mov [rbp+10h],rax
+0121F40A lea rcx,[rel 6745B20h]
+0121F411 mov dword [rsp+20h],1Fh
+0121F419 lea r8d,[rdx-25h]
+0121F41D call 0000000001208A80h
+0121F422 call 000000000108C820h
+0121F427 mov edx,55h
+0121F42C mov dword [rsp+20h],1Fh
+0121F434 lea r9,[rel 678D910h]
+0121F43B lea rcx,[rel 6745B20h]
+0121F442 lea r8d,[rdx-54h]
+0121F446 call 0000000001208A80h
+0121F44B mov edx,2Ch
+0121F450 mov dword [rsp+20h],1Fh
+0121F458 lea r9,[rel 678E610h]
+0121F45F lea rcx,[rel 6745B20h]
+0121F466 lea r8d,[rdx-2Bh]
+0121F46A call 0000000001208A80h
+0121F46F mov edx,27h
+0121F474 mov dword [rsp+20h],1Fh
+0121F47C lea r9,[rel 678F210h]
+0121F483 lea rcx,[rel 6745B20h]
+0121F48A lea r8d,[rdx-26h]
+0121F48E call 0000000001208A80h
+0121F493 mov edx,28h
+0121F498 mov dword [rsp+20h],1Fh
+0121F4A0 lea r9,[rel 678E410h]
+0121F4A7 lea rcx,[rel 6745B20h]
+0121F4AE lea r8d,[rdx-27h]
+0121F4B2 call 0000000001208A80h
+0121F4B7 mov edx,29h
+0121F4BC mov dword [rsp+20h],1Fh
+0121F4C4 lea r9,[rel 678E310h]
+0121F4CB lea rcx,[rel 6745B20h]
+0121F4D2 lea r8d,[rdx-28h]
+0121F4D6 call 0000000001208A80h
+0121F4DB mov edx,2Ah
+0121F4E0 mov dword [rsp+20h],1Fh
+0121F4E8 lea r9,[rel 678E610h]
+0121F4EF lea rcx,[rel 6745B20h]
+0121F4F6 lea r8d,[rdx-29h]
+0121F4FA call 0000000001208A80h
+0121F4FF mov rax,[rel 6732E08h]
+0121F506 lea r9,[rbp+10h]
+0121F50A mov rcx,[rel 678E610h]
+0121F511 test rax,rax
+0121F514 mov edx,3Eh
+0121F519 mov dword [rsp+20h],1Fh
+0121F521 cmovne rcx,rax
+0121F525 mov [rbp+10h],rcx
+0121F529 lea rcx,[rel 6745B20h]
+0121F530 lea r8d,[rdx-3Dh]
+0121F534 call 0000000001208A80h
+0121F539 mov rax,[rel 6732E10h]
+0121F540 lea r9,[rbp+10h]
+0121F544 mov rcx,[rel 678E610h]
+0121F54B test rax,rax
+0121F54E mov edx,3Fh
+0121F553 mov dword [rsp+20h],1Fh
+0121F55B cmovne rcx,rax
+0121F55F mov [rbp+10h],rcx
+0121F563 lea rcx,[rel 6745B20h]
+0121F56A lea r8d,[rdx-3Eh]
+0121F56E call 0000000001208A80h
+0121F573 call 00000000010A7E60h
+0121F578 cmp dword [rel 67326F8h],3
+0121F57F je short 000000000121F5A8h
+0121F581 cmp [rel 6732AE0h],dil
+0121F588 jne short 000000000121F5A8h
+0121F58A mov rax,[rel 6732C48h]
+0121F591 test rax,rax
+0121F594 je short 000000000121F59Fh
+0121F596 cmp [rax+74Dh],dil
+0121F59D jne short 000000000121F5A8h
+0121F59F mov rax,[rel 52F1120h]
+0121F5A6 jmp short 000000000121F5AFh
+0121F5A8 mov rax,[rel 52F1138h]
+0121F5AF mov edx,32h
+0121F5B4 mov [rbp+10h],rax
+0121F5B8 lea r9,[rbp+10h]
+0121F5BC mov dword [rsp+20h],1Fh
+0121F5C4 lea rcx,[rel 6745B20h]
+0121F5CB lea r8d,[rdx-31h]
+0121F5CF call 0000000001208A80h
+0121F5D4 mov rax,[rel 52F1108h]
+0121F5DB lea r9,[rbp+10h]
+0121F5DF mov edx,33h
+0121F5E4 mov [rbp+10h],rax
+0121F5E8 lea rcx,[rel 6745B20h]
+0121F5EF mov dword [rsp+20h],1Fh
+0121F5F7 lea r8d,[rdx-32h]
+0121F5FB call 0000000001208A80h
+0121F600 call 0000000001353A90h
+0121F605 mov edx,41h
+0121F60A mov dword [rsp+20h],1Fh
+0121F612 lea r9,[rbp+10h]
+0121F616 mov rcx,[rax+50h]
+0121F61A mov [rbp+10h],rcx
+0121F61E lea r8d,[rdx-40h]
+0121F622 lea rcx,[rel 6745B20h]
+0121F629 call 0000000001208A80h
+0121F62E mov rax,[rel 6732C40h]
+0121F635 lea rcx,[rel 6745B20h]
+0121F63C mov dword [rsp+20h],1Fh
+0121F644 mov edx,2Eh
+0121F649 lea r8d,[rdx-2Dh]
+0121F64D test rax,rax
+0121F650 je near 000000000121F73Dh
+0121F656 mov rax,[rax+1690h]
+0121F65D cmp [rax+6130h],edi
+0121F663 lea r9,[rax+5FF8h]
+0121F66A cmove r9,rbx
+0121F66E call 0000000001208A80h
+0121F673 mov rax,[rel 6732C40h]
+0121F67A mov edx,2Fh
+0121F67F mov dword [rsp+20h],1Fh
+0121F687 mov rcx,[rax+1690h]
+0121F68E lea r8d,[rdx-2Eh]
+0121F692 cmp [rcx+6320h],edi
+0121F698 lea r9,[rcx+61E8h]
+0121F69F lea rcx,[rel 6745B20h]
+0121F6A6 cmove r9,rbx
+0121F6AA call 0000000001208A80h
+0121F6AF mov rax,[rel 6732C40h]
+0121F6B6 mov rcx,[rax+1690h]
+0121F6BD cmp [rcx+12100h],edi
+0121F6C3 lea rax,[rcx+11F30h]
+0121F6CA cmove rax,rdi
+0121F6CE test rax,rax
+0121F6D1 jne short 000000000121F6FAh
+0121F6D3 cmp [rcx+6EC0h],edi
+0121F6D9 lea rax,[rcx+6CF0h]
+0121F6E0 cmove rax,rdi
+0121F6E4 test rax,rax
+0121F6E7 je short 000000000121F734h
+0121F6E9 cmp [rcx+6EC0h],edi
+0121F6EF lea rax,[rcx+6CF0h]
+0121F6F6 cmove rax,rdi
+0121F6FA mov rax,[rax+98h]
+0121F701 mov edx,42h
+0121F706 mov [rbp+10h],rax
+0121F70A lea r9,[rbp+10h]
+0121F70E mov dword [rsp+20h],1Fh
+0121F716 lea rcx,[rel 6745B20h]
+0121F71D lea r8d,[rdx-41h]
+0121F721 call 0000000001208A80h
+0121F726 mov rcx,[rel 6732C40h]
+0121F72D call 0000000001235390h
+0121F732 jmp short 000000000121F7B0h
+0121F734 mov rax,[rel 678E610h]
+0121F73B jmp short 000000000121F701h
+0121F73D mov rax,[rel 678E610h]
+0121F744 lea r9,[rbp+10h]
+0121F748 mov [rbp+10h],rax
+0121F74C call 0000000001208A80h
+0121F751 mov rax,[rel 678E610h]
+0121F758 lea r9,[rbp+10h]
+0121F75C mov edx,2Fh
+0121F761 mov [rbp+10h],rax
+0121F765 lea rcx,[rel 6745B20h]
+0121F76C mov dword [rsp+20h],1Fh
+0121F774 lea r8d,[rdx-2Eh]
+0121F778 call 0000000001208A80h
+0121F77D mov rax,[rel 678E610h]
+0121F784 lea r9,[rbp+10h]
+0121F788 mov edx,42h
+0121F78D mov [rbp+10h],rax
+0121F791 lea rcx,[rel 6745B20h]
+0121F798 mov dword [rsp+20h],1Fh
+0121F7A0 lea r8d,[rdx-41h]
+0121F7A4 call 0000000001208A80h
+0121F7A9 mov rax,[rel 678E610h]
+0121F7B0 mov r8d,1
+0121F7B6 mov dword [rsp+20h],1Fh
+0121F7BE lea r9,[rbp+10h]
+0121F7C2 mov [rbp+10h],rax
+0121F7C6 lea rcx,[rel 6745B20h]
+0121F7CD lea edx,[r8+42h]
+0121F7D1 call 0000000001208A80h
+0121F7D6 mov rax,[rel 678E610h]
+0121F7DD lea r9,[rbp+10h]
+0121F7E1 mov edx,78h
+0121F7E6 mov [rbp+10h],rax
+0121F7EA lea rcx,[rel 6745B20h]
+0121F7F1 mov dword [rsp+20h],1Fh
+0121F7F9 lea r8d,[rdx-77h]
+0121F7FD call 0000000001208A80h
+0121F802 mov rax,[rel 678E610h]
+0121F809 lea r9,[rbp+10h]
+0121F80D mov edx,79h
+0121F812 mov [rbp+10h],rax
+0121F816 lea rcx,[rel 6745B20h]
+0121F81D mov dword [rsp+20h],1Fh
+0121F825 lea r8d,[rdx-78h]
+0121F829 call 0000000001208A80h
+0121F82E mov rax,[rel 678E610h]
+0121F835 lea r9,[rbp+10h]
+0121F839 mov edx,7Ah
+0121F83E mov [rbp+10h],rax
+0121F842 lea rcx,[rel 6745B20h]
+0121F849 mov dword [rsp+20h],1Fh
+0121F851 lea r8d,[rdx-79h]
+0121F855 call 0000000001208A80h
+0121F85A mov rax,[rel 678E610h]
+0121F861 lea r9,[rbp+10h]
+0121F865 mov edx,7Bh
+0121F86A mov [rbp+10h],rax
+0121F86E lea rcx,[rel 6745B20h]
+0121F875 mov dword [rsp+20h],1Fh
+0121F87D lea r8d,[rdx-7Ah]
+0121F881 call 0000000001208A80h
+0121F886 mov rax,[rel 678E610h]
+0121F88D lea r9,[rbp+10h]
+0121F891 mov edx,7Ch
+0121F896 mov [rbp+10h],rax
+0121F89A lea rcx,[rel 6745B20h]
+0121F8A1 mov dword [rsp+20h],1Fh
+0121F8A9 lea r8d,[rdx-7Bh]
+0121F8AD call 0000000001208A80h
+0121F8B2 mov rax,[rel 678E610h]
+0121F8B9 lea r9,[rbp+10h]
+0121F8BD mov edx,7Dh
+0121F8C2 mov [rbp+10h],rax
+0121F8C6 lea rcx,[rel 6745B20h]
+0121F8CD mov dword [rsp+20h],1Fh
+0121F8D5 lea r8d,[rdx-7Ch]
+0121F8D9 call 0000000001208A80h
+0121F8DE mov rax,[rel 678E610h]
+0121F8E5 lea r9,[rbp+10h]
+0121F8E9 mov edx,7Eh
+0121F8EE mov [rbp+10h],rax
+0121F8F2 lea rcx,[rel 6745B20h]
+0121F8F9 mov dword [rsp+20h],1Fh
+0121F901 lea r8d,[rdx-7Dh]
+0121F905 call 0000000001208A80h
+0121F90A mov rax,[rel 678E610h]
+0121F911 lea r9,[rbp+10h]
+0121F915 mov edx,7Fh
+0121F91A mov [rbp+10h],rax
+0121F91E lea rcx,[rel 6745B20h]
+0121F925 mov dword [rsp+20h],1Fh
+0121F92D lea r8d,[rdx-7Eh]
+0121F931 call 0000000001208A80h
+0121F936 lea rcx,[rel 6745B20h]
+0121F93D mov rbx,[rsp+48h]
+0121F942 mov rdi,[rsp+50h]
+0121F947 add rsp,30h
+0121F94B pop rbp
+0121F94C jmp 0000000001205750h

@@ -1,0 +1,18 @@
+{
+  "cache": [
+    [
+      "NoIntro-2Second-CurrentBuild.stage",
+      2392727,
+      791794618,
+      -892191310,
+      [
+        [
+          "Short intro (2-second initialization test) by Local compatibility test",
+          "NoIntro-2Second-CurrentBuild.stage",
+          "STAGE_RCRA_V2"
+        ]
+      ]
+    ]
+  ],
+  "format": "1"
+}

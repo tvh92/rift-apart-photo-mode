@@ -1,0 +1,6 @@
+# Keep audited sources and packages byte-exact across Windows checkouts.
+* -text
+*.dll binary
+*.png binary
+*.jpg binary
+*.jpeg binary

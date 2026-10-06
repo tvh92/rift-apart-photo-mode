@@ -1,0 +1,32 @@
+# Bridge light source registry trace (read-only)
+
+Build: `RiftApart.exe` SHA256 `51299faca61866cf10ea9035a15b8f22600a56557dd5ffc1aad390d5a54e6d82`. Static executable disassembly only. No live-process access, source edits, runtime writes, or installation changes. The requested goal was a bounded static path to actual LightDef source pointers for the bridge near/just-inside/far captures.
+
+## Result
+
+No stable global array that can be safely identified as a catalog of LightDef pointers was established. The apparently relevant manager/query registries hold query metadata, geometric inputs, and transient query outputs. They do not provide an unambiguous all-LightDef source list. Do not enumerate `6747CE0` as if every entry were a LightDef.
+
+The live capture's pass-0x67 records are submission records (`0x170` bytes); the source prefix is separately read only when a query already supplies a source pointer. Current near/far captures retain submitted records, but the pass-BB marker path was retracted because its caller supplied zero for the query-bearing argument. There is therefore no verified live query object or global source array to use for omitted lamps.
+
+## Exact structures seen
+
+- `0x12B97E0` indexes a manager table using `(selector + 0x10E) * 0x70`. For LightSubmit's selector 1, the node is RVA `0x674EC10` (`0x6747580 + 0x10F * 0x70`), with manager-node stride `0x70`. The global `0x674EC74` is node `+0x64`; `0x10BB680` reads it to size an output allocation (adds 16, rounds down to a 16-entry boundary, then multiplies by 8). This is a sizing/allocation input, not a demonstrated LightDef count.
+- `0x1669FE0` reads that manager node's `+0x48` and `+0x68`, selecting a helper that transforms/copies request geometry. Its `+0x30` is the alternate helper input. This path feeds a spatial request, not source enumeration.
+- `0x32D4C80` and `0x32D4C98`, passed as apparently descriptor-like pointers, contain ASCII diagnostic labels (`LightSubmitQuery`, `LightSubmitQuery Ray-Tracing Consumers`, `LightSubmitOccl`, `LightOcclJob`, `32 Lights`, `34 Lights`, `36 Lights`). They are names, not pointer-table descriptors.
+- `0x107B750` registers transient query request nodes in one of two manager globals (`0x6414C30` or `0x64151D8`, selected from request flags). The node array starts at manager `+0x508`, with `0xC0`-byte stride; manager `+0x514` is the occupied count and `+0x510` the capacity. This is a request registry. Its nodes contain copied shape data and output/count fields; they are not LightDef entries.
+- `0x12B8740` is the query worker. It traverses descriptor/page/index records and appends query-specific source references into query output buffers. The references arise from the worker's current page/index traversal. Static disassembly did not identify that backing page/index storage as a complete LightDef catalog or recover a safe global count for it.
+
+All numeric code/data locations above are RVAs for the exact executable build, not process absolute addresses.
+
+## Capture implication
+
+The six bridge lamps are observable when present in the per-view query/submission data. The absent z≈42 pair cannot be safely inspected through a guessed manager-node array. Reusing the known live source pointers only observes those already returned by the query; it cannot recover the omitted pair. `0x6747CE0` is a packed-link/entity registry used by unrelated validated paths and is not type-filtered to LightDef by this trace.
+
+The requested bounded static-registry path remains unresolved. A useful next step needs a proven producer or typed source registry for LightDef ownership, or a corrected capture of the live query's actual output pointer/count. Until then, the static flags/view-mask fields at source offsets `+0x5C`, `+0x88`, `+0x8C`, and `+0x90` can only be compared for pointers already obtained from a valid query.
+
+## Evidence
+
+- `work/light-view-query-owner-main.txt`: `0x10BB680` allocation and selector-1 registrations; query request construction.
+- `work/light-optional-query-shape-main.txt`: `0x12B97E0`, `0x12B8740`, and `0x107B750` paths.
+- `work/light-source-cull-followup.txt`: existing upstream cull/eligibility findings.
+- Read-only executable disassembly of `0x1669FE0`, `0x12B8740`, `0x107B750`, `0x107AA50`, `0x1603D40`, and `0x1604B60`; static bytes at `0x32D4C80`/`0x32D4C98` verified as strings.

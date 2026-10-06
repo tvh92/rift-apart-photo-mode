@@ -1,0 +1,15 @@
+In file included from C:\Users\Tim\Documents\Codex\2026-10-04\prompt-for-the-research-instance-research\work\native-abi\PhotoFogProbe.c:7:
+C:\Users\Tim\Documents\Codex\2026-10-04\prompt-for-the-research-instance-research\work\native-abi/../../outputs/camera-native-fog-candidate/GeometryLOD.h:105:13: warning: unused function 'geometry_prepare' [-Wunused-function]
+  105 | static BOOL geometry_prepare(GeometryPatch *patch,uintptr_t base,uintptr_t image_end,
+      |             ^~~~~~~~~~~~~~~~
+C:\Users\Tim\Documents\Codex\2026-10-04\prompt-for-the-research-instance-research\work\native-abi/../../outputs/camera-native-fog-candidate/GeometryLOD.h:184:13: warning: unused function 'geometry_install' [-Wunused-function]
+  184 | static BOOL geometry_install(GeometryPatch *patch) {return geometry_change(patch,TRUE);}
+      |             ^~~~~~~~~~~~~~~~
+C:\Users\Tim\Documents\Codex\2026-10-04\prompt-for-the-research-instance-research\work\native-abi/../../outputs/camera-native-fog-candidate/GeometryLOD.h:186:13: warning: unused function 'geometry_restore' [-Wunused-function]
+  186 | static BOOL geometry_restore(GeometryPatch *patch) {
+      |             ^~~~~~~~~~~~~~~~
+3 warnings generated.
+PhotoFogProbe passed: real relay ABI, exact guards, entry cache, toggle, auxiliary views, exit/reentry, untouched texture tail, callsite restoration; calls=12
+PASS: baseline lifecycle/teardown/metadata guards with Ctrl rising edge, no held repeats, and focus gate; no indicator code.
+PASS: owner filtering, normal/Shift/release speeds, baseline restore, replacement camera identity, and hotkey restoration of collision plus both geometry selectors.
+{"hid_guid_matches_system": true, "all_exports_resolved": 44, "non_game_hook_guard": "refused correctly"}

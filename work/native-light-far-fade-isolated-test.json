@@ -1,0 +1,19 @@
+{
+  "exe_sha256": "51299faca61866cf10ea9035a15b8f22600a56557dd5ffc1aad390d5a54e6d82",
+  "function_rva": "0x1099200",
+  "function_bytes": 637,
+  "isolated_cases_passed": 480,
+  "changed_original_instruction": "JAE1099366 -> unconditional same-target jump at10992BD",
+  "example_native_RGB": [
+    0.10000000149011612,
+    0.20000000298023224,
+    0.30000001192092896
+  ],
+  "example_retained_RGB": [
+    0.20000000298023224,
+    0.4000000059604645,
+    0.6000000238418579
+  ],
+  "preserved": "Native near fading, separate scalar/type outputs, debug multiplier and no-far-flag behavior match.",
+  "limitations": "No live process or installed changes. Full GPU consumer and production relocation/unwind/gates are not established."
+}

@@ -1,0 +1,345 @@
+BootSequence_PC.movie: 1 matches
+  0x2fb0ba4: b'BootSequence_China.movie\x00\x00\x00\x00movies/Boot/BootSequence_EU.movie\x00\x00\x00\x00\x00\x00\x00movies/Boot/BootSequence_PC.movie\x00\x00\x00\x00\x00\x00\x00movies/Boot/GRAC_Korea.movie\x00\x00\x00\x00HUD_UI\x00\x00MoviePlayer\x00\x00\x00\x00\x00BUFFER AND SIZE: %p %d\n\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+bootsequence_pc: 1 matches
+  0x2fb0ba4: b'BootSequence_China.movie\x00\x00\x00\x00movies/Boot/BootSequence_EU.movie\x00\x00\x00\x00\x00\x00\x00movies/Boot/BootSequence_PC.movie\x00\x00\x00\x00\x00\x00\x00movies/Boot/GRAC_Korea.movie\x00\x00\x00\x00HUD_UI\x00\x00MoviePlayer\x00\x00\x00\x00\x00BUFFER AND SIZE: %p %d\n\x00\x00\x00\x00\x00\x00\x00\x00'
+skipintro: 2 matches
+  0x4750320: b'pJ\x0b\xa2N1SR\x05~`\xdc.\xa0fxX\xfb&C\x01\x00\x00\x00\xe8\xd8\x1aC\x01\x00\x00\x00 \x11uD\x01\x00\x00\x000\x11uD\x01\x00\x00\x00@\x11uD\x01\x00\x00\x00X\x11uD\x01\x00\x00\x00h\x11uD\x01\x00\x00\x00\x98\xb8\xecB\x01\x00\x00\x00SkipIntro\x00\x00\x00\x00\x00\x00\x00SkipOutro\x00\x00\x00\x00\x00\x00\x00UseDestinationFacing\x00\x00\x00\x00IgnoreHero\x00\x00\x00\x00\x00\x00StopForHero\x00\x00\x00\x00\x00\x0b\x0b\x0f\x0f\x0f\x0f\x0f\x0f\x00\x00\x00\x00\x00\x00\x00\x00\x0e\x0e\x0e\x0e\x0e'
+  0x4757448: b'0\x82uD\x01\x00\x00\x00H\x82uD\x01\x00\x00\x00UseClosestPoint\x00AddUnsyncedComponents\x00\x00\x00StopListeningAtEnd\x00\x00\x00\x00\x00\x00SkipIntroPath\x00\x00\x00\x0b\x0f\x0f\x0f\x0f\x0f\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x0e\x0e\x0e\x0e\x0e\x0e\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x08\x00\x00\x00\x0c\x00\x00\x00\r\x00\x00\x00\x0e\x00\x00\x00\x0f\x00\x00\x00\x10\x00\x00\x004\x8b"\x10\xcc\xd2\xd2D\xcc\xd2\xd2D\xcc\xd2\xd2D\xcc\xd2\xd2D\xcc'
+skip_intro: 0 matches
+nointro: 0 matches
+noboot: 0 matches
+nomovie: 0 matches
+nosplash: 0 matches
+splash: 123 matches
+  0x2f032b5: b'\x00\x00\x000\x9fR@\x01\x00\x00\x00@\x9fR@\x01\x00\x00\x00`\xa0R@\x01\x00\x00\x00 \xfd(@\x01\x00\x00\x00\x80\xa0R@\x01\x00\x00\x00P~\xff@\x01\x00\x00\x00`~\xff@\x01\x00\x00\x00p~\xff@\x01\x00\x00\x00 \x9fR@\x01\x00\x00\x00WaterSplashGenerator\x00\x00\x00\x00actors/water_splash/water_splash.actor\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+  0x2f032d5: b'\x00\x00\x00\x80\xa0R@\x01\x00\x00\x00P~\xff@\x01\x00\x00\x00`~\xff@\x01\x00\x00\x00p~\xff@\x01\x00\x00\x00 \x9fR@\x01\x00\x00\x00WaterSplashGenerator\x00\x00\x00\x00actors/water_splash/water_splash.actor\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+  0x2f032e2: b'\xff@\x01\x00\x00\x00`~\xff@\x01\x00\x00\x00p~\xff@\x01\x00\x00\x00 \x9fR@\x01\x00\x00\x00WaterSplashGenerator\x00\x00\x00\x00actors/water_splash/water_splash.actor\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+  0x2f03500: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00A water splash actor (%s) has a synced component.\x00\x00\x00\x00\x00\x00\x00p\xb0\xa7D\x01\x00\x00\x00@\xabR@\x01\x00\x00\x00 \xabR@\x01\x00\x00\x000\xabR@\x01\x00\x00\x00@~\xff@\x01\x00\x00\x00 \xfd(@\x01\x00\x00\x00p\xabR@\x01\x00\x00\x00P~'
+  0x2f0358d: b'\x00\x00\x00 \xabR@\x01\x00\x00\x000\xabR@\x01\x00\x00\x00@~\xff@\x01\x00\x00\x00 \xfd(@\x01\x00\x00\x00p\xabR@\x01\x00\x00\x00P~\xff@\x01\x00\x00\x00`~\xff@\x01\x00\x00\x00p~\xff@\x01\x00\x00\x00\x10\xabR@\x01\x00\x00\x00WaterSplashTracker\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+  0x2f20105: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00OverlayStartData\x00\x00\x00\x00\x00\x00\x00\x00pressStartText\x00\x00logoPath\x00\x00\x00\x00\x00\x00\x00\x00TEXT_SPLASH_START\x00\x00\x00\x00\x00\x00\x00(\x8d\xa8D\x01\x00\x00\x00\xd0\xaa[@\x01\x00\x00\x00P\xab[@\x01\x00\x00\x00\xf0\xab[@\x01\x00\x00\x00\xa0\xb2[@\x01\x00\x00\x00\xc0\xb2[@\x01\x00\x00\x00P\xac[@\x01\x00\x00\x00@\xd2X@\x01\x00\x00\x000\xd9X@\x01\x00\x00\x00\x10\xe4X@\x01\x00\x00\x00\x00\xd5X@\x01\x00\x00'
+  0x30ba7af: b'toCollect\x00\x00\x00\x00\x00\x00\x00\x00RezoneToWorld\x00\x00\x00StopMovingOnAttach\x00\x00\x00\x00\x00\x00CanBeBumped\x00\x00\x00\x00\x00DoWaterSplash\x00\x00\x00DeleteOnPickup\x00\x00BobData\x00PercentCollectedRenderConstant\x00\x00UseEmbeddedOffer\x00\x00\x00\x00Offer\x00\x00\x00\x00\x00\x00\x00DeleteOnE'
+  0x311c198: b'0\xcf\x11C\x01\x00\x00\x00 \xff\x03C\x01\x00\x00\x00\xf3N\x8f\xd7\xfbG\x12\n\x97Z@\x84\x00\x00\x00\x00\x80\xcf\x11C\x01\x00\x00\x00\x90\xcf\x11C\x01\x00\x00\x00\x98\xcf\x11C\x01\x00\x00\x00LocatorHash\x00\x00\x00\x00\x00YOffset\x00Splash\x00\x00\n\x08\x0b\x00\x00\x00\x00\x00\x0e\x0e\x0e\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x08\x00\x00\x00\x18\x00\x00\x00\x1c\x00\x00\x00\x00\x00\x00\x00\xf8\xf9j\xa7P\xbd7\x11L]\xb8V\x00\x00\x00\x00X\x9b\xe6B\x01\x00\x00\x00X\x9b\xe6B\x01\x00\x00\x00X\x9b\xe6B\x01\x00\x00\x00X\x9b\xe6B\x01\x00\x00\x00X\x9b'
+  0x311c250: b'X\x9b\xe6B\x01\x00\x00\x00X\x9b\xe6B\x01\x00\x00\x00\x80\xcf\x11C\x01\x00\x00\x00\x90\xcf\x11C\x01\x00\x00\x00\x98\xcf\x11C\x01\x00\x00\x00Ej?\xb1T1\x9e\x95\xa2K\x91O\x00\x00\x00\x00\xe0K\x11C\x01\x00\x00\x00\xe8K\x06C\x01\x00\x00\x00P\xd0\x11C\x01\x00\x00\x00SplashGeneratorData\x00\x14\n\r\x00\x00\x00\x02\x00\x0e\x0e\x0e\x00\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x08\x00\x00\x00\x10\x00\x00\x00(\x00\x00\x00\x00\x00\x00\x00\xe9\x95\xde\xec\xf8\xf9j\xa7P\x02\x08\x82\x00\x00\x00\x00X\x9b\xe6B\x01\x00\x00\x00X\x9b\xe6B\x01\x00\x00\x00X\x9b\xe6B\x01\x00\x00\x00X\x9b'
+  0x311c5b8: b'\xb0\xd1\x11C\x01\x00\x00\x00\xc8\xd1\x11C\x01\x00\x00\x00\xd8\xd1\x11C\x01\x00\x00\x00BotConfigEmergentVO\x00\x00\x00\x00\x00BotConfigFiring\x00DodgeConfig\x00\x00\x00\x00\x00SplashGeneratorConfig\x00\x00\x00BotConfigWaterFx\x00\x00\x00\x00\x00\x00\x00\x00GameBotConfigDeath\x00\x00\x00\x00\x00\x008\xd2\xafD\x01\x00\x00\x00\xa0&\xc2@\x01\x00\x00\x00\x00&\xc2@\x01\x00\x00\x00p&\xc2@\x01\x00\x00\x00\xb8\xd2'
+  0x311c9d8: b'\x00\xb1I@\x01\x00\x00\x00\x10\xb1I@\x01\x00\x00\x00\x00D\xc2@\x01\x00\x00\x00\xf0D\xc2@\x01\x00\x00\x00\xf0E\xc2@\x01\x00\x00\x00 I\xc2@\x01\x00\x00\x00@@\xc2@\x01\x00\x00\x00\x007\xc2@\x01\x00\x00\x00Water impulse / splash fx config\x00\x00\x00\x00\x00\x00\x00\x00\xa8\xd7\xafD\x01\x00\x00\x00@C\xc2@\x01\x00\x00\x00\xb0C\xc2@\x01\x00\x00\x00`B\xc2@\x01\x00\x00\x00\xd0B\xc2@\x01\x00\x00\x00\xb0A\xc2@\x01\x00\x00\x00\x00\xb1I@\x01\x00\x00\x00\x10\xb1I@\x01\x00\x00\x00 D\xc2@\x01\x00\x00\x00 E\xc2@\x01\x00\x00\x00`F'
+  0x3136d58: b'er\x00\x00\x00\x00\x00\x00AmbientOcclusion DistanceInMeters Multiplier\x00\x00\x00\x00Weather WetSurfaces VFX Splash Range Multiplier\x00Weather Particles MaxDrawDistance Multiplier\x00\x00\x00\x00Weather Particles Density Multipli'
+  0x313722a: b'lier\x00\x00AORadiusInMetersMultiplier\x00\x00\x00\x00\x00\x00AODistanceInMetersMultiplier\x00\x00\x00\x00WeatherVFXSplashRangeMultiplier\x00WeatherParticlesMaxDrawDistanceMultiplier\x00\x00\x00\x00\x00\x00\x00WeatherParticlesDensityMultiplier\x00\x00\x00'
+  0x3149380: b' \xb6i\xa5\x07+<O\x00\x00\x00\x00\x00\x00\x00\x00\x80\xa1\x14C\x01\x00\x00\x00\xb0\xa1\x14C\x01\x00\x00\x00\xc8\xa1\x14C\x01\x00\x00\x00\xe0\xa1\x14C\x01\x00\x00\x00\xf0\xa1\x14C\x01\x00\x00\x00\x08\xa2\x14C\x01\x00\x00\x00 \xa2\x14C\x01\x00\x00\x008\xa2\x14C\x01\x00\x00\x00SplashSmallSpeed\x00\x00\x00\x00\x00\x00\x00\x00P\xbd7\x11P\xbd7\x11P\xbd7\x11P\xbd7\x11P\xbd7\x11\x00\x00\x00\x00SplashMediumSpeed\x00\x00\x00\x00\x00\x00\x00SplashLargeSpeed\x00\x00\x00\x00\x00\x00\x00\x00SplashHuge'
+  0x31493b0: b'\xf0\xa1\x14C\x01\x00\x00\x00\x08\xa2\x14C\x01\x00\x00\x00 \xa2\x14C\x01\x00\x00\x008\xa2\x14C\x01\x00\x00\x00SplashSmallSpeed\x00\x00\x00\x00\x00\x00\x00\x00P\xbd7\x11P\xbd7\x11P\xbd7\x11P\xbd7\x11P\xbd7\x11\x00\x00\x00\x00SplashMediumSpeed\x00\x00\x00\x00\x00\x00\x00SplashLargeSpeed\x00\x00\x00\x00\x00\x00\x00\x00SplashHugeSpeed\x00SplashExitSmallSpeed\x00\x00\x00\x00SplashExitMediumSp'
+  0x31493c8: b'8\xa2\x14C\x01\x00\x00\x00SplashSmallSpeed\x00\x00\x00\x00\x00\x00\x00\x00P\xbd7\x11P\xbd7\x11P\xbd7\x11P\xbd7\x11P\xbd7\x11\x00\x00\x00\x00SplashMediumSpeed\x00\x00\x00\x00\x00\x00\x00SplashLargeSpeed\x00\x00\x00\x00\x00\x00\x00\x00SplashHugeSpeed\x00SplashExitSmallSpeed\x00\x00\x00\x00SplashExitMediumSpeed\x00\x00\x00SplashExitLargeSpe'
+  0x31493e0: b'\x00\x00\x00\x00\x00\x00\x00\x00P\xbd7\x11P\xbd7\x11P\xbd7\x11P\xbd7\x11P\xbd7\x11\x00\x00\x00\x00SplashMediumSpeed\x00\x00\x00\x00\x00\x00\x00SplashLargeSpeed\x00\x00\x00\x00\x00\x00\x00\x00SplashHugeSpeed\x00SplashExitSmallSpeed\x00\x00\x00\x00SplashExitMediumSpeed\x00\x00\x00SplashExitLargeSpeed\x00\x00\x00\x00SplashExitHugeSpee'
+  0x31493f0: b'P\xbd7\x11P\xbd7\x11P\xbd7\x11\x00\x00\x00\x00SplashMediumSpeed\x00\x00\x00\x00\x00\x00\x00SplashLargeSpeed\x00\x00\x00\x00\x00\x00\x00\x00SplashHugeSpeed\x00SplashExitSmallSpeed\x00\x00\x00\x00SplashExitMediumSpeed\x00\x00\x00SplashExitLargeSpeed\x00\x00\x00\x00SplashExitHugeSpeed\x00\x00\x00\x00\x00x\xa2\x14C\x01\x00\x00\x00\xa8\xa2'
+  0x3149408: b'diumSpeed\x00\x00\x00\x00\x00\x00\x00SplashLargeSpeed\x00\x00\x00\x00\x00\x00\x00\x00SplashHugeSpeed\x00SplashExitSmallSpeed\x00\x00\x00\x00SplashExitMediumSpeed\x00\x00\x00SplashExitLargeSpeed\x00\x00\x00\x00SplashExitHugeSpeed\x00\x00\x00\x00\x00x\xa2\x14C\x01\x00\x00\x00\xa8\xa2\x14C\x01\x00\x00\x00\xf0\xa2\x14C\x01\x00\x00\x00@\xa3\x14C\x01\x00\x00\x00\xa0\xa3'
+  0x3149420: b'rgeSpeed\x00\x00\x00\x00\x00\x00\x00\x00SplashHugeSpeed\x00SplashExitSmallSpeed\x00\x00\x00\x00SplashExitMediumSpeed\x00\x00\x00SplashExitLargeSpeed\x00\x00\x00\x00SplashExitHugeSpeed\x00\x00\x00\x00\x00x\xa2\x14C\x01\x00\x00\x00\xa8\xa2\x14C\x01\x00\x00\x00\xf0\xa2\x14C\x01\x00\x00\x00@\xa3\x14C\x01\x00\x00\x00\xa0\xa3\x14C\x01\x00\x00\x00Default FOV for th'
+BootSequence: 4 matches
+  0x2e688f8: b'Game_Cursor_Hand\x00\x00\x00\x00\x00\x00\x00\x00Photomode\x00\x00\x00\x00\x00\x00\x00RotateHideCursor\x00\x00\x00\x00\x00\x00\x00\x00LoadingScreen\x00\x00\x00BootSequence\x00\x00\x00\x00DebugMenu\x00\x00\x00\x00\x00\x00\x00P\x00r\x00o\x00x\x00i\x00m\x00a\x00 \x00N\x00o\x00v\x00a\x00\x00\x00\x00\x00\x00\x00\x00\x005d3a0813-20e8-4786-84ec-98713c7f4a04\x00\x00\x00\x00Stats th'
+  0x2fb0b54: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00movies/Boot/BootSequence_China.movie\x00\x00\x00\x00movies/Boot/BootSequence_EU.movie\x00\x00\x00\x00\x00\x00\x00movies/Boot/BootSequence_PC.movie\x00\x00\x00\x00\x00\x00\x00movi'
+  0x2fb0b7c: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00movies/Boot/BootSequence_China.movie\x00\x00\x00\x00movies/Boot/BootSequence_EU.movie\x00\x00\x00\x00\x00\x00\x00movies/Boot/BootSequence_PC.movie\x00\x00\x00\x00\x00\x00\x00movies/Boot/GRAC_Korea.movie\x00\x00\x00\x00HUD_UI\x00\x00Movi'
+  0x2fb0ba4: b'BootSequence_China.movie\x00\x00\x00\x00movies/Boot/BootSequence_EU.movie\x00\x00\x00\x00\x00\x00\x00movies/Boot/BootSequence_PC.movie\x00\x00\x00\x00\x00\x00\x00movies/Boot/GRAC_Korea.movie\x00\x00\x00\x00HUD_UI\x00\x00MoviePlayer\x00\x00\x00\x00\x00BUFFER AND SIZE: %p %d\n\x00\x00\x00\x00\x00'
+SkipIntro: 2 matches
+  0x4750320: b'pJ\x0b\xa2N1SR\x05~`\xdc.\xa0fxX\xfb&C\x01\x00\x00\x00\xe8\xd8\x1aC\x01\x00\x00\x00 \x11uD\x01\x00\x00\x000\x11uD\x01\x00\x00\x00@\x11uD\x01\x00\x00\x00X\x11uD\x01\x00\x00\x00h\x11uD\x01\x00\x00\x00\x98\xb8\xecB\x01\x00\x00\x00SkipIntro\x00\x00\x00\x00\x00\x00\x00SkipOutro\x00\x00\x00\x00\x00\x00\x00UseDestinationFacing\x00\x00\x00\x00IgnoreHero\x00\x00\x00\x00\x00\x00StopForHero\x00\x00\x00\x00\x00\x0b\x0b\x0f\x0f\x0f\x0f\x0f\x0f\x00\x00\x00\x00\x00\x00\x00\x00\x0e\x0e\x0e\x0e\x0e'
+  0x4757448: b'0\x82uD\x01\x00\x00\x00H\x82uD\x01\x00\x00\x00UseClosestPoint\x00AddUnsyncedComponents\x00\x00\x00StopListeningAtEnd\x00\x00\x00\x00\x00\x00SkipIntroPath\x00\x00\x00\x0b\x0f\x0f\x0f\x0f\x0f\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x0e\x0e\x0e\x0e\x0e\x0e\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x08\x00\x00\x00\x0c\x00\x00\x00\r\x00\x00\x00\x0e\x00\x00\x00\x0f\x00\x00\x00\x10\x00\x00\x004\x8b"\x10\xcc\xd2\xd2D\xcc\xd2\xd2D\xcc\xd2\xd2D\xcc\xd2\xd2D\xcc'
+boot movie: 0 matches
+
+ascii matching strings:
+  0x2e68730: configs/Boot/Boot.config
+  0x2e688f8: BootSequence
+  0x2e70b48: GameAwardHoverbootDoubleJump
+  0x2ef5688: HoverbootBoostVolumePrius
+  0x2ef5700: HoverbootBoostVolume
+  0x2ef57a8: HoverbootOmniBoostPad
+  0x2ef5d38: MagbootDismountVolume
+  0x2ef5dc0: MagbootDismountVolumePrius
+  0x2ef6040: MagbootLaunchHintVolume
+  0x2ef6058: MagbootLaunchHintVolume: DestinationHintVolumes
+  0x2ef60e0: MagbootModifierVolume
+  0x2ef6168: MagbootModifierVolumePrius
+  0x2f10308: magboot
+  0x2f135e0: /configs/UIConfig/UIBootGame.config
+  0x2f459c0: MagbootPlayerPosition
+  0x2f46fd8: Hoverboot
+  0x2f46ff8: MagbootLaunch
+  0x2f47020: HoverbootKick
+  0x2f47030: HoverbootKick Alt
+  0x2f4a570: HeroHoverbootData
+  0x2f4a610: HoverbootKickSpeedPercent
+  0x2f50788: NoMagbootVolume
+  0x2f50e20: NoMagbootVolumePrius
+  0x2f57310: visualeffect/character/enemy/enm_victor_reticle/hero_magbootlaunch_reticle.actor
+  0x2f5cd28: OverrideHoverbootConfigAction
+  0x2f5d460: HeroWearBootsAction
+  0x2f5e940: HeroWearBootsActionPrius
+  0x2f5e960: Hero Wear Boots
+  0x2f6ab38: HeroStateFallHoverboot
+  0x2f6b030: HeroStateFallHoverbootLocal
+  0x2f6b170: HeroStateFallHoverbootRemote
+  0x2f6b190: HeroStateHoverbootAction
+  0x2f6b1b0: HeroStateHoverbootUpdate
+  0x2f6b4d0: HeroStateHoverboot
+  0x2f6b4f8: Hoverboot_Turbulence
+  0x2f6b510: Hoverboot_Ramp_Incline
+  0x2f6b528: Hoverboot_Ramp_Decline
+  0x2f6b678: HeroStateHoverbootLocal
+  0x2f6b990: HeroStateHoverbootMelee
+  0x2f6bf00: HeroStateHoverbootMeleeLocal
+  0x2f6c050: HeroStateHoverbootMeleeRemote
+  0x2f6c070: HeroStateHoverbootRemote
+  0x2f6c298: HeroStateJumpHoverboot
+  0x2f6c3a8: HeroStateJumpHoverbootLand
+  0x2f6c710: HeroStateJumpHoverbootLandLocal
+  0x2f6c7c8: HeroStateJumpHoverbootLandRemote
+  0x2f6c9f8: HeroStateJumpHoverbootLocal
+  0x2f6ca16: G@HeroStateJumpHoverbootRemote
+  0x2f772c8: HeroStateMagbootLaunchAction
+  0x2f772e8: HeroStateMagbootLaunchUpdate
+  0x2f775b0: HeroStateMagbootLaunch
+  0x2f778a0: HeroStateMagbootLaunchLocal
+  0x2f77968: HeroStateMagbootLaunchRemote
+  0x2f7db98: GlideHoverboot
+  0x2f7dbf0: HoverbootAir
+  0x2f7dc00: HoverbootFall
+  0x2f7dc10: HoverbootBoost
+  0x2fb0b48: movies/Boot/BootSequence_China.movie
+  0x2fb0b70: movies/Boot/BootSequence_EU.movie
+  0x2fb0b98: movies/Boot/BootSequence_PC.movie
+  0x2fb0bc0: movies/Boot/GRAC_Korea.movie
+  0x2fc5640: BootingUp
+  0x3026ec0: kOmniboots
+  0x3026ed0: kGrindboots
+  0x3026ee0: kMagboots
+  0x3026ef0: kHoverboots
+  0x302b308: kHoverboot
+  0x302b490: kMagbootLaunch
+  0x302d070: kModeBoot
+  0x30322a0: HoverBootAutoKick
+  0x30322b8: HoverBootToggle
+  0x3033f00: BootFlowShown
+  0x3034120: True if the boot flow has been seen
+  0x3034170: True if user accepted during first time boot or changed value in the settings
+  0x307be58: HoverbootOmniBoostPadPrius
+  0x307c2a8: MagbootLaunchHintVolumePrius
+  0x307c2d8: MagbootLaunchSpeedModifier
+  0x307c318: Magboot Launch Speed Modifier
+  0x30a3f20: kPhotoBooth
+  0x30a4068: Photo Booth
+  0x30bab64: Boots
+  0x3119b20: GameAwardHoverbootDoubleJumpPrius
+  0x3133688: HoverbootCameraAimContextConfig
+  0x313b700: kGadgetOmniboots
+  0x313b718: kGadgetGrindboots
+  0x313b730: kGadgetMagboots
+  0x313b740: kGadgetHoverboots
+  0x3140950: HoverBootToggle_MKB
+  0x3142308: UIBootGameConfig
+  0x314b488: MagBootSpeeds
+  0x314d990: MagbootLaunchCameraAimContextConfig
+  0x314e370: Magboot Launch Camera Aim Context Config
+  0x314e3a0: Hoverboot Camera Aim Context Config
+  0x3151058: kBoots
+  0x3151148: BootsLookGroup
+  0x3151270: Boots Look Group
+  0x3151630: HoverBootsModel
+  0x3151640: GrindBootsModel
+  0x3151650: MagBootsModel
+  0x31518b8: Hover Boots Model
+  0x31518d0: Grind Boots Model
+  0x31518e8: Mag Boots Model
+  0x3154318: HoverbootFastCameraShakeConfig
+  0x31559c8: HeroMagbootConfig
+  0x3155f28: HoverbootMoveData
+  0x3156178: HoverbootKickData
+  0x3156890: HoverbootMeleeData
+  0x3156930: HoverbootJumpData
+  0x31569c8: MagbootLaunchMinDistance
+  0x31569e8: MagbootLaunchMaxDistance
+  0x3156a08: MagbootLaunchTurnSpeedGain
+  0x3156a28: MagbootLaunchTurnSpeedDamp
+  0x3156a48: MagbootLaunchTurnSpeedMax
+  0x3156a68: MagbootDiveAccel
+  0x3156a80: MagbootDiveMaxSpeed
+  0x3156ae8: HoverbootFallData
+  0x3156cd0: HoverbootSurfaceDeformationData
+  0x3156d68: Min distance to target for a magboot launch
+  0x3156d98: Max distance to target for a magboot launch
+  0x3156dc8: Acceleration when diving to target from magboot launch
+  0x3156e00: Max speed when diving to target from magboot launch
+  0x3156f48: HoverbootHoverEffectData
+  0x31571a8: HeroHoverbootConfig
+  0x315ae20: How fast a hoverboot melee decelerates to a stop player from their current speed.
+  0x315ae80: Min animation rate scale, applied when hoverbooting at max speed.
+  0x315bad8: MagbootConfig
+  0x315bc70: HoverbootConfig
+  0x315cc08: HoverbootJumpConfig
+  0x315cc20: HoverbootDoubleJumpConfig
+  0x315cc40: HoverbootFallJumpConfig
+  0x315cc58: HoverbootBoostJumpConfig
+  0x315d4d8: Hoverboot Jump
+  0x315d4e8: Hoverboot Double Jump
+  0x315d500: Hoverboot Fall
+  0x315d510: Hoverboot Boost Jump
+  0x3162818: GrindBootItemConfig
+  0x316288f: |MagBootItemConfig
+  0x31629a8: MagBootLaunchItemConfig
+  0x3162a48: HoverbootItemConfig
+  0x317e220: kMeleeHoverboot
+  0x317e290: Melee Hoverboot
+  0x31beba8: HoverbootOmniBoostPadTriggeredEvent
+  0x31bebd0: HoverbootOmniBoostPadRotateStartEvent
+  0x31bebf8: HoverbootOmniBoostPadRotateEndEvent
+  0x31dfd60: ValidMagbootSurfaceFoundEvent
+  0x31e00c8: ValidMagbootSurfaceLostEvent
+  0x31e052f: @ShowMagbootLaunchReticleEvent
+  0x31e0988: HideMagbootLaunchReticleEvent
+  0x3210c5f: $MagbootStartEvent
+  0x3210ea0: MagbootEndEvent
+  0x32112c0: MagbootLaunchStartEvent
+  0x3211468: IsForHoverbootState
+  0x3211540: MagbootLaunchEndEvent
+  0x3211828: HoverbootStartEvent
+  0x3211d00: HoverbootEndEvent
+  0x3211f98: HoverbootBoostStartEvent
+  0x32121d8: HoverbootBoostEndEvent
+  0x32123c8: HoverbootKickHighSpeedStartEvent
+  0x32125c0: HoverbootKickHighSpeedEndEvent
+  0x3212898: HoverbootKickPreReadyEvent
+  0x3212ae0: HoverbootKickReadyEvent
+  0x3212eaf: $HoverbootKickEvent
+  0x321c1b0: AwardHeroHoverbootDoubleJumpedEvent
+  0x3221c30: MagbootLaunchTakeOffEvent
+  0x3221c50: MagbootLaunchLandedEvent
+  0x322c508: Clear Boots
+  0x322cbc8: BootLooks
+  0x322e2c0: BootsModel
+  0x322e630: Boots Override
+  0x322e9e0: ClearBoots
+  0x326d440: kHoverbootKick
+  0x326d450: kHoverbootKickAlt
+  0x3284cf0: Override hoverboot config to set on Hero.
+  0x32851a8: MagbootsOn
+  0x32851b8: GrindbootsOn
+  0x32851c8: BootsOff
+  0x32851d8: OnMagbootsOn
+  0x32851e8: OnGrindbootsOn
+  0x32851f8: OnBootsOff
+  0x3285528: OverrideHoverbootConfigActionPrius
+  0x3286760: Override Hoverboot Config
+  0x328dc80: If true, causes the hero to be instantly riding the mount. No intro anims are played.
+  0x32a2ec8: kInteractTypePhotoBooth
+  0x32acd90: DoHoverbootSurfaceDeformation
+  0x32adf40: HoverbootInputMode
+  0x32adf58: HoverbootNoKickInputGracePeriod
+  0x32ae098: Options for alternate hoverboot inputs.
+  0x32ae0c0: If hoverboot kick control is the same as the hoverboot control (R1 and R1), wait this long with no input before leaving the hoverboot state. (seconds)
+  0x32ae180: Hoverboot Input Mode
+  0x32ae198: Hoverboot No Kick Input Grace Period
+  0x32ae738: This is the base speed of hoverbooting. Without kicking. (m/s)
+  0x32aebf8: HoverbootSettings
+  0x32aeef8: HeroHoverbootSettings
+  0x44ecc20: kMagBoot
+  0x44ed0d0: MagBoot
+  0x4502f28: BootConfig
+  0x451aea8: kBoot
+  0x454a5c8: WwiseProfileCaptureOnBoot
+  0x454c660: Enable the Wwise profile capture when the game boots.
+  0x455ec68: BootStart
+  0x4566750: BootStartDevstatsEvent
+  0x4566770: D:\i29\pc\code\Output\Build\CodeGen\Foundation\BootStartDevstatsEvent.cpp
+  0x45667e0: debugReboot
+  0x4566c70: How was the game booted?
+  0x46bcc80: ShowOnBootup
+  0x46bcf28: True if displayed during the Bootup version of the Vanity UI
+  0x46bd080: Show On Bootup
+  0x46fd1b0: BootTimeDevstatsEvent
+  0x4750320: SkipIntro
+  0x4757448: SkipIntroPath
+  0x5e1b090: .?AVModeBoot@@
+  0x5e1c1f8: .?AVGameAwardHoverbootDoubleJump@@
+  0x5e2b370: .?AVHoverbootBoostVolumePrius@@
+  0x5e2b3a0: .?AVHoverbootBoostVolume@@
+  0x5e2b3d0: .?AVHoverbootOmniBoostPad@@
+  0x5e2b430: .?AVMagbootDismountVolume@@
+  0x5e2b460: .?AVMagbootDismountVolumePrius@@
+  0x5e2b498: .?AVMagbootLaunchHintVolume@@
+  0x5e2b4c8: .?AVMagbootModifierVolume@@
+  0x5e2b4f8: .?AVMagbootModifierVolumePrius@@
+  0x5e47f98: .?AVHeroHoverbootData@Hero@@
+  0x5e488b0: .?AVNoMagbootVolume@@
+  0x5e48a60: .?AVNoMagbootVolumePrius@@
+  0x5e49d08: .?AVAimContextHoverboot@Hero@@
+  0x5e49d98: .?AVAimContextMagbootLaunch@Hero@@
+  0x5e4a7d8: .?AVOverrideHoverbootConfigAction@@
+  0x5e4aa20: .?AVHeroWearBootsAction@@
+  0x5e4b0a8: .?AVHeroWearBootsActionPrius@@
+  0x5e4c3e0: .?AVHeroStateJumpHoverboot@Hero@@
+  0x5e4c418: .?AVHeroStateFallHoverboot@Hero@@
+  0x5e4c450: .?AVHeroStateJumpHoverbootLocal@Hero@@
+  0x5e4c488: .?AVHeroStateFallHoverbootLocal@Hero@@
+  0x5e4c4c0: .?AVHeroStateJumpHoverbootRemote@Hero@@
+  0x5e4c4f8: .?AVHeroStateFallHoverbootRemote@Hero@@
+  0x5e4c530: .?AVHeroStateHoverboot@Hero@@
+  0x5e4c560: .?AVHeroStateHoverbootLocal@Hero@@
+  0x5e4c598: .?AVHeroStateHoverbootMelee@Hero@@
+  0x5e4c5d0: .?AVHeroStateHoverbootMeleeLocal@Hero@@
+  0x5e4c608: .?AVHeroStateHoverbootRemote@Hero@@
+  0x5e4c640: .?AVHeroStateHoverbootMeleeRemote@Hero@@
+  0x5e4c680: .?AVHeroStateJumpHoverbootLand@Hero@@
+  0x5e4c6b8: .?AVHeroStateJumpHoverbootLandLocal@Hero@@
+  0x5e4c6f8: .?AVHeroStateJumpHoverbootLandRemote@Hero@@
+  0x5e4d888: .?AVHeroStateMagbootLaunch@Hero@@
+  0x5e4d8c0: .?AVHeroStateMagbootLaunchLocal@Hero@@
+  0x5e4d8f8: .?AVHeroStateMagbootLaunchRemote@Hero@@
+  0x5e62900: .?AVHoverbootOmniBoostPadPrius@@
+  0x5e62938: .?AVMagbootLaunchHintVolumePrius@@
+  0x5e697f8: .?AVGameAwardHoverbootDoubleJumpPrius@@
+  0x5e6b170: .?AVHoverbootCameraAimContextConfigConfigAllocator@@
+  0x5e6b3d0: .?AVHoverbootCameraAimContextConfig@@
+  0x5e6c450: .?AVUIBootGameConfigConfigAllocator@@
+  0x5e6c530: .?AVUIBootGameConfig@@
+  0x5e6e430: .?AVHeroHoverbootConfigConfigAllocator@@
+  0x5e6e9a8: .?AVHeroMagbootConfig@@
+  0x5e6e9d0: .?AVHoverbootMoveData@@
+  0x5e6e9f8: .?AVHoverbootKickData@@
+  0x5e6ea20: .?AVHoverbootMeleeData@@
+  0x5e6ea50: .?AVHoverbootJumpData@@
+  0x5e6ea78: .?AVHoverbootFallData@@
+  0x5e6eaa0: .?AVHoverbootSurfaceDeformationData@@
+  0x5e6ead8: .?AVHoverbootHoverEffectData@@
+  0x5e6eb08: .?AVHeroHoverbootConfig@@
+  0x5e6f170: .?AVGrindBootItemConfigConfigAllocator@@
+  0x5e6f1b0: .?AVMagBootItemConfigConfigAllocator@@
+  0x5e6f1e8: .?AVMagBootLaunchItemConfigConfigAllocator@@
+  0x5e6f228: .?AVHoverbootItemConfigConfigAllocator@@
+  0x5e6f738: .?AVGrindBootItemConfig@@
+  0x5e6f768: .?AVMagBootItemConfig@@
+  0x5e6f790: .?AVMagBootLaunchItemConfig@@
+  0x5e6f7c0: .?AVHoverbootItemConfig@@
+  0x5e76e68: .?AVHoverbootOmniBoostPadTriggeredEvent@@
+  0x5e76ea8: .?AVHoverbootOmniBoostPadRotateStartEvent@@
+  0x5e76ee8: .?AVHoverbootOmniBoostPadRotateEndEvent@@
+  0x5e79da0: .?AVValidMagbootSurfaceFoundEvent@@
+  0x5e79dd8: .?AVValidMagbootSurfaceLostEvent@@
+  0x5e79e10: .?AVShowMagbootLaunchReticleEvent@@
+  0x5e79e48: .?AVHideMagbootLaunchReticleEvent@@
+  0x5e7d1c0: .?AVAwardHeroHoverbootDoubleJumpedEvent@@
+  0x5e7d4b8: .?AVMagbootStartEvent@@
+  0x5e7d4e0: .?AVMagbootEndEvent@@
+  0x5e7d508: .?AVMagbootLaunchStartEvent@@
+  0x5e7d538: .?AVMagbootLaunchEndEvent@@
+  0x5e7d568: .?AVHoverbootStartEvent@@
+  0x5e7d598: .?AVHoverbootEndEvent@@
+  0x5e7d5c0: .?AVHoverbootBoostStartEvent@@
+  0x5e7d5f0: .?AVHoverbootBoostEndEvent@@
+  0x5e7d620: .?AVHoverbootKickHighSpeedStartEvent@@
+  0x5e7d658: .?AVHoverbootKickHighSpeedEndEvent@@
+  0x5e7d690: .?AVHoverbootKickPreReadyEvent@@
+  0x5e7d6c8: .?AVHoverbootKickReadyEvent@@
+  0x5e7d6f8: .?AVHoverbootKickEvent@@
+  0x5e7e530: .?AVMagbootLaunchTakeOffEvent@@
+  0x5e7e560: .?AVMagbootLaunchLandedEvent@@
+  0x5e84338: .?AVOverrideHoverbootConfigActionPrius@@
+  0x5e94e20: .?AVBootConfigConfigAllocator@@
+  0x5e94e50: .?AVBootConfig@@
+  0x5ebe318: .?AVBootTimeDevstatsEvent@@
+
+utf16le matching strings:
+  0x49f8200: Phone Booth

@@ -1,0 +1,120 @@
+{
+  "utc": "2026-10-05T10:48:50.209890+00:00",
+  "pid": 22592,
+  "process": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Ratchet & Clank - Rift Apart\\RiftApart.exe",
+  "exe_sha256": "51299faca61866cf10ea9035a15b8f22600a56557dd5ffc1aad390d5a54e6d82",
+  "module_base": "0x7ff6f0940000",
+  "registry_rva": "0x52dda20",
+  "selected_pointer": "0x1ee8ec07360",
+  "fallback": false,
+  "size": 1696,
+  "pointer_stable": true,
+  "atomic_fields": false,
+  "block_sha256": "925ea9debf27e2a9da3f028aaf6487479e88b0f54af2ea8ebce5766f4498bd59",
+  "fog_map_reference_blocks": {
+    "0x478": "000000000000000000000000000000000000000000000000",
+    "0x490": "000000000000000000000000000000000000000000000000"
+  },
+  "semantics": "Named fog-map references only; scalar field names remain unproven.",
+  "registry_slots": {
+    "0": {
+      "pointer": "0x1ee8ec07360",
+      "fallback": false,
+      "sha256": "925ea9debf27e2a9da3f028aaf6487479e88b0f54af2ea8ebce5766f4498bd59"
+    },
+    "1": {
+      "pointer": "0x1ee8ec07360",
+      "fallback": false,
+      "sha256": "925ea9debf27e2a9da3f028aaf6487479e88b0f54af2ea8ebce5766f4498bd59"
+    },
+    "2": {
+      "pointer": "0x1ee8ec07360",
+      "fallback": false,
+      "sha256": "925ea9debf27e2a9da3f028aaf6487479e88b0f54af2ea8ebce5766f4498bd59"
+    },
+    "3": {
+      "pointer": "0x1ee8ec07360",
+      "fallback": false,
+      "sha256": "925ea9debf27e2a9da3f028aaf6487479e88b0f54af2ea8ebce5766f4498bd59"
+    }
+  },
+  "current_render_view_candidate": {
+    "pointer": "0x1f115444580",
+    "atmosphere_index": 0,
+    "pointer_stable": true,
+    "limit": "Current renderer global; selected subview/explicit atmosphere override may differ."
+  },
+  "postprocess_default_global_5339340": "00",
+  "renderer_samples": [
+    {
+      "view": "0x1f115444580",
+      "block": "0x1f11542c480",
+      "main_view_global": "0x1ee8c046b00",
+      "atmosphere_index": 0,
+      "view_position_30_raw_floats": [
+        -122.58079528808594,
+        137.0443572998047,
+        -234.32666015625
+      ],
+      "sha256": "cf45415c2519ee97fea7e69f085385ff84933495630f0087288d781e676de0bc"
+    },
+    {
+      "view": "0x1f115444580",
+      "block": "0x1f11542c480",
+      "main_view_global": "0x1ee8c046b00",
+      "atmosphere_index": 0,
+      "view_position_30_raw_floats": [
+        -122.58079528808594,
+        137.0443572998047,
+        -234.32666015625
+      ],
+      "sha256": "cf45415c2519ee97fea7e69f085385ff84933495630f0087288d781e676de0bc"
+    },
+    {
+      "view": "0x1f115cba380",
+      "block": "0x1f115ca2280",
+      "main_view_global": "0x1ee8c046b00",
+      "atmosphere_index": 0,
+      "view_position_30_raw_floats": [
+        -122.58079528808594,
+        137.0443572998047,
+        -234.32666015625
+      ],
+      "sha256": "3fa7392192f3c31c1bd561c8d47f4ea7daefcabec57414b30f8a69e554d5462b"
+    }
+  ],
+  "fog_blend_globals_raw": {
+    "0x53393b0": "0000803f",
+    "0x53393b4": "0000803e"
+  },
+  "primary_view_candidates": {
+    "0x6739b08": {
+      "pointer": "0x1ee8c046b00",
+      "position_30_raw_floats": [
+        -122.58079528808594,
+        137.0443572998047,
+        -234.32666015625
+      ],
+      "index_F90": 0
+    },
+    "0x6739b10": {
+      "pointer": "0x1ee8c046b00",
+      "position_30_raw_floats": [
+        -122.58079528808594,
+        137.0443572998047,
+        -234.32666015625
+      ],
+      "index_F90": 0
+    }
+  },
+  "render_settings_callback": "0x7ff6f0ea6440",
+  "prepared_fog_context_69C_724_hex": "965cc73dcdee693d965cc73d00000000e4f33d3b01ed7f3f000040420000403f0e745a3b22474a3f23b71bc123b79b41e9eafc43abdf5b3d09d7233c0ad7233c0e74da3bb4a2113b58b5574059b5174098e3693facd9ebbce54484c1ff3e94bdbea4d5ba304205bc8ce00442b5a61b3e0eb9313ccd77ba3c40085c38382cdbbc0000803f0000ff43",
+  "photo_system_candidate": {
+    "pointer": "0x7ff6f6a78200",
+    "vtable_rva": "0x2fbf630",
+    "state_50": 4,
+    "setup_54": 1
+  },
+  "label": "corson-fog512-active",
+  "binary": "C:\\Users\\Tim\\Documents\\Codex\\2026-10-04\\prompt-for-the-research-instance-research\\work\\live-atmosphere-readonly\\20261005T104850213893Z-corson-fog512-active.bin"
+}

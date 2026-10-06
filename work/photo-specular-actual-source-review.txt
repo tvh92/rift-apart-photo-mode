@@ -1,0 +1,23 @@
+Photo specular candidate source review
+
+Read-only review of outputs/camera-native-lighting-v2/PhotoLight.h, PhotoSpecular.h, PhotoLOD.h, work/native-abi/PhotoType4Fixture.h, PhotoType4Probe.c, the build/test log, and native 0x10BE180/0x1098F90 disassembly. No source, installation, or runtime state was changed.
+
+Verdict: No blocker found in the type-4 wrapper's ABI/frame, private-copy bounds, gates, or atomic partial-word patch.
+
+The type-4 hook is placed at a single guarded native CALL. Site 0x10BE260 is an aligned eight-byte word; the CALL begins at +1, its next instruction address is +6, and the emitted rel32 uses that next address. The replacement changes bytes +2..+5 only, preserving the preceding byte and following F3 0F prefix. The hook page is a leaf mov rax,imm64; jmp rax relay: CALL has already supplied the return address, the jump leaves it untouched, and the compiled wrapper returns to the native continuation. The exact eight-byte window and twelve-byte 0x1098F90 prolog are checked before patch setup. Exchange is aligned InterlockedCompareExchange64 with other process threads paused and an IP-in-site guard; the relative displacement is bounded.
+
+The wrapper matches the Windows x64 two-pointer/float-return ABI. Before calling native 0x1098F90, it copies 0xB0 bytes, clears only local source flag bit 18, and passes that stack copy. The native function reads source fields through +0xA4; its only nested call is the distance helper at 0x0389950, which returns a scalar and does not retain its pointers. The private stack object therefore covers the observed reads and does not escape. The wrapper preserves bit 19 and returns the native near-faded scalar. When readiness, Photo gate, or primary-view test fails, it forwards the original source directly. Readiness publishes only after the callsite exchange; if exchange outcome is uncertain after mutation, the relay is retained and continues forwarding.
+
+The ordinary 0x1099200 relay clears only local flag bits 18 and 20 for the four verified primary Photo callers. This keeps source memory and unrelated flags unchanged. The specular branch in that helper uses bit 20 to alter the native output kind/scalar, so clearing it avoids its distance-degraded classification while leaving the original source kind bits intact.
+
+Probe evidence and limits: The build log reports 24 native type-4 fade cases, near-fade/source preservation, exact call/prolog refusal guards, readiness/Ctrl/auxiliary-view behavior, adjacent-byte preservation, and atomic restoration. The ordinary-light probe reports 1,920 arithmetic cases and all 29 actual relay instruction-start unwind positions. Fog, camera/no-clip, UI local probes, and 44 HID exports also pass. These are local exact-build native fixtures/regression probes. They do not verify runtime behavior in the game or user-visible illumination for this candidate.
+
+The fixture registers the native helper and unwind fragments for its test image and exercises the production wrapper/relay logic. The relay is a leaf and requires no separate unwind recipe; the wrapper is ordinary compiled C with its toolchain-generated unwind information.
+
+Non-blocking notes:
+- The candidate's PhotoIndicator.h and UI path remain runtime-unconfirmed, as requested. This review does not treat local UI probes as game behavior.
+- photo_light_hits is shared by both relays and reset/logged on Photo teardown without render-thread quiescence; a late count may cross a session boundary. This is diagnostic accuracy only.
+- The production source relies on the existing startup worker being outside the patched CALL window because the patch coordinator deliberately excludes its current thread from suspension. In this package, preparation is invoked by the separate startup worker; exact loader scheduling remains an integration/runtime assumption already shared by the existing native patching path.
+
+Static review assumes the external loader continues to enforce the exact executable hash and retains the module pin/page lifetime behavior shown by the source. No installation or in-game test was performed here.
+

@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-05",
+  "dll_sha256": "06ce078afaca25aeb95cca6da595ea8f8b54f8a9ccac3aef833c64fadb6a6de8",
+  "isolated_results": [
+    {
+      "status": "fulfilled",
+      "value": {
+        "name": "Lifecycle",
+        "chunk_id": "a6c191",
+        "wall_time_seconds": 1.4164854,
+        "exit_code": 0,
+        "original_token_count": 52,
+        "output": "PASS: Photo lifecycle/close/teardown gates; focused Ctrl tap/release without held repeats; Alt/Shift chord and focus-loss cancellation; indicator ON/OFF/close requests; lazy callback and conflict refusal.\r\n"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "name": "Indicator",
+        "chunk_id": "e8560b",
+        "wall_time_seconds": 1.6049685,
+        "exit_code": 0,
+        "original_token_count": 53,
+        "output": "PASS: native ON/OFF bitmap at 96/144/192 DPI, premultiplied transparency, monotonic timed fade, GDI resource cleanup, click-through/no-activation styles, hidden layered-window render, coalesced hide requests.\r\n"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "name": "IndicatorThread",
+        "chunk_id": "a52b09",
+        "wall_time_seconds": 3.844906,
+        "exit_code": 0,
+        "original_token_count": 43,
+        "output": "PASS: asynchronous startup notice, ON/OFF refresh, real message/timer fade, explicit hide, invalid-target rejection, and UI-thread teardown; test windows remained hidden.\r\n"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "name": "Behavior",
+        "chunk_id": "1c7d9a",
+        "wall_time_seconds": 1.8498653,
+        "exit_code": 0,
+        "original_token_count": 42,
+        "output": "PASS: owner filtering, normal/Shift/release speeds, baseline restore, replacement camera identity, and hotkey restoration of collision plus both geometry selectors.\r\n"
+      }
+    }
+  ],
+  "additional_results": [
+    {
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "7a80c3",
+        "wall_time_seconds": 0.0842103,
+        "exit_code": 0,
+        "original_token_count": 27,
+        "output": "{\"hid_guid_matches_system\": true, \"all_exports_resolved\": 44, \"non_game_hook_guard\": \"refused correctly\"}\r\n"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "a7b422",
+        "wall_time_seconds": 0.1931042,
+        "exit_code": 0,
+        "original_token_count": 74,
+        "output": "PASS: camera/Photo teardown hooks and HID forwarding preserve GPRs, six XMM registers, flags, arguments, alignment and callback shadow space.\r\nPASS: exact collision window guard, one-byte bypass, original response restore, original page protection, and refusal to overwrite a changed branch.\r\n"
+      }
+    }
+  ]
+}

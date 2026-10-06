@@ -1,0 +1,15 @@
+Prepared status UI and preserved native camera/fog/light regression probes.
+PhotoLightProbe passed: real native helper/relay, 1920 arithmetic cases, source immutable, Ctrl/ready/primary/caller gates, all 29 relay instruction starts unwind, atomic restore.
+PhotoFogProbe passed: real relay ABI, exact guards, entry cache, toggle, auxiliary views, exit/reentry, untouched texture tail, callsite restoration; calls=12
+PASS: dormant startup UI, one active-Photo worker, ON/OFF/Ctrl rising-edge/focus/held guards, hide on exit, fog lifecycle and metadata guards.
+PASS: owner filtering, normal/Shift/release speeds, baseline restore, replacement camera identity, and hotkey restoration of collision plus both geometry selectors.
+In file included from C:\Users\Tim\Documents\Codex\2026-10-04\prompt-for-the-research-instance-research\work\native-abi\StatusBitmapProbe.c:7:
+C:\Users\Tim\Documents\Codex\2026-10-04\prompt-for-the-research-instance-research\work\native-abi/../../outputs/camera-native-status-candidate/PhotoIndicator.h:152:13: warning: unused function 'StartPhotoIndicator' [-Wunused-function]
+  152 | static void StartPhotoIndicator(HWND target) {
+      |             ^~~~~~~~~~~~~~~~~~~
+1 warning generated.
+PASS: native ON/OFF bitmap at 96/144/192 DPI, premultiplied transparency, monotonic timed fade, GDI resource cleanup, click-through/no-activation styles, hidden layered-window render, coalesced hide requests.
+Photo status indicator ready after active Photo Mode entry.
+Photo status indicator ready after active Photo Mode entry.
+PASS: notifications stay dormant until validated lazy start; duplicate starts rejected; ON/OFF refresh, timer fade, hide, teardown and restart; test windows remained hidden.
+{"hid_guid_matches_system": true, "all_exports_resolved": 44, "non_game_hook_guard": "refused correctly"}

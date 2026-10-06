@@ -1,0 +1,81 @@
+[
+  {
+    "entry": "0x1099200",
+    "ranges": [
+      {
+        "begin": "0x1099200",
+        "end": "0x1099243",
+        "unwind": "0x4df8558",
+        "header": "01431000",
+        "flags": 0
+      },
+      {
+        "begin": "0x1099243",
+        "end": "0x10992cf",
+        "unwind": "0x4df857c",
+        "header": "21040200",
+        "flags": 4
+      },
+      {
+        "begin": "0x10992cf",
+        "end": "0x1099366",
+        "unwind": "0x4df8590",
+        "header": "21080200",
+        "flags": 4
+      },
+      {
+        "begin": "0x1099366",
+        "end": "0x10993c4",
+        "unwind": "0x4df85a4",
+        "header": "21000000",
+        "flags": 4
+      },
+      {
+        "begin": "0x10993c4",
+        "end": "0x109947d",
+        "unwind": "0x4df85b4",
+        "header": "21000000",
+        "flags": 4
+      }
+    ],
+    "rip_operands": [
+      "cmp byte [rel 53394ECh],0",
+      "movss xmm8,[rel 4A4A198h]",
+      "movss xmm9,[rel 2E70488h]",
+      "movss xmm14,[rel 2E69860h]",
+      "movss xmm12,[rel 2E6D030h]"
+    ]
+  },
+  {
+    "entry": "0x1098f90",
+    "ranges": [
+      {
+        "begin": "0x1098f90",
+        "end": "0x1098fee",
+        "unwind": "0x4df8520",
+        "header": "01270800",
+        "flags": 0
+      },
+      {
+        "begin": "0x1098fee",
+        "end": "0x10990e2",
+        "unwind": "0x4df8534",
+        "header": "21060200",
+        "flags": 4
+      },
+      {
+        "begin": "0x10990e2",
+        "end": "0x1099194",
+        "unwind": "0x4df8548",
+        "header": "21000000",
+        "flags": 4
+      }
+    ],
+    "rip_operands": [
+      "movss xmm7,[rel 4A4A198h]",
+      "movss xmm2,[rel 2E6B300h]",
+      "movss xmm0,[rel 2E69860h]",
+      "movss xmm6,[rel 2E6D030h]"
+    ]
+  }
+]

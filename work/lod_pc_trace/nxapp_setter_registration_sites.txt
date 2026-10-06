@@ -1,0 +1,4 @@
+candidate setter call sites with nearby lea rdx: 1
+
+0x122ec71 slot=0x160 fn=('0x122eb30', '0x122ec8d')
+  0x122ec64 target=0x122f000 lea rdx,[rel 122F000h]

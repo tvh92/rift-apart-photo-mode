@@ -1,0 +1,92 @@
+Focused disassembly excerpt (RVA; local executable build per AGENTS.md)
+
+0x111ABE0
+0111abe0 mov [rsp+8],rbx
+0111abe5 mov [rsp+10h],rbp
+0111abef push rdi
+0111abf0 push r14
+0111abf2 push r15
+0111abf8 mov rdi,[rdx+88h]
+0111ac0a movzx r15d,r8b
+0111ac17 cmp [rdi+56h],bl
+0111ac20 mov edx,ebx
+0111ac22 mov rcx,rsi
+0111ac25 call 00000000010FC930h
+0111ac2a test al,al
+0111ac2c je short 000000000111AC51h
+0111ac2e mov edx,ebx
+0111ac30 mov rcx,rdi
+0111ac33 shl rdx,5
+0111ac37 add rdx,[rdi+90h]
+0111ac3e call 00000000011059B0h
+0111ac43 movsxd rcx,eax
+0111ac46 movsxd rax,ebp
+0111ac49 cmp rax,rcx
+0111ac4c cmovg ecx,ebp
+0111ac4f mov ebp,ecx
+0111ac51 movzx eax,byte [rdi+56h]
+0111ac55 inc ebx
+
+0111ac5b mov eax,[rsi+80h]
+0111ac61 mov ecx,[rel 533918Ch]
+0111ac67 shr eax,1Ah
+0111ac6a test al,1
+0111ac6c mov eax,r15d
+0111ac6f cmovne eax,r14d
+0111ac73 test al,al
+0111ac75 cmovne ecx,[rel 5339190h]
+0111ac7c mov eax,ecx
+0111ac7e sub eax,[rel 5339194h] ; delta = -5339194 after subtracting base below
+0111ac84 cmp [rel 5339162h],r14b
+0111ac8b je short 000000000111ACE9h
+0111ac8d movss xmm0,[rel 5339170h]
+0111ac95 comiss xmm6,xmm0
+0111ac98 jae short 000000000111ACE9h
+0111ac9a movss xmm1,[rel 533916Ch]
+...
+0111acec mov rbx,[rsp+50h]
+0111acf1 lea r8d,[rbp-1]
+0111ad05 movsxd rcx,ecx
+0111ad08 cdqe
+0111ad0a sub rax,rcx
+0111ad0d cvtsi2ss xmm0,rcx
+0111ad12 cvtsi2ss xmm1,rax
+0111ad17 mulss xmm1,xmm2
+0111ad1b addss xmm1,xmm0
+0111ad1f cvttss2si edx,xmm1
+0111ad23 add edx,0FFFFFFFAh
+0111ad26 add edx,ebp
+0111ad2d test edx,edx
+0111ad2f cmovg r14d,edx
+0111ad33 cmp r14d,r8d
+0111ad36 cmovl r8d,r14d
+0111ad3a mov eax,r8d
+0111ad46 ret
+
+0x10FC930 availability check
+010fc930 mov r9d,edx
+010fc933 mov rdx,[rcx+88h]
+010fc93a movzx eax,byte [rdx+56h]
+010fc93e cmp r9d,eax
+010fc947 movzx eax,word [rcx+90h]
+010fc965 mov r8,[rax+18h]
+010fc96e mov rax,[r8]
+010fc974 and ecx,7
+010fc977 mov edx,1
+010fc97c shl edx,cl
+010fc981 shr rcx,3
+010fc985 movzx ecx,byte [rcx+rax]
+010fc989 test cl,dl
+010fc98b setne al
+...
+010fc98f cmp byte [rdx+55h],0
+010fc995 mov rdx,[rdx+0E8h]
+010fc9a1 movzx r8d,word [rdx+8]
+010fc9a8 mov rdx,[rdx]
+010fc9b0 movzx eax,word [rdx]
+010fc9b3 cmp eax,r9d
+010fc9b6 je short 00000000010FC9C6h
+010fc9c3 xor al,al
+010fc9c6 mov al,1
+010fc9c8 ret
+

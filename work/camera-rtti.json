@@ -1,0 +1,66 @@
+[
+  {
+    "name": ".?AVPhotomodeCameraFreeMove@Camera2@@",
+    "type_rva": "0x5eaca10",
+    "vtables": [
+      {
+        "rva": "0x45fd8b0",
+        "object_offset": 0,
+        "entries": [
+          "0x1a5d2d0",
+          "0x1a5d2b0",
+          "0x1a5d2c0",
+          "0x1a5d670"
+        ]
+      }
+    ]
+  },
+  {
+    "name": ".?AVPhotomodeCameraMotionFly@Camera2@@",
+    "type_rva": "0x5eacac0",
+    "vtables": [
+      {
+        "rva": "0x45fdef0",
+        "object_offset": 0,
+        "entries": [
+          "0x1a5eb90",
+          "0x1a5eb70",
+          "0x1a5eb80",
+          "0x183e400"
+        ]
+      }
+    ]
+  },
+  {
+    "name": ".?AVFreeMoveCamData@@",
+    "type_rva": "0x5eb8270",
+    "vtables": [
+      {
+        "rva": "0x4690a50",
+        "object_offset": 0,
+        "entries": [
+          "0x1cfb540",
+          "0x1cfb5b0",
+          "0x1cfb460",
+          "0x1cfb4d0"
+        ]
+      }
+    ]
+  },
+  {
+    "name": ".?AVPhotomodeCameraFreeMovePrius@@",
+    "type_rva": "0x5eb82c0",
+    "vtables": [
+      {
+        "rva": "0x4690b30",
+        "object_offset": 0,
+        "entries": [
+          "0x1cfb570",
+          "0x1cfb5e0",
+          "0x1cfb490",
+          "0x1cfb500"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,54 @@
+# Track source, research notes, audits, and screenshots. Local game/tool data
+# stays in this checkout and is indexed by migration/local-artifacts.json.
+*
+!*/
+!*.md
+!*.txt
+!*.py
+!*.ps1
+!*.c
+!*.h
+!*.S
+!*.s
+!*.def
+!*.cs
+!*.json
+!*.ini
+!*.log
+!*.csv
+!*.html
+!*.css
+!*.js
+!*.svg
+!*.png
+!*.jpg
+!*.jpeg
+!*.toml
+!.gitignore
+!.gitattributes
+
+# Preserve our own audited proxy DLLs, including rollback snapshots.
+!/outputs/camera-native*/**/hid.dll
+!/outputs/confirmed-photo-fog/**/hid.dll
+!/outputs/tested-photo-lighting/**/hid.dll
+!/outputs/tested-photo-lighting-v2/**/hid.dll
+!/archive/**/camera-native/**/hid.dll
+
+# Downloaded runtimes/compiler caches and raw process observations.
+**/__pycache__/
+/work/toolchain/**
+!/work/toolchain/zig-download.json
+/work/zig-cache/
+/work/disasm/
+/work/live-atmosphere-readonly/
+/work/live-lights-readonly/
+/outputs/Overstrike/
+**/.env
+**/.env.*
+**/credentials*
+**/*private-key*
+**/*id_rsa*
+**/*id_ed25519*
+
+# Local migration verification output changes after each push.
+/migration/remote-verification.json

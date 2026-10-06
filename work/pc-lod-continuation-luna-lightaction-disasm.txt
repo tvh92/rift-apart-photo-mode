@@ -1,0 +1,397 @@
+FUNCTION 0x150f550 BOUNDS ('0x150f550', '0x150f5d0')
+0150f550 mov dword [rcx+8],37h
+0150f557 mov al,1
+0150f559 ret
+0150f55a int3
+0150f55b int3
+0150f55c int3
+0150f55d int3
+0150f55e int3
+0150f55f int3
+0150f560 mov dword [rcx+8],37h
+0150f567 ret
+0150f568 int3
+0150f569 int3
+0150f56a int3
+0150f56b int3
+0150f56c int3
+0150f56d int3
+0150f56e int3
+0150f56f int3
+0150f570 mov [rsp+8],rbx
+0150f575 push rdi
+0150f576 sub rsp,20h
+0150f57a mov rbx,rdx
+0150f57d mov rdi,rcx
+0150f580 call 00000000015BBC50h
+0150f585 mov r9,rax
+0150f588 lea r8,[rel 54F3EB0h]
+0150f58f mov rdx,rbx
+0150f592 mov rcx,rdi
+0150f595 mov rbx,[rsp+30h]
+0150f59a add rsp,20h
+0150f59e pop rdi
+0150f59f jmp 00000000015BAE20h
+0150f5a4 int3
+0150f5a5 int3
+0150f5a6 int3
+0150f5a7 int3
+0150f5a8 int3
+0150f5a9 int3
+0150f5aa int3
+0150f5ab int3
+0150f5ac int3
+0150f5ad int3
+0150f5ae int3
+0150f5af int3
+0150f5b0 push rbx
+0150f5b2 sub rsp,20h
+0150f5b6 lea rax,[rel 4539E08h]
+0150f5bd mov rbx,rcx
+0150f5c0 mov [rcx],rax
+0150f5c3 xor eax,eax
+0150f5c5 mov [rcx+10h],rax
+0150f5c9 mov [rcx+18h],rax
+0150f5cd (bad)
+FUNCTION 0x150fa70 BOUNDS ('0x150fa70', '0x150faf0')
+0150fa70 lea rax,[rel 433CE30h]
+0150fa77 mov qword [rcx+8],0
+0150fa7f mov [rcx],rax
+0150fa82 mov rax,rcx
+0150fa85 ret
+0150fa86 int3
+0150fa87 int3
+0150fa88 int3
+0150fa89 int3
+0150fa8a int3
+0150fa8b int3
+0150fa8c int3
+0150fa8d int3
+0150fa8e int3
+0150fa8f int3
+0150fa90 mov rax,[rcx]
+0150fa93 jmp qword [rax+48h]
+0150fa97 int3
+0150fa98 int3
+0150fa99 int3
+0150fa9a int3
+0150fa9b int3
+0150fa9c int3
+0150fa9d int3
+0150fa9e int3
+0150fa9f int3
+0150faa0 mov rax,[rcx]
+0150faa3 jmp qword [rax+58h]
+0150faa7 int3
+0150faa8 int3
+0150faa9 int3
+0150faaa int3
+0150faab int3
+0150faac int3
+0150faad int3
+0150faae int3
+0150faaf int3
+0150fab0 push rbx
+0150fab2 sub rsp,20h
+0150fab6 lea rax,[rel 4539D18h]
+0150fabd mov rbx,rcx
+0150fac0 mov [rcx],rax
+0150fac3 xor eax,eax
+0150fac5 mov [rcx+8],rax
+0150fac9 mov [rcx+10h],rax
+0150facd add rcx,18h
+0150fad1 call 00000000015D85B0h
+0150fad6 mov rax,rbx
+0150fad9 add rsp,20h
+0150fadd pop rbx
+0150fade ret
+0150fadf int3
+0150fae0 mov rax,[rcx]
+0150fae3 jmp qword [rax+50h]
+0150fae7 int3
+0150fae8 int3
+0150fae9 int3
+0150faea int3
+0150faeb int3
+0150faec int3
+0150faed int3
+0150faee int3
+0150faef int3
+FUNCTION 0x150fb08 BOUNDS ('0x150faf0', '0x150fb24')
+0150faf0 mov [rsp+8],rbx
+0150faf5 push rdi
+0150faf6 sub rsp,20h
+0150fafa mov rbx,rdx
+0150fafd mov rdi,rcx
+0150fb00 call 00000000015BBC50h
+0150fb05 mov r9,rax
+0150fb08 lea r8,[rel 54F3D70h]
+0150fb0f mov rdx,rbx
+0150fb12 mov rcx,rdi
+0150fb15 mov rbx,[rsp+30h]
+0150fb1a add rsp,20h
+0150fb1e pop rdi
+0150fb1f jmp 00000000015BAE20h
+FUNCTION 0x12dfc70 BOUNDS ('0x12dfc70', '0x12dfcf0')
+012dfc70 lea rax,[rel 433CE98h]
+012dfc77 ret
+012dfc78 int3
+012dfc79 int3
+012dfc7a int3
+012dfc7b int3
+012dfc7c int3
+012dfc7d int3
+012dfc7e int3
+012dfc7f int3
+012dfc80 lea rax,[rel 433CDE8h]
+012dfc87 ret
+012dfc88 int3
+012dfc89 int3
+012dfc8a int3
+012dfc8b int3
+012dfc8c int3
+012dfc8d int3
+012dfc8e int3
+012dfc8f int3
+012dfc90 lea rax,[rel 433CD40h]
+012dfc97 ret
+012dfc98 int3
+012dfc99 int3
+012dfc9a int3
+012dfc9b int3
+012dfc9c int3
+012dfc9d int3
+012dfc9e int3
+012dfc9f int3
+012dfca0 lea rax,[rel 433CC88h]
+012dfca7 ret
+012dfca8 int3
+012dfca9 int3
+012dfcaa int3
+012dfcab int3
+012dfcac int3
+012dfcad int3
+012dfcae int3
+012dfcaf int3
+012dfcb0 lea rax,[rel 433CBE0h]
+012dfcb7 ret
+012dfcb8 int3
+012dfcb9 int3
+012dfcba int3
+012dfcbb int3
+012dfcbc int3
+012dfcbd int3
+012dfcbe int3
+012dfcbf int3
+012dfcc0 mov eax,0C7F26349h
+012dfcc5 ret
+012dfcc6 int3
+012dfcc7 int3
+012dfcc8 int3
+012dfcc9 int3
+012dfcca int3
+012dfccb int3
+012dfccc int3
+012dfccd int3
+012dfcce int3
+012dfccf int3
+012dfcd0 mov eax,9CE7E896h
+012dfcd5 ret
+012dfcd6 int3
+012dfcd7 int3
+012dfcd8 int3
+012dfcd9 int3
+012dfcda int3
+012dfcdb int3
+012dfcdc int3
+012dfcdd int3
+012dfcde int3
+012dfcdf int3
+012dfce0 mov eax,0A0EEA6E8h
+012dfce5 ret
+012dfce6 int3
+012dfce7 int3
+012dfce8 int3
+012dfce9 int3
+012dfcea int3
+012dfceb int3
+012dfcec int3
+012dfced int3
+012dfcee int3
+012dfcef int3
+FUNCTION 0x12dfd10 BOUNDS ('0x12dfd10', '0x12dfd90')
+012dfd10 lea rax,[rel 54F3D70h]
+012dfd17 ret
+012dfd18 int3
+012dfd19 int3
+012dfd1a int3
+012dfd1b int3
+012dfd1c int3
+012dfd1d int3
+012dfd1e int3
+012dfd1f int3
+012dfd20 lea rax,[rel 54F3C30h]
+012dfd27 ret
+012dfd28 int3
+012dfd29 int3
+012dfd2a int3
+012dfd2b int3
+012dfd2c int3
+012dfd2d int3
+012dfd2e int3
+012dfd2f int3
+012dfd30 lea rax,[rel 54F3AF0h]
+012dfd37 ret
+012dfd38 int3
+012dfd39 int3
+012dfd3a int3
+012dfd3b int3
+012dfd3c int3
+012dfd3d int3
+012dfd3e int3
+012dfd3f int3
+012dfd40 lea rax,[rel 54F39B0h]
+012dfd47 ret
+012dfd48 int3
+012dfd49 int3
+012dfd4a int3
+012dfd4b int3
+012dfd4c int3
+012dfd4d int3
+012dfd4e int3
+012dfd4f int3
+012dfd50 lea rax,[rel 54F34B0h]
+012dfd57 ret
+012dfd58 int3
+012dfd59 int3
+012dfd5a int3
+012dfd5b int3
+012dfd5c int3
+012dfd5d int3
+012dfd5e int3
+012dfd5f int3
+012dfd60 xor eax,eax
+012dfd62 ret
+012dfd63 int3
+012dfd64 int3
+012dfd65 int3
+012dfd66 int3
+012dfd67 int3
+012dfd68 int3
+012dfd69 int3
+012dfd6a int3
+012dfd6b int3
+012dfd6c int3
+012dfd6d int3
+012dfd6e int3
+012dfd6f int3
+012dfd70 xor eax,eax
+012dfd72 ret
+012dfd73 int3
+012dfd74 int3
+012dfd75 int3
+012dfd76 int3
+012dfd77 int3
+012dfd78 int3
+012dfd79 int3
+012dfd7a int3
+012dfd7b int3
+012dfd7c int3
+012dfd7d int3
+012dfd7e int3
+012dfd7f int3
+012dfd80 xor eax,eax
+012dfd82 ret
+012dfd83 int3
+012dfd84 int3
+012dfd85 int3
+012dfd86 int3
+012dfd87 int3
+012dfd88 int3
+012dfd89 int3
+012dfd8a int3
+012dfd8b int3
+012dfd8c int3
+012dfd8d int3
+012dfd8e int3
+012dfd8f int3
+FUNCTION 0x12de273 BOUNDS ('0x12de250', '0x12de31e')
+012de250 mov [rsp+8],rbx
+012de255 mov [rsp+10h],rbp
+012de25a mov [rsp+18h],rsi
+012de25f mov [rsp+20h],rdi
+012de264 push r14
+012de266 sub rsp,50h
+012de26a mov rdi,r8
+012de26d movsxd rbx,edx
+012de270 mov r14,rcx
+012de273 lea rax,[rel 433CE30h]
+012de27a mov [rsp+20h],rax
+012de27f lea rcx,[rsp+20h]
+012de284 call qword [rel 433CE78h]
+012de28a mov rsi,rbx
+012de28d test ebx,ebx
+012de28f jle short 00000000012DE2F5h
+012de291 xor ebp,ebp
+012de293 nop dword [rax]
+012de297 nop word [rax+rax]
+012de2a0 xorps xmm0,xmm0
+012de2a3 movdqu [rsp+30h],xmm0
+012de2a9 mov [rsp+40h],ebp
+012de2ad xor r9d,r9d
+012de2b0 mov r8,[rdi+8]
+012de2b4 mov rdx,[rdi]
+012de2b7 lea rcx,[rsp+30h]
+012de2bc call 00000000015B9270h
+012de2c1 call 00000000015BBC50h
+012de2c6 mov rbx,rax
+012de2c9 lea rcx,[rsp+20h]
+012de2ce mov rdx,[rsp+20h]
+012de2d3 call qword [rdx+38h]
+012de2d6 mov r8,rax
+012de2d9 mov r9,rbx
+012de2dc lea rdx,[rsp+30h]
+012de2e1 lea rcx,[rsp+20h]
+012de2e6 call 00000000015BAE20h
+012de2eb lea rdi,[rdi+10h]
+012de2ef sub rsi,1
+012de2f3 jne short 00000000012DE2A0h
+012de2f5 mov rax,[r14]
+012de2f8 lea rdx,[rsp+20h]
+012de2fd mov rcx,r14
+012de300 call qword [rax]
+012de302 nop
+012de303 mov rbx,[rsp+60h]
+012de308 mov rbp,[rsp+68h]
+012de30d mov rsi,[rsp+70h]
+012de312 mov rdi,[rsp+78h]
+012de317 add rsp,50h
+012de31b pop r14
+012de31d ret
+FUNCTION 0x12de330 BOUNDS ('0x12de320', '0x12de380')
+012de320 mov [rsp+8],rbx
+012de325 push rdi
+012de326 sub rsp,30h
+012de32a mov rbx,rdx
+012de32d mov rdi,rcx
+012de330 lea rax,[rel 433CE30h]
+012de337 mov [rsp+20h],rax
+012de33c lea rcx,[rsp+20h]
+012de341 call qword [rel 433CE78h]
+012de347 lea rcx,[rsp+20h]
+012de34c mov rax,[rsp+20h]
+012de351 call qword [rax+38h]
+012de354 mov r8,rax
+012de357 xor r9d,r9d
+012de35a mov rdx,rbx
+012de35d lea rcx,[rsp+20h]
+012de362 call 00000000015BF860h
+012de367 mov rax,[rdi]
+012de36a lea rdx,[rsp+20h]
+012de36f mov rcx,rdi
+012de372 call qword [rax]
+012de374 nop
+012de375 mov rbx,[rsp+40h]
+012de37a add rsp,30h
+012de37e pop rdi
+012de37f ret

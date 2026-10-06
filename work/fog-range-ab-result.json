@@ -1,0 +1,169 @@
+{
+  "user_observations": {
+    "128": "No visible change",
+    "512": "No visible change"
+  },
+  "conclusion": "Neither tested endpoint visibly corrects the white pit fog. Do not install a range-only fix.",
+  "captures": {
+    "corson-position-check": {
+      "evidence": "C:\\Users\\Tim\\Documents\\Codex\\2026-10-04\\prompt-for-the-research-instance-research\\work\\live-atmosphere-readonly\\20261005T104316887110Z-corson-position-check.json",
+      "camera": {
+        "pointer": "0x1ee8c046b00",
+        "position_30_raw_floats": [
+          -122.58079528808594,
+          137.0443572998047,
+          -234.32666015625
+        ],
+        "index_F90": 0
+      },
+      "source_depth_endpoints": [
+        0.0,
+        64.0
+      ],
+      "processed_depth_endpoints": [
+        [
+          0.0,
+          64.0
+        ],
+        [
+          0.0,
+          64.0
+        ],
+        [
+          0.0,
+          64.0
+        ]
+      ],
+      "prepared_grid_z_6AC": [
+        0.023219337686896324,
+        0.9976780414581299,
+        48.0,
+        0.75
+      ],
+      "prepared_height_fade_6BC": [
+        0.0033333334140479565,
+        0.7901479005813599,
+        -77.8576889038086,
+        155.7153778076172
+      ]
+    },
+    "corson-fog128-active": {
+      "evidence": "C:\\Users\\Tim\\Documents\\Codex\\2026-10-04\\prompt-for-the-research-instance-research\\work\\live-atmosphere-readonly\\20261005T104652764970Z-corson-fog128-active.json",
+      "camera": {
+        "pointer": "0x1ee8c046b00",
+        "position_30_raw_floats": [
+          -122.58079528808594,
+          137.0443572998047,
+          -234.32666015625
+        ],
+        "index_F90": 0
+      },
+      "source_depth_endpoints": [
+        0.0,
+        128.0
+      ],
+      "processed_depth_endpoints": [
+        [
+          0.0,
+          128.0
+        ],
+        [
+          0.0,
+          128.0
+        ],
+        [
+          0.0,
+          128.0
+        ]
+      ],
+      "prepared_grid_z_6AC": [
+        0.011600591242313385,
+        0.9988399147987366,
+        48.0,
+        0.75
+      ],
+      "prepared_height_fade_6BC": [
+        0.0033333334140479565,
+        0.7901479005813599,
+        -38.9288444519043,
+        77.8576889038086
+      ]
+    },
+    "corson-fog512-active": {
+      "evidence": "C:\\Users\\Tim\\Documents\\Codex\\2026-10-04\\prompt-for-the-research-instance-research\\work\\live-atmosphere-readonly\\20261005T104850213893Z-corson-fog512-active.json",
+      "camera": {
+        "pointer": "0x1ee8c046b00",
+        "position_30_raw_floats": [
+          -122.58079528808594,
+          137.0443572998047,
+          -234.32666015625
+        ],
+        "index_F90": 0
+      },
+      "source_depth_endpoints": [
+        0.0,
+        512.0
+      ],
+      "processed_depth_endpoints": [
+        [
+          0.0,
+          512.0
+        ],
+        [
+          0.0,
+          512.0
+        ],
+        [
+          0.0,
+          512.0
+        ]
+      ],
+      "prepared_grid_z_6AC": [
+        0.002898448146879673,
+        0.9997101426124573,
+        48.0,
+        0.75
+      ],
+      "prepared_height_fade_6BC": [
+        0.0033333334140479565,
+        0.7901479005813599,
+        -9.732211112976074,
+        19.46442222595215
+      ]
+    }
+  },
+  "completed_probes": [
+    {
+      "evidence": "C:\\Users\\Tim\\Documents\\Codex\\2026-10-04\\prompt-for-the-research-instance-research\\work\\live-atmosphere-readonly\\20261005T104759902502Z-fog-range-probe.json",
+      "utc": "2026-10-05T10:46:29.877140+00:00",
+      "pid": 22592,
+      "exe_sha256": "51299faca61866cf10ea9035a15b8f22600a56557dd5ffc1aad390d5a54e6d82",
+      "dll_sha256": "5c36943c6dfb45713382bf471e6f9939f857ee94f7789b8fefb2fc3abc292842",
+      "atmosphere": "0x1ee8ec07360",
+      "field_offset": "0x450",
+      "original": 64.0,
+      "candidate": 128,
+      "duration_limit_seconds": 90,
+      "writes": 2,
+      "applied": true,
+      "restoration": "restored_and_read_back",
+      "limit": "External reads/writes are not atomic with the renderer. Candidate is not a verified fix."
+    },
+    {
+      "evidence": "C:\\Users\\Tim\\Documents\\Codex\\2026-10-04\\prompt-for-the-research-instance-research\\work\\live-atmosphere-readonly\\20261005T104922332594Z-fog-range-probe.json",
+      "utc": "2026-10-05T10:48:22.152321+00:00",
+      "pid": 22592,
+      "exe_sha256": "51299faca61866cf10ea9035a15b8f22600a56557dd5ffc1aad390d5a54e6d82",
+      "dll_sha256": "5c36943c6dfb45713382bf471e6f9939f857ee94f7789b8fefb2fc3abc292842",
+      "atmosphere": "0x1ee8ec07360",
+      "field_offset": "0x450",
+      "original": 64.0,
+      "candidate": 512,
+      "duration_limit_seconds": 60,
+      "writes": 2,
+      "applied": true,
+      "restoration": "restored_and_read_back",
+      "limit": "External reads/writes are not atomic with the renderer. Candidate is not a verified fix."
+    }
+  ]
+}

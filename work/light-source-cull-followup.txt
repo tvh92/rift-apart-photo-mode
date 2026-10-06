@@ -1,0 +1,40 @@
+# Light-source upstream collection and eligibility follow-up
+
+Build: `RiftApart.exe` SHA256 `51299faca61866cf10ea9035a15b8f22600a56557dd5ffc1aad390d5a54e6d82`. Static read-only disassembly. No game process, source, install, or runtime state changed. This continues `lightsubmit-spatial-gates-luna.txt` and does not revisit the previously resolved fade, ranking bucket, or auxiliary-volume predicates.
+
+## Findings
+
+- 0x12BB640` creates the per-view context and invokes 0x10759C0` only when input render flags have bit 8 set (0x12BB80F..0x12BB822`). That helper reads a view-owned pointer/count pair through 0x1235560` and 0x1235580` (`view+0x1DF0`, `view+0x1DFC` when the global fallback flag is clear), builds a 0x90`-byte request, and calls 0x12B97E0` with selector/category byte 6. It retains the returned object at `+0x60` in the request and derives a scalar from `view+0x410`. This is a per-view registry/resource request, not a direct LightSubmit source list: the recovered call does not append light records or expose a distance check. The request's semantic name and exact relationship to ordinary light ownership remain unresolved.
+- LightSubmit's ordinary candidate loop consumes the query's source pointer/count arrays (`query+0x18/+0x20`, with a preexisting secondary array at `+0x8/+0x10`). It first computes per-view ranking data, then marks invalid candidates with `FLT_MAX`, sorts/compacts and retains up to 20 from that ranked bucket before merging candidates. This identifies where source references enter the consumer, but this pass did not recover the earlier producer that initially fills those query arrays.
+- A real render/eligibility mask exists before ranking: 0x10BA710` marks a source ineligible when `(source+0x88 & 0x01810010) != 0`, or when the source's `+0x88` bit 2 is clear, or when `(source+0x8C & computedViewMask)==0` (0x10BABBA..0x10BABD7`). The computed mask is derived from global render state and query count (0x10BAA6D..0x10BAAA9`); its semantic labels are unresolved. The candidate-append loop applies further independent masks: `(source+0x8C & mask)==0` rejects, while `(source+0x90 & mask)==0` skips the optional ranking test (0x10BAD72..0x10BAE11`). These are source/view state and render-layer gates, not explicit camera-range comparisons. They are plausible explanations for a light absent from the candidate list, but static evidence does not connect the particular Photo-camera symptom to a given bit.
+- 0x12B5010` is a conditional category/registry check. Its LightSubmit caller invokes it only when source flags `+0x5C` bit 11 are set, passing a caller-selected category byte (0x10BAD40..0x10BAD5C`). For type byte `+0x5F == 5`, it also checks category bit `DL` against resource metadata reached via `source+0x108`; a missing bit returns false. Otherwise it follows the packed link/index encoded in `source+0x68` through the global table at 0x6747CE0`, validating the index against 0x6747CFC`. No camera position or distance participates. The code is an ownership/category eligibility gate, not a range predicate.
+- 0x12B7250` rejects source flags `+0x5C & 0xE0`, then walks parent/linked objects via 0x12B5FF0` and rejects if any ancestor has those same flags. For node type 0 it also rejects flag bit 0 at `+0x80`; for type 5 it checks bit 0 at `+0x170`. 0x12B5FF0` validates a source's bit-11 packed link through the same global registry and clears that link/flag if its index/category/entry is invalid. This establishes inherited entity state as a hard submit exclusion; it is independent of camera range.
+- 0x109D010` rebuilds source culling-volume metadata from source geometry/mode and writes count/pointer `+0xDC/+0xE0`. It accepts no view argument. The later 0x1604440` clip-volume test rejects a source only when generated source-volume data exists and fails the current view clip context; absent generated volume bypasses that test. This is the already established frustum gate, not a distance cap.
+
+## Conclusion and unresolved edge
+
+The upstream evidence now establishes three non-distance exclusion families before ordinary-light record construction: source render/LOD-mask state, category/resource registry membership, and inherited hierarchy flags. A later view-frustum gate is also explicit. The per-view helper 0x10759C0` retrieves/builds a query object but is not proven to cull ordinary lights. No static evidence from these paths establishes a hard Euclidean camera distance limit or ties a specific mask/registry failure to the user's observed Photo-view disappearance. The next useful connection would be finding the producer of `LightSubmitQuery` arrays (`query+0x18/+0x20`) and proving how it populates entity render flags/masks for the active view; guessing at a flag meaning or patch target is not justified.
+
+## Evidence windows
+
+- 0x12BB640`: 0x12BB80F..0x12BB831` (conditional 0x10759C0` call); caller-level per-view view loop from 0x12BB8DB` onward.
+- 0x10759C0`: 0x10759C0..0x1075BC1`; 0x12B97E0` call at 0x1075B13..0x1075B3B`.
+- 0x12B97E0`: 0x12B97E0..0x12B9A00`.
+- 0x10BA710`: source input/rank masks 0x10BAA6D..0x10BABF4`; source category/hierarchy/mask gates 0x10BAD40..0x10BAE11`.
+- 0x12B5010`: 0x12B5010..0x12B50A6`; 0x12B7250`: 0x12B7250..0x12B729F`; 0x12B5FF0`: 0x12B5FF0..0x12B6068`.
+- 0x109D010`: 0x109D010..0x109D334`.
+
+## Selection caps and runtime symptom note
+
+A separate hard count limit is present during the optional-source merge: 0x10BAC78..0x10BACE2` stops adding candidates once `query+0x10` reaches 0x200` (512). This is a true list-capacity limit and source-count cap, not a camera-distance test. The scene-wide count of eligible sources has not been measured, so the six local lamps do not establish whether the cap can be reached. The preceding ranked sublist is capped at 20 entries (0x10BB573..0x10BB59A`). With the user-reported behavior that Ctrl changes a smooth fade into per-lamp on/off transitions at differing distances, a distinct hard eligibility/visibility edge remains a strong runtime hypothesis. The static masks and clip gate above are concrete candidates to correlate in the planned per-view capture; this observation does not by itself identify which one fires.
+
+## Link from query construction to the per-view candidate array
+
+Follow-up tracing connected the candidate array consumed by 0x10BA710` to 0x10BB680` (`LightSubmitQuery` construction). The builder allocates output buffers for two manager-backed lists and registers requests through 0x12B97E0` using selector byte 1. The first request targets query `+0x8/+0x10`. If 0x11EE3A0(view)` succeeds, it also constructs a view-region request: 0x11F2C10` writes a center derived from the view transform and a radius field of 48.0 (0x42400000`); 0x1602E10` transforms a canonical point set using that descriptor, and the second 0x12B97E0` request targets query `+0x18/+0x20`, the optional view-scoped references that 0x10BA710` later ranks and filters. This identifies where the query buffers and request descriptors are created, and the spatial inputs they carry; it does not prove that this call synchronously fills the arrays.
+
+The 48.0 field and generated points establish a spatially bounded request, but the reviewed code alone does not prove its shape semantics, whether it is a hard 48-unit light-center cutoff, or whether the registry query tests full light volumes. 0x107B750` allocates/links a registry request descriptor and calls 0x107AA50`; it does not itself iterate light sources or evaluate the generated shape. The actual request consumer/result-population semantics remain untraced. This is now a stronger candidate for the per-lamp hard transition than the later ranking bucket; correlate the per-view query result and masks against the pending capture before concluding.
+
+
+
+Additional backend evidence: 0x107B750 stores descriptor fields, including the request shape pointer/metadata and output pointer/count fields, in a global registry slot, then calls 0x107AA50 (0x107B760..0x107B93E). This is request registration, not the missing collection consumer.
+

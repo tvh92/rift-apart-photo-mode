@@ -1,0 +1,68 @@
+FUNCTION 0x1096e96 BOUNDS ('0x1096e96', '0x1096f6c')
+01096e96 mov [rsp+60h],rdi
+01096e9b lea rcx,[rel 549E340h]
+01096ea2 mov edi,[rbx+4]
+01096ea5 mov r9,rsi
+01096ea8 mov ebx,[rax+4]
+01096eab mov r8,r13
+01096eae add rdi,r14
+01096eb1 mov [rsp+20h],r15
+01096eb6 mov rdx,[rbx+r14]
+01096eba call 0000000001358410h
+01096ebf mov [rsi+38h],rax
+01096ec3 lea rcx,[rel 549E340h]
+01096eca mov rdx,[rbx+r14+8]
+01096ecf mov r9,rsi
+01096ed2 mov r8,r12
+01096ed5 mov [rsp+20h],r15
+01096eda call 0000000001358410h
+01096edf xorps xmm0,xmm0
+01096ee2 movss xmm4,[rel 4A4A198h]
+01096eea movaps xmm3,xmm4
+01096eed movss xmm2,[rel 2E6A24Ch]
+01096ef5 movaps xmm1,xmm2
+01096ef8 mov [rsi+30h],rax
+01096efc mov eax,[rdi+8]
+01096eff mov ecx,[rdi]
+01096f01 mov edx,[rdi+4]
+01096f04 cvtsi2ss xmm0,rax
+01096f09 mov eax,[rdi+0Ch]
+01096f0c divss xmm3,xmm0
+01096f10 xorps xmm0,xmm0
+01096f13 cvtsi2ss xmm0,rax
+01096f18 movss [rsi+40h],xmm3
+01096f1d divss xmm4,xmm0
+01096f21 movd xmm0,ecx
+01096f25 cvtdq2ps xmm0,xmm0
+01096f28 movss [rsi+44h],xmm4
+01096f2d subss xmm1,xmm0
+01096f31 movd xmm0,edx
+01096f35 cvtdq2ps xmm0,xmm0
+01096f38 mulss xmm1,xmm3
+01096f3c subss xmm2,xmm0
+01096f40 movss [rsi+48h],xmm1
+01096f45 mulss xmm2,xmm4
+01096f49 movss [rsi+4Ch],xmm2
+01096f4e mov eax,[rdi+18h]
+01096f51 mov [rsi+54h],eax
+01096f54 mov eax,[rdi+1Ch]
+01096f57 mov [rsi+50h],eax
+01096f5a mov eax,[rdi+20h]
+01096f5d mov rdi,[rsp+60h]
+01096f62 mov [rsi+58h],eax
+01096f65 cmp [rsi+4],r15w
+01096f6a jbe short 0000000001096F73h
+FUNCTION 0x1096f6c BOUNDS ('0x1096f6c', '0x1096f91')
+01096f6c mov [rbp+118h],rsi
+01096f73 mov al,1
+01096f75 jmp short 0000000001096F79h
+01096f77 xor al,al
+01096f79 mov rbx,[rsp+68h]
+01096f7e mov rbp,[rsp+70h]
+01096f83 add rsp,30h
+01096f87 pop r15
+01096f89 pop r14
+01096f8b pop r13
+01096f8d pop r12
+01096f8f pop rsi
+01096f90 ret

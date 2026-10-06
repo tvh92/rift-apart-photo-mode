@@ -1,0 +1,47 @@
+Rift Apart PC geometry LOD trace (read-only)
+Build context: exact local executable build/hash as recorded in work/lod-resume-notes.txt. RVAs below.
+
+Finding
+--------
+There is a real per-object geometry LOD selector. It is separate from the boolean visibility/size gate at 0x111AD50. The graphics enum +0x70 bridge is still unresolved; do not claim that it feeds the globals in this path.
+
+Tier selector 0x111A700 (bounds 0x111A700-0x111A90B)
+------------------------------------------------------
+Inputs include two 3D positions (RDX and R8), a scale in XMM3, and a metadata pointer in R15. It computes squared distance between positions and evaluates five model thresholds from [R15+0x58,+0x5C,+0x60,+0x64,+0x68]. Each threshold is passed through 0x111EB10, squared, and compared with distance squared. Initial distance tier is 0 through 5: the far branch adds 3 at 0x111A85D and combines two 0/1 comparisons at 0x111A860. Masking and lower-bound/clamp logic through 0x10FC2B0, 0x0389950 and 0x111ABE0 may alter the final tier. This range correction was established by the parent from the full selector disassembly.
+
+Alternate selector 0x111A910 (bounds 0x111A910-0x111AA71)
+---------------------------------------------------------
+Compares a scalar distance against the same five scaled thresholds and assembles a tier similarly. It also uses 0x111ABE0 for bounds/clamp handling.
+
+Threshold helper 0x111EB10 (bounds 0x111EB10-0x111EBB0)
+--------------------------------------------------------
+The helper chooses base scale 0x5339184 or alternate 0x5339188 based on R9B. R8B forces scale 1.0. If byte 0x5339162 is enabled and endpoints differ, it interpolates between 0x5339164/0x5339168 using distance bounds 0x533916C..0x5339170 (the interpolation helper is 0x111A500). It returns XMM0*XMM1*selected scale. Field names are not established.
+
+Geometry consumers
+------------------
+* Caller 0x111F86C uses the returned tier (EAX -> R12D) to select a pair at [RBX+tier*4] and [RBX+tier*4+2]. The second 16-bit member determines an allocation size of (count+1)*24 bytes at 0x111F882-0x111F89A, then selected-variant processing continues.
+* Caller 0x111FF30 uses the tier to select two 16-bit entries from [R15+tier*4] and uses them in model/resource setup at 0x111FF4B-0x1120027.
+* Caller 0x1121EA4 likewise indexes [R8+tier*4] at 0x1121ECD-0x1121ED3, then derives selected model metadata and prefetches the selected entry at [base+item*0x40] at 0x1121F39-0x1121F50.
+These integer-index and resource-table uses establish model/geometry variant selection, rather than just visibility culling.
+
+Per-view scale source
+--------------------
+At caller 0x111F7BC, code computes XMM7=[RAX+0x1D18]*[RAX+0x1D14] (0x111F7F3-0x111F80D), takes max absolute model bounds from [RSI+0x70,+0x74,+0x78], multiplies by XMM7 (0x111F817-0x111F854), and passes that result as XMM3 to 0x111A700 (0x111F862-0x111F86C). Other callers at 0x11254DF, 0x1125A07, and 0x112490D also compute the +0x1D18 * +0x1D14 product before using the threshold helper/selector.
+
+Contrast with boolean size/visibility gate
+------------------------------------------
+0x111AD50 returns 0/1. Its callers 0x1120648 and 0x11226C6 use the result to gate flags (including 0x4000/0x6000), not as a table index. It is not the geometry tier selector.
+
+Field writer trace started 2026-10-04
+-------------------------------------
+Direct float writes found by decoding .text for memory displacement +0x1D14/+0x1D18:
+* 0x1237399 writes +0x1D14 on object RBX. In 0x12372F0, RBX=RCX; the scalar is derived from camera values at +0x410/+0x414 and aspect/mode, then the function writes other projection-related data at +0x1D28/+0x1D30/+0x1D40/+0x1D44. Its direct caller is 0x12BB710, which passes RDI. This looks like a projection/view setup path, but the type/name is unverified.
+* Other +0x1D18 writes at 0x00FF2D46 and 0x00FF49D8 use their own object contexts and are not yet tied to the view object read by the selector.
+* 0x1A814DC copies [RBX+0x1D18] to [RAX+0x1D18] while building/copying an object associated with global 0x6739B10; 0x1A82B00 updates another object field +0x1D18 in Photo Mode/effects code. These have not been shown to be the selector's active view object.
+* 0x293BF9D writes a byte (not float) at +0x1D18 in an unrelated setup function.
+
+Photo lifecycle caution
+-----------------------
+Photo exit 0x1A57912 writes global object [0x6739B10]+0x1DD8/+0x1DE0; Photo entry 0x1A570AE reads those fields. This currently ties those fields to saved/restored Photo state, not to the active render-view pointer used by selectors. No safe Photo-only override target is established yet.
+
+No game/shared source, install, or executable files were modified. No live game access was used.

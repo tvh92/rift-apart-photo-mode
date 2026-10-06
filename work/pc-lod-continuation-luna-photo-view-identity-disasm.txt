@@ -1,0 +1,62 @@
+Focused disassembly excerpt (RVA; PE image-relative; local executable build per AGENTS.md)
+
+0x1A82596-0x1A825E1: Photo owner invokes construct/update and passes same owner forward
+01a82596 call 0000000001A81300h
+01a8259f mov rax,[rdi+10h]
+01a825a3 mov rbx,[rax]
+01a825c1 lea rcx,[rdi+48h]
+01a825c5 call 0000000001B1EF20h
+01a825ca mov rcx,rdi
+01a825e1 jmp 0000000001A82650h
+
+0x1A81300: construct Photo-owned object and copy Photo/global +1D18
+01a8130f mov rbx,[rel 6739B10h]
+01a8131f mov rdi,rcx
+01a81466 lea rcx,[rel 6739A10h]
+01a81479 call 0000000001239AF0h
+01a8147e mov [rdi+58h],rax
+01a814ad mov rcx,rax
+01a814b0 call 0000000001203200h
+01a814b5 mov rcx,[rdi+58h]
+01a814b9 mov rdx,rbx
+01a814bc call 0000000001203C00h
+01a814c1 movss xmm1,[rbx+1D18h]
+01a814cc mov rax,[rdi+58h]
+01a814d0 maxss xmm1,xmm0
+01a814d4 minss xmm1,[rel 4A4A198h]
+01a814dc movss [rax+1D18h],xmm1
+
+0x1239AF0 allocator, allocation size, resource descriptor initialization
+01239af0 mov rbp,rdx
+01239b34 lea rdx,[rel 32FFEA8h]
+01239b3e mov ecx,16DC0h
+01239b43 call 00000000010DB2C0h
+01239b48 mov [rdi+30h],rax
+01239b5c call 0000000002D27AC9h
+01239b61 movups xmm0,[rbp]
+01239b89 movsd xmm1,[rbp+30h]
+01239baa call 0000000001203840h
+
+0x1203C00 setter called above
+01203c00 mov [rcx+16D88h],rdx
+01203c07 ret
+
+0x1A82650 / 0x1A82B00: use PhotoOwner+58 as +1D18 write target
+01a82663 mov rdi,rcx
+01a82666 mov rcx,[rcx+58h]
+01a82691 mov rcx,[rdi+10h]
+01a82a5b mov rax,[rdi+58h]
+01a82ad7 movss xmm0,[r14+1D18h]
+01a82ae0 maxss xmm0,xmm9
+01a82af3 minss xmm0,xmm10
+01a82b00 movss [rax+1D18h],xmm0
+
+Geometry caller reads (separate path)
+0111f7f3 movss xmm7,[rax+1D18h]
+0111f7ff mulss xmm7,[rax+1D14h]
+0111f84f mulss xmm8,xmm7
+0111f86c call 000000000111A700h
+
+01124916 mov rax,[r14+8]
+0112491a movss xmm9,[rax+1D18h]
+01124923 mulss xmm9,[rax+1D14h]

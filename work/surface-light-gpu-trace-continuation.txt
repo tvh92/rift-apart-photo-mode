@@ -1,0 +1,24 @@
+# Ordinary surface-light downstream trace
+
+Build: exact `RiftApart.exe` SHA256 `51299faca61866cf10ea9035a15b8f22600a56557dd5ffc1aad390d5a54e6d82`. Read-only static disassembly; no game process, installation, source, or saves touched.
+
+## Proven producer chain
+
+- `0x10B9DB0` iterates submitted query entries. For each it calls `0x10B95A0` (returns a `0x170` allocated light record), then calls `0x10BE180` with view, record, source light, and view context.
+- In `0x10BE180`, ordinary paths call `0x1099200` with output pointers `record+0x70` and `record+0x7C`; type-4 path calls `0x1098F90`, stores scalar at `record+0x7C`, and copies source RGB into `record+0x70`. Thus the adjusted values are present in the `0x170` record returned/retained in the LightSubmit query.
+- `0x10BE180` also passes the record and source into `0x10BE940`. That routine constructs a separate candidate/culling volume buffer: it allocates `count * 0x40` bytes and sends the generated `0x30`-stride vector entries through `0x10B8CB0`. This is evidence of an auxiliary culling path, not evidence that `record+0x70` feeds the shader's `g_Lights` array.
+- `0x10BE180` writes/links record pointers into a per-query array (`context+0x1800` count; arrays at `+0`, `+0x800`, `+0x1000`). Query `0x10B9DB0` maintains associated pointer arrays at query `+0x80/+0x88` and invokes `0x10BF210` for query rebuilds. I did not prove the subsequent graphics upload consumer from this query structure.
+
+## Shader reflection and remaining gap
+
+`work/shader-fog-reflection-main.txt` reports reflected `g_Lights` stride `128`; its only listed member is `$Element.m_BitFlagsVFog` at byte offset `100`. This is consistent with (but does not prove the native identity of) the reflected `LinearColor` at byte offset 64 cited in the earlier handoff. The static trace does not establish that the `0x170` LightSubmit record's `+0x70` RGB is copied to the reflected `g_Lights` element's `+64` color, nor does it identify the exact GPU upload routine/resource. The record reaches a query-owned list; the actual surface-light shader-buffer bridge remains unresolved.
+
+Do not treat `0x10BEC60` pass-5 `LightSources` as that bridge; its distinct `0x40` record path remains a separate effect pass.
+
+## Evidence sources
+
+- `work/surface-light-distance-fade-main.txt`: fade helper instructions and existing interpretation.
+- `work/pc-lod-continuation-luna-ordinary-light-be940.txt`: `0x10BE940`, especially `0x10BEA29..0x10BEB50` for allocation/pack call and `0x10BEB76..0x10BEC1B` for subsequent record processing.
+- `work/pc-lod-continuation-luna-lightsubmit-query-consumers.txt`: independent `0x111FB10` consumer path and per-view distance ranking.
+- `work/shader-fog-reflection-main.txt`: reflected shader resource stride/member.
+- `native_trace_full.py dump 0x10B9DB0 0x10BE180 0x10B95A0 0x10BE940 0x10B8CB0 0x10BF210`: chained disassembly used for this pass.

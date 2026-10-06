@@ -1,0 +1,26 @@
+Tier-floor helper and owner-type follow-up (read-only; 2026-10-04)
+
+Geometry selector range
+-----------------------
+Preserve the corrected preliminary distance-tier range 0..5 in selector 0x111A700 (and corresponding alternate selector 0x111A910). This is distinct from the subsequent configured floor/availability clamp below. The earlier geometry scratch note's phrase “tiers 0..4” is outdated; do not use it as the selector-range conclusion.
+
+0x111ABE0: configured tier floor with available-count bound
+------------------------------------------------------------
+Inputs: XMM0 is the distance/interpolation scalar; RDX is the metadata/context object; R8B is a flag passed into the setting choice. RDI=[RDX+0x88], count=[RDI+0x56]. For each index, 0x10FC930(RCX=RDX, EDX=index) tests whether that entry is available. If true, it passes the index's 32-byte record at `[RDI+0x90]+index*0x20` to 0x11059B0. The current EBP accumulator is updated to the maximum count returned by 0x11059B0 among available entries.
+
+0x10FC930 tests metadata availability: it bounds the index by `[RDX+0x88]+0x56`; where a registry record is available, it tests a bit in its bitmap (`[record+0x18]`); fallback logic checks a list at `[metadata+0xE8]`. This is availability/residency metadata, not a distance comparison.
+
+0x11059B0 derives a count from its 32-byte entry. Its bounded disassembly starts by counting changes across six adjacent dwords, builds a set of candidate values from associated 0x40-byte records, and finishes by counting distinct entries. Caller context filters these records to entries passing 0x10FC930. “Available variant count” is the supported interpretation from this context; 0x11059B0 itself has no symbol/name.
+
+After the loop, 0x111ABE0 sets the maximum return index to `EBP-1`. It selects base global 0x533918C, or 0x5339190 when the input flags choose that path. Global 0x5339194 is a delta scaled by the blend. With global enable byte 0x5339162, it obtains a blend factor from 0x111A500 using the distance interval globals 0x533916C/0x5339170 and XMM0; otherwise the blend is zero. It computes `trunc(base - 0x5339194*blend) - 6 + availableCount`, then clamps to `[0, availableCount-1]` and returns that index. The distance interval globals 0x533916C/0x5339170 only produce the smooth blend coefficient; they are not tier endpoints.
+
+This is a configured/animated lower-tier floor (its values depend on globals and distance interpolation), constrained by the number of available metadata variants. It is not a new distance threshold. A hook forcing the preliminary distance tier to zero at 0x111A860/0x111A9E8 would still pass through this floor; high-tier preservation/floor globals and availability metadata remain operative. This follow-up does not recommend changing them.
+
+Photo owner RTTI status
+-----------------------
+`0x1A82596` calls 0x1A81300 with RCX=RDI, then the same owner flows to update 0x1A82650. The traced methods show Photo-specific state and allocate/store `[owner+0x58]`, but they do not establish a class name for that RCX object. Recovered `PhotomodeSystem` and `PhotomodeSystemShared` vtables in `lod-photo-vtables.json` contain neither 0x1A81300 nor 0x1A824EE. This does not prove the owner is another named type; the owner type remains unresolved from this evidence.
+
+No game/shared source, executable, installed file, or mod was modified.
+
+
+

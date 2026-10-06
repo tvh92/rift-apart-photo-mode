@@ -1,0 +1,28 @@
+Focused view-field writer trace (read-only, 2026-10-04)
+
+Consumers
+---------
+Geometry-selection caller 0x111F7BC computes `[RAX+0x1D18] * [RAX+0x1D14]` (0x111F7F3-0x111F80D), then multiplies this factor by max absolute model bounds `[RSI+0x70,+0x74,+0x78]` (0x111F817-0x111F854) before passing the result to tier selector 0x111A700.
+Another caller at 0x112490D computes `[RAX+0x1D18] * [RAX+0x1D14]` from `RAX=[R14+8]` (0x1124916-0x1124923) and feeds it into geometry LOD threshold scaling.
+
+Direct float stores found by scanning .text for memory displacement +0x1D14/+0x1D18
+----------------------------------------------------------------------------------
+`+0x1D14`:
+* Only direct float store found: 0x1237399 `movss [RBX+0x1D14],XMM6` in function 0x12372F0.
+* Function begins with `RBX=RCX` (0x1237317). It derives the stored scalar from camera values at `[RCX+0x410]`/`[RCX+0x414]`, aspect/mode flags at `[RCX+0x438]`, and constants (0x123730F-0x1237395). It then writes other camera/projection state at +0x1D28,+0x1D30,+0x1D40,+0x1D44.
+* Direct caller 0x12BB710 passes `RCX=RDI` (0x12BB706-0x12BB715). The caller's full owner/type is not established.
+
+`+0x1D18` float stores:
+* 0x00FF2D46 stores to `[RBP+0x1D18]`, where RBP is the third argument saved from RDX in 0x00FF2BA0. It selects and clamps a float from input records `[RSI+0x10]` or `[R15+0x10]` (0x00FF2D21-0x00FF2D46). Its direct caller 0x00FF2F52 passes `RDX=R15` and other record pointers in RCX/R8.
+* 0x00FF49D8 stores to `[RBP+0x1D18]`, where RBP was loaded from `[RSI+0x50]` (0x00FF49A7). It copies/clamps an input table value at `[RDI+RBX+0x1208]` when a corresponding flag is set (0x00FF49B4-0x00FF49D8). This path has no established link to the view pointer used by 0x111F7BC.
+* 0x1A814DC stores to `[RAX+0x1D18]` after `RAX=[RDI+0x58]`; it copies `[RBX+0x1D18]` and clamps to [0,1] (0x1A814B5-0x1A814DC). Function 0x1A81300 obtains RBX from global `[0x6739B10]` and creates/populates the target object through 0x1239AF0 (0x1A8130F, 0x1A81466-0x1A814DC). This is a Photo/effects update path, but its target has not been tied to the active LOD view object.
+* 0x1A82B00 stores to `[RAX+0x1D18]` in function 0x1A8269D; the function computes/clamps a value based on another object's +0x1D18 and local bounds. No caller/type connection to the LOD view pointer has been established.
+* 0x293BF9D writes one byte to `[R15+0x1D18]`; this is a different field width and unrelated setup path.
+
+Photo lifecycle relationship
+----------------------------
+Photo enter at 0x1A570AE reads `[0x6739B10]+0x1DD8/+0x1DE0` into Photo state fields +0xB8/+0xC8 (0x1A570AE-0x1A570D5). Photo exit at 0x1A57912 restores/clears those same `+0x1DD8/+0x1DE0` fields (0x1A57912-0x1A5795B). These lifecycle accesses do not reference +0x1D14 or +0x1D18, and the 0x6739B10 object has not been shown to be the active render-view object.
+
+Conclusion
+----------
+`+0x1D14` has a camera/projection setup writer and the LOD reader uses it as one factor in a product with `+0x1D18`. The direct `+0x1D18` writer set includes unrelated frame/effect objects; no write has yet been proven to target the exact active view object read by the model LOD selector. Photo exit's +0x1DD8/+0x1DE0 pointer/float pair is a distinct snapshot path. There is no established Photo-only reversible override target, so no value mutation is justified by this trace.

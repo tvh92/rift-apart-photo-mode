@@ -1,0 +1,32 @@
+# Review: proposed 0x1099270 far-fade relay
+
+Build: exact `RiftApart.exe` SHA256 `51299faca61866cf10ea9035a15b8f22600a56557dd5ffc1aad390d5a54e6d82`. This is a read-only design review; no code or install files changed.
+
+## Instruction site and state liveness
+
+At RVA `0x1099270`, bytes are exactly `F2 0F 10 81 A8 00 00 00` (`movsd xmm0,[rcx+0xA8]`), and the address is 8-byte aligned. Replacing exactly those eight bytes with `jmp rel32` plus three NOP bytes stays within one instruction. The four original call return addresses from `0x10BE180` are `0x10BE327`, `0x10BE3F2`, `0x10BE51E`, and `0x10BE6C5`; disassembly confirms each immediately follows a call to `0x1099200`.
+
+`0x10BE180` sets `R14=RCX` at `0x10BE1BF`. That is the same context pointer passed down through `0x10B9DB0` from primary frame routine `0x12BB640` (whose `RDI` context is passed as RCX to `0x10B9DB0` at `0x12BC17C`). The equality helper `0x1236840` is literally `cmp rcx,[rel 0x6739B10]; sete al`; primary frame routine `0x12BB640` calls it with `RCX=RDI` to generate its context-identity bit. Thus comparing `R14` against `[base+0x6739B10]` is a native-supported test for that same primary render context, rather than an inferred camera-object layout.
+
+At the hook, current `RSP` is entry `RSP-0xA8`: native prolog begins `mov rax,rsp; sub rsp,0xA8`. Therefore `[rsp+0xA8]` is the original return address. `R14` is nonvolatile and remains the context pointer across `0x1099200`; the helper does not modify it. Native `EDX` still holds the original light flag word from `mov edx,[rcx+0x88]` at `0x1099266` or `0x109924C`. Clearing only mask `0x40000` (bit 18) there skips the far-fade branch; bit 19's near-fade branch and bit 20's separate scalar branch remain independently controlled.
+
+The replayed `movsd` restores native `XMM0`. Using `RAX` as a scratch/absolute continuation target is safe at this site because the next instruction is `mov r8d,edx` at `0x1099278`, then `mov eax,[rcx+0xB0]` at `0x109927B`. Flags modified by gate compares are overwritten by `and r8d,3` at `0x1099281` before any conditional branch uses flags; they do not leak into the native logic. No source record fields are modified by the relay.
+
+## Unwind metadata
+
+The native PDATA fragment covering the site is `[0x1099243,0x10992CF)`, unwind RVA `0x4DF857C`; its unwind header is `21 04 02 00` and its CHAININFO target is `[0x1099200,0x1099243)`, unwind RVA `0x4DF8558`. Thus a relay-specific dynamic function row chained to the fragment will itself encounter the original chained root on unwind.
+
+The design is sound if the relay is genuinely leaf-like: no stack allocation/use, no calls, no writes to nonvolatile GPRs or XMM6–XMM15, and no exception-producing helper. Its dynamic unwind registration must be present before installing the branch and remain until after restoring the original instruction. Run `RtlVirtualUnwind` probes at relay entry, both gate outcomes, and the continuation edge, verifying the restored `RSP`, parent return address, and continued chain through the original root.
+
+## Install constraints and remaining check
+
+The patch site alignment supports an aligned 64-bit replacement, but the installer still needs to fail closed unless the trampoline's `jmp rel32` is in range (±2 GiB) and the patched 8-byte native window matches exactly. Suspend all other game threads while applying the single 8-byte write; register unwind first, patch second, and reverse that order for teardown. Ensure the dynamic table base makes both relay RVAs and the chained executable PDATA RVAs representable in the same 32-bit-relative address space (using the executable base is straightforward if the nearby relay is within 4 GiB).
+
+The view identity part of the gate is grounded in native comparisons and the primary `0x12BB640 -> 0x10B9DB0 -> 0x10BE180` route. The remaining runtime-specific condition is that `geometry_active` is only true in the intended Photo geometry state and is read atomically/with the intended synchronization. Static native evidence cannot establish that plugin-state contract.
+
+## Evidence used
+
+- `work/native_trace_full.py dump 0x1099200 0x10BE180 0x12BB640 0x1236840`
+- `work/native_trace_full.py near 0x6739B10`
+- Exact instruction/unwind metadata parsed from the same verified executable by `work/disassemble_camera.py`.
+

@@ -1,0 +1,26 @@
+# Photo status indicator source review
+
+Read-only review of:
+- `outputs/camera-native-status-candidate/PhotoLOD.h`
+- `outputs/camera-native-status-candidate/PhotoIndicator.h`
+- `work/status-candidate-build-test.log`
+- `work/lazy-indicator-validation.json`
+
+Compared candidate modules against `outputs/camera-native-lighting-candidate`; SHA-256 matched for CameraBoost.c, GeometryLOD.h, PhotoFog.h, PhotoLight.h, CameraStubs.S, HidExports.c, and hid.def. No source, installation, or runtime state was changed.
+
+## Verdict
+
+No blocker found in indicator ownership, startup gating, request coalescing, hide/exit handling, or UI-thread use of GDI/window APIs. Indicator code runs from the validated active-Photo state-4 path or a qualified Ctrl rising edge. It uses a one-time atomic start gate, a dedicated message thread, and UI-thread-owned HWND/GDI state. It does not start from DLL initialization or notification-only calls. The card uses no-activate/click-through styles and updates a layered window without touching game input focus.
+
+Hide/exit requests invalidate the pending mode and increment a serial; a render already in progress detects a changed serial before showing. A queued message then applies the newest coalesced request. The UI worker owns the window and GDI objects, and the thread is not joined by the game callback. A destroyed owner window ends the message loop and resets the start gate for a later restart. DPI sizing, alpha premultiplication, hold/fade timing, and cleanup have native probe coverage.
+
+The status build log reports the real relay arithmetic probe, 29 relay instruction-start unwind cases, 12 fog calls, lifecycle/metadata/Ctrl tests, camera and no-clip regression tests, bitmap tests at 96/144/192 DPI, resource cleanup, click-through/no-activation, hidden-window rendering, lazy worker/start/restart, and 44 HID exports. These are local probes/mocks. They do not establish that this exact candidate has been runtime-confirmed in-game; loading and in-game indicator behavior remain separate runtime evidence.
+
+## Non-blocking observations
+
+- `indicator_target_valid` verifies the target belongs to this process and that the foreground window belongs to this process, but does not require `foreground == target`. A sibling window in the same process could leave the card attached to a non-foreground game HWND. The lifecycle toggle itself checks same-process foreground, and the overlay remains no-activate/click-through, so this is a narrow window-selection edge rather than an input/focus defect.
+- DPI is sampled when a card refreshes. If the target changes monitors while the card is visible, the existing bitmap dimensions/font stay at the original DPI until the next refresh. This is a presentation edge only.
+- One existing geometry hotkey samples `GetAsyncKeyState(VK_CONTROL)` three times in one expression. It is redundant and can miss a very brief transition; it is outside the indicator addition and was already present in the reviewed lighting source.
+
+The candidate source review does not independently verify the external loader's exact executable hash gate or real game behavior. Retain those as separate installation/runtime checks.
+

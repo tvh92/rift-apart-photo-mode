@@ -1,0 +1,21 @@
+{
+  "installed_dll_unchanged": "16dcd44057c3114b123e25974b9b563afc487650686d3985784614caba5f7cbd",
+  "status": "Completed near/far/inside bridge queue captures; exact source selection gate unresolved.",
+  "user_landmark": "Lamp on red bridge near Emperor statue, Corson V; about six lamps, smooth native fade versus hard farther Ctrl cutoff.",
+  "process_writes": 0,
+  "tests": "18 isolated parser, bounds, ownership-change and retirement tests passed.",
+  "review": "work/light-capture-readonly-review.txt: no blocker; limits retained.",
+  "capture_source_sha256": "d55655575d4710596afea3742c46eb72a2867232107ff50fc8ef083f4146c6fd",
+  "preparation_status_historical": "Awaiting near lamp capture; game not running at preparation.",
+  "preparation_source_sha256_historical": "79f9208f00d8022356c9d6fad9fd079d62d116b2bcf3b565895ca47f1bb91566",
+  "source_queries_validated": 0,
+  "comparison_reports": [
+    "work/bridge-light-near-far-comparison.json",
+    "work/bridge-light-cutoff-bracket.json"
+  ],
+  "corrections": [
+    "passBB marker has null parameters; old query derivation retracted",
+    "reserved archive capacity16384 does not imply reading16384 entries",
+    "request output slot68; slot50 is filter context"
+  ]
+}

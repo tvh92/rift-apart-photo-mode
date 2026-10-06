@@ -1,0 +1,157 @@
+FUNCTION 0xf18a20 ROOT (15829536, 15829625, 81601220) RANGES [(15829536, 15829625, 81601220), (15829625, 15830037, 81601236), (15830037, 15830076, 81601260), (15830076, 15830092, 81601284)]
+00F18A20 mov [rsp+18h],rbx
+00F18A25 push rbp
+00F18A26 push rdi
+00F18A27 push r15
+00F18A29 sub rsp,40h
+00F18A2D mov r15d,r8d
+00F18A30 lea r9,[rel 32B25B0h]
+00F18A37 mov r8d,944BD3ADh
+00F18A3D mov rbp,rdx
+00F18A40 mov rbx,rcx
+00F18A43 call 0000000000FA2B70h
+00F18A48 test al,al
+00F18A4A je near 0000000000F18C3Ch
+00F18A50 mov edx,32FAC8E0h
+00F18A55 mov rcx,rbp
+00F18A58 call 00000000015B3220h
+00F18A5D mov edx,364A6C7Ch
+00F18A62 mov rcx,rbp
+00F18A65 mov rdi,rax
+00F18A68 call 00000000015B3220h
+00F18A6D mov r8,rax
+00F18A70 test rdi,rdi
+00F18A73 je near 0000000000F18C3Ch
+00F18A79 mov [rsp+60h],rsi
+00F18A7E mov [rbx+30h],rbp
+00F18A82 mov ecx,[rdi+4]
+00F18A85 mov [rsp+68h],r14
+00F18A8A test rax,rax
+00F18A8D je short 0000000000F18AC1h
+00F18A8F mov edx,[rcx+rbp]
+00F18A92 mov rcx,0FFFFFFFFFFFFFFFFh
+00F18A99 add rdx,rbp
+00F18A9C nop dword [rax]
+00F18AA0 inc rcx
+00F18AA3 cmp byte [rdx+rcx],0
+00F18AA7 jne short 0000000000F18AA0h
+00F18AA9 xor edi,edi
+00F18AAB test rcx,rcx
+00F18AAE mov eax,edi
+00F18AB0 cmovne rax,rdx
+00F18AB4 mov [rbx+38h],rax
+00F18AB8 mov eax,[r8+4]
+00F18ABC add rax,rbp
+00F18ABF jmp short 0000000000F18AC9h
+00F18AC1 xor edi,edi
+00F18AC3 mov [rbx+38h],rdi
+00F18AC7 mov eax,edi
+00F18AC9 mov edx,135832C8h
+00F18ACE mov [rbx+40h],rax
+00F18AD2 mov rcx,rbp
+00F18AD5 call 00000000015B3220h
+00F18ADA test rax,rax
+00F18ADD je short 0000000000F18B0Ah
+00F18ADF mov esi,[rax+4]
+00F18AE2 lea rcx,[rbx+48h]
+00F18AE6 mov r14d,[rax+8]
+00F18AEA add rsi,rbp
+00F18AED mov rax,[rbx+10h]
+00F18AF1 mov rdx,rsi
+00F18AF4 shr r14d,5
+00F18AF8 mov r9,rbp
+00F18AFB mov r8d,r14d
+00F18AFE mov [rsp+20h],rax
+00F18B03 call 0000000000FFD4D0h
+00F18B08 jmp short 0000000000F18B10h
+00F18B0A mov rsi,rdi
+00F18B0D mov r14d,edi
+00F18B10 mov [rbx+60h],r14d
+00F18B14 mov [rbx+68h],rsi
+00F18B18 mov [rbx+70h],rdi
+00F18B1C mov byte [rbx+78h],0
+00F18B20 test r15b,2
+00F18B24 jne short 0000000000F18B5Dh
+00F18B26 movsx edx,word [rbx+58h]
+00F18B2A mov ecx,edi
+00F18B2C mov rax,[rbx+50h]
+00F18B30 test edx,edx
+00F18B32 jle short 0000000000F18B5Dh
+00F18B34 lea r8,[rel 6254010h]
+00F18B3B nop dword [rax+rax]
+00F18B40 cmp [rax+8],r8
+00F18B44 je short 0000000000F18B52h
+00F18B46 inc ecx
+00F18B48 add rax,20h
+00F18B4C cmp ecx,edx
+00F18B4E jl short 0000000000F18B40h
+00F18B50 jmp short 0000000000F18B5Dh
+00F18B52 cmp word [rax+12h],0
+00F18B57 je short 0000000000F18B5Dh
+00F18B59 mov byte [rbx+78h],1
+00F18B5D test r15b,1
+00F18B61 jne near 0000000000F18C15h
+00F18B67 mov edx,3AB204B9h
+00F18B6C mov rcx,rbp
+00F18B6F call 00000000015B3220h
+00F18B74 mov rsi,rax
+00F18B77 test rax,rax
+00F18B7A je near 0000000000F18C22h
+00F18B80 mov ecx,[rax+8]
+00F18B83 lea rdx,[rel 32B26E8h]
+00F18B8A shr ecx,4
+00F18B8D xor r8d,r8d
+00F18B90 mov r15d,ecx
+00F18B93 lea rcx,[rcx+rcx*2]
+00F18B97 shl rcx,3
+00F18B9B call 00000000010DB2C0h
+00F18BA0 mov [rbx+80h],rax
+00F18BA7 test rax,rax
+00F18BAA je short 0000000000F18C22h
+00F18BAC mov [rbx+88h],r15d
+00F18BB3 mov esi,[rsi+4]
+00F18BB6 add rsi,rbp
+00F18BB9 test r15d,r15d
+00F18BBC je short 0000000000F18C22h
+00F18BBE mov r14,rdi
+00F18BC1 mov r8d,[rsi+8]
+00F18BC5 mov rcx,[rbx+80h]
+00F18BCC add r8,rbp
+00F18BCF mov r9d,[rsi+0Ch]
+00F18BD3 add rcx,r14
+00F18BD6 mov rdx,[rsi]
+00F18BD9 mov [rsp+30h],rdi
+00F18BDE mov [rsp+28h],rdi
+00F18BE3 mov [rsp+20h],rbx
+00F18BE8 call 0000000000FAAF50h
+00F18BED add r14,18h
+00F18BF1 lea rsi,[rsi+10h]
+00F18BF5 sub r15,1
+00F18BF9 jne short 0000000000F18BC1h
+00F18BFB mov r14,[rsp+68h]
+00F18C00 mov al,1
+00F18C02 mov rsi,[rsp+60h]
+00F18C07 mov rbx,[rsp+70h]
+00F18C0C add rsp,40h
+00F18C10 pop r15
+00F18C12 pop rdi
+00F18C13 pop rbp
+00F18C14 ret
+00F18C15 mov [rbx+80h],rdi
+00F18C1C mov [rbx+88h],edi
+00F18C22 mov r14,[rsp+68h]
+00F18C27 mov al,1
+00F18C29 mov rsi,[rsp+60h]
+00F18C2E mov rbx,[rsp+70h]
+00F18C33 add rsp,40h
+00F18C37 pop r15
+00F18C39 pop rdi
+00F18C3A pop rbp
+00F18C3B ret
+00F18C3C mov rbx,[rsp+70h]
+00F18C41 xor al,al
+00F18C43 add rsp,40h
+00F18C47 pop r15
+00F18C49 pop rdi
+00F18C4A pop rbp
+00F18C4B ret

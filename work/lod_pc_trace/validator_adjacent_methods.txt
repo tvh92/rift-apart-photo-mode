@@ -1,0 +1,146 @@
+FUNCTION 0x168a3e0 BOUNDS ('0x168a3e0', '0x168a460')
+0168a3e0 mov [rcx+0A48h],rdx
+0168a3e7 ret
+0168a3e8 int3
+0168a3e9 int3
+0168a3ea int3
+0168a3eb int3
+0168a3ec int3
+0168a3ed int3
+0168a3ee int3
+0168a3ef int3
+0168a3f0 mov [rcx+0A58h],rdx
+0168a3f7 ret
+0168a3f8 int3
+0168a3f9 int3
+0168a3fa int3
+0168a3fb int3
+0168a3fc int3
+0168a3fd int3
+0168a3fe int3
+0168a3ff int3
+0168a400 push rbx
+0168a402 sub rsp,20h
+0168a406 movzx ebx,dl
+0168a409 call 0000000001682010h
+0168a40e movzx r9d,bl
+0168a412 lea rdx,[rel 3141700h]
+0168a419 xor r8d,r8d
+0168a41c mov rcx,rax
+0168a41f mov r10,[rax]
+0168a422 add rsp,20h
+0168a426 pop rbx
+0168a427 jmp qword [r10+70h]
+0168a42b int3
+0168a42c int3
+0168a42d int3
+0168a42e int3
+0168a42f int3
+0168a430 mov [rcx+0A84h],edx
+0168a436 ret
+0168a437 int3
+0168a438 int3
+0168a439 int3
+0168a43a int3
+0168a43b int3
+0168a43c int3
+0168a43d int3
+0168a43e int3
+0168a43f int3
+0168a440 sub rsp,48h
+0168a444 mov dword [rsp+20h],1000h
+0168a44c mov [rsp+28h],rdx
+0168a451 mov [rsp+30h],ecx
+0168a455 mov dword [rsp+34h],0
+0168a45d (bad)
+FUNCTION 0x1689e50 BOUNDS ('0x1689e50', '0x1689ed0')
+01689e50 mov [rcx+0A50h],rdx
+01689e57 ret
+01689e58 int3
+01689e59 int3
+01689e5a int3
+01689e5b int3
+01689e5c int3
+01689e5d int3
+01689e5e int3
+01689e5f int3
+01689e60 mov [rsp+10h],rbx
+01689e65 mov [rsp+20h],r9d
+01689e6a mov [rsp+18h],r8d
+01689e6f push rbp
+01689e70 push rsi
+01689e71 push rdi
+01689e72 push r12
+01689e74 push r13
+01689e76 push r14
+01689e78 push r15
+01689e7a lea rbp,[rsp-90h]
+01689e82 sub rsp,190h
+01689e89 mov rbx,rdx
+01689e8c mov r13,rcx
+01689e8f mov rsi,0FFFFFFFFFFFFFFFFh
+01689e96 mov r8,rsi
+01689e99 nop dword [rax]
+01689ea0 inc r8
+01689ea3 cmp word [rdx+r8*2],0
+01689ea9 jne short 0000000001689EA0h
+01689eab lea rcx,[rsp+40h]
+01689eb0 call 00000000016EC260h
+01689eb5 nop
+01689eb6 lea rdi,[r13+38h]
+01689eba lea rax,[rsp+40h]
+01689ebf xor r12d,r12d
+01689ec2 cmp rdi,rax
+01689ec5 je short 0000000001689F02h
+01689ec7 cmp qword [rdi+18h],10h
+01689ecc jb short 0000000001689ED6h
+01689ece (bad)
+FUNCTION 0x168a3f0 BOUNDS ('0x168a3f0', '0x168a470')
+0168a3f0 mov [rcx+0A58h],rdx
+0168a3f7 ret
+0168a3f8 int3
+0168a3f9 int3
+0168a3fa int3
+0168a3fb int3
+0168a3fc int3
+0168a3fd int3
+0168a3fe int3
+0168a3ff int3
+0168a400 push rbx
+0168a402 sub rsp,20h
+0168a406 movzx ebx,dl
+0168a409 call 0000000001682010h
+0168a40e movzx r9d,bl
+0168a412 lea rdx,[rel 3141700h]
+0168a419 xor r8d,r8d
+0168a41c mov rcx,rax
+0168a41f mov r10,[rax]
+0168a422 add rsp,20h
+0168a426 pop rbx
+0168a427 jmp qword [r10+70h]
+0168a42b int3
+0168a42c int3
+0168a42d int3
+0168a42e int3
+0168a42f int3
+0168a430 mov [rcx+0A84h],edx
+0168a436 ret
+0168a437 int3
+0168a438 int3
+0168a439 int3
+0168a43a int3
+0168a43b int3
+0168a43c int3
+0168a43d int3
+0168a43e int3
+0168a43f int3
+0168a440 sub rsp,48h
+0168a444 mov dword [rsp+20h],1000h
+0168a44c mov [rsp+28h],rdx
+0168a451 mov [rsp+30h],ecx
+0168a455 mov dword [rsp+34h],0
+0168a45d lea r9,[rsp+20h]
+0168a462 xor edx,edx
+0168a464 lea r8d,[rdx+3]
+0168a468 mov ecx,406D1388h
+0168a46d (bad)

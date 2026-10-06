@@ -1,0 +1,92 @@
+FUNCTION 0x1c6d0 FIELDS 0x43c,0x440,0x444,0x448,0x44c,0x450,0x454
+0001E680 mov byte [rsp+43Ch],0DDh
+0001E6A0 mov byte [rsp+440h],82h
+0001E6C0 mov byte [rsp+444h],23h
+0001E6E0 mov byte [rsp+448h],0A0h
+0001E700 mov byte [rsp+44Ch],48h
+0001E720 mov byte [rsp+450h],0E1h
+0001E740 mov byte [rsp+454h],0CBh
+FUNCTION 0x5a8a70 FIELDS 0x440,0x448,0x44c,0x450,0x454
+005A8ABC mov [rbx+454h],r14d
+005A8B34 movss [rbx+44Ch],xmm1
+005A8B3E mov dword [rbx+450h],0BF800000h
+005A8C09 movss [rbx+44Ch],xmm1
+005A8C39 mulss xmm1,[rbx+44Ch]
+005A8D0B movss [rbx+44Ch],xmm0
+005A8E05 movss [rbx+448h],xmm1
+005A8E0F mov [rbx+448h],r14d
+005A8E22 mov [rbx+440h],r14b
+005A8E6C mov byte [rbx+440h],1
+FUNCTION 0x643d20 FIELDS 0x440,0x448,0x44c,0x450
+00643D5D mov [rbx+440h],al
+00643E3A mov dword [rbx+448h],0
+00643E44 mov dword [rbx+44Ch],0FFFFFFFFh
+00643E52 mov byte [rbx+450h],1
+FUNCTION 0x643e90 FIELDS 0x440,0x448,0x44c,0x450
+00643F7E movss xmm0,[rbx+448h]
+00643FBD mov [rbx+448h],esi
+00643FDA movss [rbx+448h],xmm0
+0064404C cmp [rbx+44Ch],r15d
+00644055 mov [rbx+44Ch],r15d
+00644109 cmp [rbx+440h],al
+00644111 mov [rbx+440h],al
+0064418A cmp [rbx+450h],al
+00644192 mov [rbx+450h],al
+00644333 ucomiss xmm7,[rbx+448h]
+00644355 movss [rbx+448h],xmm0
+FUNCTION 0x10010d0 FIELDS 0x444,0x448,0x44c,0x450
+010010F7 cmp [rbx+448h],eax
+010010FF lea rdx,[rbx+444h]
+01001110 cmp dword [rbx+450h],0
+0100111D lea rdx,[rbx+44Ch]
+FUNCTION 0x100b840 FIELDS 0x440,0x448,0x44c,0x450
+0100D22A mov [rbp+448h],r11d
+0100D231 mov [rbp+440h],rax
+0100D248 mov dword [rbp+44Ch],0FFFFFFFFh
+0100D252 mov dword [rbp+450h],0BF800000h
+0100D271 lea rdx,[rbp+440h]
+FUNCTION 0x1231c00 FIELDS 0x440,0x448,0x44c,0x450,0x454
+01231CA3 movups [rbx+440h],xmm0
+01231CAE movups [rbx+450h],xmm1
+01231CD1 mov dword [rbx+448h],44800000h
+01231CDE mov [rbx+440h],rax
+01231CEB mov qword [rbx+44Ch],44800000h
+01231CF6 mov qword [rbx+454h],3F800000h
+FUNCTION 0x25ba470 FIELDS 0x43c,0x440,0x444,0x448,0x44c,0x450,0x454
+025BAE78 mov dword [rbp+43Ch],2DB6C16Fh
+025BAE82 mov dword [rbp+440h],0A151724Eh
+025BAE8C mov dword [rbp+444h],3EBAD49Fh
+025BAE96 mov dword [rbp+448h],0DCB0EA9Dh
+025BAEA0 mov dword [rbp+44Ch],8040F4DDh
+025BAEAA mov dword [rbp+450h],2F4A8382h
+025BAEB4 mov dword [rbp+454h],0A0A75D23h
+FUNCTION 0x26afc40 FIELDS 0x440,0x448,0x44c,0x450
+026B4AB7 mov [rbp+440h],r15
+026B4ACB mov [rbp+440h],rax
+026B4ADE mov [rbp+440h],r9
+026B4AE5 mov [rbp+44Ch],eax
+026B4AEF mov [rbp+450h],r15
+026B4AFC mov [rbp+448h],edi
+026B4B4B lea r9,[rbp+440h]
+026B4BD9 mov [rbp+448h],ecx
+026B4C02 mov [rbp+440h],rax
+026B4C09 mov dword [rbp+44Ch],80000000h
+FUNCTION 0x2c38430 FIELDS 0x444,0x448,0x44c,0x450
+02C38469 mov eax,[rdi+444h]
+02C38478 add rax,[rdi+450h]
+02C384A0 mov [rdi+448h],rax
+02C384A7 mov eax,[rdi+44Ch]
+02C384B6 add rax,[rdi+450h]
+FUNCTION 0x2c38640 FIELDS 0x444,0x448,0x44c,0x450
+02C38670 mov eax,[r8+444h]
+02C38680 add rax,[r8+450h]
+02C386A8 mov [r8+448h],rax
+02C386AF mov eax,[r8+44Ch]
+02C386BF add rax,[r8+450h]
+FUNCTION 0x2c38df0 FIELDS 0x444,0x448,0x44c,0x450
+02C38E12 mov r9d,[r10+444h]
+02C38E25 mov rax,[r10+450h]
+02C38E8D mov rax,[r10+450h]
+02C38EB9 mov [r10+448h],rax
+02C38EC0 mov eax,[r10+44Ch]
+02C38ECD add rdx,[r10+450h]

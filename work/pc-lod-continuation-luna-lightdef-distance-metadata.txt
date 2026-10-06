@@ -1,0 +1,28 @@
+# LightDef camera-distance metadata trace
+
+Read-only full-ASCII scan of local executable build 23987138 (EXE SHA256 `51299faca61866cf10ea9035a15b8f22600a56557dd5ffc1aad390d5a54e6d82`). No game, native source, or installation files changed. This pass searched all executable strings for terms combining light with distance/cull/fade/distant/bypass/range/disable, not only strings from the previous LOD index.
+
+## New high-relevance LightDef metadata
+
+A contiguous editor/schema string cluster identifies `LightDef` at RVA `0x47ECB68`, with the following member names at `0x47ED470..0x47ED6D0`: `AttenuationRadius`, `CutoffRadius`, `CutOnDist`, `ShadowCutOnDist`, `FadeOutDist`, `NearFadeClipDist`, `NearFadeStartDist`, `ShadowFadeOutDist`, and `SpecFadeOutDist`.
+
+The associated descriptions at RVAs `0x47EE0B0`, `0x47EF6F0`, `0x47EF780`, `0x47EF860`, `0x47EF910`, and `0x47EF980` document:
+
+- `AttenuationRadius`: a theoretical bounding sphere radius after which the light cuts off; this further attenuates physical falloff.
+- `FadeOutDist`: the distance to the front of the light's bounding sphere when it fades out and is then culled/not drawn.
+- `NearFadeClipDist`: the distance from the camera at which the light center's intensity is fully faded to zero; negative values can dim the light when close.
+- `NearFadeStartDist`: the camera distance from the light center where intensity begins fading toward zero; zero disables near fading.
+- `ShadowFadeOutDist`: after this distance, shadows fade out and stop being evaluated.
+- `SpecFadeOutDist`: after this distance, the light becomes diffuse-only.
+
+The first four behaviors are materially different. In particular, `NearFade*` explicitly use light-center-to-camera distance for intensity, while `FadeOutDist` describes a camera-distance fade/cull of the light as a draw object. Those per-light properties are a much closer match to the report that nearby surfaces stop receiving local-light illumination as the Photo camera moves away than `VehicleSystemConfig.MaxCulledLightDistance` or shadow LOD.
+
+## What is still unproven
+
+This is authoring/schema metadata, not a demonstrated PC renderer consumer. The exact strings have no direct RIP-relative code references in the existing index, and this scan did not locate an upload function, runtime light structure, active Corson V authored values, or the code computing the camera distance. The executable does not contain MSVC RTTI descriptors for `LightDef`, `LevelLightDef`, `LightComponent`, `PointLight`, `OmniLight`, or `LightingView`; the previously found `LevelLightManager` vtable is generic descriptor/registration work. Thus this establishes intended semantics for authored fields, but not whether the specific Corson V lights use those fields on PC or whether their camera origin is the Photo render view.
+
+The separate strings `DistantLightingGround/Mid/Roof/ForceEmbedded` and `BypassLightGrids` refer to distant-lighting/light-grid behavior and do not establish a local-light cull path. Do not globally alter them to address point/spot light falloff.
+
+## Focused source evidence
+
+These strings were extracted directly from the supported local `RiftApart.exe`; exact addresses above are RVAs. The field-name cluster is adjacent to the `LightDef` label. Existing native schema tree identifies Rivet `Types/LightDef.cs` and `Types/LevelLightDef.cs`, but those names are not C++ RTTI objects in this executable. The corresponding asset values and runtime consumer remain to be identified.

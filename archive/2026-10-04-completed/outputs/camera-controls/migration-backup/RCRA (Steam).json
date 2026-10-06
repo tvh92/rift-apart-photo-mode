@@ -1,0 +1,25 @@
+{
+  "game": "RCRA",
+  "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Ratchet & Clank - Rift Apart",
+  "mods": [
+    [
+      "NoIntro.stage",
+      true
+    ]
+  ],
+  "settings": {
+    "suit": {
+      "language": "us",
+      "allow_cross_character_suit_models": false
+    },
+    "scripts": {
+      "enabled": false,
+      "commandline": false
+    }
+  },
+  "suits": {
+    "delete": [],
+    "order": [],
+    "modify": {}
+  }
+}

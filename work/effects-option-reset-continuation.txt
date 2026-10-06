@@ -1,0 +1,185 @@
+FUNCTION 0x1a5c170 BOUNDS ('0x1a5c170', '0x1a5c1f0')
+01a5c170 movzx eax,byte [rcx+7F9h]
+01a5c177 ret
+01a5c178 int3
+01a5c179 int3
+01a5c17a int3
+01a5c17b int3
+01a5c17c int3
+01a5c17d int3
+01a5c17e int3
+01a5c17f int3
+01a5c180 mov rax,[rcx]
+01a5c183 mov dword [rcx+0ACh],0
+01a5c18d jmp qword [rax+8]
+01a5c191 int3
+01a5c192 int3
+01a5c193 int3
+01a5c194 int3
+01a5c195 int3
+01a5c196 int3
+01a5c197 int3
+01a5c198 int3
+01a5c199 int3
+01a5c19a int3
+01a5c19b int3
+01a5c19c int3
+01a5c19d int3
+01a5c19e int3
+01a5c19f int3
+01a5c1a0 test rdx,rdx
+01a5c1a3 je near 0000000001A5C4BBh
+01a5c1a9 push rbp
+01a5c1aa push r12
+01a5c1ac push r15
+01a5c1ae sub rsp,110h
+01a5c1b5 mov r15,rcx
+01a5c1b8 mov [rsp+100h],r14
+01a5c1c0 mov rcx,[rel 68D3E78h]
+01a5c1c7 mov r12d,r8d
+01a5c1ca add rcx,168h
+01a5c1d1 mov rbp,rdx
+01a5c1d4 call 0000000000F1A520h
+01a5c1d9 lea rdx,[rel 68D4780h]
+01a5c1e0 cmp word [rax+88h],0
+01a5c1e8 jbe short 0000000001A5C1F8h
+01a5c1ea (bad)
+FUNCTION 0x1a58e00 BOUNDS ('0x1a58e00', '0x1a58ee6')
+01a58e00 mov [rsp+8],rbx
+01a58e05 mov [rsp+10h],rbp
+01a58e0a mov [rsp+18h],rsi
+01a58e0f push rdi
+01a58e10 push r14
+01a58e12 push r15
+01a58e14 sub rsp,20h
+01a58e18 mov rbp,rcx
+01a58e1b lea rbx,[rcx+418h]
+01a58e22 mov edi,0Ah
+01a58e27 mov r15,0FFFFFFFF00000000h
+01a58e31 xor r14d,r14d
+01a58e34 mov rcx,rbp
+01a58e37 call 0000000001A57F70h
+01a58e3c mov rdx,[rbx-8]
+01a58e40 mov rsi,rax
+01a58e43 test rdx,rdx
+01a58e46 je short 0000000001A58EABh
+01a58e48 mov rdx,[rdx+7Ch]
+01a58e4c mov r8,rdx
+01a58e4f mov ecx,edx
+01a58e51 and r8,r15
+01a58e54 or r8,rcx
+01a58e57 test r15,r8
+01a58e5a jne short 0000000001A58E66h
+01a58e5c test r8d,r8d
+01a58e5f jne short 0000000001A58E66h
+01a58e61 mov rdx,r14
+01a58e64 jmp short 0000000001A58E8Dh
+01a58e66 lea rcx,[rel 549E348h]
+01a58e6d call 00000000015ACDE0h
+01a58e72 test rax,rax
+01a58e75 jne short 0000000001A58E7Ch
+01a58e77 mov rdx,r14
+01a58e7a jmp short 0000000001A58E8Dh
+01a58e7c mov edx,[rax]
+01a58e7e imul rdx,[rel 549E388h]
+01a58e86 add rdx,[rel 549E380h]
+01a58e8d cmp rdx,[rel 549E380h]
+01a58e94 jb short 0000000001A58EABh
+01a58e96 cmp rdx,[rel 549E458h]
+01a58e9d jae short 0000000001A58EABh
+01a58e9f lea rcx,[rel 549E340h]
+01a58ea6 call 0000000000FA8020h
+01a58eab mov [rbx-8],rsi
+01a58eaf mov [rbx],r14
+01a58eb2 mov qword [rbx+8],3F800000h
+01a58eba mov [rbx+10h],r14w
+01a58ebf add rbx,20h
+01a58ec3 sub rdi,1
+01a58ec7 jne near 0000000001A58E34h
+01a58ecd mov rbx,[rsp+40h]
+01a58ed2 mov rbp,[rsp+48h]
+01a58ed7 mov rsi,[rsp+50h]
+01a58edc add rsp,20h
+01a58ee0 pop r15
+01a58ee2 pop r14
+01a58ee4 pop rdi
+01a58ee5 ret
+FUNCTION 0x1a58f40 BOUNDS ('0x1a58f40', '0x1a590b5')
+01a58f40 push rbx
+01a58f42 sub rsp,20h
+01a58f46 mov rax,[rcx]
+01a58f49 mov rbx,rcx
+01a58f4c call qword [rax+0F8h]
+01a58f52 mov rcx,rbx
+01a58f55 movsd xmm0,[rax]
+01a58f59 movsd [rbx+7D0h],xmm0
+01a58f61 mov edx,[rax+8]
+01a58f64 mov [rbx+7D8h],edx
+01a58f6a mov edx,[rax+0Ch]
+01a58f6d mov [rbx+7E4h],edx
+01a58f73 mov edx,[rax+10h]
+01a58f76 mov [rbx+7E0h],edx
+01a58f7c mov eax,[rax+14h]
+01a58f7f mov [rbx+7DCh],eax
+01a58f85 mov rax,[rbx]
+01a58f88 call qword [rax+100h]
+01a58f8e mov ecx,[rax]
+01a58f90 mov rax,[rbx]
+01a58f93 mov [rbx+7E8h],ecx
+01a58f99 mov rcx,rbx
+01a58f9c call qword [rax+108h]
+01a58fa2 mov ecx,[rax]
+01a58fa4 mov [rbx+7B8h],ecx
+01a58faa mov rcx,rbx
+01a58fad mov eax,[rax]
+01a58faf mov [rbx+788h],eax
+01a58fb5 mov rax,[rbx]
+01a58fb8 call qword [rax+110h]
+01a58fbe mov ecx,[rax+4]
+01a58fc1 mov [rbx+78Ch],ecx
+01a58fc7 mov rcx,rbx
+01a58fca mov eax,[rax+4]
+01a58fcd mov [rbx+7BCh],eax
+01a58fd3 mov rax,[rbx]
+01a58fd6 call qword [rax+118h]
+01a58fdc mov rcx,rbx
+01a58fdf movss xmm5,[rax+54h]
+01a58fe4 movss [rbx+7B4h],xmm5
+01a58fec movss xmm4,[rax+2Ch]
+01a58ff1 movss [rbx+7A0h],xmm4
+01a58ff9 movss xmm3,[rax+30h]
+01a58ffe movss [rbx+7A4h],xmm3
+01a59006 movss xmm2,[rax+34h]
+01a5900b movss [rbx+7A8h],xmm2
+01a59013 movss xmm1,[rax+38h]
+01a59018 movss [rbx+7ACh],xmm1
+01a59020 movss xmm0,[rax+3Ch]
+01a59025 mov rax,[rbx]
+01a59028 movss [rbx+7B0h],xmm0
+01a59030 movss [rbx+784h],xmm5
+01a59038 movss [rbx+770h],xmm4
+01a59040 movss [rbx+774h],xmm3
+01a59048 movss [rbx+778h],xmm2
+01a59050 movss [rbx+77Ch],xmm1
+01a59058 movss [rbx+780h],xmm0
+01a59060 call qword [rax+120h]
+01a59066 mov rdx,rax
+01a59069 mov ecx,[rax]
+01a5906b mov [rbx+7C0h],ecx
+01a59071 mov ecx,[rax+8]
+01a59074 mov [rbx+7C4h],ecx
+01a5907a mov ecx,[rax+4]
+01a5907d mov [rbx+7C8h],ecx
+01a59083 mov ecx,[rax+0Ch]
+01a59086 mov [rbx+7CCh],ecx
+01a5908c mov ecx,[rax]
+01a5908e mov [rbx+790h],ecx
+01a59094 mov ecx,[rax+8]
+01a59097 mov [rbx+794h],ecx
+01a5909d mov eax,[rax+4]
+01a590a0 mov [rbx+798h],eax
+01a590a6 mov eax,[rdx+0Ch]
+01a590a9 mov [rbx+79Ch],eax
+01a590af add rsp,20h
+01a590b3 pop rbx
+01a590b4 ret

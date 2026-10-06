@@ -1,0 +1,986 @@
+FUNCTION 0x13c5960 ROOT (20732256, 20736253, 82074732) RANGES [(20732256, 20736253, 82074732)]
+013C5960 mov [rsp+8],rbx
+013C5965 mov [rsp+10h],rbp
+013C596A mov [rsp+18h],rsi
+013C596F push rdi
+013C5970 push r12
+013C5972 push r13
+013C5974 push r14
+013C5976 push r15
+013C5978 sub rsp,50h
+013C597C mov r15,rcx
+013C597F mov r13,r8
+013C5982 sub r15,rdx
+013C5985 mov r12,rdx
+013C5988 xor esi,esi
+013C598A mov rbx,rcx
+013C598D mov bpl,1
+013C5990 mov rdi,rdx
+013C5993 lea r14d,[rsi+2]
+013C5997 nop word [rax+rax]
+013C59A0 mov rax,[rdi]
+013C59A3 mov [r15+rdi+30h],rax
+013C59A8 mov rdx,[rdi]
+013C59AB test rdx,rdx
+013C59AE je short 00000000013C59CEh
+013C59B0 lea r9,[rel 32BD0C0h]
+013C59B7 mov r8d,1F390AA0h
+013C59BD mov rcx,rbx
+013C59C0 call 0000000000FA2B70h
+013C59C5 test al,al
+013C59C7 movzx ebp,bpl
+013C59CB cmove ebp,esi
+013C59CE add rdi,8
+013C59D2 sub r14,1
+013C59D6 jne short 00000000013C59A0h
+013C59D8 test bpl,bpl
+013C59DB jne short 00000000013C59E4h
+013C59DD xor al,al
+013C59DF jmp 00000000013C68DFh
+013C59E4 mov eax,[rel 67478B8h]
+013C59EA mov edx,657512BBh
+013C59EF mov [rbx+140h],eax
+013C59F5 mov rbp,[r12]
+013C59F9 mov rcx,rbp
+013C59FC mov [rsp+48h],rbp
+013C5A01 mov [rbx+170h],r13
+013C5A08 call 00000000015B3220h
+013C5A0D test rax,rax
+013C5A10 je short 00000000013C5A64h
+013C5A12 mov ecx,[rax+4]
+013C5A15 mov edi,esi
+013C5A17 add rcx,rbp
+013C5A1A mov [rbx+160h],rcx
+013C5A21 mov ecx,[rax+8]
+013C5A24 mov rax,2E8BA2E8BA2E8BA3h
+013C5A2E mul rcx
+013C5A31 shr rdx,4
+013C5A35 mov [rbx+168h],edx
+013C5A3B test edx,edx
+013C5A3D jle short 00000000013C5A64h
+013C5A3F nop
+013C5A40 mov rdx,[rbx+170h]
+013C5A47 movsxd rax,edi
+013C5A4A imul rcx,rax,58h
+013C5A4E add rcx,[rbx+160h]
+013C5A55 call 0000000001030330h
+013C5A5A inc edi
+013C5A5C cmp edi,[rbx+168h]
+013C5A62 jl short 00000000013C5A40h
+013C5A64 mov eax,[rbx+44h]
+013C5A67 mov rdi,0AAAAAAAAAAAAAAABh
+013C5A71 shr eax,16h
+013C5A74 mov r12d,8
+013C5A7A test al,1
+013C5A7C jne near 00000000013C5BA3h
+013C5A82 mov edx,0A7AD7BD3h
+013C5A87 mov rcx,rbp
+013C5A8A call 00000000015B3220h
+013C5A8F mov r14,rax
+013C5A92 test rax,rax
+013C5A95 je near 00000000013C5BA3h
+013C5A9B mov ecx,[rax+8]
+013C5A9E mov rax,rdi
+013C5AA1 mul rcx
+013C5AA4 mov rdi,rdx
+013C5AA7 shr rdi,3
+013C5AAB test edi,edi
+013C5AAD jle near 00000000013C5B99h
+013C5AB3 movsxd r13,edi
+013C5AB6 lea rdx,[rel 44D2BF8h]
+013C5ABD mov r8d,r12d
+013C5AC0 mov [rbx+0B8h],rsi
+013C5AC7 mov [rbx+0C0h],rsi
+013C5ACE lea r15,[r13*8]
+013C5AD6 mov rcx,r15
+013C5AD9 call 00000000010DB2C0h
+013C5ADE test rax,rax
+013C5AE1 je short 00000000013C5B1Bh
+013C5AE3 mov [rbx+0B8h],rax
+013C5AEA mov edx,esi
+013C5AEC mov [rbx+0C0h],edi
+013C5AF2 nop dword [rax]
+013C5AF6 nop word [rax+rax]
+013C5B00 mov rax,[rbx+0B8h]
+013C5B07 xor r8d,r8d
+013C5B0A movsxd rcx,edx
+013C5B0D inc edx
+013C5B0F mov [rax+rcx*8],r8
+013C5B13 cmp edx,[rbx+0C0h]
+013C5B19 jl short 00000000013C5B00h
+013C5B1B cmp [rbx+0B8h],rsi
+013C5B22 je short 00000000013C5B99h
+013C5B24 cmp edi,[rbx+0C0h]
+013C5B2A jg short 00000000013C5B32h
+013C5B2C mov [rbx+0C4h],edi
+013C5B32 mov r12d,[r14+4]
+013C5B36 add r12,rbp
+013C5B39 lea rax,[r15+r12]
+013C5B3D mov r15d,esi
+013C5B40 mov [rsp+98h],rax
+013C5B48 test edi,edi
+013C5B4A jle short 00000000013C5B93h
+013C5B4C mov r14,rsi
+013C5B4F nop
+013C5B50 mov r8d,[rax+r14*4]
+013C5B54 lea rcx,[rel 548B370h]
+013C5B5B mov rax,[rbx+0B8h]
+013C5B62 add r8,rbp
+013C5B65 mov edx,r15d
+013C5B68 mov r9,rbx
+013C5B6B mov [rsp+20h],rsi
+013C5B70 lea rdi,[rax+r14*8]
+013C5B74 mov rdx,[r12+rdx*8]
+013C5B78 call 0000000001330550h
+013C5B7D inc r15d
+013C5B80 mov [rdi],rax
+013C5B83 mov rax,[rsp+98h]
+013C5B8B inc r14
+013C5B8E cmp r14,r13
+013C5B91 jl short 00000000013C5B50h
+013C5B93 mov r12d,8
+013C5B99 mov rdi,0AAAAAAAAAAAAAAABh
+013C5BA3 mov eax,[rbx+44h]
+013C5BA6 shr eax,2
+013C5BA9 test al,1
+013C5BAB jne near 00000000013C5C9Dh
+013C5BB1 mov edx,3D5E2FEFh
+013C5BB6 mov rcx,rbp
+013C5BB9 call 00000000015B3220h
+013C5BBE mov r14,rax
+013C5BC1 test rax,rax
+013C5BC4 je near 00000000013C5C9Dh
+013C5BCA mov ecx,[rax+8]
+013C5BCD mov rax,rdi
+013C5BD0 mul rcx
+013C5BD3 mov rdi,rdx
+013C5BD6 shr rdi,3
+013C5BDA test edi,edi
+013C5BDC jle near 00000000013C5C9Dh
+013C5BE2 movsxd rax,edi
+013C5BE5 lea rdx,[rel 44D2C18h]
+013C5BEC mov r8d,r12d
+013C5BEF mov [rbx+48h],rsi
+013C5BF3 mov [rbx+50h],rsi
+013C5BF7 lea r15,[rax*8]
+013C5BFF mov rcx,r15
+013C5C02 call 00000000010DB2C0h
+013C5C07 test rax,rax
+013C5C0A je short 00000000013C5C35h
+013C5C0C mov [rbx+48h],rax
+013C5C10 mov edx,esi
+013C5C12 mov [rbx+50h],edi
+013C5C15 nop word [rax+rax]
+013C5C20 mov rax,[rbx+48h]
+013C5C24 xor r8d,r8d
+013C5C27 movsxd rcx,edx
+013C5C2A inc edx
+013C5C2C mov [rax+rcx*8],r8
+013C5C30 cmp edx,[rbx+50h]
+013C5C33 jl short 00000000013C5C20h
+013C5C35 cmp [rbx+48h],rsi
+013C5C39 je short 00000000013C5C9Dh
+013C5C3B cmp edi,[rbx+50h]
+013C5C3E jg short 00000000013C5C43h
+013C5C40 mov [rbx+54h],edi
+013C5C43 mov r13d,[r14+4]
+013C5C47 mov r14d,esi
+013C5C4A add r13,rbp
+013C5C4D lea r12,[r15+r13]
+013C5C51 cmp [rbx+54h],esi
+013C5C54 jle short 00000000013C5C9Dh
+013C5C56 mov r15,rsi
+013C5C59 nop dword [rax]
+013C5C60 mov r8d,[r12]
+013C5C64 lea rcx,[rel 54A2000h]
+013C5C6B mov rdi,[rbx+48h]
+013C5C6F add r8,rbp
+013C5C72 movsxd rdx,r14d
+013C5C75 mov r9,rbx
+013C5C78 mov [rsp+20h],rsi
+013C5C7D mov rdx,[r13+rdx*8]
+013C5C82 call 000000000138DDC0h
+013C5C87 mov [rdi+r15],rax
+013C5C8B lea r12,[r12+4]
+013C5C90 inc r14d
+013C5C93 lea r15,[r15+8]
+013C5C97 cmp r14d,[rbx+54h]
+013C5C9B jl short 00000000013C5C60h
+013C5C9D mov eax,[rbx+44h]
+013C5CA0 shr eax,3
+013C5CA3 test al,1
+013C5CA5 jne near 00000000013C5DEAh
+013C5CAB mov edx,0C6A5905Eh
+013C5CB0 mov rcx,rbp
+013C5CB3 call 00000000015B3220h
+013C5CB8 mov r14,rax
+013C5CBB mov r15,0AAAAAAAAAAAAAAABh
+013C5CC5 test rax,rax
+013C5CC8 je near 00000000013C5DF4h
+013C5CCE mov ecx,[rax+8]
+013C5CD1 mov r12d,8
+013C5CD7 mov rax,r15
+013C5CDA mul rcx
+013C5CDD mov rdi,rdx
+013C5CE0 shr rdi,3
+013C5CE4 test edi,edi
+013C5CE6 jle near 00000000013C5DFAh
+013C5CEC movsxd rax,edi
+013C5CEF lea rdx,[rel 44D2C38h]
+013C5CF6 mov r8d,r12d
+013C5CF9 mov [rbx+58h],rsi
+013C5CFD mov [rbx+60h],rsi
+013C5D01 lea r15,[rax*8]
+013C5D09 mov rcx,r15
+013C5D0C call 00000000010DB2C0h
+013C5D11 test rax,rax
+013C5D14 je short 00000000013C5D35h
+013C5D16 mov [rbx+58h],rax
+013C5D1A mov edx,esi
+013C5D1C mov [rbx+60h],edi
+013C5D1F nop
+013C5D20 mov rax,[rbx+58h]
+013C5D24 xor r8d,r8d
+013C5D27 movsxd rcx,edx
+013C5D2A inc edx
+013C5D2C mov [rax+rcx*8],r8
+013C5D30 cmp edx,[rbx+60h]
+013C5D33 jl short 00000000013C5D20h
+013C5D35 cmp [rbx+58h],rsi
+013C5D39 je near 00000000013C5FA3h
+013C5D3F cmp edi,[rbx+60h]
+013C5D42 jg short 00000000013C5D47h
+013C5D44 mov [rbx+64h],edi
+013C5D47 mov edx,58F861B6h
+013C5D4C mov rcx,rbp
+013C5D4F mov r13d,esi
+013C5D52 call 00000000015B3220h
+013C5D57 test rax,rax
+013C5D5A je short 00000000013C5D63h
+013C5D5C mov eax,[rax+4]
+013C5D5F mov r13d,[rax+rbp]
+013C5D63 mov r12d,[r14+4]
+013C5D67 add r12,rbp
+013C5D6A lea rcx,[r15+r12]
+013C5D6E mov r15d,esi
+013C5D71 mov [rsp+98h],rcx
+013C5D79 cmp [rbx+64h],esi
+013C5D7C jle short 00000000013C5DEAh
+013C5D7E sub edi,r13d
+013C5D81 mov r14,rsi
+013C5D84 movsxd r13,edi
+013C5D87 cmp [rel 67C260Dh],sil
+013C5D8E jne short 00000000013C5DA9h
+013C5D90 mov eax,[rbx+40h]
+013C5D93 shr eax,0Eh
+013C5D96 test al,1
+013C5D98 je short 00000000013C5DA9h
+013C5D9A cmp r14,r13
+013C5D9D jl short 00000000013C5DA9h
+013C5D9F mov rax,[rbx+58h]
+013C5DA3 mov [rax+r14*8],rsi
+013C5DA7 jmp short 00000000013C5DDEh
+013C5DA9 mov rax,[rbx+58h]
+013C5DAD mov r9,rbx
+013C5DB0 mov r8d,[rcx+r14*4]
+013C5DB4 lea rcx,[rel 52F3740h]
+013C5DBB add r8,rbp
+013C5DBE mov [rsp+20h],rsi
+013C5DC3 lea rdi,[rax+r14*8]
+013C5DC7 movsxd rax,r15d
+013C5DCA lea rdx,[r12+rax*8]
+013C5DCE call 0000000001106280h
+013C5DD3 mov rcx,[rsp+98h]
+013C5DDB mov [rdi],rax
+013C5DDE inc r15d
+013C5DE1 inc r14
+013C5DE4 cmp r15d,[rbx+64h]
+013C5DE8 jl short 00000000013C5D87h
+013C5DEA mov r15,0AAAAAAAAAAAAAAABh
+013C5DF4 mov r12d,8
+013C5DFA mov eax,[rbx+44h]
+013C5DFD shr eax,4
+013C5E00 test al,1
+013C5E02 jne near 00000000013C5F4Eh
+013C5E08 mov edx,78684035h
+013C5E0D mov rcx,rbp
+013C5E10 call 00000000015B3220h
+013C5E15 mov r14,rax
+013C5E18 test rax,rax
+013C5E1B je near 00000000013C5EF0h
+013C5E21 mov ecx,[rax+8]
+013C5E24 mov rax,r15
+013C5E27 mul rcx
+013C5E2A mov rdi,rdx
+013C5E2D shr rdi,3
+013C5E31 test edi,edi
+013C5E33 jle near 00000000013C5EF0h
+013C5E39 movsxd r13,edi
+013C5E3C lea rdx,[rel 44D2C50h]
+013C5E43 mov r8d,r12d
+013C5E46 mov [rbx+68h],rsi
+013C5E4A mov [rbx+70h],rsi
+013C5E4E lea r15,[r13*8]
+013C5E56 mov rcx,r15
+013C5E59 call 00000000010DB2C0h
+013C5E5E test rax,rax
+013C5E61 je short 00000000013C5E85h
+013C5E63 mov [rbx+68h],rax
+013C5E67 mov edx,esi
+013C5E69 mov [rbx+70h],edi
+013C5E6C nop dword [rax]
+013C5E70 mov rax,[rbx+68h]
+013C5E74 xor r8d,r8d
+013C5E77 movsxd rcx,edx
+013C5E7A inc edx
+013C5E7C mov [rax+rcx*8],r8
+013C5E80 cmp edx,[rbx+70h]
+013C5E83 jl short 00000000013C5E70h
+013C5E85 cmp [rbx+68h],rsi
+013C5E89 je short 00000000013C5EF0h
+013C5E8B cmp edi,[rbx+70h]
+013C5E8E jg short 00000000013C5E93h
+013C5E90 mov [rbx+74h],edi
+013C5E93 mov r12d,[r14+4]
+013C5E97 add r12,rbp
+013C5E9A lea rax,[r15+r12]
+013C5E9E mov r15d,esi
+013C5EA1 mov [rsp+98h],rax
+013C5EA9 test edi,edi
+013C5EAB jle short 00000000013C5EF0h
+013C5EAD mov r14,rsi
+013C5EB0 mov r8d,[rax+r14*4]
+013C5EB4 lea rcx,[rel 52DCB40h]
+013C5EBB mov rax,[rbx+68h]
+013C5EBF add r8,rbp
+013C5EC2 mov edx,r15d
+013C5EC5 mov r9,rbx
+013C5EC8 mov [rsp+20h],rsi
+013C5ECD lea rdi,[rax+r14*8]
+013C5ED1 mov rdx,[r12+rdx*8]
+013C5ED5 call 0000000000F19260h
+013C5EDA inc r15d
+013C5EDD mov [rdi],rax
+013C5EE0 mov rax,[rsp+98h]
+013C5EE8 inc r14
+013C5EEB cmp r14,r13
+013C5EEE jl short 00000000013C5EB0h
+013C5EF0 mov edx,50EDC53Dh
+013C5EF5 mov rcx,rbp
+013C5EF8 call 00000000015B3220h
+013C5EFD test rax,rax
+013C5F00 je short 00000000013C5F4Eh
+013C5F02 cmp [rbx+100h],rsi
+013C5F09 jne short 00000000013C5F4Eh
+013C5F0B mov eax,[rax+8]
+013C5F0E lea rdx,[rel 44D2D60h]
+013C5F15 shr eax,5
+013C5F18 mov r15d,8
+013C5F1E add eax,eax
+013C5F20 cmp eax,8
+013C5F23 cmovb eax,r15d
+013C5F27 xor r8d,r8d
+013C5F2A lea eax,[rax+rax*2]
+013C5F2D shl eax,2
+013C5F30 mov ecx,eax
+013C5F32 mov edi,eax
+013C5F34 call 00000000010DB2C0h
+013C5F39 mov r9d,r15d
+013C5F3C lea rcx,[rbx+100h]
+013C5F43 mov r8d,edi
+013C5F46 mov rdx,rax
+013C5F49 call 00000000015AE5F0h
+013C5F4E mov eax,[rbx+44h]
+013C5F51 shr eax,5
+013C5F54 test al,1
+013C5F56 jne near 00000000013C6147h
+013C5F5C mov edx,22D161BAh
+013C5F61 mov rcx,rbp
+013C5F64 call 00000000015B3220h
+013C5F69 mov edx,4A07420Eh
+013C5F6E mov rcx,rbp
+013C5F71 mov r15,rax
+013C5F74 call 00000000015B3220h
+013C5F79 mov [rsp+40h],rax
+013C5F7E mov r12,rax
+013C5F81 mov r8,0AAAAAAAAAAAAAAABh
+013C5F8B test r15,r15
+013C5F8E je short 00000000013C5FB2h
+013C5F90 mov ecx,[r15+8]
+013C5F94 mov rax,r8
+013C5F97 mul rcx
+013C5F9A mov rdi,rdx
+013C5F9D shr rdi,3
+013C5FA1 jmp short 00000000013C5FB4h
+013C5FA3 mov r15,0AAAAAAAAAAAAAAABh
+013C5FAD jmp 00000000013C5DFAh
+013C5FB2 mov edi,esi
+013C5FB4 test r12,r12
+013C5FB7 je short 00000000013C5FCDh
+013C5FB9 mov ecx,[r12+8]
+013C5FBE mov rax,r8
+013C5FC1 mul rcx
+013C5FC4 mov r13,rdx
+013C5FC7 shr r13,3
+013C5FCB jmp short 00000000013C5FD0h
+013C5FCD mov r13d,esi
+013C5FD0 lea r14d,[rdi+r13]
+013C5FD4 mov [rsp+98h],r13
+013C5FDC test r14d,r14d
+013C5FDF jle near 00000000013C6147h
+013C5FE5 movsxd rcx,r14d
+013C5FE8 lea rdx,[rel 44D2C68h]
+013C5FEF shl rcx,3
+013C5FF3 mov r8d,8
+013C5FF9 mov [rbx+78h],rsi
+013C5FFD mov [rbx+80h],rsi
+013C6004 call 00000000010DB2C0h
+013C6009 test rax,rax
+013C600C je short 00000000013C6038h
+013C600E mov [rbx+78h],rax
+013C6012 mov edx,esi
+013C6014 mov [rbx+80h],r14d
+013C601B nop dword [rax+rax]
+013C6020 mov rax,[rbx+78h]
+013C6024 xor r8d,r8d
+013C6027 movsxd rcx,edx
+013C602A inc edx
+013C602C mov [rax+rcx*8],r8
+013C6030 cmp edx,[rbx+80h]
+013C6036 jl short 00000000013C6020h
+013C6038 cmp [rbx+78h],rsi
+013C603C je near 00000000013C6147h
+013C6042 test edi,edi
+013C6044 je short 00000000013C60C4h
+013C6046 mov r12d,[r15+4]
+013C604A mov r14d,esi
+013C604D add r12,rbp
+013C6050 movsxd r15,edi
+013C6053 test edi,edi
+013C6055 jle short 00000000013C60BFh
+013C6057 mov rdi,rsi
+013C605A lea r13,[r12+r15*8]
+013C605E xchg ax,ax
+013C6060 mov r8d,[r13+rdi*4]
+013C6065 lea r9,[rel 678E3C0h]
+013C606C mov edx,r14d
+013C606F lea rcx,[rel 549E340h]
+013C6076 add r8,rbp
+013C6079 mov [rsp+28h],rsi
+013C607E mov [rsp+20h],rbx
+013C6083 mov rdx,[r12+rdx*8]
+013C6087 call 0000000001358360h
+013C608C movsxd rcx,[rbx+84h]
+013C6093 cmp ecx,[rbx+80h]
+013C6099 jge short 00000000013C60ACh
+013C609B mov rdx,rcx
+013C609E mov rcx,[rbx+78h]
+013C60A2 mov [rcx+rdx*8],rax
+013C60A6 inc dword [rbx+84h]
+013C60AC inc r14d
+013C60AF inc rdi
+013C60B2 cmp rdi,r15
+013C60B5 jl short 00000000013C6060h
+013C60B7 mov r13,[rsp+98h]
+013C60BF mov r12,[rsp+40h]
+013C60C4 test r13d,r13d
+013C60C7 je short 00000000013C6147h
+013C60C9 mov r12d,[r12+4]
+013C60CE mov r14d,esi
+013C60D1 add r12,rbp
+013C60D4 movsxd r15,r13d
+013C60D7 lea r13,[r12+r15*8]
+013C60DB test r15,r15
+013C60DE jle short 00000000013C6147h
+013C60E0 mov rdi,rsi
+013C60E3 nop dword [rax]
+013C60E7 nop word [rax+rax]
+013C60F0 mov r8d,[r13+rdi*4]
+013C60F5 lea r9,[rel 678D0C0h]
+013C60FC mov edx,r14d
+013C60FF lea rcx,[rel 549E340h]
+013C6106 add r8,rbp
+013C6109 mov [rsp+28h],rsi
+013C610E mov [rsp+20h],rbx
+013C6113 mov rdx,[r12+rdx*8]
+013C6117 call 0000000001358360h
+013C611C movsxd rcx,[rbx+84h]
+013C6123 cmp ecx,[rbx+80h]
+013C6129 jge short 00000000013C613Ch
+013C612B mov rdx,rcx
+013C612E mov rcx,[rbx+78h]
+013C6132 mov [rcx+rdx*8],rax
+013C6136 inc dword [rbx+84h]
+013C613C inc r14d
+013C613F inc rdi
+013C6142 cmp rdi,r15
+013C6145 jl short 00000000013C60F0h
+013C6147 mov ecx,[rbx+44h]
+013C614A shr ecx,6
+013C614D test cl,1
+013C6150 jne near 00000000013C6400h
+013C6156 mov edx,32D450Ah
+013C615B mov rcx,rbp
+013C615E call 00000000015B3220h
+013C6163 mov r14,rax
+013C6166 test rax,rax
+013C6169 je near 00000000013C62ABh
+013C616F mov ecx,[rax+8]
+013C6172 mov r15d,8
+013C6178 mov rax,0AAAAAAAAAAAAAAABh
+013C6182 mul rcx
+013C6185 mov rdi,rdx
+013C6188 shr rdi,4
+013C618C test edi,edi
+013C618E jle near 00000000013C62B1h
+013C6194 movsxd rcx,edi
+013C6197 lea rdx,[rel 44D2C80h]
+013C619E shl rcx,3
+013C61A2 mov r8d,r15d
+013C61A5 mov [rbx+88h],rsi
+013C61AC mov [rbx+90h],rsi
+013C61B3 call 00000000010DB2C0h
+013C61B8 test rax,rax
+013C61BB je short 00000000013C61EBh
+013C61BD mov [rbx+88h],rax
+013C61C4 mov edx,esi
+013C61C6 mov [rbx+90h],edi
+013C61CC nop dword [rax]
+013C61D0 mov rax,[rbx+88h]
+013C61D7 xor r8d,r8d
+013C61DA movsxd rcx,edx
+013C61DD inc edx
+013C61DF mov [rax+rcx*8],r8
+013C61E3 cmp edx,[rbx+90h]
+013C61E9 jl short 00000000013C61D0h
+013C61EB cmp [rbx+88h],rsi
+013C61F2 je near 00000000013C62B1h
+013C61F8 cmp edi,[rbx+90h]
+013C61FE jg short 00000000013C6206h
+013C6200 mov [rbx+94h],edi
+013C6206 movsxd rcx,[rbx+94h]
+013C620D mov edi,esi
+013C620F mov r12d,[r14+4]
+013C6213 add r12,rbp
+013C6216 lea r9,[rcx*8]
+013C621E lea r13,[r12+rcx*8]
+013C6222 add r9,r13
+013C6225 mov [rsp+98h],r9
+013C622D test ecx,ecx
+013C622F jle near 00000000013C62B1h
+013C6235 mov r14,rsi
+013C6238 nop dword [rax+rax]
+013C6240 mov r8d,[r14+r9]
+013C6244 mov r15,[rbx+88h]
+013C624B add r8,rbp
+013C624E cmp dword [r14+r9+4],0FFFFFFFFh
+013C6254 mov r9,rbx
+013C6257 movsxd rax,edi
+013C625A mov [rsp+20h],rsi
+013C625F lea rdx,[rax*8]
+013C6267 lea rcx,[rdx+r12]
+013C626B jne short 00000000013C627Eh
+013C626D mov rdx,[rcx]
+013C6270 lea rcx,[rel 52F2FC0h]
+013C6277 call 00000000010D79C0h
+013C627C jmp short 00000000013C6291h
+013C627E mov r8,[rcx]
+013C6281 lea rcx,[rel 52F2FC0h]
+013C6288 mov rdx,[rdx+r13]
+013C628C call 00000000010D72B0h
+013C6291 mov r9,[rsp+98h]
+013C6299 inc edi
+013C629B mov [r15+r14],rax
+013C629F add r14,8
+013C62A3 cmp edi,[rbx+94h]
+013C62A9 jl short 00000000013C6240h
+013C62AB mov r15d,8
+013C62B1 mov edx,0E4158AC3h
+013C62B6 mov rcx,rbp
+013C62B9 call 00000000015B3220h
+013C62BE mov r14,rax
+013C62C1 test rax,rax
+013C62C4 je near 00000000013C6400h
+013C62CA mov edi,[rax+8]
+013C62CD shr edi,4
+013C62D0 test edi,edi
+013C62D2 je near 00000000013C6400h
+013C62D8 mov ecx,edi
+013C62DA lea rdx,[rel 44D2C98h]
+013C62E1 shl rcx,4
+013C62E5 mov r8d,r15d
+013C62E8 mov [rbx+98h],rsi
+013C62EF mov [rbx+0A0h],rsi
+013C62F6 call 00000000010DB2C0h
+013C62FB test rax,rax
+013C62FE je short 00000000013C632Eh
+013C6300 mov [rbx+98h],rax
+013C6307 mov ecx,esi
+013C6309 mov [rbx+0A0h],edi
+013C630F nop
+013C6310 movsxd rax,ecx
+013C6313 xorps xmm0,xmm0
+013C6316 shl rax,4
+013C631A inc ecx
+013C631C add rax,[rbx+98h]
+013C6323 movups [rax],xmm0
+013C6326 cmp ecx,[rbx+0A0h]
+013C632C jl short 00000000013C6310h
+013C632E cmp [rbx+98h],rsi
+013C6335 je near 00000000013C6400h
+013C633B cmp edi,[rbx+0A0h]
+013C6341 jg short 00000000013C6349h
+013C6343 mov [rbx+0A4h],edi
+013C6349 mov eax,[r14+4]
+013C634D mov r15d,esi
+013C6350 add rax,rbp
+013C6353 cmp [rbx+0A4h],esi
+013C6359 jle near 00000000013C6400h
+013C635F mov r12,0FFFFFFFFFFFFFFFCh
+013C6366 lea r14,[rax+4]
+013C636A sub r12,rax
+013C636D lea r13,[rel 6437140h]
+013C6374 mov rbp,0FFFFFFFF00000000h
+013C637E xchg ax,ax
+013C6380 mov rdx,[r14+4]
+013C6384 lea rdi,[r12+r14]
+013C6388 add rdi,[rbx+98h]
+013C638F mov rcx,rdx
+013C6392 and rcx,rbp
+013C6395 mov eax,edx
+013C6397 or rcx,rax
+013C639A test rbp,rcx
+013C639D jne short 00000000013C63A3h
+013C639F test ecx,ecx
+013C63A1 je short 00000000013C63D5h
+013C63A3 lea rcx,[rel 52F2FC8h]
+013C63AA call 00000000015ACDE0h
+013C63AF test rax,rax
+013C63B2 je short 00000000013C63D5h
+013C63B4 mov ecx,[rax]
+013C63B6 imul rcx,[rel 52F3008h]
+013C63BE add rcx,[rel 52F3000h]
+013C63C5 je short 00000000013C63D5h
+013C63C7 movzx eax,word [r14-4]
+013C63CC mov [rdi+4],ax
+013C63D0 mov eax,[r14]
+013C63D3 jmp short 00000000013C63E1h
+013C63D5 mov [rdi+4],si
+013C63D9 mov rcx,r13
+013C63DC mov eax,0FFFFFFFFh
+013C63E1 mov [rdi],eax
+013C63E3 inc r15d
+013C63E6 mov [rdi+8],rcx
+013C63EA add r14,10h
+013C63EE mov [rdi+6],si
+013C63F2 cmp r15d,[rbx+0A4h]
+013C63F9 jl short 00000000013C6380h
+013C63FB mov rbp,[rsp+48h]
+013C6400 mov eax,[rbx+44h]
+013C6403 shr eax,7
+013C6406 test al,1
+013C6408 jne near 00000000013C656Dh
+013C640E mov edx,30DADA09h
+013C6413 mov rcx,rbp
+013C6416 call 00000000015B3220h
+013C641B mov rdi,rax
+013C641E test rax,rax
+013C6421 je near 00000000013C656Dh
+013C6427 mov r14d,[rax+8]
+013C642B shr r14d,4
+013C642F test r14d,r14d
+013C6432 je near 00000000013C656Dh
+013C6438 lea rcx,[r14+r14*2]
+013C643C mov [rbx+0F0h],rsi
+013C6443 shl rcx,3
+013C6447 lea rdx,[rel 44D2CB0h]
+013C644E mov r8d,8
+013C6454 mov [rbx+0F8h],rsi
+013C645B call 00000000010DB2C0h
+013C6460 test rax,rax
+013C6463 je short 00000000013C64A7h
+013C6465 mov [rbx+0F0h],rax
+013C646C mov edx,esi
+013C646E mov [rbx+0F8h],r14d
+013C6475 nop word [rax+rax]
+013C6480 movsxd rax,edx
+013C6483 xor r8d,r8d
+013C6486 xorps xmm0,xmm0
+013C6489 inc edx
+013C648B lea rcx,[rax+rax*2]
+013C648F mov rax,[rbx+0F0h]
+013C6496 movups [rax+rcx*8],xmm0
+013C649A mov [rax+rcx*8+10h],r8
+013C649F cmp edx,[rbx+0F8h]
+013C64A5 jl short 00000000013C6480h
+013C64A7 cmp [rbx+0F0h],rsi
+013C64AE je near 00000000013C656Dh
+013C64B4 cmp r14d,[rbx+0F8h]
+013C64BB jg short 00000000013C64C4h
+013C64BD mov [rbx+0FCh],r14d
+013C64C4 mov edi,[rdi+4]
+013C64C7 mov r15d,r14d
+013C64CA add rdi,rbp
+013C64CD shl r15,4
+013C64D1 mov r14d,esi
+013C64D4 add r15,rdi
+013C64D7 cmp rdi,r15
+013C64DA jae short 00000000013C6534h
+013C64DC lea r12,[rel 67B9C34h]
+013C64E3 nop dword [rax]
+013C64E7 nop word [rax+rax]
+013C64F0 mov r8d,[rdi+8]
+013C64F4 mov r9d,[rdi+0Ch]
+013C64F8 add r8,rbp
+013C64FB mov rdx,[rdi]
+013C64FE movsxd rax,r14d
+013C6501 mov [rsp+30h],r12
+013C6506 mov [rsp+28h],rsi
+013C650B mov [rsp+20h],rbx
+013C6510 lea rcx,[rax+rax*2]
+013C6514 mov rax,[rbx+0F0h]
+013C651B lea rcx,[rax+rcx*8]
+013C651F call 0000000000FAAF50h
+013C6524 test al,al
+013C6526 je short 00000000013C652Bh
+013C6528 inc r14d
+013C652B add rdi,10h
+013C652F cmp rdi,r15
+013C6532 jb short 00000000013C64F0h
+013C6534 cmp r14d,[rbx+0F8h]
+013C653B jg short 00000000013C6544h
+013C653D mov [rbx+0FCh],r14d
+013C6544 test r14d,r14d
+013C6547 jne short 00000000013C656Dh
+013C6549 mov rcx,[rbx+0F0h]
+013C6550 mov [rbx+0FCh],esi
+013C6556 test rcx,rcx
+013C6559 je short 00000000013C6560h
+013C655B call 00000000010DB390h
+013C6560 mov [rbx+0F0h],rsi
+013C6567 mov [rbx+0F8h],esi
+013C656D mov eax,[rbx+44h]
+013C6570 shr eax,0Ah
+013C6573 test al,1
+013C6575 jne near 00000000013C6607h
+013C657B mov edx,0B6A0B72Ah
+013C6580 mov rcx,rbp
+013C6583 call 00000000015B3220h
+013C6588 test rax,rax
+013C658B je short 00000000013C6607h
+013C658D mov eax,[rax+4]
+013C6590 mov ecx,[rax+rbp]
+013C6593 lea rdx,[rax+rbp]
+013C6597 test ecx,ecx
+013C6599 jne short 00000000013C65A5h
+013C659B add rdx,0Bh
+013C659F and rdx,0FFFFFFFFFFFFFFF8h
+013C65A3 jmp short 00000000013C65DDh
+013C65A5 or dword [rbx+40h],1000h
+013C65AC cmp ecx,5
+013C65AF jne short 00000000013C6607h
+013C65B1 mov rax,[rel 54B5E50h]
+013C65B8 movsxd r8,[rbx+140h]
+013C65BF mov rcx,[rax+18h]
+013C65C3 mov eax,[rdx+r8*4+4]
+013C65C8 cmp [rcx+r8*4],eax
+013C65CC jne short 00000000013C6607h
+013C65CE add rdx,1Fh
+013C65D2 shl r8,4
+013C65D6 and rdx,0FFFFFFFFFFFFFFF8h
+013C65DA add rdx,r8
+013C65DD test rdx,rdx
+013C65E0 je short 00000000013C6607h
+013C65E2 mov r8d,[rdx+8]
+013C65E6 lea rcx,[rel 52DDA20h]
+013C65ED mov rdx,[rdx]
+013C65F0 add r8,rbp
+013C65F3 mov r9,rbx
+013C65F6 mov [rsp+20h],rsi
+013C65FB call 0000000000FB17A0h
+013C6600 mov [rbx+130h],rax
+013C6607 mov eax,[rbx+44h]
+013C660A shr eax,15h
+013C660D test al,1
+013C660F jne near 00000000013C66A1h
+013C6615 mov edx,1951BA1Fh
+013C661A mov rcx,rbp
+013C661D call 00000000015B3220h
+013C6622 test rax,rax
+013C6625 je short 00000000013C66A1h
+013C6627 mov eax,[rax+4]
+013C662A mov ecx,[rax+rbp]
+013C662D lea rdx,[rax+rbp]
+013C6631 test ecx,ecx
+013C6633 jne short 00000000013C663Fh
+013C6635 add rdx,0Bh
+013C6639 and rdx,0FFFFFFFFFFFFFFF8h
+013C663D jmp short 00000000013C6677h
+013C663F or dword [rbx+40h],1000h
+013C6646 cmp ecx,5
+013C6649 jne short 00000000013C66A1h
+013C664B mov rax,[rel 54B5E50h]
+013C6652 movsxd r8,[rbx+140h]
+013C6659 mov rcx,[rax+18h]
+013C665D mov eax,[rdx+r8*4+4]
+013C6662 cmp [rcx+r8*4],eax
+013C6666 jne short 00000000013C66A1h
+013C6668 add rdx,1Fh
+013C666C shl r8,4
+013C6670 and rdx,0FFFFFFFFFFFFFFF8h
+013C6674 add rdx,r8
+013C6677 test rdx,rdx
+013C667A je short 00000000013C66A1h
+013C667C mov r8d,[rdx+8]
+013C6680 lea rcx,[rel 52F0D20h]
+013C6687 mov rdx,[rdx]
+013C668A add r8,rbp
+013C668D mov r9,rbx
+013C6690 mov [rsp+20h],rsi
+013C6695 call 00000000010970A0h
+013C669A mov [rbx+138h],rax
+013C66A1 mov eax,[rbx+44h]
+013C66A4 shr eax,12h
+013C66A7 test al,1
+013C66A9 jne near 00000000013C6886h
+013C66AF mov edx,27795C5h
+013C66B4 mov rcx,rbp
+013C66B7 call 00000000015B3220h
+013C66BC test rax,rax
+013C66BF je near 00000000013C6886h
+013C66C5 mov eax,[rax+4]
+013C66C8 lea r14,[rbp+0Fh]
+013C66CC add r14,rax
+013C66CF and r14,0FFFFFFFFFFFFFFF8h
+013C66D3 mov r13d,[rax+rbp]
+013C66D7 mov r9d,[rax+rbp+4]
+013C66DC mov edx,r13d
+013C66DF shl rdx,4
+013C66E3 mov r15d,r13d
+013C66E6 add rdx,r14
+013C66E9 mov [rsp+98h],r9d
+013C66F1 lea r12d,[r9+r13]
+013C66F5 mov eax,[rdx]
+013C66F7 test eax,eax
+013C66F9 jne short 00000000013C6705h
+013C66FB lea rdi,[rdx+0Bh]
+013C66FF and rdi,0FFFFFFFFFFFFFFF8h
+013C6703 jmp short 00000000013C674Ch
+013C6705 or dword [rbx+40h],1000h
+013C670C cmp eax,5
+013C670F jne near 00000000013C6886h
+013C6715 mov rax,[rel 54B5E50h]
+013C671C movsxd r8,[rbx+140h]
+013C6723 mov rcx,[rax+18h]
+013C6727 mov eax,[rdx+r8*4+4]
+013C672C cmp [rcx+r8*4],eax
+013C6730 jne near 00000000013C6886h
+013C6736 mov rdi,r9
+013C6739 lea rax,[rdx+1Fh]
+013C673D imul rdi,r8
+013C6741 and rax,0FFFFFFFFFFFFFFF8h
+013C6745 shl rdi,4
+013C6749 add rdi,rax
+013C674C test rdi,rdi
+013C674F je near 00000000013C6886h
+013C6755 test r12d,r12d
+013C6758 jle near 00000000013C6886h
+013C675E movsxd rcx,r12d
+013C6761 lea rdx,[rel 44D2CC0h]
+013C6768 shl rcx,3
+013C676C mov r8d,8
+013C6772 mov [rbx+0E0h],rsi
+013C6779 mov [rbx+0E8h],rsi
+013C6780 call 00000000010DB2C0h
+013C6785 test rax,rax
+013C6788 je short 00000000013C67BBh
+013C678A mov [rbx+0E0h],rax
+013C6791 mov edx,esi
+013C6793 mov [rbx+0E8h],r12d
+013C679A nop word [rax+rax]
+013C67A0 mov rax,[rbx+0E0h]
+013C67A7 xor r8d,r8d
+013C67AA movsxd rcx,edx
+013C67AD inc edx
+013C67AF mov [rax+rcx*8],r8
+013C67B3 cmp edx,[rbx+0E8h]
+013C67B9 jl short 00000000013C67A0h
+013C67BB cmp [rbx+0E0h],rsi
+013C67C2 je near 00000000013C6886h
+013C67C8 test r13d,r13d
+013C67CB je short 00000000013C6824h
+013C67CD nop dword [rax]
+013C67D0 mov r8d,[r14+8]
+013C67D4 lea r9,[rel 678D7C0h]
+013C67DB mov rdx,[r14]
+013C67DE lea rcx,[rel 549E340h]
+013C67E5 add r8,rbp
+013C67E8 mov [rsp+28h],rsi
+013C67ED mov [rsp+20h],rbx
+013C67F2 call 0000000001358360h
+013C67F7 movsxd rcx,[rbx+0ECh]
+013C67FE cmp ecx,[rbx+0E8h]
+013C6804 jge short 00000000013C681Ah
+013C6806 mov rdx,rcx
+013C6809 mov rcx,[rbx+0E0h]
+013C6810 mov [rcx+rdx*8],rax
+013C6814 inc dword [rbx+0ECh]
+013C681A add r14,10h
+013C681E sub r15,1
+013C6822 jne short 00000000013C67D0h
+013C6824 mov eax,[rsp+98h]
+013C682B test eax,eax
+013C682D je short 00000000013C6886h
+013C682F mov r14d,eax
+013C6832 mov r8d,[rdi+8]
+013C6836 lea r9,[rel 678D7C0h]
+013C683D mov rdx,[rdi]
+013C6840 lea rcx,[rel 549E340h]
+013C6847 add r8,rbp
+013C684A mov [rsp+28h],rsi
+013C684F mov [rsp+20h],rbx
+013C6854 call 0000000001358360h
+013C6859 movsxd rcx,[rbx+0ECh]
+013C6860 cmp ecx,[rbx+0E8h]
+013C6866 jge short 00000000013C687Ch
+013C6868 mov rdx,rcx
+013C686B mov rcx,[rbx+0E0h]
+013C6872 mov [rcx+rdx*8],rax
+013C6876 inc dword [rbx+0ECh]
+013C687C add rdi,10h
+013C6880 sub r14,1
+013C6884 jne short 00000000013C6832h
+013C6886 mov edx,6ABCAB2h
+013C688B mov rcx,rbp
+013C688E call 00000000015B3220h
+013C6893 mov edx,3D681284h
+013C6898 mov [rbx+148h],rax
+013C689F mov rcx,rbp
+013C68A2 call 00000000015B3220h
+013C68A7 test rax,rax
+013C68AA je short 00000000013C68B4h
+013C68AC mov eax,[rax+4]
+013C68AF add rax,rbp
+013C68B2 jmp short 00000000013C68B7h
+013C68B4 mov rax,rsi
+013C68B7 mov edx,0DE61C274h
+013C68BC mov [rbx+150h],rax
+013C68C3 mov rcx,rbp
+013C68C6 call 00000000015B3220h
+013C68CB test rax,rax
+013C68CE je short 00000000013C68D6h
+013C68D0 mov esi,[rax+4]
+013C68D3 add rsi,rbp
+013C68D6 mov [rbx+158h],rsi
+013C68DD mov al,1
+013C68DF lea r11,[rsp+50h]
+013C68E4 mov rbx,[r11+30h]
+013C68E8 mov rbp,[r11+38h]
+013C68EC mov rsi,[r11+40h]
+013C68F0 mov rsp,r11
+013C68F3 pop r15
+013C68F5 pop r14
+013C68F7 pop r13
+013C68F9 pop r12
+013C68FB pop rdi
+013C68FC ret

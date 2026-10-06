@@ -1,0 +1,34 @@
+# LightDef and attached-world-light runtime follow-up
+
+Read-only static trace against the local Rift Apart build 23987138. The executable SHA256 is recorded in `AGENTS.md`. This report adds the generated LightDef layout/initializer and checks concrete attached-light RTTI methods and the continued LevelLightManager load function. No game, native-source, installation, save, or config files were changed; all outputs are scratch evidence.
+
+## LightDef offsets and initializer
+
+The native DDL/reflection `LightDef` record is RVA `0x5D67A70`, size `0x348`. Relevant reflected members are:
+
+- `ColorTemperature +0x198`, `Intensity +0x19C`, `AttenuationRadius +0x1A0`
+- `CutoffRadius +0x228`, `FadeOutDist +0x22C`, `NearFadeClipDist +0x230`, `NearFadeStartDist +0x234`, `ShadowFadeOutDist +0x238`, `SpecFadeOutDist +0x23C`
+
+Generated initializer `0x22705D0` writes `0x428C0000` (70.0f) to `+0x22C` and zero to `+0x230/+0x234/+0x238/+0x23C`. Variant initializer `0x2270D70` writes the same values. The 70-unit default and zero near fades are proven authored-type defaults only; this does not establish live values for any Corson V light.
+
+Metadata thunk `0x226E650` passes the record pointer `0x5D67A70` into generic DDL helper `0x15BAE20`. Generated routines `0x226F398` and `0x226FD20` set/propagate DDL field-presence bits or copy same-layout field values, including this fade group. Those routines are serialization/type plumbing, not a renderer reader.
+
+## Runtime mapping status
+
+No concrete `LightDef`-to-runtime-light conversion or point/spot-light submit/cull predicate was proven. In particular, a raw displacement match for the fade fields is unsafe: many unrelated layouts alias the same offsets. One apparent candidate at `0x1A6C201` has been rejected by the parent trace: its chained routine entry is `0x1A6C1C0`, which resolves to `PickupBase`/`PickupShared`/`PickupItem` vtables; the matching displacements describe pickup motion, not LightDef.
+
+RTTI for `AttachedLightData` (TD `0x5E63120`, vtable `0x3071E18`) resolves to methods around `0xB2A...`; inspected slots are DDL/reflection helpers (including generic calls such as `0x15B19D0`, `0x15BBC50`, and `0x15D...`), with no render submission or camera-distance comparison. `AttachedSpotlight` (TD `0x5E28E10`, vtable `0x2ED00E0`) has vtable entries `0x440070`/`0x440160` that serialize/dispatch DDL fields through `0x15B9270`, `0x15BAE20`, and `0x15BF860`, plus a destructor/handle cleanup at `0x440220`; no per-light distance predicate is present in those methods. No vtable-pointer construction references for these two address points were found in the local image, so this evidence does not connect either metadata type to the active Corson V runtime lights.
+
+## LevelLightManager continuation
+
+The full `0x1096DD0` method spans the PDATA fragments through `0x1096F90`. It resolves an asset descriptor (`0x567CC2F0`) and two references (`0x1F6A31A6`, `0x46EFD07A`), then stores the references at `+0x30/+0x38` and computes normalized sample-grid scale/offset values at `+0x40..+0x58` from dimensions/indices. The descriptor’s version tag is `0x32BD8B8`, decoded as `9-rsprentall:Add3rdlayerofsamples`. This is consistent with a baked light-grid/sample asset and does not establish a dynamic point/spot-light camera cull. The manager’s descriptor table is shared across entity types, not a dedicated live world-light array.
+
+## Practical conclusion
+
+The schema offers a plausible 70-unit default for per-light draw fade, but there is no proven path from the active Photo view to a live light’s fade values or renderer visibility decision. The candidate methods above do not justify changing `FadeOutDist`, hooking `AttachedLightData`, or applying a Photo-only override. A remaining useful lead would need to show a concrete built-light decoder/converter feeding the renderer’s compact per-light records, or a live renderer predicate with its camera position argument and originating view identity.
+
+## Focused evidence dumps
+
+- `work/pc-lod-continuation-luna-lightdef-focused-disasm.txt`
+- `work/pc-lod-continuation-luna-attached-light-rtti.py` and `work/pc-lod-continuation-luna-attached-light-methods.txt`
+- `work/pc-lod-continuation-luna-level-light-manager-followup.txt`

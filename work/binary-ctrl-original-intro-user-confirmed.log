@@ -1,0 +1,116 @@
+HID proxy loaded; verifying camera build.
+Photo Mode collision-response bypass installed.
+Guarded geometry-only LOD candidate installed; awaiting Photo Mode activation.
+Camera hooks installed. Normal=10 Boost=100 Tether=1000
+Photo lifecycle callback hooked; geometry LOD candidate is ready.
+Photo lifecycle state=14; geometry LOD preference=native.
+Photo lifecycle state=10; geometry LOD preference=native.
+Photo lifecycle state=11; geometry LOD preference=native.
+Photo lifecycle state=12; geometry LOD preference=native.
+Photo lifecycle state=14; geometry LOD preference=native.
+Photo lifecycle state=10; geometry LOD preference=native.
+Photo lifecycle state=11; geometry LOD preference=native.
+Photo lifecycle state=12; geometry LOD preference=native.
+Photo lifecycle state=14; geometry LOD preference=native.
+Photo lifecycle state=10; geometry LOD preference=native.
+Photo lifecycle state=11; geometry LOD preference=native.
+Photo lifecycle state=0; geometry LOD preference=native.
+Photo lifecycle state=1; geometry LOD preference=highest.
+Photo lifecycle state=2; geometry LOD preference=highest.
+Photo lifecycle state=4; geometry LOD preference=highest.
+Free camera activated: id=00401adb
+Matched live Free-camera movement controller.
+Normal camera speed active.
+Geometry LOD comparison: native preference enabled.
+Photo lifecycle state=4; geometry LOD preference=native.
+Geometry LOD comparison: highest preference enabled.
+Photo lifecycle state=4; geometry LOD preference=highest.
+Geometry LOD comparison: native preference enabled.
+Photo lifecycle state=4; geometry LOD preference=native.
+Geometry LOD comparison: highest preference enabled.
+Photo lifecycle state=4; geometry LOD preference=highest.
+Geometry LOD comparison: native preference enabled.
+Photo lifecycle state=4; geometry LOD preference=native.
+Geometry LOD comparison: highest preference enabled.
+Photo lifecycle state=4; geometry LOD preference=highest.
+Geometry LOD comparison: native preference enabled.
+Photo lifecycle state=4; geometry LOD preference=native.
+Geometry LOD comparison: highest preference enabled.
+Photo lifecycle state=4; geometry LOD preference=highest.
+Geometry LOD comparison: native preference enabled.
+Photo lifecycle state=4; geometry LOD preference=native.
+Geometry LOD comparison: highest preference enabled.
+Photo lifecycle state=4; geometry LOD preference=highest.
+Geometry LOD comparison: native preference enabled.
+Photo lifecycle state=4; geometry LOD preference=native.
+Geometry LOD comparison: highest preference enabled.
+Photo lifecycle state=4; geometry LOD preference=highest.
+Geometry LOD comparison: native preference enabled.
+Photo lifecycle state=4; geometry LOD preference=native.
+Geometry LOD comparison: highest preference enabled.
+Photo lifecycle state=4; geometry LOD preference=highest.
+Geometry LOD comparison: native preference enabled.
+Photo lifecycle state=4; geometry LOD preference=native.
+Geometry LOD comparison: highest preference enabled.
+Photo lifecycle state=4; geometry LOD preference=highest.
+Geometry LOD comparison: native preference enabled.
+Photo lifecycle state=4; geometry LOD preference=native.
+Geometry LOD comparison: highest preference enabled.
+Photo lifecycle state=4; geometry LOD preference=highest.
+Geometry LOD comparison: native preference enabled.
+Photo lifecycle state=4; geometry LOD preference=native.
+Geometry LOD comparison: highest preference enabled.
+Photo lifecycle state=4; geometry LOD preference=highest.
+Geometry LOD comparison: native preference enabled.
+Photo lifecycle state=4; geometry LOD preference=native.
+Geometry LOD comparison: highest preference enabled.
+Photo lifecycle state=4; geometry LOD preference=highest.
+Geometry LOD comparison: native preference enabled.
+Photo lifecycle state=4; geometry LOD preference=native.
+Geometry LOD comparison: highest preference enabled.
+Photo lifecycle state=4; geometry LOD preference=highest.
+Geometry LOD comparison: native preference enabled.
+Photo lifecycle state=4; geometry LOD preference=native.
+Shift boost active.
+Normal camera speed active.
+Geometry LOD comparison: highest preference enabled.
+Photo lifecycle state=4; geometry LOD preference=highest.
+Geometry LOD comparison: native preference enabled.
+Photo lifecycle state=4; geometry LOD preference=native.
+Geometry LOD comparison: highest preference enabled.
+Photo lifecycle state=4; geometry LOD preference=highest.
+Geometry LOD comparison: native preference enabled.
+Photo lifecycle state=4; geometry LOD preference=native.
+Shift boost active.
+Normal camera speed active.
+Geometry LOD comparison: highest preference enabled.
+Photo lifecycle state=4; geometry LOD preference=highest.
+Geometry LOD comparison: native preference enabled.
+Photo lifecycle state=4; geometry LOD preference=native.
+Geometry LOD comparison: highest preference enabled.
+Photo lifecycle state=4; geometry LOD preference=highest.
+Geometry LOD comparison: native preference enabled.
+Photo lifecycle state=4; geometry LOD preference=native.
+Geometry LOD comparison: highest preference enabled.
+Photo lifecycle state=4; geometry LOD preference=highest.
+Geometry LOD comparison: native preference enabled.
+Photo lifecycle state=4; geometry LOD preference=native.
+Geometry LOD comparison: highest preference enabled.
+Photo lifecycle state=4; geometry LOD preference=highest.
+Geometry LOD comparison: native preference enabled.
+Photo lifecycle state=4; geometry LOD preference=native.
+Geometry LOD comparison: highest preference enabled.
+Photo lifecycle state=4; geometry LOD preference=highest.
+Geometry LOD comparison: native preference enabled.
+Photo lifecycle state=4; geometry LOD preference=native.
+Geometry LOD comparison: highest preference enabled.
+Photo lifecycle state=4; geometry LOD preference=highest.
+Geometry LOD comparison: native preference enabled.
+Photo lifecycle state=4; geometry LOD preference=native.
+Geometry LOD comparison: highest preference enabled.
+Photo lifecycle state=4; geometry LOD preference=highest.
+Geometry LOD comparison: native preference enabled.
+Photo lifecycle state=4; geometry LOD preference=native.
+Geometry LOD comparison: highest preference enabled.
+Photo lifecycle state=4; geometry LOD preference=highest.
+Photo teardown: native geometry LOD preference restored.

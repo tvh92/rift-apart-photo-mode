@@ -1,0 +1,14 @@
+{
+  "baseline_sha256": "7508bd33654d057202fbd91b8c81d8622dca1c1e781c21b52ce82023fa14b272",
+  "dll_sha256": "5c36943c6dfb45713382bf471e6f9939f857ee94f7789b8fefb2fc3abc292842",
+  "only_changed_file_offsets": [
+    "0x23f3",
+    "0x2403"
+  ],
+  "changes": [
+    "VK_MENU -> VK_CONTROL",
+    "L -> VK_CONTROL"
+  ],
+  "behavior": "Ctrl rising edge in focused active Photo Mode; baseline checks and three key probes retained.",
+  "layout": "All other bytes, imports, relocations, exports, unwind metadata and addresses unchanged."
+}

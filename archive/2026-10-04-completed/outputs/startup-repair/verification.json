@@ -1,0 +1,18 @@
+{
+  "steam_build": 23987138,
+  "original_toc_sha1": "64946f571579d9ea0a17e675682e2994dc0f20fc",
+  "clean_backup_verified": true,
+  "asset_count": 340662,
+  "only_changed_assets": [
+    "851735C03E050852",
+    "8B203B05CA2AEB50",
+    "905EBDB8C12D66E0",
+    "AED6101948AAFA54"
+  ],
+  "other_asset_records_unchanged": true,
+  "spans_unchanged": true,
+  "original_archive_list_preserved": true,
+  "camera_dll_unchanged": true,
+  "base_config_vanilla": true,
+  "in_game_startup_test": "pending"
+}

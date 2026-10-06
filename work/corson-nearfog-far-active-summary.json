@@ -1,0 +1,120 @@
+{
+  "utc": "2026-10-05T10:57:45.089135+00:00",
+  "pid": 22592,
+  "process": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Ratchet & Clank - Rift Apart\\RiftApart.exe",
+  "exe_sha256": "51299faca61866cf10ea9035a15b8f22600a56557dd5ffc1aad390d5a54e6d82",
+  "module_base": "0x7ff6f0940000",
+  "registry_rva": "0x52dda20",
+  "selected_pointer": "0x1ee8ec07360",
+  "fallback": false,
+  "size": 1696,
+  "pointer_stable": true,
+  "atomic_fields": false,
+  "block_sha256": "ccf649972d26229b780467aebbe56e166782538c46dfbe53fd5d7a27123326a6",
+  "fog_map_reference_blocks": {
+    "0x478": "000000000000000000000000000000000000000000000000",
+    "0x490": "000000000000000000000000000000000000000000000000"
+  },
+  "semantics": "Named fog-map references only; scalar field names remain unproven.",
+  "registry_slots": {
+    "0": {
+      "pointer": "0x1ee8ec07360",
+      "fallback": false,
+      "sha256": "ccf649972d26229b780467aebbe56e166782538c46dfbe53fd5d7a27123326a6"
+    },
+    "1": {
+      "pointer": "0x1ee8ec07360",
+      "fallback": false,
+      "sha256": "ccf649972d26229b780467aebbe56e166782538c46dfbe53fd5d7a27123326a6"
+    },
+    "2": {
+      "pointer": "0x1ee8ec07360",
+      "fallback": false,
+      "sha256": "ccf649972d26229b780467aebbe56e166782538c46dfbe53fd5d7a27123326a6"
+    },
+    "3": {
+      "pointer": "0x1ee8ec07360",
+      "fallback": false,
+      "sha256": "ccf649972d26229b780467aebbe56e166782538c46dfbe53fd5d7a27123326a6"
+    }
+  },
+  "current_render_view_candidate": {
+    "pointer": "0x1f116aa7300",
+    "atmosphere_index": 0,
+    "pointer_stable": true,
+    "limit": "Current renderer global; selected subview/explicit atmosphere override may differ."
+  },
+  "postprocess_default_global_5339340": "00",
+  "renderer_samples": [
+    {
+      "view": "0x1f116aa7300",
+      "block": "0x1f116a8f000",
+      "main_view_global": "0x1ee8c046b00",
+      "atmosphere_index": 0,
+      "view_position_30_raw_floats": [
+        -147.70167541503906,
+        138.20347595214844,
+        -237.54473876953125
+      ],
+      "sha256": "6c210ccf315f95545793ce54757ecfbe5526198439f58510289be1fed893414a"
+    },
+    {
+      "view": "0x1f116aa7300",
+      "block": "0x1f116a8f000",
+      "main_view_global": "0x1ee8c046b00",
+      "atmosphere_index": 0,
+      "view_position_30_raw_floats": [
+        -147.70167541503906,
+        138.20347595214844,
+        -237.54473876953125
+      ],
+      "sha256": "6c210ccf315f95545793ce54757ecfbe5526198439f58510289be1fed893414a"
+    },
+    {
+      "view": "0x1f116aa7300",
+      "block": "0x1f116a8f000",
+      "main_view_global": "0x1ee8c046b00",
+      "atmosphere_index": 0,
+      "view_position_30_raw_floats": [
+        -147.70167541503906,
+        138.20347595214844,
+        -237.54473876953125
+      ],
+      "sha256": "6c210ccf315f95545793ce54757ecfbe5526198439f58510289be1fed893414a"
+    }
+  ],
+  "fog_blend_globals_raw": {
+    "0x53393b0": "0000803f",
+    "0x53393b4": "0000803e"
+  },
+  "primary_view_candidates": {
+    "0x6739b08": {
+      "pointer": "0x1ee8c046b00",
+      "position_30_raw_floats": [
+        -147.70167541503906,
+        138.20347595214844,
+        -237.54473876953125
+      ],
+      "index_F90": 0
+    },
+    "0x6739b10": {
+      "pointer": "0x1ee8c046b00",
+      "position_30_raw_floats": [
+        -147.70167541503906,
+        138.20347595214844,
+        -237.54473876953125
+      ],
+      "index_F90": 0
+    }
+  },
+  "render_settings_callback": "0x7ff6f0ea6440",
+  "prepared_fog_context_69C_724_hex": "0ac81e3c4060cc3b0ac81e3c00000000dcbffd3c00357f3f000040420000403f103ef83b36fce63fbfb436c2bfb4b6424bb13d4201dc123fcdcccc3c0ad7233da10eea3c0ad7a33c1390964050b3bd404f49614007cde13f026ac5c0e4876bbef8b87ebd00000080779a544197e4173f341d3f3e0000000000000000000000800000803f00003842",
+  "photo_system_candidate": {
+    "pointer": "0x7ff6f6a78200",
+    "vtable_rva": "0x2fbf630",
+    "state_50": 4,
+    "setup_54": 1
+  },
+  "label": "corson-nearfog-far-active",
+  "binary": "C:\\Users\\Tim\\Documents\\Codex\\2026-10-04\\prompt-for-the-research-instance-research\\work\\live-atmosphere-readonly\\20261005T105745098650Z-corson-nearfog-far-active.bin"
+}

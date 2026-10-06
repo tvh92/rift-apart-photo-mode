@@ -1,0 +1,24 @@
+{
+  "clean_backup_verified": true,
+  "steam_build": 23987138,
+  "only_changed_assets": [
+    "851735C03E050852",
+    "8B203B05CA2AEB50",
+    "905EBDB8C12D66E0",
+    "AED6101948AAFA54"
+  ],
+  "payloads_match_both_libraries": true,
+  "other_index_sections_unchanged": true,
+  "both_profiles_match": true,
+  "fixed_intro_enabled": true,
+  "camera_dll_verified": true,
+  "camera_dll_sha256": "8cd2d7f9dc5f549f7198b5685a151f3ca8e4075557da4af5424d2069ab48953f",
+  "camera_dll_variant": "geometry-lod-ctrl-only-no-indicator",
+  "base_config_vanilla": true,
+  "all_original_boot_movies_verified": true,
+  "in_game_status": "Audit checks files only; see startup test results separately.",
+  "unchanged_ini_verified": true,
+  "previous_geometry_rollback_verified": true,
+  "lighting_and_pit_fog": "User reports missing surface illumination and white fog in Corson V; not patched.",
+  "ctrl_only_in_game": "Startup/shortcut confirmation pending; no indicator per user."
+}

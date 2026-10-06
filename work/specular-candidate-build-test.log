@@ -1,0 +1,35 @@
+Prepared diffuse/specular relay and unchanged fog/camera/status regression probes.
+In file included from C:\Users\Tim\Documents\Codex\2026-10-04\prompt-for-the-research-instance-research\work\native-abi\PhotoLightSpecularProbe.c:7:
+C:\Users\Tim\Documents\Codex\2026-10-04\prompt-for-the-research-instance-research\work\native-abi/../../outputs/camera-native-lighting-v2/GeometryLOD.h:105:13: warning: unused function 'geometry_prepare' [-Wunused-function]
+  105 | static BOOL geometry_prepare(GeometryPatch *patch,uintptr_t base,uintptr_t image_end,
+      |             ^~~~~~~~~~~~~~~~
+C:\Users\Tim\Documents\Codex\2026-10-04\prompt-for-the-research-instance-research\work\native-abi/../../outputs/camera-native-lighting-v2/GeometryLOD.h:184:13: warning: unused function 'geometry_install' [-Wunused-function]
+  184 | static BOOL geometry_install(GeometryPatch *patch) {return geometry_change(patch,TRUE);}
+      |             ^~~~~~~~~~~~~~~~
+C:\Users\Tim\Documents\Codex\2026-10-04\prompt-for-the-research-instance-research\work\native-abi/../../outputs/camera-native-lighting-v2/GeometryLOD.h:186:13: warning: unused function 'geometry_restore' [-Wunused-function]
+  186 | static BOOL geometry_restore(GeometryPatch *patch) {
+      |             ^~~~~~~~~~~~~~~~
+3 warnings generated.
+Ordinary specular example at85: prior RGB-only override specular=0/type=1; new specular=0.7/type=0.
+PhotoLightProbe passed: real native helper/relay, 1920 arithmetic cases, source immutable, Ctrl/ready/primary/caller gates, all 29 relay instruction starts unwind, atomic restore.
+In file included from C:\Users\Tim\Documents\Codex\2026-10-04\prompt-for-the-research-instance-research\work\native-abi\PhotoType4Probe.c:7:
+C:\Users\Tim\Documents\Codex\2026-10-04\prompt-for-the-research-instance-research\work\native-abi/../../outputs/camera-native-lighting-v2/GeometryLOD.h:105:13: warning: unused function 'geometry_prepare' [-Wunused-function]
+  105 | static BOOL geometry_prepare(GeometryPatch *patch,uintptr_t base,uintptr_t image_end,
+      |             ^~~~~~~~~~~~~~~~
+C:\Users\Tim\Documents\Codex\2026-10-04\prompt-for-the-research-instance-research\work\native-abi/../../outputs/camera-native-lighting-v2/GeometryLOD.h:184:13: warning: unused function 'geometry_install' [-Wunused-function]
+  184 | static BOOL geometry_install(GeometryPatch *patch) {return geometry_change(patch,TRUE);}
+      |             ^~~~~~~~~~~~~~~~
+C:\Users\Tim\Documents\Codex\2026-10-04\prompt-for-the-research-instance-research\work\native-abi/../../outputs/camera-native-lighting-v2/GeometryLOD.h:186:13: warning: unused function 'geometry_restore' [-Wunused-function]
+  186 | static BOOL geometry_restore(GeometryPatch *patch) {
+      |             ^~~~~~~~~~~~~~~~
+3 warnings generated.
+Type4 specular example at85: native=0.5; retained=1.
+PhotoType4Probe passed: 24 native fade cases, near fade/source preservation, exact call/prolog guards, ready/Ctrl/auxiliary gates, adjacent-byte preservation, atomic restore.
+PhotoFogProbe passed: real relay ABI, exact guards, entry cache, toggle, auxiliary views, exit/reentry, untouched texture tail, callsite restoration; calls=12
+PASS: dormant startup UI, one active-Photo worker, ON/OFF/Ctrl rising-edge/focus/held guards, hide on exit, fog lifecycle and metadata guards.
+PASS: owner filtering, normal/Shift/release speeds, baseline restore, replacement camera identity, and hotkey restoration of collision plus both geometry selectors.
+PASS: native ON/OFF bitmap at 96/144/192 DPI, premultiplied transparency, monotonic timed fade, GDI resource cleanup, click-through/no-activation styles, hidden layered-window render, coalesced hide requests.
+Photo status indicator ready after active Photo Mode entry.
+Photo status indicator ready after active Photo Mode entry.
+PASS: notifications stay dormant until validated lazy start; duplicate starts rejected; ON/OFF refresh, timer fade, hide, teardown and restart; test windows remained hidden.
+{"hid_guid_matches_system": true, "all_exports_resolved": 44, "non_game_hook_guard": "refused correctly"}

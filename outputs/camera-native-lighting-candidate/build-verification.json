@@ -1,0 +1,65 @@
+{
+  "game_sha256": "51299faca61866cf10ea9035a15b8f22600a56557dd5ffc1aad390d5a54e6d82",
+  "dll_sha256": "fa3ced0a22083cfe0e9ee68c96e5bdda2c4d13c46f34346c79848693873356b6",
+  "previous_confirmed_dll_sha256": "228620169d5741cd57d544047d351e7bd3c7df541778bc78c17ea0655bcb6f2a",
+  "installed": true,
+  "runtime_status": "Partial improvement; complete prevention of light disappearance is NOT confirmed.",
+  "unchanged_confirmed_sources": [
+    "CameraBoost.c",
+    "CameraStubs.S",
+    "GeometryLOD.h",
+    "HidExports.c",
+    "hid.def",
+    "export-manifest.json",
+    "PhotoFog.h"
+  ],
+  "dependencies": [
+    "api-ms-win-crt-heap-l1-1-0.dll",
+    "api-ms-win-crt-private-l1-1-0.dll",
+    "api-ms-win-crt-runtime-l1-1-0.dll",
+    "api-ms-win-crt-stdio-l1-1-0.dll",
+    "api-ms-win-crt-string-l1-1-0.dll",
+    "bcrypt.dll",
+    "kernel32.dll",
+    "user32.dll"
+  ],
+  "source_hashes": {
+    "CameraBoost.c": "3866afa0fbb4f18e0fdb64fc712aa9e60e16c52a2b8e77eaa5179a2041b53cda",
+    "CameraStubs.S": "99668d3d1c6640b68356b192eb75e523c6a8895c4b757dabfa4dd2b5fdf81fcc",
+    "GeometryLOD.h": "ffe1b882a2dfdbc67c272f3eafbe117e8020b286777a0c03204e64cb8124996a",
+    "hid.def": "d1db129cdf7efa14c18e14f72d2650e55ffc0125558552a2574716914957cf1f",
+    "HidExports.c": "e7752a2ccef01b159f2c4d0b276887357b8db8ff20e8dafac29646db210dfffb",
+    "PhotoFog.h": "85c488113ff5c1dbd3890402d66487c4dfdb529d21a8556d433c27bd14d7528c",
+    "PhotoLight.h": "582c00c3edc346dde29ce2bdf4ebe245ec8d71373894a88b77a5a3f3ed943215",
+    "PhotoLOD.h": "8deb0176914f874733d2c71d73cc1ca113b71ccb6d122148fa0680b11e8e0088"
+  },
+  "native_patch": {
+    "rva": "1099270",
+    "bytes": 8,
+    "source_flags_untouched": true,
+    "local_flag_cleared": 18,
+    "guards": "Exact build/window/calltargets/unwind fragment; published ready, Photo Ctrl gate, four callers, primary view.",
+    "unwind": "Registered nested CHAININFO; leaf relay, no extra frame. All relay-byte positions tested."
+  },
+  "isolated_tests": [
+    "1920 native arithmetic cases across four callsites",
+    "immutable source light records",
+    "native near fade, debug multiplier, specular scalar and type preserved",
+    "Ctrl off, unpublished relay, auxiliary view, foreign caller, exact-window refusal, atomic restoration",
+    "nested-chain virtual unwind at every relay byte",
+    "confirmed fog ABI/cache/texture-tail regression",
+    "Photo lifecycle, Ctrl focus/rising edge and teardown",
+    "camera normal/Shift/no-clip/geometry restoration",
+    "44 HID exports/GUID forwarding and unsupported-process refusal"
+  ],
+  "limitations": "Only ordinary types0..3 camera-distance colour fade. Type4 specular fade, light ranking/512-entry capacity, streaming, shadows and source light radii remain native. No in-game lighting result yet.",
+  "review": "work/photo-light-actual-source-review.txt",
+  "runtime_feedback": {
+    "recorded_utc": "2026-10-05T22:06:22.513253+00:00",
+    "dll_sha256": "fa3ced0a22083cfe0e9ee68c96e5bdda2c4d13c46f34346c79848693873356b6",
+    "user_report": "I think it works, but lights turn off at a farther Y distance with Ctrl enabled than at native X distance.",
+    "classification": "Partial improvement; complete prevention of light disappearance is NOT confirmed.",
+    "runtime_evidence": "Startup/Photo activation and Ctrl toggles logged; primary light relay applications=867005 at teardown.",
+    "next_request": "Restore a brief fading on/off status indicator; keep Ctrl shortcut and original movies."
+  }
+}

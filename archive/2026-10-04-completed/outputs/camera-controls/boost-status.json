@@ -1,0 +1,16 @@
+{
+  "pid": 12904,
+  "state": "camera values changed externally; stopped safely",
+  "object": "0x1b338be0880",
+  "motion_object": "0x1b338bcb300",
+  "normal_multiplier": 10.0,
+  "shift_multiplier": 100.0,
+  "original_values": [
+    10.0,
+    2.0,
+    1.0,
+    1000.0
+  ],
+  "restored": false,
+  "updated_at": 1791073138.4161222
+}

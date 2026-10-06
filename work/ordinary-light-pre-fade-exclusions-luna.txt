@@ -1,0 +1,20 @@
+# Ordinary-light pre-fade exclusion trace (exact build, read-only)
+
+Build: `RiftApart.exe` SHA256 `51299faca61866cf10ea9035a15b8f22600a56557dd5ffc1aad390d5a54e6d82`. Read-only static disassembly and string lookup. No game process, source, install, or live memory changed.
+
+## Results
+
+I found no proven absolute camera-distance or light-size cutoff before the `0x1099200` / `0x1098F90` fade helpers in the inspected ordinary LightSubmit path. The candidate ranking is view-relative and based on influence, while later eligibility checks include visibility/flag/optional frustum tests. These can exclude a light, but the traced code does not establish the user-observed far disappearance as a single distance threshold.
+
+- `0x10BB680` constructs a `LightSubmitQuery` object (allocation size `0x18A0`, label RVA `0x32D4C80`) and initializes associated arrays/dispatch state. Its visible body has no camera-distance cutoff.
+- Frame/view caller `0x12BB640` calls `0x10BB680`, then `0x10BA710` (ranking) and `0x10B9DB0` (record construction). In `0x10BA710`, each source center is formed from its transform and compared against the current view origin. The score is `max(light+70,+74,+78) * light+4C / centerDistance`; comparator `0x159A3B0` sorts by score. Candidates flagged as `FLT_MAX` are removed during compaction. I found no constant maximum center distance in this ranking calculation.
+- The later candidate loop applies other gates: callbacks `0x12B5010`, `0x12B7250`, `0x109D010`, source flag/mask checks, resource/validity checks, and an optional `0x109A670` test. This is plausible visibility/frustum/resource exclusion but does not prove a distance-size threshold.
+- `0x10BE940` builds an auxiliary volume representation. It transforms the light bounds, computes effective radius from max extent times `+0x4C`, then calls `0x15E6280` to produce a `0x30)-stride volume set, which is packed by `0x10B8CB0`. The function's later distance-like values are bound/radius calculations; no direct comparison to a fixed camera-distance cutoff is present in the retained dump.
+- Registration maps pass ID `0x67` to callback `0x10B3600` and label string `FillLightLookup` (RVA `0x32F9378`). This is a named fill-light lookup pass. At entry it computes `max(count - 0x200, 0)` and a capped count of `min(count, 0x200)`, then performs lookup/debug-related work on the supplied list. I did not find evidence that this is the primary ordinary surface-light submission capacity or that its 512 cap controls disappearance in the `LightSubmit` shader path.
+
+## Still unresolved
+
+The concrete remaining candidates are upstream `0x12B5010/0x12B7250/0x109D010`, source validity/flag masks, `0x109A670`, and the view-frustum/volume intersection in `0x15E6280`. Their exact semantics and whether one rejects the observed lights need focused caller/consumer tracing or runtime capture. Query ranking can deprioritize distant/small lights relative to closer/larger lights, but the static evidence here does not prove a hard range limit or identify a cap in the final shader upload.
+
+Evidence reviewed: `work/pc-lod-continuation-luna-lightsubmit-runtime.txt`, `work/pc-lod-continuation-luna-lightsubmit-registration-dumps.txt`, `work/pc-lod-continuation-luna-ordinary-light-be940.txt`, and exact-build chained disassembly windows for `0x10759C0`, `0x10BB680`, `0x10BA710`, `0x10BE940`, and `0x10B3600`.
+

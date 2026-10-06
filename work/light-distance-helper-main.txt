@@ -1,0 +1,42 @@
+FUNCTION 0x389950 ROOT (3709264, 3709421, 80048332) RANGES [(3709264, 3709421, 80048332)]
+00389950 sub rsp,18h
+00389954 movss xmm2,[rel 2E6B300h]
+0038995C movss xmm3,[rcx]
+00389960 subss xmm3,[rdx]
+00389964 movss xmm4,[rcx+4]
+00389969 movss xmm5,[rcx+8]
+0038996E subss xmm4,[rdx+4]
+00389973 subss xmm5,[rdx+8]
+00389978 movaps [rsp],xmm6
+0038997C movaps xmm1,xmm3
+0038997F andps xmm1,xmm2
+00389982 movaps xmm0,xmm4
+00389985 andps xmm0,xmm2
+00389988 movaps xmm6,xmm5
+0038998B andps xmm6,xmm2
+0038998E movss xmm2,[rel 4A4A198h]
+00389996 maxss xmm6,xmm0
+0038999A maxss xmm6,xmm1
+0038999E divss xmm2,xmm6
+003899A2 movaps xmm1,xmm2
+003899A5 movaps xmm0,xmm2
+003899A8 mulss xmm1,xmm3
+003899AC xorps xmm3,xmm3
+003899AF comiss xmm6,xmm3
+003899B2 mulss xmm0,xmm4
+003899B6 mulss xmm2,xmm5
+003899BA jbe short 00000000003899E1h
+003899BC mulss xmm0,xmm0
+003899C0 mulss xmm1,xmm1
+003899C4 mulss xmm2,xmm2
+003899C8 addss xmm0,xmm1
+003899CC addss xmm0,xmm2
+003899D0 sqrtss xmm0,xmm0
+003899D4 mulss xmm0,xmm6
+003899D8 movaps xmm6,[rsp]
+003899DC add rsp,18h
+003899E0 ret
+003899E1 movaps xmm6,[rsp]
+003899E5 xorps xmm0,xmm0
+003899E8 add rsp,18h
+003899EC ret

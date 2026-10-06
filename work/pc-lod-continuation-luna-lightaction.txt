@@ -1,0 +1,25 @@
+# Distant-light action trace (bounded, read-only)
+
+Target build: Rift Apart executable build 23987138 (workspace handoff hash `51299faca61866cf10ea9035a15b8f22600a56557dd5ffc1aad390d5a54e6d82`). No game, native source, or installation file was changed. Focus: reported ordinary world lights no longer illuminate nearby surfaces when the Photo camera is moved far away. This note separates the vehicle-only near-match from a general render consumer.
+
+## Finding: `SetBypassDistantLightingActionPrius` is action/reflection metadata, not a demonstrated light-range setter
+
+- The native type-name string is RVA `0x433CE98`; the reflection record is `0x54F3D70`. The reflection record has one member, `ActionType` (prior native reflection extraction; peer corroboration).
+- Its vtable at `0x433CE30` has 13 entries. Slots 9 and 10 are `0x150F550` and `0x150F560`. Disassembly at `0x150F550` is `mov dword [rcx+8],37h; mov al,1; ret`; `0x150F560` writes the same enum value and returns. Neither reads a distance, camera, or light.
+- Constructor `0x150FA70` initializes vptr and zeroes `[rcx+8]`. `0x150FB08` is a generic reflection/type-info thunk passing the record at `0x54F3D70` to `0x15BAE20`; it does not dispatch lighting behavior.
+- Type-name getter `0x12DFC70` returns the string RVA. Reflection record getter `0x12DFD10` returns the reflection-record RVA. Two nearby functions `0x12DE273` and `0x12DE330` instantiate this type and pass it through generic object/reflection helpers (`0x15B9270`, `0x15BBC50`, `0x15BAE20`, `0x15BF860`). These are serialization/reflection-style paths, not a renderer callsite.
+- The executable's `branch-refs.bin` has no direct branch/call xrefs to the type's constructor, vtable setter slots, or reflection type. `rip-refs.bin` xrefs to the type name/record/vtable resolve to its getter, generic reflection accessors, and initialization sites. This does not rule out indirect virtual dispatch; it means no direct runtime lighting consumer was established from these references.
+
+## Confirmed separate near-match: vehicle culled-light distance
+
+`VehicleSystemConfig` reflection record RVA `0x5215740` places `MaxCulledLightDistance` at object offset `+0xCC`, adjacent to `MaxFxUpdateDistance +0xC0`, `MaxCulledFxDistance +0xC4`, `MaxFxDistance +0xC8`, and `MaxLightDistance +0xD0`. Its native description says: “If a vehicle is culled from drawing, only enable lights if it is within this distance of the camera.” This is explicitly vehicle-only and conditional on the vehicle being draw-culled. It is not evidence for culling ordinary world/environment lights, and its authored-to-live-vehicle reader was not located.
+
+## Recommendation / unresolved
+
+Do not patch `SetBypassDistantLightingActionPrius`, `VehicleSystemConfig.MaxCulledLightDistance`, Photo `DefaultRange`/`LightDistance`, or renderer globals `0x53391E0/0x53391F0` for this symptom. None is proven to control ordinary world-light influence from the distant Photo camera. The known Photo lifecycle `geometry_active` LONG is available as a possible gate, but no suitable per-call general-light cull consumer was found; therefore no candidate hook is supported yet. Next useful evidence must identify the code that rejects or stops submitting world lights based on the active render camera, and verify its position source is the Photo camera rather than player/main view.
+
+The fog issue remains a separate path under the peer fog trace. `work/lighting-effects-lightcull.md` records schema-level fog candidates and likewise lacks an active consumer.
+
+## Focused disassembly
+
+See `work/pc-lod-continuation-luna-lightaction-disasm.txt` for the bounded function dumps.

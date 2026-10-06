@@ -1,0 +1,72 @@
+{
+  "game_sha256": "51299faca61866cf10ea9035a15b8f22600a56557dd5ffc1aad390d5a54e6d82",
+  "dll_sha256": "16dcd44057c3114b123e25974b9b563afc487650686d3985784614caba5f7cbd",
+  "previous_dll_sha256": "77051506a589b1051556505b309c32eb7a4a69e93df93d0a29d85b74b045a2d0",
+  "installed": true,
+  "runtime_status": "No additional visible lighting improvement over the prior RGB-only fix; remaining cutoff unresolved.",
+  "user_ui_test_waived": true,
+  "unchanged_sources": [
+    "CameraBoost.c",
+    "CameraStubs.S",
+    "GeometryLOD.h",
+    "HidExports.c",
+    "hid.def",
+    "export-manifest.json",
+    "PhotoFog.h",
+    "PhotoIndicator.h"
+  ],
+  "dependencies": [
+    "api-ms-win-crt-heap-l1-1-0.dll",
+    "api-ms-win-crt-private-l1-1-0.dll",
+    "api-ms-win-crt-runtime-l1-1-0.dll",
+    "api-ms-win-crt-stdio-l1-1-0.dll",
+    "api-ms-win-crt-string-l1-1-0.dll",
+    "bcrypt.dll",
+    "gdi32.dll",
+    "kernel32.dll",
+    "user32.dll"
+  ],
+  "source_hashes": {
+    "CameraBoost.c": "3866afa0fbb4f18e0fdb64fc712aa9e60e16c52a2b8e77eaa5179a2041b53cda",
+    "CameraStubs.S": "99668d3d1c6640b68356b192eb75e523c6a8895c4b757dabfa4dd2b5fdf81fcc",
+    "GeometryLOD.h": "ffe1b882a2dfdbc67c272f3eafbe117e8020b286777a0c03204e64cb8124996a",
+    "hid.def": "d1db129cdf7efa14c18e14f72d2650e55ffc0125558552a2574716914957cf1f",
+    "HidExports.c": "e7752a2ccef01b159f2c4d0b276887357b8db8ff20e8dafac29646db210dfffb",
+    "PhotoFog.h": "85c488113ff5c1dbd3890402d66487c4dfdb529d21a8556d433c27bd14d7528c",
+    "PhotoIndicator.h": "d58b75ec8b4608a505b57b306372e96efebad3a8fc4015ecad3e67303ec21233",
+    "PhotoLight.h": "dacce3f81c9888340ffae08516bd867649532fff11c7a0b5d48cd4cb915df255",
+    "PhotoLOD.h": "6c760e24cb9777048a1da775540f54e56ac185d36d498e53eb5f62b40578816b",
+    "PhotoSpecular.h": "caaa03ae8700d933df988ab83514aac7ee8778c5db506a9118876da6623a471e"
+  },
+  "new_behaviour": "Ordinary helper clears local far-colour bit18 and far-specular bit20, retaining source intensity/type at distance. Type4 helper clears far bit18 in private B0-byte prefix; original once, near fade/source unchanged.",
+  "native_sites": [
+    "1099270: existing aligned8 mid-function leaf relay/registered CHAININFO",
+    "10BE260: aligned8 word changes only CALL10BE261 displacement; adjacent3 bytes preserved"
+  ],
+  "isolated_tests": [
+    "1920 arithmetic cases",
+    "all 29 relay instruction starts unwind",
+    "24 native fade cases",
+    "near fade/source preservation",
+    "adjacent-byte preservation",
+    "prior RGB-only override specular=0/type=1; new specular=0.7/type=0",
+    "Type4 specular example at85: native=0.5; retained=1",
+    "PhotoFogProbe passed",
+    "dormant startup UI",
+    "owner filtering, normal/Shift/release speeds",
+    "GDI resource cleanup",
+    "notifications stay dormant until validated lazy start",
+    "\"all_exports_resolved\": 44"
+  ],
+  "review": "work/photo-specular-actual-source-review.txt",
+  "limitations": "Separate clip-volume eligibility, hierarchy/resource visibility, loaded-light availability, attenuation radius and shader light capacity remain native. Complete prevention of light disappearance unconfirmed.",
+  "indicator_runtime_status": "User-confirmed working in game.",
+  "runtime_feedback": {
+    "recorded_utc": "2026-10-05T22:42:43.291764+00:00",
+    "dll_sha256": "16dcd44057c3114b123e25974b9b563afc487650686d3985784614caba5f7cbd",
+    "user_report": "can confirm the notice works well, but the lighting stuff stays the same as before",
+    "indicator_status": "User-confirmed working in game.",
+    "lighting_status": "No additional visible lighting improvement over the prior RGB-only fix; remaining cutoff unresolved.",
+    "runtime_evidence": "Both light hooks installed; Photo/Ctrl and notice initialized; shared light counter291014 at teardown. Counter does not distinguish ordinary/type4 hits."
+  }
+}

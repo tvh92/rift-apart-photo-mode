@@ -1,0 +1,377 @@
+Functions using all offsets 22C,230,234 (offset collisions are expected): 45
+
+FUNCTION 0001C6D0-0001F783
+0001DE90 [22C] mov byte [rsp+22Ch],0ABh
+0001DEB0 [230] mov byte [rsp+230h],4Bh
+0001DED0 [234] mov byte [rsp+234h],0AEh
+0001DEF0 [238] mov byte [rsp+238h],0D5h
+0001DF10 [23C] mov byte [rsp+23Ch],0
+
+FUNCTION 0031EC1A-0031EDAB
+0031EC30 [234] mov [rbx+234h],eax
+0031EC3C [238] movss xmm0,[rbx+238h]
+0031EC48 [22C] subss xmm0,[rbx+22Ch]
+0031EC50 [23C] movss xmm1,[rbx+23Ch]
+0031EC5C [230] subss xmm1,[rbx+230h]
+0031EC71 [234] subss xmm0,[rbx+234h]
+0031EC9F [22C] addss xmm0,[rbx+22Ch]
+0031ECA7 [230] addss xmm1,[rbx+230h]
+0031ECAF [234] addss xmm9,[rbx+234h]
+0031ECC4 [238] movsd [rbx+238h],xmm0
+0031ECD2 [238] movsd xmm0,[rbx+238h]
+0031ED21 [238] movsd xmm2,[rbx+238h]
+
+FUNCTION 003DB2F0-003DB5A9
+003DB46B [230] mov [rcx+230h],ax
+003DB478 [22C] mov [rcx+22Ch],eax
+003DB485 [234] mov [rcx+234h],eax
+
+FUNCTION 0046030A-00460500
+00460403 [22C] movss [rdi+22Ch],xmm3
+00460415 [230] movss [rdi+230h],xmm2
+0046048B [234] movss [rdi+234h],xmm6
+00460498 [238] movss [rdi+238h],xmm3
+004604A0 [23C] movss [rdi+23Ch],xmm14
+
+FUNCTION 004609B0-00460DCD
+00460B5B [22C] movss [rbx+22Ch],xmm3
+00460B67 [230] movss [rbx+230h],xmm2
+00460BDF [234] movss [rbx+234h],xmm5
+00460BF4 [238] movss [rbx+238h],xmm2
+00460BFC [23C] movss [rbx+23Ch],xmm6
+00460C18 [234] lea r8,[rbx+234h]
+
+FUNCTION 00461260-00461799
+0046136C [230] movss [rbx+230h],xmm6
+00461374 [22C] movss [rbx+22Ch],xmm2
+004613ED [234] movss [rbx+234h],xmm5
+00461402 [238] movss [rbx+238h],xmm2
+0046140A [23C] movss [rbx+23Ch],xmm6
+00461412 [230] mov eax,[rbx+230h]
+00461434 [234] movsd xmm7,[rbx+234h]
+00461440 [23C] mov eax,[rbx+23Ch]
+
+FUNCTION 00493000-00493106
+00493014 [22C] mov byte [rcx+22Ch],0
+00493072 [234] mov [rdi+234h],eax
+004930AF [230] mov [rdi+230h],eax
+004930DA [238] mov [rdi+238h],ebx
+004930E5 [23C] mov dword [rdi+23Ch],3F800000h
+
+FUNCTION 006C79C0-006C7AA4
+006C7A0E [22C] cmp byte [rdi+22Ch],0
+006C7A20 [230] cmp byte [rdi+230h],0
+006C7A2B [234] cmp byte [rdi+234h],0
+
+FUNCTION 006DBDAA-006DC087
+006DBE08 [22C] movss xmm0,[rbx+22Ch]
+006DBE26 [22C] mov eax,[rbx+22Ch]
+006DBEFA [234] mov eax,[rbx+234h]
+006DBF06 [230] movss xmm0,[rbx+230h]
+
+FUNCTION 00714170-0071425E
+0071418B [234] mov byte [rdi+234h],1
+007141A8 [22C] lea rcx,[rdi+22Ch]
+007141B4 [22C] mov dword [rdi+22Ch],0
+007141D5 [22C] cmp dword [rdi+22Ch],0
+00714228 [22C] mov [rdi+22Ch],eax
+0071422E [230] lea rcx,[rdi+230h]
+0071423A [230] mov dword [rdi+230h],0
+
+FUNCTION 00715210-00715279
+0071521D [234] mov byte [rcx+234h],0
+00715230 [22C] mov dword [rdi+22Ch],0
+00715249 [230] lea rcx,[rdi+230h]
+00715255 [230] mov dword [rdi+230h],0
+
+FUNCTION 00717D70-007180EA
+00717F80 [234] mov byte [rdi+234h],0
+00717F87 [22C] lea rcx,[rdi+22Ch]
+00717F96 [22C] mov [rdi+22Ch],r15d
+00717FAC [230] lea rcx,[rdi+230h]
+00717FB8 [230] mov [rdi+230h],r15d
+
+FUNCTION 007180F0-00718475
+0071820D [22C] mov [rcx+22Ch],eax
+00718297 [234] mov byte [rdi+234h],1
+007182B7 [22C] lea rcx,[rdi+22Ch]
+007182C3 [22C] mov [rdi+22Ch],r15d
+007182D6 [22C] cmp [rdi+22Ch],r15d
+00718329 [22C] mov [rdi+22Ch],eax
+0071832F [230] lea rcx,[rdi+230h]
+0071833B [230] mov [rdi+230h],r15d
+
+FUNCTION 0071BF50-0071BFEF
+0071BF56 [234] cmp byte [rcx+234h],0
+0071BF74 [234] mov byte [rbx+234h],1
+0071BF91 [22C] lea rcx,[rbx+22Ch]
+0071BF9D [22C] mov dword [rbx+22Ch],0
+0071BFBF [230] lea rcx,[rbx+230h]
+0071BFCB [230] mov dword [rbx+230h],0
+
+FUNCTION 0071C5F0-0071CAC0
+0071C885 [234] cmp [rdi+234h],sil
+0071C89C [234] mov byte [rdi+234h],1
+0071C8B9 [22C] lea rcx,[rdi+22Ch]
+0071C8C5 [22C] mov [rdi+22Ch],esi
+0071C8E0 [230] lea rcx,[rdi+230h]
+0071C8EC [230] mov [rdi+230h],esi
+
+FUNCTION 0075C242-0075C3AD
+0075C2A1 [22C] movss xmm14,[rdi+22Ch]
+0075C2AE [234] subss xmm9,[rdi+234h]
+0075C2C6 [230] movss xmm15,[rdi+230h]
+0075C348 [234] addss xmm7,[rdi+234h]
+
+FUNCTION 007759B0-00775B9C
+00775A32 [230] mov dword [rsi+230h],0
+00775A58 [234] mov [rsi+234h],eax
+00775A61 [238] mov [rsi+238h],eax
+00775AE8 [22C] mov [rsi+22Ch],eax
+00775B86 [23C] mov qword [rsi+23Ch],0
+
+FUNCTION 00775F10-00776762
+00776219 [238] movss xmm0,[rdi+238h]
+00776235 [238] movss [rdi+238h],xmm0
+007763AC [230] movss [rdi+230h],xmm2
+007763FF [230] mulss xmm9,[rdi+230h]
+00776421 [234] movss xmm6,[rdi+234h]
+00776429 [238] addss xmm6,[rdi+238h]
+00776496 [22C] addss xmm0,[rdi+22Ch]
+007764B3 [22C] mov [rdi+22Ch],eax
+007764E8 [23C] addss xmm6,[rdi+23Ch]
+007765C1 [22C] mov [rdi+22Ch],eax
+007765F8 [23C] addss xmm1,[rdi+23Ch]
+007766A6 [234] mov eax,[rdi+234h]
+007766B6 [238] mov eax,[rdi+238h]
+
+FUNCTION 007E6350-007E6DEC
+007E63D2 [23C] mov ecx,[rbx+23Ch]
+007E63E3 [234] movsd xmm0,[rbx+234h]
+007E6437 [234] movsd [rbx+234h],xmm0
+007E643F [23C] mov [rbx+23Ch],eax
+007E664E [22C] movss xmm14,[rbx+22Ch]
+007E6664 [230] movss xmm15,[rbx+230h]
+007E69E8 [230] mov [rbx+230h],eax
+
+FUNCTION 00A67B20-00A67BF2
+00A67B62 [234] mov edx,[rbx+234h]
+00A67B68 [22C] mov [rbx+22Ch],eax
+00A67B7E [230] mov [rbx+230h],eax
+
+FUNCTION 00A68330-00A68A6D
+00A68356 [230] mov edx,[rcx+230h]
+00A683C6 [22C] lea rcx,[rsi+22Ch]
+00A683E6 [234] mov r8d,[rsi+234h]
+00A68409 [230] mov [rsi+230h],ecx
+
+FUNCTION 00A90030-00A901B2
+00A9012A [22C] mov dword [rdi+22Ch],0FFFFh
+00A90134 [230] mov dword [rdi+230h],0FFFFh
+00A9013E [234] mov dword [rdi+234h],0FFFFh
+00A90148 [238] mov dword [rdi+238h],0FFFFh
+00A90152 [23C] mov dword [rdi+23Ch],0FFFFh
+
+FUNCTION 00FB9550-00FBA525
+00FBA11D [23C] movss [rbx+23Ch],xmm9
+00FBA17D [22C] mov [rbx+22Ch],eax
+00FBA189 [230] mov [rbx+230h],eax
+00FBA199 [234] mov [rbx+234h],eax
+00FBA1AD [238] mov [rbx+238h],eax
+00FBA258 [230] movups [rbx+230h],xmm0
+
+FUNCTION 00FF2ECB-00FF3564
+00FF30A9 [22C] mov eax,[rdi+22Ch]
+00FF30B5 [230] mov eax,[rdi+230h]
+00FF30C1 [234] mov eax,[rdi+234h]
+00FF30CD [238] mov eax,[rdi+238h]
+00FF321E [22C] mov eax,[rdi+22Ch]
+00FF322A [230] mov eax,[rdi+230h]
+00FF3236 [234] mov eax,[rdi+234h]
+00FF3242 [238] mov eax,[rdi+238h]
+00FF3393 [22C] mov eax,[rdi+22Ch]
+00FF339F [230] mov eax,[rdi+230h]
+00FF33AB [234] mov eax,[rdi+234h]
+00FF33B7 [238] mov eax,[rdi+238h]
+00FF3508 [22C] mov eax,[rdi+22Ch]
+00FF3514 [230] mov eax,[rdi+230h]
+00FF3520 [234] mov eax,[rdi+234h]
+00FF352C [238] mov eax,[rdi+238h]
+
+FUNCTION 01024870-01025570
+01025157 [234] movss [rbp+234h],xmm0
+010251F9 [23C] movss [rbp+23Ch],xmm1
+0102524A [230] movss [rbp+230h],xmm2
+01025344 [22C] movss [rbp+22Ch],xmm5
+0102534C [238] movss [rbp+238h],xmm5
+
+FUNCTION 011D3500-011D4A4D
+011D3A6C [22C] movsd [r14+22Ch],xmm0
+011D3A7D [234] movsd [r14+234h],xmm0
+011D3A8C [23C] mov [r14+23Ch],eax
+011D3C92 [22C] lea rcx,[r14+22Ch]
+011D3C9E [234] lea rcx,[r14+234h]
+011D464B [22C] lea rbx,[r14+22Ch]
+011D4668 [234] lea rcx,[r14+234h]
+011D4678 [234] lea rcx,[r14+234h]
+011D4750 [230] mulss xmm1,[r14+230h]
+011D4759 [230] movss [r14+230h],xmm1
+
+FUNCTION 014D7D80-014D8066
+014D7EA6 [22C] movzx eax,byte [rdi+22Ch]
+014D7EAD [22C] mov [rbx+22Ch],al
+014D7F56 [230] movzx eax,byte [rdi+230h]
+014D7F5D [230] mov [rbx+230h],al
+014D8006 [234] movzx eax,byte [rdi+234h]
+014D800D [234] mov [rbx+234h],al
+014D8030 [238] mov eax,[rdi+238h]
+014D8036 [238] mov [rbx+238h],eax
+
+FUNCTION 014D8BE0-014D8DF2
+014D8CB2 [22C] movzx eax,byte [rbx+22Ch]
+014D8CB9 [22C] mov [rdi+22Ch],al
+014D8D2E [230] movzx eax,byte [rbx+230h]
+014D8D35 [230] mov [rdi+230h],al
+014D8DA8 [234] movzx eax,byte [rbx+234h]
+014D8DB4 [234] mov [rdi+234h],al
+014D8DCC [238] mov eax,[rbx+238h]
+014D8DD2 [238] mov [rdi+238h],eax
+
+FUNCTION 014DB1E0-014DB253
+014DB206 [22C] mov dword [rbx+22Ch],1000101h
+014DB226 [238] mov [rbx+238h],edx
+014DB22C [230] mov dword [rbx+230h],1000000h
+014DB236 [234] mov byte [rbx+234h],1
+
+FUNCTION 014DC500-014DC55B
+014DC510 [22C] mov dword [rbx+22Ch],1000101h
+014DC52E [238] mov [rbx+238h],ecx
+014DC534 [230] mov dword [rbx+230h],1000000h
+014DC53E [234] mov byte [rbx+234h],1
+
+FUNCTION 0171A6BD-0171A8C7
+0171A6D0 [22C] cmp [rbx+22Ch],r9d
+0171A73B [22C] mov [rbx+22Ch],r9d
+0171A75B [230] cmp [rbx+230h],eax
+0171A763 [230] mov [rbx+230h],eax
+0171A7AA [23C] mov [rbx+23Ch],r14d
+0171A7D7 [23C] mov [rbx+23Ch],r14d
+0171A867 [234] cmp [rbx+234h],eax
+0171A86F [234] mov [rbx+234h],eax
+0171A893 [234] mov dword [rbx+234h],0
+0171A8BC [238] mov [rbx+238h],eax
+
+FUNCTION 01833610-01833E19
+01833790 [230] movsd [rdi+230h],xmm0
+0183379B [238] mov [rdi+238h],eax
+0183388D [230] ucomiss xmm8,[rdi+230h]
+018338B1 [234] ucomiss xmm8,[rdi+234h]
+018338BB [238] ucomiss xmm8,[rdi+238h]
+018338E1 [22C] ucomiss xmm8,[rdi+22Ch]
+0183397A [22C] mov [rdi+22Ch],eax
+01833992 [230] movsd xmm0,[rdi+230h]
+0183399C [238] mov eax,[rdi+238h]
+018339A8 [230] mov qword [rdi+230h],0
+018339B3 [238] mov [rdi+238h],ecx
+018339C4 [22C] mov [rdi+22Ch],ecx
+
+FUNCTION 018AF6A0-018AF971
+018AF7C1 [22C] mov [rbx+22Ch],dil
+018AF7C8 [230] mov [rbx+230h],edi
+018AF7CE [234] mov [rbx+234h],dil
+018AF7D5 [238] mov [rbx+238h],edi
+018AF7DB [23C] mov [rbx+23Ch],dil
+
+FUNCTION 01A6C201-01A6C699
+01A6C411 [230] addss xmm9,[rsi+230h]
+01A6C474 [238] movss xmm0,[rsi+238h]
+01A6C48B [234] mulss xmm1,[rsi+234h]
+01A6C4A5 [22C] movss xmm3,[rsi+22Ch]
+
+FUNCTION 01B34E68-01B35314
+01B35264 [22C] mov [rbp+22Ch],sil
+01B3526B [230] mov [rbp+230h],esi
+01B35271 [234] mov [rbp+234h],sil
+
+FUNCTION 01D2DE20-01D2E16F
+01D2E063 [22C] lea r8,[rbp+22Ch]
+01D2E12D [230] mov eax,[rsi+230h]
+01D2E13C [230] mov [rbp+230h],eax
+01D2E142 [234] mov eax,[rsi+234h]
+01D2E148 [234] mov [rbp+234h],eax
+01D2E14E [238] mov eax,[rsi+238h]
+01D2E158 [238] mov [rbp+238h],eax
+
+FUNCTION 01FA80F0-01FA8838
+01FA8543 [22C] mov eax,[rbp+22Ch]
+01FA854F [230] movss xmm0,[rbp+230h]
+01FA8563 [234] movss xmm0,[rbp+234h]
+01FA8649 [23C] mov eax,[rbp+23Ch]
+01FA8655 [238] movss xmm0,[rbp+238h]
+
+FUNCTION 0226F398-0226FC12
+0226FA93 [22C] mov eax,[r14+22Ch]
+0226FA9A [22C] mov [rsi+22Ch],eax
+0226FABF [230] mov eax,[r14+230h]
+0226FAC6 [230] mov [rsi+230h],eax
+0226FAEB [234] mov eax,[r14+234h]
+0226FAF2 [234] mov [rsi+234h],eax
+0226FB17 [238] mov eax,[r14+238h]
+0226FB1E [238] mov [rsi+238h],eax
+0226FB43 [23C] mov eax,[r14+23Ch]
+0226FB4A [23C] mov [rsi+23Ch],eax
+
+FUNCTION 0226FD20-022703A2
+02270225 [22C] mov eax,[r14+22Ch]
+0227022C [22C] mov [rsi+22Ch],eax
+02270249 [230] mov eax,[r14+230h]
+02270250 [230] mov [rsi+230h],eax
+0227026D [234] mov eax,[r14+234h]
+02270274 [234] mov [rsi+234h],eax
+02270291 [238] mov eax,[r14+238h]
+02270298 [238] mov [rsi+238h],eax
+022702B5 [23C] mov eax,[r14+23Ch]
+022702BC [23C] mov [rsi+23Ch],eax
+
+FUNCTION 022705D0-02270AA3
+02270912 [22C] movss [r12+22Ch],xmm1
+02270927 [230] movss [r12+230h],xmm0
+0227093C [234] movss [r12+234h],xmm1
+02270951 [238] movss [r12+238h],xmm0
+02270966 [23C] movss [r12+23Ch],xmm1
+
+FUNCTION 02270D70-02271098
+02270FBE [22C] movss [rdi+22Ch],xmm1
+02270FD0 [230] movss [rdi+230h],xmm0
+02270FE2 [234] movss [rdi+234h],xmm1
+02270FF4 [238] movss [rdi+238h],xmm0
+02271006 [23C] movss [rdi+23Ch],xmm1
+
+FUNCTION 0238BB00-0238BC7C
+0238BB35 [22C] lea r8,[r14+22Ch]
+0238BB4F [234] lea rcx,[r14+234h]
+0238BB6A [230] mov dword [r14+230h],0E52E001Ch
+
+FUNCTION 0238D1B0-0238D32C
+0238D1E5 [22C] lea r8,[r14+22Ch]
+0238D1FF [234] lea rcx,[r14+234h]
+0238D21A [230] mov dword [r14+230h],0E52E001Ch
+
+FUNCTION 025BA470-025BB3D9
+025BA952 [22C] mov dword [rbp+22Ch],35BB55A1h
+025BA95C [230] mov dword [rbp+230h],738BE375h
+025BA966 [234] mov dword [rbp+234h],0BF7DFA29h
+025BA970 [238] mov dword [rbp+238h],46F0B989h
+025BA97A [23C] mov dword [rbp+23Ch],0F6ABFBCDh
+
+FUNCTION 02A6EE50-02A6F24D
+02A6F087 [22C] mov eax,[rbx+22Ch]
+02A6F08D [22C] mov [rdi+22Ch],eax
+02A6F093 [230] mov eax,[rbx+230h]
+02A6F099 [230] mov [rdi+230h],eax
+02A6F09F [234] mov eax,[rbx+234h]
+02A6F0A5 [234] mov [rdi+234h],eax
+02A6F0AB [238] mov eax,[rbx+238h]
+02A6F0B1 [238] mov [rdi+238h],eax
+02A6F0B7 [23C] mov eax,[rbx+23Ch]
+02A6F0BD [23C] mov [rdi+23Ch],eax

@@ -1,0 +1,12 @@
+{
+  "clean_backup_verified": true,
+  "steam_build": 23987138,
+  "only_changed_asset": "AED6101948AAFA54",
+  "camera_payload_matches_both_libraries": true,
+  "other_index_sections_unchanged": true,
+  "both_profiles_camera_only": true,
+  "camera_dll_unchanged": true,
+  "base_config_vanilla": true,
+  "all_original_boot_movies_verified": true,
+  "in_game_status": "Same setup previously reached menu; no new launch test performed."
+}

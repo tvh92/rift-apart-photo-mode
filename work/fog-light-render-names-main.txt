@@ -1,0 +1,2870 @@
+02E6D840 DisableCrittersVolume
+02E6D8C8 DisableCrittersVolumePrius
+02E6E538 DisableFlockingVolume
+02E6E7C8 DisableFlockingVolumePrius
+02E6EF10 FlockingManager::m_VolumeDatabase
+02E6EF58 FlockingManager::m_VolumeData
+02E6F630 ScriptedFlockingVolume
+02E72490 BossAttackVolume
+02E72F98 BossVolumeHunter
+02E72FB0 BossVolumeHunter - Attack Volumes
+02E72FD8 BossVolumeHunter - Valid Attack Volumes
+02E73368 FinaleMechBossVolumeHunter
+02E735F8 NefariousBossVolumeHunter
+02E73888 BossAttackVolumeSetupScriptAction
+02E73920 BossAttackVolumeSetupScriptActionPrius
+02E73948 BossAttackVolumes Setup
+02E96798 ClankBotDoorDeathVolume
+02E96A28 ClankBotDoorDeathVolumePrius
+02EAB6A0 HordeTrackingSystem generic volume
+02EC7778 spawner activate volumes
+02EC7798 spawner deactivate volumes
+02EC77B8 spawner combatarea volumes
+02EC77D8 spawner defensivearea volumes
+02EC77F8 spawner idlearea volumes
+02EC7860 Hero is both inside activate volumes and outside deactivate volumes
+02EC78A8 Hero outside deactivate volumes - disabling bots
+02EC78E0 Hero inside activate volumes - reactivating bots
+02ECA6D8 SheepVolumeSpawnData
+02EE8648 CameraConfigVolume
+02EE86B8 CameraContextVolume
+02EEF290 CrowdSpawnerDisallowVolume
+02EEF320 CrowdSpawnerDisallowVolumePrius
+02EF6488 HoverbootBoostVolumePrius
+02EF6500 HoverbootBoostVolume
+02EF6B38 MagbootDismountVolume
+02EF6BC0 MagbootDismountVolumePrius
+02EF6E40 MagbootLaunchHintVolume
+02EF6E58 MagbootLaunchHintVolume: DestinationHintVolumes
+02EF6EE0 MagbootModifierVolume
+02EF6F68 MagbootModifierVolumePrius
+02EF7540 RadarVolume
+02EF8D80 NoPortalRespawnSystemVolume
+02EF8E10 NoPortalRespawnSystemVolumePrius
+02EF91E8 NoSafePositionVolume
+02EF9270 NoSafePositionVolumePrius
+02EF92E8 NoSwimVolume
+02EF9350 NoSwimDiveVolume
+02EF93C0 AllowSwimDiveVolume
+02EF9448 NoSwimVolumePrius
+02EF94D0 NoSwimDiveVolumePrius
+02EF9558 AllowSwimDiveVolumePrius
+02EF95D0 ObjectiveFocusVolume
+02EFC908 AvoidTargetPointHunter: Same Side Volumes
+02EFC938 PoolSharkSpawnKillVolume::SpawnActorHandler
+02EFCBD0 PoolSharkSpawnKillVolume
+02F11C10 RespawnControlVolume
+02F11C98 RespawnControlVolumePrius
+02F14FB8 Haptics_Response_Volume_RTPC
+02F14FF0 HitConfirmVolume
+02F15008 Controller_Speaker_Volume_RTPC
+02F26870 Fog of War Texture
+02F2D008 Volume
+02F4F7A0 AutoCheckpointVolume
+02F4F7C0 AutoCheckpointVolumePrius references checkpoint %s that does not exist.
+02F514E8 HelmetVolume
+02F51588 NoMagbootVolume
+02F515F0 GrindGapVolume
+02F51658 NoGrindTransferVolume
+02F516C8 GrindHazardVolume
+02F51738 GrindCameraOverrideVolume
+02F517B0 PassiveIdleVolume
+02F51820 NoWallMechanicsVolume
+02F51890 NoAutoGlideVolume
+02F51900 FallingRespawnVolume
+02F51B98 HelmetVolumePrius
+02F51C20 NoMagbootVolumePrius
+02F51CA8 GrindGapVolumePrius
+02F51D30 NoGrindTransferVolumePrius
+02F51DC0 GrindHazardVolumePrius
+02F51E48 GrindCameraOverrideVolumePrius
+02F51ED8 PassiveIdleVolumePrius
+02F51F60 FallingRespawnVolumePrius
+02F51FF0 NoWallMechanicsVolumePrius
+02F52080 NoAutoGlideVolumePrius
+02F52238 MovingSurfaceOverrideVolume
+02F524D8 MovingSurfaceOverrideVolumePrius
+02F52648 SkyDiveVolume
+02F528D8 SkyDiveVolumePrius
+02F544B0 Can be placed on either a model or a volume. Putting it on a model will disable grabbing that actor as a recovery ledge. Putting it on a volume will disable recovery ledge grabs while inside.
+02F98B70 HeroCrouchVolume
+02F98BF8 HeroCrouchVolumePrius
+02FB3DA8 ArachnodroidCameraVolume
+02FB3E38 ArachnodroidCameraVolumePrius
+02FBCE70 ObjectiveSystemGame::m_ObjectiveVolumes
+02FBD5B0 ObjectiveVolume
+02FC6870 PlanetMapOverrideVolume
+02FC68F8 PlanetMapOverrideVolumePrius
+02FC85E0 ClankPuzzleFanBlowVolume
+02FC8670 ClankPuzzleFanBlowVolumePrius
+02FC9228 CheckPuzzleVolumeTypeAction
+02FC92A8 OnClankPuzzleVolumeEndAction
+02FC9638 GetPuzzleVolumeInfoAction
+02FC9738 GetPuzzleRecallVolumesAction
+02FC97B8 RecallPuzzleVolumesAction
+02FC9838 RemovePuzzleVolumeDataFromTargetAction
+02FC9940 PuzzleTargetLatestVolumeAction
+02FC99C0 CheckPuzzleVolumeTrackerAction
+02FC9A40 CheckPuzzleVolumeAction
+02FC9AC8 GetPuzzleVolumeInfoActionPrius
+02FC9AE8 Get Puzzle Volume Info
+02FC9C28 GetPuzzleRecallVolumesActionPrius
+02FC9C50 Get Puzzle Recall Volumes
+02FC9CE0 RecallPuzzleVolumesActionPrius
+02FC9D00 Recall Puzzle Volumes
+02FC9D88 RemovePuzzleVolumeDataFromTargetActionPrius
+02FC9DB8 Remove Puzzle Volume Data From Target
+02FC9F08 PuzzleTargetLatestVolumeActionPrius
+02FC9F30 Puzzle Target Latest Volume
+02FC9FC0 CheckPuzzleVolumeTrackerActionPrius
+02FC9FE8 Check Puzzle Volume Tracker
+02FCA078 CheckPuzzleVolumeActionPrius
+02FCA098 Check Puzzle Volume
+02FCA2A0 CheckPuzzleVolumeTypeActionPrius
+02FCA2C8 Check Puzzle Volume Type
+02FCA358 OnClankPuzzleVolumeEndActionPrius
+02FCA380 On Clank Puzzle Volume End
+02FCB070 ClankPuzzleVolume
+02FCB308 ClankPuzzleVolumePrius
+02FCB378 ClankPuzzleVolumeEffect
+02FCB400 ClankPuzzleVolumeEffectPrius
+02FCB478 ClankPuzzleVolumeEnd
+02FCB6F0 ClankPuzzleVolumeTracker
+02FCB780 ClankPuzzleVolumeTrackerPrius
+02FCBF70 MasterVolume
+02FCBF80 UIVolume_RTPC
+02FCBF90 MusicVolume
+02FCBFA0 DialogueVolume
+02FCBFB0 SFXVolume
+02FCFF38 GetActorsInVolumeScriptAction
+02FE8D68 ProximitySpawnerGlobalExclusionVolume
+02FE8E00 ProximitySpawnerGlobalExclusionVolumePrius
+02FE9AA8 ProximitySpawnerFactory: Global Exclusion Volumes
+03025D18 kIsVolume
+030260D0 Is Volume
+03026EF0 kVolumes
+03026FD8 Volumes
+03027898 kOtherVolumeCooldown
+0302B330 kErrorLedgeInDisablerVolume
+0302B578 Error - Ledge in Disabler Volume
+03031178 Reveal radius for Map fog-of-war.
+030311A0 Cell size for Map fog-of-war.
+03032C20 DialogVolume
+03032C30 UIVolume
+03032C40 ControllerSpeakerVolume
+0303A800 ScriptedFlockingVolumePrius
+0303A980 If false, the destination will be picked automatically, and the flock will use volume boundaries.
+0303BA40 BossAttackVolumePrius
+0303BB98 ApplyCooldownToTheseVolumes
+0303BC48 ApplyOtherCooldownToTheseVolumes
+0303BFB0 After using this volume we can't re-use it for between CooldownMin to CooldownMax seconds.
+0303C010 In addition to this volume, we'll apply our cooldown to these other volumes. Useful if you have several attack volumes that are the same attack.
+0303C0B0 After using this volume we can't use any volume for GlobalCooldownMin to GlobalCooldownMax seconds.
+0303C120 When we first start tracking this volume we can't use it for InitialCooldownMin to InitialCooldownMax seconds.
+0303C190 When this attack finishes we'll put these other volumes on cooldown. Useful if you want this attack to disable other attacks.
+0303C230 If the player is in this volume force this attack (ignore the weighting)
+0303C310 This will allow the volume to be repositioned at the boss.
+0303C350 Locator used to attach the volume to the boss.
+0303C380 The max number of times a boss can use this volume in a row. Is only meaningful for values 1 or greater
+0303C3E8 Allows this boss volume to be enabled by default.
+0304FAB0 Whether to pick a random point on nav inside the spawn area to spawn at/throw towards. If false, we will use the volume origin.
+03052690 If true, this poolshark will do normal poolshark behavior regardless of water volumes
+030549E8 SwimVolumes
+03054EBF DIf spawned inside one of these volumes, they will start in swim mode and jump out onto the land
+030572F8 DamageVolumeExtents
+0305D118 Set of volumes for the helicopter to fly in.
+0305D148 Set of volumes for the helicopter to fly to on death.
+03063810 ExclusionVolumeGroup
+03063828 MasterBoundsVolume
+03066ED0 Use EnableDamageVolumeEvent/DisableDamageVolumeEvent or the ToggleEvent to toggle this component only.
+03066F40 Actors that take damage from this volume ignore subsequent damage from it for this amount of time
+03066FD0 Only used when the prius is not on a Volume
+03067000 If true, override the actor's volume shape to add a sphere with the specified radius.
+030670A0 Actors killed by this volume don't spawn rewards
+030670E0 Actors will react as if the damage happened from the center of the volume towards them. If unchecked it will be straight up.
+03068260 Vertical override speed that is given to the beetle when launching off a ramp and inside this volume.
+03069370 Barrier boundaries are used to keep the flyer from moving through the volume.
+030693C0 Container boundaries are used to keep the flyer from moving out of the volume.
+0306A488 Draw Detection Volume
+0306A6C0 IgnoreCameraContextVolumesForAiming
+0306F140 Vanity Closet Camera Volume
+030700B8 CameraConfigVolumePrius
+030700D0 CameraContextVolumePrius
+030700F0 CameraContextBlendVolumePrius
+030705A8 Camera Context Volume
+03070630 Camera Context Blend Volume
+03071C20 TriggerVolume
+03071DA0 Trigger Volume
+030742E0 VolumeActors
+03075540 Volume list used when destroyed
+03076228 Nav Flag Volume List
+0307CD30 True: Allows all directions. False: Must be moving in volume's forward direction.
+0307D0A8 MagbootLaunchHintVolumePrius
+0307D150 DestinationHintVolumes
+0307D180 The list of hint volumes that can be reached from this one.
+0307DFE0 RadarVolumePrius
+0307E4B0 Always show, even in fog-of-war?
+0307ECF0 Allow the platform to be called to a stop (via the stop's call volume) even when it is moving. If false, call will only work when idle (at a stop).
+0307FE20 Whether the hero can perform a lava bounce when they fall into acid or lava while in this volume.
+0307FE98 ObjectiveFocusVolumePrius
+0307FF10 Mission that can be pinged while inside this volume.
+030805C0 OfferVolume
+030805F8 ActorVolumeRange
+03080610 RangeToVolume
+03080D78 Optional - use a volume actor instead of the values above
+030811E0 Use Volume
+03081218 Volume Range
+03081228 + Range To Volume
+03087F18 PoolSharkSpawnKillVolumePrius
+03087F68 TimeInVolumeToSpawnShark
+03087FA8 OtherVolumesToUse
+03088020 How long after hero is in volume will we spawn shark to kill hero
+030880F0 Volumes in this list will also count as -hero is inside so we will spawn shark- along with this main volume
+03088240 MinActivationVolumeOverride
+03088260 ExcludeActivationVolume
+03088310 This override volume replaces the min activation distance for this portal zip target. The min activation distance is the space that is "too close" to the target to use the portal zip mechanic. If you override volume doesnt surround the portal zip target, this is bad and will cause a break/crash. 
+03088440 This volume will be used to exlude a region in which the hero can initiate a portal zip from.
+0308C0B8 Disallow Volume Actor Group
+03099C20 ActivateVolume
+03099CB8 HitReactVolume
+03099E80 Move into position once Ratchet enters this volume.
+03099EB8 The volume we intro to or the curve we intro along.
+0309B750 AutoCheckpointVolumePrius
+0309BFC0 The actor (probably a volume) that marks the location where the hero should respawn.
+0309C8A0 TargetVolume
+0309C990 Dive camera offsets horizontally from player when nearing the edges of skydive volume.
+030A35F8 UseVolume
+030A3A10 Optional volume to use as use box instead of the values above.
+030A3F68 Use Box Volume
+030A8368 Volume to stand in to prompt the player to enter the turret
+030A8FD8 VolumeRange
+030A8FE8 AltPromptVolume
+030A9258 Volume As Range
+030A9268 Alt Prompt Volume
+030A9CD0 The volume we are at when the crank is at 0.
+030A9D00 The volume we are at when the crank is at 1.
+030A9D30 The volume we use to guestimate which direction we are actually going to rotate from Start to End.
+030AB830 A volume/area to also trigger this checkpoint.
+030AB860 If this component isn't on a volume, we'll use this range instead for detecting a hero is close enough to trigger.
+030AB930 Non Volume Range
+030AE048 MatOverrideVolumePrius
+030B7808 ObjectiveVolumePrius
+030B7870 What mission is this volume marking up?
+030B7898 What objective is this volume marking up?
+030B7958 Objective Volume
+030BCB80 Optional volume to warp the pickup and the hero to for the scene. Will leave them there when the scene completes.
+030BCC00 If checked, hero will face the forward direction of the warp-to volume. If unchecked, the hero will face toward the camera.
+030CA0F0 Map to show while Hero is in this volume. Only PauseMapElement(s) within this volume will show with the map.
+030CA198 TargetVolumeType
+030CA1C0 What volume type are we checking (none = any)
+030CA6F0 ClankPuzzleVolumeEndPrius
+030CA7E8 VolumeRadius
+030CA830 If the component is not on a volume, what radius should we use for sphere collision.
+030CA970 VolumeType
+030CAA48 Can this volume be recalled by the player
+030D1498 PuzzleVolume
+030EE320 Should we remove all vehicles within this volume while this volume actor is active?
+030EE3F8 HeadLightsRenderOverride
+030EE510 Name of the render override for whether headlights are on or not. Possible values: 0 or 1
+030EE7C8 PurchaseVolumeActor
+030F2A40 PuzzleVolumeType
+031172D0 The size of the ledge path query volume.
+031187B0 Prefer to spawn critters when they are this distance away from the hero. Inactive locations under or over this distance will get penalized, while only active volumes over this distance will get penalized.
+0311E0B0 CancelOutOfVolume
+0311F960 GroundBlastTriggerVolume
+0311F9F0 AttackVolumeHead
+0311FA08 AttackVolumeArm
+03127F00 DEPRECATED/UNUSED IN FAVOR OF MULTI ATTACK VOLUME
+031368E8 Name of any EmergentVORegionVolume the hero is presently in.
+03137A88 VolumetricFog FarDistance Multiplier
+03137AB0 VolumetricFog Resolution Multiplier (0.05 - 2)
+03137BC8 Volumetric clouds
+03137FA0 VolumetricFarDistanceMultiplier
+03137FC0 VolumetricResolutionMultiplier
+03138098 EnabledVolumetricClouds
+03141330 VolumeMaster
+03141340 VolumeMusic
+03141350 VolumeSpeech
+03141360 VolumeSFX
+03141370 VolumeUI
+03141380 VolumeHitConfirm
+03143F80 LightDistance
+0314A2F0 Default follow camera distance for the ship in free-flight mode.
+0315BAC8 FlightCameraDistance
+0315C380 GrindVolumeApproachData
+0317B2E0 If a vehicle is culled from drawing, only enable lights if it is within this distance of the camera.
+0317B350 If a vehicle was drawn last frame, only enable lights if it is within this distance of the camera.
+0317C6D8 MaxCulledLightDistance
+0317C6F0 MaxLightDistance
+031861F0 kDisableVolume
+031871C0 FlockingVolumesMaxExceededDevstatsEvent
+03187228 Max Flocking Volumes Exceeded
+031873F0 kFlockingVolume
+031CA4C0 DevstatsPlayerPosInfoGame
+0323A7B0 ClankPuzzleVolumeInteractEventBase
+0323A8A0 ClankPuzzleVolumeInteractOnEnterEvent
+0323A978 ClankPuzzleVolumeInteractOnExitEvent
+0323AB68 ClankPuzzleVolumeInteractOnFadeInCompleteEvent
+0323AC38 ClankPuzzleVolumeInteractOnFadeOutCompleteEvent
+0323ACB0 ClankPuzzleVolumeInteractOnHoldCompleteEvent
+0323AD40 ClankPuzzleVolumeFilterChangeEvent
+0323AE98 ClankPuzzleVolumeActivateEvent
+0323AF10 ClankPuzzleVolumeTargetEnterEvent
+0323AF88 ClankPuzzleVolumeTargetExitEvent
+0323B0C8 ClankPuzzleVolumeTrackerEnterEvent
+0323B1C0 ClankPuzzleVolumeTrackerExitEvent
+0323B7E8 ClankPuzzleVolumeThrown
+0323B848 ClankPuzzleVolumeLanded
+0323BEA0 ClankPuzzleVolumeEndAddEntryEvent
+0323BF40 ClankPuzzleVolumeEndRemoveEntryEvent
+0323C058 ClankPuzzleVolumeEndCompleteEvent
+0323C2B8 GroundedVolume
+03246EC0 VolumeActor
+0326F208 kBoundaryVolumes
+0326F7D0 Hero cannot cross these volumes for whatever reason. (Either they can't do so, or doing so will abandon a mission.)
+0326F860 Sea Monster Water Volumes
+03270028 FlyInStartVolume
+03270040 LandedVolumeOrCurve
+03270060 Volume to spawn in if flying in. Provide this if you want your birds to fly in and land. If not provided, birds will spawn already landed.
+032700F0 Volume or curve where birds should be once they have landed (whether that be after flying in or after spawning.
+03270BC8 FlockVolume
+03271188 AttackVolumes
+03271198 TopiaryRetaliateVolume
+032711B0 The boss actor to setup with the BossAttackVolumes
+03271208 Attack volume to retaliate on the topiary
+03274110 StopVolume
+03274150 The volume the bot should go to. If none is provided, the bot will follow the curve to the end.
+03274340 The maximum distance the bot can be from the target volume in order to break off of the curve and b-line towards it.
+03274410 If the StopVolume or Curve Actor is on a moving surface, override this bot's update parent/moving surface to the same surface
+032745C0 JumpDestVolume
+032762A0 TargetMustBeInVolume
+03276320 The volume where the target must be inside for this volume to do work
+03278158 ActivationVolumes
+03278290 Bots will activate if hero is within these volumes. Bot will deactivate when needed if outside this volume
+03280F30 RespawnFallVolume
+03292180 The actor that should get the volumes.
+03292270 The actor that should have its volume data removed.
+03292438 VolumeTracker
+03292448 The volume tracker we want to monitor.
+03292470 The targets this volume is tracking.
+03292508 The volume we want to monitor.
+03292528 The target that just interacted with this volume.
+032926E0 What type of volumes will trigger this action.  If kNone, all will trigger.
+032928B0 An array of all the volumes.
+03292940 The Puzzle Volume to check.
+03292A28 PuzzleVolumeEnd
+03292A38 The Puzzle Volume End to check.
+03292B38 Volume actors that will get recalled.
+03292BC0 If not checked, we get the volumes in the players cone.  If checked, we get all volumes.
+03294788 The ActorGroup of volumes that is the home area
+032974F0 QueryVolumeShape
+03297578 QueryVolumeShapeSphere
+03297608 QueryVolumeShapeCube
+03297698 QueryVolumeShapeCone
+03297728 QueryVolumeShapeCylinder
+032977C8 QueryVolumeShapeEllipsoid
+032977F8 GetActorsInVolumeScriptActionPrius
+03297E80 One big list of all actors found in the volume(s) that were generated for the search.
+03297FD8 Get Actors In Volumes
+0329AF60 The actor/volume designating the map section
+0329E3D8 ExclusionVolumes
+0329E3F0 Exclusion Volume Group
+032A3280 kClankVolume
+032A3E40 kClankVolumeHeavy
+032A3E58 kClankVolumeLight
+032A3E70 kClankVolumeEnergy
+032A3E88 kClankVolumeSpeedUp
+032A53F0 The home area volume actor.
+032AD2B0 MaxDisableVolumes
+032AD2C8 MaxRegisteredVolumes
+032AD518 MaxDisallowVolumes
+032ADAC0 MatOverrideVolumesEnable
+032AEBA8 MaxDisablerVolumes
+032B01E0 MaxObjectiveVolumes
+032B02D0 SpawnVolumeOnAim
+032B04D0 When turned on, we spawn the puzzle volume when the player starts aiming.
+032B06A0 Can Targets absorb volumes when hit by them.
+032B0820 Spawn Volume On Aim
+032B25B0 kBuiltActorBaseVersion: 225-mhawthorne: Reference wwise events via wwise asset ref, kBuiltCurveVersion: 1-arichter: consolidate spline types into one enum, SplineTypes, kBuiltVolumeVersion: 35-ahastings: Adding 60Hz optimization to csm far lod cache, kBuiltLightVersion: 11-hvonck: Copy PS5 platform mask to PC
+032B3138 ActorVolumeAction
+032B3D30 ActorVolumeActionPrius
+032B3D50 Checks whether an Actor is inside or outside a specific volume.
+032B3D90 Actor Volume
+032BD0C0 kBuiltZoneBaseVersion: 460-hvonck: Copy PS5 platform mask to PC, kBuiltCurveVersion: 1-arichter: consolidate spline types into one enum, SplineTypes, kBuiltVolumeVersion: 35-ahastings: Adding 60Hz optimization to csm far lod cache, kBuiltLightVersion: 11-hvonck: Copy PS5 platform mask to PC, kBuiltTexturePDDVersion: 93-rsprentall: Remove compression of streamed mips
+032BF470 Fog map texture
+032BF5D8 Volumetric Clouds Weather Texture
+032BFC78 VolumetricCloudsBeginFence
+032BFC98 VolumetricCloudsEndFence
+032C5240 ImpostorExclusionVolumes
+032C5260 Impostor Exclusion Volume
+032D2220 KeyLightLodSubmitQueries
+032D2240 KeyLightLodSubmitQueries Impostor
+032D2290 KeyLightLodSubmitQueries Volume
+032D22B0 KeyLightLodSubmitQueries Model
+032D2968 Modulate Volume
+032D4C80 LightSubmitQuery
+032D4C98 LightSubmitQuery Ray-Tracing Consumers
+032D4CC0 LightSubmitOccl
+032D4D40 The cost of lighting scales with the number of lights affecting each pixel. Use volume links, attenuation radius and cut-off dist to reduce this.
+032D4DE8 LightSubmit
+032D4DF8 SubmitDebugLightCasters kTypePoint
+032D4E20 SubmitDebugLightCasters kTypeSpot
+032D4E48 SubmitDebugLightCasters kTypePyramid
+032D4E70 SubmitDebugLightCasters kTypeShaft
+032EDCE8 RayTracingManager::m_LightLookUpVolume
+032F28D8 kVolumeFlags
+032F31A0 kVolumetricFogScattering0
+032F31C0 kVolumetricFogScattering1
+032F31E0 kVolumetricFogTemp
+032F31F8 kVolumetricFogFinal
+032F3210 kVolumetricFogLightLookup
+032F5B18 kMrtVolumeFlags
+032F6128 kMrtVolumetricFogScattering0
+032F6148 kMrtVolumetricFogScattering1
+032F6168 kMrtVolumetricFogTemp
+032F6180 kMrtVolumetricFogFinal
+032F6198 kMrtVolumetricFogLightLookup
+032F82C0 Volumetric Clouds
+032F8680 Volumetric Fog
+032F9030 VolumeShadowCaster
+032F9558 VolumetricFogInit
+032F9570 FogInit
+032F9580 VolumetricFog
+032F95A0 VolumeFlags
+032F9A40 SkyVolumetricClouds
+032F9A58 SkyVolumetricCloudsFinalize
+032FFB58 Volumetric Fog Init Begin
+032FFBE0 Volumetric Clouds Begin
+032FFC08 Volumetric Fog Init End
+032FFC80 Volumetric Clouds End
+032FFD58 Fog Color Map
+0330C383 m_FogColor
+0330C38E m_VFogUShift
+0330C39B m_VFogGridZParams
+0330C3AD m_FogConsts
+0330C3F6 m_FogKeyLightInfluence
+0330C40D m_FogDepthColorRange
+0330C422 m_FogDepthColorScale
+0330C807 m_VFogFadeInfo
+0331E7A6 m_FogColor
+0331E7B1 m_VFogUShift
+0331E7BE m_VFogGridZParams
+0331E7FC m_FogConsts
+0331E842 m_FogKeyLightInfluence
+0331E859 m_FogDepthColorRange
+0331E86E m_FogDepthColorScale
+0331EC53 m_VFogFadeInfo
+0333095C m_BitFlagsVFog
+0333097C m_ClipVolumeInfo
+0333099D m_ShadowVolumeInfo
+03380C2A m_FogColor
+03380C35 m_VFogUShift
+03380C42 m_VFogGridZParams
+03380C80 m_FogConsts
+03380CC6 m_FogKeyLightInfluence
+03380CDD m_FogDepthColorRange
+03380CF2 m_FogDepthColorScale
+033810D7 m_VFogFadeInfo
+033E7D0F VolumetricCloudsCBuffer
+033E82B0 g_VolumetricClouds
+033E82C3 VolumetricCloudsCB
+033E83B4 m_VolumetricLayer
+033E83C6 VolumetricLayerCB
+033E89B2 m_FogBlendFactor
+033EDD65 VolumetricCloudsCBuffer
+033EE308 g_VolumetricClouds
+033EE31B VolumetricCloudsCB
+033EE40C m_VolumetricLayer
+033EE41E VolumetricLayerCB
+033EEA0A m_FogBlendFactor
+03400A6F VolumetricCloudsCBuffer
+03401010 g_VolumetricClouds
+03401023 VolumetricCloudsCB
+03401114 m_VolumetricLayer
+03401126 VolumetricLayerCB
+03401712 m_FogBlendFactor
+03404882 VolumetricCloudsCBuffer
+03404E24 g_VolumetricClouds
+03404E37 VolumetricCloudsCB
+03404F28 m_VolumetricLayer
+03404F3A VolumetricLayerCB
+03405526 m_FogBlendFactor
+034F1F30 m_ClipVolume
+034F2114 m_VolumeHeight
+034F2123 m_VolumeCenterY
+034F77D6 g_LightVolumes
+034F78E3 GlobalVolumeFlagBuffer
+034F7984 g_VolumeFlag
+034F7991 GlobalVolumeFlagCB
+034F79A4 m_WorldToVolume
+034F7B09 m_LightVolumeGpuId
+034F7DB9 LightVolumeGpu
+034FB429 m_LightVolumeGpuId
+034FD0A6 g_LightVolumes
+034FD152 GlobalVolumeFlagBuffer
+034FD73C g_VolumeFlag
+034FD749 GlobalVolumeFlagCB
+034FD75C m_WorldToVolume
+034FD99D m_LightVolumeGpuId
+034FDD31 LightVolumeGpu
+03505A39 g_LightVolumes
+03505B3F GlobalVolumeFlagBuffer
+03506223 m_FogColor
+0350622E m_VFogUShift
+0350623B m_VFogGridZParams
+0350624D m_FogConsts
+03506296 m_FogKeyLightInfluence
+035062AD m_FogDepthColorRange
+035062C2 m_FogDepthColorScale
+035066A7 m_VFogFadeInfo
+03506C68 g_VolumeFlag
+03506C75 GlobalVolumeFlagCB
+03506C88 m_WorldToVolume
+03506EC9 m_LightVolumeGpuId
+03507394 m_BitFlagsVFog
+035073B4 m_ClipVolumeInfo
+035073D5 m_ShadowVolumeInfo
+03507544 LightVolumeGpu
+035221BD g_LightVolumes
+03522269 GlobalVolumeFlagBuffer
+03522850 g_VolumeFlag
+0352285D GlobalVolumeFlagCB
+03522870 m_WorldToVolume
+03522AB1 m_LightVolumeGpuId
+03522E45 LightVolumeGpu
+0355594B g_LightVolumes
+035559AC g_FogColorCubeMap
+0357933B g_LightVolumes
+0357939C g_FogColorCubeMap
+0359CD2B g_LightVolumes
+0359CD8C g_FogColorCubeMap
+035C071B g_LightVolumes
+035C077C g_FogColorCubeMap
+035E410B g_LightVolumes
+035E416C g_FogColorCubeMap
+03607AFB g_LightVolumes
+03607B5C g_FogColorCubeMap
+0362B4EB g_LightVolumes
+0362B54C g_FogColorCubeMap
+0364EEDB g_LightVolumes
+0364EF3C g_FogColorCubeMap
+03672852 GlobalVolumeFlagBuffer
+0367EF22 GlobalVolumeFlagBuffer
+0368B5F2 GlobalVolumeFlagBuffer
+03697CC2 GlobalVolumeFlagBuffer
+036A4392 GlobalVolumeFlagBuffer
+036B0A62 GlobalVolumeFlagBuffer
+036BD132 GlobalVolumeFlagBuffer
+036C9A82 m_FogColor
+036C9A8D m_VFogUShift
+036C9A9A m_VFogGridZParams
+036C9AD8 m_FogConsts
+036C9B1E m_FogKeyLightInfluence
+036C9B35 m_FogDepthColorRange
+036C9B4A m_FogDepthColorScale
+036C9F2F m_VFogFadeInfo
+036CDF2D g_LightVolumes
+036CE2D4 m_BitFlagsVFog
+036CE2F4 m_ClipVolumeInfo
+036CE315 m_ShadowVolumeInfo
+036CE488 LightVolumeGpu
+036D209F m_FogColor
+036D20AA m_VFogUShift
+036D20B7 m_VFogGridZParams
+036D20C9 m_FogConsts
+036D2112 m_FogKeyLightInfluence
+036D2129 m_FogDepthColorRange
+036D213E m_FogDepthColorScale
+036D2523 m_VFogFadeInfo
+036D95CB m_FogColor
+036D95D6 m_VFogUShift
+036D95E3 m_VFogGridZParams
+036D95F5 m_FogConsts
+036D963E m_FogKeyLightInfluence
+036D9655 m_FogDepthColorRange
+036D966A m_FogDepthColorScale
+036D9A4F m_VFogFadeInfo
+036E098B m_FogColor
+036E0996 m_VFogUShift
+036E09A3 m_VFogGridZParams
+036E09B5 m_FogConsts
+036E09FE m_FogKeyLightInfluence
+036E0A15 m_FogDepthColorRange
+036E0A2A m_FogDepthColorScale
+036E0E0F m_VFogFadeInfo
+036F4023 m_FogColor
+036F402E m_VFogUShift
+036F403B m_VFogGridZParams
+036F404D m_FogConsts
+036F4096 m_FogKeyLightInfluence
+036F40AD m_FogDepthColorRange
+036F40C2 m_FogDepthColorScale
+036F44A7 m_VFogFadeInfo
+036FA5BB m_FogColor
+036FA5C6 m_VFogUShift
+036FA5D3 m_VFogGridZParams
+036FA5E5 m_FogConsts
+036FA62E m_FogKeyLightInfluence
+036FA645 m_FogDepthColorRange
+036FA65A m_FogDepthColorScale
+036FAA3F m_VFogFadeInfo
+0370B57F m_FogColor
+0370B58A m_VFogUShift
+0370B597 m_VFogGridZParams
+0370B5A9 m_FogConsts
+0370B5F2 m_FogKeyLightInfluence
+0370B609 m_FogDepthColorRange
+0370B61E m_FogDepthColorScale
+0370BA03 m_VFogFadeInfo
+037203F7 g_LightVolumes
+03720636 m_FogColor
+03720641 m_VFogUShift
+0372064E m_VFogGridZParams
+0372068C m_FogConsts
+037206D2 m_FogKeyLightInfluence
+037206E9 m_FogDepthColorRange
+037206FE m_FogDepthColorScale
+03720AE3 m_VFogFadeInfo
+03721324 m_BitFlagsVFog
+03721344 m_ClipVolumeInfo
+03721365 m_ShadowVolumeInfo
+037214D4 LightVolumeGpu
+0374D9A4 g_VoxelModVolumes
+0374DB28 m_CaptureVolumeWidth
+0374DDB1 VoxelModVolume
+0374FE4C m_CaptureVolumeWidth
+037529DC m_CaptureVolumeWidth
+03755088 m_CaptureVolumeWidth
+0375A7C8 m_VoxelVolumeDims
+0375A815 m_CaptureVolumeWidth
+0376071D g_VoxelTraceFogParams
+03760746 g_FogColorCubeMap
+0376099A m_FogColor
+037609A5 m_VFogUShift
+037609B2 m_VFogGridZParams
+037609F0 m_FogConsts
+03760A36 m_FogKeyLightInfluence
+03760A4D m_FogDepthColorRange
+03760A62 m_FogDepthColorScale
+03760E47 m_VFogFadeInfo
+03761516 m_VoxelVolumeDims
+03761563 m_CaptureVolumeWidth
+037616B9 VoxelTraceFogData
+037CA9A2 g_LightVolumes
+037CB12B m_FogColor
+037CB136 m_VFogUShift
+037CB143 m_VFogGridZParams
+037CB155 m_FogConsts
+037CB19E m_FogKeyLightInfluence
+037CB1B5 m_FogDepthColorRange
+037CB1CA m_FogDepthColorScale
+037CB5AF m_VFogFadeInfo
+037CBEFF m_BitFlagsVFog
+037CBF1F m_ClipVolumeInfo
+037CBF40 m_ShadowVolumeInfo
+037CC0B4 LightVolumeGpu
+037E6DB3 g_LightVolumes
+037E750F m_FogColor
+037E751A m_VFogUShift
+037E7527 m_VFogGridZParams
+037E7539 m_FogConsts
+037E7582 m_FogKeyLightInfluence
+037E7599 m_FogDepthColorRange
+037E75AE m_FogDepthColorScale
+037E7993 m_VFogFadeInfo
+037E82E3 m_BitFlagsVFog
+037E8303 m_ClipVolumeInfo
+037E8324 m_ShadowVolumeInfo
+037E8498 LightVolumeGpu
+03803C62 g_LightVolumes
+038043BF m_FogColor
+038043CA m_VFogUShift
+038043D7 m_VFogGridZParams
+038043E9 m_FogConsts
+03804432 m_FogKeyLightInfluence
+03804449 m_FogDepthColorRange
+0380445E m_FogDepthColorScale
+03804843 m_VFogFadeInfo
+03805193 m_BitFlagsVFog
+038051B3 m_ClipVolumeInfo
+038051D4 m_ShadowVolumeInfo
+03805348 LightVolumeGpu
+03820160 g_LightVolumes
+038208E3 m_FogColor
+038208EE m_VFogUShift
+038208FB m_VFogGridZParams
+0382090D m_FogConsts
+03820956 m_FogKeyLightInfluence
+0382096D m_FogDepthColorRange
+03820982 m_FogDepthColorScale
+03820D67 m_VFogFadeInfo
+038216B7 m_BitFlagsVFog
+038216D7 m_ClipVolumeInfo
+038216F8 m_ShadowVolumeInfo
+0382186C LightVolumeGpu
+0383D262 g_LightVolumes
+0383DA73 m_FogColor
+0383DA7E m_VFogUShift
+0383DA8B m_VFogGridZParams
+0383DA9D m_FogConsts
+0383DAE6 m_FogKeyLightInfluence
+0383DAFD m_FogDepthColorRange
+0383DB12 m_FogDepthColorScale
+0383DEF7 m_VFogFadeInfo
+0383E847 m_BitFlagsVFog
+0383E867 m_ClipVolumeInfo
+0383E888 m_ShadowVolumeInfo
+0383E9FC LightVolumeGpu
+03863594 g_LightVolumes
+03863CEF m_FogColor
+03863CFA m_VFogUShift
+03863D07 m_VFogGridZParams
+03863D19 m_FogConsts
+03863D62 m_FogKeyLightInfluence
+03863D79 m_FogDepthColorRange
+03863D8E m_FogDepthColorScale
+03864173 m_VFogFadeInfo
+03864AC3 m_BitFlagsVFog
+03864AE3 m_ClipVolumeInfo
+03864B04 m_ShadowVolumeInfo
+03864C78 LightVolumeGpu
+0387F872 g_LightVolumes
+03880083 m_FogColor
+0388008E m_VFogUShift
+0388009B m_VFogGridZParams
+038800AD m_FogConsts
+038800F6 m_FogKeyLightInfluence
+0388010D m_FogDepthColorRange
+03880122 m_FogDepthColorScale
+03880507 m_VFogFadeInfo
+03880E57 m_BitFlagsVFog
+03880E77 m_ClipVolumeInfo
+03880E98 m_ShadowVolumeInfo
+0388100C LightVolumeGpu
+038A8D72 g_LightVolumes
+038A94FB m_FogColor
+038A9506 m_VFogUShift
+038A9513 m_VFogGridZParams
+038A9525 m_FogConsts
+038A956E m_FogKeyLightInfluence
+038A9585 m_FogDepthColorRange
+038A959A m_FogDepthColorScale
+038A997F m_VFogFadeInfo
+038AA2CF m_BitFlagsVFog
+038AA2EF m_ClipVolumeInfo
+038AA310 m_ShadowVolumeInfo
+038AA484 LightVolumeGpu
+038C51A3 g_LightVolumes
+038C58FF m_FogColor
+038C590A m_VFogUShift
+038C5917 m_VFogGridZParams
+038C5929 m_FogConsts
+038C5972 m_FogKeyLightInfluence
+038C5989 m_FogDepthColorRange
+038C599E m_FogDepthColorScale
+038C5D83 m_VFogFadeInfo
+038C66D3 m_BitFlagsVFog
+038C66F3 m_ClipVolumeInfo
+038C6714 m_ShadowVolumeInfo
+038C6888 LightVolumeGpu
+038E2062 g_LightVolumes
+038E27BF m_FogColor
+038E27CA m_VFogUShift
+038E27D7 m_VFogGridZParams
+038E27E9 m_FogConsts
+038E2832 m_FogKeyLightInfluence
+038E2849 m_FogDepthColorRange
+038E285E m_FogDepthColorScale
+038E2C43 m_VFogFadeInfo
+038E3593 m_BitFlagsVFog
+038E35B3 m_ClipVolumeInfo
+038E35D4 m_ShadowVolumeInfo
+038E3748 LightVolumeGpu
+038FE570 g_LightVolumes
+038FECF3 m_FogColor
+038FECFE m_VFogUShift
+038FED0B m_VFogGridZParams
+038FED1D m_FogConsts
+038FED66 m_FogKeyLightInfluence
+038FED7D m_FogDepthColorRange
+038FED92 m_FogDepthColorScale
+038FF177 m_VFogFadeInfo
+038FFAC7 m_BitFlagsVFog
+038FFAE7 m_ClipVolumeInfo
+038FFB08 m_ShadowVolumeInfo
+038FFC7C LightVolumeGpu
+0391B692 g_LightVolumes
+0391BEA3 m_FogColor
+0391BEAE m_VFogUShift
+0391BEBB m_VFogGridZParams
+0391BECD m_FogConsts
+0391BF16 m_FogKeyLightInfluence
+0391BF2D m_FogDepthColorRange
+0391BF42 m_FogDepthColorScale
+0391C327 m_VFogFadeInfo
+0391CC77 m_BitFlagsVFog
+0391CC97 m_ClipVolumeInfo
+0391CCB8 m_ShadowVolumeInfo
+0391CE2C LightVolumeGpu
+039419D4 g_LightVolumes
+0394212F m_FogColor
+0394213A m_VFogUShift
+03942147 m_VFogGridZParams
+03942159 m_FogConsts
+039421A2 m_FogKeyLightInfluence
+039421B9 m_FogDepthColorRange
+039421CE m_FogDepthColorScale
+039425B3 m_VFogFadeInfo
+03942F03 m_BitFlagsVFog
+03942F23 m_ClipVolumeInfo
+03942F44 m_ShadowVolumeInfo
+039430B8 LightVolumeGpu
+039607D2 g_LightVolumes
+03960FE3 m_FogColor
+03960FEE m_VFogUShift
+03960FFB m_VFogGridZParams
+0396100D m_FogConsts
+03961056 m_FogKeyLightInfluence
+0396106D m_FogDepthColorRange
+03961082 m_FogDepthColorScale
+03961467 m_VFogFadeInfo
+03961DB7 m_BitFlagsVFog
+03961DD7 m_ClipVolumeInfo
+03961DF8 m_ShadowVolumeInfo
+03961F6C LightVolumeGpu
+03989D42 g_LightVolumes
+03989D88 g_VolumeFlagBitsetView
+03989E44 GlobalVolumeFlagBuffer
+0398A527 m_FogColor
+0398A532 m_VFogUShift
+0398A53F m_VFogGridZParams
+0398A551 m_FogConsts
+0398A59A m_FogKeyLightInfluence
+0398A5B1 m_FogDepthColorRange
+0398A5C6 m_FogDepthColorScale
+0398A9AB m_VFogFadeInfo
+0398AF6C g_VolumeFlag
+0398AF79 GlobalVolumeFlagCB
+0398AF8C m_WorldToVolume
+0398B3A7 m_BitFlagsVFog
+0398B3C7 m_ClipVolumeInfo
+0398B3E8 m_ShadowVolumeInfo
+0398B55C LightVolumeGpu
+039A7013 g_LightVolumes
+039A7059 g_VolumeFlagBitsetView
+039A70E6 GlobalVolumeFlagBuffer
+039A77CB m_FogColor
+039A77D6 m_VFogUShift
+039A77E3 m_VFogGridZParams
+039A77F5 m_FogConsts
+039A783E m_FogKeyLightInfluence
+039A7855 m_FogDepthColorRange
+039A786A m_FogDepthColorScale
+039A7C4F m_VFogFadeInfo
+039A8210 g_VolumeFlag
+039A821D GlobalVolumeFlagCB
+039A8230 m_WorldToVolume
+039A864B m_BitFlagsVFog
+039A866B m_ClipVolumeInfo
+039A868C m_ShadowVolumeInfo
+039A8800 LightVolumeGpu
+039C4DB2 g_LightVolumes
+039C4DF8 g_VolumeFlagBitsetView
+039C4E85 GlobalVolumeFlagBuffer
+039C5567 m_FogColor
+039C5572 m_VFogUShift
+039C557F m_VFogGridZParams
+039C5591 m_FogConsts
+039C55DA m_FogKeyLightInfluence
+039C55F1 m_FogDepthColorRange
+039C5606 m_FogDepthColorScale
+039C59EB m_VFogFadeInfo
+039C5FAC g_VolumeFlag
+039C5FB9 GlobalVolumeFlagCB
+039C5FCC m_WorldToVolume
+039C63E7 m_BitFlagsVFog
+039C6407 m_ClipVolumeInfo
+039C6428 m_ShadowVolumeInfo
+039C659C LightVolumeGpu
+039E2200 g_LightVolumes
+039E2983 m_FogColor
+039E298E m_VFogUShift
+039E299B m_VFogGridZParams
+039E29AD m_FogConsts
+039E29F6 m_FogKeyLightInfluence
+039E2A0D m_FogDepthColorRange
+039E2A22 m_FogDepthColorScale
+039E2E07 m_VFogFadeInfo
+039E3757 m_BitFlagsVFog
+039E3777 m_ClipVolumeInfo
+039E3798 m_ShadowVolumeInfo
+039E390C LightVolumeGpu
+039FF312 g_LightVolumes
+039FFB23 m_FogColor
+039FFB2E m_VFogUShift
+039FFB3B m_VFogGridZParams
+039FFB4D m_FogConsts
+039FFB96 m_FogKeyLightInfluence
+039FFBAD m_FogDepthColorRange
+039FFBC2 m_FogDepthColorScale
+039FFFA7 m_VFogFadeInfo
+03A008F7 m_BitFlagsVFog
+03A00917 m_ClipVolumeInfo
+03A00938 m_ShadowVolumeInfo
+03A00AAC LightVolumeGpu
+03A25728 g_LightVolumes
+03A25781 g_VolumeFlagBitsetView
+03A25821 GlobalVolumeFlagBuffer
+03A25F03 m_FogColor
+03A25F0E m_VFogUShift
+03A25F1B m_VFogGridZParams
+03A25F2D m_FogConsts
+03A25F76 m_FogKeyLightInfluence
+03A25F8D m_FogDepthColorRange
+03A25FA2 m_FogDepthColorScale
+03A26387 m_VFogFadeInfo
+03A26948 g_VolumeFlag
+03A26955 GlobalVolumeFlagCB
+03A26968 m_WorldToVolume
+03A26D83 m_BitFlagsVFog
+03A26DA3 m_ClipVolumeInfo
+03A26DC4 m_ShadowVolumeInfo
+03A26F38 LightVolumeGpu
+03A47662 g_LightVolumes
+03A47E73 m_FogColor
+03A47E7E m_VFogUShift
+03A47E8B m_VFogGridZParams
+03A47E9D m_FogConsts
+03A47EE6 m_FogKeyLightInfluence
+03A47EFD m_FogDepthColorRange
+03A47F12 m_FogDepthColorScale
+03A482F7 m_VFogFadeInfo
+03A48C47 m_BitFlagsVFog
+03A48C67 m_ClipVolumeInfo
+03A48C88 m_ShadowVolumeInfo
+03A48DFC LightVolumeGpu
+03A70BD2 g_LightVolumes
+03A70C18 g_VolumeFlagBitsetView
+03A70CD4 GlobalVolumeFlagBuffer
+03A713B7 m_FogColor
+03A713C2 m_VFogUShift
+03A713CF m_VFogGridZParams
+03A713E1 m_FogConsts
+03A7142A m_FogKeyLightInfluence
+03A71441 m_FogDepthColorRange
+03A71456 m_FogDepthColorScale
+03A7183B m_VFogFadeInfo
+03A71DFC g_VolumeFlag
+03A71E09 GlobalVolumeFlagCB
+03A71E1C m_WorldToVolume
+03A72237 m_BitFlagsVFog
+03A72257 m_ClipVolumeInfo
+03A72278 m_ShadowVolumeInfo
+03A723EC LightVolumeGpu
+03A8DEB3 g_LightVolumes
+03A8DEF9 g_VolumeFlagBitsetView
+03A8DF86 GlobalVolumeFlagBuffer
+03A8E66B m_FogColor
+03A8E676 m_VFogUShift
+03A8E683 m_VFogGridZParams
+03A8E695 m_FogConsts
+03A8E6DE m_FogKeyLightInfluence
+03A8E6F5 m_FogDepthColorRange
+03A8E70A m_FogDepthColorScale
+03A8EAEF m_VFogFadeInfo
+03A8F0B0 g_VolumeFlag
+03A8F0BD GlobalVolumeFlagCB
+03A8F0D0 m_WorldToVolume
+03A8F4EB m_BitFlagsVFog
+03A8F50B m_ClipVolumeInfo
+03A8F52C m_ShadowVolumeInfo
+03A8F6A0 LightVolumeGpu
+03AABC62 g_LightVolumes
+03AABCA8 g_VolumeFlagBitsetView
+03AABD35 GlobalVolumeFlagBuffer
+03AAC417 m_FogColor
+03AAC422 m_VFogUShift
+03AAC42F m_VFogGridZParams
+03AAC441 m_FogConsts
+03AAC48A m_FogKeyLightInfluence
+03AAC4A1 m_FogDepthColorRange
+03AAC4B6 m_FogDepthColorScale
+03AAC89B m_VFogFadeInfo
+03AACE5C g_VolumeFlag
+03AACE69 GlobalVolumeFlagCB
+03AACE7C m_WorldToVolume
+03AAD297 m_BitFlagsVFog
+03AAD2B7 m_ClipVolumeInfo
+03AAD2D8 m_ShadowVolumeInfo
+03AAD44C LightVolumeGpu
+03AC90C0 g_LightVolumes
+03AC9843 m_FogColor
+03AC984E m_VFogUShift
+03AC985B m_VFogGridZParams
+03AC986D m_FogConsts
+03AC98B6 m_FogKeyLightInfluence
+03AC98CD m_FogDepthColorRange
+03AC98E2 m_FogDepthColorScale
+03AC9CC7 m_VFogFadeInfo
+03ACA617 m_BitFlagsVFog
+03ACA637 m_ClipVolumeInfo
+03ACA658 m_ShadowVolumeInfo
+03ACA7CC LightVolumeGpu
+03AE61E2 g_LightVolumes
+03AE69F3 m_FogColor
+03AE69FE m_VFogUShift
+03AE6A0B m_VFogGridZParams
+03AE6A1D m_FogConsts
+03AE6A66 m_FogKeyLightInfluence
+03AE6A7D m_FogDepthColorRange
+03AE6A92 m_FogDepthColorScale
+03AE6E77 m_VFogFadeInfo
+03AE77C7 m_BitFlagsVFog
+03AE77E7 m_ClipVolumeInfo
+03AE7808 m_ShadowVolumeInfo
+03AE797C LightVolumeGpu
+03B0C608 g_LightVolumes
+03B0C661 g_VolumeFlagBitsetView
+03B0C701 GlobalVolumeFlagBuffer
+03B0CDE3 m_FogColor
+03B0CDEE m_VFogUShift
+03B0CDFB m_VFogGridZParams
+03B0CE0D m_FogConsts
+03B0CE56 m_FogKeyLightInfluence
+03B0CE6D m_FogDepthColorRange
+03B0CE82 m_FogDepthColorScale
+03B0D267 m_VFogFadeInfo
+03B0D828 g_VolumeFlag
+03B0D835 GlobalVolumeFlagCB
+03B0D848 m_WorldToVolume
+03B0DC63 m_BitFlagsVFog
+03B0DC83 m_ClipVolumeInfo
+03B0DCA4 m_ShadowVolumeInfo
+03B0DE18 LightVolumeGpu
+03B31042 g_LightVolumes
+03B31853 m_FogColor
+03B3185E m_VFogUShift
+03B3186B m_VFogGridZParams
+03B3187D m_FogConsts
+03B318C6 m_FogKeyLightInfluence
+03B318DD m_FogDepthColorRange
+03B318F2 m_FogDepthColorScale
+03B31CD7 m_VFogFadeInfo
+03B32627 m_BitFlagsVFog
+03B32647 m_ClipVolumeInfo
+03B32668 m_ShadowVolumeInfo
+03B327DC LightVolumeGpu
+03C78584 g_VolumetricFogInitOutput
+03C785B4 VolumetricFogScatteringCBuffer
+03C78C53 m_FogColor
+03C78C5E m_VFogUShift
+03C78C6B m_VFogGridZParams
+03C78C7D m_FogConsts
+03C78CC6 m_FogKeyLightInfluence
+03C78CDD m_FogDepthColorRange
+03C78CF2 m_FogDepthColorScale
+03C790D7 m_VFogFadeInfo
+03C79698 g_VFog
+03C7969F VolumetricFogScatteringCB
+03C872C4 g_VolumetricFogScatteringTex
+03C872E1 g_VolumetricFogIntegrationOutput
+03C87302 VolumetricFogScatteringCBuffer
+03C87364 g_VFog
+03C8736B VolumetricFogScatteringCB
+03C8949D g_LightVolumes
+03C894AC g_VolumetricFogLightLookupOutput
+03C894F2 VolumetricFogScatteringCBuffer
+03C89BBF m_FogColor
+03C89BCA m_VFogUShift
+03C89BD7 m_VFogGridZParams
+03C89BE9 m_FogConsts
+03C89C32 m_FogKeyLightInfluence
+03C89C49 m_FogDepthColorRange
+03C89C5E m_FogDepthColorScale
+03C8A043 m_VFogFadeInfo
+03C8A6D0 g_VFog
+03C8A6D7 VolumetricFogScatteringCB
+03C8AB9C m_BitFlagsVFog
+03C8ABBC m_ClipVolumeInfo
+03C8ABDD m_ShadowVolumeInfo
+03C8AD4C LightVolumeGpu
+03C8FCED g_VolumetricFogScatteringTex
+03C8FD0A g_VolumetricFogInitTex
+03C8FD21 g_VolumetricFogLightLookupView
+03C8FD74 g_LightVolumes
+03C8FD83 g_VolumetricFogScatteringOutput
+03C8FDB9 VolumetricFogScatteringCBuffer
+03C9046F m_FogColor
+03C9047A m_VFogUShift
+03C90487 m_VFogGridZParams
+03C90499 m_FogConsts
+03C904E2 m_FogKeyLightInfluence
+03C904F9 m_FogDepthColorRange
+03C9050E m_FogDepthColorScale
+03C908F3 m_VFogFadeInfo
+03C90EB4 g_VFog
+03C90EBB VolumetricFogScatteringCB
+03C91380 m_BitFlagsVFog
+03C913A0 m_ClipVolumeInfo
+03C913C1 m_ShadowVolumeInfo
+03C91530 LightVolumeGpu
+03CC9844 g_LightVolumes
+03CC9F93 m_FogColor
+03CC9F9E m_VFogUShift
+03CC9FAB m_VFogGridZParams
+03CC9FBD m_FogConsts
+03CCA006 m_FogKeyLightInfluence
+03CCA01D m_FogDepthColorRange
+03CCA032 m_FogDepthColorScale
+03CCA417 m_VFogFadeInfo
+03CCACEC m_BitFlagsVFog
+03CCAD0C m_ClipVolumeInfo
+03CCAD2D m_ShadowVolumeInfo
+03CCAEA0 LightVolumeGpu
+03D01DB0 CS_VolumetricClouds
+03D01DC8 CS_VolumetricCloudsCurrentToPrev
+03D01DF0 CS_VolumetricCloudsShadowMap
+03D02A70 CS_ApplyForceEmbeddedVolumes
+03D03820 CS_BlendFogColorMaps
+03D03838 CS_VolumetricFogInitialize
+03D03858 CS_VolumetricFogIntegration
+03D03878 CS_VolumetricFogLightLookup
+03D03898 CS_VolumetricFogScattering
+03D08204 m_ClipVolume
+03D083E8 m_VolumeHeight
+03D083F7 m_VolumeCenterY
+03D0D714 m_ClipVolume
+03D0D8F8 m_VolumeHeight
+03D0D907 m_VolumeCenterY
+03D12C34 m_ClipVolume
+03D12E18 m_VolumeHeight
+03D12E27 m_VolumeCenterY
+03D17FC4 m_ClipVolume
+03D181A8 m_VolumeHeight
+03D181B7 m_VolumeCenterY
+03D1C294 m_ClipVolume
+03D1C478 m_VolumeHeight
+03D1C487 m_VolumeCenterY
+03D205A4 m_ClipVolume
+03D20788 m_VolumeHeight
+03D20797 m_VolumeCenterY
+03D24098 DS_ModelVolumeRendering
+03D372F8 GS_ModelVolumeRendering
+03D37B6B m_FogColor
+03D37B76 m_VFogUShift
+03D37B83 m_VFogGridZParams
+03D37B95 m_FogConsts
+03D37BDE m_FogKeyLightInfluence
+03D37BF5 m_FogDepthColorRange
+03D37C0A m_FogDepthColorScale
+03D37FEF m_VFogFadeInfo
+03D403BB m_FogColor
+03D403C6 m_VFogUShift
+03D403D3 m_VFogGridZParams
+03D403E5 m_FogConsts
+03D4042E m_FogKeyLightInfluence
+03D40445 m_FogDepthColorRange
+03D4045A m_FogDepthColorScale
+03D4083F m_VFogFadeInfo
+03D53648 m_ClipVolume
+03D5382C m_VolumeHeight
+03D5383B m_VolumeCenterY
+03D581A0 HS_ModelVolumeRendering
+03D58420 PS_DisplayVolumeFlags
+03D9C592 m_FogColor
+03D9C59D m_VFogUShift
+03D9C5AA m_VFogGridZParams
+03D9C5E8 m_FogConsts
+03D9C62E m_FogKeyLightInfluence
+03D9C645 m_FogDepthColorRange
+03D9C65A m_FogDepthColorScale
+03D9CA3F m_VFogFadeInfo
+03DA3C74 g_VolumeArrayBitset
+03DA4CC4 g_VolumeBitset
+03DB1DDA VolumeCasterCBuffer
+03DB2378 g_VolumeCaster
+03DB2387 VolumeCasterCB
+03DB5FCB m_FogColor
+03DB5FD6 m_VFogUShift
+03DB5FE3 m_VFogGridZParams
+03DB5FF5 m_FogConsts
+03DB603E m_FogKeyLightInfluence
+03DB6055 m_FogDepthColorRange
+03DB606A m_FogDepthColorScale
+03DB644F m_VFogFadeInfo
+03DC717E g_LightVolumes
+03DC71A2 g_VolumeFlagBitsetView
+03DC7230 GlobalVolumeFlagBuffer
+03DC7927 m_FogColor
+03DC7932 m_VFogUShift
+03DC793F m_VFogGridZParams
+03DC7951 m_FogConsts
+03DC799A m_FogKeyLightInfluence
+03DC79B1 m_FogDepthColorRange
+03DC79C6 m_FogDepthColorScale
+03DC7DAB m_VFogFadeInfo
+03DC836C g_VolumeFlag
+03DC8379 GlobalVolumeFlagCB
+03DC838C m_WorldToVolume
+03DC87D0 m_ClipVolume
+03DC8992 m_VolumeHeight
+03DC89A1 m_VolumeCenterY
+03DC8DC8 m_BitFlagsVFog
+03DC8DE8 m_ClipVolumeInfo
+03DC8E09 m_ShadowVolumeInfo
+03DC8F78 LightVolumeGpu
+03DDFFB9 g_FogColorCubeMap
+03DDFFF6 g_LightVolumes
+03DE005E g_VolumetricFog
+03DE0767 m_FogColor
+03DE0772 m_VFogUShift
+03DE077F m_VFogGridZParams
+03DE0791 m_FogConsts
+03DE07DA m_FogKeyLightInfluence
+03DE07F1 m_FogDepthColorRange
+03DE0806 m_FogDepthColorScale
+03DE0BEB m_VFogFadeInfo
+03DE15E7 m_BitFlagsVFog
+03DE1607 m_ClipVolumeInfo
+03DE1628 m_ShadowVolumeInfo
+03DE179C LightVolumeGpu
+03DFCB99 g_FogColorCubeMap
+03DFCBD6 g_LightVolumes
+03DFCC3E g_VolumetricFog
+03DFD347 m_FogColor
+03DFD352 m_VFogUShift
+03DFD35F m_VFogGridZParams
+03DFD371 m_FogConsts
+03DFD3BA m_FogKeyLightInfluence
+03DFD3D1 m_FogDepthColorRange
+03DFD3E6 m_FogDepthColorScale
+03DFD7CB m_VFogFadeInfo
+03DFE1C7 m_BitFlagsVFog
+03DFE1E7 m_ClipVolumeInfo
+03DFE208 m_ShadowVolumeInfo
+03DFE37C LightVolumeGpu
+03E1DF74 g_LightVolumes
+03E1E73F m_FogColor
+03E1E74A m_VFogUShift
+03E1E757 m_VFogGridZParams
+03E1E769 m_FogConsts
+03E1E7B2 m_FogKeyLightInfluence
+03E1E7C9 m_FogDepthColorRange
+03E1E7DE m_FogDepthColorScale
+03E1EBC3 m_VFogFadeInfo
+03E1F5C3 m_BitFlagsVFog
+03E1F5E3 m_ClipVolumeInfo
+03E1F604 m_ShadowVolumeInfo
+03E1F778 LightVolumeGpu
+03E4B60F m_FogColor
+03E4B61A m_VFogUShift
+03E4B627 m_VFogGridZParams
+03E4B639 m_FogConsts
+03E4B682 m_FogKeyLightInfluence
+03E4B699 m_FogDepthColorRange
+03E4B6AE m_FogDepthColorScale
+03E4BA93 m_VFogFadeInfo
+03E81602 m_FogColor
+03E8160D m_VFogUShift
+03E8161A m_VFogGridZParams
+03E81658 m_FogConsts
+03E8169E m_FogKeyLightInfluence
+03E816B5 m_FogDepthColorRange
+03E816CA m_FogDepthColorScale
+03E81AAF m_VFogFadeInfo
+03E8C582 m_FogColor
+03E8C58D m_VFogUShift
+03E8C59A m_VFogGridZParams
+03E8C5D8 m_FogConsts
+03E8C61E m_FogKeyLightInfluence
+03E8C635 m_FogDepthColorRange
+03E8C64A m_FogDepthColorScale
+03E8CA2F m_VFogFadeInfo
+03E8F141 VolumeCloudsCBuffer
+03E8F7AB m_FogColor
+03E8F7B6 m_VFogUShift
+03E8F7C3 m_VFogGridZParams
+03E8F7D5 m_FogConsts
+03E8F81E m_FogKeyLightInfluence
+03E8F835 m_FogDepthColorRange
+03E8F84A m_FogDepthColorScale
+03E8FC2F m_VFogFadeInfo
+03E901F0 g_VolumeClouds
+03E901FF VolumeCloudsCB
+03E9867E VolumetricCloudsCBuffer
+03E98C20 g_VolumetricClouds
+03E98C33 VolumetricCloudsCB
+03E98D24 m_VolumetricLayer
+03E98D36 VolumetricLayerCB
+03E99322 m_FogBlendFactor
+03E9C49C g_PrevVolumetricCloudTexture
+03E9E76E g_FogColorCubeMap
+03E9E7A9 VolumetricCloudsCBuffer
+03E9EE17 m_FogColor
+03E9EE22 m_VFogUShift
+03E9EE2F m_VFogGridZParams
+03E9EE41 m_FogConsts
+03E9EE8A m_FogKeyLightInfluence
+03E9EEA1 m_FogDepthColorRange
+03E9EEB6 m_FogDepthColorScale
+03E9F29B m_VFogFadeInfo
+03E9F85C g_VolumetricClouds
+03E9F86F VolumetricCloudsCB
+03E9F960 m_VolumetricLayer
+03E9F972 VolumetricLayerCB
+03E9FF5E m_FogBlendFactor
+03EA61AF m_FogColor
+03EA61BA m_VFogUShift
+03EA61C7 m_VFogGridZParams
+03EA61D9 m_FogConsts
+03EA6222 m_FogKeyLightInfluence
+03EA6239 m_FogDepthColorRange
+03EA624E m_FogDepthColorScale
+03EA6633 m_VFogFadeInfo
+03EE76AF g_FogColorCubeMap
+03EE76C1 g_VolumetricFog
+03EE7D73 m_FogColor
+03EE7D7E m_VFogUShift
+03EE7D8B m_VFogGridZParams
+03EE7D9D m_FogConsts
+03EE7DE6 m_FogKeyLightInfluence
+03EE7DFD m_FogDepthColorRange
+03EE7E12 m_FogDepthColorScale
+03EE81F7 m_VFogFadeInfo
+03EF5930 m_ClipVolume
+03EF5B14 m_VolumeHeight
+03EF5B23 m_VolumeCenterY
+03EF8B52 g_LightVolumes
+03EF8B76 g_VolumeFlagBitsetView
+03EF8BF2 GlobalVolumeFlagBuffer
+03EF92A7 m_FogColor
+03EF92B2 m_VFogUShift
+03EF92BF m_VFogGridZParams
+03EF92D1 m_FogConsts
+03EF931A m_FogKeyLightInfluence
+03EF9331 m_FogDepthColorRange
+03EF9346 m_FogDepthColorScale
+03EF972B m_VFogFadeInfo
+03EF9CEC g_VolumeFlag
+03EF9CF9 GlobalVolumeFlagCB
+03EF9D0C m_WorldToVolume
+03EF9DC4 m_ClipVolume
+03EF9FA8 m_VolumeHeight
+03EF9FB7 m_VolumeCenterY
+03EFA320 m_BitFlagsVFog
+03EFA340 m_ClipVolumeInfo
+03EFA361 m_ShadowVolumeInfo
+03EFA4D4 LightVolumeGpu
+03F0F22E g_LightVolumes
+03F0F252 g_VolumeFlagBitsetView
+03F0F2CE GlobalVolumeFlagBuffer
+03F0F983 m_FogColor
+03F0F98E m_VFogUShift
+03F0F99B m_VFogGridZParams
+03F0F9AD m_FogConsts
+03F0F9F6 m_FogKeyLightInfluence
+03F0FA0D m_FogDepthColorRange
+03F0FA22 m_FogDepthColorScale
+03F0FE07 m_VFogFadeInfo
+03F103C8 g_VolumeFlag
+03F103D5 GlobalVolumeFlagCB
+03F103E8 m_WorldToVolume
+03F104A0 m_ClipVolume
+03F10684 m_VolumeHeight
+03F10693 m_VolumeCenterY
+03F109FC m_BitFlagsVFog
+03F10A1C m_ClipVolumeInfo
+03F10A3D m_ShadowVolumeInfo
+03F10BB0 LightVolumeGpu
+03F255FA g_LightVolumes
+03F2561E g_VolumeFlagBitsetView
+03F2569A GlobalVolumeFlagBuffer
+03F25D4F m_FogColor
+03F25D5A m_VFogUShift
+03F25D67 m_VFogGridZParams
+03F25D79 m_FogConsts
+03F25DC2 m_FogKeyLightInfluence
+03F25DD9 m_FogDepthColorRange
+03F25DEE m_FogDepthColorScale
+03F261D3 m_VFogFadeInfo
+03F26794 g_VolumeFlag
+03F267A1 GlobalVolumeFlagCB
+03F267B4 m_WorldToVolume
+03F2686C m_ClipVolume
+03F26A50 m_VolumeHeight
+03F26A5F m_VolumeCenterY
+03F26DC8 m_BitFlagsVFog
+03F26DE8 m_ClipVolumeInfo
+03F26E09 m_ShadowVolumeInfo
+03F26F7C LightVolumeGpu
+03F440C4 m_VoxelVolumeDims
+03F49187 g_FogColorCubeMap
+03F49827 m_FogColor
+03F49832 m_VFogUShift
+03F4983F m_VFogGridZParams
+03F49851 m_FogConsts
+03F4989A m_FogKeyLightInfluence
+03F498B1 m_FogDepthColorRange
+03F498C6 m_FogDepthColorScale
+03F49CAB m_VFogFadeInfo
+03F4A2B4 m_VoxelVolumeDims
+03F59A80 m_VoxelVolumeDims
+03F5ED51 g_LightVolumes
+03F5EDAA g_VolumeFlagBitsetView
+03F5EE35 GlobalVolumeFlagBuffer
+03F5F4FF m_FogColor
+03F5F50A m_VFogUShift
+03F5F517 m_VFogGridZParams
+03F5F529 m_FogConsts
+03F5F572 m_FogKeyLightInfluence
+03F5F589 m_FogDepthColorRange
+03F5F59E m_FogDepthColorScale
+03F5F983 m_VFogFadeInfo
+03F5FF44 g_VolumeFlag
+03F5FF51 GlobalVolumeFlagCB
+03F5FF64 m_WorldToVolume
+03F60353 m_BitFlagsVFog
+03F60373 m_ClipVolumeInfo
+03F60394 m_ShadowVolumeInfo
+03F60508 LightVolumeGpu
+03F8311F g_LightVolumes
+03F83178 g_VolumeFlagBitsetView
+03F83203 GlobalVolumeFlagBuffer
+03F838CF m_FogColor
+03F838DA m_VFogUShift
+03F838E7 m_VFogGridZParams
+03F838F9 m_FogConsts
+03F83942 m_FogKeyLightInfluence
+03F83959 m_FogDepthColorRange
+03F8396E m_FogDepthColorScale
+03F83D53 m_VFogFadeInfo
+03F84314 g_VolumeFlag
+03F84321 GlobalVolumeFlagCB
+03F84334 m_WorldToVolume
+03F84723 m_BitFlagsVFog
+03F84743 m_ClipVolumeInfo
+03F84764 m_ShadowVolumeInfo
+03F848D8 LightVolumeGpu
+03FB7147 m_FogColor
+03FB7152 m_VFogUShift
+03FB715F m_VFogGridZParams
+03FB7171 m_FogConsts
+03FB71BA m_FogKeyLightInfluence
+03FB71D1 m_FogDepthColorRange
+03FB71E6 m_FogDepthColorScale
+03FB75CB m_VFogFadeInfo
+03FBB8E3 m_FogColor
+03FBB8EE m_VFogUShift
+03FBB8FB m_VFogGridZParams
+03FBB90D m_FogConsts
+03FBB956 m_FogKeyLightInfluence
+03FBB96D m_FogDepthColorRange
+03FBB982 m_FogDepthColorScale
+03FBBD67 m_VFogFadeInfo
+03FC0407 m_FogColor
+03FC0412 m_VFogUShift
+03FC041F m_VFogGridZParams
+03FC0431 m_FogConsts
+03FC047A m_FogKeyLightInfluence
+03FC0491 m_FogDepthColorRange
+03FC04A6 m_FogDepthColorScale
+03FC088B m_VFogFadeInfo
+03FC52A7 m_FogColor
+03FC52B2 m_VFogUShift
+03FC52BF m_VFogGridZParams
+03FC52D1 m_FogConsts
+03FC531A m_FogKeyLightInfluence
+03FC5331 m_FogDepthColorRange
+03FC5346 m_FogDepthColorScale
+03FC572B m_VFogFadeInfo
+03FCD033 m_FogColor
+03FCD03E m_VFogUShift
+03FCD04B m_VFogGridZParams
+03FCD05D m_FogConsts
+03FCD0A6 m_FogKeyLightInfluence
+03FCD0BD m_FogDepthColorRange
+03FCD0D2 m_FogDepthColorScale
+03FCD4B7 m_VFogFadeInfo
+03FD1967 m_FogColor
+03FD1972 m_VFogUShift
+03FD197F m_VFogGridZParams
+03FD1991 m_FogConsts
+03FD19DA m_FogKeyLightInfluence
+03FD19F1 m_FogDepthColorRange
+03FD1A06 m_FogDepthColorScale
+03FD1DEB m_VFogFadeInfo
+03FD61D7 m_FogColor
+03FD61E2 m_VFogUShift
+03FD61EF m_VFogGridZParams
+03FD6201 m_FogConsts
+03FD624A m_FogKeyLightInfluence
+03FD6261 m_FogDepthColorRange
+03FD6276 m_FogDepthColorScale
+03FD665B m_VFogFadeInfo
+03FFE5D7 m_FogColor
+03FFE5E2 m_VFogUShift
+03FFE5EF m_VFogGridZParams
+03FFE601 m_FogConsts
+03FFE64A m_FogKeyLightInfluence
+03FFE661 m_FogDepthColorRange
+03FFE676 m_FogDepthColorScale
+03FFEA5B m_VFogFadeInfo
+0400F07E m_FogColor
+0400F089 m_VFogUShift
+0400F096 m_VFogGridZParams
+0400F0D4 m_FogConsts
+0400F11A m_FogKeyLightInfluence
+0400F131 m_FogDepthColorRange
+0400F146 m_FogDepthColorScale
+0400F52B m_VFogFadeInfo
+04020E3B m_FogColor
+04020E46 m_VFogUShift
+04020E53 m_VFogGridZParams
+04020E65 m_FogConsts
+04020EAE m_FogKeyLightInfluence
+04020EC5 m_FogDepthColorRange
+04020EDA m_FogDepthColorScale
+040212BF m_VFogFadeInfo
+0403ADBB m_FogColor
+0403ADC6 m_VFogUShift
+0403ADD3 m_VFogGridZParams
+0403ADE5 m_FogConsts
+0403AE2E m_FogKeyLightInfluence
+0403AE45 m_FogDepthColorRange
+0403AE5A m_FogDepthColorScale
+0403B23F m_VFogFadeInfo
+0403EFDB m_FogColor
+0403EFE6 m_VFogUShift
+0403EFF3 m_VFogGridZParams
+0403F005 m_FogConsts
+0403F04E m_FogKeyLightInfluence
+0403F065 m_FogDepthColorRange
+0403F07A m_FogDepthColorScale
+0403F45F m_VFogFadeInfo
+04042DDB m_FogColor
+04042DE6 m_VFogUShift
+04042DF3 m_VFogGridZParams
+04042E05 m_FogConsts
+04042E4E m_FogKeyLightInfluence
+04042E65 m_FogDepthColorRange
+04042E7A m_FogDepthColorScale
+0404325F m_VFogFadeInfo
+04046F7B m_FogColor
+04046F86 m_VFogUShift
+04046F93 m_VFogGridZParams
+04046FA5 m_FogConsts
+04046FEE m_FogKeyLightInfluence
+04047005 m_FogDepthColorRange
+0404701A m_FogDepthColorScale
+040473FF m_VFogFadeInfo
+0405287B m_FogColor
+04052886 m_VFogUShift
+04052893 m_VFogGridZParams
+040528A5 m_FogConsts
+040528EE m_FogKeyLightInfluence
+04052905 m_FogDepthColorRange
+0405291A m_FogDepthColorScale
+04052CFF m_VFogFadeInfo
+0407DB2A m_FogColor
+0407DB35 m_VFogUShift
+0407DB42 m_VFogGridZParams
+0407DB80 m_FogConsts
+0407DBC6 m_FogKeyLightInfluence
+0407DBDD m_FogDepthColorRange
+0407DBF2 m_FogDepthColorScale
+0407DFD7 m_VFogFadeInfo
+040815D6 m_FogColor
+040815E1 m_VFogUShift
+040815EE m_VFogGridZParams
+0408162C m_FogConsts
+04081672 m_FogKeyLightInfluence
+04081689 m_FogDepthColorRange
+0408169E m_FogDepthColorScale
+04081A83 m_VFogFadeInfo
+04085346 m_FogColor
+04085351 m_VFogUShift
+0408535E m_VFogGridZParams
+0408539C m_FogConsts
+040853E2 m_FogKeyLightInfluence
+040853F9 m_FogDepthColorRange
+0408540E m_FogDepthColorScale
+040857F3 m_VFogFadeInfo
+04088F0A m_FogColor
+04088F15 m_VFogUShift
+04088F22 m_VFogGridZParams
+04088F60 m_FogConsts
+04088FA6 m_FogKeyLightInfluence
+04088FBD m_FogDepthColorRange
+04088FD2 m_FogDepthColorScale
+040893B7 m_VFogFadeInfo
+0408CEF3 m_FogColor
+0408CEFE m_VFogUShift
+0408CF0B m_VFogGridZParams
+0408CF1D m_FogConsts
+0408CF66 m_FogKeyLightInfluence
+0408CF7D m_FogDepthColorRange
+0408CF92 m_FogDepthColorScale
+0408D377 m_VFogFadeInfo
+040914BE m_FogColor
+040914C9 m_VFogUShift
+040914D6 m_VFogGridZParams
+04091514 m_FogConsts
+0409155A m_FogKeyLightInfluence
+04091571 m_FogDepthColorRange
+04091586 m_FogDepthColorScale
+0409196B m_VFogFadeInfo
+040945DE m_FogColor
+040945E9 m_VFogUShift
+040945F6 m_VFogGridZParams
+04094634 m_FogConsts
+0409467A m_FogKeyLightInfluence
+04094691 m_FogDepthColorRange
+040946A6 m_FogDepthColorScale
+04094A8B m_VFogFadeInfo
+04097C9E m_FogColor
+04097CA9 m_VFogUShift
+04097CB6 m_VFogGridZParams
+04097CF4 m_FogConsts
+04097D3A m_FogKeyLightInfluence
+04097D51 m_FogDepthColorRange
+04097D66 m_FogDepthColorScale
+0409814B m_VFogFadeInfo
+0409B1CE m_FogColor
+0409B1D9 m_VFogUShift
+0409B1E6 m_VFogGridZParams
+0409B224 m_FogConsts
+0409B26A m_FogKeyLightInfluence
+0409B281 m_FogDepthColorRange
+0409B296 m_FogDepthColorScale
+0409B67B m_VFogFadeInfo
+0409E34E m_FogColor
+0409E359 m_VFogUShift
+0409E366 m_VFogGridZParams
+0409E3A4 m_FogConsts
+0409E3EA m_FogKeyLightInfluence
+0409E401 m_FogDepthColorRange
+0409E416 m_FogDepthColorScale
+0409E7FB m_VFogFadeInfo
+040A193E m_FogColor
+040A1949 m_VFogUShift
+040A1956 m_VFogGridZParams
+040A1994 m_FogConsts
+040A19DA m_FogKeyLightInfluence
+040A19F1 m_FogDepthColorRange
+040A1A06 m_FogDepthColorScale
+040A1DEB m_VFogFadeInfo
+040A4FAA m_FogColor
+040A4FB5 m_VFogUShift
+040A4FC2 m_VFogGridZParams
+040A5000 m_FogConsts
+040A5046 m_FogKeyLightInfluence
+040A505D m_FogDepthColorRange
+040A5072 m_FogDepthColorScale
+040A5457 m_VFogFadeInfo
+040A8A9B g_FogColorCubeMap
+040A8AD8 g_LightVolumes
+040A8B2E g_VolumetricFog
+040A9237 m_FogColor
+040A9242 m_VFogUShift
+040A924F m_VFogGridZParams
+040A9261 m_FogConsts
+040A92AA m_FogKeyLightInfluence
+040A92C1 m_FogDepthColorRange
+040A92D6 m_FogDepthColorScale
+040A96BB m_VFogFadeInfo
+040AA0B7 m_BitFlagsVFog
+040AA0D7 m_ClipVolumeInfo
+040AA0F8 m_ShadowVolumeInfo
+040AA26C LightVolumeGpu
+040C3C08 g_LightVolumes
+040C4363 m_FogColor
+040C436E m_VFogUShift
+040C437B m_VFogGridZParams
+040C438D m_FogConsts
+040C43D6 m_FogKeyLightInfluence
+040C43ED m_FogDepthColorRange
+040C4402 m_FogDepthColorScale
+040C47E7 m_VFogFadeInfo
+040C52AF m_BitFlagsVFog
+040C52CF m_ClipVolumeInfo
+040C52F0 m_ShadowVolumeInfo
+040C5460 LightVolumeGpu
+040E11CF g_FogColorCubeMap
+040E11E1 g_VolumetricFog
+040E187B m_FogColor
+040E1886 m_VFogUShift
+040E1893 m_VFogGridZParams
+040E18A5 m_FogConsts
+040E18EE m_FogKeyLightInfluence
+040E1905 m_FogDepthColorRange
+040E191A m_FogDepthColorScale
+040E1CFF m_VFogFadeInfo
+040E8FD7 g_VolumeFlagBitsetView
+040E903C GlobalVolumeFlagBuffer
+040E96D7 m_FogColor
+040E96E2 m_VFogUShift
+040E96EF m_VFogGridZParams
+040E9701 m_FogConsts
+040E974A m_FogKeyLightInfluence
+040E9761 m_FogDepthColorRange
+040E9776 m_FogDepthColorScale
+040E9B5B m_VFogFadeInfo
+040EA11C g_VolumeFlag
+040EA129 GlobalVolumeFlagCB
+040EA13C m_WorldToVolume
+040F00D7 g_VolumeFlagBitsetView
+040F013C GlobalVolumeFlagBuffer
+040F07D7 m_FogColor
+040F07E2 m_VFogUShift
+040F07EF m_VFogGridZParams
+040F0801 m_FogConsts
+040F084A m_FogKeyLightInfluence
+040F0861 m_FogDepthColorRange
+040F0876 m_FogDepthColorScale
+040F0C5B m_VFogFadeInfo
+040F121C g_VolumeFlag
+040F1229 GlobalVolumeFlagCB
+040F123C m_WorldToVolume
+040FC723 m_FogColor
+040FC72E m_VFogUShift
+040FC73B m_VFogGridZParams
+040FC74D m_FogConsts
+040FC796 m_FogKeyLightInfluence
+040FC7AD m_FogDepthColorRange
+040FC7C2 m_FogDepthColorScale
+040FCBA7 m_VFogFadeInfo
+0410336F m_FogColor
+0410337A m_VFogUShift
+04103387 m_VFogGridZParams
+04103399 m_FogConsts
+041033E2 m_FogKeyLightInfluence
+041033F9 m_FogDepthColorRange
+0410340E m_FogDepthColorScale
+041037F3 m_VFogFadeInfo
+04107CCE m_FogColor
+04107CD9 m_VFogUShift
+04107CE6 m_VFogGridZParams
+04107D24 m_FogConsts
+04107D6A m_FogKeyLightInfluence
+04107D81 m_FogDepthColorRange
+04107D96 m_FogDepthColorScale
+0410817B m_VFogFadeInfo
+0410AB63 m_FogColor
+0410AB6E m_VFogUShift
+0410AB7B m_VFogGridZParams
+0410AB8D m_FogConsts
+0410ABD6 m_FogKeyLightInfluence
+0410ABED m_FogDepthColorRange
+0410AC02 m_FogDepthColorScale
+0410AFE7 m_VFogFadeInfo
+0410E71F m_FogColor
+0410E72A m_VFogUShift
+0410E737 m_VFogGridZParams
+0410E749 m_FogConsts
+0410E792 m_FogKeyLightInfluence
+0410E7A9 m_FogDepthColorRange
+0410E7BE m_FogDepthColorScale
+0410EBA3 m_VFogFadeInfo
+041134B3 m_FogColor
+041134BE m_VFogUShift
+041134CB m_VFogGridZParams
+041134DD m_FogConsts
+04113526 m_FogKeyLightInfluence
+0411353D m_FogDepthColorRange
+04113552 m_FogDepthColorScale
+04113937 m_VFogFadeInfo
+0411BB43 m_FogColor
+0411BB4E m_VFogUShift
+0411BB5B m_VFogGridZParams
+0411BB6D m_FogConsts
+0411BBB6 m_FogKeyLightInfluence
+0411BBCD m_FogDepthColorRange
+0411BBE2 m_FogDepthColorScale
+0411BFC7 m_VFogFadeInfo
+0412354E m_FogColor
+04123559 m_VFogUShift
+04123566 m_VFogGridZParams
+041235A4 m_FogConsts
+041235EA m_FogKeyLightInfluence
+04123601 m_FogDepthColorRange
+04123616 m_FogDepthColorScale
+041239FB m_VFogFadeInfo
+0412701E m_FogColor
+04127029 m_VFogUShift
+04127036 m_VFogGridZParams
+04127074 m_FogConsts
+041270BA m_FogKeyLightInfluence
+041270D1 m_FogDepthColorRange
+041270E6 m_FogDepthColorScale
+041274CB m_VFogFadeInfo
+0412A46E m_FogColor
+0412A479 m_VFogUShift
+0412A486 m_VFogGridZParams
+0412A4C4 m_FogConsts
+0412A50A m_FogKeyLightInfluence
+0412A521 m_FogDepthColorRange
+0412A536 m_FogDepthColorScale
+0412A91B m_VFogFadeInfo
+0412E952 g_LightVolumes
+0412E9AB g_VolumeFlagBitsetView
+0412EA42 GlobalVolumeFlagBuffer
+0412F127 m_FogColor
+0412F132 m_VFogUShift
+0412F13F m_VFogGridZParams
+0412F151 m_FogConsts
+0412F19A m_FogKeyLightInfluence
+0412F1B1 m_FogDepthColorRange
+0412F1C6 m_FogDepthColorScale
+0412F5AB m_VFogFadeInfo
+0412FB6C g_VolumeFlag
+0412FB79 GlobalVolumeFlagCB
+0412FB8C m_WorldToVolume
+04130017 m_BitFlagsVFog
+04130037 m_ClipVolumeInfo
+04130058 m_ShadowVolumeInfo
+041301CC LightVolumeGpu
+04156277 m_FogColor
+04156282 m_VFogUShift
+0415628F m_VFogGridZParams
+041562A1 m_FogConsts
+041562EA m_FogKeyLightInfluence
+04156301 m_FogDepthColorRange
+04156316 m_FogDepthColorScale
+041566FB m_VFogFadeInfo
+0415E3D3 g_VolumeFlagBitsetView
+0415E413 GlobalVolumeFlagBuffer
+0415EA7F m_FogColor
+0415EA8A m_VFogUShift
+0415EA97 m_VFogGridZParams
+0415EAA9 m_FogConsts
+0415EAF2 m_FogKeyLightInfluence
+0415EB09 m_FogDepthColorRange
+0415EB1E m_FogDepthColorScale
+0415EF03 m_VFogFadeInfo
+0415F4C4 g_VolumeFlag
+0415F4D1 GlobalVolumeFlagCB
+0415F4E4 m_WorldToVolume
+041660BF m_FogColor
+041660CA m_VFogUShift
+041660D7 m_VFogGridZParams
+041660E9 m_FogConsts
+04166132 m_FogKeyLightInfluence
+04166149 m_FogDepthColorRange
+0416615E m_FogDepthColorScale
+04166543 m_VFogFadeInfo
+0416B1DE m_FogColor
+0416B1E9 m_VFogUShift
+0416B1F6 m_VFogGridZParams
+0416B234 m_FogConsts
+0416B27A m_FogKeyLightInfluence
+0416B291 m_FogDepthColorRange
+0416B2A6 m_FogDepthColorScale
+0416B68B m_VFogFadeInfo
+04170E71 g_VolumeFlagBitsetView
+04170EB1 GlobalVolumeFlagBuffer
+0417151B m_FogColor
+04171526 m_VFogUShift
+04171533 m_VFogGridZParams
+04171545 m_FogConsts
+0417158E m_FogKeyLightInfluence
+041715A5 m_FogDepthColorRange
+041715BA m_FogDepthColorScale
+0417199F m_VFogFadeInfo
+04171F60 g_VolumeFlag
+04171F6D GlobalVolumeFlagCB
+04171F80 m_WorldToVolume
+04177716 m_FogColor
+04177721 m_VFogUShift
+0417772E m_VFogGridZParams
+0417776C m_FogConsts
+041777B2 m_FogKeyLightInfluence
+041777C9 m_FogDepthColorRange
+041777DE m_FogDepthColorScale
+04177BC3 m_VFogFadeInfo
+0417AC22 g_LightVolumes
+0417AC59 g_VolumeFlagBitsetView
+0417ACAC GlobalVolumeFlagBuffer
+0417B32F m_FogColor
+0417B33A m_VFogUShift
+0417B347 m_VFogGridZParams
+0417B359 m_FogConsts
+0417B3A2 m_FogKeyLightInfluence
+0417B3B9 m_FogDepthColorRange
+0417B3CE m_FogDepthColorScale
+0417B7B3 m_VFogFadeInfo
+0417BD74 g_VolumeFlag
+0417BD81 GlobalVolumeFlagCB
+0417BD94 m_WorldToVolume
+0417BE29 LightVolumeGpu
+041886B3 m_FogColor
+041886BE m_VFogUShift
+041886CB m_VFogGridZParams
+041886DD m_FogConsts
+04188726 m_FogKeyLightInfluence
+0418873D m_FogDepthColorRange
+04188752 m_FogDepthColorScale
+04188B37 m_VFogFadeInfo
+0419C3CA g_VolumeFlagBitsetView
+0419C41F GlobalVolumeFlagBuffer
+0419CAA3 m_FogColor
+0419CAAE m_VFogUShift
+0419CABB m_VFogGridZParams
+0419CACD m_FogConsts
+0419CB16 m_FogKeyLightInfluence
+0419CB2D m_FogDepthColorRange
+0419CB42 m_FogDepthColorScale
+0419CF27 m_VFogFadeInfo
+0419D4E8 g_VolumeFlag
+0419D4F5 GlobalVolumeFlagCB
+0419D508 m_WorldToVolume
+041A3C00 PS_InsertVolumeArrayBitfield
+041A3C20 PS_InsertVolumeBitfield
+041A3CE0 PS_ShadowCasterVolumeWindow
+041A4170 PS_VolumeClouds
+041A4180 PS_VolumetricCloudsComposite
+041A41A0 PS_VolumetricCloudsInteractionObject
+041A41C8 PS_VolumetricCloudsPostProcessBlur
+041A45B8 PS_DebugConeMarchVoxelVolume
+041A45D8 PS_DebugConeTraceVoxelVolume
+041A4610 PS_DebugRayTraceVoxelVolume
+041A50EC PS_Fog
+041F6137 m_FogColor
+041F6142 m_VFogUShift
+041F614F m_VFogGridZParams
+041F6161 m_FogConsts
+041F61AA m_FogKeyLightInfluence
+041F61C1 m_FogDepthColorRange
+041F61D6 m_FogDepthColorScale
+041F65BB m_VFogFadeInfo
+042011D0 m_ClipVolume
+04201392 m_VolumeHeight
+042013A1 m_VolumeCenterY
+042084CF m_FogColor
+042084DA m_VFogUShift
+042084E7 m_VFogGridZParams
+042084F9 m_FogConsts
+04208542 m_FogKeyLightInfluence
+04208559 m_FogDepthColorRange
+0420856E m_FogDepthColorScale
+04208953 m_VFogFadeInfo
+042158CB m_FogColor
+042158D6 m_VFogUShift
+042158E3 m_VFogGridZParams
+042158F5 m_FogConsts
+0421593E m_FogKeyLightInfluence
+04215955 m_FogDepthColorRange
+0421596A m_FogDepthColorScale
+04215D4F m_VFogFadeInfo
+0421D3AF m_FogColor
+0421D3BA m_VFogUShift
+0421D3C7 m_VFogGridZParams
+0421D3D9 m_FogConsts
+0421D422 m_FogKeyLightInfluence
+0421D439 m_FogDepthColorRange
+0421D44E m_FogDepthColorScale
+0421D833 m_VFogFadeInfo
+04225A2F m_FogColor
+04225A3A m_VFogUShift
+04225A47 m_VFogGridZParams
+04225A59 m_FogConsts
+04225AA2 m_FogKeyLightInfluence
+04225AB9 m_FogDepthColorRange
+04225ACE m_FogDepthColorScale
+04225EB3 m_VFogFadeInfo
+0422CBF7 m_FogColor
+0422CC02 m_VFogUShift
+0422CC0F m_VFogGridZParams
+0422CC21 m_FogConsts
+0422CC6A m_FogKeyLightInfluence
+0422CC81 m_FogDepthColorRange
+0422CC96 m_FogDepthColorScale
+0422D07B m_VFogFadeInfo
+042339FF m_FogColor
+04233A0A m_VFogUShift
+04233A17 m_VFogGridZParams
+04233A29 m_FogConsts
+04233A72 m_FogKeyLightInfluence
+04233A89 m_FogDepthColorRange
+04233A9E m_FogDepthColorScale
+04233E83 m_VFogFadeInfo
+0423B77F m_FogColor
+0423B78A m_VFogUShift
+0423B797 m_VFogGridZParams
+0423B7A9 m_FogConsts
+0423B7F2 m_FogKeyLightInfluence
+0423B809 m_FogDepthColorRange
+0423B81E m_FogDepthColorScale
+0423BC03 m_VFogFadeInfo
+04242B77 m_FogColor
+04242B82 m_VFogUShift
+04242B8F m_VFogGridZParams
+04242BA1 m_FogConsts
+04242BEA m_FogKeyLightInfluence
+04242C01 m_FogDepthColorRange
+04242C16 m_FogDepthColorScale
+04242FFB m_VFogFadeInfo
+0424969F m_FogColor
+042496AA m_VFogUShift
+042496B7 m_VFogGridZParams
+042496C9 m_FogConsts
+04249712 m_FogKeyLightInfluence
+04249729 m_FogDepthColorRange
+0424973E m_FogDepthColorScale
+04249B23 m_VFogFadeInfo
+04250787 m_FogColor
+04250792 m_VFogUShift
+0425079F m_VFogGridZParams
+042507B1 m_FogConsts
+042507FA m_FogKeyLightInfluence
+04250811 m_FogDepthColorRange
+04250826 m_FogDepthColorScale
+04250C0B m_VFogFadeInfo
+04257617 m_FogColor
+04257622 m_VFogUShift
+0425762F m_VFogGridZParams
+04257641 m_FogConsts
+0425768A m_FogKeyLightInfluence
+042576A1 m_FogDepthColorRange
+042576B6 m_FogDepthColorScale
+04257A9B m_VFogFadeInfo
+0426455F m_FogColor
+0426456A m_VFogUShift
+04264577 m_VFogGridZParams
+04264589 m_FogConsts
+042645D2 m_FogKeyLightInfluence
+042645E9 m_FogDepthColorRange
+042645FE m_FogDepthColorScale
+042649E3 m_VFogFadeInfo
+0426C07F m_FogColor
+0426C08A m_VFogUShift
+0426C097 m_VFogGridZParams
+0426C0A9 m_FogConsts
+0426C0F2 m_FogKeyLightInfluence
+0426C109 m_FogDepthColorRange
+0426C11E m_FogDepthColorScale
+0426C503 m_VFogFadeInfo
+04273EE7 m_FogColor
+04273EF2 m_VFogUShift
+04273EFF m_VFogGridZParams
+04273F11 m_FogConsts
+04273F5A m_FogKeyLightInfluence
+04273F71 m_FogDepthColorRange
+04273F86 m_FogDepthColorScale
+0427436B m_VFogFadeInfo
+0427A8F7 m_FogColor
+0427A902 m_VFogUShift
+0427A90F m_VFogGridZParams
+0427A921 m_FogConsts
+0427A96A m_FogKeyLightInfluence
+0427A981 m_FogDepthColorRange
+0427A996 m_FogDepthColorScale
+0427AD7B m_VFogFadeInfo
+0428174F m_FogColor
+0428175A m_VFogUShift
+04281767 m_VFogGridZParams
+04281779 m_FogConsts
+042817C2 m_FogKeyLightInfluence
+042817D9 m_FogDepthColorRange
+042817EE m_FogDepthColorScale
+04281BD3 m_VFogFadeInfo
+042DB8AC m_VoxelVolumeDims
+042E0508 g_LightVolumes
+042E0C57 m_FogColor
+042E0C62 m_VFogUShift
+042E0C6F m_VFogGridZParams
+042E0C81 m_FogConsts
+042E0CCA m_FogKeyLightInfluence
+042E0CE1 m_FogDepthColorRange
+042E0CF6 m_FogDepthColorScale
+042E10DB m_VFogFadeInfo
+042E1B47 m_BitFlagsVFog
+042E1B67 m_ClipVolumeInfo
+042E1B88 m_ShadowVolumeInfo
+042E1CF8 LightVolumeGpu
+042F8E53 m_FogColor
+042F8E5E m_VFogUShift
+042F8E6B m_VFogGridZParams
+042F8E7D m_FogConsts
+042F8EC6 m_FogKeyLightInfluence
+042F8EDD m_FogDepthColorRange
+042F8EF2 m_FogDepthColorScale
+042F92D7 m_VFogFadeInfo
+04308CDF m_FogColor
+04308CEA m_VFogUShift
+04308CF7 m_VFogGridZParams
+04308D09 m_FogConsts
+04308D52 m_FogKeyLightInfluence
+04308D69 m_FogDepthColorRange
+04308D7E m_FogDepthColorScale
+04309163 m_VFogFadeInfo
+043129EF m_FogColor
+043129FA m_VFogUShift
+04312A07 m_VFogGridZParams
+04312A19 m_FogConsts
+04312A62 m_FogKeyLightInfluence
+04312A79 m_FogDepthColorRange
+04312A8E m_FogDepthColorScale
+04312E73 m_VFogFadeInfo
+043228CF m_FogColor
+043228DA m_VFogUShift
+043228E7 m_VFogGridZParams
+043228F9 m_FogConsts
+04322942 m_FogKeyLightInfluence
+04322959 m_FogDepthColorRange
+0432296E m_FogDepthColorScale
+04322D53 m_VFogFadeInfo
+0432BF68 VS_VolumeShadowCaster
+0432C298 VS_VolumeClouds
+0432C2A8 VS_VolumetricClouds
+04334568 Scene Volumes
+04334800 Scene Volume DB
+04334A20 UpdateIndoorVolumeJob
+04335068 Volume %x
+04335570 CameraQueryVolumes
+04335588 CameraQueryVolumes Visible
+043355A8 CameraQueryVolumes PostFx
+0433CA50 SetLightGridFadeTimeAction
+0433CDE8 SetLightGridFadeTimeActionPrius
+0433CE08 Set Light Grid Fade Time
+0433EB80 Volume %u of Environment %s has been removed from the scene! It has probably been unloaded!
+043401C0 Volume A doesn't have a SceneObject!
+043401E8 Volume B doesn't have a SceneObject!
+04340210 Failed to associate portal with its volumes! Likely out of resources!
+04342738 Portaling Volumes Spatial DB
+04343918 FadeMasterVolumeAction
+04343A10 FadeMasterVolumeActionPrius
+04343A30 Fade Master Volume
+04345768 SubMasterVolume
+04345780 Master Volume Fade
+04346200 %s: Volume = %f | Filter = %f Direct = %f | Aux Sends - %s = %f, %s = %f, %s = %f | Distance %f
+044CAD50 Default Volumetric Fog
+044CAD68 Default Light Look-up Volume
+044CB100 Default Volumetric Clouds Weather
+044CD880 ParentInfluenceVolumeSystem
+044D1828 IndoorVolumeManager
+044D18B8 PostVolumeComponent
+044D1940 PostVolumeComponentPrius
+044D1B68 Post Volume Atmosphere Overrides
+044D1B90 Volume::AllocOptionalData
+044D1BC0 SubmitVolumesDebug
+044D2DA0 Zone Volume Array
+044D57E0 The distance (in meters) at which the light shafts effect is inserted into the alpha sort layer. Generally 0 works best to avoid popping with vfx, but in cinematic situations it can look better to sort light shafts farther away than far DoF
+044D5938 Sky Object Scale Used For Fogging
+044D6028 It blends clouds with current fog color.
+044D97E8 VolumetricCloudsRayMarching
+044D9808 VolumetricCloudsModeling
+044D9828 VolumetricCloudsWind
+044D9840 VolumetricClouds2DLayer
+044D9858 VolumetricCloudsLighting
+044D9878 VolumetricCloudsShadow
+044D9F20 Volumetric Clouds High Frequency Noise Texture
+044D9F50 Volumetric Clouds Low Frequency Noise Texture
+044D9F80 It determines the size of volumetric clouds render target. It indicates the iteration of down sampling. Thus, the bigger value makes the engine to use the smaller size of its render target. This option highly impacts the performance. 0: Full, 1: Half, 2: Quarter, 3: eighth, 4: sixteenth
+044DA8A8 FogSettingsDef
+044DA8B8 VolumetricFogSettingsDef
+044DC3E0 Volumetric Clouds Weather Map
+044DD570 Distance at which fog transitions to the highest mip of the color texture
+044DD5C0 Controls rate at which fog color transitions mips
+044DD8A8 VolumeCameraClipDef
+044DD970 VolumetricCloudsRayMarchingDef
+044DDB50 VolumetricCloudsModelingDef
+044DDD48 VolumetricCloudsWindDef
+044DE280 VolumetricClouds2DLayerDef
+044DE310 Both Volumetric and conventional fog need to be enabled in order for VFog to work
+044DE368 Volumetric Fog Color
+044DE380 0 = No volumetric fog, 1=Thick volumetric fog that completely blocks the background
+044DE3D8 Distance near the camera with no volumetric fog
+044DE408 Replace height fog with volumetric fog up to this distance
+044DE448 Contribution of direct light (sun/moon) to volumetric fog
+044DE488 Contribution of dynamic lights to volumetric fog
+044DE4C0 Contribution of light grids to volumetric fog
+044DE560 Injects Perlin noise to break up the intensity of the fog. The higher the value, the more the noise subtracts from the fog 
+044DE970 VolumetricCloudsLightingDef
+044DEC90 Determines how many particles there are per unit volume.
+044DF0A8 VolumetricCloudsShadowDef
+044DF270 VolumetricCloudsDef
+044DF590 FogBlendFactor
+044DFBC0 textures\volumetricCloudsNoises\hiResClouds.texture
+044DFBF8 textures\volumetricCloudsNoises\lowResClouds.texture
+044DFC30 textures\volumetricCloudsNoises\CurlNoiseFBM.texture
+044DFC68 textures\volumetricCloudsNoises\WeatherMap.texture
+044E53B8 kKeyVolumeMute
+044E53C8 kKeyVolumeDown
+044E53D8 kKeyVolumeUp
+044E5990 Media Volume Mute
+044E59A8 Media Volume Down
+044E59C0 Media Volume Up
+044F1060 Each Shadow is actually a sextant light's shadow: A point light uses a cubemap shadow, so there are 6 render passes for each cube face.
+044F68E8 kOverrideVolume
+044F6928 Override Volume
+044F8C78 VolumeNodeUsage
+044F9160 Optimization for keylight shadow casting. Any models that are all or mostly inside an Indoor volume will not cast shadows, and instead the volume itself will render as a (much cheaper) shadow caster.
+044F9230 Optimization for keylight shadow casting. When the camera is inside a FullyIndoor volume, the keylight and its csm shadows are fully disabled.
+044F92C0 This defines an area where the keylight can enter a kIndoor volume. Any model that intersects the region of light coming through this window will not be flagged as indoors.
+044F9370 Weather particles and wetness effects are blocked within WeatherBlocker volumes, with a small fadeout zone around the edges.
+044F93F0 Emissive blocker volumes can be used to block material emissive output, in conjunction with the material node Emissive Blockers
+044F9470 A PostEffects volume allows many of the Atmosphere attributes to be overridden locally.
+044F94D0 Using the attached material or texture, this volumes tints the color of light that passes through it.
+044F9540 For LightGridCapture - any samples inside a ForceEmbeddedSamples volume will be flagged as embedded regardless of the results of the automatic embedded determination.
+044F95F0 For LightGridCapture - any samples inside an AvoidEmbeddedSamples volume will not be flagged as embedded regardless of the results of the automatic embedded determination.
+044F9730 For LightGridCapture - when samples determine which of their neighbors are visible, this volume will block their line of sight. This can reduce light leaks around windows by keeping samples from blending with their neighbors on the other side of the volume.
+044F9840 For LightGridCapture - when a sample computes its occlusion plane, if one of these volumes is nearby it will ignore all the nearby geometry and instead align itself to the volume's largest side.
+044F9910 Select a volume with this attribute and hit 'Alt + L' to create new LightGrids from all potential grids that intersects the volume, if they do not already exist.
+044F99C0 Select a volume with this attribute and hit 'Shift + Alt + L' to select all LightGrids that intersects the volume.
+044F9A40 Base of volume will set the ground level for distant lighting calculations within the volume.
+044F9AA0 Base of volume will set the mid level for distant lighting calculations within the volume.
+044F9B00 Top of volume will set the roof level for distant lighting calculations within the volume.
+044F9B60 Samples in this volume will be treated as embedded and will not contribute to distant lighting.
+044F9BC0 If set, this volume can be used to block ray-tracing.
+044FC120 The actors in this group will trigger the volume when they enter and leave it.
+044FF578 VolumeAtDistance
+044FF6C0 distance at which VolumedB is still full volume (as if the sound was measured at this distance to get the VolumedB)
+044FF7B8 VolumedB
+045007F0 VolumeA
+045007F8 VolumeB
+04500AF0 max direct attenuation applying to high frequency volume (0 to -100 in dB)
+04500B40 max filter attenuation applying to overall volume (0 to -100 in dB)
+04502710 Amount of time to fade in the post volume after the actor is activated
+04506FB8 SoundVolumeOffsets71
+04507170 Volume offset in dB
+04507290 VolumeOffsets71
+04511000 If this VisualEffect is spawned inside of a ParentInfluence volume, should ParentInfluence be applied over its lifetime?
+04529538 A volume that determines the checkable area.
+04529608 VolumeCheckType
+0452DD70 The volume to test against
+04541FF0 RandPtInVolumesQueryTypeCnt
+04542010 RandPtInVolumesQueryTypeLimit
+045460B8 LightGridFadeTime
+04546118 VolumetricFogLargeNoiseTiling
+04546138 VolumetricFogLargeNoiseSpeed
+04546158 VolumetricFogSmallNoiseTiling
+04546178 VolumetricFogSmallNoiseSpeed
+04546478 VolumetricFogResolution
+04549530 VolumeMax
+04549B28 The maximum number of volumes in the scene
+0454A578 MaxPortalsBetweenTwoVolumes
+0454A5D8 MaxVolumes
+04554280 The transform of the force so that points can be checked to see if they are inside the volume.
+04572678 PCGraphicsSettings_VolumetricLighting_Desc
+045726A8 PCGraphicsSettings_VolumetricLighting
+0459F8F0 VolumeIntroData
+045AA808 GetBreakablesInVolumesAction
+045AA9E8 GetBreakablesInVolumesActionPrius
+045AAA10 Get Breakables in Volumes
+045AE860 Light Distance
+045B9B48 EmergentVORegionVolume
+045BA850 DepthOfFieldVolume
+045BA8D8 DepthOfFieldVolumePrius
+045BAF70 EnterVolumeHunter
+045BAFE0 EnterVolumeTrigger
+045BEAD0 InteractLocationVolumeOffer
+045BF390 SetOfferVolumeAction
+045BF4B0 SetOfferVolumeActionPrius
+045BF4D0 Set Offer Volume
+045C5740 VolumeFitToSpace
+045C59D8 VolumeFitToSpacePrius
+045C59F0 void __cdecl VolumeFitToSpace::UpdateFirst(float)
+045C5C90 VolumeHunter
+045C5CA0 VolumeHunter::DoImmediateCheckAtActorLocation
+045C5CD0 BatchComponentUpdateMiddle< VolumeHunter >
+045CE7B8 DamageVolume
+045CE820 DamageVolumeTimedEnable
+045CECD0 DamageVolumeAttached
+045CED60 DamageVolumeCylinder
+045CEFE8 DamageVolumeScriptAction
+045CF288 DamageVolumeScriptActionPrius
+045CF2A8 Damage Volume Controller
+045D0EF0 DebugDrawVolumeActionPrius
+045D0F10 Draw Debug Volume
+045D13A8 DebugDrawVolumeAction
+045D4248 Los Blocker Volume & Line Database
+045D4270 Los Blocker Volume Database
+045DA4C0 KillVolume
+045DA748 KillVolumePrius
+045DA758 Kill Volume
+045DD698 Gameplay Built Volume SphereDB Handles
+045DD7E0 Gameplay Built Volume DB
+045DD800 GameplayBuiltVolumeSystem
+045E02A8 InteractLocationVolume
+045E4958 GetKickablesInVolumesAction
+045E4AA0 GetKickablesInVolumesActionPrius
+045E4AC8 Get Kickables In Volumes
+045EF5C8 MoverConstraintVolume
+045F45E8 SceneObjectCollector: Volume Query
+045FC8B0 FogOfWarSystem::m_VisitedFogCells
+04603F60 PortalOverrideVolume
+04604188 PortalOverrideVolume::m_ExitPortals
+0460ADC8 OnEnterVolumeAction
+0460B2D8 OnEnterVolumeActionPrius
+0460B2F8 On Enter Volume
+0460B481 %s Entered A Volume For Script Action %x On Frame %d
+0460B4B9 %s Exited A Volume For Script Action %x On Frame %d
+0460C9F0 RandomPointInVolumeAction
+0460CA70 ClosestPointInVolumeAction
+0460D608 RandomPointInVolumeActionPrius
+0460D628 Random Point In Volume
+0460D6B0 ClosestPointInVolumeActionPrius
+0460D6D0 Closest Point In Volume
+0460D970 void __cdecl RandomPointInVolumeAction::HandleSignal(unsigned int,class ScriptActionHandle)
+0460E548 OnVolumeHunterEnterVolumeAction
+0460E5D8 OnVolumeHunterEnterVolumeActionPrius
+0460E600 On Hero Enter Volume
+0460E618 OnVolumeHunterEnterVolume
+0460E7B8 TogglePostVolumesScriptAction
+0460E848 TogglePostVolumesScriptActionPrius
+0460E870 TogglePostVolumes
+046221A8 StatusEmitterVolume
+0462A808 Generic Volume Actor
+0462B4C0 FogOfWarSystem
+0462B4D0 FogOfWarSystem DDL
+0462D030 DebugVolumeComponent
+0462D238 DebugVolumeComponentPrius
+04637678 All the EmergentVORegionVolumes the hero is currently inside
+04637940 kSimpleEnterVolumes
+04637958 SimpleEnter Volume Data
+0463EDA8 AudioMasterVolume
+0463EDC0 AudioMusicVolume
+0463EDD8 AudioSpeechVolume
+0463EDF0 AudioSFXVolume
+0463EE00 AudioUIVolume
+046438F0 FogOfWarSavedMapArea
+04643908 FogOfWarSystemSave
+04649EC8 A target must be in this volume/area for us to look at them.
+04649F10 If no awareness volume/area is given, we'll use this range value.
+046525F8 PreferVolumeSwitch
+046526A8 RatingVolumeWeight
+04656398 VolumeIntroDataPrius
+04656828 FaceVolumeOrientation
+04657F00 VolumeTargetingPrius
+0465FCA0 ActivationVolume
+0465FF68 Activation Volume (optional)
+04668290 EmergentVORegionVolumePrius
+04668F10 EnterVolumeTriggerPrius
+04668F48 Trigger any time this volume is entered
+04668F70 Trigger only the first time this volume is entered
+04669070 Trigger any time this volume is exited
+04669098 Trigger only when this volume is completely empty
+0466C268 kVolume
+0466C290 Model from Volumes
+04673120 Instead of the above radius range, use the volume for the range. Note: this actor should be a volume actor and not a model actor then.
+0467C4C0 DamageVolumePrius
+0467C4D8 DamageVolumeCylinderPrius
+0467C4F8 DamageVolumeAttachedPriusData
+0467C518 DamageVolumeAttachedPrius
+0467CDC0 Cylinder goes from this locator to EndLocator.  Cylinder will use DamageVolumePrius::Radius.
+0467F178 SimpleEnterVolumePrius
+04680FC8 SquashVolume
+046812B0 Squash Volume
+04681FB0 OpenVolume
+04681FC0 CloseVolume
+04682118 Open Volume
+04682128 Close Volume
+04682E88 ConveyorStartVolume
+04682EA0 ConveyorStopVolume
+04683098 Start Volume
+046830A8 Stop Volume
+04683520 CallVolume
+04683600 If a hero enters this call volume, the platform will be called to this stop.
+04683650 If a hero is inside the squash volume, the platform will stop so as to not squish them.
+046836B0 The minimum distance from the squash volume to stop at if there is a hero in the squash volume.
+046837E8 (Opt) Call Volume
+04683800 (Opt) Squash Volume
+04683C80 InteractLocationVolumeOfferPrius
+04684710 InteractVolumeLocator
+046874C0 InteractVolume
+046874D0 ExitVolume
+046875A0 InteractLocationVolumePrius
+04687640 Optional exit volume, replaced by InteractVolume if not set.
+046876D0 Interact Volume
+046876E0 Exit Volume
+04688850 Interact Location Volume
+0468E2B0 EncompassingVolume
+0468E440 Volume or actor group of volumes that encompasses scene objects to query
+0468E4C0 Max volumes to collect
+0468E660 Encompassing Volume
+0468E698 Max Volumes
+04694690 PortalOverrideVolumePrius
+04694C10 When inside the volume, clip geo beyond the +/-z planes defined by this volume.
+04694C60 Optional list of portals to use to exit this volume.
+0469A488 Volumes Only
+046A1350 Volume (linked in the prius)
+046A1EA0 Shape used for the trigger test volume
+046A1FE0 Offset of volume
+046A2078 If the shape is set to volume, it will just use this volume
+046A87C0 Atmosphere we start with at start of volume
+046A87F0 Atmosphere we end with at end of volume
+046A8818 Set the atmosphere to source as long as in volume
+046C0250 How this material affects overall intensity, i.e. volume. 1 to mute completely, 0 to leave unaffected.
+046E76B0 VolumeFitToSpaceEvent
+046E7738 MaxVolumeSize
+046ECC18 DamageVolumeWarmupEvent
+046ECEF8 EnableDamageVolumeEvent
+046ED300 DisableDamageVolumeEvent
+0470D730 ActorGroup of actors with Volume scene objects.  This is the area the recipient will be confined to.
+0474E2B8 kLightDistance
+04756168 SetVolume
+04756178 OnSetVolume
+047588A0 The volume for the overlap end volume. Only used for the blend smoothing type.
+04758E00 DamageVolumes
+04758E10 Damage Volumes
+0476CCA0 Volumes to check
+0476FEA0 Last actor/actors to exit the volume
+0476FEC8 Volume that generated the last signal
+0476FEF0 Set of Actors from Watch that are INSIDE the volume
+047744C8 Volume from which to generate the point
+04774B20 The point chosen will be the closest in the volume(s) to this point
+04774FD0 Alternative to using actor volumes for Start and End. Relative translation distance to move.
+04775030 Alternative to using actor volumes for Start and End. Relative rotation to move.
+0477D0A8 OnHeroEnterVolumeUsesActorPosition
+0477D200 GameplayBuiltVolumeMaxBuiltZones
+0477D228 GameplayBuiltVolumeMaxBuilttVolumes
+0478DE20 Disable physics on projectiles entering the target volume
+0479C260 StatusEmitterVolumePrius
+047B6A38 Fog color
+047B6A48 Fog key light influence
+047B6A60 Fog height 0
+047B6A70 Fog height 1
+047B6A80 Fog height 2
+047B6A90 Fog height 3
+047B6AA0 Fog height 4
+047B6AB0 Fog luminance scale
+047B6AC8 Fog near radius
+047B6AD8 Fog opacity 0
+047B6AE8 Fog opacity 1
+047B6AF8 Fog opacity 2
+047B6B08 Fog opacity 3
+047B6B18 Fog opacity 4
+047B6B28 Fog S-Curve Strength
+047B6B40 Fog S-Curve Center
+047B6B58 Fog color map depth range
+047B6B78 Fog color map depth scale
+047B6BE0 Light shaft sort distance
+047B6F90 Volumetric Fog Opacity
+047B6FA8 Volumetric Fog Bottom Height
+047B6FC8 Volumetric Fog Top Height
+047B6FE8 Volumetric Fog Near Distance
+047B7008 Volumetric Fog Far Distance
+047B7028 Volumetric Fog Sun-Light Scale
+047B7048 Volumetric Fog Lights Scale
+047B7068 Volumetric Fog GI Scale
+047B7080 Volumetric Fog Noise Vertical Speed
+047B70A8 Volumetric Fog Noise Wind Speed
+047B70C8 Volumetric Fog Noise Scale
+047B74A8 Fog Blend Factor
+047C64D8 FogSettings
+047C64E8 VolumetricFogSettings
+047C65D8 VolumetricClouds
+047C6988 Height Fog Settings
+047C69A0 Volumetric Fog Settings
+047D7560 kWeatherFogColor
+047D7578 kWeatherFogKeyLightInfluence
+047D7598 kWeatherFogHeight0
+047D75B0 kWeatherFogHeight1
+047D75C8 kWeatherFogHeight2
+047D75E0 kWeatherFogHeight3
+047D75F8 kWeatherFogHeight4
+047D7610 kWeatherFogLuminanceScale
+047D7630 kWeatherFogNearRadius
+047D7650 kWeatherFogOpacity0
+047D7668 kWeatherFogOpacity1
+047D7680 kWeatherFogOpacity2
+047D7698 kWeatherFogOpacity3
+047D76B0 kWeatherFogOpacity4
+047D7718 kWeatherFogRemapStrength
+047D7750 kWeatherFogRemapKeyOpacity
+047D7770 kWeatherFogColorMapDepthRange
+047D77D0 kWeatherFogColorMapDepthScale
+047D7860 kWeatherLightShaftSortDistance
+047D7D80 kWeatherVolumetricFogColor
+047D7DA0 kWeatherVolumetricFogOpacity
+047D7DC0 kWeatherVolumetricFogBottomHeight
+047D7DE8 kWeatherVolumetricFogTopHeight
+047D7E08 kWeatherVolumetricFogNearDistance
+047D7E30 kWeatherVolumetricFogFarDistance
+047D7E68 kWeatherVolumetricFogSunLightScale
+047D7EA0 kWeatherVolumetricFogLightsScale
+047D7EC8 kWeatherVolumetricFogGIScale
+047D7F10 kWeatherVolumetricFogNoiseVSpeed
+047D7F38 kWeatherVolumetricFogNoiseSpeed
+047D7F58 kWeatherVolumetricFogNoiseScale
+047D86D8 kWeatherCloudsFogBlendFactor
+047D9090 Fog: Color
+047D90A0 Fog: Key Light Influence
+047D90C0 Fog: Height0
+047D90D0 Fog: Height1
+047D9100 Fog: Height2
+047D9140 Fog: Height3
+047D9150 Fog: Height4
+047D9160 Fog: Brightness
+047D9170 Fog: NearRadius
+047D9180 Fog: Opacity0
+047D9190 Fog: Opacity1
+047D91A0 Fog: Opacity2
+047D91B0 Fog: Opacity3
+047D91C0 Fog: Opacity4
+047D91D8 Fog: S-Curve Strength
+047D91F0 Fog: S-Curve Center
+047D9208 Fog: ColorMap Depth Range
+047D9228 Fog: ColorMap Depth Scale
+047D9290 Light Shaft: SortDistance
+047D9650 Vol Fog: Color
+047D9660 Vol Fog: Opacity
+047D9678 Vol Fog: Bottom Height
+047D96B0 Vol Fog: Top Height
+047D96C8 Vol Fog: Near Distance
+047D96E0 Vol Fog: Far Distance
+047D96F8 Vol Fog: Direct Light Scale
+047D9718 Vol Fog: Lights Scale
+047D9730 Vol Fog: GI Scale
+047D9748 Vol Fog: Noise Vertical Speed
+047D9768 Vol Fog: Noise Wind Speed
+047D9788 Vol Fog: Noise Scale
+047DA0C0 Clouds: Fog Blend Factor
+047E6518 AnyModelOrVolumeActor
+047E65E0 Each tuid should be a reference to a volume
+047E6640 Link to any model or volume that is also an actor
+047E7F88 VolumeShape
+047E8FE0 Impostor Volume
+047E9164 volume
+047ED4C8 VolumetricFogIntensity
+047ED6C0 VolumeLinks
+047EDFE0 The linear value converted from the above sRGB <i>Color</i> is set to this intensity (luminance) for the final linear HDR color of the light. This luminance falls off according to 1 / (1 + distance^2)
+047EE400 How much this specific light contributes to volumetric fog
+047EE4F0 A modulate light can be one of several volumes. Falloffs are adjusted on the 6 cardinal axes (+-X, +-Y, +-Z) of the volume.
+047EE810 <b>No Shadows</b>: The light casts no shadows, no geometry will occlude this light.<br><b>Cache Static Models</b>: Default behavior. When the light isn't animating, all static casters are cached for performance.<br><b>Only Static Models</b>: Cheap option for placed lights. Static models will cast shadows but dynamic ones won't. On most frames no work needs to be done to render the shadow map.<br><b>Only Dynamic Models</b>: Useful for optimizing cinematic lighting when you only care about the shadows from the actors in the shot.
+047EEA30 <b><i>Optimization:</i></b> Higher resolutions gain detail, however have a higher fill-rate performance cost. Regardless of the setting, shadow res reduces further into the distance. If this setting is insufficient, check the following:<br><b>Scene Light Count</b> If there are more shadowing lights than memory can bear, all shadows will be downres'ed until all fit.<br><b>Light Angle</b> A shadow map must cover the entirety of the lit area, so wide angles on spot lights, or point lights that affect a great area will see their effective shadow resolution decrease as it's spread thinner over a greater area.<br><b>Note:</b> Point lights actually generate 6 shadow maps, one for each cardinal axis direction/face of a cube, so they are 6x the cost of a spot light in terms of shadow cost.
+047EF3E0 Normally light emanates from a single point however it can be useful to ignore the micro-occlusions of light fixture geometry.<br>To support this, the cut on distance defines when lighting starts. The volume between the light's origin and this dead zone has no lighting. e.g. for a spot light, this would truncate the cone's tip. The transition between not-lit and lit is sharp and abrupt - there is no graceful fade-in.
+047EF590 Defines where the light's shadow starts. Geometry closer to the light will not cast a shadow.<br>Shadows will start at the light cut on distance if that is further than the shadow cut on distance so geometry that is not lit cannot cast shadows.
+047EF690 Light luminance is at 100% inside the green volume and fades to 0% towards the white volume.
+047EF6F0 <b><i>Optimization:</i></b> The distance to the front of the light's bounding sphere when the light will fade out and then be culled/not drawn.
+047EF780 When the light's center is this distance from the camera, the light's intensity will be fully faded to zero. This can be set to a negative distance to make the light dim when you're close to it, but not fully disappear.
+047EF860 When the light's center is this distance from the camera, the light's intensity will start to fade down toward zero. A value of 0 (the default) disables near fading.
+047EF910 <b><i>Optimization:</i></b> After this distance, the light's shadows will fade out and no longer be evaluated.
+047EF980 <b><i>Optimization:</i></b> After this distance, the light will behave as a diffuse-only light.
+047EFA70 <b><i>Optimization:</i></b> Link to a volume to more accurately clip lighting to local geometry, especially in cases when <i>Skip Shadows is checked</i>. Define a separate volume instance that covers all surfaces that might be appropriately lit by this light. Name it appropriately, then return to the light's <i>VolumeLink</i>. Select the well-named volume from the pull-down. <b><i>Note:</i></b> Currently only one volume is supported.
+047EFDD8 Volumetric Fog Intensity
+047F8D90 VolumeNodeShape
+047F9100 RenderLights
+047F9110 RenderVolumes
+047F9130 PointVolumeSize
+047F9D08 RenderLightShells
+047F9D68 RenderLightsOnlyFromSelection
+047FCDB8 kVolumeBounds
+047FD538 VolumeEngineItem
+048020E0 Geometry with this material is not rendered during lightgrid or envprobe capture.
+0480A930 If enabled, this render an additional linear-depth only pass to improve lighting artifacts that may occur from noisy hyper depth output by overriding it with the original model's depth.
+048109C0 If set, the model will not render into env probes or light grid GI.
+04810A10 If set, the model will only render into env probes and light grid GI.
+04813668 kVolumePlanar
+0481B2F0 OutlinedVolumeType
+0481B320 VisVolumeBounds
+0481B3A8 VisActorVolumes
+0481B3C8 VisAreaVolumes
+0481B3D8 VisCombatVolumes
+0481B3F0 VisTriggerVolumes
+0481B4D0 LightBoundsRenderMode
+0481B660 VisLightGridVolumes
+0481B778 VisNavVolumes
+0481E780 SelectedVolumesHighlight
+0481E960 SelectVolumesByEdge
+04846910 VolumetricFogScale
+04849068 VolumeDef
+04849FE0 The texture or material asset that defines how light is tinted when it passes through the volume
+0484A050 The ramp in distance (in meters) for the tinting effect to reach full strength. This can smooth out artifacts right at the edge of the volume
+0484A150 If checked, the volume will orient itself to face each light source. This can be useful when simulating light passing through a thick medium like smoke
+0484A4A0 VolumetricCloudsSettings
+0484A880 Settings from this atmosphere will be applied to unmodified post volume values.
+0484A8D0 Scales the weight of this post volume.
+04853CA0 FlockingVolumePrius
+04854848 MaxActivatedVolumeNum
+04854F90 No volume farther than this distance from the hero may be active. Closer volumes will still be preferred.
+04855000 Multiply the distance from the query center (either camera pos or a distance in front of the camera) by this coeff to compute the distance score for a volume. The lower the total score (distance score + angle score), the more likely a volume will be picked.
+04855110 Multiply this coeff by 1 - cos^2( angle between camera forward and volume offset ) to compute the angle score. For the non-mathematically-inclined, higher values of this means higher angles have higher scores. The lower the total score (distance score + angle score), the more likely a volume will be picked.
+04855250 Only activate volume when it is not in field of view extended from the camera in cone with this angle.
+048552C0 If the hero is moving more slowly than this, then apply a bias to spawned volumes (so that they don't despawn unless there is one MUCH better.)
+04855350 If the hero is moving slowly, then apply this penalty to all inactive volumes. (So that active volumes will tend to stick around.)
+04855610 Max force that a boundary applies to a flock member when the flock member is at or beyond the boundary of the flocking volume.
+04855850 When picking a new destination, don't pick a destination within this distance of a volume boundary.
+048690A8 HCL_CONSTRAINTSET_VOLUME
+04869280 HCL_CONSTRAINTSET_VOLUME_MX
+04871158 hclVolumeConstraint
+048726D0 hclVolumeConstraint::FrameData
+04872B80 hclVolumeConstraint::ApplyData
+048741A0 hclVolumeConstraintMx
+04877068 hclVolumeConstraintMx::FrameBatchData
+04877590 hclVolumeConstraintMx::FrameSingleData
+04877858 hclVolumeConstraintMx::ApplyBatchData
+04877BB8 hclVolumeConstraintMx::ApplySingleData
+0487BF58 Cloth Sim - Volume Transforms
+0487CBF0 Volume Constraints
+0487CC08 TtVolume Constraints
+0487CC70 Volume Constraints MX
+0487CC88 TtVolume Constraints MX
+048A2840 hclVolumeConstraintFrameData
+048A2860 hclVolumeConstraintApplyData
+048A3028 fogDensity
+048A3860 referenceShapeVolume
+048A38D0 splitLargestVolumesFirst
+048A72A0 boundingVolumeData
+048B6B18 hclVolumeConstraintSetupObject
+048C1E40 hclVolumeConstraintSetupObject_0_to_1
+048C1EA0 hclVolumeConstraint_0_to_1
+048C3CA0 hclVolumeConstraintMxFrameBatchData
+048C3CF0 hclVolumeConstraintMxFrameSingleData
+048C3D40 hclVolumeConstraintMxApplyBatchData
+048C3D90 hclVolumeConstraintMxApplySingleData
+048DFB10 triggerVolumeType
+048DFB50 triggerVolumeTolerance
+048F9480 centerOfMassAndVolume
+04905558 hknpHeightFieldBoundingVolume
+049065B0 boundingVolumeData_old
+04918CE8 refitBoundingVolumeAfterStep
+049192F8 hkEnum< hknpCompoundShapeBoundingVolumeType::Enum, hkUint8 >
+04923880 The header specifies both the VOLUME and CUBEMAP flags.
+04923930 The image is both an array and volume texture. This is not supported.
+049239D0 The image is both a cubemap and volume texture. This is not supported.
+0494A310 hknpCompoundShapeBoundingVolumeType::Enum
+0495AB18  com&volume=
+04A18238 controlData.LoadVolumeOff
+04A18260 controlData.LoadVolumeOn
+04A18378 UpdateParams.Volume
+04A188F0 StartVolume
+04A18900 EndVolume
+04A3DA38 BuildBoundingVolume
+04A3DA50 TtBuildBoundingVolume
+0511D2EA BinkSetSpeakerVolumes
+05121762 ?RegisterBusVolumeCallback@SoundEngine@AK@@YA?AW4AKRESULT@@KP6AXPEAUAkSpeakerVolumeMatrixCallbackInfo@@@Z@Z
+0512251C ?SetGameObjectOutputBusVolume@SoundEngine@AK@@YA?AW4AKRESULT@@_K0M@Z
+0512290C ?SetOutputVolume@SoundEngine@AK@@YA?AW4AKRESULT@@_KM@Z
+05122ECD ?SetVolumeThreshold@SoundEngine@AK@@YA?AW4AKRESULT@@M@Z
+05126B28 ?OnAudioStreamVolumeChanged@IViewListener@cohtml@@UEAAXHM@Z
+05127F10 GetVolumePathNameW
+05127F26 GetVolumeNameForVolumeMountPointW
+05E0BA70 .?AVhclVolumeConstraint@@
+05E0BAA0 .?AVhclVolumeConstraintMx@@
+05E0D0A0 .?AVhclSimVolumeTransformsViewer@@
+05E0D730 .?AVhclVolumeConstraintInstanceData@@
+05E0D768 .?AVhclVolumeConstraintMxInstanceData@@
+05E18C18 .?AUhknpHeightFieldBoundingVolume@@
+05E1CD78 .?AVDisableCrittersVolume@@
+05E1CDA8 .?AVDisableCrittersVolumePrius@@
+05E1CEB8 .?AVDisableFlockingVolume@@
+05E1CEE8 .?AVDisableFlockingVolumePrius@@
+05E1D000 .?AVScriptedFlockingVolume@@
+05E1D610 .?AVBossAttackVolume@@
+05E1D6D0 .?AVBossVolumeHunter@@
+05E1D758 .?AVFinaleMechBossVolumeHunter@@
+05E1D790 .?AVNefariousBossVolumeHunter@@
+05E1D7C0 .?AVBossAttackVolumeSetupScriptAction@@
+05E1D7F8 .?AVBossAttackVolumeSetupScriptActionPrius@@
+05E22C28 .?AVClankBotDoorDeathVolume@@
+05E22C58 .?AVClankBotDoorDeathVolumePrius@@
+05E25FF0 .?AVDamageVolume@@
+05E28348 .?AVSheepVolumeSpawnData@@
+05E2AB40 .?AVCameraConfigVolume@@
+05E2AB70 .?AVCameraContextVolume@@
+05E2B9E0 .?AVCrowdSpawnerDisallowVolume@@
+05E2BA18 .?AVCrowdSpawnerDisallowVolumePrius@@
+05E2C570 .?AVHoverbootBoostVolumePrius@@
+05E2C5A0 .?AVHoverbootBoostVolume@@
+05E2C630 .?AVMagbootDismountVolume@@
+05E2C660 .?AVMagbootDismountVolumePrius@@
+05E2C698 .?AVMagbootLaunchHintVolume@@
+05E2C6C8 .?AVMagbootModifierVolume@@
+05E2C6F8 .?AVMagbootModifierVolumePrius@@
+05E2C860 .?AVRadarVolume@@
+05E2CC60 .?AVNoPortalRespawnSystemVolume@@
+05E2CC98 .?AVNoPortalRespawnSystemVolumePrius@@
+05E2CD58 .?AVNoSafePositionVolume@@
+05E2CD88 .?AVNoSafePositionVolumePrius@@
+05E2CDB8 .?AVNoSwimVolume@@
+05E2CDE0 .?AVNoSwimDiveVolume@@
+05E2CE08 .?AVAllowSwimDiveVolume@@
+05E2CE38 .?AVNoSwimVolumePrius@@
+05E2CE60 .?AVNoSwimDiveVolumePrius@@
+05E2CE90 .?AVAllowSwimDiveVolumePrius@@
+05E2CEC0 .?AVObjectiveFocusVolume@@
+05E2D2C0 .?AVPoolSharkSpawnKillVolume@@
+05E308A0 .?AVRespawnControlVolume@@
+05E308D0 .?AVRespawnControlVolumePrius@@
+05E49898 .?AVAutoCheckpointVolume@@
+05E49A88 .?AVHelmetVolume@@
+05E49AB0 .?AVNoMagbootVolume@@
+05E49AD8 .?AVGrindGapVolume@@
+05E49B00 .?AVNoGrindTransferVolume@@
+05E49B30 .?AVGrindHazardVolume@@
+05E49B58 .?AVGrindCameraOverrideVolume@@
+05E49B88 .?AVPassiveIdleVolume@@
+05E49BB0 .?AVNoWallMechanicsVolume@@
+05E49BE0 .?AVNoAutoGlideVolume@@
+05E49C08 .?AVFallingRespawnVolume@@
+05E49C38 .?AVHelmetVolumePrius@@
+05E49C60 .?AVNoMagbootVolumePrius@@
+05E49C90 .?AVGrindGapVolumePrius@@
+05E49CC0 .?AVNoGrindTransferVolumePrius@@
+05E49CF8 .?AVGrindHazardVolumePrius@@
+05E49D28 .?AVGrindCameraOverrideVolumePrius@@
+05E49D60 .?AVPassiveIdleVolumePrius@@
+05E49D90 .?AVFallingRespawnVolumePrius@@
+05E49DC0 .?AVNoWallMechanicsVolumePrius@@
+05E49DF8 .?AVNoAutoGlideVolumePrius@@
+05E49EB8 .?AVMovingSurfaceOverrideVolume@@
+05E49EF0 .?AVMovingSurfaceOverrideVolumePrius@@
+05E49F80 .?AVSkyDiveVolume@@
+05E49FA8 .?AVSkyDiveVolumePrius@@
+05E4FA98 .?AV?$DDLScoped@VSkyDiveVolumePrius@@@@
+05E51A30 .?AVHeroCrouchVolume@@
+05E51A58 .?AVHeroCrouchVolumePrius@@
+05E54DD8 .?AVArachnodroidCameraVolume@@
+05E54E08 .?AVArachnodroidCameraVolumePrius@@
+05E55D30 .?AVObjectiveVolume@@
+05E56970 .?AVPlanetMapOverrideVolume@@
+05E569A0 .?AVPlanetMapOverrideVolumePrius@@
+05E56E98 .?AVClankPuzzleFanBlowVolume@@
+05E56EC8 .?AVClankPuzzleFanBlowVolumePrius@@
+05E57090 .?AVGetPuzzleVolumeInfoAction@@
+05E570F8 .?AVGetPuzzleRecallVolumesAction@@
+05E57130 .?AVRecallPuzzleVolumesAction@@
+05E57160 .?AVRemovePuzzleVolumeDataFromTargetAction@@
+05E571D8 .?AVPuzzleTargetLatestVolumeAction@@
+05E57210 .?AVCheckPuzzleVolumeTrackerAction@@
+05E57248 .?AVCheckPuzzleVolumeAction@@
+05E572F0 .?AVCheckPuzzleVolumeTypeAction@@
+05E57328 .?AVOnClankPuzzleVolumeEndAction@@
+05E573D0 .?AVGetPuzzleVolumeInfoActionPrius@@
+05E57440 .?AVGetPuzzleRecallVolumesActionPrius@@
+05E57478 .?AVRecallPuzzleVolumesActionPrius@@
+05E574B0 .?AVRemovePuzzleVolumeDataFromTargetActionPrius@@
+05E57530 .?AVPuzzleTargetLatestVolumeActionPrius@@
+05E57570 .?AVCheckPuzzleVolumeTrackerActionPrius@@
+05E575B0 .?AVCheckPuzzleVolumeActionPrius@@
+05E57678 .?AVCheckPuzzleVolumeTypeActionPrius@@
+05E576B0 .?AVOnClankPuzzleVolumeEndActionPrius@@
+05E57820 .?AVClankPuzzleVolume@@
+05E57848 .?AVClankPuzzleVolumePrius@@
+05E57878 .?AVClankPuzzleVolumeEffect@@
+05E578A8 .?AVClankPuzzleVolumeEffectPrius@@
+05E578E0 .?AVClankPuzzleVolumeEnd@@
+05E57910 .?AVClankPuzzleVolumeTracker@@
+05E57940 .?AVClankPuzzleVolumeTrackerPrius@@
+05E58BC8 .?AVGetActorsInVolumeScriptAction@@
+05E5AD90 .?AVProximitySpawnerGlobalExclusionVolume@@
+05E5ADD0 .?AVProximitySpawnerGlobalExclusionVolumePrius@@
+05E602B8 .?AVScriptedFlockingVolumePrius@@
+05E60358 .?AVBossAttackVolumePrius@@
+05E627E0 .?AVDamageVolumePrius@@
+05E63098 .?AVCameraConfigVolumePrius@@
+05E630C8 .?AVCameraContextVolumePrius@@
+05E630F8 .?AVCameraContextBlendVolumePrius@@
+05E63B38 .?AVMagbootLaunchHintVolumePrius@@
+05E63BD8 .?AVRadarVolumePrius@@
+05E63C98 .?AVObjectiveFocusVolumePrius@@
+05E640D0 .?AVPoolSharkSpawnKillVolumePrius@@
+05E651B8 .?AVAutoCheckpointVolumePrius@@
+05E65F00 .?AVMatOverrideVolumePrius@@
+05E665E8 .?AVObjectiveVolumePrius@@
+05E66C58 .?AVClankPuzzleVolumeEndPrius@@
+05E6F808 .?AVGrindVolumeApproachData@@
+05E73B60 .?AVFlockingVolumesMaxExceededDevstatsEvent@@
+05E78CD0 .?AVDevstatsPlayerPosInfoGame@@
+05E81050 .?AVClankPuzzleVolumeInteractEventBase@@
+05E81090 .?AVClankPuzzleVolumeInteractOnEnterEvent@@
+05E810D0 .?AVClankPuzzleVolumeInteractOnExitEvent@@
+05E81110 .?AVClankPuzzleVolumeInteractOnFadeInCompleteEvent@@
+05E81160 .?AVClankPuzzleVolumeInteractOnFadeOutCompleteEvent@@
+05E811B0 .?AVClankPuzzleVolumeInteractOnHoldCompleteEvent@@
+05E811F8 .?AVClankPuzzleVolumeFilterChangeEvent@@
+05E81238 .?AVClankPuzzleVolumeActivateEvent@@
+05E81270 .?AVClankPuzzleVolumeTargetEnterEvent@@
+05E812A8 .?AVClankPuzzleVolumeTargetExitEvent@@
+05E812E0 .?AVClankPuzzleVolumeTrackerEnterEvent@@
+05E81320 .?AVClankPuzzleVolumeTrackerExitEvent@@
+05E814A8 .?AVClankPuzzleVolumeThrown@@
+05E814D8 .?AVClankPuzzleVolumeLanded@@
+05E81618 .?AVClankPuzzleVolumeEndAddEntryEvent@@
+05E81650 .?AVClankPuzzleVolumeEndRemoveEntryEvent@@
+05E81690 .?AVClankPuzzleVolumeEndCompleteEvent@@
+05E85C10 .?AVQueryVolumeShape@@
+05E85C38 .?AVQueryVolumeShapeSphere@@
+05E85C68 .?AVQueryVolumeShapeCube@@
+05E85C98 .?AVQueryVolumeShapeCone@@
+05E85CC8 .?AVQueryVolumeShapeCylinder@@
+05E85CF8 .?AVQueryVolumeShapeEllipsoid@@
+05E85D28 .?AVGetActorsInVolumeScriptActionPrius@@
+05E86AD8 .?AVActorVolumeAction@@
+05E86DE0 .?AVActorVolumeActionPrius@@
+05E8ACD0 .?AU?$ConstantBufferInstance@UGlobalVolumeFlagCB@@@@
+05E8E610 .?AU?$ConstantBufferInstance@UVolumeCasterCB@@@@
+05E8E660 .?AU?$ConstantBufferInstance@UVolumeCloudsCB@@@@
+05E8EE10 .?AU?$ConstantBufferInstance@UVolumetricFogScatteringCB@@@@
+05E8EEA0 .?AU?$ConstantBufferInstance@UVolumetricCloudsCB@@@@
+05E8EEF0 .?AU?$ConstantBufferInstance@UVolumetricCloudScreenSizeCB@@@@
+05E8EF40 .?AU?$ConstantBufferInstance@UVolumetricCloudsDepthCB@@@@
+05E93430 .?AVSetLightGridFadeTimeAction@@
+05E93580 .?AVSetLightGridFadeTimeActionPrius@@
+05E945C0 .?AVFadeMasterVolumeAction@@
+05E94648 .?AVFadeMasterVolumeActionPrius@@
+05E94D70 .?AVParentInfluenceVolumeSystem@@
+05E94E80 .?AVPostVolumeComponent@@
+05E94EB0 .?AVPostVolumeComponentPrius@@
+05E96678 .?AVSoundVolumeOffsets71@@
+05EA08A8 .?AVVolumeIntroData@@
+05EA12F0 .?AVGetBreakablesInVolumesAction@@
+05EA1398 .?AVGetBreakablesInVolumesActionPrius@@
+05EA31F8 .?AVEmergentVORegionVolume@@
+05EA3390 .?AVDepthOfFieldVolume@@
+05EA33C0 .?AVDepthOfFieldVolumePrius@@
+05EA34B8 .?AVEnterVolumeHunter@@
+05EA34E0 .?AVEnterVolumeTrigger@@
+05EA38B0 .?AVInteractLocationVolumeOffer@@
+05EA3938 .?AVSetOfferVolumeAction@@
+05EA3998 .?AVSetOfferVolumeActionPrius@@
+05EA4878 .?AVVolumeFitToSpace@@
+05EA48A0 .?AVVolumeFitToSpacePrius@@
+05EA48D0 .?AVVolumeHunter@@
+05EA63E8 .?AVDamageVolumeTimedEnable@@
+05EA6418 .?AVDamageVolumeAttached@@
+05EA6448 .?AVDamageVolumeCylinder@@
+05EA6478 .?AVDamageVolumeScriptAction@@
+05EA64A8 .?AVDamageVolumeScriptActionPrius@@
+05EA6748 .?AVDebugDrawVolumeAction@@
+05EA6938 .?AVDebugDrawVolumeActionPrius@@
+05EA7F40 .?AVKillVolume@@
+05EA7F68 .?AVKillVolumePrius@@
+05EA8390 .?AV?$GameplayBuiltVolumeSystem@USimpleEnterVolumeBuilt@@@@
+05EA8888 .?AVInteractLocationVolume@@
+05EA8FB0 .?AVGetKickablesInVolumesAction@@
+05EA9028 .?AVGetKickablesInVolumesActionPrius@@
+05EAA710 .?AVMoverConstraintVolume@@
+05EAD398 .?AVPortalOverrideVolume@@
+05EAE468 .?AVOnEnterVolumeAction@@
+05EAE608 .?AVOnEnterVolumeActionPrius@@
+05EAEC58 .?AVRandomPointInVolumeAction@@
+05EAEC88 .?AVClosestPointInVolumeAction@@
+05EAEF38 .?AVRandomPointInVolumeActionPrius@@
+05EAEF70 .?AVClosestPointInVolumeActionPrius@@
+05EAF238 .?AVOnVolumeHunterEnterVolumeAction@@
+05EAF270 .?AVOnVolumeHunterEnterVolumeActionPrius@@
+05EAF318 .?AVTogglePostVolumesScriptAction@@
+05EAF350 .?AVTogglePostVolumesScriptActionPrius@@
+05EB13F8 .?AVStatusEmitterVolume@@
+05EB26D0 .?AVFogOfWarSystem@@
+05EB2AE8 .?AVDebugVolumeComponent@@
+05EB2E10 .?AVDebugVolumeComponentPrius@@
+05EB5220 .?AVVolumeIntroDataPrius@@
+05EB5300 .?AVVolumeTargetingPrius@@
+05EB6030 .?AVEmergentVORegionVolumePrius@@
+05EB60F8 .?AVEnterVolumeTriggerPrius@@
+05EB73E8 .?AVDamageVolumeCylinderPrius@@
+05EB7418 .?AVDamageVolumeAttachedPriusData@@
+05EB7450 .?AVDamageVolumeAttachedPrius@@
+05EB7528 .?AVSimpleEnterVolumePrius@@
+05EB7868 .?AVInteractLocationVolumeOfferPrius@@
+05EB79E0 .?AVInteractLocationVolumePrius@@
+05EB8488 .?AVPortalOverrideVolumePrius@@
+05EBEC08 .?AVVolumeFitToSpaceEvent@@
+05EBF0D0 .?AVDamageVolumeWarmupEvent@@
+05EBF100 .?AVEnableDamageVolumeEvent@@
+05EBF130 .?AVDisableDamageVolumeEvent@@
+05EC7280 .?AVStatusEmitterVolumePrius@@
+05EC9C60 .?AVFlockingVolumePrius@@

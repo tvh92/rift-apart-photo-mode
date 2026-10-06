@@ -1,0 +1,298 @@
+[
+  {
+    "original": "outputs\\startup-repair\\backup-before",
+    "archived": "archive\\2026-10-04-completed\\outputs\\startup-repair\\backup-before"
+  },
+  {
+    "original": "outputs\\startup-repair\\direct-archive",
+    "archived": "archive\\2026-10-04-completed\\outputs\\startup-repair\\direct-archive"
+  },
+  {
+    "original": "outputs\\startup-repair\\guarded-reinstall-13f7f327865d4723bf6b8b09446f1efb",
+    "archived": "archive\\2026-10-04-completed\\outputs\\startup-repair\\guarded-reinstall-13f7f327865d4723bf6b8b09446f1efb"
+  },
+  {
+    "original": "outputs\\startup-repair\\guarded-reinstall-4d01ae1d35aa4a7083052787c88522e9",
+    "archived": "archive\\2026-10-04-completed\\outputs\\startup-repair\\guarded-reinstall-4d01ae1d35aa4a7083052787c88522e9"
+  },
+  {
+    "original": "outputs\\startup-repair\\permanent-backup-0983abda7ccd4de880abba26dad339dd",
+    "archived": "archive\\2026-10-04-completed\\outputs\\startup-repair\\permanent-backup-0983abda7ccd4de880abba26dad339dd"
+  },
+  {
+    "original": "outputs\\startup-repair\\profiles-before-compatible-intro",
+    "archived": "archive\\2026-10-04-completed\\outputs\\startup-repair\\profiles-before-compatible-intro"
+  },
+  {
+    "original": "outputs\\startup-repair\\profiles-before-final-restore",
+    "archived": "archive\\2026-10-04-completed\\outputs\\startup-repair\\profiles-before-final-restore"
+  },
+  {
+    "original": "outputs\\startup-repair\\profiles-before-isolation",
+    "archived": "archive\\2026-10-04-completed\\outputs\\startup-repair\\profiles-before-isolation"
+  },
+  {
+    "original": "outputs\\startup-repair\\routing-launch-original",
+    "archived": "archive\\2026-10-04-completed\\outputs\\startup-repair\\routing-launch-original"
+  },
+  {
+    "original": "outputs\\startup-repair\\routing-launch-short",
+    "archived": "archive\\2026-10-04-completed\\outputs\\startup-repair\\routing-launch-short"
+  },
+  {
+    "original": "outputs\\startup-repair\\routing-launch-two-second",
+    "archived": "archive\\2026-10-04-completed\\outputs\\startup-repair\\routing-launch-two-second"
+  },
+  {
+    "original": "outputs\\startup-repair\\bink-validation.json",
+    "archived": "archive\\2026-10-04-completed\\outputs\\startup-repair\\bink-validation.json"
+  },
+  {
+    "original": "outputs\\startup-repair\\camera-only-audit.json",
+    "archived": "archive\\2026-10-04-completed\\outputs\\startup-repair\\camera-only-audit.json"
+  },
+  {
+    "original": "outputs\\startup-repair\\compatible-intro-install-verification.json",
+    "archived": "archive\\2026-10-04-completed\\outputs\\startup-repair\\compatible-intro-install-verification.json"
+  },
+  {
+    "original": "outputs\\startup-repair\\guard-verification.json",
+    "archived": "archive\\2026-10-04-completed\\outputs\\startup-repair\\guard-verification.json"
+  },
+  {
+    "original": "outputs\\startup-repair\\Intro-Original-Routing-Test.stage",
+    "archived": "archive\\2026-10-04-completed\\outputs\\startup-repair\\Intro-Original-Routing-Test.stage"
+  },
+  {
+    "original": "outputs\\startup-repair\\isolation-verification.json",
+    "archived": "archive\\2026-10-04-completed\\outputs\\startup-repair\\isolation-verification.json"
+  },
+  {
+    "original": "outputs\\startup-repair\\NoIntro-2Second-CurrentBuild.stage",
+    "archived": "archive\\2026-10-04-completed\\outputs\\startup-repair\\NoIntro-2Second-CurrentBuild.stage"
+  },
+  {
+    "original": "outputs\\startup-repair\\NoIntro-CurrentBuild.stage",
+    "archived": "archive\\2026-10-04-completed\\outputs\\startup-repair\\NoIntro-CurrentBuild.stage"
+  },
+  {
+    "original": "outputs\\startup-repair\\NoIntro-Padded-CurrentBuild.stage",
+    "archived": "archive\\2026-10-04-completed\\outputs\\startup-repair\\NoIntro-Padded-CurrentBuild.stage"
+  },
+  {
+    "original": "outputs\\startup-repair\\routing-test-index-validation.json",
+    "archived": "archive\\2026-10-04-completed\\outputs\\startup-repair\\routing-test-index-validation.json"
+  },
+  {
+    "original": "outputs\\startup-repair\\routing-test-preparation.json",
+    "archived": "archive\\2026-10-04-completed\\outputs\\startup-repair\\routing-test-preparation.json"
+  },
+  {
+    "original": "outputs\\startup-repair\\short-intro-preparation.json",
+    "archived": "archive\\2026-10-04-completed\\outputs\\startup-repair\\short-intro-preparation.json"
+  },
+  {
+    "original": "outputs\\startup-repair\\two-second-preparation.json",
+    "archived": "archive\\2026-10-04-completed\\outputs\\startup-repair\\two-second-preparation.json"
+  },
+  {
+    "original": "outputs\\startup-repair\\verification.json",
+    "archived": "archive\\2026-10-04-completed\\outputs\\startup-repair\\verification.json"
+  },
+  {
+    "original": "work\\intro-native",
+    "archived": "archive\\2026-10-04-completed\\work\\intro-native"
+  },
+  {
+    "original": "work\\overstrike-audit",
+    "archived": "archive\\2026-10-04-completed\\work\\overstrike-audit"
+  },
+  {
+    "original": "work\\short-intro",
+    "archived": "archive\\2026-10-04-completed\\work\\short-intro"
+  },
+  {
+    "original": "work\\audit_startup_sections.py",
+    "archived": "archive\\2026-10-04-completed\\work\\audit_startup_sections.py"
+  },
+  {
+    "original": "work\\diagnose_startup_toc.py",
+    "archived": "archive\\2026-10-04-completed\\work\\diagnose_startup_toc.py"
+  },
+  {
+    "original": "work\\direct_intro_archive.py",
+    "archived": "archive\\2026-10-04-completed\\work\\direct_intro_archive.py"
+  },
+  {
+    "original": "work\\finalize_startup_repair.py",
+    "archived": "archive\\2026-10-04-completed\\work\\finalize_startup_repair.py"
+  },
+  {
+    "original": "work\\find_boot_state.py",
+    "archived": "archive\\2026-10-04-completed\\work\\find_boot_state.py"
+  },
+  {
+    "original": "work\\finish_startup_repair.ps1",
+    "archived": "archive\\2026-10-04-completed\\work\\finish_startup_repair.ps1"
+  },
+  {
+    "original": "work\\inspect_nointro_mode.py",
+    "archived": "archive\\2026-10-04-completed\\work\\inspect_nointro_mode.py"
+  },
+  {
+    "original": "work\\inspect_original_movies.py",
+    "archived": "archive\\2026-10-04-completed\\work\\inspect_original_movies.py"
+  },
+  {
+    "original": "work\\install_compatible_intro.ps1",
+    "archived": "archive\\2026-10-04-completed\\work\\install_compatible_intro.ps1"
+  },
+  {
+    "original": "work\\install_fixed_intro_permanent.ps1",
+    "archived": "archive\\2026-10-04-completed\\work\\install_fixed_intro_permanent.ps1"
+  },
+  {
+    "original": "work\\install_intro_routing_test.ps1",
+    "archived": "archive\\2026-10-04-completed\\work\\install_intro_routing_test.ps1"
+  },
+  {
+    "original": "work\\intro-native-boot.txt",
+    "archived": "archive\\2026-10-04-completed\\work\\intro-native-boot.txt"
+  },
+  {
+    "original": "work\\isolate_nointro.ps1",
+    "archived": "archive\\2026-10-04-completed\\work\\isolate_nointro.ps1"
+  },
+  {
+    "original": "work\\overstrike_offline_audit.py",
+    "archived": "archive\\2026-10-04-completed\\work\\overstrike_offline_audit.py"
+  },
+  {
+    "original": "work\\prepare_intro_routing_test.py",
+    "archived": "archive\\2026-10-04-completed\\work\\prepare_intro_routing_test.py"
+  },
+  {
+    "original": "work\\prepare_short_intro.py",
+    "archived": "archive\\2026-10-04-completed\\work\\prepare_short_intro.py"
+  },
+  {
+    "original": "work\\prepare_two_second_intro.py",
+    "archived": "archive\\2026-10-04-completed\\work\\prepare_two_second_intro.py"
+  },
+  {
+    "original": "work\\read_steam_toc_manifest.py",
+    "archived": "archive\\2026-10-04-completed\\work\\read_steam_toc_manifest.py"
+  },
+  {
+    "original": "work\\record_intro_test_result.py",
+    "archived": "archive\\2026-10-04-completed\\work\\record_intro_test_result.py"
+  },
+  {
+    "original": "work\\restore_stable_startup.ps1",
+    "archived": "archive\\2026-10-04-completed\\work\\restore_stable_startup.ps1"
+  },
+  {
+    "original": "work\\start_startup_repair.ps1",
+    "archived": "archive\\2026-10-04-completed\\work\\start_startup_repair.ps1"
+  },
+  {
+    "original": "work\\startup-toc-sections.json",
+    "archived": "archive\\2026-10-04-completed\\work\\startup-toc-sections.json"
+  },
+  {
+    "original": "work\\trace_native_intro.py",
+    "archived": "archive\\2026-10-04-completed\\work\\trace_native_intro.py"
+  },
+  {
+    "original": "work\\unused_isolation_verify.py",
+    "archived": "archive\\2026-10-04-completed\\work\\unused_isolation_verify.py"
+  },
+  {
+    "original": "work\\validate_short_intro_bink.py",
+    "archived": "archive\\2026-10-04-completed\\work\\validate_short_intro_bink.py"
+  },
+  {
+    "original": "work\\verify_compatible_intro_install.py",
+    "archived": "archive\\2026-10-04-completed\\work\\verify_compatible_intro_install.py"
+  },
+  {
+    "original": "work\\verify_nointro_isolation.py",
+    "archived": "archive\\2026-10-04-completed\\work\\verify_nointro_isolation.py"
+  },
+  {
+    "original": "work\\verify_startup_repair.py",
+    "archived": "archive\\2026-10-04-completed\\work\\verify_startup_repair.py"
+  },
+  {
+    "original": "work\\camera-boost-live.err",
+    "archived": "archive\\2026-10-04-completed\\work\\camera-boost-live.err"
+  },
+  {
+    "original": "work\\camera-boost-live.log",
+    "archived": "archive\\2026-10-04-completed\\work\\camera-boost-live.log"
+  },
+  {
+    "original": "work\\camera-boost-live2.err",
+    "archived": "archive\\2026-10-04-completed\\work\\camera-boost-live2.err"
+  },
+  {
+    "original": "work\\camera-boost-live2.log",
+    "archived": "archive\\2026-10-04-completed\\work\\camera-boost-live2.log"
+  },
+  {
+    "original": "work\\camera-boost-live3.err",
+    "archived": "archive\\2026-10-04-completed\\work\\camera-boost-live3.err"
+  },
+  {
+    "original": "work\\camera-boost-live3.log",
+    "archived": "archive\\2026-10-04-completed\\work\\camera-boost-live3.log"
+  },
+  {
+    "original": "work\\migrate_camera_overstrike.ps1",
+    "archived": "archive\\2026-10-04-completed\\work\\migrate_camera_overstrike.ps1"
+  },
+  {
+    "original": "work\\__pycache__",
+    "archived": "archive\\2026-10-04-completed\\work\\__pycache__"
+  },
+  {
+    "original": "outputs\\camera-controls\\__pycache__",
+    "archived": "archive\\2026-10-04-completed\\outputs\\camera-controls\\__pycache__"
+  },
+  {
+    "original": "outputs\\camera-controls\\migration-backup",
+    "archived": "archive\\2026-10-04-completed\\outputs\\camera-controls\\migration-backup"
+  },
+  {
+    "original": "outputs\\camera-controls\\CameraShiftBoost.py",
+    "archived": "archive\\2026-10-04-completed\\outputs\\camera-controls\\CameraShiftBoost.py"
+  },
+  {
+    "original": "outputs\\camera-controls\\Start-CameraBoost.cmd",
+    "archived": "archive\\2026-10-04-completed\\outputs\\camera-controls\\Start-CameraBoost.cmd"
+  },
+  {
+    "original": "outputs\\camera-controls\\Start-CameraBoost.ps1",
+    "archived": "archive\\2026-10-04-completed\\outputs\\camera-controls\\Start-CameraBoost.ps1"
+  },
+  {
+    "original": "outputs\\camera-controls\\Stop-CameraBoost.ps1",
+    "archived": "archive\\2026-10-04-completed\\outputs\\camera-controls\\Stop-CameraBoost.ps1"
+  },
+  {
+    "original": "outputs\\camera-controls\\boost-error.log",
+    "archived": "archive\\2026-10-04-completed\\outputs\\camera-controls\\boost-error.log"
+  },
+  {
+    "original": "outputs\\camera-controls\\boost-status.json",
+    "archived": "archive\\2026-10-04-completed\\outputs\\camera-controls\\boost-status.json"
+  },
+  {
+    "original": "outputs\\camera-controls\\boost.log",
+    "archived": "archive\\2026-10-04-completed\\outputs\\camera-controls\\boost.log"
+  },
+  {
+    "original": "outputs\\camera-native\\PhotoModeCamera.log",
+    "archived": "archive\\2026-10-04-completed\\outputs\\camera-native\\PhotoModeCamera.log"
+  }
+]

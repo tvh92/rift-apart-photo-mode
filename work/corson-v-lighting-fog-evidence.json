@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-05",
+  "scene": "Corson V, Nefarious City, near giant golden Emperor Nefarious statue",
+  "user_lighting_symptom": "Lights stop illuminating nearby surfaces as the Photo camera moves farther away.",
+  "user_fog_symptom": "Normally dark fog over bottomless pits turns bright white at distance.",
+  "screenshot": "work/corson-v-white-fog-user-screenshot.png",
+  "screenshot_observation": "Broad pale pink/white bands behind and between city buildings below a purple sky; buildings, neon and traffic remain visible.",
+  "cause_status": "Unresolved. The screenshot establishes appearance, not a particular renderer field or culling predicate.",
+  "geometry_feedback": "Previous geometry override toggles distant exhausts, objects, walls, pipes, foliage and environment details; it does not fix the reported illumination/fog.",
+  "installed_controls_update_sha256": "06ce078afaca25aeb95cca6da595ea8f8b54f8a9ccac3aef833c64fadb6a6de8",
+  "lighting_fog_changes_in_controls_update": "None"
+}

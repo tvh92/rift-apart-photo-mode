@@ -1,0 +1,10 @@
+{
+  "confirmed_by_user": "Normal and Shift speeds both work",
+  "normal_multiplier": 10,
+  "shift_multiplier": 100,
+  "tether": 1000,
+  "permanent_config_restored": true,
+  "installed_config_sha256": "80d12e156330d3a7ef788c1b5f972694bd7cf35f7ea40082fb3ba78d118c30fc",
+  "reattachment_handling": "Updated after confirmation; syntax checked, complete Photo Mode exit/re-entry test pending",
+  "collision": "Unchanged; no-clip not established"
+}

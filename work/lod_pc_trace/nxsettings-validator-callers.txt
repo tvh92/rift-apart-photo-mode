@@ -1,0 +1,235 @@
+Direct xrefs to PC settings validator 0x168ad40 (call/jmp):
+
+NxSettingsImpl vtable methods: 25
+
+FUNCTION 0x16d9b80 bounds ('0x16d9b80', '0x16d9c6a')
+016d9baf call 000000000169E3A0h
+016d9bbc call 0000000002D200A4h
+016d9bd7 call 00000000016D9090h
+016d9be3 call 0000000002D200A4h
+016d9c1d call 0000000002D200A4h
+016d9c46 call 0000000002D200A4h
+016d9c63 call qword [rel 2E38778h]
+
+FUNCTION 0x16dc250 bounds ('0x16dc250', '0x16dc27b')
+016dc259 call 00000000016DA8C0h
+016dc26e call 00000000016DE140h
+
+FUNCTION 0x16dcc00 bounds ('0x16dcc00', '0x16dcc2f')
+016dcc24 call qword [rax+18h]
+016dcc2d jmp short 00000000016DCC6Eh
+
+FUNCTION 0x16dc850 bounds ('0x16dc850', '0x16dcbf3')
+016dc88b call 00000000016D9D20h
+016dc8fa call 0000000002D27AE1h
+016dc90a jmp short 00000000016DC914h
+016dc91f jmp short 00000000016DC927h
+016dc96e call 0000000002D27AE1h
+016dc97e jmp short 00000000016DC988h
+016dc9b6 call 000000000028A5E0h
+016dc9c7 jmp 00000000016DCBA2h
+016dc9d4 lea rcx,[rsp+70h]
+016dc9d9 call 0000000002D27AC9h
+016dc9de call 0000000001681EA0h
+016dc9e9 call qword [rdx+2A8h]
+016dca05 lea rcx,[rsp+70h]
+016dca0a call qword [rel 2E38A50h]
+016dca1c lea rcx,[rsp+70h]
+016dca21 call qword [rel 2E38A98h]
+016dca3e lea rcx,[rsp+70h]
+016dca43 call qword [rel 2E38A98h]
+016dca63 lea rdx,[rsp+70h]
+016dca6f call qword [rel 2E37030h]
+016dcab2 call qword [rel 2E37038h]
+016dcad3 call 0000000002D20C88h
+016dcaea call 0000000002D27AC9h
+016dcb0c call qword [rel 2E37038h]
+016dcb32 call 000000000028A5E0h
+016dcb3a call 0000000002D20C90h
+016dcb4b call qword [rel 2E37018h]
+016dcb64 call 00000000016D9A10h
+016dcb86 call 000000000028A5E0h
+016dcb8b jmp short 00000000016DCB98h
+016dcb92 call qword [rel 2E37018h]
+016dcbcd call qword [rel 2E38778h]
+016dcbd7 call 0000000002D200A4h
+
+FUNCTION 0x16dccd0 bounds ('0x16dccd0', '0x16dcd31')
+016dccf3 call qword [rax+28h]
+016dcd15 call qword [rax+70h]
+016dcd18 jmp short 00000000016DCD1Ch
+
+FUNCTION 0x16dcc90 bounds ('0x16dcc90', '0x16dccca')
+016dcca9 call qword [rax+58h]
+
+FUNCTION 0x16dc7e0 bounds ('0x16dc7e0', '0x16dc841')
+016dc803 call qword [rax+38h]
+016dc825 call qword [rax+78h]
+016dc828 jmp short 00000000016DC82Ch
+
+FUNCTION 0x16dc790 bounds ('0x16dc790', '0x16dc7d5')
+016dc7a9 call qword [rax+58h]
+
+FUNCTION 0x16dc780 bounds ('0x16dc780', '0x16dc800')
+016dc783 jmp qword [r10+50h]
+016dc7a9 call qword [rax+58h]
+
+FUNCTION 0x16dc770 bounds ('0x16dc770', '0x16dc7f0')
+016dc773 jmp qword [rax+58h]
+016dc783 jmp qword [r10+50h]
+016dc7a9 call qword [rax+58h]
+
+FUNCTION 0x16dc700 bounds ('0x16dc700', '0x16dc762')
+016dc723 call qword [rax+58h]
+016dc743 call qword [rax+88h]
+016dc749 jmp short 00000000016DC74Dh
+
+FUNCTION 0x16dc440 bounds ('0x16dc440', '0x16dc6f2')
+016dc477 call 00000000016D9D20h
+016dc4da call 0000000002D27AE1h
+016dc4ed jmp short 00000000016DC4F7h
+016dc502 jmp short 00000000016DC50Ah
+016dc548 call 0000000002D27AE1h
+016dc55b jmp short 00000000016DC565h
+016dc57b jmp 00000000016DC69Ah
+016dc580 call 0000000001681EA0h
+016dc58b call qword [rdx+2A8h]
+016dc5a7 lea rcx,[rsp+70h]
+016dc5ac call qword [rel 2E38A50h]
+016dc5be lea rcx,[rsp+70h]
+016dc5c3 call qword [rel 2E38A98h]
+016dc5e0 lea rcx,[rsp+70h]
+016dc5e5 call qword [rel 2E38A98h]
+016dc5fe lea rdx,[rsp+70h]
+016dc60a call qword [rel 2E37030h]
+016dc64c call qword [rel 2E37038h]
+016dc65d call qword [rel 2E37018h]
+016dc663 jmp short 00000000016DC690h
+016dc66f call qword [rel 2E37018h]
+016dc67f call 00000000016D9A10h
+016dc68c jmp short 00000000016DC690h
+016dc6c5 call qword [rel 2E38778h]
+016dc6cf call 0000000002D200A4h
+
+FUNCTION 0x16dc2f0 bounds ('0x16dc2f0', '0x16dc31b')
+
+FUNCTION 0x16ddce0 bounds ('0x16ddce0', '0x16ddebb')
+016ddd19 call 0000000002D27AC9h
+016ddd1e call 0000000001681EA0h
+016ddd29 call qword [r9+2A8h]
+016ddd4e call qword [rel 2E38A50h]
+016ddd68 call qword [rel 2E38A98h]
+016ddd86 call qword [rel 2E38A98h]
+016dddc8 call qword [rel 2E37070h]
+016dddd4 jmp 00000000016DDE9Dh
+016dde08 call qword [rel 2E37068h]
+016dde13 call qword [rel 2E37018h]
+016dde27 call 00000000016D9D20h
+016dde34 call 00000000016D98C0h
+016dde55 call 000000000028A5E0h
+016dde5b mov rdx,[rsp+70h]
+016dde8f call qword [rel 2E38778h]
+016dde96 call 0000000002D200A4h
+
+FUNCTION 0x16de0a0 bounds ('0x16de0a0', '0x16de120')
+016de0a7 jmp qword [rax+88h]
+016de0e5 call qword [rel 2E37068h]
+
+FUNCTION 0x16de080 bounds ('0x16de080', '0x16de100')
+016de090 jmp qword [rax+88h]
+016de0a7 jmp qword [rax+88h]
+016de0e5 call qword [rel 2E37068h]
+
+FUNCTION 0x16de070 bounds ('0x16de070', '0x16de0f0')
+016de073 jmp qword [rax+88h]
+016de090 jmp qword [rax+88h]
+016de0a7 jmp qword [rax+88h]
+016de0e5 call qword [rel 2E37068h]
+
+FUNCTION 0x16ddec0 bounds ('0x16ddec0', '0x16de06f')
+016ddef3 call 0000000002D27AC9h
+016ddef8 call 0000000001681EA0h
+016ddf03 call qword [r10+2A8h]
+016ddf28 call qword [rel 2E38A50h]
+016ddf42 call qword [rel 2E38A98h]
+016ddf60 call qword [rel 2E38A98h]
+016ddfa2 call qword [rel 2E37070h]
+016ddfdd call qword [rel 2E37068h]
+016ddfe8 call qword [rel 2E37018h]
+016ddffc call 00000000016D9D20h
+016de009 call 00000000016D98C0h
+016de044 call qword [rel 2E38778h]
+016de04b call 0000000002D200A4h
+016de052 jmp short 00000000016DE056h
+
+FUNCTION 0x16ddbe0 bounds ('0x16ddbe0', '0x16ddcd8')
+016ddc4e call qword [r9+78h]
+016ddc52 jmp short 00000000016DDCAAh
+016ddc69 call qword [r10+80h]
+016ddc70 jmp short 00000000016DDCAAh
+016ddc87 call qword [r10+88h]
+016ddc8e jmp short 00000000016DDCAAh
+016ddca6 call qword [r10+70h]
+
+FUNCTION 0x16d9f20 bounds ('0x16d9f20', '0x16da00b')
+016d9f41 call 00000000016DE140h
+016d9f50 call 0000000001681EA0h
+016d9f63 call qword [r9+158h]
+016d9f73 mov eax,[rsp+70h]
+016d9f8c cmp [rbx+70h],eax
+016da009 jmp short 00000000016D9FF2h
+
+FUNCTION 0x16d9c70 bounds ('0x16d9c70', '0x16d9d17')
+016d9c91 call 00000000016DE140h
+016d9cdb mov [rbx+70h],eax
+
+FUNCTION 0x16dc150 bounds ('0x16dc150', '0x16dc1e1')
+016dc1ad call 0000000002D27AE1h
+016dc1df jmp short 00000000016DC1C1h
+
+FUNCTION 0x16da630 bounds ('0x16da630', '0x16da664')
+016da651 call 000000000028A5E0h
+
+FUNCTION 0x16da010 bounds ('0x16da010', '0x16da62c')
+016da062 mov [rbp+70h],eax
+016da07b call 00000000016DD000h
+016da0a3 call qword [rel 2E389B0h]
+016da0d7 call qword [rel 2E389B0h]
+016da110 call 000000000028A5E0h
+016da121 call qword [rax+0A8h]
+016da16d call 0000000001651450h
+016da1c4 call 0000000002D27AC3h
+016da1cd jmp 00000000016DA2E1h
+016da1d9 jmp short 00000000016DA15Fh
+016da1e2 jmp 00000000016DA15Fh
+016da1f1 call qword [rel 2E389B0h]
+016da213 call qword [rel 2E38A48h]
+016da226 jmp short 00000000016DA24Fh
+016da238 call qword [rel 2E38A48h]
+016da260 jmp short 00000000016DA252h
+016da29a call 0000000002D200A4h
+016da2bd jmp 00000000016DA090h
+016da2dc call 00000000002893F0h
+016da2ed call 0000000001692390h
+016da327 jmp short 00000000016DA348h
+016da342 call 00000000002893F0h
+016da384 call 0000000002D200A4h
+016da38b jmp 00000000016DA60Bh
+016da3d5 call 0000000002D27AC3h
+016da3de jmp short 00000000016DA3FFh
+016da3fa call 00000000002893F0h
+016da40b call 0000000001692390h
+016da445 jmp short 00000000016DA466h
+016da460 call 00000000002893F0h
+016da4a8 call qword [rel 2E38778h]
+016da4eb call 0000000002D27AC3h
+016da4f4 jmp short 00000000016DA515h
+016da510 call 00000000002893F0h
+016da521 call 0000000001692390h
+016da55d jmp 00000000016DA60Bh
+016da57b call 00000000002893F0h
+016da582 jmp 00000000016DA60Bh
+016da5ce movups xmm1,[rax+70h]
+
+FUNCTION 0x16dc140 bounds ('0x16dc140', '0x16dc1c0')
+016dc1ad call 0000000002D27AE1h

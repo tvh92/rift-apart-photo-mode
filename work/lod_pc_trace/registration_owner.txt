@@ -1,0 +1,79 @@
+FUNCTION 0x122eb30 BOUNDS ('0x122eb30', '0x122ec8d')
+0122eb30 push rbx
+0122eb32 sub rsp,30h
+0122eb36 movss xmm0,[rel 4A4A198h]
+0122eb3e lea rcx,[rel 6735204h]
+0122eb45 xor ebx,ebx
+0122eb47 movss [rel 67351B8h],xmm0
+0122eb4f mov [rel 6734820h],ebx
+0122eb55 mov [rel 6734826h],bl
+0122eb5b mov [rel 67351A8h],ebx
+0122eb61 mov [rel 67351ADh],bl
+0122eb67 mov [rel 67351B0h],rbx
+0122eb6e mov [rel 67351BCh],bl
+0122eb74 mov [rel 67356E0h],ebx
+0122eb7a mov [rel 67356E4h],ebx
+0122eb80 mov [rel 6734828h],rbx
+0122eb87 call 0000000001453A80h
+0122eb8c xorps xmm0,xmm0
+0122eb8f mov [rel 6735200h],ebx
+0122eb95 lea rdx,[rel 32D0D58h]
+0122eb9c mov [rel 67356E8h],ebx
+0122eba2 lea rcx,[rel 6734830h]
+0122eba9 movups [rel 67351C0h],xmm0
+0122ebb0 movups [rel 67351D0h],xmm0
+0122ebb7 movups [rel 67351E0h],xmm0
+0122ebbe movups [rel 67351F0h],xmm0
+0122ebc5 call 000000000159CB60h
+0122ebca test al,al
+0122ebcc je near 000000000122EC80h
+0122ebd2 lea r8,[rel 2F1B890h]
+0122ebd9 mov edx,5DCh
+0122ebde lea rcx,[rel 6734838h]
+0122ebe5 call 000000000159CB80h
+0122ebea test al,al
+0122ebec je near 000000000122EC80h
+0122ebf2 lea rdx,[rel 32D0D58h]
+0122ebf9 lea rcx,[rel 6734868h]
+0122ec00 call 000000000159CB60h
+0122ec05 test al,al
+0122ec07 je short 000000000122EC80h
+0122ec09 lea r8,[rel 2F1B890h]
+0122ec10 mov edx,5DCh
+0122ec15 lea rcx,[rel 6734870h]
+0122ec1c call 000000000159CB80h
+0122ec21 test al,al
+0122ec23 je short 000000000122EC80h
+0122ec25 cmp [rel 67C2F80h],bl
+0122ec2b je short 000000000122EC5Fh
+0122ec2d mov eax,[rel 67D8734h]
+0122ec33 lea r9,[rel 32FF028h]
+0122ec3a mov [rsp+28h],eax
+0122ec3e lea rcx,[rel 122F3D0h]
+0122ec45 xor edx,edx
+0122ec47 mov dword [rsp+20h],6
+0122ec4f mov r8d,10000h
+0122ec55 call 000000000159CDA0h
+0122ec5a test rax,rax
+0122ec5d je short 000000000122EC80h
+0122ec5f call 0000000001681EA0h
+0122ec64 lea rdx,[rel 122F000h]
+0122ec6b mov rcx,rax
+0122ec6e mov r8,[rax]
+0122ec71 call qword [r8+160h]
+0122ec78 mov al,1
+0122ec7a add rsp,30h
+0122ec7e pop rbx
+0122ec7f ret
+0122ec80 call 000000000122FE80h
+0122ec85 xor al,al
+0122ec87 add rsp,30h
+0122ec8b pop rbx
+0122ec8c ret
+FUNCTION 0x122f000 BOUNDS ('0x122f000', '0x122f020')
+0122f000 mov r11,rsp
+0122f003 sub rsp,938h
+0122f00a mov eax,[rel 6734820h]
+0122f010 mov byte [rel 67356F0h],1
+0122f017 cmp eax,1
+0122f01a jne near 000000000122F22Eh

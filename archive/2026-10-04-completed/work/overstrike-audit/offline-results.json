@@ -1,0 +1,130 @@
+{
+  "empty": {
+    "backup_matches_steam_original": true,
+    "toc_identical_to_original": true,
+    "toc_sha1": "64946f571579d9ea0a17e675682e2994dc0f20fc",
+    "only_expected_asset_records_changed": true,
+    "other_sections_unchanged": true,
+    "payloads_byte_exact": []
+  },
+  "camera": {
+    "backup_matches_steam_original": true,
+    "toc_identical_to_original": false,
+    "toc_sha1": "4a79e804bf157ad4429e54c3db890ce681c2068c",
+    "only_expected_asset_records_changed": true,
+    "other_sections_unchanged": true,
+    "payloads_byte_exact": [
+      {
+        "asset": "AED6101948AAFA54",
+        "archive": "d/mods/mod0",
+        "offset": 0,
+        "bytes": 263280,
+        "header": 2351412
+      }
+    ]
+  },
+  "nointro": {
+    "backup_matches_steam_original": true,
+    "toc_identical_to_original": false,
+    "toc_sha1": "7c1eefcc01d186f69472a78b5392efa0d81ec125",
+    "only_expected_asset_records_changed": true,
+    "other_sections_unchanged": true,
+    "payloads_byte_exact": [
+      {
+        "asset": "851735C03E050852",
+        "archive": "d/mods/mod0",
+        "offset": 0,
+        "bytes": 10468,
+        "header": -1
+      },
+      {
+        "asset": "8B203B05CA2AEB50",
+        "archive": "d/mods/mod0",
+        "offset": 10468,
+        "bytes": 10468,
+        "header": -1
+      },
+      {
+        "asset": "905EBDB8C12D66E0",
+        "archive": "d/mods/mod0",
+        "offset": 20936,
+        "bytes": 10468,
+        "header": -1
+      }
+    ]
+  },
+  "both": {
+    "backup_matches_steam_original": true,
+    "toc_identical_to_original": false,
+    "toc_sha1": "96abc84553125c32d39dd4c1c89e8dce69f89d35",
+    "only_expected_asset_records_changed": true,
+    "other_sections_unchanged": true,
+    "payloads_byte_exact": [
+      {
+        "asset": "AED6101948AAFA54",
+        "archive": "d/mods/mod1",
+        "offset": 0,
+        "bytes": 263280,
+        "header": 2351412
+      },
+      {
+        "asset": "851735C03E050852",
+        "archive": "d/mods/mod0",
+        "offset": 0,
+        "bytes": 10468,
+        "header": -1
+      },
+      {
+        "asset": "8B203B05CA2AEB50",
+        "archive": "d/mods/mod0",
+        "offset": 10468,
+        "bytes": 10468,
+        "header": -1
+      },
+      {
+        "asset": "905EBDB8C12D66E0",
+        "archive": "d/mods/mod0",
+        "offset": 20936,
+        "bytes": 10468,
+        "header": -1
+      }
+    ]
+  },
+  "reversed": {
+    "backup_matches_steam_original": true,
+    "toc_identical_to_original": false,
+    "toc_sha1": "167f3c6661d36dd3201a7f0bb6cbbf95a74c1539",
+    "only_expected_asset_records_changed": true,
+    "other_sections_unchanged": true,
+    "payloads_byte_exact": [
+      {
+        "asset": "AED6101948AAFA54",
+        "archive": "d/mods/mod0",
+        "offset": 0,
+        "bytes": 263280,
+        "header": 2351412
+      },
+      {
+        "asset": "851735C03E050852",
+        "archive": "d/mods/mod1",
+        "offset": 0,
+        "bytes": 10468,
+        "header": -1
+      },
+      {
+        "asset": "8B203B05CA2AEB50",
+        "archive": "d/mods/mod1",
+        "offset": 10468,
+        "bytes": 10468,
+        "header": -1
+      },
+      {
+        "asset": "905EBDB8C12D66E0",
+        "archive": "d/mods/mod1",
+        "offset": 20936,
+        "bytes": 10468,
+        "header": -1
+      }
+    ]
+  }
+}

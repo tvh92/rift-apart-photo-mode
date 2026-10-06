@@ -1,0 +1,18 @@
+{
+  "cache": [
+    [
+      "NoIntro-Padded-CurrentBuild.stage",
+      307286,
+      3588545128,
+      1419276003,
+      [
+        [
+          "Short intro with original-sized assets by Local compatibility test",
+          "NoIntro-Padded-CurrentBuild.stage",
+          "STAGE_RCRA_V2"
+        ]
+      ]
+    ]
+  ],
+  "format": "1"
+}

@@ -1,0 +1,165 @@
+FUNCTION 0x121b230 ROOT None RANGES [(18985520, 18985648, 0)]
+0121B230 ret 0
+0121B233 int3
+0121B234 int3
+0121B235 int3
+0121B236 int3
+0121B237 int3
+0121B238 int3
+0121B239 int3
+0121B23A int3
+0121B23B int3
+0121B23C int3
+0121B23D int3
+0121B23E int3
+0121B23F int3
+0121B240 sub rsp,28h
+0121B244 lea rcx,[rel 6792C30h]
+0121B24B call 000000000135D650h
+0121B250 lea rcx,[rel 6735B10h]
+0121B257 call 00000000012325B0h
+0121B25C lea rcx,[rel 53381C0h]
+0121B263 call 000000000120F450h
+0121B268 lea rcx,[rel 67334C0h]
+0121B26F call 0000000001225690h
+0121B274 lea rcx,[rel 53381C0h]
+0121B27B add rsp,28h
+0121B27F jmp 000000000120F550h
+0121B284 int3
+0121B285 int3
+0121B286 int3
+0121B287 int3
+0121B288 int3
+0121B289 int3
+0121B28A int3
+0121B28B int3
+0121B28C int3
+0121B28D int3
+0121B28E int3
+0121B28F int3
+0121B290 mov rax,rsp
+0121B293 mov [rax+8],rbx
+0121B297 mov [rax+10h],rbp
+0121B29B mov [rax+20h],rsi
+0121B29F push rdi
+0121B2A0 push r12
+0121B2A2 push r13
+0121B2A4 push r14
+0121B2A6 push r15
+0121B2A8 sub rsp,5C0h
+0121B2AF (bad)
+FUNCTION 0x121b510 ROOT (18986256, 18986707, 81890688) RANGES [(18986256, 18986707, 81890688)]
+0121B510 mov [rsp+8],rbx
+0121B515 mov [rsp+10h],rbp
+0121B51A mov [rsp+18h],rsi
+0121B51F mov [rsp+20h],rdi
+0121B524 push r14
+0121B526 mov eax,23A0h
+0121B52B call 0000000002D200C0h
+0121B530 sub rsp,rax
+0121B533 mov rbx,rcx
+0121B536 lea rcx,[rsp+60h]
+0121B53B call 0000000001204C20h
+0121B540 nop
+0121B541 mov rbx,[rbx+8]
+0121B545 mov dword [rsp+20h],0FFh
+0121B54D mov ebp,1
+0121B552 mov r9d,ebp
+0121B555 xor edx,edx
+0121B557 lea r8d,[rbp+1]
+0121B55B lea r14,[rel 6745B20h]
+0121B562 mov rcx,r14
+0121B565 call 0000000000FB90F0h
+0121B56A xorps xmm0,xmm0
+0121B56D movdqu [rsp+38h],xmm0
+0121B573 xor esi,esi
+0121B575 mov [rsp+48h],rsi
+0121B57A mov ecx,[rel 6744AB8h]
+0121B580 call 000000000124FCF0h
+0121B585 mov [rsp+30h],rax
+0121B58A mov dword [rsp+50h],3
+0121B592 mov dword [rsp+54h],5
+0121B59A lea rdx,[rsp+30h]
+0121B59F mov rcx,r14
+0121B5A2 call 00000000012084A0h
+0121B5A7 mov ecx,[rel 6741278h]
+0121B5AD call 000000000124FC50h
+0121B5B2 movzx ecx,byte [rel 67460E8h]
+0121B5B9 mov rcx,[r14+rcx*8]
+0121B5BD mov r10,[rcx]
+0121B5C0 xor r9d,r9d
+0121B5C3 xor r8d,r8d
+0121B5C6 mov rdx,rax
+0121B5C9 call qword [r10+48h]
+0121B5CD mov [rsp+20h],sil
+0121B5D2 movss xmm3,[rel 4A4A198h]
+0121B5DA xor r8d,r8d
+0121B5DD mov rdx,[rbx+8]
+0121B5E1 mov rcx,r14
+0121B5E4 call 0000000001208760h
+0121B5E9 mov rax,[rel 6732C40h]
+0121B5F0 mov rcx,[rax+1690h]
+0121B5F7 lea rdi,[rcx+2D88h]
+0121B5FE mov eax,88h
+0121B603 cmp [rcx+2ED0h],esi
+0121B609 cmove rdi,rax
+0121B60D movzx eax,byte [rel 67460E8h]
+0121B614 mov rbx,[r14+rax*8]
+0121B618 mov rcx,r14
+0121B61B call 000000000128A040h
+0121B620 mov r9d,10h
+0121B626 test al,al
+0121B628 cmovne r9d,ebp
+0121B62C mov dword [rsp+20h],2
+0121B634 lea edx,[rbp+2Fh]
+0121B637 lea r8d,[rbp+1]
+0121B63B mov rcx,rbx
+0121B63E call 0000000001275740h
+0121B643 mov dword [rax],3F800000h
+0121B649 mov dword [rax+4],3F800000h
+0121B650 mov dword [rax+8],3F800000h
+0121B657 mov qword [rax+0Ch],3F800000h
+0121B65F mov [rax+14h],rsi
+0121B663 mov [rax+1Ch],rsi
+0121B667 mov [rax+24h],rsi
+0121B66B lea r9d,[rbp+0Fh]
+0121B66F mov r8,rdi
+0121B672 lea edx,[rbp+4]
+0121B675 mov rcx,r14
+0121B678 call 0000000001208E80h
+0121B67D lea rcx,[rel 6624E80h]
+0121B684 call 00000000011FDA80h
+0121B689 mov dword [rsp+20h],10h
+0121B691 xor r9d,r9d
+0121B694 mov r8d,ebp
+0121B697 lea edx,[rbp+4]
+0121B69A mov rcx,r14
+0121B69D call 0000000001208F50h
+0121B6A2 mov rcx,r14
+0121B6A5 call 0000000001205750h
+0121B6AA nop
+0121B6AB lea rcx,[rsp+60h]
+0121B6B0 call 0000000001204ED0h
+0121B6B5 lea r11,[rsp+23A0h]
+0121B6BD mov rbx,[r11+10h]
+0121B6C1 mov rbp,[r11+18h]
+0121B6C5 mov rsi,[r11+20h]
+0121B6C9 mov rdi,[r11+28h]
+0121B6CD mov rsp,r11
+0121B6D0 pop r14
+0121B6D2 ret
+FUNCTION 0x10a3260 ROOT (17445472, 17445529, 81760788) RANGES [(17445472, 17445529, 81760788)]
+010A3260 mov [rsp+8],rbx
+010A3265 push rdi
+010A3266 sub rsp,20h
+010A326A mov rbx,rdx
+010A326D mov rdi,rcx
+010A3270 add rcx,1F0h
+010A3277 mov rdx,r8
+010A327A call 00000000010A15B0h
+010A327F lea rdx,[rbx+30h]
+010A3283 lea rcx,[rdi+228h]
+010A328A mov rbx,[rsp+30h]
+010A328F add rsp,20h
+010A3293 pop rdi
+010A3294 jmp 00000000010A4470h

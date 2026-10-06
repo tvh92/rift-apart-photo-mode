@@ -1,0 +1,295 @@
+{
+  "near_file": "work\\live-lights-readonly\\20261005T230238093678Z-bridge-just-inside-ctrl-on.json",
+  "far_file": "work\\live-lights-readonly\\20261005T225536930344Z-bridge-first-cutoff-ctrl-on.json",
+  "near_label": "bridge-just-inside-ctrl-on",
+  "far_label": "bridge-first-cutoff-ctrl-on",
+  "near_camera": [
+    -41.90451431274414,
+    49.457244873046875,
+    -90.1751480102539
+  ],
+  "far_camera": [
+    -42.354129791259766,
+    57.1475830078125,
+    -118.23075866699219
+  ],
+  "near_record_counts": [
+    143,
+    143
+  ],
+  "far_record_counts": [
+    135,
+    141,
+    135,
+    135,
+    135,
+    141
+  ],
+  "near_sample_object_errors": [
+    0,
+    0
+  ],
+  "far_sample_object_errors": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "near_persistent_positions_absent_all_far": [
+    [
+      -90.549,
+      27.367,
+      -80.607
+    ],
+    [
+      -74.56,
+      17.049,
+      -78.759
+    ],
+    [
+      -59.681,
+      20.133,
+      58.438
+    ],
+    [
+      -59.504,
+      18.133,
+      42.428
+    ],
+    [
+      -52.375,
+      9.148,
+      -70.205
+    ],
+    [
+      -41.797,
+      12.263,
+      -46.163
+    ],
+    [
+      -41.659,
+      11.803,
+      -46.023
+    ],
+    [
+      -41.064,
+      12.378,
+      -45.423
+    ],
+    [
+      -37.981,
+      11.902,
+      -36.978
+    ],
+    [
+      -35.242,
+      2.12,
+      -12.458
+    ],
+    [
+      -28.577,
+      11.726,
+      -44.582
+    ],
+    [
+      -27.928,
+      12.126,
+      -44.047
+    ],
+    [
+      -23.246,
+      18.133,
+      42.334
+    ],
+    [
+      -22.968,
+      20.133,
+      58.343
+    ],
+    [
+      -13.028,
+      55.521,
+      -48.57
+    ],
+    [
+      -12.133,
+      55.328,
+      -48.17
+    ],
+    [
+      -10.495,
+      17.082,
+      -50.241
+    ],
+    [
+      -3.831,
+      23.199,
+      -52.179
+    ],
+    [
+      2.577,
+      8.358,
+      -83.559
+    ],
+    [
+      2.68,
+      15.103,
+      -55.881
+    ],
+    [
+      10.498,
+      9.331,
+      -98.765
+    ]
+  ],
+  "candidate_bridge_group": [
+    {
+      "position": [
+        -59.503684997558594,
+        18.133169174194336,
+        26.428146362304688
+      ],
+      "near_sample_presence": 2,
+      "far_sample_presence": 6,
+      "near_rgb": [
+        22.145549774169922,
+        4.602708339691162,
+        0.0
+      ],
+      "far_rgb_values": [
+        [
+          22.145549774169922,
+          4.602708339691162,
+          0.0
+        ]
+      ],
+      "far_max_rgb_difference": 0.0,
+      "near_radius": 25.0,
+      "near_camera_distance": 122.01334675237062,
+      "far_camera_distance": 150.80593666971416
+    },
+    {
+      "position": [
+        -59.503684997558594,
+        18.133169174194336,
+        42.42814636230469
+      ],
+      "near_sample_presence": 2,
+      "far_sample_presence": 0,
+      "near_rgb": [
+        26.014568328857422,
+        3.4526047706604004,
+        0.0
+      ],
+      "far_rgb_values": [],
+      "far_max_rgb_difference": null,
+      "near_radius": 25.0,
+      "near_camera_distance": 137.384723334278,
+      "far_camera_distance": 166.21526853982863
+    },
+    {
+      "position": [
+        -56.0272102355957,
+        18.122407913208008,
+        15.634773254394531
+      ],
+      "near_sample_presence": 2,
+      "far_sample_presence": 6,
+      "near_rgb": [
+        4.132691860198975,
+        1.5400586128234863,
+        0.2761748433113098
+      ],
+      "far_rgb_values": [
+        [
+          4.132691860198975,
+          1.5400586128234863,
+          0.2761748433113098
+        ]
+      ],
+      "far_max_rgb_difference": 0.0,
+      "near_radius": 25.0,
+      "near_camera_distance": 111.25224485582353,
+      "far_camera_distance": 140.10673808421075
+    },
+    {
+      "position": [
+        -26.4990234375,
+        18.12240982055664,
+        15.74562931060791
+      ],
+      "near_sample_presence": 2,
+      "far_sample_presence": 6,
+      "near_rgb": [
+        26.014568328857422,
+        3.4526047706604004,
+        0.0
+      ],
+      "far_rgb_values": [
+        [
+          26.014568328857422,
+          3.4526047706604004,
+          0.0
+        ]
+      ],
+      "far_max_rgb_difference": 0.0,
+      "near_radius": 25.0,
+      "near_camera_distance": 111.52762933519925,
+      "far_camera_distance": 140.4422339444541
+    },
+    {
+      "position": [
+        -23.245609283447266,
+        18.133169174194336,
+        26.33379364013672
+      ],
+      "near_sample_presence": 2,
+      "far_sample_presence": 6,
+      "near_rgb": [
+        26.014568328857422,
+        3.4526047706604004,
+        0.0
+      ],
+      "far_rgb_values": [
+        [
+          26.014568328857422,
+          3.4526047706604004,
+          0.0
+        ]
+      ],
+      "far_max_rgb_difference": 0.0,
+      "near_radius": 25.0,
+      "near_camera_distance": 122.08065342130952,
+      "far_camera_distance": 150.95088547782328
+    },
+    {
+      "position": [
+        -23.245609283447266,
+        18.133169174194336,
+        42.33379364013672
+      ],
+      "near_sample_presence": 2,
+      "far_sample_presence": 0,
+      "near_rgb": [
+        20.158979415893555,
+        5.176714897155762,
+        0.16363856196403503
+      ],
+      "far_rgb_values": [],
+      "far_max_rgb_difference": null,
+      "near_radius": 25.0,
+      "near_camera_distance": 137.43351873755685,
+      "far_camera_distance": 166.3377152072465
+    }
+  ],
+  "classification": "Observed CPU submission-list membership changes. The candidate bridge group and exact rejection gate are not yet established as the visible cause.",
+  "limits": [
+    "World position matching is not a proven source-object identity.",
+    "Raw queue totals are not final callback batch counts or GPU inclusion.",
+    "Stable repeated headers do not make records atomic; storage can retire or be reused.",
+    "Ctrl ON is supplied by the user; the reader does not verify the preference flag.",
+    "No source query captured: passBB marker has null arguments; its frame job is returned separately."
+  ]
+}

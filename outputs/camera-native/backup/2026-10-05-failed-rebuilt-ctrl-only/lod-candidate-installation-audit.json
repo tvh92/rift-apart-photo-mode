@@ -1,0 +1,25 @@
+{
+  "clean_backup_verified": true,
+  "steam_build": 23987138,
+  "only_changed_assets": [
+    "851735C03E050852",
+    "8B203B05CA2AEB50",
+    "905EBDB8C12D66E0",
+    "AED6101948AAFA54"
+  ],
+  "payloads_match_both_libraries": true,
+  "other_index_sections_unchanged": true,
+  "both_profiles_match": true,
+  "fixed_intro_enabled": true,
+  "camera_dll_verified": true,
+  "camera_dll_sha256": "7508bd33654d057202fbd91b8c81d8622dca1c1e781c21b52ce82023fa14b272",
+  "camera_dll_variant": "geometry-lod-candidate-with-confirmed-camera-controls",
+  "base_config_vanilla": true,
+  "all_original_boot_movies_verified": true,
+  "in_game_status": "Audit checks files only; see startup test results separately.",
+  "geometry_lod_in_game_test": "pending user test",
+  "confirmed_camera_baseline_sha256": "ccbcdaeacb5525e05a68ede9924164f07f5d3c93e1ed6e189168bbfd8f9c8ff3",
+  "scope": "geometry preference in proven ordinary Photo Mode states only; native quality/resource floors retained",
+  "effects": "neutral defaults unmodified",
+  "settings": "[Camera]\n; Multipliers relative to the game's original Free-camera speed.\nNormal=10\nBoost=100\nTether=1000\n"
+}

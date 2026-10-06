@@ -1,0 +1,160 @@
+FUNCTION 0x1a59180 BOUNDS ('0x1a59180', '0x1a59200')
+01a59180 movsd xmm0,[rel 6794FE0h]
+01a59188 cvtpd2ps xmm0,xmm0
+01a5918c addss xmm0,[rcx+58h]
+01a59191 movss [rcx+58h],xmm0
+01a59196 ret
+01a59197 int3
+01a59198 int3
+01a59199 int3
+01a5919a int3
+01a5919b int3
+01a5919c int3
+01a5919d int3
+01a5919e int3
+01a5919f int3
+01a591a0 mov rax,rsp
+01a591a3 mov [rax+8],rbx
+01a591a7 mov [rax+10h],rsi
+01a591ab mov [rax+18h],rdi
+01a591af push rbp
+01a591b0 push r14
+01a591b2 push r15
+01a591b4 lea rbp,[rax-5Fh]
+01a591b8 sub rsp,0D0h
+01a591bf movaps [rax-28h],xmm6
+01a591c3 movaps [rax-38h],xmm7
+01a591c7 movaps [rax-48h],xmm8
+01a591cc movaps [rax-58h],xmm9
+01a591d1 movaps [rax-68h],xmm10
+01a591d6 movaps [rax-78h],xmm11
+01a591db mov rbx,rcx
+01a591de cmp byte [rcx+54h],0
+01a591e2 je near 0000000001A59958h
+01a591e8 mov eax,[rcx+50h]
+01a591eb cmp eax,0Ah
+01a591ee je near 0000000001A59958h
+01a591f4 cmp eax,0Bh
+01a591f7 je near 0000000001A59953h
+01a591fd cmp eax,0Ch
+FUNCTION 0x1a5ab40 BOUNDS ('0x1a5ab40', '0x1a5abc0')
+01a5ab40 mov eax,[rcx+50h]
+01a5ab43 cmp eax,edx
+01a5ab45 je short 0000000001A5AB4Dh
+01a5ab47 mov [rcx+4Ch],eax
+01a5ab4a mov [rcx+50h],edx
+01a5ab4d ret
+01a5ab4e int3
+01a5ab4f int3
+01a5ab50 mov [rsp+8],rbx
+01a5ab55 push rdi
+01a5ab56 sub rsp,30h
+01a5ab5a mov rbx,rdx
+01a5ab5d movaps [rsp+20h],xmm6
+01a5ab62 mov rdx,[rdx]
+01a5ab65 mov rdi,r8
+01a5ab68 movq xmm6,r9
+01a5ab6d test rdx,rdx
+01a5ab70 je short 0000000001A5ABDCh
+01a5ab72 mov rdx,[rdx+7Ch]
+01a5ab76 mov r8,0FFFFFFFF00000000h
+01a5ab80 mov rcx,rdx
+01a5ab83 mov eax,edx
+01a5ab85 and rcx,r8
+01a5ab88 or rcx,rax
+01a5ab8b test r8,rcx
+01a5ab8e jne short 0000000001A5AB98h
+01a5ab90 test ecx,ecx
+01a5ab92 jne short 0000000001A5AB98h
+01a5ab94 xor edx,edx
+01a5ab96 jmp short 0000000001A5ABBEh
+01a5ab98 lea rcx,[rel 549E348h]
+01a5ab9f call 00000000015ACDE0h
+01a5aba4 test rax,rax
+01a5aba7 jne short 0000000001A5ABADh
+01a5aba9 xor edx,edx
+01a5abab jmp short 0000000001A5ABBEh
+01a5abad mov edx,[rax]
+01a5abaf imul rdx,[rel 549E388h]
+01a5abb7 add rdx,[rel 549E380h]
+01a5abbe (bad)
+FUNCTION 0x1a579f0 BOUNDS ('0x1a579f0', '0x1a57ae8')
+01a579f0 mov [rsp+8],rbx
+01a579f5 push rdi
+01a579f6 sub rsp,20h
+01a579fa mov rax,[rcx]
+01a579fd mov rbx,rcx
+01a57a00 call qword [rax+0E0h]
+01a57a06 mov eax,[rbx+50h]
+01a57a09 cmp eax,0Eh
+01a57a0c je short 0000000001A57A18h
+01a57a0e mov [rbx+4Ch],eax
+01a57a11 mov dword [rbx+50h],0Eh
+01a57a18 mov rax,[rel 6739B10h]
+01a57a1f xor edi,edi
+01a57a21 test rax,rax
+01a57a24 je short 0000000001A57A33h
+01a57a26 mov [rax+1DD8h],rdi
+01a57a2d mov [rax+1DE0h],edi
+01a57a33 mov rdx,[rbx+0C0h]
+01a57a3a test rdx,rdx
+01a57a3d je short 0000000001A57A62h
+01a57a3f cmp byte [rdx],4
+01a57a42 jne short 0000000001A57A62h
+01a57a44 cmp rdx,[rel 549E380h]
+01a57a4b jb short 0000000001A57A62h
+01a57a4d cmp rdx,[rel 549E458h]
+01a57a54 jae short 0000000001A57A62h
+01a57a56 lea rcx,[rel 549E340h]
+01a57a5d call 0000000000FA8020h
+01a57a62 mov rcx,[rbx+0B8h]
+01a57a69 mov [rbx+0C0h],rdi
+01a57a70 test rcx,rcx
+01a57a73 je short 0000000001A57A98h
+01a57a75 mov rax,[rel 6739B10h]
+01a57a7c test rax,rax
+01a57a7f je short 0000000001A57A98h
+01a57a81 movss xmm0,[rbx+0C8h]
+01a57a89 movss [rax+1DE0h],xmm0
+01a57a91 mov [rax+1DD8h],rcx
+01a57a98 lea rcx,[rbx+564h]
+01a57a9f mov [rbx+0B8h],rdi
+01a57aa6 mov [rbx+0C8h],rdi
+01a57aad call 00000000012B5410h
+01a57ab2 lea rcx,[rbx+568h]
+01a57ab9 call 0000000000F1A3D0h
+01a57abe lea rcx,[rbx+0D8h]
+01a57ac5 mov [rbx+3F8h],edi
+01a57acb xor edx,edx
+01a57acd mov [rbx+0D4h],edi
+01a57ad3 mov r8d,320h
+01a57ad9 mov rbx,[rsp+30h]
+01a57ade add rsp,20h
+01a57ae2 pop rdi
+01a57ae3 jmp 0000000002D27AC9h
+FUNCTION 0x1a57210 BOUNDS ('0x1a57210', '0x1a57270')
+01a57210 push rbx
+01a57212 sub rsp,20h
+01a57216 cmp dword [rcx+50h],0Ah
+01a5721a mov rbx,rcx
+01a5721d jne short 0000000001A5726Ah
+01a5721f cmp byte [rcx+54h],0
+01a57223 je short 0000000001A5726Ah
+01a57225 xor eax,eax
+01a57227 mov qword [rcx+0CCh],3F800000h
+01a57232 mov [rcx+3F8h],eax
+01a57238 cmp [rel 68EB901h],al
+01a5723e jne short 0000000001A57247h
+01a57240 mov [rcx+564h],rax
+01a57247 mov rax,[rcx]
+01a5724a call qword [rax+88h]
+01a57250 mov rcx,rbx
+01a57253 call 0000000001A58D30h
+01a57258 mov rax,[rbx]
+01a5725b mov rcx,rbx
+01a5725e add rsp,20h
+01a57262 pop rbx
+01a57263 jmp qword [rax+0D8h]
+01a5726a add rsp,20h
+01a5726e pop rbx
+01a5726f ret

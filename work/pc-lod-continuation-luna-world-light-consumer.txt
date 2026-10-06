@@ -1,0 +1,15 @@
+# General world-light culling follow-up
+
+Build 23987138, executable SHA256 `51299faca61866cf10ea9035a15b8f22600a56557dd5ffc1aad390d5a54e6d82`. Bounded read-only continuation on the report that ordinary surfaces lose illumination when Photo camera moves away. No game/native-source/install files changed.
+
+## Result
+
+No PC runtime consumer was proven in this pass. In the inspected executable string indexes, the only clearly named camera-distance light gate remains `VehicleSystemConfig.MaxCulledLightDistance` (“If a vehicle is culled from drawing, only enable lights if it is within this distance of the camera.”). That is explicitly a culled-vehicle behavior, not general world/environment light submission. Other light-related strings found by the existing LOD string extraction name `KeyLightLodSubmitQueries` and its Impostor/Volume/Model variants plus `m_KeyLight*Lod*` shader parameters. Existing setup xrefs at `0x10948DE` and `0x1094BB0` lead to query/resource setup and are shadow/query LOD-related; they do not demonstrate direct-light surface contribution culling.
+
+`SetBypassDistantLightingActionPrius` remains a reflected action-data type with only `ActionType`; its enum methods only write `0x37`. See `work/pc-lod-continuation-luna-lightaction.txt` and the focused disassembly. The fog peer likewise reports no final PC fog renderer consumer in `work/lighting-effects-runtime-continuation.md`.
+
+## Camera-origin status and patchability
+
+No tested distance predicate in this trace could be tied to a general world-light submit/visibility function, and no active camera-position source was found for such a predicate. Therefore it is unknown whether the behavior tracks the Photo camera, player/main view, or an engine-specific lighting origin. The existing Photo `geometry_active` lifecycle LONG could guard a future per-call intervention, but there is no identified general-light function/argument to modify safely. Do not patch the vehicle field, placed Photo-light range, action enum, or ambiguous shadow/renderer globals on current evidence.
+
+This is a bounded negative finding, not proof that the executable has no general light-distance cull; the relevant path may be in less well-named renderer code or externalized shader/driver data. Required next evidence is a function that computes/submits ordinary world lights and a disassembly-visible range test whose origin is explicitly the active view camera.

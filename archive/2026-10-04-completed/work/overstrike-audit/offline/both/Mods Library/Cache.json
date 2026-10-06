@@ -1,0 +1,31 @@
+{
+  "cache": [
+    [
+      "NoIntro.stage",
+      1859,
+      1859,
+      2042151141,
+      [
+        [
+          "NoIntro by SkacikPL",
+          "NoIntro.stage",
+          "STAGE_RCRA"
+        ]
+      ]
+    ],
+    [
+      "PhotoMode-10x-Tether1000.stage",
+      61756,
+      1568247107,
+      1096594021,
+      [
+        [
+          "Photo Mode — 10x Speed and 1000 Tether by Tim / Codex",
+          "PhotoMode-10x-Tether1000.stage",
+          "STAGE_RCRA_V2"
+        ]
+      ]
+    ]
+  ],
+  "format": "1"
+}

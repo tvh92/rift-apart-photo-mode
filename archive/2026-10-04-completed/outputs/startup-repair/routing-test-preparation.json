@@ -1,0 +1,70 @@
+{
+  "Intro-Original-Routing-Test.stage": {
+    "package_sha256": "e89efd8b8c9e9d75371619417d5f7fb7cf9f5084312f5662d13a4cc8ebd702fe",
+    "assets": [
+      {
+        "asset": "851735C03E050852",
+        "bytes": 28430680,
+        "sha256": "a88fd460970c87b72137a5475a65cbc3b0411b9b74b8de980755d583cc20fb7b",
+        "bink_declared_bytes": 28430680,
+        "frames": 547,
+        "audio_tracks": 2
+      },
+      {
+        "asset": "8B203B05CA2AEB50",
+        "bytes": 28430680,
+        "sha256": "a88fd460970c87b72137a5475a65cbc3b0411b9b74b8de980755d583cc20fb7b",
+        "bink_declared_bytes": 28430680,
+        "frames": 547,
+        "audio_tracks": 2
+      },
+      {
+        "asset": "905EBDB8C12D66E0",
+        "bytes": 37729208,
+        "sha256": "efaba807f3b24cf143f19da7689952fee925859de9b20b793cc7ab3507726fd7",
+        "bink_declared_bytes": 37729208,
+        "frames": 706,
+        "audio_tracks": 2
+      }
+    ]
+  },
+  "NoIntro-Padded-CurrentBuild.stage": {
+    "package_sha256": "f2ae21130ec93f1a784ce0c701df5aa077331589b25627b136e051d253293b8f",
+    "assets": [
+      {
+        "asset": "851735C03E050852",
+        "bytes": 28430680,
+        "sha256": "a5503cb9605af429aa4fb556d0e82e879215f403fd951b6dae4ecde252cb3ada",
+        "bink_declared_bytes": 79536,
+        "frames": 4,
+        "audio_tracks": 2
+      },
+      {
+        "asset": "8B203B05CA2AEB50",
+        "bytes": 28430680,
+        "sha256": "a5503cb9605af429aa4fb556d0e82e879215f403fd951b6dae4ecde252cb3ada",
+        "bink_declared_bytes": 79536,
+        "frames": 4,
+        "audio_tracks": 2
+      },
+      {
+        "asset": "905EBDB8C12D66E0",
+        "bytes": 37729208,
+        "sha256": "26560d77f2c6e50882958263bce4f395e065102dcd70a0c002ba1a9dec31b7f1",
+        "bink_declared_bytes": 95296,
+        "frames": 4,
+        "audio_tracks": 2
+      }
+    ]
+  },
+  "decoder_test": {
+    "frames": 4,
+    "decode_returns": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "decoder_error": ""
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "game_sha256": "51299faca61866cf10ea9035a15b8f22600a56557dd5ffc1aad390d5a54e6d82",
+  "dll_sha256": "97b9a29eed154973fb587e0fae965c441b9956096211523aa1f99ef1d6d03e81",
+  "compiler": {
+    "version": "0.15.2",
+    "tarball": "https://ziglang.org/download/0.15.2/zig-x86_64-windows-0.15.2.zip",
+    "shasum": "3a0ed1e8799a2f8ce2a6e6290a9ff22e6906f8227865911fb7ddedc3cc14cb0c",
+    "size": "92614574"
+  },
+  "hid_exports": 44,
+  "isolated_tests": [
+    "HID GUID forwarding",
+    "all exports resolved",
+    "unsupported-process guard",
+    "hook ABI preservation",
+    "owner filtering",
+    "normal/Shift/release speeds",
+    "baseline restoration",
+    "replacement-camera identity"
+  ],
+  "installed": true,
+  "in_game_test": "User confirmed both normal and Shift speeds work after leaving and re-entering Photo Mode, without the Python helper."
+}

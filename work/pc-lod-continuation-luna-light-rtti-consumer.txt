@@ -1,0 +1,26 @@
+# RTTI light-owner pass
+
+Read-only RTTI/vtable pass on local executable build 23987138 (EXE SHA256 `51299faca61866cf10ea9035a15b8f22600a56557dd5ffc1aad390d5a54e6d82`). No native source, game, or installation files changed.
+
+## Candidate owner identified: `LevelLightManager`
+
+MSVC RTTI resolves `.?AVLevelLightManager@@` (TypeDescriptor RVA `0x5E88538`) to COL RVA `0x4B4B5C8`, vtable RVA `0x32D2368`. Its recovered executable slots include 30 methods, notably `0x1096BD0`, `0x1096C80`, `0xFA65B0`, `0xFA6680`, `0xFA6D80`, `0x1096D60`, `0x1096DD0`, `0x1096FA0`, and `0x1097020`.
+
+The inspected nontrivial methods do not expose local-light rendering or distance culling:
+
+- `0x1096BD0` allocates/initializes `+0x110` descriptor storage, fills repeated records with metadata pointers `0x678E5C0`/`0x678D3C0`, then calls registration/helper `0xFA75B0`.
+- `0x1096D60` calls a generic predicate `0x15B30F0`, then virtual methods at vtable offsets `+0xA0` and `+0x30`; it has no position, float distance, or camera argument visible.
+- `0x1096DD0` derives an index from a descriptor-storage address, validates an array bound at `[rcx+0x68]`, calls `0xFA2B70`, then resolves two IDs through `0x15B3220` (`0x1F6A31A6`, `0x46EFD07A`). The function continues generic descriptor/data setup; no distance arithmetic or render submit is present in its bounded function body.
+- `0x1096FA0` releases two pointer values within globals `0x549E380..0x549E458` through `0xFA8020`, resets metadata pointers, and clears fields. This is cleanup.
+- The examined `0xFA6xxx` methods are short metadata/field wrappers or DDL helper calls; no float compare/vector-distance sequence was found among all 30 recovered slots.
+
+This is a real class name match, but its vtable evidence is for reflection/config/registration and cleanup, not an actual world-light renderer consumer. `hkxLight`, `AttachedSpotlight`, `BeamSpotlight`, `PhotoLightRig`, `PhotoLightManager`, and `AnimatedLight` names were checked as nearby type-name matches. The Photo light manager/rig are the placed Photo-light system already separated from world lighting; no `PointLight`, `OmniLight`, `LightingView`, or generic `LightComponent` vtable with a camera-distance predicate was recovered in this pass.
+
+## Conclusion
+
+No distance predicate or camera-origin source was established. This pass does not prove absence of generic renderer code (class names may be stripped or light processing may be data-oriented), but it supplies no supported target for a Photo-only hook. Keep the action/vehicle/shadow near-matches excluded. The needed proof remains an ordinary world-light submission/visibility routine, its range test, and the exact active view position passed into that test.
+
+## Reproduction artifacts
+
+- `work/pc-lod-continuation-luna-level-light-manager-disasm.txt`: all 30 bounded vtable-slot dumps used for the `LevelLightManager` review.
+- `work/pc-lod-continuation-luna-world-light-consumer.txt`: prior schema/string/index negative finding.

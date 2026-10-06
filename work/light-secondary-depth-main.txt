@@ -1,0 +1,212 @@
+FUNCTION 0x10bcff0 ROOT (17551344, 17551381, 81766868) RANGES [(17551344, 17551381, 81766868), (17551381, 17551567, 81766876), (17551567, 17551593, 81766896), (17551593, 17551625, 81766916)]
+010BCFF0 sub rsp,18h
+010BCFF4 movaps xmm0,xmm2
+010BCFF7 xorps xmm4,xmm4
+010BCFFA maxss xmm0,xmm3
+010BCFFE ucomiss xmm0,xmm4
+010BD001 jne short 00000000010BD010h
+010BD003 movss [rcx],xmm4
+010BD007 movss [rdx],xmm4
+010BD00B add rsp,18h
+010BD00F ret
+010BD010 cmp byte [rsp+50h],0
+010BD015 movaps [rsp],xmm6
+010BD019 movaps xmm6,xmm2
+010BD01C mulss xmm6,[rel 2F52C00h]
+010BD024 maxss xmm6,xmm3
+010BD028 movaps xmm3,xmm6
+010BD02B mulss xmm3,[rel 2F52C00h]
+010BD033 maxss xmm3,xmm2
+010BD037 movaps xmm2,xmm3
+010BD03A addss xmm2,xmm3
+010BD03E maxss xmm2,xmm6
+010BD042 maxss xmm2,[rel 2E6B2D4h]
+010BD04A je short 00000000010BD05Bh
+010BD04C comiss xmm3,xmm4
+010BD04F jbe short 00000000010BD05Bh
+010BD051 movss xmm5,[rel 2E6B2E4h]
+010BD059 jmp short 00000000010BD063h
+010BD05B movss xmm5,[rel 4A4A198h]
+010BD063 mulss xmm2,[rel 2E90220h]
+010BD06B movss xmm0,[rel 2E69860h]
+010BD073 mulss xmm2,[rsp+48h]
+010BD079 divss xmm0,xmm2
+010BD07D movaps xmm1,xmm2
+010BD080 movss xmm2,[rel 2E6D030h]
+010BD088 subss xmm1,[rsp+40h]
+010BD08E mulss xmm1,xmm0
+010BD092 maxss xmm1,xmm4
+010BD096 minss xmm1,[rel 4A4A198h]
+010BD09E movaps xmm0,xmm1
+010BD0A1 addss xmm0,xmm1
+010BD0A5 mulss xmm1,xmm1
+010BD0A9 subss xmm2,xmm0
+010BD0AD mulss xmm2,xmm1
+010BD0B1 comiss xmm2,[rel 2EE5D20h]
+010BD0B8 jbe short 00000000010BD0CFh
+010BD0BA mulss xmm5,xmm3
+010BD0BE movss [rcx],xmm5
+010BD0C2 movss [rdx],xmm6
+010BD0C6 movaps xmm6,[rsp]
+010BD0CA add rsp,18h
+010BD0CE ret
+010BD0CF comiss xmm2,[rel 2E70488h]
+010BD0D6 jae short 00000000010BD0E9h
+010BD0D8 movss [rcx],xmm4
+010BD0DC movss [rdx],xmm4
+010BD0E0 movaps xmm6,[rsp]
+010BD0E4 add rsp,18h
+010BD0E8 ret
+010BD0E9 movaps xmm0,xmm2
+010BD0EC mulss xmm2,xmm3
+010BD0F0 mulss xmm0,xmm6
+010BD0F4 mulss xmm2,xmm5
+010BD0F8 movss [rcx],xmm2
+010BD0FC movss [rdx],xmm0
+010BD100 movaps xmm6,[rsp]
+010BD104 add rsp,18h
+010BD108 ret
+FUNCTION 0x1098f30 ROOT None RANGES [(17403696, 17403824, 0)]
+01098F30 movzx edx,byte [rcx+94h]
+01098F37 sub edx,1
+01098F3A je short 0000000001098F45h
+01098F3C cmp edx,1
+01098F3F je short 0000000001098F45h
+01098F41 xorps xmm0,xmm0
+01098F44 ret
+01098F45 movss xmm0,[rcx+130h]
+01098F4D ret
+01098F4E int3
+01098F4F int3
+01098F50 mov eax,[rcx+88h]
+01098F56 shr eax,16h
+01098F59 test al,1
+01098F5B je short 0000000001098F84h
+01098F5D movzx edx,byte [rcx+94h]
+01098F64 test edx,edx
+01098F66 je short 0000000001098F7Bh
+01098F68 sub edx,1
+01098F6B je short 0000000001098F7Bh
+01098F6D cmp edx,1
+01098F70 jne short 0000000001098F84h
+01098F72 movss xmm0,[rcx+128h]
+01098F7A ret
+01098F7B movss xmm0,[rcx+120h]
+01098F83 ret
+01098F84 xorps xmm0,xmm0
+01098F87 ret
+01098F88 int3
+01098F89 int3
+01098F8A int3
+01098F8B int3
+01098F8C int3
+01098F8D int3
+01098F8E int3
+01098F8F int3
+01098F90 push rbx
+01098F92 sub rsp,60h
+01098F96 mov eax,[rcx+88h]
+01098F9C mov rbx,rcx
+01098F9F movaps [rsp+50h],xmm6
+01098FA4 movaps [rsp+40h],xmm7
+01098FA9 (bad)
+FUNCTION 0x109a670 ROOT (17409648, 17409779, 81757636) RANGES [(17409648, 17409779, 81757636)]
+0109A670 sub rsp,18h
+0109A674 test dword [rcx+88h],200000h
+0109A67E je short 000000000109A6ECh
+0109A680 mov eax,[rcx+38h]
+0109A683 movss xmm3,[rcx+78h]
+0109A688 maxss xmm3,[rcx+74h]
+0109A68D movsd xmm1,[rcx+30h]
+0109A692 movss xmm2,[rcx+34h]
+0109A697 subss xmm2,[rdx+4]
+0109A69C subss xmm1,[rdx]
+0109A6A0 maxss xmm3,[rcx+70h]
+0109A6A5 mov [rsp+8],eax
+0109A6A9 movss xmm0,[rsp+8]
+0109A6AF subss xmm0,[rdx+8]
+0109A6B4 mulss xmm2,xmm2
+0109A6B8 mulss xmm3,[rcx+4Ch]
+0109A6BD mulss xmm1,xmm1
+0109A6C1 mulss xmm3,[rel 2E6B2D4h]
+0109A6C9 addss xmm2,xmm1
+0109A6CD mulss xmm0,xmm0
+0109A6D1 addss xmm3,[rcx+0C4h]
+0109A6D9 addss xmm2,xmm0
+0109A6DD mulss xmm3,xmm3
+0109A6E1 comiss xmm2,xmm3
+0109A6E4 seta al
+0109A6E7 add rsp,18h
+0109A6EB ret
+0109A6EC xor al,al
+0109A6EE add rsp,18h
+0109A6F2 ret
+FUNCTION 0x10b9750 ROOT (17536848, 17537130, 81766936) RANGES [(17536848, 17537130, 81766936)]
+010B9750 sub rsp,28h
+010B9754 movss xmm3,[rcx+44h]
+010B9759 movss xmm2,[rcx+40h]
+010B975E movaps xmm1,xmm3
+010B9761 mulss xmm1,[rcx+10h]
+010B9766 movaps xmm0,xmm2
+010B9769 mulss xmm0,[rcx]
+010B976D addss xmm1,[rcx+30h]
+010B9772 movss xmm5,[rcx+48h]
+010B9777 movaps [rsp+10h],xmm6
+010B977C movaps xmm4,xmm5
+010B977F mulss xmm4,[rcx+24h]
+010B9784 movaps xmm6,xmm5
+010B9787 mulss xmm6,[rcx+20h]
+010B978C mulss xmm5,[rcx+28h]
+010B9791 addss xmm6,xmm0
+010B9795 movaps [rsp],xmm7
+010B9799 movss xmm7,[rcx+78h]
+010B979E movaps xmm0,xmm2
+010B97A1 mulss xmm0,[rcx+4]
+010B97A6 mulss xmm2,[rcx+8]
+010B97AB maxss xmm7,[rcx+74h]
+010B97B0 addss xmm6,xmm1
+010B97B4 movaps xmm1,xmm3
+010B97B7 mulss xmm3,[rcx+18h]
+010B97BC addss xmm4,xmm0
+010B97C0 mulss xmm1,[rcx+14h]
+010B97C5 addss xmm5,xmm2
+010B97C9 addss xmm3,[rcx+38h]
+010B97CE movss xmm2,[rel 2E6B300h]
+010B97D6 addss xmm1,[rcx+34h]
+010B97DB subss xmm6,[rdx]
+010B97DF maxss xmm7,[rcx+70h]
+010B97E4 addss xmm5,xmm3
+010B97E8 addss xmm4,xmm1
+010B97EC movaps xmm1,xmm6
+010B97EF mulss xmm7,[rcx+4Ch]
+010B97F4 andps xmm1,xmm2
+010B97F7 subss xmm5,[rdx+8]
+010B97FC subss xmm4,[rdx+4]
+010B9801 movaps xmm3,xmm5
+010B9804 movaps xmm0,xmm4
+010B9807 andps xmm3,xmm2
+010B980A andps xmm0,xmm2
+010B980D maxss xmm3,xmm0
+010B9811 movss xmm0,[rel 4A4A198h]
+010B9819 maxss xmm3,xmm1
+010B981D xorps xmm1,xmm1
+010B9820 comiss xmm3,xmm1
+010B9823 divss xmm0,xmm3
+010B9827 mulss xmm6,xmm0
+010B982B mulss xmm4,xmm0
+010B982F mulss xmm5,xmm0
+010B9833 xorps xmm0,xmm0
+010B9836 jbe short 00000000010B9854h
+010B9838 mulss xmm4,xmm4
+010B983C mulss xmm6,xmm6
+010B9840 mulss xmm5,xmm5
+010B9844 addss xmm4,xmm6
+010B9848 addss xmm4,xmm5
+010B984C sqrtss xmm0,xmm4
+010B9850 mulss xmm0,xmm3
+010B9854 movaps xmm6,[rsp+10h]
+010B9859 subss xmm0,xmm7
+010B985D movaps xmm7,[rsp]
+010B9861 maxss xmm0,xmm1
+010B9865 add rsp,28h
+010B9869 ret

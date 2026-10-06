@@ -1,0 +1,30 @@
+# Actual-source review: PhotoLight relay and PhotoLOD lifecycle
+
+Reviewed read-only:
+- `outputs/camera-native-lighting-candidate/PhotoLight.h`
+- `outputs/camera-native-lighting-candidate/PhotoLOD.h`
+- `work/native-abi/PhotoLightProbe.c`
+- `work/native-abi/PhotoLightFixture.h` (the generated fixture file present in the workspace)
+- `outputs/camera-native-lighting-candidate/GeometryLOD.h` for the shared pause/atomic-patch helpers
+
+No source or installation files were changed.
+
+## Result
+
+No production blocker found in the relay’s gate ordering, last-return guard, EDX mask, publication, or dynamic unwind layout. The new code matches the intended narrow override and the reported 1,920-case probe supports the important behavior. The installation should still remain behind the existing exact-build/load validation and not proceed if either `prepare_photo_light` or any earlier candidate guard fails.
+
+## Specific checks
+
+- The setup checks all four call opcodes and their relative targets, the exact eight site bytes, `0x10BE180`'s `mov r14,rcx`, and the native function-table fragment begin/end and CHAININFO version byte. It registers the dynamic function table before exchanging the instruction. The allocated page remains retained on the uncertain `s->changed` path; successful operation has no teardown/unregister route, so the registered executable/unwind memory remains reachable for process lifetime.
+- The emitted control flow is correct: ready mismatch and geometry-inactive branches land at the replay; each of the four exact return-address comparisons jumps to the primary-view check only on equality; after the fourth unequal comparison, the final `JNE` lands at replay. The global test is `cmp r14,[game_base+0x6739B10]`; only its equality path clears bit 18. The mask `0xFFFBFFFF` clears only that bit in the local EDX copy. The function’s source record is not written.
+- The diagnostic `lock inc [photo_light_hits]` changes EFLAGS, but the replayed MOVSD and intervening MOV instructions do not consume flags; native `and r8d,3` at `0x1099281` overwrites them before any conditional branch. The replay restores XMM0. RAX is reused for the absolute continuation address and is overwritten by native `mov eax,[rcx+0xB0]` at `0x109927B`. R10 is scratch and is not part of this helper's live state. No stack or nonvolatile register is changed by the relay.
+- The dynamic chained record copies the `RUNTIME_FUNCTION` returned by `RtlLookupFunctionEntry` for the native fragment covering the patched site, whose own CHAININFO continues to the native root. The relay code and chain record share the executable base for RVA interpretation, and the shared allocator stays above the image within both rel32 and 32-bit RVA limits. The probe checks unwind results across every relay byte and compares RSP/RIP and XMM6–XMM15; this helper has no nonvolatile GPR save slots, so omission of those GPRs from the comparison does not expose an untested restore operation.
+- The install path pauses other process threads, refuses a thread IP within the patched/continuation window, uses aligned `InterlockedCompareExchange64`, restores page protection, and flushes the instruction cache. Setup publishes `photo_light_ready` only after patch exchange and thread resume; the brief intervening state fails closed. `geometry_active` uses Interlocked writes and only becomes true in Photo lifecycle states 1, 2, or 4 when the geometry preference is enabled. ClearPhotoLOD disables it and leaves the relay/table alive as required.
+
+## Non-blocking observations
+
+- `photo_light_hits` is an atomic diagnostic counter, but `ClearPhotoLOD` exchanges/logs it without quiescing any render threads already past the active gate. A late increment can be attributed to the following Photo session. This affects per-session log accuracy only; it does not affect EDX or source data. Treat the count as approximate or label it as a process/session-boundary diagnostic.
+- The relay tail uses `jmp rax` to enter the middle of the native function at `site+8`. That is fine on the observed build, but a direct rel32 tail branch would avoid reliance on indirect-branch tracking policy if CET-IBT is ever enabled for this process.
+- `toggle_photo_geometry` samples `GetAsyncKeyState(VK_CONTROL)` three times in one expression. It is conservative but redundant and can miss a very brief key transition between samples; this is unrelated to the light relay.
+
+The supplied probe plus source inspection leave no unwind or concurrency defect requiring a source change. Static review cannot independently establish the external loader's full-executable hash gate; this review assumes the parent process retains the exact-build verification already required by the handoff.

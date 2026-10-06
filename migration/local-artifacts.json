@@ -1,0 +1,1587 @@
+{
+  "policy": "These files remain intact locally and are excluded from Git. No assets were deleted.",
+  "local_workspace": "C:\\Users\\Tim\\Documents\\Codex\\2026-10-04\\prompt-for-the-research-instance-research",
+  "dependency_directories_excluded_without_hashing": [
+    "work/toolchain",
+    "work/zig-cache",
+    "work/disasm",
+    "outputs/Overstrike"
+  ],
+  "regenerable_directories_excluded": [
+    "**/__pycache__"
+  ],
+  "artifacts": [
+    {
+      "path": "archive/2026-10-04-completed/audit-regenerated-cache/Check-Installation.cpython-312.pyc",
+      "bytes": 10814,
+      "sha256": "2af598860614cd2606cfd4234a5402fb387fb4952596d0f401e93fb3bbebc519",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/camera-controls/Start-CameraBoost.cmd",
+      "bytes": 120,
+      "sha256": "17e361843dbe303a9a255a0665d9bee0b979d004317f09df6a655de20f665d9f",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/camera-controls/migration-backup/toc",
+      "bytes": 12574700,
+      "sha256": "3a0de618adddd1a9e3137868423932b159d4f737d6683cfe7385c6b2b29e78e0",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/camera-controls/migration-backup/toc.BAK",
+      "bytes": 12574572,
+      "sha256": "a60b40206cc15b1d2bd4fd9747d66de351208c089feb8bbad1e2eedff86b7e89",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/Intro-Original-Routing-Test.stage",
+      "bytes": 91404763,
+      "sha256": "e89efd8b8c9e9d75371619417d5f7fb7cf9f5084312f5662d13a4cc8ebd702fe",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/NoIntro-2Second-CurrentBuild.stage",
+      "bytes": 2392727,
+      "sha256": "580f03e7d68bb2e3464b4d77439db290902f970e3df5658e20c682c4e2b3a616",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/NoIntro-CurrentBuild.stage",
+      "bytes": 214330,
+      "sha256": "5e2cb4af0b315eddf9fd50abd84f6b96c165c05d389fc4dddf0f0e299f522a90",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/NoIntro-Padded-CurrentBuild.stage",
+      "bytes": 307286,
+      "sha256": "f2ae21130ec93f1a784ce0c701df5aa077331589b25627b136e051d253293b8f",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/backup-before/hid.dll",
+      "bytes": 182784,
+      "sha256": "97b9a29eed154973fb587e0fae965c441b9956096211523aa1f99ef1d6d03e81",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/backup-before/mod0",
+      "bytes": 31404,
+      "sha256": "9de2e73679f6883aab9c371b21725a3c20fdf6a734406c98441bf98d530daabb",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/backup-before/mod1",
+      "bytes": 263280,
+      "sha256": "7e1538b0742262daec41965bdce20d4a0252502a2eded61c87d97fe56373d7c5",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/backup-before/toc",
+      "bytes": 12574972,
+      "sha256": "10ba65a058fa5d3d58f2242599cf644e86ad50576651531071f34859ae9fb030",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/backup-before/toc.BAK",
+      "bytes": 12574844,
+      "sha256": "01213e194236b48140ee51bfb9f1acf6db5e9d6550dd0f5f7feb74a358502a98",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/backup-before/toc.sha1",
+      "bytes": 40,
+      "sha256": "97837d58eea10e7d84b415c195e4aa50923acb875a80907e6518ddc30c46a19c",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/direct-archive/851735C03E050852.original.movie",
+      "bytes": 28430680,
+      "sha256": "a88fd460970c87b72137a5475a65cbc3b0411b9b74b8de980755d583cc20fb7b",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/direct-archive/8B203B05CA2AEB50.original.movie",
+      "bytes": 28430680,
+      "sha256": "a88fd460970c87b72137a5475a65cbc3b0411b9b74b8de980755d583cc20fb7b",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/direct-archive/905EBDB8C12D66E0.original.movie",
+      "bytes": 37729208,
+      "sha256": "efaba807f3b24cf143f19da7689952fee925859de9b20b793cc7ab3507726fd7",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/direct-archive/decoder-test.bk2",
+      "bytes": 37729208,
+      "sha256": "8dfca057e2667addc7ff2b1331736147b544fb98310341e36bfdec70b2ffd621",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/direct-archive/replacement.bk2",
+      "bytes": 10468,
+      "sha256": "c199732999d3d6cf5b0b9dae77361577a880a9421a6896b18262314a6891db96",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/direct-archive/toc.before",
+      "bytes": 12574508,
+      "sha256": "bb97e628378e177c5d4593fd20465643ccd8764412971d3047aae0916d054668",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/guarded-reinstall-13f7f327865d4723bf6b8b09446f1efb/mod0",
+      "bytes": 263280,
+      "sha256": "7e1538b0742262daec41965bdce20d4a0252502a2eded61c87d97fe56373d7c5",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/guarded-reinstall-13f7f327865d4723bf6b8b09446f1efb/toc",
+      "bytes": 12574508,
+      "sha256": "bb97e628378e177c5d4593fd20465643ccd8764412971d3047aae0916d054668",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/guarded-reinstall-13f7f327865d4723bf6b8b09446f1efb/toc.sha1",
+      "bytes": 40,
+      "sha256": "81cc2529ee1367272cacbca87d0019edf9011ffd69702e5056a0331aa5e94096",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/guarded-reinstall-4d01ae1d35aa4a7083052787c88522e9/mod0",
+      "bytes": 94590568,
+      "sha256": "f0750d37953674d520376496864b11671e60d75a795e8bd58c4ab535c09dab71",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/guarded-reinstall-4d01ae1d35aa4a7083052787c88522e9/mod1",
+      "bytes": 263280,
+      "sha256": "7e1538b0742262daec41965bdce20d4a0252502a2eded61c87d97fe56373d7c5",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/guarded-reinstall-4d01ae1d35aa4a7083052787c88522e9/toc",
+      "bytes": 12574572,
+      "sha256": "af2aa6b8eacff9a710c28101ea503e66ae7e274be49b13ff021d379dd77eeb8c",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/guarded-reinstall-4d01ae1d35aa4a7083052787c88522e9/toc.sha1",
+      "bytes": 40,
+      "sha256": "ac9d6ae6c42cb7cb5d0889174784d45e2bb67cb8af4339194ed317a4172cb644",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/permanent-backup-0983abda7ccd4de880abba26dad339dd/mod0",
+      "bytes": 94590568,
+      "sha256": "f0750d37953674d520376496864b11671e60d75a795e8bd58c4ab535c09dab71",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/permanent-backup-0983abda7ccd4de880abba26dad339dd/mod1",
+      "bytes": 263280,
+      "sha256": "7e1538b0742262daec41965bdce20d4a0252502a2eded61c87d97fe56373d7c5",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/permanent-backup-0983abda7ccd4de880abba26dad339dd/toc",
+      "bytes": 12574508,
+      "sha256": "556d8b21283c49fce2f5de8e4ae104dda0a73aaf47afdbaf7cdabb83ccf01685",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/permanent-backup-0983abda7ccd4de880abba26dad339dd/toc.sha1",
+      "bytes": 40,
+      "sha256": "187cd1171de2a819d8a3700b1a20ace4d458c94469a4020fceae4beeac708048",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/routing-launch-original/Mods Library/Intro-Original-Routing-Test.stage",
+      "bytes": 91404763,
+      "sha256": "e89efd8b8c9e9d75371619417d5f7fb7cf9f5084312f5662d13a4cc8ebd702fe",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/routing-launch-original/before-b8b0ad87442b43ceb21320987e8742f7/mod0",
+      "bytes": 94590568,
+      "sha256": "2d43403d8e82e3540990774b07e03ef8c5dd90f4e493f1f59d35610c491e997d",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/routing-launch-original/before-b8b0ad87442b43ceb21320987e8742f7/toc",
+      "bytes": 12574508,
+      "sha256": "556d8b21283c49fce2f5de8e4ae104dda0a73aaf47afdbaf7cdabb83ccf01685",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/routing-launch-original/before-e989ed5603fd4e33beff98732a80f110/mod0",
+      "bytes": 31404,
+      "sha256": "9de2e73679f6883aab9c371b21725a3c20fdf6a734406c98441bf98d530daabb",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/routing-launch-original/before-e989ed5603fd4e33beff98732a80f110/toc",
+      "bytes": 12574728,
+      "sha256": "d664d16a512985c2c51342cabbc52069d00c9583fc5c578efedf3c2cd84c626f",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/routing-launch-short/Mods Library/NoIntro-Padded-CurrentBuild.stage",
+      "bytes": 307286,
+      "sha256": "f2ae21130ec93f1a784ce0c701df5aa077331589b25627b136e051d253293b8f",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/routing-launch-short/before-2d68a908a52640c29d92ffe1dd3d2d15/mod0",
+      "bytes": 94590568,
+      "sha256": "717c972767751e56cfab446e341c6955188cff0cde879fe3281209907fe540e7",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/routing-launch-short/before-2d68a908a52640c29d92ffe1dd3d2d15/toc",
+      "bytes": 12574508,
+      "sha256": "556d8b21283c49fce2f5de8e4ae104dda0a73aaf47afdbaf7cdabb83ccf01685",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/routing-launch-two-second/Mods Library/NoIntro-2Second-CurrentBuild.stage",
+      "bytes": 2392727,
+      "sha256": "580f03e7d68bb2e3464b4d77439db290902f970e3df5658e20c682c4e2b3a616",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/routing-launch-two-second/before-1dba6d3356d3492aa09dfc651673137b/mod0",
+      "bytes": 94590568,
+      "sha256": "717c972767751e56cfab446e341c6955188cff0cde879fe3281209907fe540e7",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/outputs/startup-repair/routing-launch-two-second/before-1dba6d3356d3492aa09dfc651673137b/toc",
+      "bytes": 12574508,
+      "sha256": "556d8b21283c49fce2f5de8e4ae104dda0a73aaf47afdbaf7cdabb83ccf01685",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/camera-boost-live.err",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/camera-boost-live2.err",
+      "bytes": 285,
+      "sha256": "3db3d980fbd66bf4429a4a6a64a958c0a668e63566a613d852e1c3f412e6d8de",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/camera-boost-live3.err",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/offline/both/Mods Library/NoIntro.stage",
+      "bytes": 1859,
+      "sha256": "19606d9387eecfd9780d0a34c9bfdfccfccdd43e2b2ed56302c7e6cb1a3a18ea",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/offline/both/Mods Library/PhotoMode-10x-Tether1000.stage",
+      "bytes": 61756,
+      "sha256": "82f4434a12d85ae48eb30114b22a6d63332c4ed42e743c415133fb2ec0557e28",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/offline/both/test-game/d/mods/mod0",
+      "bytes": 31404,
+      "sha256": "9de2e73679f6883aab9c371b21725a3c20fdf6a734406c98441bf98d530daabb",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/offline/both/test-game/d/mods/mod1",
+      "bytes": 263280,
+      "sha256": "7e1538b0742262daec41965bdce20d4a0252502a2eded61c87d97fe56373d7c5",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/offline/both/test-game/toc",
+      "bytes": 12574572,
+      "sha256": "a60b40206cc15b1d2bd4fd9747d66de351208c089feb8bbad1e2eedff86b7e89",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/offline/both/test-game/toc.BAK",
+      "bytes": 12574728,
+      "sha256": "d664d16a512985c2c51342cabbc52069d00c9583fc5c578efedf3c2cd84c626f",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/offline/both/test-game/toc.sha1",
+      "bytes": 40,
+      "sha256": "c2100615c71ed0bedabf950dc1ddc8aaa808bde3f335bac23111e2b1d7b5f740",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/offline/camera/Mods Library/PhotoMode-10x-Tether1000.stage",
+      "bytes": 61756,
+      "sha256": "82f4434a12d85ae48eb30114b22a6d63332c4ed42e743c415133fb2ec0557e28",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/offline/camera/test-game/d/mods/mod0",
+      "bytes": 263280,
+      "sha256": "7e1538b0742262daec41965bdce20d4a0252502a2eded61c87d97fe56373d7c5",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/offline/camera/test-game/toc",
+      "bytes": 12574508,
+      "sha256": "bb97e628378e177c5d4593fd20465643ccd8764412971d3047aae0916d054668",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/offline/camera/test-game/toc.BAK",
+      "bytes": 12574728,
+      "sha256": "d664d16a512985c2c51342cabbc52069d00c9583fc5c578efedf3c2cd84c626f",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/offline/camera/test-game/toc.sha1",
+      "bytes": 40,
+      "sha256": "81cc2529ee1367272cacbca87d0019edf9011ffd69702e5056a0331aa5e94096",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/offline/empty/test-game/toc",
+      "bytes": 12574728,
+      "sha256": "d664d16a512985c2c51342cabbc52069d00c9583fc5c578efedf3c2cd84c626f",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/offline/empty/test-game/toc.BAK",
+      "bytes": 12574728,
+      "sha256": "d664d16a512985c2c51342cabbc52069d00c9583fc5c578efedf3c2cd84c626f",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/offline/empty/test-game/toc.sha1",
+      "bytes": 40,
+      "sha256": "7a0ef418ca141570e3b2628fd7b9af1f078f15415c5cf7a748634f2e794aee1d",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/offline/nointro/Mods Library/NoIntro.stage",
+      "bytes": 1859,
+      "sha256": "19606d9387eecfd9780d0a34c9bfdfccfccdd43e2b2ed56302c7e6cb1a3a18ea",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/offline/nointro/test-game/d/mods/mod0",
+      "bytes": 31404,
+      "sha256": "9de2e73679f6883aab9c371b21725a3c20fdf6a734406c98441bf98d530daabb",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/offline/nointro/test-game/toc",
+      "bytes": 12574508,
+      "sha256": "2b11cf55b4a0bfdd2495bc0439543cac048604dfd899148a9a0c8b1044c85ed9",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/offline/nointro/test-game/toc.BAK",
+      "bytes": 12574728,
+      "sha256": "d664d16a512985c2c51342cabbc52069d00c9583fc5c578efedf3c2cd84c626f",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/offline/nointro/test-game/toc.sha1",
+      "bytes": 40,
+      "sha256": "9791aad9904356b076506db021fc0e7a32f381fe4ee54e3bf7329b1bc61cf77a",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/offline/reversed/Mods Library/NoIntro.stage",
+      "bytes": 1859,
+      "sha256": "19606d9387eecfd9780d0a34c9bfdfccfccdd43e2b2ed56302c7e6cb1a3a18ea",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/offline/reversed/Mods Library/PhotoMode-10x-Tether1000.stage",
+      "bytes": 61756,
+      "sha256": "82f4434a12d85ae48eb30114b22a6d63332c4ed42e743c415133fb2ec0557e28",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/offline/reversed/test-game/d/mods/mod0",
+      "bytes": 263280,
+      "sha256": "7e1538b0742262daec41965bdce20d4a0252502a2eded61c87d97fe56373d7c5",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/offline/reversed/test-game/d/mods/mod1",
+      "bytes": 31404,
+      "sha256": "9de2e73679f6883aab9c371b21725a3c20fdf6a734406c98441bf98d530daabb",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/offline/reversed/test-game/toc",
+      "bytes": 12574572,
+      "sha256": "cd69a5548e836c2b5c9f9135da2ee1108bb3bda6661eb54f105e25b30a04fed0",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/offline/reversed/test-game/toc.BAK",
+      "bytes": 12574728,
+      "sha256": "d664d16a512985c2c51342cabbc52069d00c9583fc5c578efedf3c2cd84c626f",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/offline/reversed/test-game/toc.sha1",
+      "bytes": 40,
+      "sha256": "ebf2daebdc5909bccff50b4703dee861cfccc2620f22e37e7873c07653ca913c",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/padded-decoder-test.bk2",
+      "bytes": 37729208,
+      "sha256": "26560d77f2c6e50882958263bce4f395e065102dcd70a0c002ba1a9dec31b7f1",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/routing/original/Mods Library/Intro-Original-Routing-Test.stage",
+      "bytes": 91404763,
+      "sha256": "e89efd8b8c9e9d75371619417d5f7fb7cf9f5084312f5662d13a4cc8ebd702fe",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/routing/original/test-game/d/mods/mod0",
+      "bytes": 94590568,
+      "sha256": "717c972767751e56cfab446e341c6955188cff0cde879fe3281209907fe540e7",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/routing/original/test-game/toc",
+      "bytes": 12574508,
+      "sha256": "556d8b21283c49fce2f5de8e4ae104dda0a73aaf47afdbaf7cdabb83ccf01685",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/routing/original/test-game/toc.BAK",
+      "bytes": 12574728,
+      "sha256": "d664d16a512985c2c51342cabbc52069d00c9583fc5c578efedf3c2cd84c626f",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/routing/original/test-game/toc.sha1",
+      "bytes": 40,
+      "sha256": "187cd1171de2a819d8a3700b1a20ace4d458c94469a4020fceae4beeac708048",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/routing/short/Mods Library/NoIntro-Padded-CurrentBuild.stage",
+      "bytes": 307286,
+      "sha256": "f2ae21130ec93f1a784ce0c701df5aa077331589b25627b136e051d253293b8f",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/routing/short/test-game/d/mods/mod0",
+      "bytes": 94590568,
+      "sha256": "2d43403d8e82e3540990774b07e03ef8c5dd90f4e493f1f59d35610c491e997d",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/routing/short/test-game/toc",
+      "bytes": 12574508,
+      "sha256": "556d8b21283c49fce2f5de8e4ae104dda0a73aaf47afdbaf7cdabb83ccf01685",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/routing/short/test-game/toc.BAK",
+      "bytes": 12574728,
+      "sha256": "d664d16a512985c2c51342cabbc52069d00c9583fc5c578efedf3c2cd84c626f",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/routing/short/test-game/toc.sha1",
+      "bytes": 40,
+      "sha256": "187cd1171de2a819d8a3700b1a20ace4d458c94469a4020fceae4beeac708048",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/routing/two-second/Mods Library/NoIntro-2Second-CurrentBuild.stage",
+      "bytes": 2392727,
+      "sha256": "580f03e7d68bb2e3464b4d77439db290902f970e3df5658e20c682c4e2b3a616",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/routing/two-second/test-game/d/mods/mod0",
+      "bytes": 94590568,
+      "sha256": "f0750d37953674d520376496864b11671e60d75a795e8bd58c4ab535c09dab71",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/routing/two-second/test-game/toc",
+      "bytes": 12574508,
+      "sha256": "556d8b21283c49fce2f5de8e4ae104dda0a73aaf47afdbaf7cdabb83ccf01685",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/routing/two-second/test-game/toc.BAK",
+      "bytes": 12574728,
+      "sha256": "d664d16a512985c2c51342cabbc52069d00c9583fc5c578efedf3c2cd84c626f",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/routing/two-second/test-game/toc.sha1",
+      "bytes": 40,
+      "sha256": "187cd1171de2a819d8a3700b1a20ace4d458c94469a4020fceae4beeac708048",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/overstrike-audit/two-second-test.bk2",
+      "bytes": 37729208,
+      "sha256": "c5051b8e610c4e22f5df5e4ed3e04482055173dfc13da6e498aa39019b09f025",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/short-intro/851735C03E050852.bk2",
+      "bytes": 79536,
+      "sha256": "234dc33275f0850ba57f4d88870000d6609a20feed537d9dceba6d73aa675b30",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/short-intro/8B203B05CA2AEB50.bk2",
+      "bytes": 79536,
+      "sha256": "234dc33275f0850ba57f4d88870000d6609a20feed537d9dceba6d73aa675b30",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/short-intro/905EBDB8C12D66E0.bk2",
+      "bytes": 95296,
+      "sha256": "517c1117a4a5b55cd3591877487056a964807b5cc5508d09074d26256a525648",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "archive/2026-10-04-completed/work/short-intro/legacy.bk2",
+      "bytes": 10468,
+      "sha256": "c199732999d3d6cf5b0b9dae77361577a880a9421a6896b18262314a6891db96",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/camera-controls/PhotoMode-10x-Tether1000.stage",
+      "bytes": 61756,
+      "sha256": "82f4434a12d85ae48eb30114b22a6d63332c4ed42e743c415133fb2ec0557e28",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/camera-controls/backup/config.tether1000",
+      "bytes": 2156524,
+      "sha256": "06ea0a8d8b53052bb46451c9cbc75e59c9078d0ed1b970b51161d857aa4dd23a",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/camera-controls/presets/config.1000x",
+      "bytes": 2156524,
+      "sha256": "1bc62e757428f57435b0baa48a1085e54c6f69a3b87a82c3d61d727f683e406e",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/camera-controls/presets/config.100x",
+      "bytes": 2156524,
+      "sha256": "e5caa5b2edfe6220bdc0989746c25bbf8f788f527035849708f010c061f37850",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/camera-controls/presets/config.10x",
+      "bytes": 2156524,
+      "sha256": "80d12e156330d3a7ef788c1b5f972694bd7cf35f7ea40082fb3ba78d118c30fc",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/camera-controls/presets/config.1x",
+      "bytes": 2156524,
+      "sha256": "e079d9ac7f1afceef267f95563e013f90a9eeb4799a25522ddecc53aa3c7fb92",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/camera-native-fog-candidate/CameraBoost.lib",
+      "bytes": 10980,
+      "sha256": "0e88c753e2a3735e247e61205741d77bb75bf7a29640b4770c1088edcb6d1473",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/camera-native-fog-candidate/hid.pdb",
+      "bytes": 1056768,
+      "sha256": "6dea2cb2cc5cf229140e41276e6c45bd02b23990043de44da043f0f2a2c2ae0c",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/camera-native-lighting-candidate/CameraBoost.lib",
+      "bytes": 10980,
+      "sha256": "0e88c753e2a3735e247e61205741d77bb75bf7a29640b4770c1088edcb6d1473",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/camera-native-lighting-candidate/hid.pdb",
+      "bytes": 1064960,
+      "sha256": "bb2b2a2319226274f00e3e659907806c8f87a3d4258b9c9b29ed7f30f352b2a2",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/camera-native-lighting-v2/CameraBoost.lib",
+      "bytes": 10980,
+      "sha256": "0e88c753e2a3735e247e61205741d77bb75bf7a29640b4770c1088edcb6d1473",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/camera-native-lighting-v2/hid.pdb",
+      "bytes": 1101824,
+      "sha256": "b8a1acf9438faebdbf8c033d3891951ee353d6ff9d879775729c7d341b2e0488",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/camera-native-status-candidate/CameraBoost.lib",
+      "bytes": 10980,
+      "sha256": "0e88c753e2a3735e247e61205741d77bb75bf7a29640b4770c1088edcb6d1473",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/camera-native-status-candidate/hid.pdb",
+      "bytes": 1097728,
+      "sha256": "2e5bddafceaf452ecbf3c874bac55599b22195cc94396d29c15db335549eeda4",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/camera-native/CameraBoost.lib",
+      "bytes": 10980,
+      "sha256": "0e88c753e2a3735e247e61205741d77bb75bf7a29640b4770c1088edcb6d1473",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/camera-native/backup/2026-10-04-before-lod/CameraBoost.lib",
+      "bytes": 10980,
+      "sha256": "0e88c753e2a3735e247e61205741d77bb75bf7a29640b4770c1088edcb6d1473",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/camera-native/backup/2026-10-04-before-lod/hid.pdb",
+      "bytes": 1040384,
+      "sha256": "4eb5d7903c5f91e28be2d1240a3babb5b14f9aa51b1d9e4522d623f44a19a4cd",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/camera-native/backup/2026-10-05-before-control-indicator/CameraBoost.lib",
+      "bytes": 10980,
+      "sha256": "0e88c753e2a3735e247e61205741d77bb75bf7a29640b4770c1088edcb6d1473",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/camera-native/backup/2026-10-05-before-control-indicator/hid.pdb",
+      "bytes": 1052672,
+      "sha256": "9fbdf356581a7a49768f62666b8e5f2402d290fd549c5497cd0e144155c99f6a",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/camera-native/backup/2026-10-05-failed-eager-indicator/CameraBoost.lib",
+      "bytes": 10980,
+      "sha256": "0e88c753e2a3735e247e61205741d77bb75bf7a29640b4770c1088edcb6d1473",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/camera-native/backup/2026-10-05-failed-eager-indicator/hid.pdb",
+      "bytes": 1085440,
+      "sha256": "b942dc903b4fd701b71798a8e66a41f9b93cbc6fe8166feae4ecf1477bbf5651",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/camera-native/backup/2026-10-05-failed-lazy-indicator/CameraBoost.lib",
+      "bytes": 10980,
+      "sha256": "0e88c753e2a3735e247e61205741d77bb75bf7a29640b4770c1088edcb6d1473",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/camera-native/backup/2026-10-05-failed-lazy-indicator/hid.pdb",
+      "bytes": 1085440,
+      "sha256": "f191ea1964fa096a5573fa1e870ae84e9eb915ca755d821b82a74d052ffb52be",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/camera-native/backup/2026-10-05-failed-rebuilt-ctrl-only/CameraBoost.lib",
+      "bytes": 10980,
+      "sha256": "0e88c753e2a3735e247e61205741d77bb75bf7a29640b4770c1088edcb6d1473",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/camera-native/backup/2026-10-05-failed-rebuilt-ctrl-only/hid.pdb",
+      "bytes": 1052672,
+      "sha256": "60d67510917286cec067e81ae2be3b8152b54c615c3023a0991eb5ef5aefbcae",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/camera-native/hid.pdb",
+      "bytes": 1052672,
+      "sha256": "9fbdf356581a7a49768f62666b8e5f2402d290fd549c5497cd0e144155c99f6a",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/photo-mode-tether-1000/backup/config",
+      "bytes": 1960143,
+      "sha256": "f659e13afe36c335d3ab54441898378164a51c2c469a1a368a51c8a005310bb3",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/startup-repair/NoIntro-Fixed-2Seconds.stage",
+      "bytes": 2392779,
+      "sha256": "5fc62afad01e5be5c66bfd92921f41bc9a9fe301bb50e22f27e48024516b74cd",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/startup-repair/intro-comparison-9a983d10393a495f92d1530f42158f31/game/d/mods/mod0",
+      "bytes": 94590568,
+      "sha256": "f0750d37953674d520376496864b11671e60d75a795e8bd58c4ab535c09dab71",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/startup-repair/intro-comparison-9a983d10393a495f92d1530f42158f31/game/d/mods/mod1",
+      "bytes": 263280,
+      "sha256": "7e1538b0742262daec41965bdce20d4a0252502a2eded61c87d97fe56373d7c5",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/startup-repair/intro-comparison-9a983d10393a495f92d1530f42158f31/game/toc",
+      "bytes": 12574572,
+      "sha256": "af2aa6b8eacff9a710c28101ea503e66ae7e274be49b13ff021d379dd77eeb8c",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/startup-repair/intro-comparison-9a983d10393a495f92d1530f42158f31/game/toc.sha1",
+      "bytes": 40,
+      "sha256": "ac9d6ae6c42cb7cb5d0889174784d45e2bb67cb8af4339194ed317a4172cb644",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "outputs/startup-repair/toc.steam-original",
+      "bytes": 12574728,
+      "sha256": "d664d16a512985c2c51342cabbc52069d00c9583fc5c578efedf3c2cd84c626f",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/branch-refs.bin",
+      "bytes": 19275912,
+      "sha256": "cfaf688d9174f7e045e7e2e9078da10a42a70db3f2990e9bc2c735af788669bd",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/config.tether1000.prepared",
+      "bytes": 2156524,
+      "sha256": "06ea0a8d8b53052bb46451c9cbc75e59c9078d0ed1b970b51161d857aa4dd23a",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/live-Free.bin",
+      "bytes": 1536,
+      "sha256": "55e11c552d267250497e1c3a85f904d8b52da0a8f9a8531c36662e4d0343ca85",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/live-MotionFly.bin",
+      "bytes": 1536,
+      "sha256": "0b560d162383b7e0aa8ecbe8ce00901632ba28241943cf10114d144112e999f2",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T095725859461Z-corson-near.bin",
+      "bytes": 1696,
+      "sha256": "4aef590cb0a3737d15e667f5f34f1ced23cb0cdb6e7ba491fd7a9b478a5faca3",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T095725859461Z-corson-near.json",
+      "bytes": 15644,
+      "sha256": "7dfe79099ebaf74e57e9700ed2aca90d5cfc7bedeed501cbb8096db4b530890c",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T095911889645Z-corson-far.bin",
+      "bytes": 1696,
+      "sha256": "4aef590cb0a3737d15e667f5f34f1ced23cb0cdb6e7ba491fd7a9b478a5faca3",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T095911889645Z-corson-far.json",
+      "bytes": 15642,
+      "sha256": "3dd786dec5d33c7e92bf8f79820f302ce808a55b9aeda5188e7cfaa1f4369b4e",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T100234626832Z-corson-far-view.bin",
+      "bytes": 1696,
+      "sha256": "4aef590cb0a3737d15e667f5f34f1ced23cb0cdb6e7ba491fd7a9b478a5faca3",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T100234626832Z-corson-far-view.json",
+      "bytes": 15645,
+      "sha256": "3a5a0315a456104d74f1a36a58e7cdf894fcbc3bf04c5a59061394c19848b646",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T100302806876Z-corson-far-view.bin",
+      "bytes": 1696,
+      "sha256": "4aef590cb0a3737d15e667f5f34f1ced23cb0cdb6e7ba491fd7a9b478a5faca3",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T100302806876Z-corson-far-view.json",
+      "bytes": 26461,
+      "sha256": "f144c792d219662170c084cf666b9e86e7c2fd0660beeb112d5b46dae7d9e9d9",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T101416492915Z-corson-current-render-block.bin",
+      "bytes": 1696,
+      "sha256": "4aef590cb0a3737d15e667f5f34f1ced23cb0cdb6e7ba491fd7a9b478a5faca3",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T101416492915Z-corson-current-render-block.json",
+      "bytes": 40056,
+      "sha256": "6b01be74e54b974a8e0b15d773e12d72b1973fdef4a5d2fc068562c554895cd3",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T102640797513Z-corson-current-fog-context.bin",
+      "bytes": 1696,
+      "sha256": "4aef590cb0a3737d15e667f5f34f1ced23cb0cdb6e7ba491fd7a9b478a5faca3",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T102640797513Z-corson-current-fog-context.json",
+      "bytes": 40883,
+      "sha256": "bcdfd0cd2de0e6aa77c710b7069a2fc02262e8fe22ac1650fae00fc462e9d42d",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T103409112027Z-corson-photo-guard-check.bin",
+      "bytes": 1696,
+      "sha256": "4aef590cb0a3737d15e667f5f34f1ced23cb0cdb6e7ba491fd7a9b478a5faca3",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T103409112027Z-corson-photo-guard-check.json",
+      "bytes": 41021,
+      "sha256": "de6d380d3d906ce9f92367c9e27f27cb00fb4199fd1425f58277b631ac6bf9f9",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T103604131072Z-fog-range-probe.json",
+      "bytes": 568,
+      "sha256": "ca25b1938ef3d7ca4c316dfb93c773d0aed532d35ee8ee778c96b067adcd9ec6",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T104316887110Z-corson-position-check.bin",
+      "bytes": 1696,
+      "sha256": "4aef590cb0a3737d15e667f5f34f1ced23cb0cdb6e7ba491fd7a9b478a5faca3",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T104316887110Z-corson-position-check.json",
+      "bytes": 41015,
+      "sha256": "70ab6cceec6125a5a7b987c2dff4f0a5fc46cfacc8fb4be06cdd6554a2682c3b",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T104652764970Z-corson-fog128-active.bin",
+      "bytes": 1696,
+      "sha256": "d72a6c2ab2a31253f0939ba6b254130a8ca60125b1b573f6b12ba141edde7915",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T104652764970Z-corson-fog128-active.json",
+      "bytes": 41013,
+      "sha256": "6517b7523f66fae990dc96a76c9edfd7471ed72cf85ee546f9db74c9ae909fa6",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T104759902502Z-fog-range-probe.json",
+      "bytes": 559,
+      "sha256": "2fcb304ebfaec9e53817a310ec4597c9e70e65d7a97579567ee2fa585d4aab21",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T104850213893Z-corson-fog512-active.bin",
+      "bytes": 1696,
+      "sha256": "925ea9debf27e2a9da3f028aaf6487479e88b0f54af2ea8ebce5766f4498bd59",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T104850213893Z-corson-fog512-active.json",
+      "bytes": 41013,
+      "sha256": "705f3f0a00916c1fa5a9afc8f9c9546a6abc9f0c8801f549f7ea0fa10f7107be",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T104922332594Z-fog-range-probe.json",
+      "bytes": 559,
+      "sha256": "d331a7a6ea8748d8806a932f432055ab6cf0112064884e2fd53bc33104c8981c",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T105016760411Z-corson-range-restored.bin",
+      "bytes": 1696,
+      "sha256": "4aef590cb0a3737d15e667f5f34f1ced23cb0cdb6e7ba491fd7a9b478a5faca3",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T105016760411Z-corson-range-restored.json",
+      "bytes": 41015,
+      "sha256": "88614b854819e7279591c5a77441ddadf904e04a9b37ac85aa4ca65f36437096",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T105145995573Z-corson-near-processed.bin",
+      "bytes": 1696,
+      "sha256": "4aef590cb0a3737d15e667f5f34f1ced23cb0cdb6e7ba491fd7a9b478a5faca3",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T105145995573Z-corson-near-processed.json",
+      "bytes": 41020,
+      "sha256": "1cf84ee45b5752459672255c2a50bfe3c67f66020634fc5d2858076af2bdcb4b",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T105659227943Z-fog-profile-probe.json",
+      "bytes": 978,
+      "sha256": "2c9545b2abcf0810e77a0474539de8c6926468d25d81a47da117efe6197ff2b1",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T105745098650Z-corson-nearfog-far-active.bin",
+      "bytes": 1696,
+      "sha256": "ccf649972d26229b780467aebbe56e166782538c46dfbe53fd5d7a27123326a6",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T105745098650Z-corson-nearfog-far-active.json",
+      "bytes": 41043,
+      "sha256": "5bb7bcdd8b4ef32dbb569611829b32bb535f4bc913338c1101c875b09e2f5800",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/20261005T105816167006Z-fog-profile-probe.json",
+      "bytes": 969,
+      "sha256": "659f008fb7f64aa627ea1be3c7969b108d5d3af319060d5b0e8454c06a7759d2",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-atmosphere-readonly/corson-near-far-comparison.json",
+      "bytes": 777,
+      "sha256": "58b47f0b98a14dc318d6248ed5b712b4f05cefc833c35aa3ee8cc980b5c997de",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-lights-readonly/20261005T225315872254Z-bridge-near-ctrl-on.json",
+      "bytes": 1314,
+      "sha256": "ceec64fc1890e0deada6101ba98659fd3eeb7b7892fb7db2c10331e17c7821ac",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-lights-readonly/20261005T225341581141Z-bridge-near-archive-check.json",
+      "bytes": 1828,
+      "sha256": "b6fe883d6a8c6e787c48ff658b4989875a09a3c6a504a0038b7bd188ef89ac35",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-lights-readonly/20261005T225407222829Z-bridge-near-ctrl-on.json",
+      "bytes": 759395,
+      "sha256": "c2fb90af4a813602231eb2fa14d6371e5f8248fc4fc4aa602795e17ff77fbca9",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-lights-readonly/20261005T225536930344Z-bridge-first-cutoff-ctrl-on.json",
+      "bytes": 1147582,
+      "sha256": "80671cf6458194b7e632fce1ca262888a16d906acfe229a7626330f153156aca",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-lights-readonly/20261005T230238093678Z-bridge-just-inside-ctrl-on.json",
+      "bytes": 400348,
+      "sha256": "5a4b89f4088125890c994b91229cb55fe230b814aee3f1ffa80193f45672bdc7",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-lights-readonly/20261005T230753190128Z-bridge-inside-query-ctrl-on.json",
+      "bytes": 998583,
+      "sha256": "ecb4b2e2bdc2d5c41386a85b3600fb7189f158c0752c49eba41753ad7ae81a27",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-lights-readonly/20261005T230916196483Z-bridge-query-registry-metadata.json",
+      "bytes": 202189,
+      "sha256": "8797983cec2c13afa744b1622a0a7838535d2c4d459143b2c00b914e27a444da",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/live-lights-readonly/20261005T231220416213Z-bridge-query-pointer-proof.json",
+      "bytes": 1213286,
+      "sha256": "4b413e9d33b59361f001dc26910c600b7091a3bdd1ad7df0e70e6badef4b4213",
+      "reason": "raw process capture"
+    },
+    {
+      "path": "work/lod_perf_action/rtti_scan.out",
+      "bytes": 2095,
+      "sha256": "2361ccc11587d45c0cf9d20652e857281dcf936fa1927bd493e430576f72afe7",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/ABICandidateProbe.exe",
+      "bytes": 177664,
+      "sha256": "5062a7ed37cdd30ad6545c93b9ceff89ca3a8e969fdbe5e95221f35dfdb6eda9",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/ABICandidateProbe.pdb",
+      "bytes": 1159168,
+      "sha256": "542ac4d8ff5607e2236745cf3a7c46aa37bd43acdb43f583be77b3b4c22e5370",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/BehaviorCandidateProbe.exe",
+      "bytes": 192000,
+      "sha256": "1f32b777730f6ac6d2f4e268869317c617e8b24daa0954530e8aa2be2ad1f216",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/BehaviorCandidateProbe.pdb",
+      "bytes": 1224704,
+      "sha256": "e13d47249e0751e80a41b9e9c995f72bcbf383358503eec3d482aad06625f0f2",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/BehaviorControlProbe.exe",
+      "bytes": 199168,
+      "sha256": "5155118efcf782f555a3ff17477ae3f4df7721d8cc66eaadaf1ff30d3efccb56",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/BehaviorControlProbe.pdb",
+      "bytes": 1249280,
+      "sha256": "d084f508dc3775cc08844279c28fad486466f3e4a467aa44b63c9d2900cdb339",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/BehaviorCtrlOnlyProbe.exe",
+      "bytes": 192512,
+      "sha256": "2a5f65d7fcb8668bf2d815c9e881414b5372771a8c2dad7e04c1557734cc1499",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/BehaviorCtrlOnlyProbe.pdb",
+      "bytes": 1224704,
+      "sha256": "8cd8c31fcdcf7294531122ae7b953c6beb0122944f3ce6807c40e71ee9e75005",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/BehaviorFogIntegrationProbe.exe",
+      "bytes": 195072,
+      "sha256": "fc7e6d420eeeac9d43c736eb220cc7be5b82a1164274a9b31790e1673e8920df",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/BehaviorFogIntegrationProbe.pdb",
+      "bytes": 1228800,
+      "sha256": "3b7b570c0505c7e9a32d64c422fcb382c146ae2fb62345dda0550b40daeb8c9d",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/BehaviorLazyProbe.exe",
+      "bytes": 199680,
+      "sha256": "117d0ed78f3ce38c20b871c942fe6b8746286b9c31d8657c911d17582e99354f",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/BehaviorLazyProbe.pdb",
+      "bytes": 1249280,
+      "sha256": "26bed4b4069a0d58de1a757f2093e8d647e2ac5629dc792a3e55fd898e9ef4a0",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/BehaviorLightIntegrationProbe.exe",
+      "bytes": 197120,
+      "sha256": "24805c9fdb61c3f678ea80f7960ffecee106f16e54b5be58bb7e8d8f95ef55fb",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/BehaviorLightIntegrationProbe.pdb",
+      "bytes": 1232896,
+      "sha256": "5f19516716bd2348cb4e2a91e45c857b2e00e36c8629292fada6599517bac236",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/BehaviorProbe.exe",
+      "bytes": 185856,
+      "sha256": "40d3f0feb86d32f3d53942b0e311ee56513930395ad6dd2ce8302dc685ea7f19",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/BehaviorProbe.pdb",
+      "bytes": 1208320,
+      "sha256": "a06258f98fa973a398f79cf496ebe785dd9a8a54467664d5c6d5942dc659cecd",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/BehaviorSpecularProbe.exe",
+      "bytes": 206336,
+      "sha256": "8ad7e90be0421a0db824227f4ef009e2a0e89b11300403b386eb5c63e8c1ad2e",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/BehaviorSpecularProbe.pdb",
+      "bytes": 1277952,
+      "sha256": "20aaa5cc733812bbffb714d8973b757dc9b88bc3ad3030203fb2f9cdf7d84ef0",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/BehaviorStatusProbe.exe",
+      "bytes": 203776,
+      "sha256": "e69487d3d415e56146ac9c051e301dede716e7f5d74d19b1b33f4c0d9a60e180",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/BehaviorStatusProbe.pdb",
+      "bytes": 1273856,
+      "sha256": "a7232e903a67aa3d5dd561f4ce7d8ef09c6cb422d1eb2dfbd1dff89658fcf684",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/CollisionCandidateProbe.exe",
+      "bytes": 189952,
+      "sha256": "945c4f9442098d4c2b4263bc20e2d3a04e092b090c3309b3410cc4e859a40d0f",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/CollisionCandidateProbe.pdb",
+      "bytes": 1224704,
+      "sha256": "163446f0d2d3693ad76f98f981375b61ac6bb3e488482d7b71ede76d7864d528",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/CollisionProbe.exe",
+      "bytes": 185856,
+      "sha256": "190d11b69f25719053307f42e1962a18e77e927837f9be2a28c943484c7fe955",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/CollisionProbe.pdb",
+      "bytes": 1212416,
+      "sha256": "82eae6219cf5c35583293602d702f581eaecf8af669e995be09706fe7b43e9c2",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/GeometryCandidateProbe.exe",
+      "bytes": 175616,
+      "sha256": "17652692ae9f0a668b7f23b5c8b366e5cb938306fc049c2aea725fb200b76aaa",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/GeometryCandidateProbe.pdb",
+      "bytes": 1187840,
+      "sha256": "13b627dd19a9e3a642af2615ff6e8eba97361bd9fe84bec571bd144447b98e07",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/GeometryProbe.exe",
+      "bytes": 175616,
+      "sha256": "1a1eca2e47c266d1d6c140fb90e05db490fbaae64207895acf093b976276dc60",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/GeometryProbe.pdb",
+      "bytes": 1187840,
+      "sha256": "973c138dc0184f4327ee8d5a8776d122ec67f1a1b094d4d801942d804907f7f2",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/GeometryUnwindCandidateProbe.exe",
+      "bytes": 173056,
+      "sha256": "1d8d4ac1e56344798764d76837a2216abc63c313ddcbb6cd0ac6f51cc82b329d",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/GeometryUnwindCandidateProbe.pdb",
+      "bytes": 1175552,
+      "sha256": "e7cfb5e30530cb0e19674951667136f89730aac7fb6153e252867de884bf0f03",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/GeometryUnwindProbe.exe",
+      "bytes": 172544,
+      "sha256": "3aac4f2b60ce3dc0d47a991f5fd4ec87314b4d51a093f5c609ec95d5a8e37d34",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/GeometryUnwindProbe.pdb",
+      "bytes": 1175552,
+      "sha256": "515827db39d94eed2333d674eadae3539c6611ec705fbfd1a14817665490d073",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/IndicatorControlProbe.exe",
+      "bytes": 175616,
+      "sha256": "7d6b9820246a654499b4a3bf8babf405f3183342c0f639c8bac72026c95307c3",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/IndicatorControlProbe.pdb",
+      "bytes": 1208320,
+      "sha256": "25bb732c79579bf1ba7634ed9308d72472e44cb50ee6d3cf4270ce0d1c5ab3b8",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/IndicatorLazyProbe.exe",
+      "bytes": 176128,
+      "sha256": "29390dc305bf0658b2d528a22f547abe83a5c1ac5fa9919734b54eff586b8146",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/IndicatorLazyProbe.pdb",
+      "bytes": 1208320,
+      "sha256": "c8965847660f6af6e1b2d4064157c5d78020b14a8e050eb638c0ba48785b6bc5",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/IndicatorProbe.exe",
+      "bytes": 175616,
+      "sha256": "316ade8400d693b21e3e400b47c968f43b353facfc7c88bb45352a75812ce435",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/IndicatorProbe.pdb",
+      "bytes": 1208320,
+      "sha256": "9771a7eed708d6ca0d3b4b76b425dc7403f625427b9a9bb1f14047b616a9cdf5",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/IndicatorThreadControlProbe.exe",
+      "bytes": 176640,
+      "sha256": "69f66ef4b300b75222279d8e0474c3c6831d95397a920dcdab71a89484e841ec",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/IndicatorThreadControlProbe.pdb",
+      "bytes": 1187840,
+      "sha256": "5268bc310f4c61186d1f5b958da03d37a7e304744ab1797a3cdbbb6867898019",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/IndicatorThreadLazyProbe.exe",
+      "bytes": 177152,
+      "sha256": "9f9e606c81e8bf4b2ad9a4a44e26dfda2b17b6727192a5f9d19eae5d620d1ede",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/IndicatorThreadLazyProbe.pdb",
+      "bytes": 1187840,
+      "sha256": "c24163914ad648aaa51b7549d4b92d91384b07c99bec8df0aa5f9a0f7cc700f0",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/LifecycleCandidateProbe.exe",
+      "bytes": 192512,
+      "sha256": "2a6b8c35b1c238d2ab0e4c800f16b4d08dab9187eed5e7402f70b16042062451",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/LifecycleCandidateProbe.pdb",
+      "bytes": 1224704,
+      "sha256": "72fda60f4b584a025720ce3aa4c5b8704df65e24774ccd0d968994ae10285934",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/LifecycleControlProbe.exe",
+      "bytes": 199168,
+      "sha256": "fa7e2c05efcd30d7ea8562cab6f714e790e9b3193022060a39c13d01b16b4627",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/LifecycleControlProbe.pdb",
+      "bytes": 1249280,
+      "sha256": "6403d3acbfc4a51e4cb4317f0db089c46440673764b571823e15c69c1390f4bd",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/LifecycleLazyProbe.exe",
+      "bytes": 184832,
+      "sha256": "bd3cbee4e4b3bc50cb4ebcc3cbef5d09dec8e5619fea521292e866d113792617",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/LifecycleLazyProbe.pdb",
+      "bytes": 1208320,
+      "sha256": "b29b3fbf18a6e3a8df520987911848af3b8b91dcd94c00cf658cb51c2ab8745b",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/PhotoFogLightIntegrationProbe.exe",
+      "bytes": 175104,
+      "sha256": "28cd82c2de7dad2186b8ffdedfea31d85ce6b6801e2672ee587878cbbe95b4d9",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/PhotoFogLightIntegrationProbe.pdb",
+      "bytes": 1183744,
+      "sha256": "5ff2126f32049928cde5c982f7ab01265bd2f2ec1bd3c061178abcae859ff9b2",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/PhotoFogProbe.exe",
+      "bytes": 175104,
+      "sha256": "35993289b3964ca9b9709ef4bfd9e1feb2089a759d6e1d77cb729301387234a5",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/PhotoFogProbe.pdb",
+      "bytes": 1183744,
+      "sha256": "7ceee4d0ccfe7f5e165828085a99c418704e014b56f003ffcc87e6226243d44c",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/PhotoFogSpecularProbe.exe",
+      "bytes": 175104,
+      "sha256": "0ef2b999b4235ad355a842519c80e1568d9abc1d484ad694d750a32cbb9c73ee",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/PhotoFogSpecularProbe.pdb",
+      "bytes": 1183744,
+      "sha256": "97cb9552a4ba2062a81b792b3b21bf7d61e8f5ecc609dfebec355d40ca61ccfc",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/PhotoFogStatusProbe.exe",
+      "bytes": 175104,
+      "sha256": "9ecac9c2713955ac1d303f6a749983dac11e7ca9dd19e4f8b3eaf1d16cd8d5ec",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/PhotoFogStatusProbe.pdb",
+      "bytes": 1183744,
+      "sha256": "bad66f7ffc839044c37974b61196ca29ee6df9c314bd5a9d9188061f614d89c0",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/PhotoLifecycleBinaryCtrlProbe.exe",
+      "bytes": 192000,
+      "sha256": "b6b6673af785f0d089a4e7304f9dffe948e9217a776432c7f00464d60f210377",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/PhotoLifecycleBinaryCtrlProbe.pdb",
+      "bytes": 1224704,
+      "sha256": "ec807f2b1e5a53f65d7c2597adb3065700823c72f65f563244348770cca2c0d3",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/PhotoLifecycleCtrlOnlyProbe.exe",
+      "bytes": 193024,
+      "sha256": "b3f06e6db6551eff249eac555b7c991bff0eee1ee0ef764be15728d172c8dce1",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/PhotoLifecycleCtrlOnlyProbe.pdb",
+      "bytes": 1224704,
+      "sha256": "309bbc6c19f72bc9d39aaeaee9fb5bb8ac1ba5aec9a816a1049c0b1f0fb2d9f7",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/PhotoLifecycleFogIntegrationProbe.exe",
+      "bytes": 194560,
+      "sha256": "e09a99ea7930ed739c43392127b4ad92a1b7cc78f8c35cfc15ac8978d708c543",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/PhotoLifecycleFogIntegrationProbe.pdb",
+      "bytes": 1224704,
+      "sha256": "254c57fc685ed8636cfc7ec36acf66291d5551113085bd11bd9c88a485ef3632",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/PhotoLifecycleLightIntegrationProbe.exe",
+      "bytes": 197120,
+      "sha256": "df7ee2824b195b335a8736d692ca5cb7616d4f08ef4df5638b2c7e3fa95d7126",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/PhotoLifecycleLightIntegrationProbe.pdb",
+      "bytes": 1228800,
+      "sha256": "634337390cb3a165c0688c2a3903676548fc8b5e1396f4d5bea64337ee54a205",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/PhotoLightProbe.exe",
+      "bytes": 177664,
+      "sha256": "2d807349d245aa42ed832b832ce141642f042e3c38ddcecee1544ae9fd281706",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/PhotoLightProbe.pdb",
+      "bytes": 1187840,
+      "sha256": "36df151f311c6d5ee0027ff32d1c9c7f3adeb41ab6a42fe960c7f011a5e87246",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/PhotoLightSpecularProbe.exe",
+      "bytes": 178688,
+      "sha256": "5542cb26f84cf2c4e5d5cbc035e78a58bd5cb10312cd6155c765ee4bc1f9ce7c",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/PhotoLightSpecularProbe.pdb",
+      "bytes": 1187840,
+      "sha256": "4910c55c19ec4986768f72c0d1f591589c2a103e531daa286f145ae190f3f5b1",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/PhotoLightStatusProbe.exe",
+      "bytes": 178176,
+      "sha256": "2510d53c5308a96475543e94b5fbbe88ab78b2ea5d0b23b4edd1d0cea210b6cd",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/PhotoLightStatusProbe.pdb",
+      "bytes": 1187840,
+      "sha256": "9f0fc225db5fb08abed1ad580c96aafddabad3efd95a2d96bc0d7df28ea7fb41",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/PhotoSpecularLifecycleProbe.exe",
+      "bytes": 184832,
+      "sha256": "10f2d25fe99753c144178452e6575d17f27eba6bf6ba940fdb564b028d8f6322",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/PhotoSpecularLifecycleProbe.pdb",
+      "bytes": 1212416,
+      "sha256": "b80cd4ffe0d92a8936814adacd9d94bf7a7c70df4afa9dd54343c60288f1bb2b",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/PhotoStatusLifecycleProbe.exe",
+      "bytes": 184832,
+      "sha256": "366874d846cd7e3af9e1da8a4022544c2559cb6b9f0051539b3d8b8b460d7844",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/PhotoStatusLifecycleProbe.pdb",
+      "bytes": 1212416,
+      "sha256": "cc7796408a2d1684b72f3d9ce0ce51669f700a20d93688a63af0ae84ca3b2a4d",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/PhotoType4Probe.exe",
+      "bytes": 175616,
+      "sha256": "fa547e4c85726412905019468fbc12fcd31ae9fed4039ab551f1ce8793205a61",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/PhotoType4Probe.pdb",
+      "bytes": 1183744,
+      "sha256": "f8adc8cffc4cfbbd7aafabe70328e89117005491b0b919b325ff470c7b413900",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/Probe.exe",
+      "bytes": 177152,
+      "sha256": "4818de1d60af82a35756dce82eddcefdaaa89b175ea6c0fcff9dbc0035657aef",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/Probe.pdb",
+      "bytes": 1159168,
+      "sha256": "efdc6dce2ddf508a34c351bf83ed8bee7970ad9f850db95476b93d4e06be9332",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/SpecularStatusBitmapProbe.exe",
+      "bytes": 176128,
+      "sha256": "6615f7fb0adee1e10209dd5bbccefea61bb0f04a22aa71e910f93e9c9ebd2b7d",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/SpecularStatusBitmapProbe.pdb",
+      "bytes": 1208320,
+      "sha256": "6d03d40e2127d8bdcef3189c417200d600eb846ecfd533fdc2cb14c306b60f5a",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/SpecularStatusThreadProbe.exe",
+      "bytes": 177152,
+      "sha256": "c1cbf9562457e4fc59849e0e0736d0127678e54930a9e7a4a343cd72741bc5f1",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/SpecularStatusThreadProbe.pdb",
+      "bytes": 1187840,
+      "sha256": "cc9fb0d590e82b7ff217abccdd565b2c6dd4d0b10124e970528ca51b18981233",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/StatusBitmapProbe.exe",
+      "bytes": 176128,
+      "sha256": "337971ee42b65edf707960da6e221efe1f41416dd78e9ed414ee73243a41f883",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/StatusBitmapProbe.pdb",
+      "bytes": 1208320,
+      "sha256": "8ef21af223dd411843980b0719763d16316c01444aae868994469c969b97d9c5",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/StatusThreadProbe.exe",
+      "bytes": 177152,
+      "sha256": "edba453b792397dc578793fc94efbad1a52fe41fcf87e722e96e8689f7e5fc75",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/StatusThreadProbe.pdb",
+      "bytes": 1187840,
+      "sha256": "407989cae96abd076468017f4a130c316b9eed8577cc77a7d9ec5166f27c3690",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/indicator-off.bgra",
+      "bytes": 58240,
+      "sha256": "85bc8b3dcc5521a807204647e07da2b41411f9d6dc025cf742f63d569d592ce8",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/indicator-on.bgra",
+      "bytes": 58240,
+      "sha256": "1862944e3676910378904f6da44cd9469908ceffea04446d1fcf5403be105cd2",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/status-off.bgra",
+      "bytes": 58240,
+      "sha256": "85bc8b3dcc5521a807204647e07da2b41411f9d6dc025cf742f63d569d592ce8",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/native-abi/status-on.bgra",
+      "bytes": 58240,
+      "sha256": "1862944e3676910378904f6da44cd9469908ceffea04446d1fcf5403be105cd2",
+      "reason": "local binary, game asset, or build product"
+    },
+    {
+      "path": "work/rip-refs.bin",
+      "bytes": 6302352,
+      "sha256": "299674b76ee0be2e42b2da4fa93f879133af7169fb04166ce607fcc9948d98fb",
+      "reason": "local binary, game asset, or build product"
+    }
+  ]
+}

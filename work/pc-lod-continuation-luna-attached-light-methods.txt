@@ -1,0 +1,2030 @@
+FUNCTION 0xb2aa10 BOUNDS ('0xb2aa10', '0xb2aa90')
+00b2aa10 lea rax,[rel 3071A80h]
+00b2aa17 ret
+00b2aa18 int3
+00b2aa19 int3
+00b2aa1a int3
+00b2aa1b int3
+00b2aa1c int3
+00b2aa1d int3
+00b2aa1e int3
+00b2aa1f int3
+00b2aa20 mov eax,0B27699E0h
+00b2aa25 ret
+00b2aa26 int3
+00b2aa27 int3
+00b2aa28 int3
+00b2aa29 int3
+00b2aa2a int3
+00b2aa2b int3
+00b2aa2c int3
+00b2aa2d int3
+00b2aa2e int3
+00b2aa2f int3
+00b2aa30 mov eax,0FBA525BFh
+00b2aa35 ret
+00b2aa36 int3
+00b2aa37 int3
+00b2aa38 int3
+00b2aa39 int3
+00b2aa3a int3
+00b2aa3b int3
+00b2aa3c int3
+00b2aa3d int3
+00b2aa3e int3
+00b2aa3f int3
+00b2aa40 lea rax,[rel 51961E0h]
+00b2aa47 ret
+00b2aa48 int3
+00b2aa49 int3
+00b2aa4a int3
+00b2aa4b int3
+00b2aa4c int3
+00b2aa4d int3
+00b2aa4e int3
+00b2aa4f int3
+00b2aa50 lea rax,[rel 51960A0h]
+00b2aa57 ret
+00b2aa58 int3
+00b2aa59 int3
+00b2aa5a int3
+00b2aa5b int3
+00b2aa5c int3
+00b2aa5d int3
+00b2aa5e int3
+00b2aa5f int3
+00b2aa60 xor eax,eax
+00b2aa62 ret
+00b2aa63 int3
+00b2aa64 int3
+00b2aa65 int3
+00b2aa66 int3
+00b2aa67 int3
+00b2aa68 int3
+00b2aa69 int3
+00b2aa6a int3
+00b2aa6b int3
+00b2aa6c int3
+00b2aa6d int3
+00b2aa6e int3
+00b2aa6f int3
+00b2aa70 xor eax,eax
+00b2aa72 ret
+00b2aa73 int3
+00b2aa74 int3
+00b2aa75 int3
+00b2aa76 int3
+00b2aa77 int3
+00b2aa78 int3
+00b2aa79 int3
+00b2aa7a int3
+00b2aa7b int3
+00b2aa7c int3
+00b2aa7d int3
+00b2aa7e int3
+00b2aa7f int3
+00b2aa80 xor eax,eax
+00b2aa82 ret
+00b2aa83 int3
+00b2aa84 int3
+00b2aa85 int3
+00b2aa86 int3
+00b2aa87 int3
+00b2aa88 int3
+00b2aa89 int3
+00b2aa8a int3
+00b2aa8b int3
+00b2aa8c int3
+00b2aa8d int3
+00b2aa8e int3
+00b2aa8f int3
+FUNCTION 0xb2aa30 BOUNDS ('0xb2aa30', '0xb2aab0')
+00b2aa30 mov eax,0FBA525BFh
+00b2aa35 ret
+00b2aa36 int3
+00b2aa37 int3
+00b2aa38 int3
+00b2aa39 int3
+00b2aa3a int3
+00b2aa3b int3
+00b2aa3c int3
+00b2aa3d int3
+00b2aa3e int3
+00b2aa3f int3
+00b2aa40 lea rax,[rel 51961E0h]
+00b2aa47 ret
+00b2aa48 int3
+00b2aa49 int3
+00b2aa4a int3
+00b2aa4b int3
+00b2aa4c int3
+00b2aa4d int3
+00b2aa4e int3
+00b2aa4f int3
+00b2aa50 lea rax,[rel 51960A0h]
+00b2aa57 ret
+00b2aa58 int3
+00b2aa59 int3
+00b2aa5a int3
+00b2aa5b int3
+00b2aa5c int3
+00b2aa5d int3
+00b2aa5e int3
+00b2aa5f int3
+00b2aa60 xor eax,eax
+00b2aa62 ret
+00b2aa63 int3
+00b2aa64 int3
+00b2aa65 int3
+00b2aa66 int3
+00b2aa67 int3
+00b2aa68 int3
+00b2aa69 int3
+00b2aa6a int3
+00b2aa6b int3
+00b2aa6c int3
+00b2aa6d int3
+00b2aa6e int3
+00b2aa6f int3
+00b2aa70 xor eax,eax
+00b2aa72 ret
+00b2aa73 int3
+00b2aa74 int3
+00b2aa75 int3
+00b2aa76 int3
+00b2aa77 int3
+00b2aa78 int3
+00b2aa79 int3
+00b2aa7a int3
+00b2aa7b int3
+00b2aa7c int3
+00b2aa7d int3
+00b2aa7e int3
+00b2aa7f int3
+00b2aa80 xor eax,eax
+00b2aa82 ret
+00b2aa83 int3
+00b2aa84 int3
+00b2aa85 int3
+00b2aa86 int3
+00b2aa87 int3
+00b2aa88 int3
+00b2aa89 int3
+00b2aa8a int3
+00b2aa8b int3
+00b2aa8c int3
+00b2aa8d int3
+00b2aa8e int3
+00b2aa8f int3
+00b2aa90 xor eax,eax
+00b2aa92 ret
+00b2aa93 int3
+00b2aa94 int3
+00b2aa95 int3
+00b2aa96 int3
+00b2aa97 int3
+00b2aa98 int3
+00b2aa99 int3
+00b2aa9a int3
+00b2aa9b int3
+00b2aa9c int3
+00b2aa9d int3
+00b2aa9e int3
+00b2aa9f int3
+00b2aaa0 cmp edx,0B27699E0h
+00b2aaa6 sete al
+00b2aaa9 ret
+00b2aaaa int3
+00b2aaab int3
+00b2aaac int3
+00b2aaad int3
+00b2aaae int3
+00b2aaaf int3
+FUNCTION 0xb2a9d0 BOUNDS ('0xb2a9d0', '0xb2aa50')
+00b2a9d0 lea rax,[rel 2E69B58h]
+00b2a9d7 ret
+00b2a9d8 int3
+00b2a9d9 int3
+00b2a9da int3
+00b2a9db int3
+00b2a9dc int3
+00b2a9dd int3
+00b2a9de int3
+00b2a9df int3
+00b2a9e0 lea rax,[rel 2E69B58h]
+00b2a9e7 ret
+00b2a9e8 int3
+00b2a9e9 int3
+00b2a9ea int3
+00b2a9eb int3
+00b2a9ec int3
+00b2a9ed int3
+00b2a9ee int3
+00b2a9ef int3
+00b2a9f0 lea rax,[rel 2E69B58h]
+00b2a9f7 ret
+00b2a9f8 int3
+00b2a9f9 int3
+00b2a9fa int3
+00b2a9fb int3
+00b2a9fc int3
+00b2a9fd int3
+00b2a9fe int3
+00b2a9ff int3
+00b2aa00 lea rax,[rel 3071A98h]
+00b2aa07 ret
+00b2aa08 int3
+00b2aa09 int3
+00b2aa0a int3
+00b2aa0b int3
+00b2aa0c int3
+00b2aa0d int3
+00b2aa0e int3
+00b2aa0f int3
+00b2aa10 lea rax,[rel 3071A80h]
+00b2aa17 ret
+00b2aa18 int3
+00b2aa19 int3
+00b2aa1a int3
+00b2aa1b int3
+00b2aa1c int3
+00b2aa1d int3
+00b2aa1e int3
+00b2aa1f int3
+00b2aa20 mov eax,0B27699E0h
+00b2aa25 ret
+00b2aa26 int3
+00b2aa27 int3
+00b2aa28 int3
+00b2aa29 int3
+00b2aa2a int3
+00b2aa2b int3
+00b2aa2c int3
+00b2aa2d int3
+00b2aa2e int3
+00b2aa2f int3
+00b2aa30 mov eax,0FBA525BFh
+00b2aa35 ret
+00b2aa36 int3
+00b2aa37 int3
+00b2aa38 int3
+00b2aa39 int3
+00b2aa3a int3
+00b2aa3b int3
+00b2aa3c int3
+00b2aa3d int3
+00b2aa3e int3
+00b2aa3f int3
+00b2aa40 lea rax,[rel 51961E0h]
+00b2aa47 ret
+00b2aa48 int3
+00b2aa49 int3
+00b2aa4a int3
+00b2aa4b int3
+00b2aa4c int3
+00b2aa4d int3
+00b2aa4e int3
+00b2aa4f int3
+FUNCTION 0xb2a9f0 BOUNDS ('0xb2a9f0', '0xb2aa70')
+00b2a9f0 lea rax,[rel 2E69B58h]
+00b2a9f7 ret
+00b2a9f8 int3
+00b2a9f9 int3
+00b2a9fa int3
+00b2a9fb int3
+00b2a9fc int3
+00b2a9fd int3
+00b2a9fe int3
+00b2a9ff int3
+00b2aa00 lea rax,[rel 3071A98h]
+00b2aa07 ret
+00b2aa08 int3
+00b2aa09 int3
+00b2aa0a int3
+00b2aa0b int3
+00b2aa0c int3
+00b2aa0d int3
+00b2aa0e int3
+00b2aa0f int3
+00b2aa10 lea rax,[rel 3071A80h]
+00b2aa17 ret
+00b2aa18 int3
+00b2aa19 int3
+00b2aa1a int3
+00b2aa1b int3
+00b2aa1c int3
+00b2aa1d int3
+00b2aa1e int3
+00b2aa1f int3
+00b2aa20 mov eax,0B27699E0h
+00b2aa25 ret
+00b2aa26 int3
+00b2aa27 int3
+00b2aa28 int3
+00b2aa29 int3
+00b2aa2a int3
+00b2aa2b int3
+00b2aa2c int3
+00b2aa2d int3
+00b2aa2e int3
+00b2aa2f int3
+00b2aa30 mov eax,0FBA525BFh
+00b2aa35 ret
+00b2aa36 int3
+00b2aa37 int3
+00b2aa38 int3
+00b2aa39 int3
+00b2aa3a int3
+00b2aa3b int3
+00b2aa3c int3
+00b2aa3d int3
+00b2aa3e int3
+00b2aa3f int3
+00b2aa40 lea rax,[rel 51961E0h]
+00b2aa47 ret
+00b2aa48 int3
+00b2aa49 int3
+00b2aa4a int3
+00b2aa4b int3
+00b2aa4c int3
+00b2aa4d int3
+00b2aa4e int3
+00b2aa4f int3
+00b2aa50 lea rax,[rel 51960A0h]
+00b2aa57 ret
+00b2aa58 int3
+00b2aa59 int3
+00b2aa5a int3
+00b2aa5b int3
+00b2aa5c int3
+00b2aa5d int3
+00b2aa5e int3
+00b2aa5f int3
+00b2aa60 xor eax,eax
+00b2aa62 ret
+00b2aa63 int3
+00b2aa64 int3
+00b2aa65 int3
+00b2aa66 int3
+00b2aa67 int3
+00b2aa68 int3
+00b2aa69 int3
+00b2aa6a int3
+00b2aa6b int3
+00b2aa6c int3
+00b2aa6d int3
+00b2aa6e int3
+00b2aa6f int3
+FUNCTION 0xb2a970 BOUNDS ('0xb2a970', '0xb2a9f0')
+00b2a970 lea rax,[rel 3071A80h]
+00b2a977 ret
+00b2a978 int3
+00b2a979 int3
+00b2a97a int3
+00b2a97b int3
+00b2a97c int3
+00b2a97d int3
+00b2a97e int3
+00b2a97f int3
+00b2a980 push rbx
+00b2a982 sub rsp,20h
+00b2a986 add rcx,50h
+00b2a98a mov ebx,edx
+00b2a98c call 00000000015B19D0h
+00b2a991 imul rdx,rbx,58h
+00b2a995 add rax,rdx
+00b2a998 add rsp,20h
+00b2a99c pop rbx
+00b2a99d ret
+00b2a99e int3
+00b2a99f int3
+00b2a9a0 push rbx
+00b2a9a2 sub rsp,20h
+00b2a9a6 add rcx,50h
+00b2a9aa mov ebx,edx
+00b2a9ac call 00000000015B19D0h
+00b2a9b1 imul rdx,rbx,58h
+00b2a9b5 add rax,rdx
+00b2a9b8 add rsp,20h
+00b2a9bc pop rbx
+00b2a9bd ret
+00b2a9be int3
+00b2a9bf int3
+00b2a9c0 lea rax,[rel 2E69B58h]
+00b2a9c7 ret
+00b2a9c8 int3
+00b2a9c9 int3
+00b2a9ca int3
+00b2a9cb int3
+00b2a9cc int3
+00b2a9cd int3
+00b2a9ce int3
+00b2a9cf int3
+00b2a9d0 lea rax,[rel 2E69B58h]
+00b2a9d7 ret
+00b2a9d8 int3
+00b2a9d9 int3
+00b2a9da int3
+00b2a9db int3
+00b2a9dc int3
+00b2a9dd int3
+00b2a9de int3
+00b2a9df int3
+00b2a9e0 lea rax,[rel 2E69B58h]
+00b2a9e7 ret
+00b2a9e8 int3
+00b2a9e9 int3
+00b2a9ea int3
+00b2a9eb int3
+00b2a9ec int3
+00b2a9ed int3
+00b2a9ee int3
+00b2a9ef int3
+FUNCTION 0xb2aa70 BOUNDS ('0xb2aa70', '0xb2aaf0')
+00b2aa70 xor eax,eax
+00b2aa72 ret
+00b2aa73 int3
+00b2aa74 int3
+00b2aa75 int3
+00b2aa76 int3
+00b2aa77 int3
+00b2aa78 int3
+00b2aa79 int3
+00b2aa7a int3
+00b2aa7b int3
+00b2aa7c int3
+00b2aa7d int3
+00b2aa7e int3
+00b2aa7f int3
+00b2aa80 xor eax,eax
+00b2aa82 ret
+00b2aa83 int3
+00b2aa84 int3
+00b2aa85 int3
+00b2aa86 int3
+00b2aa87 int3
+00b2aa88 int3
+00b2aa89 int3
+00b2aa8a int3
+00b2aa8b int3
+00b2aa8c int3
+00b2aa8d int3
+00b2aa8e int3
+00b2aa8f int3
+00b2aa90 xor eax,eax
+00b2aa92 ret
+00b2aa93 int3
+00b2aa94 int3
+00b2aa95 int3
+00b2aa96 int3
+00b2aa97 int3
+00b2aa98 int3
+00b2aa99 int3
+00b2aa9a int3
+00b2aa9b int3
+00b2aa9c int3
+00b2aa9d int3
+00b2aa9e int3
+00b2aa9f int3
+00b2aaa0 cmp edx,0B27699E0h
+00b2aaa6 sete al
+00b2aaa9 ret
+00b2aaaa int3
+00b2aaab int3
+00b2aaac int3
+00b2aaad int3
+00b2aaae int3
+00b2aaaf int3
+00b2aab0 cmp edx,0FBA525BFh
+00b2aab6 sete al
+00b2aab9 ret
+00b2aaba int3
+00b2aabb int3
+00b2aabc int3
+00b2aabd int3
+00b2aabe int3
+00b2aabf int3
+00b2aac0 mov [rsp+8],rbx
+00b2aac5 mov [rsp+10h],rbp
+00b2aaca mov [rsp+18h],rsi
+00b2aacf mov [rsp+20h],rdi
+00b2aad4 push r12
+00b2aad6 push r14
+00b2aad8 push r15
+00b2aada sub rsp,20h
+00b2aade xor r12d,r12d
+00b2aae1 lea r8,[rcx+5Ch]
+00b2aae5 mov [rcx+10h],r12
+00b2aae9 lea rdx,[rcx+58h]
+00b2aaed (bad)
+FUNCTION 0xb2aa90 BOUNDS ('0xb2aa90', '0xb2ab10')
+00b2aa90 xor eax,eax
+00b2aa92 ret
+00b2aa93 int3
+00b2aa94 int3
+00b2aa95 int3
+00b2aa96 int3
+00b2aa97 int3
+00b2aa98 int3
+00b2aa99 int3
+00b2aa9a int3
+00b2aa9b int3
+00b2aa9c int3
+00b2aa9d int3
+00b2aa9e int3
+00b2aa9f int3
+00b2aaa0 cmp edx,0B27699E0h
+00b2aaa6 sete al
+00b2aaa9 ret
+00b2aaaa int3
+00b2aaab int3
+00b2aaac int3
+00b2aaad int3
+00b2aaae int3
+00b2aaaf int3
+00b2aab0 cmp edx,0FBA525BFh
+00b2aab6 sete al
+00b2aab9 ret
+00b2aaba int3
+00b2aabb int3
+00b2aabc int3
+00b2aabd int3
+00b2aabe int3
+00b2aabf int3
+00b2aac0 mov [rsp+8],rbx
+00b2aac5 mov [rsp+10h],rbp
+00b2aaca mov [rsp+18h],rsi
+00b2aacf mov [rsp+20h],rdi
+00b2aad4 push r12
+00b2aad6 push r14
+00b2aad8 push r15
+00b2aada sub rsp,20h
+00b2aade xor r12d,r12d
+00b2aae1 lea r8,[rcx+5Ch]
+00b2aae5 mov [rcx+10h],r12
+00b2aae9 lea rdx,[rcx+58h]
+00b2aaed mov [rcx+18h],r12
+00b2aaf1 mov rbp,rcx
+00b2aaf4 mov [rcx+20h],r12
+00b2aaf8 mov [rcx+28h],r12
+00b2aafc mov [rcx+30h],r12
+00b2ab00 mov [rcx+38h],r12
+00b2ab04 mov [rcx+40h],r12
+00b2ab08 mov [rcx+48h],r12
+00b2ab0c add rcx,50h
+FUNCTION 0xb2aa50 BOUNDS ('0xb2aa50', '0xb2aad0')
+00b2aa50 lea rax,[rel 51960A0h]
+00b2aa57 ret
+00b2aa58 int3
+00b2aa59 int3
+00b2aa5a int3
+00b2aa5b int3
+00b2aa5c int3
+00b2aa5d int3
+00b2aa5e int3
+00b2aa5f int3
+00b2aa60 xor eax,eax
+00b2aa62 ret
+00b2aa63 int3
+00b2aa64 int3
+00b2aa65 int3
+00b2aa66 int3
+00b2aa67 int3
+00b2aa68 int3
+00b2aa69 int3
+00b2aa6a int3
+00b2aa6b int3
+00b2aa6c int3
+00b2aa6d int3
+00b2aa6e int3
+00b2aa6f int3
+00b2aa70 xor eax,eax
+00b2aa72 ret
+00b2aa73 int3
+00b2aa74 int3
+00b2aa75 int3
+00b2aa76 int3
+00b2aa77 int3
+00b2aa78 int3
+00b2aa79 int3
+00b2aa7a int3
+00b2aa7b int3
+00b2aa7c int3
+00b2aa7d int3
+00b2aa7e int3
+00b2aa7f int3
+00b2aa80 xor eax,eax
+00b2aa82 ret
+00b2aa83 int3
+00b2aa84 int3
+00b2aa85 int3
+00b2aa86 int3
+00b2aa87 int3
+00b2aa88 int3
+00b2aa89 int3
+00b2aa8a int3
+00b2aa8b int3
+00b2aa8c int3
+00b2aa8d int3
+00b2aa8e int3
+00b2aa8f int3
+00b2aa90 xor eax,eax
+00b2aa92 ret
+00b2aa93 int3
+00b2aa94 int3
+00b2aa95 int3
+00b2aa96 int3
+00b2aa97 int3
+00b2aa98 int3
+00b2aa99 int3
+00b2aa9a int3
+00b2aa9b int3
+00b2aa9c int3
+00b2aa9d int3
+00b2aa9e int3
+00b2aa9f int3
+00b2aaa0 cmp edx,0B27699E0h
+00b2aaa6 sete al
+00b2aaa9 ret
+00b2aaaa int3
+00b2aaab int3
+00b2aaac int3
+00b2aaad int3
+00b2aaae int3
+00b2aaaf int3
+00b2aab0 cmp edx,0FBA525BFh
+00b2aab6 sete al
+00b2aab9 ret
+00b2aaba int3
+00b2aabb int3
+00b2aabc int3
+00b2aabd int3
+00b2aabe int3
+00b2aabf int3
+00b2aac0 mov [rsp+8],rbx
+00b2aac5 mov [rsp+10h],rbp
+00b2aaca mov [rsp+18h],rsi
+00b2aacf (bad)
+FUNCTION 0xb2aab0 BOUNDS ('0xb2aab0', '0xb2ab30')
+00b2aab0 cmp edx,0FBA525BFh
+00b2aab6 sete al
+00b2aab9 ret
+00b2aaba int3
+00b2aabb int3
+00b2aabc int3
+00b2aabd int3
+00b2aabe int3
+00b2aabf int3
+00b2aac0 mov [rsp+8],rbx
+00b2aac5 mov [rsp+10h],rbp
+00b2aaca mov [rsp+18h],rsi
+00b2aacf mov [rsp+20h],rdi
+00b2aad4 push r12
+00b2aad6 push r14
+00b2aad8 push r15
+00b2aada sub rsp,20h
+00b2aade xor r12d,r12d
+00b2aae1 lea r8,[rcx+5Ch]
+00b2aae5 mov [rcx+10h],r12
+00b2aae9 lea rdx,[rcx+58h]
+00b2aaed mov [rcx+18h],r12
+00b2aaf1 mov rbp,rcx
+00b2aaf4 mov [rcx+20h],r12
+00b2aaf8 mov [rcx+28h],r12
+00b2aafc mov [rcx+30h],r12
+00b2ab00 mov [rcx+38h],r12
+00b2ab04 mov [rcx+40h],r12
+00b2ab08 mov [rcx+48h],r12
+00b2ab0c add rcx,50h
+00b2ab10 call 00000000015D18A0h
+00b2ab15 mov [rbp+60h],r12
+00b2ab19 mov [rbp+68h],r12
+00b2ab1d mov [rbp+8],r12
+00b2ab21 call 00000000015BBC50h
+00b2ab26 mov rdx,rax
+00b2ab29 lea rcx,[rbp+10h]
+00b2ab2d (bad)
+FUNCTION 0xb2abd0 BOUNDS ('0xb2abd0', '0xb2ac27')
+00b2abd0 mov [rsp+8],rbx
+00b2abd5 mov [rsp+10h],rsi
+00b2abda push rdi
+00b2abdb sub rsp,20h
+00b2abdf xor esi,esi
+00b2abe1 mov rdi,rcx
+00b2abe4 mov [rcx+10h],rsi
+00b2abe8 mov [rcx+18h],rsi
+00b2abec mov [rcx+8],rsi
+00b2abf0 call 00000000015BBC50h
+00b2abf5 mov rdx,rax
+00b2abf8 lea rcx,[rdi+10h]
+00b2abfc call 00000000015D91D0h
+00b2ac01 lea rcx,[rdi+20h]
+00b2ac05 mov [rdi+10h],rsi
+00b2ac09 mov [rdi+18h],rsi
+00b2ac0d call 00000000015630F0h
+00b2ac12 mov rbx,[rsp+30h]
+00b2ac17 mov al,1
+00b2ac19 mov [rdi+50h],esi
+00b2ac1c mov rsi,[rsp+38h]
+00b2ac21 add rsp,20h
+00b2ac25 pop rdi
+00b2ac26 ret
+FUNCTION 0xb2adf0 BOUNDS ('0xb2adf0', '0xb2ae3d')
+00b2adf0 mov [rsp+8],rbx
+00b2adf5 mov [rsp+10h],rsi
+00b2adfa push rdi
+00b2adfb sub rsp,20h
+00b2adff xor esi,esi
+00b2ae01 mov rdi,rcx
+00b2ae04 mov [rcx+8],rsi
+00b2ae08 call 00000000015BBC50h
+00b2ae0d mov rdx,rax
+00b2ae10 lea rcx,[rdi+10h]
+00b2ae14 call 00000000015D91D0h
+00b2ae19 lea rcx,[rdi+20h]
+00b2ae1d mov [rdi+10h],rsi
+00b2ae21 mov [rdi+18h],rsi
+00b2ae25 call 00000000015630F0h
+00b2ae2a mov rbx,[rsp+30h]
+00b2ae2f mov [rdi+50h],esi
+00b2ae32 mov rsi,[rsp+38h]
+00b2ae37 add rsp,20h
+00b2ae3b pop rdi
+00b2ae3c ret
+FUNCTION 0xb2a940 BOUNDS ('0xb2a940', '0xb2a95f')
+00b2a940 push rbx
+00b2a942 sub rsp,20h
+00b2a946 mov rbx,rcx
+00b2a949 call 00000000015BBC50h
+00b2a94e mov rdx,rax
+00b2a951 lea rcx,[rbx+10h]
+00b2a955 add rsp,20h
+00b2a959 pop rbx
+00b2a95a jmp 00000000015D91D0h
+FUNCTION 0xb2a3c0 BOUNDS ('0xb2a3c0', '0xb2a3eb')
+00b2a3c0 push rbx
+00b2a3c2 sub rsp,20h
+00b2a3c6 lea rax,[rel 3071E18h]
+00b2a3cd mov rbx,rcx
+00b2a3d0 mov [rcx],rax
+00b2a3d3 test dl,1
+00b2a3d6 je short 0000000000B2A3E2h
+00b2a3d8 mov edx,58h
+00b2a3dd call 0000000002D200A4h
+00b2a3e2 mov rax,rbx
+00b2a3e5 add rsp,20h
+00b2a3e9 pop rbx
+00b2a3ea ret
+FUNCTION 0x4401e0 BOUNDS ('0x4401e0', '0x440212')
+004401e0 mov [rsp+8],rbx
+004401e5 push rdi
+004401e6 sub rsp,20h
+004401ea mov rbx,rdx
+004401ed mov rdi,rcx
+004401f0 call 0000000000FF7E10h
+004401f5 mov rax,[rbx+14h]
+004401f9 mov [rdi+48h],rax
+004401fd mov eax,[rbx+2Ch]
+00440200 mov rbx,[rsp+30h]
+00440205 mov [rdi+64h],eax
+00440208 mov byte [rdi+68h],0
+0044020c add rsp,20h
+00440210 pop rdi
+00440211 ret
+FUNCTION 0x440070 BOUNDS ('0x440070', '0x440152')
+00440070 mov [rsp+8],rbx
+00440075 mov [rsp+10h],rbp
+0044007a mov [rsp+18h],rsi
+0044007f mov [rsp+20h],rdi
+00440084 push r14
+00440086 sub rsp,70h
+0044008a mov rdi,r8
+0044008d movsxd rbx,edx
+00440090 mov r14,rcx
+00440093 lea rcx,[rsp+38h]
+00440098 call 0000000000B23320h
+0044009d nop
+0044009e lea rcx,[rsp+38h]
+004400a3 mov rax,[rsp+38h]
+004400a8 call qword [rax+48h]
+004400ab mov rsi,rbx
+004400ae test ebx,ebx
+004400b0 jle short 0000000000440115h
+004400b2 xor ebp,ebp
+004400b4 nop dword [rax]
+004400b8 nop dword [rax+rax]
+004400c0 xorps xmm0,xmm0
+004400c3 movdqu [rsp+20h],xmm0
+004400c9 mov [rsp+30h],ebp
+004400cd xor r9d,r9d
+004400d0 mov r8,[rdi+8]
+004400d4 mov rdx,[rdi]
+004400d7 lea rcx,[rsp+20h]
+004400dc call 00000000015B9270h
+004400e1 call 00000000015BBC50h
+004400e6 mov rbx,rax
+004400e9 lea rcx,[rsp+38h]
+004400ee mov rdx,[rsp+38h]
+004400f3 call qword [rdx+38h]
+004400f6 mov r8,rax
+004400f9 mov r9,rbx
+004400fc lea rdx,[rsp+20h]
+00440101 lea rcx,[rsp+38h]
+00440106 call 00000000015BAE20h
+0044010b lea rdi,[rdi+10h]
+0044010f sub rsi,1
+00440113 jne short 00000000004400C0h
+00440115 mov rax,[r14]
+00440118 lea rdx,[rsp+38h]
+0044011d mov rcx,r14
+00440120 call qword [rax]
+00440122 lea rcx,[rsp+38h]
+00440127 call 0000000000B237D0h
+0044012c nop
+0044012d lea rcx,[rsp+38h]
+00440132 call 0000000000B23360h
+00440137 lea r11,[rsp+70h]
+0044013c mov rbx,[r11+10h]
+00440140 mov rbp,[r11+18h]
+00440144 mov rsi,[r11+20h]
+00440148 mov rdi,[r11+28h]
+0044014c mov rsp,r11
+0044014f pop r14
+00440151 ret
+FUNCTION 0x440160 BOUNDS ('0x440160', '0x4401d5')
+00440160 mov [rsp+8],rbx
+00440165 push rdi
+00440166 sub rsp,50h
+0044016a mov rbx,rdx
+0044016d mov rdi,rcx
+00440170 lea rcx,[rsp+20h]
+00440175 call 0000000000B23320h
+0044017a nop
+0044017b lea rcx,[rsp+20h]
+00440180 mov rax,[rsp+20h]
+00440185 call qword [rax+48h]
+00440188 lea rcx,[rsp+20h]
+0044018d mov rax,[rsp+20h]
+00440192 call qword [rax+38h]
+00440195 mov r8,rax
+00440198 xor r9d,r9d
+0044019b mov rdx,rbx
+0044019e lea rcx,[rsp+20h]
+004401a3 call 00000000015BF860h
+004401a8 mov rax,[rdi]
+004401ab lea rdx,[rsp+20h]
+004401b0 mov rcx,rdi
+004401b3 call qword [rax]
+004401b5 lea rcx,[rsp+20h]
+004401ba call 0000000000B237D0h
+004401bf nop
+004401c0 lea rcx,[rsp+20h]
+004401c5 call 0000000000B23360h
+004401ca mov rbx,[rsp+60h]
+004401cf add rsp,50h
+004401d3 pop rdi
+004401d4 ret
+FUNCTION 0x440220 BOUNDS ('0x440220', '0x44025d')
+00440220 mov [rsp+8],rbx
+00440225 push rdi
+00440226 sub rsp,20h
+0044022a mov rdi,rcx
+0044022d add rcx,54h
+00440231 call 0000000000F1A520h
+00440236 test rax,rax
+00440239 je short 000000000044024Bh
+0044023b lea rcx,[rdi+54h]
+0044023f call 0000000000F1A3D0h
+00440244 mov dword [rdi+54h],0
+0044024b mov rcx,rdi
+0044024e mov rbx,[rsp+30h]
+00440253 add rsp,20h
+00440257 pop rdi
+00440258 jmp 0000000000FF7E40h
+FUNCTION 0x28fd20 BOUNDS ('0x28fd20', '0x28fda0')
+0028fd20 ret 0
+0028fd23 int3
+0028fd24 int3
+0028fd25 int3
+0028fd26 int3
+0028fd27 int3
+0028fd28 int3
+0028fd29 int3
+0028fd2a int3
+0028fd2b int3
+0028fd2c int3
+0028fd2d int3
+0028fd2e int3
+0028fd2f int3
+0028fd30 mov [rsp+8],rbx
+0028fd35 push rdi
+0028fd36 sub rsp,20h
+0028fd3a mov ebx,edx
+0028fd3c mov rdi,rcx
+0028fd3f call 0000000000FF7E90h
+0028fd44 test bl,1
+0028fd47 je short 000000000028FD56h
+0028fd49 mov edx,48h
+0028fd4e mov rcx,rdi
+0028fd51 call 0000000002D200A4h
+0028fd56 mov rbx,[rsp+30h]
+0028fd5b mov rax,rdi
+0028fd5e add rsp,20h
+0028fd62 pop rdi
+0028fd63 ret
+0028fd64 int3
+0028fd65 int3
+0028fd66 int3
+0028fd67 int3
+0028fd68 int3
+0028fd69 int3
+0028fd6a int3
+0028fd6b int3
+0028fd6c int3
+0028fd6d int3
+0028fd6e int3
+0028fd6f int3
+0028fd70 ret 0
+0028fd73 int3
+0028fd74 int3
+0028fd75 int3
+0028fd76 int3
+0028fd77 int3
+0028fd78 int3
+0028fd79 int3
+0028fd7a int3
+0028fd7b int3
+0028fd7c int3
+0028fd7d int3
+0028fd7e int3
+0028fd7f int3
+0028fd80 ret 0
+0028fd83 int3
+0028fd84 int3
+0028fd85 int3
+0028fd86 int3
+0028fd87 int3
+0028fd88 int3
+0028fd89 int3
+0028fd8a int3
+0028fd8b int3
+0028fd8c int3
+0028fd8d int3
+0028fd8e int3
+0028fd8f int3
+0028fd90 mov [rsp+8],rbx
+0028fd95 push rdi
+0028fd96 sub rsp,20h
+0028fd9a mov ebx,edx
+0028fd9c mov rdi,rcx
+0028fd9f (bad)
+FUNCTION 0x440260 BOUNDS ('0x440260', '0x440294')
+00440260 mov [rsp+8],rbx
+00440265 push rdi
+00440266 sub rsp,20h
+0044026a mov ebx,edx
+0044026c mov rdi,rcx
+0044026f call 0000000000FF7E90h
+00440274 test bl,1
+00440277 je short 0000000000440286h
+00440279 mov edx,70h
+0044027e mov rcx,rdi
+00440281 call 0000000002D200A4h
+00440286 mov rbx,[rsp+30h]
+0044028b mov rax,rdi
+0044028e add rsp,20h
+00440292 pop rdi
+00440293 ret
+FUNCTION 0xff7e50 BOUNDS ('0xff7e50', '0xff7ed0')
+00ff7e50 mov rcx,[rcx+10h]
+00ff7e54 jmp 0000000000F17E90h
+00ff7e59 int3
+00ff7e5a int3
+00ff7e5b int3
+00ff7e5c int3
+00ff7e5d int3
+00ff7e5e int3
+00ff7e5f int3
+00ff7e60 ret 0
+00ff7e63 int3
+00ff7e64 int3
+00ff7e65 int3
+00ff7e66 int3
+00ff7e67 int3
+00ff7e68 int3
+00ff7e69 int3
+00ff7e6a int3
+00ff7e6b int3
+00ff7e6c int3
+00ff7e6d int3
+00ff7e6e int3
+00ff7e6f int3
+00ff7e70 ret 0
+00ff7e73 int3
+00ff7e74 int3
+00ff7e75 int3
+00ff7e76 int3
+00ff7e77 int3
+00ff7e78 int3
+00ff7e79 int3
+00ff7e7a int3
+00ff7e7b int3
+00ff7e7c int3
+00ff7e7d int3
+00ff7e7e int3
+00ff7e7f int3
+00ff7e80 lea rax,[rel 624F4F0h]
+00ff7e87 ret
+00ff7e88 int3
+00ff7e89 int3
+00ff7e8a int3
+00ff7e8b int3
+00ff7e8c int3
+00ff7e8d int3
+00ff7e8e int3
+00ff7e8f int3
+00ff7e90 lea rax,[rel 2E69A30h]
+00ff7e97 mov [rcx],rax
+00ff7e9a ret
+00ff7e9b int3
+00ff7e9c int3
+00ff7e9d int3
+00ff7e9e int3
+00ff7e9f int3
+00ff7ea0 push rbx
+00ff7ea2 sub rsp,20h
+00ff7ea6 mov rbx,rcx
+00ff7ea9 movzx ecx,byte [rcx+25h]
+00ff7ead test cl,1
+00ff7eb0 jne short 0000000000FF7EF6h
+00ff7eb2 mov r8d,[rbx+40h]
+00ff7eb6 test r8d,r8d
+00ff7eb9 je short 0000000000FF7EE1h
+00ff7ebb mov rdx,[rbx+10h]
+00ff7ebf mov eax,[rdx+10h]
+00ff7ec2 shr eax,0Dh
+00ff7ec5 test al,1
+00ff7ec7 je short 0000000000FF7EE1h
+00ff7ec9 movzx r9d,word [rdx+18h]
+00ff7ece (bad)
+FUNCTION 0xff7e60 BOUNDS ('0xff7e60', '0xff7ee0')
+00ff7e60 ret 0
+00ff7e63 int3
+00ff7e64 int3
+00ff7e65 int3
+00ff7e66 int3
+00ff7e67 int3
+00ff7e68 int3
+00ff7e69 int3
+00ff7e6a int3
+00ff7e6b int3
+00ff7e6c int3
+00ff7e6d int3
+00ff7e6e int3
+00ff7e6f int3
+00ff7e70 ret 0
+00ff7e73 int3
+00ff7e74 int3
+00ff7e75 int3
+00ff7e76 int3
+00ff7e77 int3
+00ff7e78 int3
+00ff7e79 int3
+00ff7e7a int3
+00ff7e7b int3
+00ff7e7c int3
+00ff7e7d int3
+00ff7e7e int3
+00ff7e7f int3
+00ff7e80 lea rax,[rel 624F4F0h]
+00ff7e87 ret
+00ff7e88 int3
+00ff7e89 int3
+00ff7e8a int3
+00ff7e8b int3
+00ff7e8c int3
+00ff7e8d int3
+00ff7e8e int3
+00ff7e8f int3
+00ff7e90 lea rax,[rel 2E69A30h]
+00ff7e97 mov [rcx],rax
+00ff7e9a ret
+00ff7e9b int3
+00ff7e9c int3
+00ff7e9d int3
+00ff7e9e int3
+00ff7e9f int3
+00ff7ea0 push rbx
+00ff7ea2 sub rsp,20h
+00ff7ea6 mov rbx,rcx
+00ff7ea9 movzx ecx,byte [rcx+25h]
+00ff7ead test cl,1
+00ff7eb0 jne short 0000000000FF7EF6h
+00ff7eb2 mov r8d,[rbx+40h]
+00ff7eb6 test r8d,r8d
+00ff7eb9 je short 0000000000FF7EE1h
+00ff7ebb mov rdx,[rbx+10h]
+00ff7ebf mov eax,[rdx+10h]
+00ff7ec2 shr eax,0Dh
+00ff7ec5 test al,1
+00ff7ec7 je short 0000000000FF7EE1h
+00ff7ec9 movzx r9d,word [rdx+18h]
+00ff7ece lea rcx,[rel 6747D18h]
+00ff7ed5 mov rdx,rbx
+00ff7ed8 call 0000000000FFE2E0h
+00ff7edd (bad)
+FUNCTION 0xff7e70 BOUNDS ('0xff7e70', '0xff7ef0')
+00ff7e70 ret 0
+00ff7e73 int3
+00ff7e74 int3
+00ff7e75 int3
+00ff7e76 int3
+00ff7e77 int3
+00ff7e78 int3
+00ff7e79 int3
+00ff7e7a int3
+00ff7e7b int3
+00ff7e7c int3
+00ff7e7d int3
+00ff7e7e int3
+00ff7e7f int3
+00ff7e80 lea rax,[rel 624F4F0h]
+00ff7e87 ret
+00ff7e88 int3
+00ff7e89 int3
+00ff7e8a int3
+00ff7e8b int3
+00ff7e8c int3
+00ff7e8d int3
+00ff7e8e int3
+00ff7e8f int3
+00ff7e90 lea rax,[rel 2E69A30h]
+00ff7e97 mov [rcx],rax
+00ff7e9a ret
+00ff7e9b int3
+00ff7e9c int3
+00ff7e9d int3
+00ff7e9e int3
+00ff7e9f int3
+00ff7ea0 push rbx
+00ff7ea2 sub rsp,20h
+00ff7ea6 mov rbx,rcx
+00ff7ea9 movzx ecx,byte [rcx+25h]
+00ff7ead test cl,1
+00ff7eb0 jne short 0000000000FF7EF6h
+00ff7eb2 mov r8d,[rbx+40h]
+00ff7eb6 test r8d,r8d
+00ff7eb9 je short 0000000000FF7EE1h
+00ff7ebb mov rdx,[rbx+10h]
+00ff7ebf mov eax,[rdx+10h]
+00ff7ec2 shr eax,0Dh
+00ff7ec5 test al,1
+00ff7ec7 je short 0000000000FF7EE1h
+00ff7ec9 movzx r9d,word [rdx+18h]
+00ff7ece lea rcx,[rel 6747D18h]
+00ff7ed5 mov rdx,rbx
+00ff7ed8 call 0000000000FFE2E0h
+00ff7edd movzx ecx,byte [rbx+25h]
+00ff7ee1 mov rax,[rbx]
+00ff7ee4 or cl,1
+00ff7ee7 mov [rbx+25h],cl
+00ff7eea mov rcx,rbx
+00ff7eed (bad)
+FUNCTION 0x440060 BOUNDS ('0x440060', '0x4400e0')
+00440060 lea rax,[rel 5F1B440h]
+00440067 ret
+00440068 int3
+00440069 int3
+0044006a int3
+0044006b int3
+0044006c int3
+0044006d int3
+0044006e int3
+0044006f int3
+00440070 mov [rsp+8],rbx
+00440075 mov [rsp+10h],rbp
+0044007a mov [rsp+18h],rsi
+0044007f mov [rsp+20h],rdi
+00440084 push r14
+00440086 sub rsp,70h
+0044008a mov rdi,r8
+0044008d movsxd rbx,edx
+00440090 mov r14,rcx
+00440093 lea rcx,[rsp+38h]
+00440098 call 0000000000B23320h
+0044009d nop
+0044009e lea rcx,[rsp+38h]
+004400a3 mov rax,[rsp+38h]
+004400a8 call qword [rax+48h]
+004400ab mov rsi,rbx
+004400ae test ebx,ebx
+004400b0 jle short 0000000000440115h
+004400b2 xor ebp,ebp
+004400b4 nop dword [rax]
+004400b8 nop dword [rax+rax]
+004400c0 xorps xmm0,xmm0
+004400c3 movdqu [rsp+20h],xmm0
+004400c9 mov [rsp+30h],ebp
+004400cd xor r9d,r9d
+004400d0 mov r8,[rdi+8]
+004400d4 mov rdx,[rdi]
+004400d7 lea rcx,[rsp+20h]
+004400dc (bad)
+FUNCTION 0xb238a0 BOUNDS ('0xb238a0', '0xb23920')
+00b238a0 lea rax,[rel 306DCB8h]
+00b238a7 ret
+00b238a8 int3
+00b238a9 int3
+00b238aa int3
+00b238ab int3
+00b238ac int3
+00b238ad int3
+00b238ae int3
+00b238af int3
+00b238b0 mov eax,96608C54h
+00b238b5 ret
+00b238b6 int3
+00b238b7 int3
+00b238b8 int3
+00b238b9 int3
+00b238ba int3
+00b238bb int3
+00b238bc int3
+00b238bd int3
+00b238be int3
+00b238bf int3
+00b238c0 mov eax,0DB7E51D5h
+00b238c5 ret
+00b238c6 int3
+00b238c7 int3
+00b238c8 int3
+00b238c9 int3
+00b238ca int3
+00b238cb int3
+00b238cc int3
+00b238cd int3
+00b238ce int3
+00b238cf int3
+00b238d0 lea rax,[rel 5193B10h]
+00b238d7 ret
+00b238d8 int3
+00b238d9 int3
+00b238da int3
+00b238db int3
+00b238dc int3
+00b238dd int3
+00b238de int3
+00b238df int3
+00b238e0 lea rax,[rel 5193C50h]
+00b238e7 ret
+00b238e8 int3
+00b238e9 int3
+00b238ea int3
+00b238eb int3
+00b238ec int3
+00b238ed int3
+00b238ee int3
+00b238ef int3
+00b238f0 xor eax,eax
+00b238f2 ret
+00b238f3 int3
+00b238f4 int3
+00b238f5 int3
+00b238f6 int3
+00b238f7 int3
+00b238f8 int3
+00b238f9 int3
+00b238fa int3
+00b238fb int3
+00b238fc int3
+00b238fd int3
+00b238fe int3
+00b238ff int3
+00b23900 xor eax,eax
+00b23902 ret
+00b23903 int3
+00b23904 int3
+00b23905 int3
+00b23906 int3
+00b23907 int3
+00b23908 int3
+00b23909 int3
+00b2390a int3
+00b2390b int3
+00b2390c int3
+00b2390d int3
+00b2390e int3
+00b2390f int3
+00b23910 xor eax,eax
+00b23912 ret
+00b23913 int3
+00b23914 int3
+00b23915 int3
+00b23916 int3
+00b23917 int3
+00b23918 int3
+00b23919 int3
+00b2391a int3
+00b2391b int3
+00b2391c int3
+00b2391d int3
+00b2391e int3
+00b2391f int3
+FUNCTION 0xb238c0 BOUNDS ('0xb238c0', '0xb23940')
+00b238c0 mov eax,0DB7E51D5h
+00b238c5 ret
+00b238c6 int3
+00b238c7 int3
+00b238c8 int3
+00b238c9 int3
+00b238ca int3
+00b238cb int3
+00b238cc int3
+00b238cd int3
+00b238ce int3
+00b238cf int3
+00b238d0 lea rax,[rel 5193B10h]
+00b238d7 ret
+00b238d8 int3
+00b238d9 int3
+00b238da int3
+00b238db int3
+00b238dc int3
+00b238dd int3
+00b238de int3
+00b238df int3
+00b238e0 lea rax,[rel 5193C50h]
+00b238e7 ret
+00b238e8 int3
+00b238e9 int3
+00b238ea int3
+00b238eb int3
+00b238ec int3
+00b238ed int3
+00b238ee int3
+00b238ef int3
+00b238f0 xor eax,eax
+00b238f2 ret
+00b238f3 int3
+00b238f4 int3
+00b238f5 int3
+00b238f6 int3
+00b238f7 int3
+00b238f8 int3
+00b238f9 int3
+00b238fa int3
+00b238fb int3
+00b238fc int3
+00b238fd int3
+00b238fe int3
+00b238ff int3
+00b23900 xor eax,eax
+00b23902 ret
+00b23903 int3
+00b23904 int3
+00b23905 int3
+00b23906 int3
+00b23907 int3
+00b23908 int3
+00b23909 int3
+00b2390a int3
+00b2390b int3
+00b2390c int3
+00b2390d int3
+00b2390e int3
+00b2390f int3
+00b23910 xor eax,eax
+00b23912 ret
+00b23913 int3
+00b23914 int3
+00b23915 int3
+00b23916 int3
+00b23917 int3
+00b23918 int3
+00b23919 int3
+00b2391a int3
+00b2391b int3
+00b2391c int3
+00b2391d int3
+00b2391e int3
+00b2391f int3
+00b23920 xor eax,eax
+00b23922 ret
+00b23923 int3
+00b23924 int3
+00b23925 int3
+00b23926 int3
+00b23927 int3
+00b23928 int3
+00b23929 int3
+00b2392a int3
+00b2392b int3
+00b2392c int3
+00b2392d int3
+00b2392e int3
+00b2392f int3
+00b23930 cmp edx,96608C54h
+00b23936 sete al
+00b23939 ret
+00b2393a int3
+00b2393b int3
+00b2393c int3
+00b2393d int3
+00b2393e int3
+00b2393f int3
+FUNCTION 0xb23860 BOUNDS ('0xb23860', '0xb238e0')
+00b23860 lea rax,[rel 2E69B58h]
+00b23867 ret
+00b23868 int3
+00b23869 int3
+00b2386a int3
+00b2386b int3
+00b2386c int3
+00b2386d int3
+00b2386e int3
+00b2386f int3
+00b23870 lea rax,[rel 2E69B58h]
+00b23877 ret
+00b23878 int3
+00b23879 int3
+00b2387a int3
+00b2387b int3
+00b2387c int3
+00b2387d int3
+00b2387e int3
+00b2387f int3
+00b23880 lea rax,[rel 2E69B58h]
+00b23887 ret
+00b23888 int3
+00b23889 int3
+00b2388a int3
+00b2388b int3
+00b2388c int3
+00b2388d int3
+00b2388e int3
+00b2388f int3
+00b23890 lea rax,[rel 306DCA0h]
+00b23897 ret
+00b23898 int3
+00b23899 int3
+00b2389a int3
+00b2389b int3
+00b2389c int3
+00b2389d int3
+00b2389e int3
+00b2389f int3
+00b238a0 lea rax,[rel 306DCB8h]
+00b238a7 ret
+00b238a8 int3
+00b238a9 int3
+00b238aa int3
+00b238ab int3
+00b238ac int3
+00b238ad int3
+00b238ae int3
+00b238af int3
+00b238b0 mov eax,96608C54h
+00b238b5 ret
+00b238b6 int3
+00b238b7 int3
+00b238b8 int3
+00b238b9 int3
+00b238ba int3
+00b238bb int3
+00b238bc int3
+00b238bd int3
+00b238be int3
+00b238bf int3
+00b238c0 mov eax,0DB7E51D5h
+00b238c5 ret
+00b238c6 int3
+00b238c7 int3
+00b238c8 int3
+00b238c9 int3
+00b238ca int3
+00b238cb int3
+00b238cc int3
+00b238cd int3
+00b238ce int3
+00b238cf int3
+00b238d0 lea rax,[rel 5193B10h]
+00b238d7 ret
+00b238d8 int3
+00b238d9 int3
+00b238da int3
+00b238db int3
+00b238dc int3
+00b238dd int3
+00b238de int3
+00b238df int3
+FUNCTION 0xb23880 BOUNDS ('0xb23880', '0xb23900')
+00b23880 lea rax,[rel 2E69B58h]
+00b23887 ret
+00b23888 int3
+00b23889 int3
+00b2388a int3
+00b2388b int3
+00b2388c int3
+00b2388d int3
+00b2388e int3
+00b2388f int3
+00b23890 lea rax,[rel 306DCA0h]
+00b23897 ret
+00b23898 int3
+00b23899 int3
+00b2389a int3
+00b2389b int3
+00b2389c int3
+00b2389d int3
+00b2389e int3
+00b2389f int3
+00b238a0 lea rax,[rel 306DCB8h]
+00b238a7 ret
+00b238a8 int3
+00b238a9 int3
+00b238aa int3
+00b238ab int3
+00b238ac int3
+00b238ad int3
+00b238ae int3
+00b238af int3
+00b238b0 mov eax,96608C54h
+00b238b5 ret
+00b238b6 int3
+00b238b7 int3
+00b238b8 int3
+00b238b9 int3
+00b238ba int3
+00b238bb int3
+00b238bc int3
+00b238bd int3
+00b238be int3
+00b238bf int3
+00b238c0 mov eax,0DB7E51D5h
+00b238c5 ret
+00b238c6 int3
+00b238c7 int3
+00b238c8 int3
+00b238c9 int3
+00b238ca int3
+00b238cb int3
+00b238cc int3
+00b238cd int3
+00b238ce int3
+00b238cf int3
+00b238d0 lea rax,[rel 5193B10h]
+00b238d7 ret
+00b238d8 int3
+00b238d9 int3
+00b238da int3
+00b238db int3
+00b238dc int3
+00b238dd int3
+00b238de int3
+00b238df int3
+00b238e0 lea rax,[rel 5193C50h]
+00b238e7 ret
+00b238e8 int3
+00b238e9 int3
+00b238ea int3
+00b238eb int3
+00b238ec int3
+00b238ed int3
+00b238ee int3
+00b238ef int3
+00b238f0 xor eax,eax
+00b238f2 ret
+00b238f3 int3
+00b238f4 int3
+00b238f5 int3
+00b238f6 int3
+00b238f7 int3
+00b238f8 int3
+00b238f9 int3
+00b238fa int3
+00b238fb int3
+00b238fc int3
+00b238fd int3
+00b238fe int3
+00b238ff int3
+FUNCTION 0xb23820 BOUNDS ('0xb23820', '0xb238a0')
+00b23820 lea rax,[rel 306DCB8h]
+00b23827 ret
+00b23828 int3
+00b23829 int3
+00b2382a int3
+00b2382b int3
+00b2382c int3
+00b2382d int3
+00b2382e int3
+00b2382f int3
+00b23830 push rbx
+00b23832 sub rsp,20h
+00b23836 add rcx,8
+00b2383a mov ebx,edx
+00b2383c call 00000000015B19D0h
+00b23841 mov rax,[rax+rbx*8]
+00b23845 add rsp,20h
+00b23849 pop rbx
+00b2384a ret
+00b2384b int3
+00b2384c int3
+00b2384d int3
+00b2384e int3
+00b2384f int3
+00b23850 lea rax,[rel 2E69B58h]
+00b23857 ret
+00b23858 int3
+00b23859 int3
+00b2385a int3
+00b2385b int3
+00b2385c int3
+00b2385d int3
+00b2385e int3
+00b2385f int3
+00b23860 lea rax,[rel 2E69B58h]
+00b23867 ret
+00b23868 int3
+00b23869 int3
+00b2386a int3
+00b2386b int3
+00b2386c int3
+00b2386d int3
+00b2386e int3
+00b2386f int3
+00b23870 lea rax,[rel 2E69B58h]
+00b23877 ret
+00b23878 int3
+00b23879 int3
+00b2387a int3
+00b2387b int3
+00b2387c int3
+00b2387d int3
+00b2387e int3
+00b2387f int3
+00b23880 lea rax,[rel 2E69B58h]
+00b23887 ret
+00b23888 int3
+00b23889 int3
+00b2388a int3
+00b2388b int3
+00b2388c int3
+00b2388d int3
+00b2388e int3
+00b2388f int3
+00b23890 lea rax,[rel 306DCA0h]
+00b23897 ret
+00b23898 int3
+00b23899 int3
+00b2389a int3
+00b2389b int3
+00b2389c int3
+00b2389d int3
+00b2389e int3
+00b2389f int3
+FUNCTION 0xb23900 BOUNDS ('0xb23900', '0xb23980')
+00b23900 xor eax,eax
+00b23902 ret
+00b23903 int3
+00b23904 int3
+00b23905 int3
+00b23906 int3
+00b23907 int3
+00b23908 int3
+00b23909 int3
+00b2390a int3
+00b2390b int3
+00b2390c int3
+00b2390d int3
+00b2390e int3
+00b2390f int3
+00b23910 xor eax,eax
+00b23912 ret
+00b23913 int3
+00b23914 int3
+00b23915 int3
+00b23916 int3
+00b23917 int3
+00b23918 int3
+00b23919 int3
+00b2391a int3
+00b2391b int3
+00b2391c int3
+00b2391d int3
+00b2391e int3
+00b2391f int3
+00b23920 xor eax,eax
+00b23922 ret
+00b23923 int3
+00b23924 int3
+00b23925 int3
+00b23926 int3
+00b23927 int3
+00b23928 int3
+00b23929 int3
+00b2392a int3
+00b2392b int3
+00b2392c int3
+00b2392d int3
+00b2392e int3
+00b2392f int3
+00b23930 cmp edx,96608C54h
+00b23936 sete al
+00b23939 ret
+00b2393a int3
+00b2393b int3
+00b2393c int3
+00b2393d int3
+00b2393e int3
+00b2393f int3
+00b23940 cmp edx,0DB7E51D5h
+00b23946 sete al
+00b23949 ret
+00b2394a int3
+00b2394b int3
+00b2394c int3
+00b2394d int3
+00b2394e int3
+00b2394f int3
+00b23950 mov [rsp+10h],rbx
+00b23955 mov [rsp+18h],rsi
+00b2395a push rdi
+00b2395b sub rsp,20h
+00b2395f mov rsi,rcx
+00b23962 lea r8,[rcx+14h]
+00b23966 lea rdx,[rcx+10h]
+00b2396a add rcx,8
+00b2396e call 00000000015D2450h
+00b23973 lea rdx,[rsi+10h]
+00b23977 lea rcx,[rsi+8]
+00b2397b call 00000000015D2650h
+FUNCTION 0xb23920 BOUNDS ('0xb23920', '0xb239a0')
+00b23920 xor eax,eax
+00b23922 ret
+00b23923 int3
+00b23924 int3
+00b23925 int3
+00b23926 int3
+00b23927 int3
+00b23928 int3
+00b23929 int3
+00b2392a int3
+00b2392b int3
+00b2392c int3
+00b2392d int3
+00b2392e int3
+00b2392f int3
+00b23930 cmp edx,96608C54h
+00b23936 sete al
+00b23939 ret
+00b2393a int3
+00b2393b int3
+00b2393c int3
+00b2393d int3
+00b2393e int3
+00b2393f int3
+00b23940 cmp edx,0DB7E51D5h
+00b23946 sete al
+00b23949 ret
+00b2394a int3
+00b2394b int3
+00b2394c int3
+00b2394d int3
+00b2394e int3
+00b2394f int3
+00b23950 mov [rsp+10h],rbx
+00b23955 mov [rsp+18h],rsi
+00b2395a push rdi
+00b2395b sub rsp,20h
+00b2395f mov rsi,rcx
+00b23962 lea r8,[rcx+14h]
+00b23966 lea rdx,[rcx+10h]
+00b2396a add rcx,8
+00b2396e call 00000000015D2450h
+00b23973 lea rdx,[rsi+10h]
+00b23977 lea rcx,[rsi+8]
+00b2397b call 00000000015D2650h
+00b23980 mov rbx,[rsp+38h]
+00b23985 mov al,1
+00b23987 mov dword [rsp+30h],40000000h
+00b2398f movss xmm0,[rsp+30h]
+00b23995 mov dword [rsp+30h],40400000h
+00b2399d (bad)
+FUNCTION 0xb238e0 BOUNDS ('0xb238e0', '0xb23960')
+00b238e0 lea rax,[rel 5193C50h]
+00b238e7 ret
+00b238e8 int3
+00b238e9 int3
+00b238ea int3
+00b238eb int3
+00b238ec int3
+00b238ed int3
+00b238ee int3
+00b238ef int3
+00b238f0 xor eax,eax
+00b238f2 ret
+00b238f3 int3
+00b238f4 int3
+00b238f5 int3
+00b238f6 int3
+00b238f7 int3
+00b238f8 int3
+00b238f9 int3
+00b238fa int3
+00b238fb int3
+00b238fc int3
+00b238fd int3
+00b238fe int3
+00b238ff int3
+00b23900 xor eax,eax
+00b23902 ret
+00b23903 int3
+00b23904 int3
+00b23905 int3
+00b23906 int3
+00b23907 int3
+00b23908 int3
+00b23909 int3
+00b2390a int3
+00b2390b int3
+00b2390c int3
+00b2390d int3
+00b2390e int3
+00b2390f int3
+00b23910 xor eax,eax
+00b23912 ret
+00b23913 int3
+00b23914 int3
+00b23915 int3
+00b23916 int3
+00b23917 int3
+00b23918 int3
+00b23919 int3
+00b2391a int3
+00b2391b int3
+00b2391c int3
+00b2391d int3
+00b2391e int3
+00b2391f int3
+00b23920 xor eax,eax
+00b23922 ret
+00b23923 int3
+00b23924 int3
+00b23925 int3
+00b23926 int3
+00b23927 int3
+00b23928 int3
+00b23929 int3
+00b2392a int3
+00b2392b int3
+00b2392c int3
+00b2392d int3
+00b2392e int3
+00b2392f int3
+00b23930 cmp edx,96608C54h
+00b23936 sete al
+00b23939 ret
+00b2393a int3
+00b2393b int3
+00b2393c int3
+00b2393d int3
+00b2393e int3
+00b2393f int3
+00b23940 cmp edx,0DB7E51D5h
+00b23946 sete al
+00b23949 ret
+00b2394a int3
+00b2394b int3
+00b2394c int3
+00b2394d int3
+00b2394e int3
+00b2394f int3
+00b23950 mov [rsp+10h],rbx
+00b23955 mov [rsp+18h],rsi
+00b2395a push rdi
+00b2395b sub rsp,20h
+00b2395f (bad)
+FUNCTION 0xb23940 BOUNDS ('0xb23940', '0xb239c0')
+00b23940 cmp edx,0DB7E51D5h
+00b23946 sete al
+00b23949 ret
+00b2394a int3
+00b2394b int3
+00b2394c int3
+00b2394d int3
+00b2394e int3
+00b2394f int3
+00b23950 mov [rsp+10h],rbx
+00b23955 mov [rsp+18h],rsi
+00b2395a push rdi
+00b2395b sub rsp,20h
+00b2395f mov rsi,rcx
+00b23962 lea r8,[rcx+14h]
+00b23966 lea rdx,[rcx+10h]
+00b2396a add rcx,8
+00b2396e call 00000000015D2450h
+00b23973 lea rdx,[rsi+10h]
+00b23977 lea rcx,[rsi+8]
+00b2397b call 00000000015D2650h
+00b23980 mov rbx,[rsp+38h]
+00b23985 mov al,1
+00b23987 mov dword [rsp+30h],40000000h
+00b2398f movss xmm0,[rsp+30h]
+00b23995 mov dword [rsp+30h],40400000h
+00b2399d movss xmm1,[rsp+30h]
+00b239a3 movss [rsi+1Ch],xmm1
+00b239a8 movss [rsi+18h],xmm0
+00b239ad mov rsi,[rsp+40h]
+00b239b2 add rsp,20h
+00b239b6 pop rdi
+00b239b7 ret
+00b239b8 int3
+00b239b9 int3
+00b239ba int3
+00b239bb int3
+00b239bc int3
+00b239bd int3
+00b239be int3
+00b239bf int3
+FUNCTION 0xb239c0 BOUNDS ('0xb239c0', '0xb23a39')
+00b239c0 mov [rsp+8],rbx
+00b239c5 push rdi
+00b239c6 sub rsp,30h
+00b239ca mov rbx,rcx
+00b239cd add rcx,8
+00b239d1 call 00000000015D85B0h
+00b239d6 xor eax,eax
+00b239d8 mov [rbx+20h],rax
+00b239dc mov [rbx+28h],rax
+00b239e0 call 00000000015BBC50h
+00b239e5 mov rdx,rax
+00b239e8 lea rcx,[rbx+8]
+00b239ec call 00000000015D8590h
+00b239f1 lea rcx,[rbx+8]
+00b239f5 call 00000000015D85B0h
+00b239fa call 00000000015BBC50h
+00b239ff lea rcx,[rel 2D27ABDh]
+00b23a06 mov r9d,76897D1Eh
+00b23a0c mov [rsp+28h],rcx
+00b23a11 lea rdx,[rel 306DF28h]
+00b23a18 lea rcx,[rbx+20h]
+00b23a1c mov [rsp+20h],rax
+00b23a21 mov r8d,9
+00b23a27 call 00000000015D93E0h
+00b23a2c mov rbx,[rsp+40h]
+00b23a31 mov al,1
+00b23a33 add rsp,30h
+00b23a37 pop rdi
+00b23a38 ret
+FUNCTION 0xb23af0 BOUNDS ('0xb23af0', '0xb23b54')
+00b23af0 mov [rsp+8],rbx
+00b23af5 push rdi
+00b23af6 sub rsp,30h
+00b23afa mov rdi,rcx
+00b23afd call 00000000015BBC50h
+00b23b02 mov rdx,rax
+00b23b05 lea rcx,[rdi+8]
+00b23b09 call 00000000015D8590h
+00b23b0e lea rcx,[rdi+8]
+00b23b12 call 00000000015D85B0h
+00b23b17 call 00000000015BBC50h
+00b23b1c lea rdx,[rel 2D27ABDh]
+00b23b23 mov r9d,76897D1Eh
+00b23b29 mov [rsp+28h],rdx
+00b23b2e lea rcx,[rdi+20h]
+00b23b32 lea rdx,[rel 306DF28h]
+00b23b39 mov [rsp+20h],rax
+00b23b3e mov r8d,9
+00b23b44 call 00000000015D93E0h
+00b23b49 mov rbx,[rsp+40h]
+00b23b4e add rsp,30h
+00b23b52 pop rdi
+00b23b53 ret
+FUNCTION 0xb237d0 BOUNDS ('0xb237d0', '0xb23800')
+00b237d0 push rbx
+00b237d2 sub rsp,20h
+00b237d6 mov rbx,rcx
+00b237d9 call 00000000015BBC50h
+00b237de mov rdx,rax
+00b237e1 lea rcx,[rbx+8]
+00b237e5 call 00000000015D8590h
+00b237ea call 00000000015BBC50h
+00b237ef mov rdx,rax
+00b237f2 lea rcx,[rbx+20h]
+00b237f6 add rsp,20h
+00b237fa pop rbx
+00b237fb jmp 00000000015D91D0h
+FUNCTION 0xb235a0 BOUNDS ('0xb235a0', '0xb235cb')
+00b235a0 push rbx
+00b235a2 sub rsp,20h
+00b235a6 lea rax,[rel 306DEC0h]
+00b235ad mov rbx,rcx
+00b235b0 mov [rcx],rax
+00b235b3 test dl,1
+00b235b6 je short 0000000000B235C2h
+00b235b8 mov edx,30h
+00b235bd call 0000000002D200A4h
+00b235c2 mov rax,rbx
+00b235c5 add rsp,20h
+00b235c9 pop rbx
+00b235ca ret

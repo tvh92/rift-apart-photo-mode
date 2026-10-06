@@ -1,0 +1,6254 @@
+[
+  {
+    "file_offset": "0x2fa9550",
+    "string": "LoadHistoryDetailLevel"
+  },
+  {
+    "file_offset": "0x2fa9568",
+    "string": "DisplayLooseLoadDetail"
+  },
+  {
+    "file_offset": "0x3024980",
+    "string": "PerfProfileLodMax"
+  },
+  {
+    "file_offset": "0x30731b0",
+    "string": "CullChunksOffscreen"
+  },
+  {
+    "file_offset": "0x30732b0",
+    "string": "CullBySize"
+  },
+  {
+    "file_offset": "0x3075208",
+    "string": "Cull by Size"
+  },
+  {
+    "file_offset": "0x3115ff0",
+    "string": "CulledLedgeDespawnTime"
+  },
+  {
+    "file_offset": "0x3116930",
+    "string": "Culled Ledge Despawn Time"
+  },
+  {
+    "file_offset": "0x311a0f0",
+    "string": "True if award details are hidden until unlocked (to avoid spoilers)."
+  },
+  {
+    "file_offset": "0x3136c48",
+    "string": "CSM Shadow LOD Count Bias"
+  },
+  {
+    "file_offset": "0x3137148",
+    "string": "LodScaleMultiplier"
+  },
+  {
+    "file_offset": "0x3137160",
+    "string": "ModelLodClamp"
+  },
+  {
+    "file_offset": "0x3137170",
+    "string": "CsmLodCountBias"
+  },
+  {
+    "file_offset": "0x31372d8",
+    "string": "EnabledCloudLODDepth"
+  },
+  {
+    "file_offset": "0x317a430",
+    "string": "If a vheicle is culled from drawing, only enable fx if it is within this distance of the camera."
+  },
+  {
+    "file_offset": "0x317a4e0",
+    "string": "If a vehicle is culled from drawing, only enable lights if it is within this distance of the camera."
+  },
+  {
+    "file_offset": "0x317b8b0",
+    "string": "MaxCulledFxDistance"
+  },
+  {
+    "file_offset": "0x317b8d8",
+    "string": "MaxCulledLightDistance"
+  },
+  {
+    "file_offset": "0x32c2a40",
+    "string": "Cinematic2System::m_ModelLods"
+  },
+  {
+    "file_offset": "0x32cefb8",
+    "string": "RSSolidCull"
+  },
+  {
+    "file_offset": "0x32cefd8",
+    "string": "RSWireCull"
+  },
+  {
+    "file_offset": "0x32d1420",
+    "string": "KeyLightLodSubmitQueries"
+  },
+  {
+    "file_offset": "0x32d1440",
+    "string": "KeyLightLodSubmitQueries Impostor"
+  },
+  {
+    "file_offset": "0x32d1490",
+    "string": "KeyLightLodSubmitQueries Volume"
+  },
+  {
+    "file_offset": "0x32d14b0",
+    "string": "KeyLightLodSubmitQueries Model"
+  },
+  {
+    "file_offset": "0x32d43f0",
+    "string": "Far Lod Cache Move Req"
+  },
+  {
+    "file_offset": "0x32d9e40",
+    "string": "ModelStrand_LodDistance"
+  },
+  {
+    "file_offset": "0x32d9e58",
+    "string": "ModelStrand_LodReduction"
+  },
+  {
+    "file_offset": "0x32dacf8",
+    "string": "Geom Lod Efficiency"
+  },
+  {
+    "file_offset": "0x32dad0c",
+    "string": "Lod 0"
+  },
+  {
+    "file_offset": "0x32dad14",
+    "string": "Lod 1"
+  },
+  {
+    "file_offset": "0x32dad1c",
+    "string": "Lod 2"
+  },
+  {
+    "file_offset": "0x32dad24",
+    "string": "Lod 3"
+  },
+  {
+    "file_offset": "0x32dad2c",
+    "string": "Lod 4"
+  },
+  {
+    "file_offset": "0x32dad34",
+    "string": "Lod 5"
+  },
+  {
+    "file_offset": "0x32dad80",
+    "string": "Geom Lod Level"
+  },
+  {
+    "file_offset": "0x32dea58",
+    "string": "buildPolyDetail: Could not triangulate polygon (%d verts)."
+  },
+  {
+    "file_offset": "0x32deaa0",
+    "string": "rcBuildPolyMeshDetail: Shrinking triangle count from %d to max %d."
+  },
+  {
+    "file_offset": "0x32deb70",
+    "string": "rcBuildPolyMeshDetail: Out of memory 'bounds' (%d)."
+  },
+  {
+    "file_offset": "0x32deba8",
+    "string": "rcBuildPolyMeshDetail: Out of memory 'poly' (%d)."
+  },
+  {
+    "file_offset": "0x32debe0",
+    "string": "rcBuildPolyMeshDetail: Out of memory 'hp.data' (%d)."
+  },
+  {
+    "file_offset": "0x32dec18",
+    "string": "rcBuildPolyMeshDetail: Out of memory 'dmesh.meshes' (%d)."
+  },
+  {
+    "file_offset": "0x32dec58",
+    "string": "rcBuildPolyMeshDetail: Out of memory 'dmesh.verts' (%d)."
+  },
+  {
+    "file_offset": "0x32dec98",
+    "string": "rcBuildPolyMeshDetail: Out of memory 'dmesh.tris' (%d)."
+  },
+  {
+    "file_offset": "0x32decd0",
+    "string": "rcBuildPolyMeshDetail: Out of memory 'newv' (%d)."
+  },
+  {
+    "file_offset": "0x32ded08",
+    "string": "rcBuildPolyMeshDetail: Out of memory 'newt' (%d)."
+  },
+  {
+    "file_offset": "0x32ded40",
+    "string": "rcBuildPolyMeshDetail: Out of memory 'pmdtl.meshes' (%d)."
+  },
+  {
+    "file_offset": "0x32f2540",
+    "string": "kVolCloudsLoddedDepth"
+  },
+  {
+    "file_offset": "0x32f5508",
+    "string": "kMrtVolCloudsLoddedDepth"
+  },
+  {
+    "file_offset": "0x32f9f98",
+    "string": "Material Lod Level"
+  },
+  {
+    "file_offset": "0x32fa158",
+    "string": "Non Far Lod Cache"
+  },
+  {
+    "file_offset": "0x32fa838",
+    "string": "Wireframe (Show Detail Displacement)"
+  },
+  {
+    "file_offset": "0x32fa8b8",
+    "string": "Wireframe Overlay (Show Detail Displacement)"
+  },
+  {
+    "file_offset": "0x330b2a6",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x330b6be",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x330b77b",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x330b7b4",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x330b7ec",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x331db0a",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x331dbc7",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x331dc00",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x331dc38",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3323ebe",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x333195e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3336c4c",
+    "string": "m_PlaneLodConsts"
+  },
+  {
+    "file_offset": "0x3338e53",
+    "string": "m_LodDist"
+  },
+  {
+    "file_offset": "0x3341b84",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x3344e00",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x3347810",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x3349ec4",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x3349f14",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x334bccc",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x334bd1c",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x334dad4",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x334fcf0",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x3351b6c",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x335462c",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x335653c",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x336bd16",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x336c8cc",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x336ea27",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x3370856",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x337140c",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x3373573",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x33753b6",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3375f6c",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x33780af",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x337b3cc",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x337ff8e",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x338004b",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3380084",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x33800bc",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x338124c",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x33ccc5e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x33cf675",
+    "string": "&*m_LodScale"
+  },
+  {
+    "file_offset": "0x33d198e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x33d5272",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x33e6ed3",
+    "string": "g_ReprojectionLodDepth"
+  },
+  {
+    "file_offset": "0x33e7286",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x33e7718",
+    "string": "m_DetailShapeTiling"
+  },
+  {
+    "file_offset": "0x33e772c",
+    "string": "m_DetailStrenth"
+  },
+  {
+    "file_offset": "0x33e7b7b",
+    "string": "m_EnableDepthCulling"
+  },
+  {
+    "file_offset": "0x33ea187",
+    "string": "0Zg_ReprojectionLodDepth"
+  },
+  {
+    "file_offset": "0x33ed2de",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x33ed770",
+    "string": "m_DetailShapeTiling"
+  },
+  {
+    "file_offset": "0x33ed784",
+    "string": "m_DetailStrenth"
+  },
+  {
+    "file_offset": "0x33edbd3",
+    "string": "m_EnableDepthCulling"
+  },
+  {
+    "file_offset": "0x33ffc1e",
+    "string": "g_SrcLodDepthTexture"
+  },
+  {
+    "file_offset": "0x33fffe6",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3400478",
+    "string": "m_DetailShapeTiling"
+  },
+  {
+    "file_offset": "0x340048c",
+    "string": "m_DetailStrenth"
+  },
+  {
+    "file_offset": "0x34008db",
+    "string": "m_EnableDepthCulling"
+  },
+  {
+    "file_offset": "0x3403dfa",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x340428c",
+    "string": "m_DetailShapeTiling"
+  },
+  {
+    "file_offset": "0x34042a0",
+    "string": "m_DetailStrenth"
+  },
+  {
+    "file_offset": "0x34046ef",
+    "string": "m_EnableDepthCulling"
+  },
+  {
+    "file_offset": "0x346d46c",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x347be2c",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x3481e04",
+    "string": "m_NormalDetail"
+  },
+  {
+    "file_offset": "0x3483590",
+    "string": "m_NormalDetail"
+  },
+  {
+    "file_offset": "0x3488b00",
+    "string": "m_NormalDetail"
+  },
+  {
+    "file_offset": "0x348acd0",
+    "string": "m_NormalDetail"
+  },
+  {
+    "file_offset": "0x34d7c82",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x34edb5e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x34f0eda",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x34f6d84",
+    "string": "m_CullDist"
+  },
+  {
+    "file_offset": "0x34f6d8f",
+    "string": "m_CullRate"
+  },
+  {
+    "file_offset": "0x34fa6a4",
+    "string": "m_CullDist"
+  },
+  {
+    "file_offset": "0x34fa6af",
+    "string": "m_CullRate"
+  },
+  {
+    "file_offset": "0x34fc712",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x34fcc36",
+    "string": "m_BokehDofInvLodScale"
+  },
+  {
+    "file_offset": "0x350199d",
+    "string": "*Vm_BokehDofInvLodScale"
+  },
+  {
+    "file_offset": "0x3505146",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x350555e",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x350561b",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3505654",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x350568c",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x350613a",
+    "string": "m_BokehDofInvLodScale"
+  },
+  {
+    "file_offset": "0x3517de3",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x3521826",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3521d4a",
+    "string": "m_BokehDofInvLodScale"
+  },
+  {
+    "file_offset": "0x35314c2",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3536a5a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3557f79",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x3559571",
+    "string": "Fm_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x357b969",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x357cf61",
+    "string": "Fm_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x359f359",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x35a0951",
+    "string": "Fm_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x35c2d49",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x35c4341",
+    "string": "Fm_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x35e6739",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x35e7d31",
+    "string": "Fm_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x360a129",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x360b721",
+    "string": "Fm_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x362db19",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x362f111",
+    "string": "Fm_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x3651509",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x3652b01",
+    "string": "Fm_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x3675705",
+    "string": "&m_LodDist"
+  },
+  {
+    "file_offset": "0x3681dd5",
+    "string": "&m_LodDist"
+  },
+  {
+    "file_offset": "0x368e4a5",
+    "string": "&m_LodDist"
+  },
+  {
+    "file_offset": "0x369ab75",
+    "string": "&m_LodDist"
+  },
+  {
+    "file_offset": "0x36a7245",
+    "string": "&m_LodDist"
+  },
+  {
+    "file_offset": "0x36b3915",
+    "string": "&m_LodDist"
+  },
+  {
+    "file_offset": "0x36bffe5",
+    "string": "&m_LodDist"
+  },
+  {
+    "file_offset": "0x36c8de6",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x36c8ea3",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x36c8edc",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x36c8f14",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x36d0fc2",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x36d13da",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x36d1497",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x36d14d0",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x36d1508",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x36d84ee",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x36d8906",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x36d89c3",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x36d89fc",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x36d8a34",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x36dc52b",
+    "string": "Jm_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x36df8ae",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x36dfcc6",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x36dfd83",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x36dfdbc",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x36dfdf4",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x36e574a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x36e72f5",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x36e8d82",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x36f2f46",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x36f335e",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x36f341b",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x36f3454",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x36f348c",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x36f94de",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x36f98f6",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x36f99b3",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x36f99ec",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x36f9a24",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x370a4a2",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x370a8ba",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x370a977",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x370a9b0",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x370a9e8",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x371f99a",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x371fa57",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x371fa90",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x371fac8",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3746dbc",
+    "string": "4Fm_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x375c50e",
+    "string": "Fm_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x375fcfe",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x375fdbb",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x375fdf4",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x375fe2c",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x377a048",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x377a098",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x377a2f4",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x377c152",
+    "string": "Fm_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x37ca04e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x37ca466",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x37ca523",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x37ca55c",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x37ca594",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x37e6432",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x37e684a",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x37e6907",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x37e6940",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x37e6978",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x38032e2",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x38036fa",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x38037b7",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x38037f0",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3803828",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x381f806",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x381fc1e",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x381fcdb",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x381fd14",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x381fd4c",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3831d97",
+    "string": "Fm_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x383c996",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x383cdae",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x383ce6b",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x383cea4",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x383cedc",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3862c12",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x386302a",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x38630e7",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3863120",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3863158",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3874b1c",
+    "string": "Jm_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x387efa6",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x387f3be",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x387f47b",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x387f4b4",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x387f4ec",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x38a841e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x38a8836",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x38a88f3",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x38a892c",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x38a8964",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x38c4822",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x38c4c3a",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x38c4cf7",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x38c4d30",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x38c4d68",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x38e16e2",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x38e1afa",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x38e1bb7",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x38e1bf0",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x38e1c28",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x38fdc16",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x38fe02e",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x38fe0eb",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x38fe124",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x38fe15c",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x39101a7",
+    "string": "Fm_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x391adc6",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x391b1de",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x391b29b",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x391b2d4",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x391b30c",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3941052",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x394146a",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3941527",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3941560",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3941598",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3954cf4",
+    "string": "Jm_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x395ff06",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x396031e",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x39603db",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3960414",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x396044c",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x398944a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3989862",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x398991f",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3989958",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3989990",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x39a66ee",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x39a6b06",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x39a6bc3",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x39a6bfc",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x39a6c34",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x39b9769",
+    "string": "Jm_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x39c448a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x39c48a2",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x39c495f",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x39c4998",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x39c49d0",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x39d6da7",
+    "string": "bm_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x39d6ecb",
+    "string": "Jm_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x39e18a6",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x39e1cbe",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x39e1d7b",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x39e1db4",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x39e1dec",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x39f3e37",
+    "string": "Fm_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x39fea46",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x39fee5e",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x39fef1b",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x39fef54",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x39fef8c",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3a24e26",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3a2523e",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3a252fb",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3a25334",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3a2536c",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3a3b10b",
+    "string": "Fm_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3a46d96",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3a471ae",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3a4726b",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3a472a4",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3a472dc",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3a702da",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3a706f2",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3a707af",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3a707e8",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3a70820",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3a8d58e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3a8d9a6",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3a8da63",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3a8da9c",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3a8dad4",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3aa0609",
+    "string": "Jm_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3aab33a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3aab752",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3aab80f",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3aab848",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3aab880",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3abdc57",
+    "string": "bm_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3abdd7b",
+    "string": "Jm_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3ac8766",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3ac8b7e",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3ac8c3b",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3ac8c74",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3ac8cac",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3adacf7",
+    "string": "Fm_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3ae5916",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3ae5d2e",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3ae5deb",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3ae5e24",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3ae5e5c",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3b0bd06",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3b0c11e",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3b0c1db",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3b0c214",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3b0c24c",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3b23d67",
+    "string": "Fm_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3b30776",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3b30b8e",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3b30c4b",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3b30c84",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3b30cbc",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3b6148f",
+    "string": "$bm_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3b6158c",
+    "string": "$Jm_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3b615a7",
+    "string": "$Fm_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3b615c1",
+    "string": "$Jm_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3c72cd6",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3c77b76",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3c77f8e",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3c7804b",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3c78084",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3c780bc",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3c81c32",
+    "string": "8Fm_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3c88ae2",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3c88efa",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3c88fb7",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3c88ff0",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3c89028",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3c8f392",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3c8f7aa",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3c8f867",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3c8f8a0",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3c8f8d8",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3cb9ba4",
+    "string": "HighLOD"
+  },
+  {
+    "file_offset": "0x3cb9bac",
+    "string": "LowLOD"
+  },
+  {
+    "file_offset": "0x3cc8eb6",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3cc92ce",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3cc938b",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3cc93c4",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3cc93fc",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3d00f88",
+    "string": "CS_LoddedDepthMap"
+  },
+  {
+    "file_offset": "0x3d04185",
+    "string": "$*m_LodScale"
+  },
+  {
+    "file_offset": "0x3d070ae",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3d079bc",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x3d0c5be",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3d0cecc",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x3d11ade",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3d123ec",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x3d16f6e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3d1b23e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3d1f54e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3d33c52",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3d36a8e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3d36ea6",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3d36f63",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3d36f9c",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3d36fd4",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3d3799c",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x3d379e8",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x3d37b3b",
+    "string": "m_LodDist"
+  },
+  {
+    "file_offset": "0x3d37d4c",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x3d3b6fa",
+    "string": "Jm_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3d3bfc8",
+    "string": "Fm_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x3d3c3bd",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x3d3f2de",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3d3f6f6",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3d3f7b3",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3d3f7ec",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3d3f824",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3d401ec",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x3d40238",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x3d4038b",
+    "string": "m_LodDist"
+  },
+  {
+    "file_offset": "0x3d4059c",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x3d45ece",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3d46257",
+    "string": "m_LodDist"
+  },
+  {
+    "file_offset": "0x3d4bc2e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3d4bfb7",
+    "string": "m_LodDist"
+  },
+  {
+    "file_offset": "0x3d4fe46",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3d525f2",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3d58ec6",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3d9949e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3d9b8f6",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3d9b9b3",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3d9b9ec",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3d9ba24",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3d9eb42",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3daca3f",
+    "string": "$bm_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3dacb3c",
+    "string": "$Jm_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3dacb57",
+    "string": "$Fm_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3dacb71",
+    "string": "$Jm_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3db134e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3db1596",
+    "string": "m_CullPlanes"
+  },
+  {
+    "file_offset": "0x3db4eee",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3db5306",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3db53c3",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3db53fc",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3db5434",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3dba3e6",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3dba89f",
+    "string": "m_LodDist"
+  },
+  {
+    "file_offset": "0x3dbab10",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x3dbd5c5",
+    "string": "6&m_LodDist"
+  },
+  {
+    "file_offset": "0x3dbdc79",
+    "string": "6Rm_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x3dc04e6",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3dc099f",
+    "string": "m_LodDist"
+  },
+  {
+    "file_offset": "0x3dc0c10",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x3dc3581",
+    "string": "6&m_LodDist"
+  },
+  {
+    "file_offset": "0x3dc3c35",
+    "string": "6Rm_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x3dc684a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3dc6c62",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3dc6d1f",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3dc6d58",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3dc6d90",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3ddf68a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3ddfaa2",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3ddfb5f",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3ddfb98",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3ddfbd0",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3dfc26a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3dfc682",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3dfc73f",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3dfc778",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3dfc7b0",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3e1a50e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3e1b9d4",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x3e1d662",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3e1da7a",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3e1db37",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3e1db70",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3e1dba8",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3e3a6e4",
+    "string": "$Rm_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x3e3bbd2",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3e3e3be",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3e41272",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3e42f3a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3e453c2",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3e4a532",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3e4a94a",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3e4aa07",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3e4aa40",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3e4aa78",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3e4cebe",
+    "string": "Jm_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3e516ee",
+    "string": "$Rm_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x3e5514e",
+    "string": "$Rm_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x3e568be",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3e5c5ce",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3e62ade",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3e66702",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x3e72946",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3e73e04",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x3e753d2",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3e7ab16",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3e7bd39",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x3e7d186",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3e80966",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3e80a23",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3e80a5c",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3e80a94",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3e82288",
+    "string": "Fm_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3e8b8e6",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3e8b9a3",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3e8b9dc",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3e8ba14",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3e8e6ce",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3e8eae6",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3e8eba3",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3e8ebdc",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3e8ec14",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3e97851",
+    "string": "g_SkyCompositeLodDepth"
+  },
+  {
+    "file_offset": "0x3e97bf6",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3e98088",
+    "string": "m_DetailShapeTiling"
+  },
+  {
+    "file_offset": "0x3e9809c",
+    "string": "m_DetailStrenth"
+  },
+  {
+    "file_offset": "0x3e984eb",
+    "string": "m_EnableDepthCulling"
+  },
+  {
+    "file_offset": "0x3e99693",
+    "string": "Zg_SkyCompositeLodDepth"
+  },
+  {
+    "file_offset": "0x3e9ba16",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3e9c996",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x3e9d960",
+    "string": "g_SkyLodDepth"
+  },
+  {
+    "file_offset": "0x3e9dd3a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3e9e152",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3e9e20f",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3e9e248",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3e9e280",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3e9ecc4",
+    "string": "m_DetailShapeTiling"
+  },
+  {
+    "file_offset": "0x3e9ecd8",
+    "string": "m_DetailStrenth"
+  },
+  {
+    "file_offset": "0x3e9f127",
+    "string": "m_EnableDepthCulling"
+  },
+  {
+    "file_offset": "0x3ea22be",
+    "string": "Nm_DetailShapeTiling"
+  },
+  {
+    "file_offset": "0x3ea50d2",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3ea54ea",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3ea55a7",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3ea55e0",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3ea5618",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3ee0f9e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3ee4916",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3ee6c96",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3ee70ae",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3ee716b",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3ee71a4",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3ee71dc",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3ef48da",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3ef81ca",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3ef85e2",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3ef869f",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3ef86d8",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3ef8710",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3f0e8a6",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3f0ecbe",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3f0ed7b",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3f0edb4",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3f0edec",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3f1c0b6",
+    "string": "Fm_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3f24c72",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3f2508a",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3f25147",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3f25180",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3f251b8",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3f321ca",
+    "string": "bm_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3f3ef82",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3f43052",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3f4874a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3f48b62",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3f48c1f",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3f48c58",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3f48c90",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3f55016",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3f57036",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x3f58a0e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3f5e422",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3f5e83a",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3f5e8f7",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3f5e930",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3f5e968",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3f827f2",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3f82c0a",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3f82cc7",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3f82d00",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3f82d38",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3f9a61e",
+    "string": "Fm_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3fa6a36",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3fa7aa2",
+    "string": "$*m_LodScale"
+  },
+  {
+    "file_offset": "0x3fab8d6",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3faf329",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x3fb14f2",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3fb606a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3fb6482",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3fb653f",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3fb6578",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3fb65b0",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3fba806",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3fbac1e",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3fbacdb",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3fbad14",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3fbad4c",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3fbcf83",
+    "string": "Jm_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3fbf32a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3fbf742",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3fbf7ff",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3fbf838",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3fbf870",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3fc25ee",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x3fc41ca",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3fc45e2",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3fc469f",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3fc46d8",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3fc4710",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3fc88ae",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3fcbf56",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3fcc36e",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3fcc42b",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3fcc464",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3fcc49c",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3fd088a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3fd0ca2",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3fd0d5f",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3fd0d98",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3fd0dd0",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3fd50fa",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3fd5512",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3fd55cf",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3fd5608",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3fd5640",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x3ff6d9e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3ff7c91",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x3ffb22e",
+    "string": "$Rm_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x3ffd4fa",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x3ffd912",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x3ffd9cf",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x3ffda08",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x3ffda40",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x400ad5e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x400bd5f",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x400e3e2",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x400e49f",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x400e4d8",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x400e510",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x4011476",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x4015e22",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x4017836",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x401ad7e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x401fd5e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x4020176",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x4020233",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x402026c",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x40202a4",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x402168e",
+    "string": "0Jm_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x4022f82",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x402993a",
+    "string": "$Rm_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x4039cde",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x403a0f6",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x403a1b3",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x403a1ec",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x403a224",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x403defe",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x403e316",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x403e3d3",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x403e40c",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x403e444",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x403ff56",
+    "string": "0Jm_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x4041cfe",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x4042116",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x40421d3",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x404220c",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x4042244",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x4045e9e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x40462b6",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x4046373",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x40463ac",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x40463e4",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x4047f76",
+    "string": "bm_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x4048094",
+    "string": "Jm_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x404a0ce",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x404c562",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x40505e5",
+    "string": "$Rm_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x405179e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x4051bb6",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x4051c73",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x4051cac",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x4051ce4",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x40530c2",
+    "string": "0Jm_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x407ce8e",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x407cf4b",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x407cf84",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x407cfbc",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x407edb3",
+    "string": "Jm_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x408093a",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x40809f7",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x4080a30",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x4080a68",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x408298d",
+    "string": "Fm_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x40846aa",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x4084767",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x40847a0",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x40847d8",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x408826e",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x408832b",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x4088364",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x408839c",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x408be16",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x408c22e",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x408c2eb",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x408c324",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x408c35c",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x4090822",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x40908df",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x4090918",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x4090950",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x4092108",
+    "string": "(bm_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x4092226",
+    "string": "(Jm_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x4093942",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x40939ff",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x4093a38",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x4093a70",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x40956c4",
+    "string": "(Jm_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x4097002",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x40970bf",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x40970f8",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x4097130",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x4098b50",
+    "string": "(bm_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x4098c6e",
+    "string": "(Jm_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x409a532",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x409a5ef",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x409a628",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x409a660",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x409be50",
+    "string": "(bm_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x409bf6e",
+    "string": "(Jm_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x409d6b2",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x409d76f",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x409d7a8",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x409d7e0",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x409f3d0",
+    "string": "(Jm_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x40a0ca2",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x40a0d5f",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x40a0d98",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x40a0dd0",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x40a29d4",
+    "string": "(Jm_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x40a430e",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x40a43cb",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x40a4404",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x40a443c",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x40a815a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x40a8572",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x40a862f",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x40a8668",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x40a86a0",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x40c3286",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x40c369e",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x40c375b",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x40c3794",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x40c37cc",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x40e079e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x40e0bb6",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x40e0c73",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x40e0cac",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x40e0ce4",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x40e85fa",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x40e8a12",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x40e8acf",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x40e8b08",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x40e8b40",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x40ef6fa",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x40efb12",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x40efbcf",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x40efc08",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x40efc40",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x40f34ef",
+    "string": "h6bm_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x40fb646",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x40fba5e",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x40fbb1b",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x40fbb54",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x40fbb8c",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x40ff666",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x4102292",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41026aa",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x4102767",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x41027a0",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x41027d8",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x4107032",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x41070ef",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x4107128",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x4107160",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x4109a86",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x4109e9e",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x4109f5b",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x4109f94",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x4109fcc",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x410b728",
+    "string": "bm_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x410b852",
+    "string": "Jm_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x410d642",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x410da5a",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x410db17",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x410db50",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x410db88",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x41123d6",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41127ee",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x41128ab",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x41128e4",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x411291c",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x4114934",
+    "string": "Jm_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x4116afa",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x411aa66",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x411ae7e",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x411af3b",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x411af74",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x411afac",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x411fde8",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x41228b2",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x412296f",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x41229a8",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x41229e0",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x4126382",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x412643f",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x4126478",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x41264b0",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x4127eae",
+    "string": "Jm_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x41297d2",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x412988f",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x41298c8",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x4129900",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x412e04a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x412e462",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x412e51f",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x412e558",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x412e590",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x414613c",
+    "string": "Fm_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x4152802",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x4153bf7",
+    "string": "$*m_LodScale"
+  },
+  {
+    "file_offset": "0x415519a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41555b2",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x415566f",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x41556a8",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x41556e0",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x415d9a2",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x415ddba",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x415de77",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x415deb0",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x415dee8",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x4160342",
+    "string": "Fm_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x4160c84",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x4162a76",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x4163bce",
+    "string": "$*m_LodScale"
+  },
+  {
+    "file_offset": "0x4164fe2",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41653fa",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x41654b7",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x41654f0",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x4165528",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x41687e9",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x416a542",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x416a5ff",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x416a638",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x416a670",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x416dde6",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x417043e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x4170856",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x4170913",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x417094c",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x4170984",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x4176a7a",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x4176b37",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x4176b70",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x4176ba8",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x4178553",
+    "string": "h0Fm_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x417a252",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x417a66a",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x417a727",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x417a760",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x417a798",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x4180c0d",
+    "string": "(Fm_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x4184846",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41875d6",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41879ee",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x4187aab",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x4187ae4",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x4187b1c",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x418e01d",
+    "string": "bm_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x418e141",
+    "string": "Jm_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x4192372",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x4195cd6",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x4197c5e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x419b9c6",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x419bdde",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x419be9b",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x419bed4",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x419bf0c",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x419de4e",
+    "string": "Jm_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x41a01ba",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41a48d2",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41a6402",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41a82f2",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41aa1a2",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41ac222",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41add62",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41afa82",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41b1762",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41b365e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41b559e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41b74ee",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41b961e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41bb8ee",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41bda1e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41bfc1e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41c1c7e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41c3d6e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41c603a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41c835a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41cacfa",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41cd12a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41cf92a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41d204a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41d457a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41d699a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41d9b92",
+    "string": "$*m_LodScale"
+  },
+  {
+    "file_offset": "0x41dc292",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41dde12",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41dfd12",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41e1b3a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41e4bda",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41e7a0a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41ea01a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41ec68e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41eea1e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41eef84",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x41eefd0",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x41ef123",
+    "string": "m_LodDist"
+  },
+  {
+    "file_offset": "0x41ef32c",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x41f1dd7",
+    "string": "(&m_LodDist"
+  },
+  {
+    "file_offset": "0x41f1f68",
+    "string": "(Fm_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x41f505a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x41f5472",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x41f552f",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x41f5568",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x41f55a0",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x41f6090",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x41f60dc",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x41f622f",
+    "string": "m_LodDist"
+  },
+  {
+    "file_offset": "0x41f6438",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x41fb7eb",
+    "string": "(&m_LodDist"
+  },
+  {
+    "file_offset": "0x41fbfe0",
+    "string": "(Rm_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x41ffcee",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x4200974",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x42009c0",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x4200c10",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x420436b",
+    "string": "(*m_LodScale"
+  },
+  {
+    "file_offset": "0x42073f2",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x420780a",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x42078c7",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x4207900",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x4207938",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x4208748",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x4208794",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x42088d3",
+    "string": "m_LodDist"
+  },
+  {
+    "file_offset": "0x4208ae4",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x420ecae",
+    "string": "Fm_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x420fa7c",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x42147ee",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x4214c06",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x4214cc3",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x4214cfc",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x4214d34",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x42156fc",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x4215748",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x421589b",
+    "string": "m_LodDist"
+  },
+  {
+    "file_offset": "0x4215aac",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x42189d4",
+    "string": "Fm_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x421c2d2",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x421c6ea",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x421c7a7",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x421c7e0",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x421c818",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x421d1e0",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x421d22c",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x421d37f",
+    "string": "m_LodDist"
+  },
+  {
+    "file_offset": "0x421d590",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x42212e1",
+    "string": "&m_LodDist"
+  },
+  {
+    "file_offset": "0x4224952",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x4224d6a",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x4224e27",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x4224e60",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x4224e98",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x4225870",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x42258bc",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x4225b0c",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x422bb1a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x422bf32",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x422bfef",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x422c028",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x422c060",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x422ca38",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x422ca84",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x422ccd4",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x4232922",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x4232d3a",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x4232df7",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x4232e30",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x4232e68",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x4233840",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x423388c",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x4233adc",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x42378d8",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x423a6a2",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x423aaba",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x423ab77",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x423abb0",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x423abe8",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x423b5c0",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x423b60c",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x423b85c",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x423e4e2",
+    "string": "Jm_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x4241a9a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x4241eb2",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x4241f6f",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x4241fa8",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x4241fe0",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x42429b8",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x4242a04",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x4242c54",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x42485c2",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x42489da",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x4248a97",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x4248ad0",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x4248b08",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x42494e0",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x424952c",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x424977c",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x424f6aa",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x424fac2",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x424fb7f",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x424fbb8",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x424fbf0",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x42505c8",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x4250614",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x4250864",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x4253d44",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x4253f51",
+    "string": "Rm_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x425653a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x4256952",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x4256a0f",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x4256a48",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x4256a80",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x4257458",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x42574a4",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x42576f4",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x425d5c6",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x425dab8",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x4260536",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x4260a28",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x4263482",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x426389a",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x4263957",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x4263990",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x42639c8",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x426439c",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x42643e8",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x4264638",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x4267698",
+    "string": "bm_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x42677bc",
+    "string": "Jm_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x426afa2",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x426b3ba",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x426b477",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x426b4b0",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x426b4e8",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x426bebc",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x426bf08",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x426c158",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x42700f9",
+    "string": "*m_LodScale"
+  },
+  {
+    "file_offset": "0x4272e0a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x4273222",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x42732df",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x4273318",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x4273350",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x4273d24",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x4273d70",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x4273fc0",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x427981a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x4279c32",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x4279cef",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x4279d28",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x4279d60",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x427a734",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x427a780",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x427a9d0",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x4280672",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x4280a8a",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x4280b47",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x4280b80",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x4280bb8",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x4281590",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x42815dc",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x428172f",
+    "string": "m_LodDist"
+  },
+  {
+    "file_offset": "0x4281940",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x4285252",
+    "string": "Rm_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x428edb8",
+    "string": "\"&m_LodDist"
+  },
+  {
+    "file_offset": "0x428f085",
+    "string": "\"Rm_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x4297fd8",
+    "string": "\"&m_LodDist"
+  },
+  {
+    "file_offset": "0x42982a5",
+    "string": "\"Rm_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x42a11f8",
+    "string": "\"&m_LodDist"
+  },
+  {
+    "file_offset": "0x42a14c5",
+    "string": "\"Rm_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x42a3a66",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x42a4668",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x42ad34e",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x42adf28",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x42b2cfe",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x42b38d8",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x42b72e6",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x42b7e9c",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x42bea96",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x42bf6c0",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x42c917a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x42cb812",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x42cec22",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x42d0ba6",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x42d115c",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x42d11a8",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x42d23b0",
+    "string": "6Fm_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x42d283d",
+    "string": "6*m_LodScale"
+  },
+  {
+    "file_offset": "0x42d4192",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x42d4748",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x42d4794",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x42d7396",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x42d794c",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x42d7998",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x42d8a86",
+    "string": "6Fm_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x42d8f13",
+    "string": "6*m_LodScale"
+  },
+  {
+    "file_offset": "0x42da83a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x42dfb7a",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x42dff92",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x42e004f",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x42e0088",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x42e00c0",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x42f6866",
+    "string": "$Rm_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x42f7d76",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x42f818e",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x42f824b",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x42f8284",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x42f82bc",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x42f90cc",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x42f9118",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x42f9257",
+    "string": "m_LodDist"
+  },
+  {
+    "file_offset": "0x42f9468",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x4300fc6",
+    "string": "Jm_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x4301843",
+    "string": "Fm_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x4307c02",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x430801a",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x43080d7",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x4308110",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x4308148",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x4308b10",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x4308b5c",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x4308caf",
+    "string": "m_LodDist"
+  },
+  {
+    "file_offset": "0x4308ec0",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x430d2a6",
+    "string": "Jm_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x430db23",
+    "string": "Fm_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x4311912",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x4311d2a",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x4311de7",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x4311e20",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x4311e58",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x4312c68",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x4312cb4",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x4312df3",
+    "string": "m_LodDist"
+  },
+  {
+    "file_offset": "0x4313004",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x431b3d1",
+    "string": "Rm_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x43217f2",
+    "string": "m_LodScale"
+  },
+  {
+    "file_offset": "0x4321c0a",
+    "string": "m_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x4321cc7",
+    "string": "m_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x4321d00",
+    "string": "m_KeyLightLodBias"
+  },
+  {
+    "file_offset": "0x4321d38",
+    "string": "m_KeyLightLodClamp"
+  },
+  {
+    "file_offset": "0x4322700",
+    "string": "m_GeomLodAndUVScales"
+  },
+  {
+    "file_offset": "0x432274c",
+    "string": "m_MaterialLodDist"
+  },
+  {
+    "file_offset": "0x432289f",
+    "string": "m_LodDist"
+  },
+  {
+    "file_offset": "0x4322ab0",
+    "string": "m_MatLodDistOverride"
+  },
+  {
+    "file_offset": "0x4326e7c",
+    "string": "bm_KeyLightShellLodConsts"
+  },
+  {
+    "file_offset": "0x4326fa0",
+    "string": "Jm_KeyLightLodScale"
+  },
+  {
+    "file_offset": "0x433eef0",
+    "string": "Actor %s has %u Switch Groups on its Sound Source Component, which exceeds the maximum allowed setting of %u. The last %u Switch Groups will be dropped! (TTY has more detailed actor info)"
+  },
+  {
+    "file_offset": "0x4349538",
+    "string": "Culled"
+  },
+  {
+    "file_offset": "0x44d75f0",
+    "string": "CsmLodCount"
+  },
+  {
+    "file_offset": "0x44d7600",
+    "string": "FarLodCaching"
+  },
+  {
+    "file_offset": "0x44d7610",
+    "string": "FarLodTransitionDist"
+  },
+  {
+    "file_offset": "0x44d7628",
+    "string": "FarLodPerfModeOpts"
+  },
+  {
+    "file_offset": "0x44d7d50",
+    "string": "If non-zero, the csm shadow will transition to the far lod cache at this distance. If zero, it will use Render.CsmFarLodTransitionDist from the project settings instead"
+  },
+  {
+    "file_offset": "0x44d82a0",
+    "string": "Far Lod Caching"
+  },
+  {
+    "file_offset": "0x44d82b0",
+    "string": "Far Lod Transition Dist"
+  },
+  {
+    "file_offset": "0x44d82c8",
+    "string": "Far Lod Perf Mode Opts"
+  },
+  {
+    "file_offset": "0x44da000",
+    "string": "DetailTile"
+  },
+  {
+    "file_offset": "0x44da010",
+    "string": "DetailStrength"
+  },
+  {
+    "file_offset": "0x44dae60",
+    "string": "It determines the detail (erosion) of the clouds. Using bigger gives smaller the detail pattern on the clouds. This option highly impacts the performance."
+  },
+  {
+    "file_offset": "0x44daf00",
+    "string": "It intensifies the erosion effect caused by detail tile setting. This option highly impacts the performance."
+  },
+  {
+    "file_offset": "0x44db050",
+    "string": "It controls the overall size of the clouds. Thus, even if it is changed, the ratio of base and detail tile settings are unaffected. Using bigger value will generate larger chunks of clouds. This option highly impacts the performance."
+  },
+  {
+    "file_offset": "0x44e2600",
+    "string": "LodDistance"
+  },
+  {
+    "file_offset": "0x44e2610",
+    "string": "LodReduction"
+  },
+  {
+    "file_offset": "0x44f0ae0",
+    "string": "Number of ModelInsts after frust cull, before occlusion cull"
+  },
+  {
+    "file_offset": "0x44f0b20",
+    "string": "Number of MoedlInsts after occlusion cull, really going to be submitted."
+  },
+  {
+    "file_offset": "0x44f0b70",
+    "string": "Number of hibernate models after frust cull, before occlusion cull"
+  },
+  {
+    "file_offset": "0x44f0bc0",
+    "string": "Number of hibernate models after occlusion cull, really going to be submitted."
+  },
+  {
+    "file_offset": "0x44f17c8",
+    "string": "TypeDetailInfo"
+  },
+  {
+    "file_offset": "0x44f1918",
+    "string": "Type detail info"
+  },
+  {
+    "file_offset": "0x44f20d0",
+    "string": "If CullBySize is set on the breakable, and the pool is full enough, the minimum radius of chunks to be spawned. If CullBySize is not set, or the pool is not full enough, this will be zero."
+  },
+  {
+    "file_offset": "0x44f2200",
+    "string": "The maximum number of chunks that will be spawned, assuming none are culled."
+  },
+  {
+    "file_offset": "0x44f24d8",
+    "string": "RobotestLookLOD"
+  },
+  {
+    "file_offset": "0x44f2658",
+    "string": "Contents of the modelinst's subset_remap blob for this LOD"
+  },
+  {
+    "file_offset": "0x44f2d10",
+    "string": "Per-LOD information"
+  },
+  {
+    "file_offset": "0x44f94d8",
+    "string": "MaxCulledUpdateDistance"
+  },
+  {
+    "file_offset": "0x44f9868",
+    "string": "NeverCull"
+  },
+  {
+    "file_offset": "0x44f9b58",
+    "string": "Never attempt to cull anim tree evaluates"
+  },
+  {
+    "file_offset": "0x453d8e8",
+    "string": "MinCullDist"
+  },
+  {
+    "file_offset": "0x453e8d0",
+    "string": "CullAllCullable"
+  },
+  {
+    "file_offset": "0x453ed00",
+    "string": "kDetailed"
+  },
+  {
+    "file_offset": "0x45412f0",
+    "string": "DebugDetailDrawDistanceMin"
+  },
+  {
+    "file_offset": "0x4541310",
+    "string": "DebugDetailDrawDistanceMax"
+  },
+  {
+    "file_offset": "0x45424b0",
+    "string": "UnderSampleCullFractionFrames"
+  },
+  {
+    "file_offset": "0x4543be8",
+    "string": "MaterialLodSettings"
+  },
+  {
+    "file_offset": "0x4544ec8",
+    "string": "CsmUseModelsInFarLodCache"
+  },
+  {
+    "file_offset": "0x4544ee8",
+    "string": "CsmFarLodTransitionDist"
+  },
+  {
+    "file_offset": "0x454c348",
+    "string": "How much RTPC logging detail do you want?"
+  },
+  {
+    "file_offset": "0x456c731",
+    "string": "Level of Detail: %s"
+  },
+  {
+    "file_offset": "0x456c749",
+    "string": "Vehicle Detail: %s"
+  },
+  {
+    "file_offset": "0x456d300",
+    "string": "Changed RT geometry detail."
+  },
+  {
+    "file_offset": "0x456d650",
+    "string": "Changed level of detail."
+  },
+  {
+    "file_offset": "0x456d670",
+    "string": "Changed vehicle detail."
+  },
+  {
+    "file_offset": "0x4571600",
+    "string": "PCGraphicsSettings_GeometryDetail_Desc"
+  },
+  {
+    "file_offset": "0x4571628",
+    "string": "PCGraphicsSettings_GeometryDetail"
+  },
+  {
+    "file_offset": "0x4571aa0",
+    "string": "PCGraphicsSettings_LevelOfDetail_Desc"
+  },
+  {
+    "file_offset": "0x4571ac8",
+    "string": "PCGraphicsSettings_LevelOfDetail"
+  },
+  {
+    "file_offset": "0x4579f40",
+    "string": "LevelOfDetail"
+  },
+  {
+    "file_offset": "0x4579f50",
+    "string": "VehicleDetail"
+  },
+  {
+    "file_offset": "0x45bbdc0",
+    "string": "LODLimiter"
+  },
+  {
+    "file_offset": "0x4668ed0",
+    "string": "GeomLodDist1"
+  },
+  {
+    "file_offset": "0x4669780",
+    "string": "Output LOD1"
+  },
+  {
+    "file_offset": "0x4669790",
+    "string": "First LOD distance"
+  },
+  {
+    "file_offset": "0x4669fe8",
+    "string": "GeomLodDist2"
+  },
+  {
+    "file_offset": "0x466a1a0",
+    "string": "Output LOD2"
+  },
+  {
+    "file_offset": "0x466a1b0",
+    "string": "Second LOD distance"
+  },
+  {
+    "file_offset": "0x466db58",
+    "string": "LODLimiterPerfSpecData"
+  },
+  {
+    "file_offset": "0x466db70",
+    "string": "LODLimiterPrius"
+  },
+  {
+    "file_offset": "0x466dba8",
+    "string": "MinLOD"
+  },
+  {
+    "file_offset": "0x466dc78",
+    "string": "MinLODsPerSpec"
+  },
+  {
+    "file_offset": "0x46a5a18",
+    "string": "Use high quality alpha that culls backfacing polys"
+  },
+  {
+    "file_offset": "0x46e3e98",
+    "string": "LODLimiterSetMinLodEvent"
+  },
+  {
+    "file_offset": "0x46e3f28",
+    "string": "MinLod"
+  },
+  {
+    "file_offset": "0x477eed0",
+    "string": "Log asset load details when load request exceeds this many bytes while streaming (0 = disabled)."
+  },
+  {
+    "file_offset": "0x4789538",
+    "string": "AllowLOD"
+  },
+  {
+    "file_offset": "0x479d320",
+    "string": "CullRemoteShots"
+  },
+  {
+    "file_offset": "0x47b6438",
+    "string": "Detail Tile"
+  },
+  {
+    "file_offset": "0x47b6448",
+    "string": "Detail Strength"
+  },
+  {
+    "file_offset": "0x47b6c18",
+    "string": "Cinematic2Util::MayaNameSpaceDetails::Init()"
+  },
+  {
+    "file_offset": "0x47c4c60",
+    "string": "The scale of the z component of the normal when creating a normal from the gradient map.  Larger values are smother, smaller have more details."
+  },
+  {
+    "file_offset": "0x47ca7d0",
+    "string": "GeomLodDist3"
+  },
+  {
+    "file_offset": "0x47ca7e0",
+    "string": "GeomLodDist4"
+  },
+  {
+    "file_offset": "0x47ca7f0",
+    "string": "GeomLodDist5"
+  },
+  {
+    "file_offset": "0x47caac0",
+    "string": "If non-zero value, this overrides Model GeomLodDist1."
+  },
+  {
+    "file_offset": "0x47caaf8",
+    "string": "If non-zero value, this overrides Model GeomLodDist2."
+  },
+  {
+    "file_offset": "0x47cab30",
+    "string": "If non-zero value, this overrides Model GeomLodDist3."
+  },
+  {
+    "file_offset": "0x47cab68",
+    "string": "If non-zero value, this overrides Model GeomLodDist4."
+  },
+  {
+    "file_offset": "0x47caba0",
+    "string": "If non-zero value, this overrides Model GeomLodDist5."
+  },
+  {
+    "file_offset": "0x47cc380",
+    "string": "This specifies the LOD scale multiplier (it is applied globally)."
+  },
+  {
+    "file_offset": "0x47cc3c8",
+    "string": "HQ impostor cull distance (0 = ignore)."
+  },
+  {
+    "file_offset": "0x47d7410",
+    "string": "kWeatherCloudsDetailTile"
+  },
+  {
+    "file_offset": "0x47d7430",
+    "string": "kWeatherCloudsDetailStrength"
+  },
+  {
+    "file_offset": "0x47d8bc8",
+    "string": "Clouds: Detail Tile"
+  },
+  {
+    "file_offset": "0x47d8be0",
+    "string": "Clouds: Detail Strength"
+  },
+  {
+    "file_offset": "0x47e9a38",
+    "string": "LodPosition"
+  },
+  {
+    "file_offset": "0x47edc30",
+    "string": "<b><i>Optimization:</i></b> Higher resolutions gain detail, however have a higher fill-rate performance cost. Regardless of the setting, shadow res reduces further into the distance. If this setting is insufficient, check the following:<br><b>Scene Light Count</b> If there are more shadowing lights than memory can bear, all shadows will be downres'ed until all fit.<br><b>Light Angle</b> A shadow map must cover the entirety of the lit area, so wide angles on spot lights, or point lights that affect a great area will see their effective shadow resolution decrease as it's spread thinner over a greater area.<br><b>Note:</b> Point lights actually generate 6 shadow maps, one for each cardinal axis direction/face of a cube, so they are 6x the cost of a spot light in terms of shadow cost."
+  },
+  {
+    "file_offset": "0x47ee8f0",
+    "string": "<b><i>Optimization:</i></b> The distance to the front of the light's bounding sphere when the light will fade out and then be culled/not drawn."
+  },
+  {
+    "file_offset": "0x47f69c8",
+    "string": "TextureLodEngineCommand"
+  },
+  {
+    "file_offset": "0x47f7370",
+    "string": "ModelLodEngineItem"
+  },
+  {
+    "file_offset": "0x47f73b8",
+    "string": "ModelInstChangeLodEngineItem"
+  },
+  {
+    "file_offset": "0x47f8c70",
+    "string": "CamLodScale"
+  },
+  {
+    "file_offset": "0x47fa5e0",
+    "string": "AnimateLod"
+  },
+  {
+    "file_offset": "0x47fbe58",
+    "string": "LodDelta"
+  },
+  {
+    "file_offset": "0x4800828",
+    "string": "LodDist"
+  },
+  {
+    "file_offset": "0x4801070",
+    "string": "The distance at which the material transitions from Lod 0 to Lod 1. If set to 0 (the default) it will use the Lod Distance value from the Material Graph asset. The value can be overridden by the Material Lod Dist property on the Model asset."
+  },
+  {
+    "file_offset": "0x4801170",
+    "string": "Both sides of geometry with this material will be drawn (no back-face culling)"
+  },
+  {
+    "file_offset": "0x4801958",
+    "string": "Lod Distance"
+  },
+  {
+    "file_offset": "0x4802e90",
+    "string": "Pixels will alpha values below this are culled, except if the blend mode is Hybrid in which case they are rendered as Blended"
+  },
+  {
+    "file_offset": "0x48037c0",
+    "string": "kForceSingleSidedInLod1"
+  },
+  {
+    "file_offset": "0x48037f0",
+    "string": "Force Single In Lod 1"
+  },
+  {
+    "file_offset": "0x48038e0",
+    "string": "MaterialLodDist"
+  },
+  {
+    "file_offset": "0x4803b70",
+    "string": "The distance that the material transitions from lod 0 to lod 1. If set to 0 (the default) it will fall back to the setting in the Material asset, and then to the Material Graph asset, and then finally the per-project MaterialLod Settings."
+  },
+  {
+    "file_offset": "0x4804058",
+    "string": "Material Lod Dist"
+  },
+  {
+    "file_offset": "0x48099a0",
+    "string": "The distance at which the material transitions from Lod 0 to Lod 1. If set to 0 (the default) it will be derived from per-project MaterialLod Settings. The value can be overridden by the Lod Distance on the Material asset, and then again by the Material Lod Dist on the Model asset."
+  },
+  {
+    "file_offset": "0x480c4c8",
+    "string": "PerfProfileLodMaxBase"
+  },
+  {
+    "file_offset": "0x480dcc0",
+    "string": "kLod0"
+  },
+  {
+    "file_offset": "0x480dcc8",
+    "string": "kLod1"
+  },
+  {
+    "file_offset": "0x480dce0",
+    "string": "kLod2"
+  },
+  {
+    "file_offset": "0x480dcfc",
+    "string": "kLod3"
+  },
+  {
+    "file_offset": "0x480dd30",
+    "string": "kLod4"
+  },
+  {
+    "file_offset": "0x480dd38",
+    "string": "kLod5"
+  },
+  {
+    "file_offset": "0x480e588",
+    "string": "GeomLodMaxJointInfl0"
+  },
+  {
+    "file_offset": "0x480e5a0",
+    "string": "GeomLodMaxJointInfl1"
+  },
+  {
+    "file_offset": "0x480e5b8",
+    "string": "GeomLodMaxJointInfl2"
+  },
+  {
+    "file_offset": "0x480e5d0",
+    "string": "GeomLodMaxJointInfl3"
+  },
+  {
+    "file_offset": "0x480e5e8",
+    "string": "GeomLodMaxJointInfl4"
+  },
+  {
+    "file_offset": "0x480e600",
+    "string": "GeomLodMaxJointInfl5"
+  },
+  {
+    "file_offset": "0x480e680",
+    "string": "PerfProfileMaxLod"
+  },
+  {
+    "file_offset": "0x480ef00",
+    "string": "Improves the quality of Screen-Space Reflections by ray-tracing hidden and off-screen details"
+  },
+  {
+    "file_offset": "0x480ef60",
+    "string": "Improves the quality of shadows by ray-tracing and adding fine details beyond the limits of shadow-map resolution"
+  },
+  {
+    "file_offset": "0x4810458",
+    "string": "Geom Lod Dist 1"
+  },
+  {
+    "file_offset": "0x4810468",
+    "string": "Geom Lod Dist 2"
+  },
+  {
+    "file_offset": "0x4810478",
+    "string": "Geom Lod Dist 3"
+  },
+  {
+    "file_offset": "0x4810488",
+    "string": "Geom Lod Dist 4"
+  },
+  {
+    "file_offset": "0x4810498",
+    "string": "Geom Lod Dist 5"
+  },
+  {
+    "file_offset": "0x48104a8",
+    "string": "Max Joint Inf Lod 0"
+  },
+  {
+    "file_offset": "0x48104c0",
+    "string": "Max Joint Inf Lod 1"
+  },
+  {
+    "file_offset": "0x48104d8",
+    "string": "Max Joint Inf Lod 2"
+  },
+  {
+    "file_offset": "0x48104f0",
+    "string": "Max Joint Inf Lod 3"
+  },
+  {
+    "file_offset": "0x4810508",
+    "string": "Max Joint Inf Lod 4"
+  },
+  {
+    "file_offset": "0x4810520",
+    "string": "Max Joint Inf Lod 5"
+  },
+  {
+    "file_offset": "0x4810538",
+    "string": "Max Lods"
+  },
+  {
+    "file_offset": "0x48131c8",
+    "string": "Skip the capture of Detail Normals to reduce memory cost"
+  },
+  {
+    "file_offset": "0x4817d40",
+    "string": "Show Detail Displacement"
+  },
+  {
+    "file_offset": "0x48193b8",
+    "string": "DetailDisplacementDistance"
+  },
+  {
+    "file_offset": "0x48193d8",
+    "string": "DetailDisplacementFalloff"
+  },
+  {
+    "file_offset": "0x48193f8",
+    "string": "DetailDisplacementLevels"
+  },
+  {
+    "file_offset": "0x4819418",
+    "string": "LodDistanceScale"
+  },
+  {
+    "file_offset": "0x4819490",
+    "string": "EnableDetailDisplacement"
+  },
+  {
+    "file_offset": "0x4819500",
+    "string": "LodAroundOrigin"
+  },
+  {
+    "file_offset": "0x4819840",
+    "string": "This is the distance within which the terrain height detail will be displaced along the normal."
+  },
+  {
+    "file_offset": "0x48198a0",
+    "string": "This is the distance that the terrain height detail will fade out."
+  },
+  {
+    "file_offset": "0x48198f0",
+    "string": "This is the number of additional detail levels that should be added to the terrain when detail displacement is enabled (for example, if the value is 3, then a 32 x 32 quad tile can go to 64 x 64, then 128 x 128, and finally to 256 x 256 )."
+  },
+  {
+    "file_offset": "0x48199e0",
+    "string": "This is a scale used to tweak level of detail distances."
+  },
+  {
+    "file_offset": "0x4819ba0",
+    "string": "If checked, detail displacement will be applied to the heightfield; otherwise the materials will be layered flatly onto the terrain."
+  },
+  {
+    "file_offset": "0x4819ef8",
+    "string": "Detail Displacement Distance"
+  },
+  {
+    "file_offset": "0x4819f18",
+    "string": "Detail Displacement Falloff"
+  },
+  {
+    "file_offset": "0x4819f38",
+    "string": "Detail Displacement Levels"
+  },
+  {
+    "file_offset": "0x4819fd0",
+    "string": "Enable Detail Displacement"
+  },
+  {
+    "file_offset": "0x481eb18",
+    "string": "kGeomLodLevel"
+  },
+  {
+    "file_offset": "0x481fcd0",
+    "string": "kShowDetailDisplacement"
+  },
+  {
+    "file_offset": "0x481fce8",
+    "string": "kShowLod"
+  },
+  {
+    "file_offset": "0x48210a0",
+    "string": "LodScale"
+  },
+  {
+    "file_offset": "0x4821140",
+    "string": "LOD scale to apply when exporting"
+  },
+  {
+    "file_offset": "0x4825d40",
+    "string": "kOpenLod"
+  },
+  {
+    "file_offset": "0x4826330",
+    "string": "HighLod"
+  },
+  {
+    "file_offset": "0x4826348",
+    "string": "LowLod"
+  },
+  {
+    "file_offset": "0x4827ed0",
+    "string": "This enables detail displacement on all layers (it cannot be enabled individiually).  Detail displacement will adjust the heightfield further to add the layers' heights onto the terrain.  Note that there is no collision on detail displacement, so it will be possible to see clipping with models and actors.  All layers must have a working detail offset in order for this feature to work properly."
+  },
+  {
+    "file_offset": "0x4828590",
+    "string": "DefaultVistaMapNormalDetail"
+  },
+  {
+    "file_offset": "0x48285b0",
+    "string": "VistaMapNormalDetail"
+  },
+  {
+    "file_offset": "0x4828a18",
+    "string": "This will be used for the default normal detail of vista map."
+  },
+  {
+    "file_offset": "0x4828a60",
+    "string": "If true, the normal detail will be applied to the vista map if possible."
+  },
+  {
+    "file_offset": "0x4828da0",
+    "string": "Default Vista Map Normal Detail"
+  },
+  {
+    "file_offset": "0x4828dc0",
+    "string": "Vista Map Normal Detail"
+  },
+  {
+    "file_offset": "0x482d600",
+    "string": "LoD</i> will render the various levels of detail of the terrain in different"
+  },
+  {
+    "file_offset": "0x483d448",
+    "string": "CullEditorOnlyNodes"
+  },
+  {
+    "file_offset": "0x4847750",
+    "string": "KillCulled"
+  },
+  {
+    "file_offset": "0x4847760",
+    "string": "SpawnCulled"
+  },
+  {
+    "file_offset": "0x484a950",
+    "string": "If set, model instances tagged with ray tracing will not be culled when far away from the camera."
+  },
+  {
+    "file_offset": "0x484c180",
+    "string": "The string value that will be imported into Houdini.  It will be accessible as a detail attribute using the tag name."
+  },
+  {
+    "file_offset": "0x484c4b0",
+    "string": "This tag can be used to access data in Houdini.  If the data associated with this element is geometry, that geometry will be grouped by this tag for easy access in Houdini.  The scalar value for this tag will be added as a detail attribute as well, so things like floating point values can also be accessed.  Tags can only contain letters, numbers, and underscores."
+  },
+  {
+    "file_offset": "0x484c680",
+    "string": "The file path that will be imported into Houdini.  It will be accessible as a detail attribute using the tag name.  If this refers to a model, actor, or other peice of geometry, that geometry will be imported into Houdini and grouped by the tag name."
+  },
+  {
+    "file_offset": "0x484c7f0",
+    "string": "The file paths that will be imported into Houdini.  They will be accessible as a (comma-separated) detail attribute using the tag name.  If a path refers to a model, actor, or other peice of geometry, that geometry will be imported into Houdini and grouped by the tag name."
+  },
+  {
+    "file_offset": "0x484c980",
+    "string": "The floating point value that will be imported into Houdini.  It will be accessible as a detail attribute using the tag name."
+  },
+  {
+    "file_offset": "0x484ca70",
+    "string": "The integer value that will be imported into Houdini.  It will be accessible as a detail attribute using the tag name."
+  },
+  {
+    "file_offset": "0x485a820",
+    "string": " for detail."
+  },
+  {
+    "file_offset": "0x485c6d0",
+    "string": "SetupDiGetDeviceInterfaceDetailW"
+  },
+  {
+    "file_offset": "0x4869be8",
+    "string": "TRANSFER_VELOCITY_TO_SLOD"
+  },
+  {
+    "file_offset": "0x4869c08",
+    "string": "ACQUIRE_VELOCITY_FROM_SLOD"
+  },
+  {
+    "file_offset": "0x4869c28",
+    "string": "TRANSITION_TO_SLOD"
+  },
+  {
+    "file_offset": "0x4869c40",
+    "string": "TRANSITION_FROM_SLOD"
+  },
+  {
+    "file_offset": "0x4869c58",
+    "string": "BLEND_TO_SLOD"
+  },
+  {
+    "file_offset": "0x4869c68",
+    "string": "BLEND_FROM_SLOD"
+  },
+  {
+    "file_offset": "0x4869c78",
+    "string": "SLOD_TRANSITION_TYPE"
+  },
+  {
+    "file_offset": "0x4869c90",
+    "string": "SLOD_BLEND_TYPE"
+  },
+  {
+    "file_offset": "0x4869ca8",
+    "string": "SLOD_TYPE"
+  },
+  {
+    "file_offset": "0x4869cb8",
+    "string": "TO_SLOD_TYPE"
+  },
+  {
+    "file_offset": "0x4869cc8",
+    "string": "FROM_SLOD_TYPE"
+  },
+  {
+    "file_offset": "0x4889d00",
+    "string": "hkHashMapDetail::MapTuple"
+  },
+  {
+    "file_offset": "0x488c908",
+    "string": "hkHashMapDetail::Index"
+  },
+  {
+    "file_offset": "0x488d9e0",
+    "string": "hk::ReflectDetails"
+  },
+  {
+    "file_offset": "0x488e5e8",
+    "string": "hkReflect::Detail::SizeAlign"
+  },
+  {
+    "file_offset": "0x488e8c8",
+    "string": "hkReflect::Detail::StringOut"
+  },
+  {
+    "file_offset": "0x488e930",
+    "string": "hkReflect::Detail::SyntheticUtil"
+  },
+  {
+    "file_offset": "0x488fd08",
+    "string": "hkReflect::Detail::Opaque"
+  },
+  {
+    "file_offset": "0x4890530",
+    "string": "hkSerialize::Detail::IdFromPointer"
+  },
+  {
+    "file_offset": "0x489a360",
+    "string": "buffer_hkHashMapDetail::Index"
+  },
+  {
+    "file_offset": "0x489a508",
+    "string": "$hkReflect::Detail::DerivedDataCache"
+  },
+  {
+    "file_offset": "0x489a5e0",
+    "string": "x:\\sdk\\havok\\hk2017_1_0_r1\\source\\common\\base\\reflect\\core\\detail\\hkreflecttypedetail.cpp"
+  },
+  {
+    "file_offset": "0x489aa38",
+    "string": "$hkWeakPtrDetail::StatusRegistry"
+  },
+  {
+    "file_offset": "0x489d448",
+    "string": "***** Details Frame-%i Thread:%i ******"
+  },
+  {
+    "file_offset": "0x489f5f0",
+    "string": "x:\\sdk\\havok\\hk2017_1_0_r1\\source\\common\\base\\serialize\\detail\\hkwritebuffer.cpp"
+  },
+  {
+    "file_offset": "0x489f7b0",
+    "string": "x:\\sdk\\havok\\hk2017_1_0_r1\\source\\common\\base\\serialize\\detail\\hkreadbuffer.cpp"
+  },
+  {
+    "file_offset": "0x48a0da0",
+    "string": "s11n.SerializeDetail"
+  },
+  {
+    "file_offset": "0x48a1880",
+    "string": "s11n.detail.IndexedBundle"
+  },
+  {
+    "file_offset": "0x48a2b70",
+    "string": "contactAreaDetails"
+  },
+  {
+    "file_offset": "0x48a5028",
+    "string": "numBonesPerLod"
+  },
+  {
+    "file_offset": "0x48aa6a0",
+    "string": "x:\\sdk\\havok\\hk2017_1_0_r1\\source\\common\\base\\reflect\\typereg\\detail\\hktyperegdetail.cpp"
+  },
+  {
+    "file_offset": "0x48aba08",
+    "string": "hkReflect::Detail::ForeignUtil"
+  },
+  {
+    "file_offset": "0x48f3948",
+    "string": "numLevelsOfDetail"
+  },
+  {
+    "file_offset": "0x48f3990",
+    "string": "hknpLodShapeLevelOfDetailInfo"
+  },
+  {
+    "file_offset": "0x48f4ec8",
+    "string": "hknpLodShape"
+  },
+  {
+    "file_offset": "0x49055d8",
+    "string": "hknpLodShapeIndex"
+  },
+  {
+    "file_offset": "0x4905650",
+    "string": "levelOfDetail"
+  },
+  {
+    "file_offset": "0x49056f8",
+    "string": "hknpLodShape::LevelOfDetailInfo"
+  },
+  {
+    "file_offset": "0x49060b0",
+    "string": "hknpLodManagerCinfo"
+  },
+  {
+    "file_offset": "0x4906180",
+    "string": "autoBuildLodOnDynamicBodyAdded"
+  },
+  {
+    "file_offset": "0x49061c8",
+    "string": "autoBuildLodOnMeshBodyAdded"
+  },
+  {
+    "file_offset": "0x4909a28",
+    "string": "hknpLodMeshShape::LevelOfDetailInfo"
+  },
+  {
+    "file_offset": "0x4909af8",
+    "string": "hknpLodMeshShape"
+  },
+  {
+    "file_offset": "0x490a618",
+    "string": "hknpLodManagerInfo"
+  },
+  {
+    "file_offset": "0x490e9a8",
+    "string": "hknpLodMeshShape::LevelOfDetailInfo[4]"
+  },
+  {
+    "file_offset": "0x490e9d0",
+    "string": "hknpLodMeshShape::LevelOfDetailInfo[8]"
+  },
+  {
+    "file_offset": "0x4917db8",
+    "string": "rigidBodyCollisionLod"
+  },
+  {
+    "file_offset": "0x4952cc8",
+    "string": "hknpLevelOfDetail::Enum"
+  },
+  {
+    "file_offset": "0x4952ef0",
+    "string": "hknpLodBodyFlags::Enum"
+  },
+  {
+    "file_offset": "0x49583e0",
+    "string": "Your LOD shape only has one Level of Detail and has optimization disabled. You should consider using the original shape instead."
+  },
+  {
+    "file_offset": "0x49584e0",
+    "string": "Your LOD shape only has one Level of Detail. You should consider optimizing your shape manually and using that shape instead."
+  },
+  {
+    "file_offset": "0x4958560",
+    "string": "Your LOD shape is using the original, unoptimized shape on a coarser-grained level ("
+  },
+  {
+    "file_offset": "0x4958720",
+    "string": "hknpLodManager"
+  },
+  {
+    "file_offset": "0x49596a8",
+    "string": "LodQuery"
+  },
+  {
+    "file_offset": "0x49596b8",
+    "string": "LodTarget"
+  },
+  {
+    "file_offset": "0x49596e0",
+    "string": "LodQueryAndTarget"
+  },
+  {
+    "file_offset": "0x5125572",
+    "string": "SetupDiGetDeviceInterfaceDetailW"
+  },
+  {
+    "file_offset": "0x5e0d260",
+    "string": ".?AU?$PointerPropertyImpl@PEAVType@hkReflect@@V12@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0d2c0",
+    "string": ".?AU?$SetterValueImpl@VIntType@hkReflect@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0d310",
+    "string": ".?AU?$SetterValueImpl@VStringType@hkReflect@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0d370",
+    "string": ".?AU?$SetterValueImpl@VPointerType@hkReflect@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0d3c8",
+    "string": ".?AUValueImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0d400",
+    "string": ".?AUImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0d430",
+    "string": ".?AUIntImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0d460",
+    "string": ".?AUStringImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0d498",
+    "string": ".?AUCompoundImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0d4d0",
+    "string": ".?AUPointerImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0d508",
+    "string": ".?AURecordImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0d540",
+    "string": ".?AUContainerImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0d578",
+    "string": ".?AUArrayImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0d5b0",
+    "string": ".?AUStringPropertyImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0d5f0",
+    "string": ".?AU?$IntegerPropertyImpl@H@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0d630",
+    "string": ".?AU?$EnumPropertyImpl@W4Enum@hkPropertyFlags@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0d6b0",
+    "string": ".?AUSetterRecordImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0d6f0",
+    "string": ".?AU?$SetterValueImpl@VRecordType@hkReflect@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0d748",
+    "string": ".?AUSetterArrayImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0d780",
+    "string": ".?AU?$SetterValueImpl@VArrayType@hkReflect@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0dbb0",
+    "string": ".?AUCloneOnHeap@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0de58",
+    "string": ".?AVOldIndexedBundle@Detail@hkSerialize@@"
+  },
+  {
+    "file_offset": "0x5e0dec8",
+    "string": ".?AUOldIndexedArrayImpl@Detail@hkSerialize@@"
+  },
+  {
+    "file_offset": "0x5e0df08",
+    "string": ".?AUOldIndexedPointerImpl@Detail@hkSerialize@@"
+  },
+  {
+    "file_offset": "0x5e0df48",
+    "string": ".?AUOldIndexedStringImpl@Detail@hkSerialize@@"
+  },
+  {
+    "file_offset": "0x5e0e088",
+    "string": ".?AUOpaqueImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0e0c0",
+    "string": ".?AUVoidImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0e128",
+    "string": ".?AUTagfileBundle@Detail@hkSerialize@@"
+  },
+  {
+    "file_offset": "0x5e0e160",
+    "string": ".?AUTagfilePointerImpl@Detail@hkSerialize@@"
+  },
+  {
+    "file_offset": "0x5e0e1a0",
+    "string": ".?AUTagfileArrayImpl@Detail@hkSerialize@@"
+  },
+  {
+    "file_offset": "0x5e0e1e0",
+    "string": ".?AUTagfileStringImpl@Detail@hkSerialize@@"
+  },
+  {
+    "file_offset": "0x5e0e220",
+    "string": ".?AVAllocationImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0e290",
+    "string": ".?AV?$BundleWithRelocs@VIndexedBundle@Detail@hkSerialize@@@Detail@hkSerialize@@"
+  },
+  {
+    "file_offset": "0x5e0e2f0",
+    "string": ".?AVIndexedBundle@Detail@hkSerialize@@"
+  },
+  {
+    "file_offset": "0x5e0e830",
+    "string": ".?AVBlockingThreadContext@hkDefaultTaskQueueDetail@@"
+  },
+  {
+    "file_offset": "0x5e0e880",
+    "string": ".?AVSpinningThreadContext@hkDefaultTaskQueueDetail@@"
+  },
+  {
+    "file_offset": "0x5e0e8d0",
+    "string": ".?AVAsyncThreadPoolContext@hkDefaultTaskQueueDetail@@"
+  },
+  {
+    "file_offset": "0x5e0ea28",
+    "string": ".?AUFloatImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0ea60",
+    "string": ".?AUHeapAllocImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0ea98",
+    "string": ".?AU?$IntImplN@D@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0ead0",
+    "string": ".?AU?$FloatImplN@VhkHalf16@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0eb10",
+    "string": ".?AUStaticStringImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0eb48",
+    "string": ".?AUCharBufferImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0eb80",
+    "string": ".?AURawPointerImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0ebc0",
+    "string": ".?AUReferencedObjectPointerImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0ec08",
+    "string": ".?AUReferenceImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0ec40",
+    "string": ".?AUBoolImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0ec70",
+    "string": ".?AURepeatImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0eca8",
+    "string": ".?AU?$BoolImplN@E@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0ece0",
+    "string": ".?AU?$BoolImplN@G@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0ed18",
+    "string": ".?AU?$BoolImplN@I@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0ed50",
+    "string": ".?AU?$BoolImplN@_N@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0ed88",
+    "string": ".?AU?$IntImplN@E@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0edc0",
+    "string": ".?AU?$IntImplN@C@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0edf8",
+    "string": ".?AU?$IntImplN@F@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0ee30",
+    "string": ".?AU?$IntImplN@G@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0ee68",
+    "string": ".?AU?$IntImplN@H@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0eea0",
+    "string": ".?AU?$IntImplN@I@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0eed8",
+    "string": ".?AU?$IntImplN@J@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0ef10",
+    "string": ".?AU?$IntImplN@K@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0ef48",
+    "string": ".?AU?$IntImplN@_J@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0ef80",
+    "string": ".?AU?$IntImplN@_K@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0efb8",
+    "string": ".?AU?$FloatImplN@M@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0eff0",
+    "string": ".?AU?$FloatImplN@N@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0f030",
+    "string": ".?AUReferencedObjectAllocImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0f078",
+    "string": ".?AUStaticArrayImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0f0b0",
+    "string": ".?AUhkInplaceArrayImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0f0f0",
+    "string": ".?AUhkArrayImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0f128",
+    "string": ".?AUHomogeneousArrayImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0f168",
+    "string": ".?AUHavokRecordImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0f1a0",
+    "string": ".?AUViewPointerImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0f1d8",
+    "string": ".?AUHavokStringImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0f240",
+    "string": ".?AVAttributeAllocImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0f488",
+    "string": ".?AUDerivedDataCache@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0f4f0",
+    "string": ".?AUStringOutImpl@StringOut@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0f5f0",
+    "string": ".?AVWeakReferencedObjectPointerImpl@hkWeakPtrDetail@@"
+  },
+  {
+    "file_offset": "0x5e0f638",
+    "string": ".?AVStatus@hkWeakPtrDetail@@"
+  },
+  {
+    "file_offset": "0x5e0f668",
+    "string": ".?AVStatusRegistry@hkWeakPtrDetail@@"
+  },
+  {
+    "file_offset": "0x5e0fe40",
+    "string": ".?AU?$SetterValueImpl@VBoolType@hkReflect@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0fe90",
+    "string": ".?AU?$SetterValueImpl@VFloatType@hkReflect@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0ffa0",
+    "string": ".?AUScopedPtrImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e0ffe0",
+    "string": ".?AU?$EndianIntImplN@CV?$EndianType@C$00@hkEndian@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e10040",
+    "string": ".?AU?$EndianIntImplN@CV?$EndianType@C$0A@@hkEndian@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e100a0",
+    "string": ".?AU?$EndianIntImplN@FV?$EndianType@F$00@hkEndian@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e10100",
+    "string": ".?AU?$EndianIntImplN@FV?$EndianType@F$0A@@hkEndian@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e10160",
+    "string": ".?AU?$EndianIntImplN@HV?$EndianType@H$00@hkEndian@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e101c0",
+    "string": ".?AU?$EndianIntImplN@HV?$EndianType@H$0A@@hkEndian@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e10220",
+    "string": ".?AU?$EndianIntImplN@_JV?$EndianType@_J$00@hkEndian@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e10280",
+    "string": ".?AU?$EndianIntImplN@_JV?$EndianType@_J$0A@@hkEndian@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e102e0",
+    "string": ".?AU?$EndianIntImplN@EV?$EndianType@E$00@hkEndian@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e10340",
+    "string": ".?AU?$EndianIntImplN@EV?$EndianType@E$0A@@hkEndian@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e103a0",
+    "string": ".?AU?$EndianIntImplN@GV?$EndianType@G$00@hkEndian@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e10400",
+    "string": ".?AU?$EndianIntImplN@GV?$EndianType@G$0A@@hkEndian@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e10460",
+    "string": ".?AU?$EndianIntImplN@IV?$EndianType@I$00@hkEndian@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e104c0",
+    "string": ".?AU?$EndianIntImplN@IV?$EndianType@I$0A@@hkEndian@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e10520",
+    "string": ".?AU?$EndianIntImplN@_KV?$EndianType@_K$00@hkEndian@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e10580",
+    "string": ".?AU?$EndianIntImplN@_KV?$EndianType@_K$0A@@hkEndian@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e105e0",
+    "string": ".?AU?$EndianFloatImplN@VhkHalf16@@V?$EndianType@VhkHalf16@@$00@hkEndian@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e10650",
+    "string": ".?AU?$EndianFloatImplN@VhkHalf16@@V?$EndianType@VhkHalf16@@$0A@@hkEndian@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e106c0",
+    "string": ".?AU?$EndianFloatImplN@MV?$EndianType@M$00@hkEndian@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e10720",
+    "string": ".?AU?$EndianFloatImplN@MV?$EndianType@M$0A@@hkEndian@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e10780",
+    "string": ".?AU?$EndianFloatImplN@NV?$EndianType@N$00@hkEndian@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e107e0",
+    "string": ".?AU?$EndianFloatImplN@NV?$EndianType@N$0A@@hkEndian@@@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e109b0",
+    "string": ".?AUAllocationImpl@SyntheticUtil@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e10f48",
+    "string": ".?AUWriteBufferImpl@Detail@hkIo@@"
+  },
+  {
+    "file_offset": "0x5e10f80",
+    "string": ".?AVStreamWriteBufferImpl@Detail@hkIo@@"
+  },
+  {
+    "file_offset": "0x5e10fb8",
+    "string": ".?AUArrayWriteBufferImpl@Detail@hkIo@@"
+  },
+  {
+    "file_offset": "0x5e10ff0",
+    "string": ".?AUReadBufferImpl@Detail@hkIo@@"
+  },
+  {
+    "file_offset": "0x5e11028",
+    "string": ".?AUStreamReaderImpl@Detail@hkIo@@"
+  },
+  {
+    "file_offset": "0x5e111f0",
+    "string": ".?AUTagfileTypeWriter@Detail@hkSerialize@@"
+  },
+  {
+    "file_offset": "0x5e11230",
+    "string": ".?AUMakeTargetedTypeWriter@Detail@hkSerialize@@"
+  },
+  {
+    "file_offset": "0x5e112d0",
+    "string": ".?AUCloneToRegistered@Detail@hkSerialize@@"
+  },
+  {
+    "file_offset": "0x5e11310",
+    "string": ".?AUOwnedResource@Detail@hkSerialize@@"
+  },
+  {
+    "file_offset": "0x5e11618",
+    "string": ".?AUIndexedArrayImpl@Detail@hkSerialize@@"
+  },
+  {
+    "file_offset": "0x5e11658",
+    "string": ".?AUIndexedPointerImpl@Detail@hkSerialize@@"
+  },
+  {
+    "file_offset": "0x5e11698",
+    "string": ".?AUIndexedStringImpl@Detail@hkSerialize@@"
+  },
+  {
+    "file_offset": "0x5e11758",
+    "string": ".?AVBuiltinTypeReg@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e11790",
+    "string": ".?AUSubscriptionImpl@BuiltinTypeReg@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e12190",
+    "string": ".?AUCustomAllocImpl@Detail@hkReflect@@"
+  },
+  {
+    "file_offset": "0x5e15ad0",
+    "string": ".?AVhknpLodShape@@"
+  },
+  {
+    "file_offset": "0x5e16598",
+    "string": ".?AVhknpLodMeshShape@@"
+  },
+  {
+    "file_offset": "0x5e17b30",
+    "string": ".?AU?$MemberSlot@VhknpLodShape@@P81@EAAXPEBVhknpShape@@E@Z@?$hkSignal2@PEBVhknpShape@@E@@"
+  },
+  {
+    "file_offset": "0x5e17eb0",
+    "string": ".?AVhknpLodManager@@"
+  },
+  {
+    "file_offset": "0x5e17ee0",
+    "string": ".?AU?$MemberSlot@VhknpLodManager@@P81@EAAXPEAVhknpWorld@@PEBUhknpBodyId@@H@Z@?$hkSignal3@PEAVhknpWorld@@PEBUhknpBodyId@@H@@"
+  },
+  {
+    "file_offset": "0x5e99f50",
+    "string": ".?AU?$ImplementsHelper@U?$RuntimeClassFlags@$01@WRL@Microsoft@@$00$$V@Details@WRL@Microsoft@@"
+  },
+  {
+    "file_offset": "0x5e99fc0",
+    "string": ".?AV?$RuntimeClassBaseT@$01@Details@WRL@Microsoft@@"
+  },
+  {
+    "file_offset": "0x5e9a008",
+    "string": ".?AVRuntimeClassBase@Details@WRL@Microsoft@@"
+  },
+  {
+    "file_offset": "0x5e9a088",
+    "string": ".?AVDontUseNewUseMake@Details@WRL@Microsoft@@"
+  },
+  {
+    "file_offset": "0x5e9a140",
+    "string": ".?AU?$DelegateInvokeHelper@U__FIEventHandler_1_Windows__CGaming__CInput__CRawGameController@Input@Gaming@Windows@ABI@@V<lambda_ad44a57d318c4593cba014f8b2b11af0>@@$00PEAUIInspectable@@PEAUIRawGameController@2345@@?$DelegateArgTraits@P8__FIEventHandler_1_Windows__CGaming__CInput__CRawGameController@Input@Gaming@Windows@ABI@@EAAJPEAUIInspectable@@PEAUIRawGameController@2345@@Z@Details@WRL@Microsoft@@"
+  },
+  {
+    "file_offset": "0x5e9a3b0",
+    "string": ".?AV?$RuntimeClassImpl@U?$RuntimeClassFlags@$01@WRL@Microsoft@@$00$0A@$00U__FIEventHandler_1_Windows__CGaming__CInput__CRawGameController@Input@Gaming@Windows@ABI@@@Details@WRL@Microsoft@@"
+  },
+  {
+    "file_offset": "0x5e9a480",
+    "string": ".?AU?$ImplementsHelper@U?$RuntimeClassFlags@$01@WRL@Microsoft@@$0A@U__FIEventHandler_1_Windows__CGaming__CInput__CRawGameController@Input@Gaming@Windows@ABI@@@Details@WRL@Microsoft@@"
+  },
+  {
+    "file_offset": "0x5e9a590",
+    "string": ".?AU?$DelegateInvokeHelper@U__FIEventHandler_1_Windows__CGaming__CInput__CRawGameController@Input@Gaming@Windows@ABI@@V<lambda_81aa0cb113e84b3165a8f33a8d6b9c20>@@$00PEAUIInspectable@@PEAUIRawGameController@2345@@?$DelegateArgTraits@P8__FIEventHandler_1_Windows__CGaming__CInput__CRawGameController@Input@Gaming@Windows@ABI@@EAAJPEAUIInspectable@@PEAUIRawGameController@2345@@Z@Details@WRL@Microsoft@@"
+  },
+  {
+    "file_offset": "0x5ea24d8",
+    "string": ".?AVLODLimiter@@"
+  },
+  {
+    "file_offset": "0x5eb55e8",
+    "string": ".?AVLODLimiterPerfSpecData@@"
+  },
+  {
+    "file_offset": "0x5eb5618",
+    "string": ".?AVLODLimiterPrius@@"
+  },
+  {
+    "file_offset": "0x5ebd758",
+    "string": ".?AVLODLimiterSetMinLodEvent@@"
+  }
+]

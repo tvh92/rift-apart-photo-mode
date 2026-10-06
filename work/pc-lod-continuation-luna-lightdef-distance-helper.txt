@@ -1,0 +1,32 @@
+FUNCTION 0x163bb50 BOUNDS ('0x163bb50', '0x163bbd5')
+0163bb50 push rbx
+0163bb52 sub rsp,50h
+0163bb56 movaps [rsp+40h],xmm6
+0163bb5b lea rdx,[rsp+24h]
+0163bb60 mov rbx,rcx
+0163bb63 movaps [rsp+30h],xmm7
+0163bb68 lea rcx,[rsp+68h]
+0163bb6d movaps xmm7,xmm1
+0163bb70 movaps xmm6,xmm3
+0163bb73 call 0000000001639FF0h
+0163bb78 movaps xmm2,xmm6
+0163bb7b lea rdx,[rsp+60h]
+0163bb80 lea rcx,[rsp+20h]
+0163bb85 call 0000000001639FF0h
+0163bb8a movss xmm0,[rsp+68h]
+0163bb90 mov rax,rbx
+0163bb93 movss xmm1,[rsp+24h]
+0163bb99 movaps xmm6,[rsp+40h]
+0163bb9e mulss xmm0,xmm7
+0163bba2 mulss xmm1,xmm7
+0163bba6 mulss xmm0,[rsp+60h]
+0163bbac mulss xmm1,[rsp+60h]
+0163bbb2 movss [rbx],xmm0
+0163bbb6 movss xmm0,[rsp+20h]
+0163bbbc mulss xmm0,xmm7
+0163bbc0 movaps xmm7,[rsp+30h]
+0163bbc5 movss [rbx+8],xmm1
+0163bbca movss [rbx+4],xmm0
+0163bbcf add rsp,50h
+0163bbd3 pop rbx
+0163bbd4 ret

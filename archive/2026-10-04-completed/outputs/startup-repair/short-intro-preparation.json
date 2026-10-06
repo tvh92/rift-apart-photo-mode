@@ -1,0 +1,35 @@
+[
+  {
+    "asset_id": "851735C03E050852",
+    "source_frames": 547,
+    "frames": 4,
+    "seconds": 0.13333333333333333,
+    "audio_tracks": 2,
+    "bytes": 79536,
+    "sha256": "234dc33275f0850ba57f4d88870000d6609a20feed537d9dceba6d73aa675b30",
+    "original_codec_and_audio_metadata_preserved": true,
+    "original_frame_packets_preserved": true
+  },
+  {
+    "asset_id": "8B203B05CA2AEB50",
+    "source_frames": 547,
+    "frames": 4,
+    "seconds": 0.13333333333333333,
+    "audio_tracks": 2,
+    "bytes": 79536,
+    "sha256": "234dc33275f0850ba57f4d88870000d6609a20feed537d9dceba6d73aa675b30",
+    "original_codec_and_audio_metadata_preserved": true,
+    "original_frame_packets_preserved": true
+  },
+  {
+    "asset_id": "905EBDB8C12D66E0",
+    "source_frames": 706,
+    "frames": 4,
+    "seconds": 0.13333333333333333,
+    "audio_tracks": 2,
+    "bytes": 95296,
+    "sha256": "517c1117a4a5b55cd3591877487056a964807b5cc5508d09074d26256a525648",
+    "original_codec_and_audio_metadata_preserved": true,
+    "original_frame_packets_preserved": true
+  }
+]

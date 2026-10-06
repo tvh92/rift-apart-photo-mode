@@ -1,0 +1,55 @@
+FUNCTION 0x8a7397 BOUNDS ('0x8a7350', '0x8a744f')
+008a7350 mov [rsp+8],rbx
+008a7355 push rdi
+008a7356 sub rsp,20h
+008a735a movss xmm0,[rel 2E6985Ch]
+008a7362 mov rbx,rcx
+008a7365 movss [rel 6733664h],xmm0
+008a736d mov byte [rel 6128790h],0
+008a7374 call 000000000158F430h
+008a7379 call 000000000158F430h
+008a737e sub eax,3
+008a7381 je short 00000000008A73A9h
+008a7383 sub eax,1
+008a7386 je short 00000000008A73A9h
+008a7388 sub eax,1
+008a738b je short 00000000008A73A9h
+008a738d sub eax,1
+008a7390 je short 00000000008A73A9h
+008a7392 cmp eax,3
+008a7395 je short 00000000008A73A0h
+008a7397 lea rcx,[rel 2FB1998h]
+008a739e jmp short 00000000008A73B0h
+008a73a0 lea rcx,[rel 2FB1948h]
+008a73a7 jmp short 00000000008A73B0h
+008a73a9 lea rcx,[rel 2FB1970h]
+008a73b0 test dword [rel 61287D0h],0FFFFFFF7h
+008a73ba lea rdi,[rel 61287A0h]
+008a73c1 je short 00000000008A73D6h
+008a73c3 mov eax,[rel 6128868h]
+008a73c9 mov [rdi+rax*8+48h],rcx
+008a73ce inc dword [rel 6128868h]
+008a73d4 jmp short 00000000008A73E7h
+008a73d6 mov [rel 61287E0h],rcx
+008a73dd mov dword [rel 61287D0h],1
+008a73e7 call 000000000028A0B0h
+008a73ec mov rcx,rax
+008a73ef call 0000000000289C70h
+008a73f4 cmp eax,2
+008a73f7 jne short 00000000008A7430h
+008a73f9 test dword [rel 61287D0h],0FFFFFFF7h
+008a7403 lea rcx,[rel 2FB19C0h]
+008a740a je short 00000000008A741Fh
+008a740c mov eax,[rel 6128868h]
+008a7412 mov [rdi+rax*8+48h],rcx
+008a7417 inc dword [rel 6128868h]
+008a741d jmp short 00000000008A7430h
+008a741f mov [rel 61287E0h],rcx
+008a7426 mov dword [rel 61287D0h],1
+008a7430 xor edx,edx
+008a7432 mov dword [rbx+0Ch],1
+008a7439 lea rcx,[rel 52F2CB0h]
+008a7440 mov rbx,[rsp+30h]
+008a7445 add rsp,20h
+008a7449 pop rdi
+008a744a jmp 00000000010CB0F0h

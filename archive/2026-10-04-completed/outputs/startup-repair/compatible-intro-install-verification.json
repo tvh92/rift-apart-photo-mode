@@ -1,0 +1,38 @@
+{
+  "installed_assets": [
+    {
+      "asset_id": "851735C03E050852",
+      "archive": "d\\mods\\mod1",
+      "size": 79536,
+      "sha256": "234dc33275f0850ba57f4d88870000d6609a20feed537d9dceba6d73aa675b30",
+      "payload_verified": true
+    },
+    {
+      "asset_id": "8B203B05CA2AEB50",
+      "archive": "d\\mods\\mod1",
+      "size": 79536,
+      "sha256": "234dc33275f0850ba57f4d88870000d6609a20feed537d9dceba6d73aa675b30",
+      "payload_verified": true
+    },
+    {
+      "asset_id": "905EBDB8C12D66E0",
+      "archive": "d\\mods\\mod1",
+      "size": 95296,
+      "sha256": "517c1117a4a5b55cd3591877487056a964807b5cc5508d09074d26256a525648",
+      "payload_verified": true
+    },
+    {
+      "asset_id": "AED6101948AAFA54",
+      "archive": "d\\mods\\mod0",
+      "size": 263280,
+      "sha256": "7e1538b0742262daec41965bdce20d4a0252502a2eded61c87d97fe56373d7c5",
+      "payload_verified": true
+    }
+  ],
+  "both_profiles_synchronized": true,
+  "legacy_nointro_enabled": false,
+  "compatible_intro_enabled": false,
+  "native_camera_preserved": true,
+  "in_game_test": "failed: user reported persistent black screen",
+  "current_state": "removed from active profiles and both Overstrike libraries; original movies restored"
+}

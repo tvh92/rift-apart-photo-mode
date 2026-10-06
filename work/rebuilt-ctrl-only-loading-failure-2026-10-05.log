@@ -1,0 +1,6 @@
+HID proxy loaded; verifying camera build.
+Photo Mode collision-response bypass installed.
+Guarded geometry-only LOD candidate installed; awaiting Photo Mode activation.
+Camera hooks installed. Normal=10 Boost=100 Tether=1000
+Photo lifecycle callback hooked; geometry LOD candidate is ready.
+Photo lifecycle state=14; geometry LOD preference=native.

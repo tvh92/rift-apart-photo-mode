@@ -1,0 +1,49 @@
+{
+  "status": "restored",
+  "archive": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Ratchet & Clank - Rift Apart\\d\\movie",
+  "clip_sha256": "c199732999d3d6cf5b0b9dae77361577a880a9421a6896b18262314a6891db96",
+  "clip_length": 10468,
+  "rows": [
+    {
+      "id": "851735C03E050852",
+      "offset": 34375364,
+      "length": 28430680,
+      "original_sha256": "a88fd460970c87b72137a5475a65cbc3b0411b9b74b8de980755d583cc20fb7b",
+      "patched_sha256": "8cce2f072bfb8331717a70d0ba5e6915d262357839e8752eb01deb40903831c7",
+      "backup": "851735C03E050852.original.movie"
+    },
+    {
+      "id": "8B203B05CA2AEB50",
+      "offset": 62806044,
+      "length": 28430680,
+      "original_sha256": "a88fd460970c87b72137a5475a65cbc3b0411b9b74b8de980755d583cc20fb7b",
+      "patched_sha256": "8cce2f072bfb8331717a70d0ba5e6915d262357839e8752eb01deb40903831c7",
+      "backup": "8B203B05CA2AEB50.original.movie"
+    },
+    {
+      "id": "905EBDB8C12D66E0",
+      "offset": 91236724,
+      "length": 37729208,
+      "original_sha256": "efaba807f3b24cf143f19da7689952fee925859de9b20b793cc7ab3507726fd7",
+      "patched_sha256": "8dfca057e2667addc7ff2b1331736147b544fb98310341e36bfdec70b2ffd621",
+      "backup": "905EBDB8C12D66E0.original.movie"
+    }
+  ],
+  "toc_sha1": "4a79e804bf157ad4429e54c3db890ce681c2068c",
+  "toc_bak_sha1": "64946f571579d9ea0a17e675682e2994dc0f20fc",
+  "padded_clip_decoder_test": {
+    "frames": 4,
+    "decode_returns": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "decoder_error": ""
+  },
+  "in_game_result": "Boots past black screen but stalls loading; user closed game. Original movies restored and verified.",
+  "archive_verified": true,
+  "toc_and_backup_unchanged": true,
+  "loading_wait_seconds": "30-90",
+  "user_normal_startup_seconds": "under 10"
+}

@@ -1,0 +1,23 @@
+{
+  "clean_backup_verified": true,
+  "steam_build": 23987138,
+  "only_changed_assets": [
+    "AED6101948AAFA54"
+  ],
+  "payloads_match_both_libraries": true,
+  "other_index_sections_unchanged": true,
+  "both_profiles_match": true,
+  "fixed_intro_enabled": false,
+  "camera_dll_verified": true,
+  "camera_dll_sha256": "228620169d5741cd57d544047d351e7bd3c7df541778bc78c17ea0655bcb6f2a",
+  "camera_dll_variant": "photo-fog-entry-snapshot-native-candidate",
+  "base_config_vanilla": true,
+  "all_original_boot_movies_verified": true,
+  "in_game_status": "User confirmed native fog test works; file audit passed before launch.",
+  "runtime_confirmation": {
+    "user_message": "Confirmed to work",
+    "recorded_utc": "2026-10-05T21:32:26.731116+00:00",
+    "dll_sha256": "228620169d5741cd57d544047d351e7bd3c7df541778bc78c17ea0655bcb6f2a",
+    "scope": "User confirmation in response to native startup/Photo fog/Ctrl/exit-reentry test request."
+  }
+}

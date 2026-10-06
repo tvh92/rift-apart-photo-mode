@@ -1,0 +1,72 @@
+Fog shaders 148
+BUFFER ('GlobalViewportCBuffer', 480)
+BUFFER ('GlobalWorldCBuffer', 896)
+{'name': 'g_World.m_FogColor', 'offset': 48}
+{'name': 'g_World.m_VFogUShift', 'offset': 60}
+{'name': 'g_World.m_VFogGridZParams', 'offset': 64}
+{'name': 'g_World.m_FogConsts', 'offset': 80}
+{'name': 'g_World.m_FogKeyLightInfluence', 'offset': 164}
+{'name': 'g_World.m_FogDepthColorRange', 'offset': 168}
+{'name': 'g_World.m_FogDepthColorScale', 'offset': 172}
+{'name': 'g_World.m_VFogFadeInfo', 'offset': 800}
+BUFFER ('g_LightGridData', 16)
+BUFFER ('HResCBuffer', 112)
+BUFFER ('MiscIntCBuffer', 64)
+BUFFER ('g_Lights', 128)
+{'name': '$Element.m_BitFlagsVFog', 'offset': 100}
+BUFFER ('ModelStrandCBuffer', 4800)
+BUFFER ('g_StrandBuffer', 12)
+BUFFER ('g_StrandCVBuffer', 8)
+BUFFER ('g_StrandCVBufferPrev', 8)
+BUFFER ('g_SceneObjectView', 128)
+BUFFER ('g_DynamicObjectView', 64)
+BUFFER ('g_StrandCVBufferOutput', 8)
+BUFFER ('VolumetricCloudsCBuffer', 960)
+{'name': 'g_VolumetricClouds', 'offset': 0, 'size': 960, 'flags': 2, 'members': [{'name': 'g_VolumetricClouds.m_ViewData', 'offset': 0}, {'name': 'g_VolumetricClouds.m_ViewData.m_WorldToProjMat', 'offset': 0}, {'name': 'g_VolumetricClouds.m_ViewData.m_ProjToWorldMat', 'offset': 64}, {'name': 'g_VolumetricClouds.m_ViewData.m_ViewToWorldMat', 'offset': 128}, {'name': 'g_VolumetricClouds.m_ViewData.m_PrevWorldToProjMat', 'offset': 192}, {'name': 'g_VolumetricClouds.m_ViewData.m_LightToProjMat', 'offset': 256}, {'name': 'g_VolumetricClouds.m_ViewData.m_CameraPosition', 'offset': 320}, {'name': 'g_VolumetricClouds.m_VolumetricLayer', 'offset': 336}, {'name': 'g_VolumetricClouds.m_VolumetricLayer.m_WindDirection', 'offset': 336}, {'name': 'g_VolumetricClouds.m_VolumetricLayer.m_NoiseDirectionAndIntensity', 'offset': 352}, {'name': 'g_VolumetricClouds.m_VolumetricLayer.m_StandardPosition', 'offset': 368}, {'name': 'g_VolumetricClouds.m_VolumetricLayer.m_CloudsLayerStart', 'offset': 384}, {'name': 'g_VolumetricClouds.m_VolumetricLayer.m_EarthRadiusAddCloudsLayerStart', 'offset': 388}, {'name': 'g_VolumetricClouds.m_VolumetricLayer.m_EarthRadiusAddCloudsLayerStart2', 'offset': 392}, {'name': 'g_VolumetricClouds.m_VolumetricLayer.m_EarthRadiusAddCloudsLayerEnd', 'offset': 396}, {'name': 'g_VolumetricClouds.m_VolumetricLayer.m_EarthRadiusAddCloudsLayerEnd2', 'offset': 400}, {'name': 'g_VolumetricClouds.m_VolumetricLayer.m_LayerThickness', 'offset': 404}, {'name': 'g_VolumetricClouds.m_VolumetricLayer.m_CloudDensity', 'offset': 408}, {'name': 'g_VolumetricClouds.m_VolumetricLayer.m_CloudCoverage', 'offset': 412}, {'name': 'g_VolumetricClouds.m_VolumetricLayer.m_CloudType', 'offset': 416}, {'name': 'g_VolumetricClouds.m_VolumetricLayer.m_CloudTopOffset', 'offset': 420}, {'name': 'g_VolumetricClouds.m_VolumetricLayer.m_CloudSize', 'offset': 424}, {'name': 'g_VolumetricClouds.m_VolumetricLayer.m_BaseShapeTiling', 'offset': 428}, {'name': 'g_VolumetricClouds.m_VolumetricLayer.m_DetailShapeTiling', 'offset': 432}, {'name': 'g_VolumetricClouds.m_VolumetricLayer.m_DetailStrenth', 'offset': 436}, {'name': 'g_VolumetricClouds.m_VolumetricLayer.m_CurlTextureTiling', 'offset': 440}, {'name': 'g_VolumetricClouds.m_VolumetricLayer.m_CurlStrenth', 'offset': 444}, {'name': 'g_VolumetricClouds.m_VolumetricLayer.m_AnvilBias', 'offset': 448}, {'name': 'g_VolumetricClouds.m_VolumetricLayer.m_WeatherTextureSize', 'offset': 452}, {'name': 'g_VolumetricClouds.m_VolumetricLayer.m_WeatherTextureOffsetX', 'offset': 456}, {'name': 'g_VolumetricClouds.m_VolumetricLayer.m_WeatherTextureOffsetZ', 'offset': 460}, {'name': 'g_VolumetricClouds.m_VolumetricLayer.m_RotationPivotOffsetX', 'offset': 464}, {'name': 'g_VolumetricClouds.m_VolumetricLayer.m_RotationPivotOffsetZ', 'offset': 468}, {'name': 'g_VolumetricClouds.m_VolumetricLayer.m_RotationAngle', 'offset': 472}, {'name': 'g_VolumetricClouds.m_VolumetricLayer.m_RisingVaporIntensity', 'offset': 476}, {'name': 'g_VolumetricClouds.m_BackgroundLayer', 'offset': 480}, {'name': 'g_VolumetricClouds.m_BackgroundLayer.m_WindDirection', 'offset': 480}, {'name': 'g_VolumetricClouds.m_BackgroundLayer.m_NoiseDirectionAndIntensity', 'offset': 496}, {'name': 'g_VolumetricClouds.m_BackgroundLayer.m_StandardPosition', 'offset': 512}, {'name': 'g_VolumetricClouds.m_BackgroundLayer.m_CloudsLayerStart', 'offset': 528}, {'name': 'g_VolumetricClouds.m_BackgroundLayer.m_CloudDensity', 'offset': 532}, {'name': 'g_VolumetricClouds.m_BackgroundLayer.m_CloudCoverage', 'offset': 536}, {'name': 'g_VolumetricClouds.m_BackgroundLayer.m_CloudType', 'offset': 540}, {'name': 'g_VolumetricClouds.m_BackgroundLayer.m_CloudSize', 'offset': 544}, {'name': 'g_VolumetricClouds.m_BackgroundLayer.m_BaseShapeTiling', 'offset': 548}, {'name': 'g_VolumetricClouds.m_BackgroundLayer.m_DetailShapeTiling', 'offset': 552}, {'name': 'g_VolumetricClouds.m_BackgroundLayer.m_DetailStrenth', 'offset': 556}, {'name': 'g_VolumetricClouds.m_BackgroundLayer.m_CurlTextureTiling', 'offset': 560}, {'name': 'g_VolumetricClouds.m_BackgroundLayer.m_CurlStrenth', 'offset': 564}, {'name': 'g_VolumetricClouds.m_BackgroundLayer.m_WeatherTextureSize', 'offset': 568}, {'name': 'g_VolumetricClouds.m_BackgroundLayer.m_WeatherTextureOffsetX', 'offset': 572}, {'name': 'g_VolumetricClouds.m_BackgroundLayer.m_WeatherTextureOffsetZ', 'offset': 576}, {'name': 'g_VolumetricClouds.m_BackgroundLayer.m_RotationPivotOffsetX', 'offset': 580}, {'name': 'g_VolumetricClouds.m_BackgroundLayer.m_RotationPivotOffsetZ', 'offset': 584}, {'name': 'g_VolumetricClouds.m_BackgroundLayer.m_RotationAngle', 'offset': 588}, {'name': 'g_VolumetricClouds.m_StepSize', 'offset': 592}, {'name': 'g_VolumetricClouds.m_TimeAndScreenSize', 'offset': 608}, {'name': 'g_VolumetricClouds.m_LightDirection', 'offset': 624}, {'name': 'g_VolumetricClouds.m_LightX', 'offset': 640}, {'name': 'g_VolumetricClouds.m_LightY', 'offset': 656}, {'name': 'g_VolumetricClouds.m_LightColorAndIntensity', 'offset': 672}, {'name': 'g_VolumetricClouds.m_EarthCenter', 'offset': 688}, {'name': 'g_VolumetricClouds.m_CompositeUvOffset', 'offset': 704}, {'name': 'g_VolumetricClouds.m_EarthRadius', 'offset': 712}, {'name': 'g_VolumetricClouds.m_CorrectU', 'offset': 716}, {'name': 'g_VolumetricClouds.m_CorrectV', 'offset': 720}, {'name': 'g_VolumetricClouds.m_JitterX', 'offset': 724}, {'name': 'g_VolumetricClouds.m_JitterY', 'offset': 728}, {'name': 'g_VolumetricClouds.m_PrevJitterX', 'offset': 732}, {'name': 'g_VolumetricClouds.m_PrevJitterY', 'offset': 736}, {'name': 'g_VolumetricClouds.m_EnabledEdgeBlur', 'offset': 740}, {'name': 'g_VolumetricClouds.m_EnableDepthCulling', 'offset': 744}, {'name': 'g_VolumetricClouds.m_MaxSampleDistance', 'offset': 748}, {'name': 'g_VolumetricClouds.m_ShadowRange', 'offset': 752}, {'name': 'g_VolumetricClouds.m_FogBlendFactor', 'offset': 756}, {'name': 'g_VolumetricClouds.m_BackgroundBlendFactor', 'offset': 760}, {'name': 'g_VolumetricClouds.m_Contrast', 'offset': 764}, {'name': 'g_VolumetricClouds.m_Eccentricity', 'offset': 768}, {'name': 'g_VolumetricClouds.m_CloudBrightness', 'offset': 772}, {'name': 'g_VolumetricClouds.m_Precipitation', 'offset': 776}, {'name': 'g_VolumetricClouds.m_SilverliningIntensity', 'offset': 780}, {'name': 'g_VolumetricClouds.m_SilverliningSpread', 'offset': 784}, {'name': 'g_VolumetricClouds.m_Random00', 'offset': 788}, {'name': 'g_VolumetricClouds.m_DepthTextureWidth', 'offset': 792}, {'name': 'g_VolumetricClouds.m_DepthTextureHeight', 'offset': 796}, {'name': 'g_VolumetricClouds.m_GodrayExposure', 'offset': 800}, {'name': 'g_VolumetricClouds.m_GodrayDecay', 'offset': 804}, {'name': 'g_VolumetricClouds.m_GodrayDensity', 'offset': 808}, {'name': 'g_VolumetricClouds.m_GodrayWeight', 'offset': 812}, {'name': 'g_VolumetricClouds.m_UseRandomSeed', 'offset': 816}, {'name': 'g_VolumetricClouds.m_ReprojectionBlend', 'offset': 820}, {'name': 'g_VolumetricClouds.m_Pad', 'offset': 824}, {'name': 'g_VolumetricClouds.m_NumLights', 'offset': 828}, {'name': 'g_VolumetricClouds.m_LocalLights', 'offset': 832}, {'name': 'g_VolumetricClouds.m_LocalLights.m_Color', 'offset': 832}, {'name': 'g_VolumetricClouds.m_LocalLights.m_Position', 'offset': 848}, {'name': 'g_VolumetricClouds.m_LocalLights.m_AttenRadius', 'offset': 860}]}
+BUFFER ('GlobalVolumeFlagBuffer', 4096)
+BUFFER ('WeatherParticlesAttributesCBuffer', 352)
+BUFFER ('WeatherParticlesCellsCBuffer', 64)
+BUFFER ('g_LightVolumes', 128)
+BUFFER ('RayTracedShadowsCBuffer', 32)
+BUFFER ('RayTracingConsumedLightsCBuffer', 32)
+BUFFER ('RayTracingReflectionCBuffer', 48)
+BUFFER ('g_RTZCurve', 4)
+BUFFER ('g_RTRaysOutput', 12)
+BUFFER ('RayTracedShadowsDenoiseCBuffer', 256)
+BUFFER ('t2d_meta', 4)
+BUFFER ('GridLightBakeCBuffer', 464)
+BUFFER ('VoxelConeTraceCBuffer', 144)
+BUFFER ('g_VoxelTraceFogParams', 96)
+{'name': '$Element.m_FogColor', 'offset': 0}
+{'name': '$Element.m_VFogUShift', 'offset': 12}
+{'name': '$Element.m_FogConsts', 'offset': 16}
+BUFFER ('g_GBufferApplyWorkBuffer', 4)
+BUFFER ('g_EnvProbeEnvs', 128)
+BUFFER ('VolumetricFogScatteringCBuffer', 352)
+{'name': 'g_VFog', 'offset': 0, 'size': 352, 'flags': 2, 'members': [{'name': 'g_VFog.m_PrevWorldToClipNoJitter', 'offset': 0}, {'name': 'g_VFog.m_ScreenToViewNoJitter', 'offset': 64}, {'name': 'g_VFog.m_HistoryMissSuperSampleCount', 'offset': 80}, {'name': 'g_VFog.m_GridIntSize', 'offset': 84}, {'name': 'g_VFog.m_LargeNoiseOffset', 'offset': 96}, {'name': 'g_VFog.m_LargeNoiseTiling', 'offset': 108}, {'name': 'g_VFog.m_SmallNoiseOffset', 'offset': 112}, {'name': 'g_VFog.m_SmallNoiseTiling', 'offset': 124}, {'name': 'g_VFog.m_JitterOffsets', 'offset': 128}, {'name': 'g_VFog.m_GridXYSizeInv', 'offset': 256}, {'name': 'g_VFog.m_HistoryWeight', 'offset': 264}, {'name': 'g_VFog.m_PhaseG', 'offset': 268}, {'name': 'g_VFog.m_GridZParams', 'offset': 272}, {'name': 'g_VFog.m_HeightFade', 'offset': 288}, {'name': 'g_VFog.m_Opacity', 'offset': 304}, {'name': 'g_VFog.m_Color', 'offset': 308}, {'name': 'g_VFog.m_DirectLightScale', 'offset': 320}, {'name': 'g_VFog.m_LightsScale', 'offset': 324}, {'name': 'g_VFog.m_NoiseScale', 'offset': 328}, {'name': 'g_VFog.m_GIScale', 'offset': 332}, {'name': 'g_VFog.m_InvZExtent', 'offset': 336}, {'name': 'g_VFog.m_Pad', 'offset': 340}, {'name': 'g_VFog.m_DispatchOffset', 'offset': 344}]}
+BUFFER ('LightGridCaptureCBuffer', 512)
+BUFFER ('g_LightGridCaptureFromGBufferLights', 128)
+{'name': '$Element.m_BitFlagsVFog', 'offset': 100}
+BUFFER ('MatDrawCB', 32)
+BUFFER ('g_ModelSubsetView', 64)
+BUFFER ('g_MaterialView', 32)
+BUFFER ('ConstantColorCBuffer', 16)
+BUFFER ('ModelWaterCBuffer', 176)
+BUFFER ('MultiWaterRingCBuffer', 320)
+BUFFER ('WaterFlowCBBuffer', 16)
+BUFFER ('GlobalVoxelizationState', 16)
+BUFFER ('ModelOutlineCBuffer', 48)
+BUFFER ('MiscCBuffer', 64)
+BUFFER ('VolumeCloudsCBuffer', 160)
+BUFFER ('TerrainCBuffer', 240)
+BUFFER ('VoxelDebugCBuffer', 64)
+BUFFER ('DecalProjectedCBuffer', 288)
+BUFFER ('ImpostorCBuffer', 48)
+BUFFER ('g_ImpostorObjectView', 272)
+BUFFER ('$Params', 16)
+BUFFER ('ModelFurCBuffer', 80)
+BUFFER ('VfxMatInstanceCBuffer', 176)
+BUFFER ('VisualEffectSplinesDrawCallCB', 224)
+BUFFER ('ModelBasicCBuffer', 32)
+BUFFER ('ModelCasterCBuffer', 32)
+BUFFER ('WeatherGSplashCellCBuffer', 48)

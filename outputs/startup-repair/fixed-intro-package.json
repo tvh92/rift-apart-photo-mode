@@ -1,0 +1,7 @@
+{
+  "package": "C:\\Users\\Tim\\Documents\\Codex\\2026-10-04\\prompt-for-the-research-instance-research\\outputs\\startup-repair\\NoIntro-Fixed-2Seconds.stage",
+  "sha256": "5fc62afad01e5be5c66bfd92921f41bc9a9fe301bb50e22f27e48024516b74cd",
+  "bytes": 2392779,
+  "in_game_component_test": "User confirmed short intro then main menu on two-second source package",
+  "asset_payloads_unchanged_from_test": true
+}

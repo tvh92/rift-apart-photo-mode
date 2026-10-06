@@ -1,0 +1,26 @@
+[
+  {
+    "address": "0x1b338be0880",
+    "type": "Free",
+    "entity": "0x409382",
+    "data_vtable": "0x7ff694a80a50",
+    "values": [
+      10.0,
+      2.0,
+      1.0,
+      1000.0
+    ]
+  },
+  {
+    "address": "0x1b338bcb300",
+    "type": "MotionFly",
+    "entity": "0x409384",
+    "owner": "0x409382",
+    "values": {
+      "0x68": 10.0,
+      "0x6c": 2.0,
+      "0x70": 1000.0,
+      "0x84": 1.0
+    }
+  }
+]

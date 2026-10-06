@@ -1,0 +1,10 @@
+{
+  "current_clean_backup_accepted": true,
+  "historical_contaminated_backup_rejected": true,
+  "missing_backup_rejected": true,
+  "guarded_camera_only_reinstall_ran": true,
+  "pre_and_post_audits_passed": true,
+  "toc_bak_unchanged": true,
+  "normal_overstrike_gui_modified": false,
+  "nointro_cause": "unresolved; user reports previous successful launch with both mods"
+}

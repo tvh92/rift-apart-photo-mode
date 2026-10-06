@@ -1,0 +1,45 @@
+FUNCTION 0xfb66a0 ROOT (16475808, 16476014, 81664956) RANGES [(16475808, 16476014, 81664956)]
+00FB66A0 sub rsp,48h
+00FB66A4 mov r8,rdx
+00FB66A7 mov rdx,[rcx+578h]
+00FB66AE test rdx,rdx
+00FB66B1 je near 0000000000FB6769h
+00FB66B7 mov rax,[rcx+570h]
+00FB66BE add rdx,110h
+00FB66C5 movss xmm4,[rdx+0Ch]
+00FB66CA movaps xmm1,xmm4
+00FB66CD movaps xmm5,xmm4
+00FB66D0 mulss xmm1,[rdx]
+00FB66D4 mulss xmm5,[rdx+4]
+00FB66D9 mulss xmm4,[rdx+8]
+00FB66DE movss [rsp+30h],xmm1
+00FB66E4 movss [rsp+34h],xmm5
+00FB66EA movss [rsp+38h],xmm4
+00FB66F0 test r8,r8
+00FB66F3 je short 0000000000FB6756h
+00FB66F5 movss xmm2,[rel 4A4A198h]
+00FB66FD movss xmm3,[rdx+10h]
+00FB6702 movss xmm0,[r8+10h]
+00FB6708 subss xmm0,xmm2
+00FB670C mulss xmm0,xmm3
+00FB6710 addss xmm0,xmm2
+00FB6714 mulss xmm0,xmm1
+00FB6718 movss xmm1,[r8+18h]
+00FB671E subss xmm1,xmm2
+00FB6722 movss [rsp+30h],xmm0
+00FB6728 movss xmm0,[r8+14h]
+00FB672E subss xmm0,xmm2
+00FB6732 mulss xmm1,xmm3
+00FB6736 mulss xmm0,xmm3
+00FB673A addss xmm1,xmm2
+00FB673E addss xmm0,xmm2
+00FB6742 mulss xmm1,xmm4
+00FB6746 mulss xmm0,xmm5
+00FB674A movss [rsp+38h],xmm1
+00FB6750 movss [rsp+34h],xmm0
+00FB6756 lea r9,[rax+30h]
+00FB675A mov [rsp+20h],rax
+00FB675F lea r8,[rsp+30h]
+00FB6764 call 0000000000FB5EF0h
+00FB6769 add rsp,48h
+00FB676D ret

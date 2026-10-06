@@ -1,0 +1,46 @@
+candidates 15
+
+0x246a38 field=0xa50 function=0x2465a0-0x246b38: mov rdx,[rdi+0A50h]
+  call qword [rax+10h]
+
+0x129fe84 field=0xa48 function=0x129fe68-0x129ffef: mov [rdi+0A48h],rax
+  call qword [rel 2e38a40h]
+
+0x12a0b42 field=0xa48 function=0x12a0ad0-0x12a0c3e: mov rdx,[rbx+0A48h]
+  call qword [rbx+0a88h]
+
+0x12a0c19 field=0xa48 function=0x12a0ad0-0x12a0c3e: mov r8,[rbx+0A48h]
+  call qword [r10+98h]
+
+0x12a0d13 field=0xa48 function=0x12a0c40-0x12a0e02: mov rdx,[rbx+0A48h]
+  call qword [rbx+0a88h]
+
+0x12a0e83 field=0xa48 function=0x12a0e46-0x12a0f46: mov r8,[rbx+0A48h]
+  call qword [r10+0a0h]
+
+0x12a0f04 field=0xa48 function=0x12a0e46-0x12a0f46: mov rdx,[rbx+0A48h]
+  call qword [rbx+0a88h]
+
+0x12a101b field=0xa48 function=0x12a0f50-0x12a1096: mov rdx,[rbx+0A48h]
+  call qword [rbx+0a88h]
+
+0x12a2448 field=0xa48 function=0x12a23e0-0x12a24b3: mov [rdi+0A48h],rax
+  call qword [rel 2e38a40h]
+
+0x168494c field=0xa48 function=0x1684860-0x1684a27: mov rax,[rbx+0A48h]
+  call rax
+
+0x1684976 field=0xa50 function=0x1684860-0x1684a27: mov rax,[rbx+0A50h]
+  call rax
+
+0x16881af field=0xa50 function=0x1688150-0x1688c04: mov [r15+0A50h],rax
+  call qword [rax+28h]
+
+0x16881bd field=0xa58 function=0x1688150-0x1688c04: mov [r15+0A58h],rax
+  call qword [rax+28h]
+
+0x1689c9e field=0xa58 function=0x1689ba0-0x1689cfb: mov rax,[rbx+0A58h]
+  call rax
+
+0x1a72fc1 field=0xa58 function=0x1a72f8e-0x1a73014: mov [rsi+0A58h],eax
+  call qword [rax+0b8h]

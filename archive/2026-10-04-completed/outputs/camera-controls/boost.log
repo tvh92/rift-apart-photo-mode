@@ -1,0 +1,2 @@
+Native Photo Mode helper active: 10x normally, 100x while Shift is held. Ctrl+Alt+F10 stops it.
+Helper stopped: camera values changed externally; stopped safely; previous values restored=False

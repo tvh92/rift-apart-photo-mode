@@ -1,0 +1,28 @@
+# Pass 67: faded LightSubmit RGB reaches reflected light buffer
+
+Build: exact `RiftApart.exe` SHA256 `51299faca61866cf10ea9035a15b8f22600a56557dd5ffc1aad390d5a54e6d82`. Read-only static analysis only; no source, install, saves, or live process touched.
+
+## Native pass identity and route
+
+Registration at `0x12211E4..0x12211FE` sets pass ID `0x67`, callback `0x10B3600`, and name pointer `0x32F9378`. The executable string at that RVA is exactly `FillLightLookup` (next string at `0x32F9388` is `CleanLightLookup`).
+
+`0x10BE180` queues ID `0x67` at `0x10BE7F0..0x10BE86D`: `r9 = record` (`rdi`, the 0x170 LightSubmit record), `edx=0x67`, and `rcx=view+0x1430`, then calls `0x1215870`.
+
+The callback `0x10B3600` obtains its buffer/capacity descriptor via `0x10A9560` (`0x10B3741..0x10B3772`), loops submitted records, and calls `0x10A9710` once for each at `0x10B37C0..0x10B37E2`, passing the record pointer in the stack argument. The record converter computes destination address `base + index*0x80` (`0x10A9783..0x10A979D`), so each output entry has a 128-byte stride. It then calls `0x1094200` to finish/merge lookup entries and submits two buffer handles at pass slots `0x30` and `0x31` via `0x1208A80` (`0x10B3836..0x10B388C`). `0x10A9560` sizes the allocation from aligned count times `0x80` (`0x10A96B4..0x10A96C5`).
+
+## Fade-adjusted values copied into the output entry
+
+At `0x10A9710`, the per-record converter loads RGB as a 64-bit pair from `[record+0x70]` and the third channel from `[record+0x78]` (`0x10A9853..0x10A9860`), and loads the scalar from `[record+0x7C]` (`0x10A985B`). It applies existing record-class scaling/zeroing when applicable (`0x10A9871..0x10A98AC`), then writes the two RGB channels to `[entry+0x40]` (`0x10A99C9..0x10A99D3`), third RGB channel to `[entry+0x48]` (`0x10A99D4..0x10A99D6`), and scalar to `[entry+0x4C]` (`0x10A99A7`). Thus the fade-adjusted RGB written by `0x1099200`/`0x1098F90` reaches the 128-byte FillLightLookup output entry, with its separate scalar preserved or class-adjusted.
+
+## Reflected layout match
+
+The newly expanded `work/shader-light-reflection-main.txt` reflects `g_Lights` as 128-byte elements. Its fields include `m_WorldAxisX` at 0, `m_WorldPos` at 48, `m_InvAttenRadius` at 60, `m_LinearColor` at 64, and `m_SpecIntensity` at 76. The native output offsets map exactly: record RGB `+0x70/+0x78` -> output `+0x40..+0x48` -> reflected `LinearColor` byte 64; scalar `+0x7C` -> output `+0x4C` -> reflected `SpecIntensity` byte 76. The same 128-byte stride and the callback's slot bindings support identifying this as the shader-light lookup buffer, rather than the unrelated pass-5 `LightSources` 0x40-byte records or the auxiliary culling allocation.
+
+Static evidence now proves the missing producer-to-shader-buffer link: view-relative fades are applied before submission, and the adjusted record color is copied into the matching reflected `g_Lights` element and bound by `FillLightLookup`. This is a static executable/shader-reflection conclusion; it does not by itself prove which surface lights are included in every particular Photo camera scene.
+
+## Evidence inputs
+
+- `work/render-pass-registration-main.txt`: registration mapping for ID 67 and neighboring pass names.
+- `work/surface-light-distance-fade-main.txt`: fade helper formulas and record output offsets.
+- `work/shader-light-reflection-main.txt`: complete `g_Lights` reflected layout.
+- `work/native_trace_full.py dump 0x10B3600 0x10A9710 0x10A9560 0x1094200 0x1208A80 0x10BE180`: chained native disassembly used here.

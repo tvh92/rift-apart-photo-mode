@@ -1,0 +1,36 @@
+# LightSubmit query request handle proof (offline)
+
+Build-specific static evidence only; no live-process reads or writes in this follow-up. References are RVAs in the verified executable build.
+
+## Finding
+
+The request registry has a direct identity token stored in the owning `LightSubmitQuery`; this is stronger than inferring ownership from `counter - 0x10/-0x20` and comparing output pointers. It can safely disambiguate a candidate query from other primary-view query objects.
+
+Exact owner fields from `work/light-view-query-owner-main.txt`:
+
+- Fixed request: `0x10BB72F` forms `query+0x10` as the count pointer; `0x10BB764` passes that pointer. The registered request returns a key in `RAX`, and `0x10BB786` stores it at `query+0x70`.
+- Optional request: `0x10BB7F5` forms `query+0x20` as the count pointer; `0x10BB81E` passes it. `0x10BB823` loads the optional buffer from `query+0x18`; after request registration, `0x10BB83D` stores the returned key at `query+0x68`.
+- `query+0x78` is not the optional request key. The consumer at `0x10BA738` reads it and calls `0x107BAE0` to wait on a job.
+
+Key construction from `work/light-query-request-slots-main.txt` (`0x107B760`):
+
+- Registry is selected from `0x6414C30` or `0x64151D8`; its generation is at `+0x598`, current count/index at `+0x514`, capacity at `+0x510`, and backing slots at `+0x508` with `0xC0` stride.
+- At `0x107B8E4..0x107B907`, the handle is `(generation << 32) | (slot_index * 2) | registry_bit`; the code writes it into slot `+0x00`.
+- `0x107B91B` calls backend `0x107AA50`; afterward `0x107B925` returns that handle in `RAX`. `0x107B760` therefore supplies the same key that the query builder stores.
+- The request callback and typed manager checks remain useful guards: slot `+0x78 == base+0x12B8740`, slot `+0x38 == base+0x674EC10`. The worker uses slot `+0x68` as its output destination and slot `+0x70` as its count pointer.
+
+## Why the archived pointer match failed
+
+`work/live-lights-readonly/20261005T231220416213Z-bridge-query-pointer-proof.json` shows the expected-view query candidates but the request output pointers do not equal the query's current `+0x8/+0x18` fields. The fixed candidate has query `0x1ba45cfd2a0`, count 251, current array pointer `0x1ba45cfc180`, versus request output `0x1ba44e05bd0`. The optional candidate has count 181, current array pointer `0x1bd008cf4c0`, versus request output `0x1ba44e08370`. The JSON's query header dump is only `0x28` bytes; it does not include the key fields at `+0x68/+0x70`. The archived sample therefore cannot prove which query owns those request slots.
+
+`0x10BA710` consumes `query+0x8/+0x10` and `query+0x18/+0x20`; at `0x10BAC65/0x10BAC69` it replaces the optional array pointer/count after candidate compaction. That establishes that at least the optional query array can change downstream. The reviewed evidence does not explain the observed fixed-array output-pointer mismatch or prove that the two request output pointers are copied into those current fields. Treat the mismatch as unresolved; do not accept a query solely from the count-pointer arithmetic or a guessed copy/replacement story.
+
+## Bounded validation plan
+
+1. Read each request registry header (`+0x508` pointer/capacity/count, `+0x598` generation), accepting only `0 <= count <= min(capacity, configured bound)` and reading populated `0xC0` slots in fixed-size chunks.
+2. For each slot, require the exact callback and manager pointer, then decode its key: low bit selects the registry, `(key & 0xFFFFFFFF) >> 1` gives the index, and `key >> 32` must match that registry's generation. Require that decoded registry/index identifies the same slot and that the slot's stored key equals the key.
+3. Derive the candidate query only from the slot's count pointer and request kind (`-0x10` fixed or `-0x20` optional), then require `query+0 == current primary view` and the matching query handle (`query+0x70` fixed, `query+0x68` optional) equals the slot key.
+4. Keep the output pointer at slot `+0x68` as a separate observed request buffer. Do not require it to equal query `+0x8/+0x18`; report the mismatch. Before reading any source prefixes, bound the output count by a strict cap (at most the existing 8192 source limit), validate pointer alignment/range, and reread the registry header/generation, slot key/identity, query owner, count, and pointer array. Report non-atomic source fields and discard samples whose ownership/header changes.
+5. Independently preserve the query's current arrays and their counts for the `0x10BA710` consumer view. Until static or runtime evidence proves how request output flows to those arrays, label the request buffer as worker output and the query array as current ranking input; do not merge them or infer equivalence.
+
+This validates ownership if the next bounded capture includes query bytes through at least `+0x78` and stores the per-slot key. The existing capture does not include those fields, so its pointer mismatch cannot be resolved offline.

@@ -1,0 +1,128 @@
+{
+  "tracked_file_count_before_manifest": 853,
+  "tracked_bytes_before_manifest": 45929661,
+  "local_artifact_count": 262,
+  "local_artifact_bytes": 1840805301,
+  "credential_scan": "passed",
+  "limits": "High-confidence token/private-key scan; not a comprehensive secret detector.",
+  "failures": [],
+  "own_proxy_dlls": [
+    {
+      "path": "outputs/camera-native-fog-candidate/backup/2026-10-05-before-native-fog/hid.dll",
+      "bytes": 189952,
+      "sha256": "5c36943c6dfb45713382bf471e6f9939f857ee94f7789b8fefb2fc3abc292842"
+    },
+    {
+      "path": "outputs/camera-native-fog-candidate/hid.dll",
+      "bytes": 192512,
+      "sha256": "228620169d5741cd57d544047d351e7bd3c7df541778bc78c17ea0655bcb6f2a"
+    },
+    {
+      "path": "outputs/camera-native-lighting-candidate/backup/2026-10-05-before-native-lighting/hid.dll",
+      "bytes": 192512,
+      "sha256": "228620169d5741cd57d544047d351e7bd3c7df541778bc78c17ea0655bcb6f2a"
+    },
+    {
+      "path": "outputs/camera-native-lighting-candidate/hid.dll",
+      "bytes": 194560,
+      "sha256": "fa3ced0a22083cfe0e9ee68c96e5bdda2c4d13c46f34346c79848693873356b6"
+    },
+    {
+      "path": "outputs/camera-native-lighting-v2/backup/2026-10-06-before-specular/hid.dll",
+      "bytes": 201728,
+      "sha256": "77051506a589b1051556505b309c32eb7a4a69e93df93d0a29d85b74b045a2d0"
+    },
+    {
+      "path": "outputs/camera-native-lighting-v2/hid.dll",
+      "bytes": 203264,
+      "sha256": "16dcd44057c3114b123e25974b9b563afc487650686d3985784614caba5f7cbd"
+    },
+    {
+      "path": "outputs/camera-native-status-candidate/backup/2026-10-06-before-status/hid.dll",
+      "bytes": 194560,
+      "sha256": "fa3ced0a22083cfe0e9ee68c96e5bdda2c4d13c46f34346c79848693873356b6"
+    },
+    {
+      "path": "outputs/camera-native-status-candidate/hid.dll",
+      "bytes": 201728,
+      "sha256": "77051506a589b1051556505b309c32eb7a4a69e93df93d0a29d85b74b045a2d0"
+    },
+    {
+      "path": "outputs/camera-native/backup/2026-10-04-before-collision/hid.dll",
+      "bytes": 182784,
+      "sha256": "97b9a29eed154973fb587e0fae965c441b9956096211523aa1f99ef1d6d03e81"
+    },
+    {
+      "path": "outputs/camera-native/backup/2026-10-04-before-lod/hid.dll",
+      "bytes": 183808,
+      "sha256": "ccbcdaeacb5525e05a68ede9924164f07f5d3c93e1ed6e189168bbfd8f9c8ff3"
+    },
+    {
+      "path": "outputs/camera-native/backup/2026-10-04-confirmed-no-clip/hid.dll",
+      "bytes": 183808,
+      "sha256": "ccbcdaeacb5525e05a68ede9924164f07f5d3c93e1ed6e189168bbfd8f9c8ff3"
+    },
+    {
+      "path": "outputs/camera-native/backup/2026-10-05-before-control-indicator/hid.dll",
+      "bytes": 189952,
+      "sha256": "7508bd33654d057202fbd91b8c81d8622dca1c1e781c21b52ce82023fa14b272"
+    },
+    {
+      "path": "outputs/camera-native/backup/2026-10-05-failed-eager-indicator/hid.dll",
+      "bytes": 197120,
+      "sha256": "06ce078afaca25aeb95cca6da595ea8f8b54f8a9ccac3aef833c64fadb6a6de8"
+    },
+    {
+      "path": "outputs/camera-native/backup/2026-10-05-failed-lazy-indicator/hid.dll",
+      "bytes": 197120,
+      "sha256": "7d4234168e04020b65bd2af2a88314bffe9bef2baadeb2994c2901b539008665"
+    },
+    {
+      "path": "outputs/camera-native/backup/2026-10-05-failed-rebuilt-ctrl-only/hid.dll",
+      "bytes": 190464,
+      "sha256": "8cd2d7f9dc5f549f7198b5685a151f3ca8e4075557da4af5424d2069ab48953f"
+    },
+    {
+      "path": "outputs/camera-native/backup/2026-10-05-two-byte-ctrl-short-intro-stall/hid.dll",
+      "bytes": 189952,
+      "sha256": "5c36943c6dfb45713382bf471e6f9939f857ee94f7789b8fefb2fc3abc292842"
+    },
+    {
+      "path": "outputs/camera-native/hid.dll",
+      "bytes": 189952,
+      "sha256": "5c36943c6dfb45713382bf471e6f9939f857ee94f7789b8fefb2fc3abc292842"
+    },
+    {
+      "path": "outputs/confirmed-photo-fog/2026-10-05/hid.dll",
+      "bytes": 192512,
+      "sha256": "228620169d5741cd57d544047d351e7bd3c7df541778bc78c17ea0655bcb6f2a"
+    },
+    {
+      "path": "outputs/tested-photo-lighting-v2/2026-10-06/hid.dll",
+      "bytes": 203264,
+      "sha256": "16dcd44057c3114b123e25974b9b563afc487650686d3985784614caba5f7cbd"
+    },
+    {
+      "path": "outputs/tested-photo-lighting/2026-10-06/hid.dll",
+      "bytes": 194560,
+      "sha256": "fa3ced0a22083cfe0e9ee68c96e5bdda2c4d13c46f34346c79848693873356b6"
+    }
+  ],
+  "tracked_extension_counts": {
+    "": 2,
+    ".c": 59,
+    ".cs": 28,
+    ".def": 14,
+    ".dll": 20,
+    ".h": 48,
+    ".ini": 13,
+    ".json": 196,
+    ".log": 35,
+    ".md": 65,
+    ".png": 7,
+    ".ps1": 68,
+    ".py": 148,
+    ".s": 16,
+    ".txt": 134
+  }
+}

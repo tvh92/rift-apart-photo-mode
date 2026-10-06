@@ -1,0 +1,404 @@
+FUNCTION 0xfb5ef0 ROOT (16473840, 16475800, 81664964) RANGES [(16473840, 16475800, 81664964)]
+00FB5EF0 mov rax,rsp
+00FB5EF3 push rbp
+00FB5EF4 push rbx
+00FB5EF5 push rsi
+00FB5EF6 push rdi
+00FB5EF7 push r14
+00FB5EF9 lea rbp,[rax-58h]
+00FB5EFD sub rsp,130h
+00FB5F04 movsd xmm0,[r8]
+00FB5F09 xor r14d,r14d
+00FB5F0C movaps [rax-38h],xmm6
+00FB5F10 mov rsi,rdx
+00FB5F13 movaps [rax-48h],xmm7
+00FB5F17 mov rdi,rcx
+00FB5F1A movaps [rax-58h],xmm8
+00FB5F1F movaps [rax-68h],xmm9
+00FB5F24 movaps [rax-78h],xmm10
+00FB5F29 movaps [rax-88h],xmm11
+00FB5F31 movaps [rax-98h],xmm12
+00FB5F39 xorps xmm12,xmm12
+00FB5F3D movaps [rax-0A8h],xmm13
+00FB5F45 movss xmm13,[rel 4A4A198h]
+00FB5F4E movaps [rax-0B8h],xmm14
+00FB5F56 movss xmm14,[r9+4]
+00FB5F5C movsd [rcx+69Ch],xmm0
+00FB5F64 xorps xmm0,xmm0
+00FB5F67 movaps [rax-0C8h],xmm15
+00FB5F6F mov eax,[r8+8]
+00FB5F73 movss xmm15,[rel 2E6BE90h]
+00FB5F7C mov [rcx+6A4h],eax
+00FB5F82 mov eax,[rdx+10h]
+00FB5F85 mov [rcx+6A8h],eax
+00FB5F8B movups [rcx+6ACh],xmm0
+00FB5F92 mov dword [rcx+6CCh],0BF800000h
+00FB5F9C mov dword [rcx+6D0h],3F800000h
+00FB5FA6 comiss xmm12,[rdx+54h]
+00FB5FAB jae near 0000000000FB61DAh
+00FB5FB1 mov rdx,[rbp+80h]
+00FB5FB8 test rdx,rdx
+00FB5FBB je near 0000000000FB61DAh
+00FB5FC1 mov rcx,[rdx+1690h]
+00FB5FC8 mov r8d,[rcx+11B30h]
+00FB5FCF lea rax,[rcx+11960h]
+00FB5FD6 test r8d,r8d
+00FB5FD9 cmove rax,r14
+00FB5FDD test rax,rax
+00FB5FE0 je near 0000000000FB61DAh
+00FB5FE6 test r8d,r8d
+00FB5FE9 lea rax,[rcx+11B30h]
+00FB5FF0 mov r9d,1D0h
+00FB5FF6 cmove rax,r9
+00FB5FFA cmp [rax],r14d
+00FB5FFD je near 0000000000FB61DAh
+00FB6003 movss xmm1,[rsi+60h]
+00FB6008 lea rax,[rcx+11B3Ch]
+00FB600F movss xmm7,[rdx+3F8h]
+00FB6017 test r8d,r8d
+00FB601A movss xmm8,[rel 52DDF1Ch]
+00FB6023 mov ecx,1DCh
+00FB6028 cvtps2pd xmm0,xmm1
+00FB602B cmove rax,rcx
+00FB602F mov ebx,[rax]
+00FB6031 addss xmm1,[rel 2E6A23Ch]
+00FB6039 cvtps2pd xmm7,xmm7
+00FB603C lea eax,[rbx-1]
+00FB603F maxss xmm1,[rsi+64h]
+00FB6044 addsd xmm7,xmm0
+00FB6048 xorps xmm0,xmm0
+00FB604B cvtsi2sd xmm0,eax
+00FB604F cvtps2pd xmm8,xmm8
+00FB6053 cvtps2pd xmm6,xmm1
+00FB6056 divsd xmm0,xmm8
+00FB605B call qword [rel 2E385A0h]
+00FB6061 mulsd xmm0,xmm7
+00FB6065 movaps xmm1,xmm6
+00FB6068 subsd xmm6,xmm7
+00FB606C xorps xmm11,xmm11
+00FB6070 cvtpd2ps xmm2,xmm8
+00FB6075 subsd xmm1,xmm0
+00FB6079 movaps xmm10,xmm13
+00FB607D movsd xmm0,[rel 2E9D460h]
+00FB6085 movaps xmm8,xmm13
+00FB6089 cvtsi2ss xmm11,ebx
+00FB608E divsd xmm1,xmm6
+00FB6092 subsd xmm0,xmm1
+00FB6096 cvtpd2ps xmm1,xmm1
+00FB609A divsd xmm0,xmm7
+00FB609E cvtpd2ps xmm3,xmm0
+00FB60A2 movaps xmm0,xmm2
+00FB60A5 divss xmm0,xmm11
+00FB60AA shufps xmm3,xmm3,0E1h
+00FB60AE movss xmm3,xmm1
+00FB60B2 shufps xmm3,xmm3,0C6h
+00FB60B6 movss xmm3,xmm2
+00FB60BA shufps xmm3,xmm3,27h
+00FB60BE movss xmm3,xmm0
+00FB60C2 shufps xmm3,xmm3,39h
+00FB60C6 movaps xmm0,xmm3
+00FB60C9 movaps xmm9,xmm3
+00FB60CD shufps xmm0,xmm0,0AAh
+00FB60D1 divss xmm10,xmm0
+00FB60D6 movaps xmm0,xmm11
+00FB60DA shufps xmm9,xmm9,55h
+00FB60DF subss xmm0,[rel 2E7BF90h]
+00FB60E7 movups [rsp+28h],xmm3
+00FB60EC movups [rdi+6ACh],xmm3
+00FB60F3 mulss xmm0,xmm10
+00FB60F8 divss xmm8,xmm3
+00FB60FD mulss xmm0,[rel 32B4B54h]
+00FB6105 call 0000000002D27B5Fh
+00FB610A movaps xmm7,xmm0
+00FB610D mulss xmm10,xmm11
+00FB6112 subss xmm7,xmm9
+00FB6117 mulss xmm10,[rel 32B4B54h]
+00FB6120 mulss xmm7,xmm8
+00FB6125 movaps xmm0,xmm10
+00FB6129 movss [rdi+6CCh],xmm7
+00FB6131 call 0000000002D27B5Fh
+00FB6136 movss xmm3,[rel 32BF814h]
+00FB613E subss xmm0,xmm9
+00FB6143 movaps xmm1,xmm13
+00FB6147 mulss xmm0,xmm8
+00FB614C subss xmm0,xmm7
+00FB6150 divss xmm1,xmm0
+00FB6154 movss [rdi+6D0h],xmm1
+00FB615C movss xmm2,[rsi+64h]
+00FB6161 movss xmm1,[rsi+58h]
+00FB6166 movaps xmm11,xmm2
+00FB616A subss xmm11,[rel 2E69860h]
+00FB6173 maxss xmm2,xmm13
+00FB6178 subss xmm1,xmm14
+00FB617D maxss xmm11,[rsi+14h]
+00FB6183 divss xmm3,xmm2
+00FB6187 movss xmm2,[rsi+5Ch]
+00FB618C movaps xmm0,xmm13
+00FB6190 subss xmm2,xmm14
+00FB6195 subss xmm2,xmm1
+00FB6199 divss xmm0,xmm2
+00FB619D movss [rdi+6BCh],xmm0
+00FB61A5 mulss xmm0,xmm1
+00FB61A9 xorps xmm0,xmm15
+00FB61AD movss [rdi+6C0h],xmm0
+00FB61B5 movaps xmm0,xmm3
+00FB61B8 mulss xmm0,[rel 2E8B6CCh]
+00FB61C0 mulss xmm3,xmm2
+00FB61C4 mulss xmm0,xmm2
+00FB61C8 movss [rdi+6C8h],xmm3
+00FB61D0 movss [rdi+6C4h],xmm0
+00FB61D8 jmp short 0000000000FB61E0h
+00FB61DA movss xmm11,[rsi+14h]
+00FB61E0 comiss xmm12,[rsi+2Ch]
+00FB61E5 lea rax,[rsi+2Ch]
+00FB61E9 mov [rsp+38h],r14d
+00FB61EE lea rbx,[rsp+28h]
+00FB61F3 movss xmm15,[rsi+1Ch]
+00FB61F9 xorps xmm0,xmm0
+00FB61FC movss xmm10,[rsi+28h]
+00FB6202 subss xmm15,xmm14
+00FB6207 movss xmm6,[rsi+40h]
+00FB620C subss xmm10,xmm14
+00FB6211 movups [rsp+28h],xmm0
+00FB6216 cmovb rbx,rax
+00FB621A movss xmm0,[rsi+18h]
+00FB621F subss xmm0,xmm14
+00FB6224 movss [rsp+44h],xmm15
+00FB622B movss [rsp+50h],xmm10
+00FB6232 movss [rsp+40h],xmm0
+00FB6238 movss xmm0,[rsi+20h]
+00FB623D subss xmm0,xmm14
+00FB6242 movss [rsp+48h],xmm0
+00FB6248 movss xmm0,[rsi+24h]
+00FB624D subss xmm0,xmm14
+00FB6252 movss [rsp+4Ch],xmm0
+00FB6258 movaps xmm0,xmm13
+00FB625C subss xmm0,[rsi+44h]
+00FB6261 comiss xmm0,xmm12
+00FB6265 jbe short 0000000000FB6276h
+00FB6267 call 0000000002D27B71h
+00FB626C mulss xmm0,[rel 32BF81Ch]
+00FB6274 jmp short 0000000000FB627Eh
+00FB6276 movss xmm0,[rel 4A4A1A4h]
+00FB627E mulss xmm6,[rel 2E9D468h]
+00FB6286 movaps xmm1,xmm13
+00FB628A addss xmm6,xmm13
+00FB628F divss xmm1,xmm6
+00FB6293 movss [rsp+70h],xmm6
+00FB6299 subss xmm1,xmm13
+00FB629E call 0000000002D27B53h
+00FB62A3 movss xmm1,[rbx]
+00FB62A7 movaps xmm9,xmm0
+00FB62AB movss xmm7,[rel 2E79A74h]
+00FB62B3 maxss xmm1,xmm12
+00FB62B8 movaps xmm0,xmm13
+00FB62BC subss xmm0,xmm1
+00FB62C0 maxss xmm0,xmm7
+00FB62C4 call 0000000002D27B71h
+00FB62C9 movss xmm6,[rel 32BF818h]
+00FB62D1 mulss xmm0,xmm6
+00FB62D5 movss [rbp+60h],xmm0
+00FB62DA movss [rsp+78h],xmm0
+00FB62E0 movaps xmm0,xmm13
+00FB62E4 subss xmm0,[rbx+4]
+00FB62E9 maxss xmm0,xmm7
+00FB62ED call 0000000002D27B71h
+00FB62F2 mulss xmm0,xmm6
+00FB62F6 movss [rbp+68h],xmm0
+00FB62FB movss [rsp+7Ch],xmm0
+00FB6301 movaps xmm0,xmm13
+00FB6305 subss xmm0,[rbx+8]
+00FB630A maxss xmm0,xmm7
+00FB630E call 0000000002D27B71h
+00FB6313 mulss xmm0,xmm6
+00FB6317 movss [rbp+70h],xmm0
+00FB631C movss [rbp-80h],xmm0
+00FB6321 movaps xmm0,xmm13
+00FB6325 subss xmm0,[rbx+0Ch]
+00FB632A maxss xmm0,xmm7
+00FB632E call 0000000002D27B71h
+00FB6333 movss xmm8,[rbx+10h]
+00FB6339 mulss xmm0,xmm6
+00FB633D movss [rbp+78h],xmm0
+00FB6342 movss [rbp-7Ch],xmm0
+00FB6347 movaps xmm0,xmm13
+00FB634B subss xmm0,xmm8
+00FB6350 maxss xmm0,xmm7
+00FB6354 call 0000000002D27B71h
+00FB6359 movss xmm7,[rbp+78h]
+00FB635E movaps xmm14,xmm0
+00FB6362 movss xmm1,[rsp+48h]
+00FB6368 movaps xmm4,xmm15
+00FB636C movss xmm2,[rsp+4Ch]
+00FB6372 movaps xmm0,xmm1
+00FB6375 subss xmm4,[rsp+40h]
+00FB637B subss xmm0,xmm15
+00FB6380 mulss xmm14,xmm6
+00FB6385 movss xmm6,[rbp+70h]
+00FB638A subss xmm10,xmm2
+00FB638F mulss xmm6,xmm9
+00FB6394 movaps xmm5,xmm2
+00FB6397 mulss xmm7,xmm9
+00FB639C subss xmm5,xmm1
+00FB63A0 movss [rsp+20h],xmm0
+00FB63A6 movss xmm0,[rbp+60h]
+00FB63AB mulss xmm0,xmm9
+00FB63B0 movss [rbp-78h],xmm14
+00FB63B6 movss [rsp+68h],xmm5
+00FB63BC movss [rbp+60h],xmm0
+00FB63C1 movss xmm0,[rbp+68h]
+00FB63C6 mulss xmm0,xmm9
+00FB63CB movss [rbp+70h],xmm6
+00FB63D0 movss [rbp+78h],xmm7
+00FB63D5 movaps xmm3,xmm0
+00FB63D8 movss [rbp+68h],xmm0
+00FB63DD subss xmm3,[rbp+60h]
+00FB63E2 mulss xmm14,xmm9
+00FB63E7 movss [rsp+60h],xmm3
+00FB63ED movaps xmm3,xmm6
+00FB63F0 subss xmm3,xmm0
+00FB63F4 movaps xmm0,xmm7
+00FB63F7 subss xmm0,xmm6
+00FB63FB movss [rsp+64h],xmm3
+00FB6401 movss [rsp+6Ch],xmm0
+00FB6407 ucomiss xmm8,xmm12
+00FB640B movss xmm9,[rsp+20h]
+00FB6412 subss xmm14,xmm7
+00FB6417 movaps xmm7,xmm13
+00FB641B movaps xmm6,xmm13
+00FB641F divss xmm7,xmm5
+00FB6423 movaps xmm5,xmm13
+00FB6427 movaps xmm0,xmm13
+00FB642B divss xmm5,xmm10
+00FB6430 divss xmm6,xmm9
+00FB6435 movss [rsp+20h],xmm5
+00FB643B movss [rsp+58h],xmm6
+00FB6441 movss [rsp+5Ch],xmm7
+00FB6447 divss xmm0,xmm4
+00FB644B je short 0000000000FB6457h
+00FB644D movaps xmm5,xmm13
+00FB6451 movaps xmm6,xmm13
+00FB6455 jmp short 0000000000FB6483h
+00FB6457 movss xmm5,[rbx+0Ch]
+00FB645C ucomiss xmm5,xmm12
+00FB6460 je short 0000000000FB6468h
+00FB6462 movaps xmm5,xmm13
+00FB6466 jmp short 0000000000FB6480h
+00FB6468 movss xmm5,[rbx+8]
+00FB646D ucomiss xmm5,xmm12
+00FB6471 je short 0000000000FB6479h
+00FB6473 movaps xmm5,xmm13
+00FB6477 jmp short 0000000000FB647Ch
+00FB6479 xorps xmm5,xmm5
+00FB647C xorps xmm13,xmm13
+00FB6480 xorps xmm6,xmm6
+00FB6483 movss xmm8,[rsp+58h]
+00FB648A mov rax,r14
+00FB648D movss xmm3,[rsp+5Ch]
+00FB6493 mulss xmm3,xmm1
+00FB6497 movss xmm1,[rsp+20h]
+00FB649D movss [rdi+6D4h],xmm0
+00FB64A5 movss [rdi+6D8h],xmm8
+00FB64AE mulss xmm1,xmm2
+00FB64B2 movaps xmm2,xmm9
+00FB64B6 mulss xmm9,[rbp+68h]
+00FB64BC movss [rdi+6DCh],xmm7
+00FB64C4 movss xmm7,[rsp+20h]
+00FB64CA movss [rdi+6E0h],xmm7
+00FB64D2 mulss xmm0,[rsp+40h]
+00FB64D8 movss xmm7,[rel 2E6BE90h]
+00FB64E0 xorps xmm3,xmm7
+00FB64E3 mulss xmm8,xmm15
+00FB64E8 xorps xmm0,xmm7
+00FB64EB mulss xmm14,xmm10
+00FB64F0 mulss xmm10,[rbp+78h]
+00FB64F6 xorps xmm1,xmm7
+00FB64F9 shufps xmm0,xmm0,0E1h
+00FB64FD xorps xmm8,xmm7
+00FB6501 movss xmm0,xmm8
+00FB6506 mulss xmm9,xmm5
+00FB650B movss xmm8,[rsp+68h]
+00FB6512 shufps xmm0,xmm0,0C6h
+00FB6516 movss xmm0,xmm3
+00FB651A mulss xmm10,xmm6
+00FB651F movaps xmm3,xmm4
+00FB6522 shufps xmm0,xmm0,27h
+00FB6526 mulss xmm3,[rsp+60h]
+00FB652C movss xmm0,xmm1
+00FB6530 mulss xmm4,[rbp+60h]
+00FB6535 movaps xmm1,xmm8
+00FB6539 mulss xmm8,[rbp+70h]
+00FB653F shufps xmm4,xmm4,0E1h
+00FB6543 movss xmm4,xmm9
+00FB6548 shufps xmm0,xmm0,39h
+00FB654C shufps xmm4,xmm4,0C6h
+00FB6550 movups [rdi+6E4h],xmm0
+00FB6557 movss xmm0,[rel 2E6A24Ch]
+00FB655F mulss xmm3,xmm0
+00FB6563 mulss xmm2,xmm0
+00FB6567 shufps xmm3,xmm3,0E1h
+00FB656B mulss xmm1,xmm0
+00FB656F mulss xmm2,[rsp+64h]
+00FB6575 mulss xmm1,[rsp+6Ch]
+00FB657B mulss xmm2,xmm5
+00FB657F mulss xmm14,xmm0
+00FB6584 movss xmm3,xmm2
+00FB6588 mulss xmm1,xmm13
+00FB658D shufps xmm3,xmm3,0C6h
+00FB6591 mulss xmm8,xmm13
+00FB6596 movss xmm3,xmm1
+00FB659A mulss xmm14,xmm6
+00FB659F movss xmm4,xmm8
+00FB65A4 shufps xmm3,xmm3,27h
+00FB65A8 shufps xmm4,xmm4,27h
+00FB65AC movss xmm3,xmm14
+00FB65B1 movss xmm4,xmm10
+00FB65B6 shufps xmm3,xmm3,39h
+00FB65BA shufps xmm4,xmm4,39h
+00FB65BE movups [rdi+6F4h],xmm3
+00FB65C5 movups [rdi+704h],xmm4
+00FB65CC nop dword [rax]
+00FB65D0 movss xmm1,[rsp+rax*4+40h]
+00FB65D6 comiss xmm1,xmm12
+00FB65DA ja short 0000000000FB65E8h
+00FB65DC movss xmm0,[rsp+rax*4+44h]
+00FB65E2 comiss xmm0,xmm12
+00FB65E6 ja short 0000000000FB65F6h
+00FB65E8 inc r14d
+00FB65EB inc rax
+00FB65EE cmp rax,4
+00FB65F2 jl short 0000000000FB65D0h
+00FB65F4 jmp short 0000000000FB661Ch
+00FB65F6 subss xmm0,xmm1
+00FB65FA movsxd rax,r14d
+00FB65FD movss xmm12,[rsp+rax*4+78h]
+00FB6604 divss xmm1,xmm0
+00FB6608 movss xmm0,[rsp+rax*4+7Ch]
+00FB660E subss xmm0,xmm12
+00FB6613 mulss xmm1,xmm0
+00FB6617 subss xmm12,xmm1
+00FB661C movss xmm0,[rsp+70h]
+00FB6622 lea r11,[rsp+130h]
+00FB662A movaps xmm6,[r11-10h]
+00FB662F movaps xmm8,[r11-30h]
+00FB6634 movaps xmm9,[r11-40h]
+00FB6639 movaps xmm10,[r11-50h]
+00FB663E movaps xmm13,[r11-80h]
+00FB6643 movaps xmm14,[r11-90h]
+00FB664B movaps xmm15,[r11-0A0h]
+00FB6653 movss [rdi+714h],xmm12
+00FB665C mulss xmm12,xmm11
+00FB6661 movss [rdi+720h],xmm11
+00FB666A movaps xmm11,[r11-60h]
+00FB666F xorps xmm12,xmm7
+00FB6673 movss [rdi+71Ch],xmm0
+00FB667B movaps xmm7,[r11-20h]
+00FB6680 movss [rdi+718h],xmm12
+00FB6689 movaps xmm12,[r11-70h]
+00FB668E mov rsp,r11
+00FB6691 pop r14
+00FB6693 pop rdi
+00FB6694 pop rsi
+00FB6695 pop rbx
+00FB6696 pop rbp
+00FB6697 ret

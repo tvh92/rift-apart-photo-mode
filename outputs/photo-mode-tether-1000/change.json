@@ -1,0 +1,20 @@
+{
+  "game_config": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Ratchet & Clank - Rift Apart\\d\\config",
+  "prepared_config": "C:\\Users\\Tim\\Documents\\Codex\\2026-10-04\\prompt-for-the-research-instance-research\\work\\config.tether1000.prepared",
+  "backup": "C:\\Users\\Tim\\Documents\\Codex\\2026-10-04\\prompt-for-the-research-instance-research\\outputs\\photo-mode-tether-1000\\backup\\config",
+  "original_sha256": "f659e13afe36c335d3ab54441898378164a51c2c469a1a368a51c8a005310bb3",
+  "patched_sha256": "06ea0a8d8b53052bb46451c9cbc75e59c9078d0ed1b970b51161d857aa4dd23a",
+  "toc_sha256": "d664d16a512985c2c51342cabbc52069d00c9583fc5c578efedf3c2cd84c626f",
+  "field": ".Cameras.Cameras[1].CameraType.Obj.CamData.TetherDistance",
+  "before": 10,
+  "after": 1000,
+  "unchanged_light_camera_tether": 15,
+  "unchanged_root_free_move_tether": 10,
+  "changed_decompressed_bytes": [
+    11077211,
+    11077304,
+    11077305
+  ],
+  "changed_dsar_block": 44,
+  "installed": true
+}

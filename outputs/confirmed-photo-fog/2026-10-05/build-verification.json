@@ -1,0 +1,55 @@
+{
+  "game_sha256": "51299faca61866cf10ea9035a15b8f22600a56557dd5ffc1aad390d5a54e6d82",
+  "dll_sha256": "228620169d5741cd57d544047d351e7bd3c7df541778bc78c17ea0655bcb6f2a",
+  "previous_confirmed_dll_sha256": "5c36943c6dfb45713382bf471e6f9939f857ee94f7789b8fefb2fc3abc292842",
+  "installed": true,
+  "runtime_status": "User-confirmed working native Photo fog build.",
+  "unchanged_sources": [
+    "CameraBoost.c",
+    "CameraStubs.S",
+    "GeometryLOD.h",
+    "HidExports.c",
+    "hid.def",
+    "export-manifest.json"
+  ],
+  "dependencies": [
+    "api-ms-win-crt-heap-l1-1-0.dll",
+    "api-ms-win-crt-private-l1-1-0.dll",
+    "api-ms-win-crt-runtime-l1-1-0.dll",
+    "api-ms-win-crt-stdio-l1-1-0.dll",
+    "api-ms-win-crt-string-l1-1-0.dll",
+    "bcrypt.dll",
+    "kernel32.dll",
+    "user32.dll"
+  ],
+  "source_hashes": {
+    "CameraBoost.c": "3866afa0fbb4f18e0fdb64fc712aa9e60e16c52a2b8e77eaa5179a2041b53cda",
+    "CameraStubs.S": "99668d3d1c6640b68356b192eb75e523c6a8895c4b757dabfa4dd2b5fdf81fcc",
+    "GeometryLOD.h": "ffe1b882a2dfdbc67c272f3eafbe117e8020b286777a0c03204e64cb8124996a",
+    "hid.def": "d1db129cdf7efa14c18e14f72d2650e55ffc0125558552a2574716914957cf1f",
+    "HidExports.c": "e7752a2ccef01b159f2c4d0b276887357b8db8ff20e8dafac29646db210dfffb",
+    "PhotoFog.h": "85c488113ff5c1dbd3890402d66487c4dfdb529d21a8556d433c27bd14d7528c",
+    "PhotoLOD.h": "436859a531bd17c22a2c8efa0cac8bf41715e115581827b20758e31366334365"
+  },
+  "diagnostic_user_confirmed": "Near numeric fog at far position restores dark pit fog on Corson V; both range-only tests had no visible change.",
+  "isolated_tests": [
+    "real callsite relay ABI and original callback",
+    "exact-byte refusal and eight-byte CAS restoration",
+    "capture with preference off then toggle on",
+    "primary-view filtering and clone-index guard",
+    "Photo exit/reentry and snapshot renewal",
+    "texture-tail preservation",
+    "Ctrl rising edge, held/focus/startup guards",
+    "normal/Shift/release and camera ownership",
+    "no-clip and geometry disable restoration",
+    "44 HID exports and unsupported-process refusal"
+  ],
+  "limitation": "Fog numeric entry snapshot; dynamic regional fog changes are deliberately held while Photo preference is enabled. Lighting is not fixed.",
+  "review": "work/photo-fog-candidate-review-luna.md",
+  "runtime_confirmation": {
+    "user_message": "Confirmed to work",
+    "recorded_utc": "2026-10-05T21:32:26.731116+00:00",
+    "dll_sha256": "228620169d5741cd57d544047d351e7bd3c7df541778bc78c17ea0655bcb6f2a",
+    "scope": "User confirmation in response to native startup/Photo fog/Ctrl/exit-reentry test request."
+  }
+}

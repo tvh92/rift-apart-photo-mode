@@ -1,0 +1,94 @@
+FUNCTION 0xf1a520 BOUNDS ('0xf1a520', '0xf1a5a0')
+00f1a520 mov r8d,[rcx]
+00f1a523 mov edx,r8d
+00f1a526 shr edx,14h
+00f1a529 and edx,7FFh
+00f1a52f je short 0000000000F1A55Eh
+00f1a531 and r8d,0FFFFFh
+00f1a538 lea rcx,[r8+r8*2]
+00f1a53c shl rcx,6
+00f1a540 add rcx,[rel 6748978h]
+00f1a547 cmp r8d,[rel 6748994h]
+00f1a54e jae short 0000000000F1A558h
+00f1a550 movzx eax,word [rcx+8]
+00f1a554 cmp edx,eax
+00f1a556 je short 0000000000F1A55Ah
+00f1a558 xor ecx,ecx
+00f1a55a mov rax,rcx
+00f1a55d ret
+00f1a55e xor eax,eax
+00f1a560 ret
+00f1a561 int3
+00f1a562 int3
+00f1a563 int3
+00f1a564 int3
+00f1a565 int3
+00f1a566 int3
+00f1a567 int3
+00f1a568 int3
+00f1a569 int3
+00f1a56a int3
+00f1a56b int3
+00f1a56c int3
+00f1a56d int3
+00f1a56e int3
+00f1a56f int3
+00f1a570 mov [rsp+8],rbx
+00f1a575 mov [rsp+10h],rbp
+00f1a57a mov [rsp+18h],rsi
+00f1a57f push rdi
+00f1a580 sub rsp,20h
+00f1a584 mov rax,[rcx]
+00f1a587 mov rbx,rdx
+00f1a58a mov [rdx],rax
+00f1a58d mov rdi,rcx
+00f1a590 xor eax,eax
+00f1a592 mov [rdx+8],rax
+00f1a596 mov [rdx+10h],rax
+00f1a59a mov [rdx+18h],rax
+00f1a59e (bad)
+FUNCTION 0x29f7c0 BOUNDS ('0x29f7c0', '0x29f84f')
+0029f7c0 sub rsp,28h
+0029f7c4 mov rax,[rcx]
+0029f7c7 test rax,rax
+0029f7ca je short 000000000029F7D5h
+0029f7cc add rax,30h
+0029f7d0 add rsp,28h
+0029f7d4 ret
+0029f7d5 mov rax,[gs:58h]
+0029f7de mov ecx,[rel 6A9E8A8h]
+0029f7e4 mov edx,0A0A0h
+0029f7e9 mov rcx,[rax+rcx*8]
+0029f7ed mov eax,[rdx+rcx]
+0029f7f0 cmp [rel 5ECCEACh],eax
+0029f7f6 jg short 000000000029F804h
+0029f7f8 lea rax,[rel 5ECCEA0h]
+0029f7ff add rsp,28h
+0029f803 ret
+0029f804 lea rcx,[rel 5ECCEACh]
+0029f80b call 0000000002D20350h
+0029f810 cmp dword [rel 5ECCEACh],0FFFFFFFFh
+0029f817 jne short 000000000029F7F8h
+0029f819 lea rcx,[rel 5ECCEACh]
+0029f820 mov dword [rel 5ECCEA0h],0C9800000h
+0029f82a mov dword [rel 5ECCEA4h],0C9800000h
+0029f834 mov dword [rel 5ECCEA8h],0C9800000h
+0029f83e call 0000000002D202F0h
+0029f843 lea rax,[rel 5ECCEA0h]
+0029f84a add rsp,28h
+0029f84e ret
+FUNCTION 0x29f6d0 BOUNDS ('0x29f6d0', '0x29f710')
+0029f6d0 sub rsp,28h
+0029f6d4 mov r8,[rcx]
+0029f6d7 test r8,r8
+0029f6da je near 000000000029F7A9h
+0029f6e0 movss xmm3,[r8+40h]
+0029f6e6 movss xmm5,[r8+48h]
+0029f6ec movaps xmm0,xmm3
+0029f6ef mulss xmm0,[r8]
+0029f6f4 movaps xmm4,xmm5
+0029f6f7 mulss xmm4,[r8+20h]
+0029f6fd movaps xmm2,xmm5
+0029f700 mulss xmm2,[r8+24h]
+0029f706 mulss xmm5,[r8+28h]
+0029f70c addss xmm4,xmm0

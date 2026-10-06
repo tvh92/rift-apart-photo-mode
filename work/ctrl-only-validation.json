@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-05",
+  "dll_sha256": "8cd2d7f9dc5f549f7198b5685a151f3ca8e4075557da4af5424d2069ab48953f",
+  "tests": [
+    {
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "3a1867",
+        "wall_time_seconds": 1.5019833,
+        "exit_code": 0,
+        "original_token_count": 41,
+        "output": "PASS: lifecycle/teardown gates; focused Ctrl tap/release without held repeats; modifier/focus cancellation; native loading states and guarded metadata callback.\r\n",
+        "name": "PhotoLifecycle"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "e1489f",
+        "wall_time_seconds": 1.6472381999999999,
+        "exit_code": 0,
+        "original_token_count": 42,
+        "output": "PASS: owner filtering, normal/Shift/release speeds, baseline restore, replacement camera identity, and hotkey restoration of collision plus both geometry selectors.\r\n",
+        "name": "Behavior"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "6bb5ea",
+        "wall_time_seconds": 0.3645731,
+        "exit_code": 0,
+        "original_token_count": 27,
+        "output": "{\"hid_guid_matches_system\": true, \"all_exports_resolved\": 44, \"non_game_hook_guard\": \"refused correctly\"}\r\n"
+      }
+    }
+  ]
+}

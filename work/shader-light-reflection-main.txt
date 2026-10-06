@@ -1,0 +1,149 @@
+Light shaders 215
+BUFFER ('GlobalViewportCBuffer', 480)
+BUFFER ('GlobalWorldCBuffer', 896)
+{'name': 'g_World.m_ScreenToLightLookup', 'offset': 32}
+{'name': 'g_World.m_LightLookupZBinScale', 'offset': 40}
+{'name': 'g_World.m_LightLookupWordCount', 'offset': 44}
+{'name': 'g_World.m_FogKeyLightInfluence', 'offset': 164}
+{'name': 'g_World.m_SsaoSunlightFactor', 'offset': 184}
+{'name': 'g_World.m_SsaoLocalLightFactor', 'offset': 188}
+{'name': 'g_World.m_KeyLightColorLinear', 'offset': 192}
+{'name': 'g_World.m_KeyLightVec', 'offset': 208}
+{'name': 'g_World.m_KeyLightShellLodConsts', 'offset': 224}
+{'name': 'g_World.m_KeyLightShellPlanesX', 'offset': 240}
+{'name': 'g_World.m_KeyLightShellPlanesY', 'offset': 256}
+{'name': 'g_World.m_KeyLightShellPlanesZ', 'offset': 272}
+{'name': 'g_World.m_KeyLightShellPlanesW', 'offset': 288}
+{'name': 'g_World.m_KeyLightWorldToLight0', 'offset': 304}
+{'name': 'g_World.m_KeyLightWorldToLight1', 'offset': 320}
+{'name': 'g_World.m_KeyLightWorldToLight2', 'offset': 336}
+{'name': 'g_World.m_KeyLightLodScale', 'offset': 352}
+{'name': 'g_World.m_KeyLightLodBias', 'offset': 448}
+{'name': 'g_World.m_KeyLightLodClamp', 'offset': 544}
+{'name': 'g_World.m_KeylightGoboConsts', 'offset': 640}
+{'name': 'g_World.m_LightGridBleedReduction', 'offset': 704}
+{'name': 'g_World.m_LightGridIntensity', 'offset': 732}
+{'name': 'g_World.m_RippleBlockerLightVolId', 'offset': 808}
+{'name': 'g_World.m_RayTracingLightVoxelRcp', 'offset': 816}
+{'name': 'g_World.m_RayTracingLightOrigin', 'offset': 820}
+{'name': 'g_World.m_RayTracingLightMask', 'offset': 832}
+{'name': 'g_World.m_KeyLightImpostorLoD', 'offset': 840}
+{'name': 'g_World.m_KeyLightTapScale', 'offset': 864}
+{'name': 'g_World.m_NormalLightTapScale', 'offset': 868}
+{'name': 'g_World.m_FxLightingArraySize', 'offset': 880}
+{'name': 'g_World.m_FxLightingBlur', 'offset': 884}
+BUFFER ('g_LightGridData', 16)
+{'name': '$Element', 'offset': 0, 'size': 16, 'flags': 2, 'members': [{'name': '$Element.m_Radiance', 'offset': 0}, {'name': '$Element.m_OcclAndScale', 'offset': 12}]}
+BUFFER ('HResCBuffer', 112)
+BUFFER ('HLBConstantsCBuffer', 112)
+{'name': 'g_HLB.m_LightPos', 'offset': 80}
+BUFFER ('g_HairLightBakePoints', 12)
+{'name': '$Element', 'offset': 0, 'size': 12, 'flags': 2, 'members': []}
+BUFFER ('g_HairLightBakeNormals', 12)
+{'name': '$Element', 'offset': 0, 'size': 12, 'flags': 2, 'members': []}
+BUFFER ('MiscIntCBuffer', 64)
+BUFFER ('g_Lights', 128)
+{'name': '$Element', 'offset': 0, 'size': 128, 'flags': 2, 'members': [{'name': '$Element.m_WorldAxisX', 'offset': 0}, {'name': '$Element.m_BulbRadius', 'offset': 12}, {'name': '$Element.m_WorldAxisY', 'offset': 16}, {'name': '$Element.m_BulbLength', 'offset': 28}, {'name': '$Element.m_WorldAxisZ', 'offset': 32}, {'name': '$Element.m_BulbPushForward', 'offset': 44}, {'name': '$Element.m_WorldPos', 'offset': 48}, {'name': '$Element.m_InvAttenRadius', 'offset': 60}, {'name': '$Element.m_LinearColor', 'offset': 64}, {'name': '$Element.m_SpecIntensity', 'offset': 76}, {'name': '$Element.m_ConeParams', 'offset': 80}, {'name': '$Element.m_CutOnDepth', 'offset': 88}, {'name': '$Element.m_CutOffDepth', 'offset': 92}, {'name': '$Element.m_ZBinMinMax', 'offset': 96}, {'name': '$Element.m_BitFlagsVFog', 'offset': 100}, {'name': '$Element.m_ModIdAndGoboId', 'offset': 104}, {'name': '$Element.m_ClipVolumeInfo', 'offset': 108}, {'name': '$Element.m_ShadowMapInfo', 'offset': 112}, {'name': '$Element.m_ShadowVolumeInfo', 'offset': 116}, {'name': '$Element.m_RcpConeSinAngle', 'offset': 120}, {'name': '$Element.m_Pad', 'offset': 124}]}
+BUFFER ('LightShaftIntegrationCBuffer', 96)
+{'name': 'g_LightShaft', 'offset': 0, 'size': 96, 'flags': 2, 'members': [{'name': 'g_LightShaft.m_DepthUvScale', 'offset': 0}, {'name': 'g_LightShaft.m_DispatchOffset', 'offset': 8}, {'name': 'g_LightShaft.m_ScissorRect', 'offset': 16}, {'name': 'g_LightShaft.m_RectifiedHeight', 'offset': 32}, {'name': 'g_LightShaft.m_SectionScale', 'offset': 36}, {'name': 'g_LightShaft.m_RangeRcp', 'offset': 40}, {'name': 'g_LightShaft.m_Bias', 'offset': 44}, {'name': 'g_LightShaft.m_UvToLight0', 'offset': 48}, {'name': 'g_LightShaft.m_UvToLight1', 'offset': 64}, {'name': 'g_LightShaft.m_UvToLight2', 'offset': 80}]}
+BUFFER ('ModelStrandCBuffer', 4800)
+{'name': 'g_ModelStrand.m_ExtraLightWrap', 'offset': 140}
+BUFFER ('g_StrandBuffer', 12)
+BUFFER ('g_StrandCVBuffer', 8)
+BUFFER ('g_StrandSBBuffer', 8)
+BUFFER ('g_StrandCVBufferOutput', 8)
+BUFFER ('g_StrandCVBufferPrevOutput', 8)
+BUFFER ('g_StrandBufferOutput', 12)
+BUFFER ('g_SceneObjectView', 128)
+BUFFER ('g_StrandLookup', 4)
+BUFFER ('g_StrandCVBufferPrev', 8)
+BUFFER ('g_DynamicObjectView', 64)
+BUFFER ('VolumetricCloudsCBuffer', 960)
+{'name': 'g_VolumetricClouds.m_ViewData.m_LightToProjMat', 'offset': 256}
+{'name': 'g_VolumetricClouds.m_LightDirection', 'offset': 624}
+{'name': 'g_VolumetricClouds.m_LightX', 'offset': 640}
+{'name': 'g_VolumetricClouds.m_LightY', 'offset': 656}
+{'name': 'g_VolumetricClouds.m_LightColorAndIntensity', 'offset': 672}
+{'name': 'g_VolumetricClouds.m_NumLights', 'offset': 828}
+{'name': 'g_VolumetricClouds.m_LocalLights', 'offset': 832}
+{'name': 'g_VolumetricClouds.m_LocalLights.m_Color', 'offset': 832}
+{'name': 'g_VolumetricClouds.m_LocalLights.m_Position', 'offset': 848}
+{'name': 'g_VolumetricClouds.m_LocalLights.m_AttenRadius', 'offset': 860}
+BUFFER ('TerrainVistaMapCB', 21472)
+{'name': 'g_TerrainVista.m_NoiseMaxLightness', 'offset': 21452}
+{'name': 'g_TerrainVista.m_PeakValleyMaxLightness', 'offset': 21456}
+BUFFER ('MultiWaterRingCBuffer', 320)
+{'name': 'g_Water.m_LightingDisplacement', 'offset': 208}
+BUFFER ('WaterReadbackCBuffer', 16384)
+BUFFER ('GlobalVolumeFlagBuffer', 4096)
+BUFFER ('WeatherGSplashGlobalCBuffer', 2080)
+{'name': 'g_WeatherGSplashGlobal.m_LightRange', 'offset': 16}
+{'name': 'g_WeatherGSplashGlobal.m_LightPosY', 'offset': 20}
+{'name': 'g_WeatherGSplashGlobal.m_LightVolumeGpuId', 'offset': 24}
+BUFFER ('WeatherGSplashCBuffer', 64)
+BUFFER ('g_LightVolumes', 128)
+{'name': '$Element', 'offset': 0, 'size': 128, 'flags': 2, 'members': [{'name': '$Element.m_TransformMat', 'offset': 0}, {'name': '$Element.m_AtlasCoords', 'offset': 64}, {'name': '$Element.m_Extents', 'offset': 80}, {'name': '$Element.m_Fade', 'offset': 92}, {'name': '$Element.m_FalloffNeg', 'offset': 96}, {'name': '$Element.m_ShadowTexelScale', 'offset': 108}, {'name': '$Element.m_FalloffPos', 'offset': 112}, {'name': '$Element.m_Misc', 'offset': 124}]}
+BUFFER ('WeatherParticlesAttributesCBuffer', 352)
+{'name': 'g_WeatherParticles.m_LightVolumeGpuId', 'offset': 320}
+BUFFER ('WeatherParticlesCellsCBuffer', 64)
+BUFFER ('RayTracedShadowsCBuffer', 32)
+BUFFER ('RayTracingConsumedLightsCBuffer', 32)
+{'name': 'g_RTConsumedLights', 'offset': 0, 'size': 32, 'flags': 2, 'members': [{'name': 'g_RTConsumedLights.m_LightOrigin', 'offset': 0}, {'name': 'g_RTConsumedLights.m_LightCount', 'offset': 12}, {'name': 'g_RTConsumedLights.m_Reserved', 'offset': 16}, {'name': 'g_RTConsumedLights.m_VoxelSize', 'offset': 28}]}
+BUFFER ('RayTracingReflectionCBuffer', 48)
+BUFFER ('g_RTZCurve', 4)
+BUFFER ('g_RTRaysOutput', 12)
+BUFFER ('RayTracedShadowsDenoiseCBuffer', 256)
+{'name': 'g_RTSDenoiseCB.m_HitsLightThreshold', 'offset': 228}
+BUFFER ('t2d_meta', 4)
+BUFFER ('rwsb_shadowMask', 4)
+BUFFER ('sb_raytracerResult', 4)
+BUFFER ('rwsb_tileMetaData', 4)
+BUFFER ('GridLightBakeCBuffer', 464)
+{'name': 'g_GridLightBake', 'offset': 0, 'size': 464, 'flags': 2, 'members': [{'name': 'g_GridLightBake.m_Pad', 'offset': 0}, {'name': 'g_GridLightBake.m_LightCount', 'offset': 4}, {'name': 'g_GridLightBake.m_TraceDirectionCount', 'offset': 8}, {'name': 'g_GridLightBake.m_JitterPosCount', 'offset': 12}, {'name': 'g_GridLightBake.m_JitterOffsets', 'offset': 16}]}
+BUFFER ('LightGridSampleCalculateCBuffer', 96)
+{'name': 'g_GridSamplePosCalc', 'offset': 0, 'size': 96, 'flags': 2, 'members': [{'name': 'g_GridSamplePosCalc.m_GridToWs', 'offset': 0}, {'name': 'g_GridSamplePosCalc.m_SamplePositionOffset', 'offset': 12}, {'name': 'g_GridSamplePosCalc.m_Pad1', 'offset': 16}, {'name': 'g_GridSamplePosCalc.m_CaptureVolumeWidth', 'offset': 24}, {'name': 'g_GridSamplePosCalc.m_CaptureSampleCount', 'offset': 28}, {'name': 'g_GridSamplePosCalc.m_GridToCascadeCornerWs', 'offset': 32}, {'name': 'g_GridSamplePosCalc.m_Cascade0VoxelSizeRcp', 'offset': 44}, {'name': 'g_GridSamplePosCalc.m_C0ToEmbeddedLookup', 'offset': 48}, {'name': 'g_GridSamplePosCalc.m_ForceEmbeddedVolCount', 'offset': 60}, {'name': 'g_GridSamplePosCalc.m_EmbeddedLookupWsOffset', 'offset': 64}, {'name': 'g_GridSamplePosCalc.m_Cascade0VoxelSize', 'offset': 76}, {'name': 'g_GridSamplePosCalc.m_MaxIterations', 'offset': 80}, {'name': 'g_GridSamplePosCalc.m_MoveStepDist', 'offset': 84}, {'name': 'g_GridSamplePosCalc.m_MinDesiredDistToOccl', 'offset': 88}, {'name': 'g_GridSamplePosCalc.m_MaxMoveDistance', 'offset': 92}]}
+BUFFER ('g_VoxelModVolumes', 80)
+BUFFER ('VoxelConeTraceCBuffer', 144)
+BUFFER ('g_VoxelTraceFogParams', 96)
+BUFFER ('g_GBufferApplyWorkBuffer', 4)
+BUFFER ('g_EnvProbeEnvs', 128)
+BUFFER ('VolumetricFogScatteringCBuffer', 352)
+{'name': 'g_VFog.m_DirectLightScale', 'offset': 320}
+{'name': 'g_VFog.m_LightsScale', 'offset': 324}
+BUFFER ('LightGridCaptureCBuffer', 512)
+{'name': 'g_LGC', 'offset': 0, 'size': 512, 'flags': 2, 'members': [{'name': 'g_LGC.m_ViewToWorldFwd', 'offset': 0}, {'name': 'g_LGC.m_ViewToWorldUp', 'offset': 96}, {'name': 'g_LGC.m_SamplePositions', 'offset': 192}, {'name': 'g_LGC.m_MiscConsts', 'offset': 480}, {'name': 'g_LGC.m_LocalLightCount', 'offset': 488}, {'name': 'g_LGC.m_Pad1', 'offset': 492}, {'name': 'g_LGC.m_GridCenterPosition', 'offset': 496}, {'name': 'g_LGC.m_Pad2', 'offset': 508}]}
+BUFFER ('g_LightGridCaptureFromGBufferLights', 128)
+{'name': '$Element', 'offset': 0, 'size': 128, 'flags': 2, 'members': [{'name': '$Element.m_WorldAxisX', 'offset': 0}, {'name': '$Element.m_BulbRadius', 'offset': 12}, {'name': '$Element.m_WorldAxisY', 'offset': 16}, {'name': '$Element.m_BulbLength', 'offset': 28}, {'name': '$Element.m_WorldAxisZ', 'offset': 32}, {'name': '$Element.m_BulbPushForward', 'offset': 44}, {'name': '$Element.m_WorldPos', 'offset': 48}, {'name': '$Element.m_InvAttenRadius', 'offset': 60}, {'name': '$Element.m_LinearColor', 'offset': 64}, {'name': '$Element.m_SpecIntensity', 'offset': 76}, {'name': '$Element.m_ConeParams', 'offset': 80}, {'name': '$Element.m_CutOnDepth', 'offset': 88}, {'name': '$Element.m_CutOffDepth', 'offset': 92}, {'name': '$Element.m_ZBinMinMax', 'offset': 96}, {'name': '$Element.m_BitFlagsVFog', 'offset': 100}, {'name': '$Element.m_ModIdAndGoboId', 'offset': 104}, {'name': '$Element.m_ClipVolumeInfo', 'offset': 108}, {'name': '$Element.m_ShadowMapInfo', 'offset': 112}, {'name': '$Element.m_ShadowVolumeInfo', 'offset': 116}, {'name': '$Element.m_RcpConeSinAngle', 'offset': 120}, {'name': '$Element.m_Pad', 'offset': 124}]}
+BUFFER ('MiscCBuffer', 64)
+BUFFER ('g_LightGridDataBufOut', 16)
+{'name': '$Element', 'offset': 0, 'size': 16, 'flags': 2, 'members': [{'name': '$Element.m_Radiance', 'offset': 0}, {'name': '$Element.m_OcclAndScale', 'offset': 12}]}
+BUFFER ('MiscCBufferArray', 4096)
+BUFFER ('MatDrawCB', 32)
+BUFFER ('g_ModelSubsetView', 64)
+BUFFER ('g_MaterialView', 32)
+BUFFER ('ConstantColorCBuffer', 16)
+BUFFER ('ModelWaterCBuffer', 176)
+BUFFER ('WaterFlowCBBuffer', 16)
+BUFFER ('GlobalVoxelizationState', 16)
+BUFFER ('ModelOutlineCBuffer', 48)
+BUFFER ('VolumeCloudsCBuffer', 160)
+BUFFER ('TerrainCBuffer', 240)
+BUFFER ('WaterHoleCBuffer', 144)
+BUFFER ('VoxelDebugCBuffer', 64)
+BUFFER ('DecalProjectedCBuffer', 288)
+{'name': 'g_DecalProjected.m_LightGpuId', 'offset': 120}
+BUFFER ('ImpostorCBuffer', 48)
+BUFFER ('g_ImpostorObjectView', 272)
+BUFFER ('$Params', 16)
+BUFFER ('BasicPrimCBuffer', 176)
+{'name': 'g_Prim.m_LightDir', 'offset': 128}
+BUFFER ('LightShellCBuffer', 96)
+{'name': 'g_LightShell', 'offset': 0, 'size': 96, 'flags': 2, 'members': [{'name': 'g_LightShell.m_ObjToWorldMat', 'offset': 0}, {'name': 'g_LightShell.m_AabbCenter', 'offset': 64}, {'name': 'g_LightShell.m_LightGpuId', 'offset': 76}, {'name': 'g_LightShell.m_AabbInvExtents', 'offset': 80}, {'name': 'g_LightShell.m_VertPushScale', 'offset': 92}]}
+BUFFER ('ModelFurCBuffer', 80)
+BUFFER ('VfxMatInstanceCBuffer', 176)
+{'name': 'g_VisualEffect.m_LightingOverScan', 'offset': 12}
+BUFFER ('VisualEffectSplinesDrawCallCB', 224)
+BUFFER ('ModelBasicCBuffer', 32)
+BUFFER ('ModelCasterCBuffer', 32)
+BUFFER ('g_StrandBufferOrigin', 12)
+BUFFER ('WeatherGSplashCellCBuffer', 48)

@@ -1,0 +1,23 @@
+{
+  "PerfSpecs": [
+    {
+      "Spec": "kPS5_30"
+    },
+    {
+      "Spec": "kPS5_60"
+    },
+    {
+      "Spec": "kPS5_60RT"
+    }
+  ],
+  "PerfLevels": {
+    "Value": {
+      "Type": "PerfLevelValueShadowLod",
+      "Obj": {}
+    }
+  },
+  "hashMap": {
+    "0x54530fccaf6fec66": {},
+    "0xb2e8e8c1016bd7de": {}
+  }
+}

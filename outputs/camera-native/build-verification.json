@@ -1,0 +1,143 @@
+{
+  "game_sha256": "51299faca61866cf10ea9035a15b8f22600a56557dd5ffc1aad390d5a54e6d82",
+  "dll_sha256": "5c36943c6dfb45713382bf471e6f9939f857ee94f7789b8fefb2fc3abc292842",
+  "compiler": {
+    "version": "0.15.2",
+    "tarball": "https://ziglang.org/download/0.15.2/zig-x86_64-windows-0.15.2.zip",
+    "shasum": "3a0ed1e8799a2f8ce2a6e6290a9ff22e6906f8227865911fb7ddedc3cc14cb0c",
+    "size": "92614574"
+  },
+  "hid_exports": 44,
+  "isolated_tests": [
+    "HID GUID forwarding",
+    "all exports resolved",
+    "unsupported-process guard",
+    "hook ABI preservation",
+    "owner filtering",
+    "normal/Shift/release speeds",
+    "baseline restoration",
+    "replacement-camera identity",
+    "collision exact-window guard",
+    "collision one-byte mutation",
+    "collision original page protection",
+    "collision symmetric restore",
+    "collision changed-byte conflict refusal",
+    "disable-hotkey restores collision",
+    "geometry exact/aligned guards",
+    "atomic eight-byte jumps with renderer-thread coordination",
+    "concurrent renderer install/restore",
+    "geometry conflict rollback",
+    "real selector GPR/XMM/stack unwind equivalence at eight instruction boundaries",
+    "Photo lifecycle enter/exit and cleanup gating",
+    "unknown Photo states retain native LOD",
+    "focused LOD comparison toggle without key repeats",
+    "disable-hotkey restores both geometry selector windows",
+    "native AND continuation guard and flag lifetime proof",
+    "exact baseline binary hash and two guarded hotkey constant edits",
+    "whole DLL differs at only two bytes; imports/relocations/unwind/layout retained",
+    "actual patched binary HookPhotoTick Ctrl rising-edge/held suppression and exact three probes",
+    "actual patched binary focus/startup guards and original callback",
+    "baseline-source lifecycle/teardown metadata probe"
+  ],
+  "installed": true,
+  "in_game_test": "User confirms original full intro reaches menu and Ctrl toggles Photo Mode details on5c. User now abandons skipintro experiments; original movies remain installed.",
+  "previous_confirmed_dll_sha256": "ccbcdaeacb5525e05a68ede9924164f07f5d3c93e1ed6e189168bbfd8f9c8ff3",
+  "source_sha256": {
+    "CameraBoost.c": "3866afa0fbb4f18e0fdb64fc712aa9e60e16c52a2b8e77eaa5179a2041b53cda",
+    "CameraStubs.S": "99668d3d1c6640b68356b192eb75e523c6a8895c4b757dabfa4dd2b5fdf81fcc",
+    "HidExports.c": "e7752a2ccef01b159f2c4d0b276887357b8db8ff20e8dafac29646db210dfffb",
+    "hid.def": "d1db129cdf7efa14c18e14f72d2650e55ffc0125558552a2574716914957cf1f",
+    "GeometryLOD.h": "ffe1b882a2dfdbc67c272f3eafbe117e8020b286777a0c03204e64cb8124996a",
+    "PhotoLOD.h": "97c87db5544d07810a1286707d68b8159d178ed5b20b39c52f27b607fffd8eef"
+  },
+  "confirmed_speed_in_game_test": "User confirmed both normal and Shift speeds work after leaving and re-entering Photo Mode, without the Python helper.",
+  "collision_branch": {
+    "query_call_rva": "0x1a5f1e7",
+    "branch_rva": "0x1a5f1ee",
+    "original": "74",
+    "bypass": "eb",
+    "guard_bytes": "e844aa75ff84c0743b",
+    "scope": "PhotomodeCameraMotionFly::UpdateMiddle only",
+    "query_and_cleanup": "preserved"
+  },
+  "user_confirmation": {
+    "local_date": "2026-10-04",
+    "quote": "Works flawlessly, nice job",
+    "requested_test": "wall/no-clip, leave/re-enter Photo Mode, no-clip and both speeds",
+    "disable_hotkey": "isolated-tested, not separately user-tested",
+    "dll_sha256": "ccbcdaeacb5525e05a68ede9924164f07f5d3c93e1ed6e189168bbfd8f9c8ff3"
+  },
+  "geometry_lod": {
+    "status": "user-observed geometry/variant changes; lighting/fog incomplete",
+    "scope": "ordinary native Photo Mode states 1,2,4 only; close/destruction clears gate",
+    "sites": [
+      "0x111a860",
+      "0x111a9e8"
+    ],
+    "guards": [
+      "03f88b8424d800000023f8",
+      "03f88b84248000000023f8"
+    ],
+    "patch": "aligned eight-byte JMP; ninth byte skipped and unchanged",
+    "preference": "initial distance tier zero; native masks/quality/resource/available-variant floors retained",
+    "unwind": "dynamically registered chain to original selectors, no EH-handler clone",
+    "comparison_hotkey": "Ctrl rising edge in focused active Photo state4; original key-probe structure retained",
+    "restore": "Ctrl+Alt+F10, GeometryLOD=0 at startup, Restore-PreviousLODDLL.ps1 or Restore-ConfirmedNoClipDLL.ps1",
+    "unmodified": [
+      "texture mips",
+      "culling",
+      "shadows",
+      "streaming",
+      "neutral effect defaults"
+    ],
+    "flags": "following guarded AND EDI,EAX overwrites relay flags before use",
+    "install_order": "selectors succeed before publishing lazy metadata callback hook"
+  },
+  "previous_geometry_dll_sha256": "7508bd33654d057202fbd91b8c81d8622dca1c1e781c21b52ce82023fa14b272",
+  "geometry_user_feedback": {
+    "date": "2026-10-05",
+    "dll_sha256": "7508bd33654d057202fbd91b8c81d8622dca1c1e781c21b52ce82023fa14b272",
+    "observed": [
+      "distant ship exhaust toggles",
+      "objects/walls/pipes/foliage/environment detail toggles"
+    ],
+    "missing": [
+      "lights stop illuminating nearby surfaces",
+      "dark fog in bottomless pits turns white with camera distance"
+    ],
+    "log": "work/geometry-lod-user-test-2026-10-05.log",
+    "reentry": "multiple lifecycle exit/re-entry sequences observed in log; not a separate user performance/gameplay confirmation",
+    "scene": "Corson V, Nefarious City near the giant golden Emperor Nefarious statue",
+    "fog_screenshot": "work/corson-v-white-fog-user-screenshot.png"
+  },
+  "withdrawn_eager_indicator_sha256": "06ce078afaca25aeb95cca6da595ea8f8b54f8a9ccac3aef833c64fadb6a6de8",
+  "indicator_removed": "No compiled indicator code, worker, window, messages or GDI32 dependency; sources retained only in failed-build backups.",
+  "withdrawn_lazy_indicator_sha256": "7d4234168e04020b65bd2af2a88314bffe9bef2baadeb2994c2901b539008665",
+  "binary_shortcut_patch": {
+    "script": "work/patch_working_dll_shortcut.py",
+    "changed_file_offsets": [
+      "0x23F3",
+      "0x2403"
+    ],
+    "baseline_sha256": "7508bd33654d057202fbd91b8c81d8622dca1c1e781c21b52ce82023fa14b272",
+    "note": "No relinking; Ctrl rising-edge behavior, not release cancellation."
+  },
+  "withdrawn_rebuilt_ctrl_only_sha256": "8cd2d7f9dc5f549f7198b5685a151f3ca8e4075557da4af5424d2069ab48953f",
+  "installed_dll_sha256": "5c36943c6dfb45713382bf471e6f9939f857ee94f7789b8fefb2fc3abc292842",
+  "loading_diagnostic": {
+    "native_dll": "unchanged two-byte Ctrl5c",
+    "intro": "Original full movies temporarily restored; short-intro package/libraries preserved",
+    "file_audit": "outputs/startup-repair/current-intro-comparison.json",
+    "live_snapshot": "work/loading-hang-20261005T094453358472Z.json",
+    "proven": "Geometry gate0, native Photo state11, frame time positive and renderer frame counter advances. No sampled mod-thread deadlock; cause unproven.",
+    "result": "Original full movies + same5c DLL reach menu; Ctrl works. Shortened-intro setup involved; exact failure mechanism unproven."
+  },
+  "ctrl_user_confirmation": {
+    "dll_sha256": "5c36943c6dfb45713382bf471e6f9939f857ee94f7789b8fefb2fc3abc292842",
+    "date": "2026-10-05",
+    "quote": "Reaches menu and Ctrl works",
+    "intro": "Original full movies",
+    "source": "async original-intro comparison response"
+  },
+  "skipintro_user_direction": "Skip the whole skipintro work unless100percent sure of a fix. Keep original intros; no further experiments/re-enable without clear user steering."
+}

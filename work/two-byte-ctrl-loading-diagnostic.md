@@ -1,0 +1,16 @@
+# Loading diagnostic after two-byte shortcut patch
+
+**Current confirmed state:** original intro movies reach the menu and Ctrl toggles details onDLL5c. User has abandoned skipintro experiments; leave original movies installed. No indicator. Lighting/fog remain outstanding; read `work/fog-renderer-parameter-copy-main.md` for the proven renderer fog bridge. Do not reinstall/recompile the working DLL casually.
+
+
+The user reports5c also stalls after the publisher logo, before the main menu, with the two-second intro. This candidate differs from working7508 at only two key constants; no relinking. Do not claim indicator dependencies or compiler layout caused the failures.
+
+Live process14972 was captured twice before it exited; user restarted, process23044 reproduced the same stall. Snapshots `work/loading-hang-20261004T234533527793Z.json`, `work/loading-hang-20261004T234640838670Z.json`, `work/loading-hang-20261005T094016491350Z.json`, and `work/loading-hang-20261005T094453358472Z.json`. Captures use Windows PSS thread contexts, bounded read-only stack samples and wait-chain traversal; raw stack addresses are candidates, not unwound frames. No game writes or manual thread suspension.
+
+Native renderer frames advanced1123->40955 between the latter snapshots; native frame time0.0069147. Photo state11, actual proxy geometry_active at+2F1D0=0, preference1, ready1. No sampled HID execution frames or WCT wait cycles; a naturally suspended crash-reporter thread was observed. A worker sampled in159CCEF has a native query-result path1207E50 -> renderer vtable slotE8 (12789C0 ->127BBF0). This is not proof of a permanently deadlocked renderer: frames advance. Native Photo dispatch immediately returns in state11. The wait/intro transition's exact cause remains unproven.
+
+User clarified stall is immediately after publisher logo before menu, and closed the game for controlled comparison. `work/set_intro_comparison.py --original-movies` has now restored original full movie routing in both matching profiles, retaining exact5c Ctrl DLL, camera asset, no-clip/speeds, INI and all libraries. Full pre/post audit passes; only camera asset override remains. Backup `outputs/startup-repair/intro-comparison-9a983d10393a495f92d1530f42158f31`; current audit `outputs/startup-repair/current-intro-comparison.json`. Native DLL and INI hashes unchanged. Original intro startup/Ctrl confirmation pending. Do not change installation again after requesting launch.
+
+Restore the two-second profile later with `work/set_intro_comparison.py --short-movies`, game/manager closed. Do not restore it until this controlled test is interpreted. Preserve the shorter shortcut; indicator remains abandoned. Lighting/fog unpatched and paused only for the startup regression diagnostic.
+
+Lighting offset-scan candidate1A6C201 was rejected: full entry1A6C1C0 is PickupBase/PickupShared/PickupItem vtable slot198, not a proven LightDef reader. Coincidental offsets198/19C/1A0 and22C/230/234/238 do not establish object type. LightDef metadata/default70 remain valid; actual renderer consumer still unresolved. Fog record starts+478/+490 have resolved handles at+480/+498, not at record starts; shader reader remains unproven.

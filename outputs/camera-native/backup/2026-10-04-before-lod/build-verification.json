@@ -1,0 +1,52 @@
+{
+  "game_sha256": "51299faca61866cf10ea9035a15b8f22600a56557dd5ffc1aad390d5a54e6d82",
+  "dll_sha256": "ccbcdaeacb5525e05a68ede9924164f07f5d3c93e1ed6e189168bbfd8f9c8ff3",
+  "compiler": {
+    "version": "0.15.2",
+    "tarball": "https://ziglang.org/download/0.15.2/zig-x86_64-windows-0.15.2.zip",
+    "shasum": "3a0ed1e8799a2f8ce2a6e6290a9ff22e6906f8227865911fb7ddedc3cc14cb0c",
+    "size": "92614574"
+  },
+  "hid_exports": 44,
+  "isolated_tests": [
+    "HID GUID forwarding",
+    "all exports resolved",
+    "unsupported-process guard",
+    "hook ABI preservation",
+    "owner filtering",
+    "normal/Shift/release speeds",
+    "baseline restoration",
+    "replacement-camera identity",
+    "collision exact-window guard",
+    "collision one-byte mutation",
+    "collision original page protection",
+    "collision symmetric restore",
+    "collision changed-byte conflict refusal",
+    "disable-hotkey restores collision"
+  ],
+  "installed": true,
+  "in_game_test": "User confirmed the requested native Free-camera wall/no-clip, Photo Mode re-entry and both-speed test: Works flawlessly, nice job.",
+  "previous_confirmed_dll_sha256": "97b9a29eed154973fb587e0fae965c441b9956096211523aa1f99ef1d6d03e81",
+  "source_sha256": {
+    "CameraBoost.c": "3ac242758aa3efe1a4afe591b643a69727c7ad6571d8f07ba8402c52181bdf16",
+    "CameraStubs.S": "4cb07418ab866de1594debd85f7813024cac573a89e5aa556ffec8cf7a15eed2",
+    "HidExports.c": "e7752a2ccef01b159f2c4d0b276887357b8db8ff20e8dafac29646db210dfffb",
+    "hid.def": "d1db129cdf7efa14c18e14f72d2650e55ffc0125558552a2574716914957cf1f"
+  },
+  "confirmed_speed_in_game_test": "User confirmed both normal and Shift speeds work after leaving and re-entering Photo Mode, without the Python helper.",
+  "collision_branch": {
+    "query_call_rva": "0x1a5f1e7",
+    "branch_rva": "0x1a5f1ee",
+    "original": "74",
+    "bypass": "eb",
+    "guard_bytes": "e844aa75ff84c0743b",
+    "scope": "PhotomodeCameraMotionFly::UpdateMiddle only",
+    "query_and_cleanup": "preserved"
+  },
+  "user_confirmation": {
+    "local_date": "2026-10-04",
+    "quote": "Works flawlessly, nice job",
+    "requested_test": "wall/no-clip, leave/re-enter Photo Mode, no-clip and both speeds",
+    "disable_hotkey": "isolated-tested, not separately user-tested"
+  }
+}

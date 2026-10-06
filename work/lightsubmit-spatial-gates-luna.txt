@@ -1,0 +1,43 @@
+# LightSubmit spatial gates: exact-build read-only trace
+
+Build: exact `RiftApart.exe` SHA256 `51299faca61866cf10ea9035a15b8f22600a56557dd5ffc1aad390d5a54e6d82`. Static disassembly only; no installed candidate, source, game process, or live memory changed.
+
+## Conclusion
+
+This pass found a real frustum/volume eligibility gate and two concrete size-distance predicates. It did **not** establish a general hard world-distance cutoff that removes ordinary diffuse surface lights. The 0x109A670 distance predicate is a bucket/depth classification: both resulting arrays are packed into the same LightSubmit query and 0x10B9DB0 iterates the combined counts. The 0x10B7330 predicate only chooses whether 0x10BE940 rebuilds an auxiliary volume or copies the source's existing volume fields. Neither predicate alone proves the reported Photo-camera range disappearance.
+
+The proven hard spatial gate is the conditional clip-volume test at 0x1604440: when the source enters that branch, a false result jumps directly to 0x10BAE6E and the source is not appended to either LightSubmit candidate array. Its inputs include the current view's clipping context and source-generated bounds. Thus off-frustum/off-volume exclusion is established; a standalone distance cutoff is not.
+
+## Candidate/type and hierarchy gates
+
+- 0x12B5010 is called from 0x10BA710 at 0x10BAD55 and 0x10BB209. It is flag/resource-category lookup logic, not geometry: it tests source flags at +0x5C, special type 5 resource metadata at +0x108, global lookup/index state, and the caller-supplied category bit. In the first call, a false result skips the candidate before either list append. In the later call, false skips the auxiliary 0x10BEC60 volume path only.
+- 0x12B7250 is called at 0x10BAD65. It rejects source flag bits 0xE0 and walks linked/parent objects through 0x12B5FF0, rejecting when a node carries those flags (with type-specific +0x80/+0x170 checks). This is inherited source state, not a camera-distance test.
+- 0x109D010 is called at 0x10BAD85 for sources not carrying flag bit 31. It updates/builds source culling-volume metadata based on source mode byte +0x94 and source geometry/radius fields, writing count/pointer at +0xDC/+0xE0. It has no camera parameter. When its output pointer/count is absent, the caller bypasses the subsequent volume-intersection test rather than rejecting the light. When present, the caller invokes 0x1604440.
+
+## Actual frustum gate and argument origin
+
+At 0x12BC15F..0x12BC169 the frame/view caller passes RCX=view, RDX=LightSubmitQuery, and R8=&local view/query context to 0x10BA710. The callee homes R8 at its entry home slot and later passes that context as RCX to 0x1604440. At 0x10BADBD..0x10BADE3, arguments are:
+- RCX: the local context from caller R8 (the clipping/transform context)
+- RDX: source light
+- R8: source's generated point/volume buffer at +0xE0
+- R9D: source volume count at +0xDC
+- stack argument: 0x0C
+
+0x1604440 transforms the source's volume points against the supplied clip transforms and combines SIMD sign masks across the clip-space components. It returns true when at least one tested point passes the combined clip constraints; false causes the caller to skip the source at 0x10BAE6E. This is a real visibility/frustum eligibility test. Its decision depends on clip transforms and volume points, not an explicit Euclidean camera-range constant.
+
+## Concrete size-distance predicates; why they are not proven hard light kills
+
+- 0x109A670 is called only when source +0x96 is nonzero and source flag bit 21 is set. It compares squared center distance from source +0x30/+0x34/+0x38 to the current view origin at view +0x30/+0x34/+0x38 against:
+  `(max(source+0x70,+0x74,+0x78) * source+0x4C * 0.25 + source+0xC4)^2`.
+  The 0.25 factor is the exact float at 0x2E6B2D4. It returns true when distance squared is greater than that bound. However, true routes the source to the secondary/direct list; false routes it to the score-ranked list. 0x10BB115..0x10BB16F appends the secondary list after the ranked entries into the same query pointer at +0x38 and stores its count at +0x40, while the ranked count is +0x44. 0x10B9DB0 iterates both counts. Therefore this threshold is not itself a final rejection. Semantic names for +0x96 and +0xC4 remain unknown.
+- 0x10BE940 computes a transformed source center and effective extent radius `max(source+0x70,+0x74,+0x78) * source+0x4C`. It calls 0x10B7330 with that center/radius and the current view context. 0x10B7330 checks:
+  `distanceSquared(center, view[+0x30,+0x34,+0x38]) < (radius * 1.15 + view+0x3F8)^2`.
+  The 1.15 multiplier is the exact float at 0x32D1D1C. On true, 0x10BE940 builds/converts an auxiliary volume through 0x15E6280/0x10B8CB0; on false, it copies the source's existing +0xE0/+0xDC volume metadata. Both paths keep the ordinary 0x170 light record and return normally. This is a volume-update broad-phase, not proof of dropping the surface light. The meaning of view +0x3F8 is not established here.
+- 0x15E6280 transforms the supplied points using the provided 4x4 transform, clips/expands volume geometry, and returns a generated point count. It contains no independent fixed camera-distance compare. Its generated count populates auxiliary record fields +0x13C/+0x140; this is separate from the +0x70 RGB and +0x7C fade scalar.
+
+## Remaining uncertainty
+
+Parent reconciliation: the ordinary RGB/specular FillLightLookup GPU-buffer bridge is already proven in work/surface-light-filllookup-bridge.txt and reflected shader offsets. The additional clip-volume consumer and any remaining runtime disappearance cause are unproven. Static evidence now distinguishes (a) category/hierarchy exclusions, (b) real frustum-volume rejection, (c) the 0.25 size-distance bucket classifier, (d) the 1.15 view-relative auxiliary-volume rebuild broad-phase, and (e) the previously traced center-distance/radius ranking. None yet supplies a proven general max world range for ordinary surface illumination. Determining whether the observed disappearance comes from an untraced consumer or view/frustum path requires downstream consumer tracing or runtime capture; no patch location is justified by this evidence.
+
+Evidence windows: `0x10BA710` at `0x10BAD40..0x10BAE75`, `0x10BB115..0x10BB16F`; `0x109A670`; `0x10BE940` at `0x10BE967..0x10BEA23` and `0x10BEB71..0x10BEC27`; `0x10B7330`; `0x1604440`; `0x15E6280`; callers `0x12BC15F..0x12BC169`.
+

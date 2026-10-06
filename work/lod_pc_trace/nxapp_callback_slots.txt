@@ -1,0 +1,4 @@
+indirect call hits: 0
+
+
+Bounded functions: 0

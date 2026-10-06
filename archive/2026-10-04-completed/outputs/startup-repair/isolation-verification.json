@@ -1,0 +1,10 @@
+{
+  "phase": "NoIntro disabled",
+  "changed_assets": [
+    "AED6101948AAFA54"
+  ],
+  "all_boot_movies_original": true,
+  "camera_config_still_modded": true,
+  "native_dll_unchanged": true,
+  "startup_test": "same configuration previously confirmed by user to reach the main menu; restored after failed short-intro test"
+}

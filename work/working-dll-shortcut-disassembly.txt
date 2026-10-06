@@ -1,0 +1,88 @@
+L-key-immediate sites: ['0x2402']
+00002fa2: mov eax,ebp
+00002fa4: test ebx,ebx
+00002fa6: setne cl
+00002fa9: test eax,eax
+00002fab: setne al
+00002fae: and al,cl
+00002fb0: and r12b,al
+00002fb3: movzx eax,r12b
+00002fb7: jmp short 0000000000002FBBh
+00002fb9: xor eax,eax
+00002fbb: add rsp,38h
+00002fbf: pop rbx
+00002fc0: pop rdi
+00002fc1: pop rsi
+00002fc2: pop r12
+00002fc4: pop r13
+00002fc6: pop r14
+00002fc8: pop r15
+00002fca: pop rbp
+00002fcb: ret
+00002fcc: nop dword [rax]
+00002fd0: push rbp
+00002fd1: push rsi
+00002fd2: push rdi
+00002fd3: push rbx
+00002fd4: sub rsp,28h
+00002fd8: lea rbp,[rsp+20h]
+00002fdd: mov rsi,rcx
+00002fe0: mov ecx,11h
+00002fe5: call qword [rel 2AE40h]
+00002feb: xor edi,edi
+00002fed: test ax,ax
+00002ff0: jns short 0000000000003013h
+00002ff2: mov ecx,12h
+00002ff7: call qword [rel 2AE40h]
+00002ffd: test ax,ax
+00003000: jns short 0000000000003013h
+00003002: mov ecx,4Ch
+00003007: call qword [rel 2AE40h]
+0000300d: movzx edi,ax
+00003010: shr edi,0Fh
+00003013: mov dword [rbp+4],0
+0000301a: call qword [rel 2AE48h]
+00003020: lea rdx,[rbp+4]
+00003024: mov rcx,rax
+00003027: call qword [rel 2AE50h]
+0000302d: test edi,edi
+0000302f: je short 00000000000030A5h
+00003031: cmp dword [rel 2F65Ch],0
+00003038: jne short 00000000000030A5h
+0000303a: cmp dword [rel 2F008h],0
+00003041: je short 00000000000030A5h
+00003043: mov eax,[rel 2F224h]
+00003049: test rsi,rsi
+0000304c: je short 00000000000030A5h
+0000304e: test eax,eax
+00003050: je short 00000000000030A5h
+00003052: mov eax,2FBF630h
+00003057: add rax,[rel 2F1E0h]
+0000305e: cmp [rsi],rax
+00003061: jne short 00000000000030A5h
+00003063: cmp dword [rsi+50h],4
+00003067: jne short 00000000000030A5h
+00003069: cmp byte [rsi+54h],1
+0000306d: jne short 00000000000030A5h
+0000306f: mov ebx,[rbp+4]
+00003072: call qword [rel 2AF38h]
+00003078: cmp ebx,eax
+0000307a: jne short 00000000000030A5h
+0000307c: xor eax,eax
+0000307e: cmp dword [rel 2F024h],0
+00003085: sete al
+00003088: mov [rel 2F024h],eax
+0000308e: lea rax,[rel 2665Ch]
+00003095: lea rcx,[rel 26691h]
+0000309c: cmove rcx,rax
+000030a0: call 0000000000001090h
+000030a5: mov [rel 2F65Ch],edi
+000030ab: mov rcx,rsi
+000030ae: call 00000000000030D0h
+000030b3: mov rcx,rsi
+000030b6: call qword [rel 2F648h]
+000030bc: mov rcx,rsi
+000030bf: call 00000000000030D0h
+000030c4: nop
+000030c5: add rsp,28h
+000030c9: pop rbx

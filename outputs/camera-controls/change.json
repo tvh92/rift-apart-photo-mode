@@ -1,0 +1,41 @@
+{
+  "target": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Ratchet & Clank - Rift Apart\\d\\config",
+  "source_sha256": "06ea0a8d8b53052bb46451c9cbc75e59c9078d0ed1b970b51161d857aa4dd23a",
+  "vanilla_backup": "C:\\Users\\Tim\\Documents\\Codex\\2026-10-04\\prompt-for-the-research-instance-research\\outputs\\photo-mode-tether-1000\\backup\\config",
+  "vanilla_sha256": "f659e13afe36c335d3ab54441898378164a51c2c469a1a368a51c8a005310bb3",
+  "presets": {
+    "1": {
+      "file": "C:\\Users\\Tim\\Documents\\Codex\\2026-10-04\\prompt-for-the-research-instance-research\\outputs\\camera-controls\\presets\\config.1x",
+      "sha256": "e079d9ac7f1afceef267f95563e013f90a9eeb4799a25522ddecc53aa3c7fb92",
+      "MoveSpeed": 2,
+      "RiseSpeed": 1,
+      "Acceleration": 1000,
+      "TetherDistance": 1000
+    },
+    "10": {
+      "file": "C:\\Users\\Tim\\Documents\\Codex\\2026-10-04\\prompt-for-the-research-instance-research\\outputs\\camera-controls\\presets\\config.10x",
+      "sha256": "80d12e156330d3a7ef788c1b5f972694bd7cf35f7ea40082fb3ba78d118c30fc",
+      "MoveSpeed": 20,
+      "RiseSpeed": 10,
+      "Acceleration": 10000,
+      "TetherDistance": 1000
+    },
+    "100": {
+      "file": "C:\\Users\\Tim\\Documents\\Codex\\2026-10-04\\prompt-for-the-research-instance-research\\outputs\\camera-controls\\presets\\config.100x",
+      "sha256": "e5caa5b2edfe6220bdc0989746c25bbf8f788f527035849708f010c061f37850",
+      "MoveSpeed": 200,
+      "RiseSpeed": 100,
+      "Acceleration": 65535,
+      "TetherDistance": 1000
+    },
+    "1000": {
+      "file": "C:\\Users\\Tim\\Documents\\Codex\\2026-10-04\\prompt-for-the-research-instance-research\\outputs\\camera-controls\\presets\\config.1000x",
+      "sha256": "1bc62e757428f57435b0baa48a1085e54c6f69a3b87a82c3d61d727f683e406e",
+      "MoveSpeed": 2000,
+      "RiseSpeed": 1000,
+      "Acceleration": 65535,
+      "TetherDistance": 1000
+    }
+  },
+  "installed_multiplier": "Vanilla"
+}

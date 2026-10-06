@@ -1,0 +1,36 @@
+# Focused LightSubmit runtime trace
+
+Build: workspace copy of `RiftApart.exe`, build 23987138. Read-only disassembly only. No source, install, save, or live memory was changed.
+
+## Query ranking and current-view origin
+
+The `LightSubmit` runtime label at string RVA `0x32D4DE8` is referenced by `0x10B9DB0` and `0x10BA710`. Frame/view routine `0x12BB640` calls `0x10BB680` to build or retrieve a `LightSubmitQuery` (allocation size `0x18A0`, label `0x32D4C80`), then calls `0x10BA710` at `0x12BC169` and `0x10B9DB0` at `0x12BC17C`.
+
+At `0x12BC169`, `rcx` is the frame/view object, `rdx` is the query, and `r8` points to a local context record. `0x10BA710` uses `[view+0x30..0x38]` as origin for ranking. The same caller accesses view scale fields at `+0x1D14/+0x1D18` (`0x12BCF85..0x12BCF98`). This ties prioritization to the current render-view object; the Photo-camera identity/lifetime is not proven here.
+
+`0x10BA710` derives each light center from a 3x3 transform at `light+0x00..0x28` plus translation at `+0x30/+0x34/+0x38`, forms effective radius `max(+0x70,+0x74,+0x78) * +0x4C`, computes Euclidean center distance from the view origin, and stores `effectiveRadius / distance` (`0x10BAEF0..0x10BB011`). Comparator `0x159A3B0` orders larger scores first. Entries carrying `FLT_MAX` are omitted during compaction (`0x10BAC35..0x10BAC5C`) before `0x10B9DB0` consumes the list. This is view-relative influence ranking; no standalone max-distance threshold was found in this query path.
+
+## Separate `LightSources` pass; not surface-light evidence
+
+The direct call to `0x10BEC60` is from `0x10BA710` at `0x10BB229`, not from `0x10BE180`. Pass registry `0x12206A0` maps pass ID 5 to name `LightSources` (string RVA `0x32F8C18`) and callback `0x10B41D0`. Its point/common path applies view-relative cutoff/fade using `light+0x120/+0x128` and queues a 0x40-byte record. This distinct effect pass is not evidence for culling ordinary surface lights. The full dump and exact instruction bytes are retained in the separate `10bec60` files.
+
+## Ordinary surface-light far/near fade
+
+`0x10B9DB0` builds per-light records via `0x10B95A0` and `0x10BE180`. The latter calls the ordinary fade helpers `0x1099200` and `0x1098F90` with the source light and current view; these are separate from the pass-5 `LightSources` path.
+
+`0x1098F90` is directly called by `0x10BE180` at `0x10BE261`. It computes center distance between the light transform and `[view+0x30..0x38]`, subtracts `max(light+0x70,+0x74,+0x78)*light+0x4C` to get front-of-bounds distance, and clamps that to zero. If source flag bit 18 is set, it fades across `[light+0xA4, light+0xA0]`; when `+0xA4<=0`, it uses `+0xA0` directly as the fade distance. If bit 19 is set, it computes center-to-camera distance and applies `clamp(distance*(light+0x9C)+(light+0x98),0,1)`.
+
+`0x1099200` uses flag bit 18 for the far fade and bit 19 for the near fade. For far fade, it linearly interpolates using distance input `xmm1`, start `light+0xA4`, and end `light+0xA0`, or uses the direct ratio against `+0xA0` when `+0xA4<=0`. For near fade it computes the affine factor `centerDistance*(light+0x9C)+(light+0x98)`, clamps it to `[0,1]`, and multiplies all three source color channels `[+0xA8..+0xB0]`. It writes adjusted RGB to a caller-provided pointer; `0x10BE180` passes its record `+0x70`, with the scalar output at `+0x7C`. This proves fade-adjusted RGB is retained in a view-local native light record. The final copy into the 128-byte shader `g_Lights` layout has not been traced, so do not claim that specific GPU-buffer link.
+
+## DDL mapping status
+
+The runtime behavior above is proven by instruction formulas and flag branches. A direct copy from reflected `LightDef` members to built-record offsets `+0xA0/+0xA4/+0x98/+0x9C` has **not** been found. It is plausible that `+0xA0` is the `FadeOutDist` endpoint, `+0xA4` its fade-start threshold, and `+0x98/+0x9C` are affine coefficients derived from `NearFadeClipDist` and `NearFadeStartDist`; these mappings remain inference. The version-11 readers `0x0F18A20` and `0x13C5960` load generic resource/zone sections and do not expose a typed `LightDef`-to-runtime field copy.
+
+## Evidence files and exact windows
+
+- `work/pc-lod-continuation-luna-lightsubmit-registration-caller.txt`: frame routine `0x12BB640`; callsites `0x12BC15F..0x12BC17C`.
+- `work/pc-lod-continuation-luna-lightsubmit-registration-dumps.txt`: `0x10BB680` and `0x10BA710`.
+- `work/surface-light-distance-fade-main.txt`: chained disassembly for `0x1099200`, `0x1098F90`, and `0x10B9750`.
+- `work/pc-lod-continuation-luna-ordinary-light-be940.txt`: chained `0x10BE940` dump.
+- `work/pc-lod-continuation-luna-builtlight-loader-f18a20.txt` and `...-13c5960.txt`: candidate version-11 readers; neither contains the required typed field mapping.
+- `work/pc-lod-continuation-luna-lightsubmit-10bec60-full.txt` and `...-10bec60-bytes.txt`: separate pass-5 `LightSources` evidence only.

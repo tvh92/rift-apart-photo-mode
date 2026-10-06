@@ -1,0 +1,15 @@
+{
+  "package": "PhotoMode-10x-Tether1000.stage",
+  "package_sha256": "82f4434a12d85ae48eb30114b22a6d63332c4ed42e743c415133fb2ec0557e28",
+  "asset_entry": "0/AED6101948AAFA54",
+  "asset_size": 263280,
+  "asset_sha256": "7e1538b0742262daec41965bdce20d4a0252502a2eded61c87d97fe56373d7c5",
+  "verified_changes": {
+    "TetherDistance": 1000,
+    "MoveSpeed": 20,
+    "RiseSpeed": 10,
+    "Acceleration": 10000
+  },
+  "installed_via_overstrike": true,
+  "preserves_original_toc_header": true
+}

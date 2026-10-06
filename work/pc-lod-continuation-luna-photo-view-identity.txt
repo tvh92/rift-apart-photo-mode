@@ -1,0 +1,32 @@
+Photo render-object versus geometry LOD view (read-only; 2026-10-04)
+
+Question
+--------
+Does Photo Mode's object written at +0x1D18 alias the per-view object consumed by model geometry LOD callers, establishing a safe Photo-only scope?
+
+Evidence: Photo construction and update
+---------------------------------------
+At 0x1A82596, Photo update calls 0x1A81300 with RCX=RDI (Photo owner), then tail-jumps at 0x1A825E1 to 0x1A82650 with the same owner in RCX.
+
+0x1A81300:
+- 0x1A8130F: RBX = [0x6739B10].
+- 0x1A81466-0x1A81479: passes descriptor at RSP+0x20 and registry/global [0x6739A10] to 0x1239AF0.
+- 0x1239AF0 allocates 0x16DC0 bytes and initializes an object from the passed descriptor via 0x1203840.
+- 0x1A8147E: stores returned object at [PhotoOwner+0x58].
+- 0x1A814AD-0x1A814BC: marks/setup-copies it using 0x1203200 and 0x1203C00. 0x1203C00 at 0x1203C00 is a one-instruction setter `mov [rcx+0x16D88],rdx`; here its arguments are target object and RBX, which is the global object [0x6739B10].
+- 0x1A814C1-0x1A814DC: reads source [RBX+0x1D18], clamps [0,1], and copies to [target+0x1D18].
+
+In the large update method, 0x1A82650 preserves RDI as Photo owner. At 0x1A82A5B it reloads RAX=[RDI+0x58]; at 0x1A82AD7-0x1A82B00 it clamps [R14+0x1D18] to [0,1] and writes [RAX+0x1D18]. The target is therefore definitively PhotoOwner+0x58, the object created by the Photo/effect-resource path above.
+
+Geometry LOD object evidence
+----------------------------
+- 0x111F7BC reads +0x1D18 and +0x1D14 from RAX, multiplies them, applies the product to model bounds, and calls tier selector 0x111A700. This selects geometry tiers 0..4 (not 0..5).
+- 0x112490D computes RAX=[R14+8], then reads [RAX+0x1D18] and [RAX+0x1D14] before its model/geometry LOD calculations.
+- Existing `pc-lod-continuation-luna-view-field-trace.txt` found the only direct float writer to +0x1D14 at 0x1237399 in 0x12372F0; that function derives the field from camera/projection inputs. Its direct caller found so far is 0x12BB710. The Photo allocation/copy path above does not call 0x12372F0 and does not initialize +0x1D14.
+- Photo exit/entry reads/writes `[0x6739B10]+0x1DD8/+0x1DE0`, not a pointer to PhotoOwner+0x58 or the LOD view object.
+
+Conclusion
+----------
+The Photo object written at +0x1D18 is an allocated Photo render/effect object and references the global Photo/effect object at +0x16D88. Static evidence does not show it is identical to the per-view pointer read by either geometry LOD caller, nor show a path from this Photo update into those callers. It also lacks the known +0x1D14 camera/projection initialization in the traced creation path. Do not treat this as a proven Photo-only geometry LOD control point. The pointer alias and lifecycle scope remain unresolved; no game/source/install files were changed.
+
+Related established tier trace: `pc-lod-continuation-luna-geometry.txt`; prior writer/lifecycle trace: `pc-lod-continuation-luna-view-field-trace.txt`.

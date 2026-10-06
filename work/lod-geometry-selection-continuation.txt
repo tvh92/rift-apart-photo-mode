@@ -1,0 +1,113 @@
+FUNCTION 0x111ad50 BOUNDS ('0x111ad50', '0x111ae01')
+0111ad50 push rbx
+0111ad52 sub rsp,70h
+0111ad56 cmp byte [rel 5339162h],0
+0111ad5d xorps xmm0,xmm0
+0111ad60 movaps [rsp+60h],xmm6
+0111ad65 movss xmm6,[rel 5339184h]
+0111ad6d movaps [rsp+50h],xmm7
+0111ad72 movss xmm7,[rel 5339164h]
+0111ad7a movaps [rsp+40h],xmm8
+0111ad80 movaps xmm8,xmm1
+0111ad84 movaps [rsp+30h],xmm9
+0111ad8a movaps xmm9,xmm2
+0111ad8e movaps [rsp+20h],xmm10
+0111ad94 maxss xmm9,xmm0
+0111ad99 movaps xmm10,xmm3
+0111ad9d movzx ebx,cl
+0111ada0 je short 000000000111ADBBh
+0111ada2 comiss xmm6,xmm7
+0111ada5 jae short 000000000111ADBBh
+0111ada7 movaps xmm0,xmm1
+0111adaa call 000000000111A500h
+0111adaf subss xmm7,xmm6
+0111adb3 mulss xmm0,xmm7
+0111adb7 addss xmm6,xmm0
+0111adbb movaps xmm7,[rsp+50h]
+0111adc0 xor edx,edx
+0111adc2 mulss xmm8,xmm10
+0111adc7 mov ecx,edx
+0111adc9 mov eax,ebx
+0111adcb movaps xmm10,[rsp+20h]
+0111add1 mulss xmm8,xmm6
+0111add6 movaps xmm6,[rsp+60h]
+0111addb comiss xmm9,xmm8
+0111addf movaps xmm8,[rsp+40h]
+0111ade5 movaps xmm9,[rsp+30h]
+0111adeb setae cl
+0111adee add ecx,[rsp+0A0h]
+0111adf5 cmp ecx,1
+0111adf8 cmovl eax,edx
+0111adfb add rsp,70h
+0111adff pop rbx
+0111ae00 ret
+FUNCTION 0x111a500 BOUNDS ('0x111a500', '0x111a580')
+0111a500 cmp byte [rel 5339162h],0
+0111a507 movaps xmm2,xmm0
+0111a50a je short 000000000111A566h
+0111a50c movss xmm0,[rel 5339170h]
+0111a514 comiss xmm2,xmm0
+0111a517 jae short 000000000111A566h
+0111a519 movss xmm1,[rel 533916Ch]
+0111a521 comiss xmm2,xmm1
+0111a524 ja short 000000000111A52Fh
+0111a526 movss xmm0,[rel 4A4A198h]
+0111a52e ret
+0111a52f subss xmm0,xmm1
+0111a533 subss xmm2,xmm1
+0111a537 divss xmm2,xmm0
+0111a53b movss xmm0,[rel 2E6D030h]
+0111a543 movaps xmm1,xmm2
+0111a546 addss xmm1,xmm2
+0111a54a mulss xmm2,xmm2
+0111a54e subss xmm0,xmm1
+0111a552 xorps xmm1,xmm1
+0111a555 mulss xmm0,xmm2
+0111a559 maxss xmm0,xmm1
+0111a55d minss xmm0,[rel 4A4A198h]
+0111a565 ret
+0111a566 xorps xmm0,xmm0
+0111a569 ret
+0111a56a int3
+0111a56b int3
+0111a56c int3
+0111a56d int3
+0111a56e int3
+0111a56f int3
+0111a570 movss xmm1,[rdx+320h]
+0111a578 movss xmm0,[rdx+300h]
+FUNCTION 0x111eb10 BOUNDS ('0x111eb10', '0x111ebb0')
+0111eb10 sub rsp,68h
+0111eb14 movaps [rsp+50h],xmm6
+0111eb19 movaps [rsp+40h],xmm7
+0111eb1e movaps xmm7,xmm0
+0111eb21 movaps [rsp+30h],xmm8
+0111eb27 movaps [rsp+20h],xmm9
+0111eb2d movaps xmm9,xmm1
+0111eb31 test r9b,r9b
+0111eb34 je short 000000000111EB49h
+0111eb36 movss xmm6,[rel 5339188h]
+0111eb3e movss xmm8,[rel 5339168h]
+0111eb47 jmp short 000000000111EB5Ah
+0111eb49 movss xmm6,[rel 5339184h]
+0111eb51 movss xmm8,[rel 5339164h]
+0111eb5a test r8b,r8b
+0111eb5d je short 000000000111EB67h
+0111eb5f movss xmm6,[rel 4A4A198h]
+0111eb67 cmp byte [rel 5339162h],0
+0111eb6e je short 000000000111EB89h
+0111eb70 comiss xmm6,xmm8
+0111eb74 jae short 000000000111EB89h
+0111eb76 call 000000000111A500h
+0111eb7b subss xmm8,xmm6
+0111eb80 mulss xmm0,xmm8
+0111eb85 addss xmm6,xmm0
+0111eb89 movaps xmm8,[rsp+30h]
+0111eb8f mulss xmm7,xmm9
+0111eb94 movaps xmm9,[rsp+20h]
+0111eb9a mulss xmm7,xmm6
+0111eb9e movaps xmm6,[rsp+50h]
+0111eba3 movaps xmm0,xmm7
+0111eba6 movaps xmm7,[rsp+40h]
+0111ebab add rsp,68h
+0111ebaf ret

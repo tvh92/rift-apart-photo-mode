@@ -1,0 +1,21 @@
+# Review: reversible volumetric fog far-range test and callback scope
+
+Read-only review of the proposed render-block test; no game process or installation changes were made.
+
+## Is `+0x174 = 512` a technically meaningful test?
+
+Yes as a temporary A/B hypothesis, with the renderer field name kept scoped to its proven job: volumetric grid Z endpoint/extent. The native path from the parent trace establishes source offset `+0x450` is copied to render block `+0x174`; `FB5EF0` reads render block `+0x170` and `+0x174`, clamps the first endpoint to at least the second and a small minimum, and builds logarithmic Z-grid parameters; `FB6890` writes `1 / max(+0x174 - +0x170, epsilon)` to reflected shader member `g_VFog.m_InvZExtent` at CB `+0x150`. Setting `+0x174` to 512 while retaining `+0x170` at its authored value would therefore broaden volumetric Z coverage and directly test whether the current `64` endpoint is the visual cutoff.
+
+The numeric value `512` is not sourced from the scene asset and is an 8x experiment, not a neutral default. Treat it as a reversible diagnostic only. It expands the fog interval while the grid's slice count stays selected from the existing volumetric grid/resolution configuration; consequently each slice covers a larger depth interval and Z sampling can become coarser. Other likely quality changes include a farther-reaching low-opacity haze, altered integrated scattering/noise placement, changed depth contrast, and a longer range over which an opacity/color gradient contributes. It will not extend geometry draw distance or restore map textures. For a cleaner test, compare 128, 256, and 512 in increasing steps and restore the captured authored value afterward; if the broad white bands brighten or spread, reject the candidate.
+
+## Can the existing callback slot safely provide Photo-only scope?
+
+Not by replacing `65A3080` directly. It is a single global function pointer written through `11D4A80` (`mov [65A3080], RCX; ret`). Static callsites show one lifecycle path registers `&566440` at `565BA4` and clears the slot at `565E67`; another object path registers `&9161A0` at `9148C9`. The registration lifecycle does not save/restore a previous pointer, so overwriting the slot can suppress one of these owners, and an owner’s later null registration can erase a newly installed callback. The `11D3500` call is indirect and unconditional for every invocation where the slot is non-null (`11D43E9..11D43FE`), so the slot itself does not imply Photo-only execution.
+
+The existing `566440` callback has a context-pointer equality check (`RDX == [6739B08]`) before it conditionally clears block fields `+0x108`, `+0x13C`, and `+0x164`; a further feature flag gates a call to `8E4E00`. This is a filter for one shared renderer context, not a demonstrated Photo-mode identity check. The render setup selects an atmosphere using view index `[renderer+0xF90]`, but that index is not passed to the callback. The upstream `12BB640` routine has three static callers (`108B571`, `10DF884`, and `1204AF7`), so its render preparation is used from multiple contexts. I found no static proof that replacing the callback slot would touch only Photo Mode.
+
+A hook on the existing per-render callsite could preserve callback ownership by reading and invoking the current pointer exactly once, then adjusting `+0x174` only when a separately verified Photo-view predicate holds. However, the predicate still must be proven against the actual view index/Photo camera state, and the hook must retain the original callback even when another subsystem changes the slot. Do not use only `[6739B08]` as that predicate. Without a trustworthy Photo-view discriminator, any change at this hook risks altering the main camera's volumetric fog every frame.
+
+## Recommendation
+
+The proposed `64 -> 512` edit is justified as a temporary visual experiment because it changes the exact volumetric Z interval that gates the far coverage. It is not justified as an installed default yet: 512 is arbitrary, it can degrade Z-grid precision/appearance, and the currently inspected native callback slot lacks a proven Photo-only guard and has competing lifecycle owners. Prefer a per-render callsite experiment with a verified Photo-mode view guard and automatic restoration; if that guard cannot be demonstrated, do not install this override.
