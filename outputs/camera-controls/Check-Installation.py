@@ -92,7 +92,8 @@ def audit():
         '228620169d5741cd57d544047d351e7bd3c7df541778bc78c17ea0655bcb6f2a': 'user-confirmed-photo-fog-entry-snapshot',
         'fa3ced0a22083cfe0e9ee68c96e5bdda2c4d13c46f34346c79848693873356b6': 'tested-photo-light-colour-fade-partial-improvement',
         '77051506a589b1051556505b309c32eb7a4a69e93df93d0a29d85b74b045a2d0': 'photo-detail-status-with-tested-fog-lighting-candidate',
-        '16dcd44057c3114b123e25974b9b563afc487650686d3985784614caba5f7cbd': 'photo-diffuse-specular-type4-fade-candidate'}
+        '16dcd44057c3114b123e25974b9b563afc487650686d3985784614caba5f7cbd': 'photo-diffuse-specular-type4-fade-candidate',
+        'c4be06b9e069829ba3c173ab3545353f38de04d6a98c5f58533af42ae9efbe66': 'photo-light-prefilter-far-cutoff-candidate'}
     assert native_hash in native_variants, 'Unrecognized native DLL payload'
     assert digest(GAME/'d/config') == 'f659e13afe36c335d3ab54441898378164a51c2c469a1a368a51c8a005310bb3'
     movie_rows = {

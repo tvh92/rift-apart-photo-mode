@@ -1,0 +1,18 @@
+﻿Cutoff aligned window 10B9C00: 0f2f83a00000000f878c00000041c1e8
+Native rows: [('0x389950', '0x3899ed', '0x4c570cc'), ('0x10b9750', '0x10b986a', '0x4dfaa18'), ('0x10b9a50', '0x10b9a60', '0x4dfad4c'), ('0x10b9a60', '0x10b9aed', '0x4dfad58'), ('0x10b9aed', '0x10b9d48', '0x4dfad78'), ('0x10b9d48', '0x10b9d75', '0x4dfad9c'), ('0x10b9d75', '0x10b9da3', '0x4dfadac')]
+Prepared v3 regression probes: PhotoLightSpecularProbeV3, PhotoType4ProbeV3, PhotoFogSpecularProbeV3, PhotoSpecularLifecycleProbeV3, BehaviorSpecularProbeV3, SpecularStatusBitmapProbeV3, SpecularStatusThreadProbeV3
+Bridge lamp example (A0=150, front 155.8): Ctrl off kept=0, Photo/Ctrl kept=1.
+PhotoCutoffProbe passed: 64 native filter cases x5 gates, RAX/source preservation, exact site/call guards, ready/Ctrl/auxiliary-view gates, 19 relay unwind starts, adjacent bytes, atomic restore/reinstall.
+Ordinary specular example at85: prior RGB-only override specular=0/type=1; new specular=0.7/type=0.
+PhotoLightProbe passed: real native helper/relay, 1920 arithmetic cases, source immutable, Ctrl/ready/primary/caller gates, all 29 relay instruction starts unwind, atomic restore.
+Type4 specular example at85: native=0.5; retained=1.
+PhotoType4Probe passed: 24 native fade cases, near fade/source preservation, exact call/prolog guards, ready/Ctrl/auxiliary gates, adjacent-byte preservation, atomic restore.
+PhotoFogProbe passed: real relay ABI, exact guards, entry cache, toggle, auxiliary views, exit/reentry, untouched texture tail, callsite restoration; calls=12
+PASS: dormant startup UI, one active-Photo worker, ON/OFF/Ctrl rising-edge/focus/held guards, hide on exit, fog lifecycle and metadata guards.
+PASS: owner filtering, normal/Shift/release speeds, baseline restore, replacement camera identity, and hotkey restoration of collision plus both geometry selectors.
+PASS: native ON/OFF bitmap at 96/144/192 DPI, premultiplied transparency, monotonic timed fade, GDI resource cleanup, click-through/no-activation styles, hidden layered-window render, coalesced hide requests.
+Photo status indicator ready after active Photo Mode entry.
+Photo status indicator ready after active Photo Mode entry.
+PASS: notifications stay dormant until validated lazy start; duplicate starts rejected; ON/OFF refresh, timer fade, hide, teardown and restart; test windows remained hidden.
+{"hid_guid_matches_system": true, "all_exports_resolved": 44, "non_game_hook_guard": "refused correctly"}
+
