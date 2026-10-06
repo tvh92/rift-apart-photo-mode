@@ -1,7 +1,7 @@
 import struct
 import unittest
 from capture_photo_lights_readonly import (sample, queue_header, decode_record, registered_light_queries,
-    query_summary, pointer, PRIMARY, PHOTO, QUEUE, ARCHIVE)
+    query_summary, pointer, decode_planes, PRIMARY, PHOTO, QUEUE, ARCHIVE)
 
 
 class CaptureTest(unittest.TestCase):
@@ -95,6 +95,8 @@ class CaptureTest(unittest.TestCase):
         struct.pack_into('<Q', slot, 0x78, self.base + 0x12B8740)
         struct.pack_into('<Q', slot, 0x38, self.base + 0x674EC10)
         struct.pack_into('<Q', slot, 0x68, output)
+        struct.pack_into('<Q', slot, 0x48, 0x200000)
+        self.mem[0x200000] = bytes(0x100)
         struct.pack_into('<Q', slot, 0x70, 0xA0000 + (0x10 if kind == 'fixed' else 0x20))
         slots = bytearray(self.mem.get(0xF0000, b''))
         slots.extend(bytes(max(0, (index + 1) * 0xC0 - len(slots))))
@@ -310,6 +312,23 @@ class CaptureTest(unittest.TestCase):
     def test_pointer_bounds(self):
         for value in (0, 1234, 0x20001, 0x800000000000):
             with self.assertRaises(RuntimeError): pointer(value)
+
+    def test_plane_decoding(self):
+        raw = bytearray(0x100)
+        # Plane 5: block 1, lane 1 -> nx +0x44, ny +0x54, nz +0x64, d +0x74.
+        for off, value in ((0x44, 1), (0x54, 2), (0x64, 3), (0x74, -4)):
+            struct.pack_into('<f', raw, off, value)
+        planes = decode_planes(bytes(raw))
+        self.assertEqual(len(planes), 16)
+        self.assertEqual(planes[5], [1, 2, 3, -4])
+        self.assertEqual(planes[4], [0, 0, 0, 0])
+        with self.assertRaises(RuntimeError): decode_planes(bytes(0x40))
+
+    def test_typed_query_records_shape(self):
+        self.request_slot()
+        queries, _ = registered_light_queries(self.read, self.base, self.view)
+        self.assertEqual(queries[0]['requests'][0]['shape_48'], hex(0x200000))
+        self.assertEqual(len(queries[0]['requests'][0]['planes']), 16)
 
     def test_bad_record_and_nonfinite(self):
         with self.assertRaises(RuntimeError): decode_record(bytes(128))

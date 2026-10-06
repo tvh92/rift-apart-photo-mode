@@ -141,6 +141,34 @@ def request_output(read, output, count, known):
             'sources': sources}
 
 
+def decode_planes(raw):
+    """16-plane SoA shape (0x1600E30/0x1603D40): block i>>2 at +0x40*b,
+    nx/ny/nz/d at +0/+0x10/+0x20/+0x30, lane i&3. Inside when n.p + d >= 0."""
+    if len(raw) != 0x100:
+        raise RuntimeError('Incomplete plane shape')
+    planes = []
+    for i in range(16):
+        block, lane = (i >> 2) * 0x40, (i & 3) * 4
+        planes.append(floats(raw, block + lane, 1) + floats(raw, block + 0x10 + lane, 1) +
+                      floats(raw, block + 0x20 + lane, 1) + floats(raw, block + 0x30 + lane, 1))
+    return planes
+
+
+def view_clip(read, view):
+    """Near/far fields used by 0x12121B0 and the six view planes (+2E0)."""
+    raw = read(view + 0x2E0, 0x60)
+    clip = read(view + 0x3F8, 0x40)
+    near, far = struct.unpack_from('<2f', clip, 0)
+    used, requested = struct.unpack_from('<2f', clip, 0x38)
+    result = {'near_3F8': near, 'projection_far_3FC': far, 'far_430': used, 'requested_434': requested,
+              'planes_2E0': [floats(raw, i * 16, 4) for i in range(6)]}
+    holder = struct.unpack('<Q', read(view + 0x1BF0, 8))[0]
+    result['obj_1BF0'] = hex(holder)
+    if holder:
+        result['obj_1BF0_170_174'] = floats(read(pointer(holder) + 0x170, 8), 0, 2)
+    return result
+
+
 def registry_stable(header, old_header, generation, old_generation):
     """Backing/capacity/generation fixed; count may only grow (lock inc 107B90E).
 
@@ -246,7 +274,10 @@ def registered_light_queries(read, base, view, diagnostics=None):
                 known.update(out['sources'])
                 if read(request['slot_address'], 0xC0) != request['slot']:
                     raise RuntimeError('Light query request changed during sample')
+                shape_ptr = struct.unpack_from('<Q', request['slot'], 0x48)[0]
+                shape = decode_planes(read(pointer(shape_ptr), 0x100))
                 result['requests'].append({
+                    'shape_48': hex(shape_ptr), 'planes': shape,
                     'kind': request['kind'], 'registry_rva': request['registry_rva'],
                     'slot': hex(request['slot_address']), 'key': hex(request['key']),
                     'worker_output': out})
@@ -315,12 +346,16 @@ def sample(read, base):
             read(base + PHOTO, 0x58) != photo):
         raise RuntimeError('Photo/view/queue ownership changed during sample')
     # Separate snapshot: queue and queries need not come from the same frame.
+    try:
+        clip = view_clip(read, view)
+    except (OSError, RuntimeError) as error:
+        clip = {'error': str(error)}
     request_diagnostics = []
     queries, request_errors = registered_light_queries(read, base, view, request_diagnostics)
     if (read(base + PRIMARY, 8) != view_word or read(view + 0x30, 12) != position or
             read(base + PHOTO, 0x58) != photo):
         raise RuntimeError('Photo/view ownership changed during query snapshot')
-    return {'view': hex(view), 'position_30': floats(position, 0, 3),
+    return {'view': hex(view), 'position_30': floats(position, 0, 3), 'view_clip': clip,
             'queue_identity': identity, 'segments': len(segments),
             'pass67_record_count': len(records), 'records': records,
             'queries': queries, 'errors': errors,
