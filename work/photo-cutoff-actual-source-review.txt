@@ -1,0 +1,68 @@
+Independent read-only review: outputs/camera-native-lighting-v3/PhotoCutoff.h + PhotoLOD.h diff (v2 -> v3)
+Date: 2026-10-06. Static disassembly of exact build (RiftApart.exe 51299faca6...6d82). No game run, no install, no project edits except this file.
+
+VERDICT: No blockers found. Several non-blocking notes below.
+
+PhotoLOD.h diff: only adds #include "PhotoCutoff.h", the teardown log of photo_cutoff_hits, and the prepare_photo_cutoff() call/log after the specular hook. Ordering and failure handling match the other optional hooks (a failed cutoff install only logs; geometry/fog/light remain).
+
+1. Replay semantics (0x10B9A50 dump)
+- 0x10B9BEE mov rax,[rsp+38h]; 0x10B9BF3 je 0x10B9C0D; 0x10B9BF5 mov rdx,rax; 0x10B9BF8 mov rcx,rbx; 0x10B9BFB call 0x10B9750; 0x10B9C00 comiss xmm0,[rbx+A0h]; 0x10B9C07 ja 0x10B9C99; 0x10B9C0D shr r8d,13h; 0x10B9C11 test r8b,1.
+- The only way to reach 0x10B9C00 is the return from the call at 0x10B9BFB.
+- 0x10B9750 (full dump, 0x10B9750..0x10B9869) writes only xmm0-7, [rsp],[rsp+10h] in its own 0x28 frame, and rsp. It never writes rax, rdx or r8. It never touches the caller's [rsp+38h], which is the callee's entry rsp+0x40, beyond its shadow space.
+- So at 0x10B9C00, rax == [rsp+38h] on every path. The relay's mov rax,[rsp+38h] is value-identical. The native code relies on this too (0x10B9C1B mov rdx,rax; r8d used at 0x10B9C0D after the call).
+- Keep path: native "ja not taken" leaves xmm0, rax, rdx and r8 unchanged. Relay is identical except flags.
+- Flags at 0x10B9C0D: SHR imm 13h writes CF/ZF/SF/PF, then TEST r8b,1 rewrites all flags before any jcc. Dead.
+- Flags at 0x10B9C99: the replay path's flags come from the original comiss, so they are identical anyway. Natively, inc edi / add rsi,8 overwrite them.
+- NaN/unordered comiss: ja is not taken, so the light is kept, same as native.
+- Branch targets in 0x10B9C01..0x10B9C0C: none.
+  - All intra-function branch targets were enumerated: 10B9B30/50/62/6A/70/90, 10B9BC6/BDD, 10B9C0D/41/69/72/8E/99/9E, 10B9CBE/CF8, 10B9D48/97.
+  - work/branch-refs.bin and rip-refs.bin have no reference into 0x10B9C01..0x10B9C0C.
+  - The only external refs are rip-ref 0x10BB643 -> 0x10B9A50 and the branch 0x12BBE81 -> 0x10BB270.
+
+2. View identity
+- Prologue: [rsp+38h] = [rcx+48h]+30h (0x10B9A92..0x10B9AA1).
+- 0x10BB270 builds the 0x48-byte argument block at rsp+0B0 with fields r15, rbp, rbx, r14, ... (0x10BB5BA..0x10BB611). It submits the job via 0x107B4B0 with fn 0x10B9A50 (0x10BB643).
+- The job function reads ctx+30 = r15 (source pointer array, rsi), ctx+38 = rbp (request: [+8] output, lock xadd [+10] count, matching 0x10BB2F8/2FC), ctx+40 = rbx (occlusion ctx, r13), ctx+48 = r14. This confirms the arg block is at ctx+30 and ctx+48 = r14 = rcx of 0x10BB270.
+- The caller 0x12BB640 passes rdi = its own rcx, the view object (+1FE8/+1FF0/+1BD0 view fields), at 0x12BBE7E.
+- Comparing [game+6739B10]+30 with [rsp+38h] is therefore exactly "job view == persistent primary view". This is the same identity PhotoLight.h and the fog wrapper use. It is meaningful.
+- A null global gives 0x30, which cannot match a real view+30.
+
+3. Thread safety
+- The exchange is an aligned 8-byte CMPXCHG8 (0x10B9C00 is 8-aligned, within one cache line), done once at install. All other threads are suspended.
+- Possible interrupted instruction boundaries in the window are 0x10B9C00 and 0x10B9C07. Both lie in the refused [site, site+9) range, which also covers 0x10B9C08.
+- A thread suspended inside 0x10B9750 returns to 0x10B9C00 and executes the new JMP, which is fine. RIP 0x10B9C0D is past the window, also fine.
+- Unused sites[1].site=NULL gives the harmless range [0,9).
+- Residual risk (same as the already-installed geometry/light/specular hooks): a thread created after the Toolhelp snapshot is not suspended. If it sat at exactly 0x10B9C07 during the swap, it would decode NOP + "87 8C ..." garbage. Probability is very low and was accepted before. Not new.
+
+4. Unwind
+- Identical pattern to PhotoLight.h.
+  - A CHAININFO v1 (0x21, 0 codes) chains to a copy of the native fragment entry 0x10B9AED..0x10B9D48. That entry is itself 0x21 and chains to the root 0x10B9A50 (fixture rows confirm).
+  - The relay makes no rsp/nonvolatile changes and no calls.
+  - Chain at page+256 (16 bytes), table at page+288; no overlap with the 112-byte code.
+- The relay exits with E9 rel32 (offset 84, offset 107) rather than PhotoLight's register jmp.
+  - The Windows epilog heuristic treats a jmp rel32 outside the function as an epilog unless RtlpSameFunction resolves the target to the same primary function.
+  - Here the target 0x10B9C0D resolves to fragment 0x10B9AED, whose primary is 0x10B9A50, which is also the relay's primary.
+  - The probe's unwind_matches covers all 19 instruction starts, including offsets 84 and 107, and passes on this Windows 10 19045. It would differ if the starts were misdetected as epilogs.
+  - Non-blocking. Optional hardening: use `mov r11,imm64; jmp r11` (as GeometryLOD does), but only if R11 is proven dead. Not required.
+
+5. Emission and guards
+- Relay byte count: 19+19+28+13+5+5 (keep) + 5+7+6+5 (replay) = 112. Matches the probe's check.
+- The rel32 math (target - (disp+4)), the three replay_jumps patched to `replay`, the site JMP (page - (site+5)) and the range checks are all correct.
+- The view-check bytes decode correctly: 48 8B 00 / 48 83 C0 30 / 48 3B 44 24 38 = mov rax,[rax]; add rax,30h; cmp rax,[rsp+38h]. F0 FF 00 = lock inc dword [rax].
+- The guard arrays match the real bytes. Live dump and log window: 0f2f83a0000000 0f878c000000 41c1e8. before[18] at 0x10B9BEE: 488b442438 7418 488bd0 488bcb e850fbffff (je -> 0x10B9C0D, call -> 0x10B9750, both verified).
+- Failure cleanup only frees the page when the site was never changed. Correct.
+- The probe genuinely runs the real window 0x10B9BDD..0x10B9C41 plus the real 0x10B9750 and 0x389950, with real unwind rows.
+  - It checks 64 cases x 5 gates (ready, Ctrl, other view), RAX preservation, record immutability, the counter, both guard refusals, adjacent bytes, unwind, restore and reinstall.
+  - Log: PASS.
+  - Not exercised: the concurrent-thread pause/RIP refusal, and the 0x10B9C41 continuation (occlusion/colour/type steps). The latter is unchanged native code.
+
+6. Semantic and downstream notes (non-blocking)
+- Output capacity: 0x10BB2E2 allocates ([req+20]+[req+10])*8. The per-batch local list [rsp+60h] holds 16 entries, and ebp is at most 16 (cmovg at 0x10B9B3A). Keeping more lights cannot overflow either.
+- The 0x200 cap at 0x10BAC78 only gates appending secondaries.
+  - If the retained primary count reaches 512, secondaries are silently not merged (cmp eax,200h / jge 0x10BACE4).
+  - The dedup scan is O(primary) per secondary, so CPU cost grows.
+  - Watch the counter and the log for scenes with many far lights.
+- The 0x14 (20) cap at 0x10BB573 belongs to the alternate non-job path, used when byte [0x533953F]!=0. That path bypasses 0x10B9A50 entirely, so the hook has no effect there.
+- Kept far lights still pass the step-6 near fade, the colour/type test and the occlusion test (0x118CDC0).
+- Any GPU or cluster per-bin limits further downstream remain untraced. More lights could displace others after the 0x10BA95D sort.
+- The relay runs for every bit-18 light in every view and frame, including outside Photo. Cost is a few loads and compares when the gates fail.

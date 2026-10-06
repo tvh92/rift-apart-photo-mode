@@ -15,7 +15,7 @@ import json
 from pathlib import Path
 import struct
 from capture_live_atmosphere import Module, EXE, EXPECTED
-from capture_photo_lights_readonly import DLL_HASH, pointer
+from capture_photo_lights_readonly import DLL_HASHES, pointer
 
 MGR = 0x674EC10
 MAX_CELLS = 1 << 16
@@ -85,7 +85,7 @@ def main():
     args = parser.parse_args()
     if hashlib.sha256(EXE.read_bytes()).hexdigest() != EXPECTED:
         raise SystemExit('Unsupported executable')
-    if hashlib.sha256(EXE.with_name('hid.dll').read_bytes()).hexdigest() != DLL_HASH:
+    if hashlib.sha256(EXE.with_name('hid.dll').read_bytes()).hexdigest() not in DLL_HASHES:
         raise SystemExit('Unexpected mod DLL')
     k = C.WinDLL('kernel32', use_last_error=True)
     k.OpenProcess.argtypes, k.OpenProcess.restype = [W.DWORD, W.BOOL, W.DWORD], W.HANDLE

@@ -17,7 +17,9 @@ import struct
 import time
 from capture_live_atmosphere import Module, EXE, EXPECTED, ROOT
 
-DLL_HASH = '16dcd44057c3114b123e25974b9b563afc487650686d3985784614caba5f7cbd'
+DLL_HASHES = ('16dcd44057c3114b123e25974b9b563afc487650686d3985784614caba5f7cbd',  # lighting-v2
+              'c4be06b9e069829ba3c173ab3545353f38de04d6a98c5f58533af42ae9efbe66')  # lighting-v3
+DLL_HASH = DLL_HASHES[-1]
 PRIMARY = 0x6739B10
 PHOTO = 0x6138200
 QUEUE = 0x1430
@@ -369,7 +371,7 @@ def sample(read, base):
 def capture(pid, seconds):
     if hashlib.sha256(EXE.read_bytes()).hexdigest() != EXPECTED:
         raise RuntimeError('Unsupported executable')
-    if hashlib.sha256(EXE.with_name('hid.dll').read_bytes()).hexdigest() != DLL_HASH:
+    if hashlib.sha256(EXE.with_name('hid.dll').read_bytes()).hexdigest() not in DLL_HASHES:
         raise RuntimeError('Unexpected mod DLL')
     k = C.WinDLL('kernel32', use_last_error=True)
     k.OpenProcess.argtypes, k.OpenProcess.restype = [W.DWORD, W.BOOL, W.DWORD], W.HANDLE
@@ -429,7 +431,7 @@ def capture(pid, seconds):
                     errors.append(str(error))
             time.sleep(0.04)
         return {'utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
-                'pid': pid, 'exe_sha256': EXPECTED, 'dll_sha256': DLL_HASH,
+                'pid': pid, 'exe_sha256': EXPECTED, 'dll_sha256': hashlib.sha256(EXE.with_name('hid.dll').read_bytes()).hexdigest(),
                 'process_access': 'QUERY_LIMITED_INFORMATION | VM_READ only',
                 'ctrl_state': 'Not read automatically; operator supplies requested ON/OFF state in capture label.',
                 'samples': samples, 'errors': errors, 'writes': 0}

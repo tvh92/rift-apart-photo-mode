@@ -13,7 +13,7 @@ import json
 from pathlib import Path
 import struct
 from capture_live_atmosphere import EXE, EXPECTED
-from capture_photo_lights_readonly import DLL_HASH, pointer, source_summary
+from capture_photo_lights_readonly import DLL_HASHES, pointer, source_summary
 
 
 def compare(reference, current):
@@ -31,7 +31,7 @@ def main():
     args = parser.parse_args()
     if hashlib.sha256(EXE.read_bytes()).hexdigest() != EXPECTED:
         raise SystemExit('Unsupported executable')
-    if hashlib.sha256(EXE.with_name('hid.dll').read_bytes()).hexdigest() != DLL_HASH:
+    if hashlib.sha256(EXE.with_name('hid.dll').read_bytes()).hexdigest() not in DLL_HASHES:
         raise SystemExit('Unexpected mod DLL')
     ref = json.loads(args.reference.read_text())
     known = {}
