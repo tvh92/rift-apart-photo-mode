@@ -43,7 +43,13 @@ class CaptureTest(unittest.TestCase):
             self.mem[self.base + registry + 0x598] = bytes(4)
 
     def read(self, address, amount):
-        data = self.mem[address]
+        if 0xF0000 <= address < 0xF0000 + len(self.mem.get(0xF0000, b'')):
+            # Single request slot inside the registry backing block.
+            data = self.mem[0xF0000][address - 0xF0000:address - 0xF0000 + amount]
+        elif address not in self.mem:
+            raise OSError('Unmapped')
+        else:
+            data = self.mem[address]
         if len(data) != amount:
             raise OSError('Unmapped amount')
         return data
@@ -73,28 +79,43 @@ class CaptureTest(unittest.TestCase):
         self.mem[self.base + ARCHIVE] = struct.pack('<Qii', 0, 0, 16384)
         self.assertEqual(sample(self.read, self.base)['pass67_record_count'], 2)
 
-    def request_slot(self):
+    GENERATION = 5
+
+    def key(self, index=0, bit=0, generation=None):
+        generation = self.GENERATION if generation is None else generation
+        return generation << 32 | index * 2 | bit
+
+    def request_slot(self, index=0, kind='fixed', key=None, output=0xB0000):
+        """Fixed request: count pointer query+10, key at query+70.
+        Optional request: count pointer query+20, key at query+68."""
         registry = 0x6414C30
+        key = self.key(index) if key is None else key
         slot = bytearray(0xC0)
+        struct.pack_into('<Q', slot, 0, key)
         struct.pack_into('<Q', slot, 0x78, self.base + 0x12B8740)
         struct.pack_into('<Q', slot, 0x38, self.base + 0x674EC10)
-        struct.pack_into('<Q', slot, 0x68, 0xB0000)
-        struct.pack_into('<Q', slot, 0x70, 0xA0010)
-        self.mem[0xF0000] = bytes(slot)
-        self.mem[0xA0000 + 0x1000] = bytes(0x28)
-        self.mem[self.base + registry + 0x508] = struct.pack('<Qii', 0xF0000, 16, 1)
+        struct.pack_into('<Q', slot, 0x68, output)
+        struct.pack_into('<Q', slot, 0x70, 0xA0000 + (0x10 if kind == 'fixed' else 0x20))
+        slots = bytearray(self.mem.get(0xF0000, b''))
+        slots.extend(bytes(max(0, (index + 1) * 0xC0 - len(slots))))
+        slots[index * 0xC0:(index + 1) * 0xC0] = slot
+        self.mem[0xF0000] = bytes(slots)
+        query = bytearray(self.mem[0xA0000])
+        struct.pack_into('<Q', query, 0x70 if kind == 'fixed' else 0x68, key)
+        self.mem[0xA0000] = bytes(query)
+        self.mem[self.base + registry + 0x508] = struct.pack('<Qii', 0xF0000, 16, len(slots) // 0xC0)
+        self.mem[self.base + registry + 0x598] = struct.pack('<I', self.GENERATION)
         return slot
 
     def test_typed_registered_query(self):
         self.request_slot()
-        # Fake reader supports the short header and full query reads.
-        def read(address, amount):
-            if address == 0xA0000 and amount == 0x28:
-                return self.mem[address][:0x28]
-            return self.read(address, amount)
-        queries, errors = registered_light_queries(read, self.base, self.view)
+        queries, errors = registered_light_queries(self.read, self.base, self.view)
         self.assertEqual(len(queries), 1)
         self.assertEqual(len(queries[0]['sources']), 2)
+        request = queries[0]['requests'][0]
+        self.assertEqual(request['kind'], 'fixed')
+        self.assertEqual(request['key'], hex(self.key()))
+        self.assertEqual(request['worker_output']['count'], 2)
         self.assertEqual(errors, [])
 
     def test_wrong_callback_not_treated_as_lights(self):
@@ -104,21 +125,115 @@ class CaptureTest(unittest.TestCase):
         queries, _ = registered_light_queries(self.read, self.base, self.view)
         self.assertEqual(queries, [])
 
-    def test_output_mismatch_refuses_source_arrays(self):
-        slot = self.request_slot()
-        self.mem[0xA0000 - 0x10] = bytes(0x28)
-        struct.pack_into('<Q', slot, 0x68, 0x123000)
-        self.mem[0xF0000] = bytes(slot)
+    def test_output_mismatch_reported_separately(self):
+        # Worker output need not equal the current query array (10BAC65).
+        self.request_slot(output=0x123000)
+        self.mem[0x123000] = struct.pack('<QQ', 0x50000, 0x125000)
+        self.mem[0x125000] = bytes(0xD0)
+        queries, errors = registered_light_queries(self.read, self.base, self.view)
+        self.assertEqual(len(queries), 1)
+        out = queries[0]['requests'][0]['worker_output']
+        self.assertEqual(out['pointer'], hex(0x123000))
+        self.assertEqual(out['words'], [hex(0x50000), hex(0x125000)])
+        # Already-summarised source is not duplicated; output-only one is.
+        self.assertEqual(list(out['sources']), [hex(0x125000)])
+        self.assertEqual(queries[0]['arrays']['input_fixed']['pointers'], [hex(0x50000), hex(0x60000)])
+        self.assertEqual(errors, [])
+
+    def assert_refused_without_array_reads(self):
         array_reads = []
         def read(address, amount):
-            if address == 0xA0000 and amount == 0x28:
-                return self.mem[address][:0x28]
-            if address == 0xA0000 and amount == 0x90:
+            if address in (0xB0000, 0x50000, 0x60000):
                 array_reads.append(address)
             return self.read(address, amount)
         queries, _ = registered_light_queries(read, self.base, self.view)
         self.assertEqual(queries, [])
         self.assertEqual(array_reads, [])
+
+    def test_stale_generation_key_refused(self):
+        self.request_slot(key=self.key(generation=self.GENERATION - 1))
+        self.assert_refused_without_array_reads()
+
+    def test_wrong_index_key_refused(self):
+        self.request_slot(key=self.key(index=1))
+        self.assert_refused_without_array_reads()
+
+    def test_wrong_registry_bit_refused(self):
+        self.request_slot(key=self.key(bit=1))
+        self.assert_refused_without_array_reads()
+
+    def test_zero_key_refused(self):
+        self.GENERATION = 0
+        self.request_slot(key=0)
+        self.assert_refused_without_array_reads()
+
+    def test_query_key_mismatch_refused(self):
+        self.request_slot()
+        query = bytearray(self.mem[0xA0000])
+        struct.pack_into('<Q', query, 0x70, self.key() + 2)
+        self.mem[0xA0000] = bytes(query)
+        self.assert_refused_without_array_reads()
+
+    def test_key_in_wrong_query_field_refused(self):
+        # A fixed slot whose key appears only in the optional field.
+        self.request_slot()
+        query = bytearray(self.mem[0xA0000])
+        struct.pack_into('<Q', query, 0x68, self.key())
+        struct.pack_into('<Q', query, 0x70, 0)
+        self.mem[0xA0000] = bytes(query)
+        self.assert_refused_without_array_reads()
+
+    def test_optional_request_and_shared_query(self):
+        self.request_slot(0, 'fixed')
+        query = bytearray(self.mem[0xA0000])
+        struct.pack_into('<Q', query, 0x18, 0x126000)
+        struct.pack_into('<i', query, 0x20, 1)
+        self.mem[0xA0000] = bytes(query)
+        self.mem[0x126000] = struct.pack('<Q', 0x60000)
+        self.request_slot(1, 'optional', output=0x124000)
+        self.mem[0x124000] = struct.pack('<Q', 0x60000)
+        queries, _ = registered_light_queries(self.read, self.base, self.view)
+        self.assertEqual(len(queries), 1)
+        kinds = [r['kind'] for r in queries[0]['requests']]
+        self.assertEqual(kinds, ['fixed', 'optional'])
+        self.assertEqual(queries[0]['requests'][1]['key'], hex(self.key(1)))
+        self.assertEqual(queries[0]['requests'][1]['worker_output']['count'], 1)
+
+    def test_unbounded_output_count_refused(self):
+        self.request_slot(output=0x123000)
+        query = bytearray(self.mem[0xA0000])
+        struct.pack_into('<i', query, 0x10, 100000)
+        self.mem[0xA0000] = bytes(query)
+        queries, errors = registered_light_queries(self.read, self.base, self.view)
+        self.assertEqual(queries, [])
+        self.assertTrue(errors)
+
+    def test_output_change_refused(self):
+        self.request_slot(output=0x123000)
+        self.mem[0x123000] = struct.pack('<QQ', 0x50000, 0x60000)
+        calls = 0
+        def read(address, amount):
+            nonlocal calls
+            if address == 0x123000:
+                calls += 1
+                if calls > 1: return bytes(amount)
+            return self.read(address, amount)
+        queries, errors = registered_light_queries(read, self.base, self.view)
+        self.assertEqual(queries, [])
+        self.assertIn('Request output changed during sample', errors)
+
+    def test_late_generation_change_refused(self):
+        # Generation change after query/output reads still fails the sample.
+        self.request_slot()
+        target = self.base + 0x6414C30 + 0x598
+        calls = 0
+        def read(address, amount):
+            nonlocal calls
+            if address == target:
+                calls += 1
+                if calls > 2: return struct.pack('<I', self.GENERATION + 1)
+            return self.read(address, amount)
+        with self.assertRaises(RuntimeError): registered_light_queries(read, self.base, self.view)
 
     def test_request_generation_change_refused(self):
         calls = 0

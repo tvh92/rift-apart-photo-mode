@@ -106,21 +106,72 @@ def query_summary(read, address, view):
             'limit': 'Source fields are not atomic; arrays/header were reread.'}
 
 
+REGISTRIES = (0x6414C30, 0x64151D8)  # 107B760: request+64 bit0 clear/set
+# 10BB786 stores the fixed key at query+70; 10BB83D the optional key at +68.
+# Both keys come from 12B97E0 -> 107B750 -> 107B760. The slot's count pointer
+# is query+10 (fixed) or query+20 (optional); output array is separate.
+REQUEST_KINDS = (('fixed', 0x10, 8, 0x70), ('optional', 0x20, 0x18, 0x68))
+
+
+def request_key_valid(key, registry_bit, index, generation):
+    """107B8E4..107B907: key = generation<<32 | index*2 | registry bit."""
+    return (key != 0 and key & 1 == registry_bit and
+            (key & 0xFFFFFFFF) >> 1 == index and key >> 32 == generation)
+
+
+def request_output(read, output, count, known):
+    """Bounded worker-output words; never assumed equal to the query arrays."""
+    if not 0 <= count <= MAX_ENTRIES:
+        raise RuntimeError('Unbounded request output count')
+    if not count:
+        return {'pointer': hex(output), 'count': 0, 'words': [], 'sources': {}}
+    words = read(pointer(output), count * 8)
+    sources = {}
+    for (word,) in struct.iter_unpack('<Q', words):
+        if hex(word) in known or hex(word) in sources:
+            continue
+        try:
+            sources[hex(word)] = source_summary(read(pointer(word), 0xD0))
+        except (OSError, RuntimeError) as error:
+            sources[hex(word)] = {'error': str(error)}
+    if read(output, count * 8) != words:
+        raise RuntimeError('Request output changed during sample')
+    return {'pointer': hex(output), 'count': count,
+            'words': [hex(w) for (w,) in struct.iter_unpack('<Q', words)],
+            'sources': sources}
+
+
+def registry_stable(header, old_header, generation, old_generation):
+    """Backing/capacity/generation fixed; count may only grow (lock inc 107B90E).
+
+    Already-read slots are separately reread before acceptance, so appended
+    requests do not invalidate them; a shrink or reallocation does.
+    """
+    backing, capacity, count = struct.unpack('<Qii', header)
+    old_backing, old_capacity, old_count = struct.unpack('<Qii', old_header)
+    return (generation == old_generation and backing == old_backing and
+            capacity == old_capacity and old_count <= count <= capacity)
+
+
 def registered_light_queries(read, base, view, diagnostics=None):
     """Typed query request slots, not a guessed world-LightDef catalog.
 
-    107B760 copies the LightSubmit builder's output-array/count pointers into
-    the C0-byte slot. 12B8740 consumes those exact fields. Validate both the
-    callback/manager and the derived query's view and output fields.
+    A slot is accepted only when callback 12B8740, manager 674EC10, its
+    generation/index/registry key, and the derived query's owner view and
+    stored key all match. Request output (slot+68) and the query's current
+    ranking arrays are reported separately; their pointer equality is not
+    required or inferred.
     """
     results, errors = [], []
-    visited = set()
-    for registry in (0x6414C30, 0x64151D8):
+    by_query, registry_state = {}, []
+    for registry_bit, registry in enumerate(REGISTRIES):
         header = read(base + registry + 0x508, 16)
         backing, capacity, count = struct.unpack('<Qii', header)
-        generation = read(base + registry + 0x598, 4)
+        generation_raw = read(base + registry + 0x598, 4)
+        generation = struct.unpack('<I', generation_raw)[0]
         stats = {'registry_rva': hex(registry), 'count': count, 'capacity': capacity,
-                 'callback_matches': 0, 'manager_matches': 0, 'query_owner_candidates': []}
+                 'generation': generation, 'callback_matches': 0, 'manager_matches': 0,
+                 'key_matches': 0, 'owner_key_matches': 0, 'query_owner_candidates': []}
         if diagnostics is not None:
             diagnostics.append(stats)
         if not 0 <= count <= min(capacity, 2048):
@@ -133,54 +184,83 @@ def registered_light_queries(read, base, view, diagnostics=None):
         for first in range(0, count, 512):
             n = min(512, count - first)
             address = backing + first * 0xC0
-            chunks.append((address, read(address, n * 0xC0)))
-        for address, data in chunks:
+            chunks.append((first, address, read(address, n * 0xC0)))
+        for first, address, data in chunks:
             for offset in range(0, len(data), 0xC0):
                 slot = data[offset:offset + 0xC0]
+                index = first + offset // 0xC0
                 if struct.unpack_from('<Q', slot, 0x78)[0] != base + 0x12B8740:
                     continue
                 stats['callback_matches'] += 1
                 if struct.unpack_from('<Q', slot, 0x38)[0] != base + 0x674EC10:
                     continue
                 stats['manager_matches'] += 1
+                key = struct.unpack_from('<Q', slot)[0]
+                if not request_key_valid(key, registry_bit, index, generation):
+                    continue
+                stats['key_matches'] += 1
                 output, counter = (struct.unpack_from('<Q', slot, off)[0] for off in (0x68, 0x70))
-                # Fixed request writes query+10; optional request writes+20.
-                for count_offset, array_offset in ((0x10, 8), (0x20, 0x18)):
+                for kind, count_offset, array_offset, key_offset in REQUEST_KINDS:
                     query = counter - count_offset
                     try:
                         pointer(query)
-                        head = read(query, 0x28)
+                        head = read(query, 0x90)
+                        owner = struct.unpack_from('<Q', head)[0]
+                        stored = struct.unpack_from('<Q', head, key_offset)[0]
+                        current = struct.unpack_from('<Q', head, array_offset)[0]
                         if len(stats['query_owner_candidates']) < 12:
                             stats['query_owner_candidates'].append({
-                                'query': hex(query), 'owner': hex(struct.unpack_from('<Q', head)[0]),
-                                'count_offset': hex(count_offset),
-                                'request_output': hex(output),
-                                'query_output': hex(struct.unpack_from('<Q', head, array_offset)[0]),
+                                'kind': kind, 'query': hex(query), 'owner': hex(owner),
+                                'request_key': hex(key), 'query_key': hex(stored),
+                                'request_output': hex(output), 'query_current_array': hex(current),
+                                'output_equals_current': current == output,
                                 'query_header_hex': head.hex(),
-                                'request_slot': hex(address + offset),
-                                'request_generation_hex': generation.hex(),
-                                'output_field_matches': struct.unpack_from('<Q', head, array_offset)[0] == output,
+                                'request_slot': hex(address + offset), 'request_index': index,
                             })
-                        if (struct.unpack_from('<Q', head)[0] != view or
-                                struct.unpack_from('<Q', head, array_offset)[0] != output):
+                        if owner != view or stored != key:
                             continue
-                        if query in visited:
-                            break
-                        result = query_summary(read, query, view)
-                        if read(address + offset, 0xC0) != slot:
-                            raise RuntimeError('Light query request changed during sample')
-                        result['request_registry_rva'] = hex(registry)
-                        result['request_slot'] = hex(address + offset)
-                        results.append(result)
-                        visited.add(query)
+                        stats['owner_key_matches'] += 1
+                        by_query.setdefault(query, []).append({
+                            'kind': kind, 'registry_rva': hex(registry),
+                            'slot_address': address + offset, 'slot': slot, 'key': key,
+                            'output': output, 'count_offset': count_offset})
                         break
                     except (OSError, RuntimeError) as error:
                         if len(errors) < 12:
                             errors.append(str(error))
         # Request slots are immutable while active apart from work state.
         # Recheck ownership/generation; per-slot matching guards typed queries.
-        if (read(base + registry + 0x508, 16) != header or
-                read(base + registry + 0x598, 4) != generation):
+        if not registry_stable(read(base + registry + 0x508, 16), header,
+                               read(base + registry + 0x598, 4), generation_raw):
+            raise RuntimeError('Query registry ownership changed during sample')
+        registry_state.append((registry, header, generation_raw))
+    for query, requests in by_query.items():
+        try:
+            result = query_summary(read, query, view)
+            head = read(query, 0x90)
+            known = set(result['sources'])
+            result['requests'] = []
+            for request in requests:
+                count = struct.unpack_from('<i', head, request['count_offset'])[0]
+                out = request_output(read, request['output'], count, known)
+                known.update(out['sources'])
+                if read(request['slot_address'], 0xC0) != request['slot']:
+                    raise RuntimeError('Light query request changed during sample')
+                result['requests'].append({
+                    'kind': request['kind'], 'registry_rva': request['registry_rva'],
+                    'slot': hex(request['slot_address']), 'key': hex(request['key']),
+                    'worker_output': out})
+            if read(query, 0x90) != head:
+                raise RuntimeError('Query header changed during sample')
+            result['labels'] = {'arrays': 'Current query arrays: 10BA710 ranking input/selection.',
+                                'worker_output': 'Request slot+68 worker output; equivalence to query arrays unproven.'}
+            results.append(result)
+        except (OSError, RuntimeError) as error:
+            if len(errors) < 12:
+                errors.append(str(error))
+    for registry, header, generation_raw in registry_state:
+        if not registry_stable(read(base + registry + 0x508, 16), header,
+                               read(base + registry + 0x598, 4), generation_raw):
             raise RuntimeError('Query registry ownership changed during sample')
     return results, errors
 
@@ -226,8 +306,6 @@ def sample(read, base):
                 records.append(item)
             except (OSError, RuntimeError) as error:
                 errors.append({'pass': hex(pass_id), 'pointer': hex(param), 'error': str(error)})
-    request_diagnostics = []
-    queries, request_errors = registered_light_queries(read, base, view, request_diagnostics)
     for p, data in segment_data:
         if read(p, len(data)) != data:
             raise RuntimeError('Submission queue changed during sample')
@@ -236,6 +314,12 @@ def sample(read, base):
             read(base + PRIMARY, 8) != view_word or read(view + 0x30, 12) != position or
             read(base + PHOTO, 0x58) != photo):
         raise RuntimeError('Photo/view/queue ownership changed during sample')
+    # Separate snapshot: queue and queries need not come from the same frame.
+    request_diagnostics = []
+    queries, request_errors = registered_light_queries(read, base, view, request_diagnostics)
+    if (read(base + PRIMARY, 8) != view_word or read(view + 0x30, 12) != position or
+            read(base + PHOTO, 0x58) != photo):
+        raise RuntimeError('Photo/view ownership changed during query snapshot')
     return {'view': hex(view), 'position_30': floats(position, 0, 3),
             'queue_identity': identity, 'segments': len(segments),
             'pass67_record_count': len(records), 'records': records,
