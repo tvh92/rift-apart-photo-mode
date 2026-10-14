@@ -9,7 +9,7 @@ if($LASTEXITCODE -ne 0){throw 'Fog candidate DLL build failed'}
 if($LASTEXITCODE -ne 0){throw 'Fog candidate probe build failed'}
 & (Join-Path $taskRoot 'work/native-abi/PhotoFogProbe.exe')
 if($LASTEXITCODE -ne 0){throw "Fog candidate probe failed with exit code $LASTEXITCODE"}
-$taskPython='C:\Users\Tim\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
+$taskPython=(Join-Path $PSScriptRoot '..\..\.venv\Scripts\python.exe')
 & $taskPython (Join-Path $taskRoot 'work/prepare_fog_validation.py')
 if($LASTEXITCODE -ne 0){throw 'Fog validation preparation failed'}
 foreach($taskProbe in @('PhotoLifecycleFogIntegrationProbe','BehaviorFogIntegrationProbe')) {

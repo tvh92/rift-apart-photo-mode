@@ -1,6 +1,6 @@
 # Photo Mode light far-cutoff candidate (lighting-v3)
 
-Installed 6 October 2026 with the game closed; full pre/post audits passed. **Runtime comparison pending.**
+Installed 6 October 2026 with the game closed; full pre/post audits passed. **Runtime result partial:** improved lighting, with distant flicker/toggle and nearby OFF-light issues unresolved. Sargasso sky crash with Ctrl ON has graphics-device-loss evidence; cause unresolved. See `work/lighting-v3-runtime-followup.md` and `outputs/tested-photo-lighting-v3/2026-10-06/runtime-feedback.json`.
 
 Cause: after the light-grid gather, job `0x10B9A50` rebuilds the LightSubmit query array and drops any light with flag bit18 whose front-of-bounds distance (`0x10B9750`) exceeds `rec+0xA0` (`0x10B9C00` comiss, `0x10B9C07` ja). The Corson V bridge lamps use 150. Natively their fade reaches zero by then; lighting-v2 removed that fade for Photo/Ctrl, so lamps stayed bright until this drop removed them one by one. Live captures matched the formula at four camera positions (`work/bridge-light-next-diagnostic.md`).
 

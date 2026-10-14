@@ -1,7 +1,7 @@
 $ErrorActionPreference='Stop'
 $taskRoot=Split-Path (Split-Path $PSScriptRoot -Parent) -Parent
 $taskGame='C:\Program Files (x86)\Steam\steamapps\common\Ratchet & Clank - Rift Apart'
-$taskPython='C:\Users\Tim\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
+$taskPython=(Join-Path $PSScriptRoot '..\..\.venv\Scripts\python.exe')
 $taskManifest=Get-Content -Raw (Join-Path $PSScriptRoot 'build-verification.json') | ConvertFrom-Json
 $taskPrevious='16dcd44057c3114b123e25974b9b563afc487650686d3985784614caba5f7cbd'
 $taskTarget=Join-Path $taskGame 'hid.dll'

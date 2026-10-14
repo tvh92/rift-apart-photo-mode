@@ -9,8 +9,8 @@
   "both_profiles_match": true,
   "fixed_intro_enabled": false,
   "camera_dll_verified": true,
-  "camera_dll_sha256": "16dcd44057c3114b123e25974b9b563afc487650686d3985784614caba5f7cbd",
-  "camera_dll_variant": "photo-diffuse-specular-type4-fade-candidate",
+  "camera_dll_sha256": "c4be06b9e069829ba3c173ab3545353f38de04d6a98c5f58533af42ae9efbe66",
+  "camera_dll_variant": "photo-light-prefilter-far-cutoff-candidate",
   "base_config_vanilla": true,
   "all_original_boot_movies_verified": true,
   "in_game_status": "Audit checks files only; see startup test results separately."

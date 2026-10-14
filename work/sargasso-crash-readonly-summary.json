@@ -1,0 +1,845 @@
+[
+  {
+    "source": "C:\\Users\\Tim\\Documents\\Ratchet & Clank - Rift Apart\\Ratchet & Clank - Rift Apart-v3.630.1.0 2026-10-06-13-33-46.mdmp",
+    "bytes": 1186998,
+    "sha256": "7e6dafa6ba810d820c62da56d7cbe91b434e8be47cb915f11fb3a5679fa509cd",
+    "streams": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      10,
+      13,
+      15,
+      21,
+      22,
+      24
+    ],
+    "writes": 0,
+    "limits": "Stack words are candidates, not an unwound call stack. No symbols downloaded.",
+    "project_modules": [
+      {
+        "name": "RiftApart.exe",
+        "base": "0x7ff7144f0000",
+        "size": 118837248,
+        "timestamp": 1782833786
+      },
+      {
+        "name": "hid.dll",
+        "base": "0x7fff11e40000",
+        "size": 233472,
+        "timestamp": 25351032
+      },
+      {
+        "name": "hid.dll",
+        "base": "0x7fffdd2c0000",
+        "size": 53248,
+        "timestamp": 2850349130
+      }
+    ],
+    "embedded_nri_errors": [
+      "[nri(D3D12)::ERROR] -- ID3D12Resource::Map() failed, error code: 0x887A0005."
+    ],
+    "exception": {
+      "thread": 19088,
+      "code": "0x80000003",
+      "address": "0x7fffdec195a2",
+      "address_module": "KERNELBASE.dll+0xe95a2",
+      "context_rip": "0x7fffdec195a2",
+      "context_rip_module": "KERNELBASE.dll+0xe95a2",
+      "registers": {
+        "rax": "0x7ffee16b5b70",
+        "rcx": "0x0",
+        "rdx": "0x0",
+        "rbx": "0x14189fd5b7",
+        "rsp": "0x14189fd568",
+        "rbp": "0x1f4a0aba488",
+        "rsi": "0x17",
+        "rdi": "0xfe9",
+        "r8": "0x14189fd0e8",
+        "r9": "0x14189fd110",
+        "r10": "0x0",
+        "r11": "0x14189fd540",
+        "r12": "0x0",
+        "r13": "0x1f6735e8598",
+        "r14": "0x2",
+        "r15": "0x14189fe608",
+        "rip": "0x7fffdec195a2"
+      }
+    },
+    "stack_bytes_read": 4096,
+    "mapped_stack_candidates": [
+      {
+        "stack_offset": "0x0",
+        "address": "0x7ffee16b5dd2",
+        "module": "NRI.dll+0x5dd2"
+      },
+      {
+        "stack_offset": "0x20",
+        "address": "0x7ffee17169e8",
+        "module": "NRI.dll+0x669e8"
+      },
+      {
+        "stack_offset": "0x230",
+        "address": "0x7fffc5e0fc22",
+        "module": "nvwgf2umx.dll+0x72fc22"
+      },
+      {
+        "stack_offset": "0x260",
+        "address": "0x7fffc60b837f",
+        "module": "nvwgf2umx.dll+0x9d837f"
+      },
+      {
+        "stack_offset": "0x270",
+        "address": "0x7fffc6c0fab0",
+        "module": "nvwgf2umx.dll+0x152fab0"
+      },
+      {
+        "stack_offset": "0x290",
+        "address": "0x7fffc5a2ddcc",
+        "module": "nvwgf2umx.dll+0x34ddcc"
+      },
+      {
+        "stack_offset": "0x338",
+        "address": "0x7fffe15713f0",
+        "module": "ntdll.dll+0x1813f0"
+      },
+      {
+        "stack_offset": "0x340",
+        "address": "0x7fffe1469ba8",
+        "module": "ntdll.dll+0x79ba8"
+      },
+      {
+        "stack_offset": "0x380",
+        "address": "0x7fffe1442e23",
+        "module": "ntdll.dll+0x52e23"
+      },
+      {
+        "stack_offset": "0x3a0",
+        "address": "0x7fffe1442e9c",
+        "module": "ntdll.dll+0x52e9c"
+      },
+      {
+        "stack_offset": "0x3a8",
+        "address": "0x7fffe14421c1",
+        "module": "ntdll.dll+0x521c1"
+      },
+      {
+        "stack_offset": "0x3b0",
+        "address": "0x7fffe1442d73",
+        "module": "ntdll.dll+0x52d73"
+      },
+      {
+        "stack_offset": "0x3e0",
+        "address": "0x7fffe14423ff",
+        "module": "ntdll.dll+0x523ff"
+      },
+      {
+        "stack_offset": "0x440",
+        "address": "0x7ffeff290000",
+        "module": "D3D12Core.dll+0x0"
+      },
+      {
+        "stack_offset": "0x448",
+        "address": "0x7ffeff748164",
+        "module": "D3D12Core.dll+0x4b8164"
+      },
+      {
+        "stack_offset": "0x478",
+        "address": "0x7ffeff5eafe5",
+        "module": "D3D12Core.dll+0x35afe5"
+      },
+      {
+        "stack_offset": "0x480",
+        "address": "0x7ffeff290000",
+        "module": "D3D12Core.dll+0x0"
+      },
+      {
+        "stack_offset": "0x488",
+        "address": "0x7ffeff7b6bd4",
+        "module": "D3D12Core.dll+0x526bd4"
+      },
+      {
+        "stack_offset": "0x4a8",
+        "address": "0x7ffeff4e02b4",
+        "module": "D3D12Core.dll+0x2502b4"
+      },
+      {
+        "stack_offset": "0x4b0",
+        "address": "0x7ffeff748164",
+        "module": "D3D12Core.dll+0x4b8164"
+      },
+      {
+        "stack_offset": "0x4d0",
+        "address": "0x7ffeff4df2bc",
+        "module": "D3D12Core.dll+0x24f2bc"
+      },
+      {
+        "stack_offset": "0x4d8",
+        "address": "0x7fffdeb5538e",
+        "module": "KERNELBASE.dll+0x2538e"
+      },
+      {
+        "stack_offset": "0x4e0",
+        "address": "0x7fffdeb30000",
+        "module": "KERNELBASE.dll+0x0"
+      },
+      {
+        "stack_offset": "0x4e8",
+        "address": "0x7fffdedeb734",
+        "module": "KERNELBASE.dll+0x2bb734"
+      },
+      {
+        "stack_offset": "0x4f0",
+        "address": "0x7ffeff290000",
+        "module": "D3D12Core.dll+0x0"
+      },
+      {
+        "stack_offset": "0x4f8",
+        "address": "0x7ffeff7a58e8",
+        "module": "D3D12Core.dll+0x5158e8"
+      },
+      {
+        "stack_offset": "0x500",
+        "address": "0x7ffeff290000",
+        "module": "D3D12Core.dll+0x0"
+      },
+      {
+        "stack_offset": "0x508",
+        "address": "0x7ffeff7b6bd4",
+        "module": "D3D12Core.dll+0x526bd4"
+      },
+      {
+        "stack_offset": "0x558",
+        "address": "0x7fffe1564a48",
+        "module": "ntdll.dll+0x174a48"
+      },
+      {
+        "stack_offset": "0x560",
+        "address": "0x7fffe13f0000",
+        "module": "ntdll.dll+0x0"
+      },
+      {
+        "stack_offset": "0x570",
+        "address": "0x7fffe1420e7b",
+        "module": "ntdll.dll+0x30e7b"
+      },
+      {
+        "stack_offset": "0x578",
+        "address": "0x7fffe14421c1",
+        "module": "ntdll.dll+0x521c1"
+      },
+      {
+        "stack_offset": "0x580",
+        "address": "0x7fffe1462575",
+        "module": "ntdll.dll+0x72575"
+      },
+      {
+        "stack_offset": "0x590",
+        "address": "0x7fffe1564a48",
+        "module": "ntdll.dll+0x174a48"
+      },
+      {
+        "stack_offset": "0x5c0",
+        "address": "0x7fffe14421c1",
+        "module": "ntdll.dll+0x521c1"
+      },
+      {
+        "stack_offset": "0x5f0",
+        "address": "0x7fffe14422a7",
+        "module": "ntdll.dll+0x522a7"
+      },
+      {
+        "stack_offset": "0x6c8",
+        "address": "0x7ffeff7483c8",
+        "module": "D3D12Core.dll+0x4b83c8"
+      },
+      {
+        "stack_offset": "0x700",
+        "address": "0x7ffef7fe9aa6",
+        "module": "nvrtum64.dll+0x359aa6"
+      },
+      {
+        "stack_offset": "0x730",
+        "address": "0x7fffdeb55369",
+        "module": "KERNELBASE.dll+0x25369"
+      },
+      {
+        "stack_offset": "0x768",
+        "address": "0x7fffc5a3df90",
+        "module": "nvwgf2umx.dll+0x35df90"
+      },
+      {
+        "stack_offset": "0x780",
+        "address": "0x7fffc5a3dfc1",
+        "module": "nvwgf2umx.dll+0x35dfc1"
+      },
+      {
+        "stack_offset": "0x7b0",
+        "address": "0x7fffc5dd8e09",
+        "module": "nvwgf2umx.dll+0x6f8e09"
+      },
+      {
+        "stack_offset": "0x7b8",
+        "address": "0x7fffc5a3df90",
+        "module": "nvwgf2umx.dll+0x35df90"
+      },
+      {
+        "stack_offset": "0x940",
+        "address": "0x7fffc5e4c5d1",
+        "module": "nvwgf2umx.dll+0x76c5d1"
+      },
+      {
+        "stack_offset": "0x9b0",
+        "address": "0x7fffc5a50aa8",
+        "module": "nvwgf2umx.dll+0x370aa8"
+      },
+      {
+        "stack_offset": "0xa00",
+        "address": "0x7fffc5a92a0a",
+        "module": "nvwgf2umx.dll+0x3b2a0a"
+      },
+      {
+        "stack_offset": "0xa10",
+        "address": "0x7fffc5843c92",
+        "module": "nvwgf2umx.dll+0x163c92"
+      },
+      {
+        "stack_offset": "0xa30",
+        "address": "0x7fffc5a91691",
+        "module": "nvwgf2umx.dll+0x3b1691"
+      },
+      {
+        "stack_offset": "0xac0",
+        "address": "0x7fffc5e5d792",
+        "module": "nvwgf2umx.dll+0x77d792"
+      },
+      {
+        "stack_offset": "0xcb0",
+        "address": "0x7fffe13f0000",
+        "module": "ntdll.dll+0x0"
+      },
+      {
+        "stack_offset": "0xd00",
+        "address": "0x7fffc5a0deca",
+        "module": "nvwgf2umx.dll+0x32deca"
+      },
+      {
+        "stack_offset": "0xd70",
+        "address": "0x7fffc58f5dba",
+        "module": "nvwgf2umx.dll+0x215dba"
+      },
+      {
+        "stack_offset": "0xd90",
+        "address": "0x7fffe141b86b",
+        "module": "ntdll.dll+0x2b86b"
+      },
+      {
+        "stack_offset": "0xde0",
+        "address": "0x7fffdeb55369",
+        "module": "KERNELBASE.dll+0x25369"
+      },
+      {
+        "stack_offset": "0xdf0",
+        "address": "0x7ffeff7483c8",
+        "module": "D3D12Core.dll+0x4b83c8"
+      },
+      {
+        "stack_offset": "0xe18",
+        "address": "0x7fffdeb55369",
+        "module": "KERNELBASE.dll+0x25369"
+      },
+      {
+        "stack_offset": "0xe38",
+        "address": "0x7ffeff7483c8",
+        "module": "D3D12Core.dll+0x4b83c8"
+      },
+      {
+        "stack_offset": "0xe40",
+        "address": "0x7ffeff290000",
+        "module": "D3D12Core.dll+0x0"
+      },
+      {
+        "stack_offset": "0xe70",
+        "address": "0x7fffe1424a5f",
+        "module": "ntdll.dll+0x34a5f"
+      },
+      {
+        "stack_offset": "0xe98",
+        "address": "0x7ffeff775000",
+        "module": "D3D12Core.dll+0x4e5000"
+      },
+      {
+        "stack_offset": "0xea0",
+        "address": "0x7ffeff290000",
+        "module": "D3D12Core.dll+0x0"
+      },
+      {
+        "stack_offset": "0xeb0",
+        "address": "0x7fffc5de8bb3",
+        "module": "nvwgf2umx.dll+0x708bb3"
+      },
+      {
+        "stack_offset": "0xeb8",
+        "address": "0x7ffeff7483c8",
+        "module": "D3D12Core.dll+0x4b83c8"
+      },
+      {
+        "stack_offset": "0xec0",
+        "address": "0x7ffeff4df34c",
+        "module": "D3D12Core.dll+0x24f34c"
+      },
+      {
+        "stack_offset": "0xee8",
+        "address": "0x7ffeff290000",
+        "module": "D3D12Core.dll+0x0"
+      },
+      {
+        "stack_offset": "0xf00",
+        "address": "0x7ffeff7483c8",
+        "module": "D3D12Core.dll+0x4b83c8"
+      },
+      {
+        "stack_offset": "0xf08",
+        "address": "0x7ffeff290000",
+        "module": "D3D12Core.dll+0x0"
+      },
+      {
+        "stack_offset": "0xf20",
+        "address": "0x7ffeff5eafe5",
+        "module": "D3D12Core.dll+0x35afe5"
+      },
+      {
+        "stack_offset": "0xf50",
+        "address": "0x7ffeff5f2990",
+        "module": "D3D12Core.dll+0x362990"
+      },
+      {
+        "stack_offset": "0xfc0",
+        "address": "0x7ffeff59fd1f",
+        "module": "D3D12Core.dll+0x30fd1f"
+      }
+    ]
+  },
+  {
+    "source": "C:\\Users\\Tim\\Documents\\Ratchet & Clank - Rift Apart\\Ratchet & Clank - Rift Apart-v3.630.1.0 2026-10-06-13-35-39.mdmp",
+    "bytes": 1223417,
+    "sha256": "6c6b8f83f6c20659659c3174bc39b256569bffbcd9e39b2f8945800c9fec6705",
+    "streams": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      10,
+      13,
+      15,
+      21,
+      22,
+      24
+    ],
+    "writes": 0,
+    "limits": "Stack words are candidates, not an unwound call stack. No symbols downloaded.",
+    "project_modules": [
+      {
+        "name": "RiftApart.exe",
+        "base": "0x7ff7144f0000",
+        "size": 118837248,
+        "timestamp": 1782833786
+      },
+      {
+        "name": "hid.dll",
+        "base": "0x7fffdb040000",
+        "size": 233472,
+        "timestamp": 25351032
+      },
+      {
+        "name": "hid.dll",
+        "base": "0x7fffdd2c0000",
+        "size": 53248,
+        "timestamp": 2850349130
+      }
+    ],
+    "embedded_nri_errors": [
+      "[nri(D3D12)::ERROR] -- ID3D12Resource::Map() failed, error code: 0x887A0005."
+    ],
+    "exception": {
+      "thread": 23952,
+      "code": "0x80000003",
+      "address": "0x7fffdec195a2",
+      "address_module": "KERNELBASE.dll+0xe95a2",
+      "context_rip": "0x7fffdec195a2",
+      "context_rip_module": "KERNELBASE.dll+0xe95a2",
+      "registers": {
+        "rax": "0x7fff1f5b5b70",
+        "rcx": "0x0",
+        "rdx": "0x0",
+        "rbx": "0xf091fd607",
+        "rsp": "0xf091fd5b8",
+        "rbp": "0x14945c8e208",
+        "rsi": "0x17",
+        "rdi": "0xfe9",
+        "r8": "0xf091fd138",
+        "r9": "0xf091fd160",
+        "r10": "0x0",
+        "r11": "0xf091fd590",
+        "r12": "0x0",
+        "r13": "0x14b7c21e808",
+        "r14": "0x2",
+        "r15": "0xf091fe658",
+        "rip": "0x7fffdec195a2"
+      }
+    },
+    "stack_bytes_read": 4096,
+    "mapped_stack_candidates": [
+      {
+        "stack_offset": "0x0",
+        "address": "0x7fff1f5b5dd2",
+        "module": "NRI.dll+0x5dd2"
+      },
+      {
+        "stack_offset": "0x20",
+        "address": "0x7fff1f6169e8",
+        "module": "NRI.dll+0x669e8"
+      },
+      {
+        "stack_offset": "0x318",
+        "address": "0x7fffc9209a10",
+        "module": "nvwgf2umx.dll+0x3b29a10"
+      },
+      {
+        "stack_offset": "0x338",
+        "address": "0x7fffe15713f0",
+        "module": "ntdll.dll+0x1813f0"
+      },
+      {
+        "stack_offset": "0x340",
+        "address": "0x7fffe1469ba8",
+        "module": "ntdll.dll+0x79ba8"
+      },
+      {
+        "stack_offset": "0x380",
+        "address": "0x7fffe1442e23",
+        "module": "ntdll.dll+0x52e23"
+      },
+      {
+        "stack_offset": "0x3a0",
+        "address": "0x7fffe1442e9c",
+        "module": "ntdll.dll+0x52e9c"
+      },
+      {
+        "stack_offset": "0x3a8",
+        "address": "0x7fffe14421c1",
+        "module": "ntdll.dll+0x521c1"
+      },
+      {
+        "stack_offset": "0x3b0",
+        "address": "0x7fffe1442d73",
+        "module": "ntdll.dll+0x52d73"
+      },
+      {
+        "stack_offset": "0x3e0",
+        "address": "0x7fffe14423ff",
+        "module": "ntdll.dll+0x523ff"
+      },
+      {
+        "stack_offset": "0x440",
+        "address": "0x7fff17e80000",
+        "module": "D3D12Core.dll+0x0"
+      },
+      {
+        "stack_offset": "0x448",
+        "address": "0x7fff18338164",
+        "module": "D3D12Core.dll+0x4b8164"
+      },
+      {
+        "stack_offset": "0x478",
+        "address": "0x7fff181dafe5",
+        "module": "D3D12Core.dll+0x35afe5"
+      },
+      {
+        "stack_offset": "0x480",
+        "address": "0x7fff17e80000",
+        "module": "D3D12Core.dll+0x0"
+      },
+      {
+        "stack_offset": "0x488",
+        "address": "0x7fff183a6bd4",
+        "module": "D3D12Core.dll+0x526bd4"
+      },
+      {
+        "stack_offset": "0x4a8",
+        "address": "0x7fff180d02b4",
+        "module": "D3D12Core.dll+0x2502b4"
+      },
+      {
+        "stack_offset": "0x4b0",
+        "address": "0x7fff18338164",
+        "module": "D3D12Core.dll+0x4b8164"
+      },
+      {
+        "stack_offset": "0x4c0",
+        "address": "0x7fff00000000",
+        "module": "nvrtum64.dll+0xe00000"
+      },
+      {
+        "stack_offset": "0x4d0",
+        "address": "0x7fff180cf2bc",
+        "module": "D3D12Core.dll+0x24f2bc"
+      },
+      {
+        "stack_offset": "0x4d8",
+        "address": "0x7fffdeb5538e",
+        "module": "KERNELBASE.dll+0x2538e"
+      },
+      {
+        "stack_offset": "0x4e0",
+        "address": "0x7fffdeb30000",
+        "module": "KERNELBASE.dll+0x0"
+      },
+      {
+        "stack_offset": "0x4e8",
+        "address": "0x7fffdedeb734",
+        "module": "KERNELBASE.dll+0x2bb734"
+      },
+      {
+        "stack_offset": "0x4f0",
+        "address": "0x7fff17e80000",
+        "module": "D3D12Core.dll+0x0"
+      },
+      {
+        "stack_offset": "0x4f8",
+        "address": "0x7fff183958e8",
+        "module": "D3D12Core.dll+0x5158e8"
+      },
+      {
+        "stack_offset": "0x500",
+        "address": "0x7fff17e80000",
+        "module": "D3D12Core.dll+0x0"
+      },
+      {
+        "stack_offset": "0x508",
+        "address": "0x7fff183a6bd4",
+        "module": "D3D12Core.dll+0x526bd4"
+      },
+      {
+        "stack_offset": "0x510",
+        "address": "0x7fff00000000",
+        "module": "nvrtum64.dll+0xe00000"
+      },
+      {
+        "stack_offset": "0x558",
+        "address": "0x7fffe1564a48",
+        "module": "ntdll.dll+0x174a48"
+      },
+      {
+        "stack_offset": "0x560",
+        "address": "0x7fffe13f0000",
+        "module": "ntdll.dll+0x0"
+      },
+      {
+        "stack_offset": "0x570",
+        "address": "0x7fffe1420e7b",
+        "module": "ntdll.dll+0x30e7b"
+      },
+      {
+        "stack_offset": "0x578",
+        "address": "0x7fffe14421c1",
+        "module": "ntdll.dll+0x521c1"
+      },
+      {
+        "stack_offset": "0x580",
+        "address": "0x7fffe1462575",
+        "module": "ntdll.dll+0x72575"
+      },
+      {
+        "stack_offset": "0x590",
+        "address": "0x7fffe1564a48",
+        "module": "ntdll.dll+0x174a48"
+      },
+      {
+        "stack_offset": "0x5c0",
+        "address": "0x7fffe14421c1",
+        "module": "ntdll.dll+0x521c1"
+      },
+      {
+        "stack_offset": "0x5f0",
+        "address": "0x7fffe14422a7",
+        "module": "ntdll.dll+0x522a7"
+      },
+      {
+        "stack_offset": "0x680",
+        "address": "0x7fffc91fdd40",
+        "module": "nvwgf2umx.dll+0x3b1dd40"
+      },
+      {
+        "stack_offset": "0x6c8",
+        "address": "0x7fff183383c8",
+        "module": "D3D12Core.dll+0x4b83c8"
+      },
+      {
+        "stack_offset": "0x730",
+        "address": "0x7fffdeb55369",
+        "module": "KERNELBASE.dll+0x25369"
+      },
+      {
+        "stack_offset": "0x750",
+        "address": "0x7fff00001fbf",
+        "module": "nvrtum64.dll+0xe01fbf"
+      },
+      {
+        "stack_offset": "0x760",
+        "address": "0x7fffc5e61a80",
+        "module": "nvwgf2umx.dll+0x781a80"
+      },
+      {
+        "stack_offset": "0x780",
+        "address": "0x7fffc5e61b79",
+        "module": "nvwgf2umx.dll+0x781b79"
+      },
+      {
+        "stack_offset": "0x788",
+        "address": "0x7fffc5e61a80",
+        "module": "nvwgf2umx.dll+0x781a80"
+      },
+      {
+        "stack_offset": "0x7b0",
+        "address": "0x7fffc5dd8e09",
+        "module": "nvwgf2umx.dll+0x6f8e09"
+      },
+      {
+        "stack_offset": "0x7c0",
+        "address": "0x7fffc5e61a80",
+        "module": "nvwgf2umx.dll+0x781a80"
+      },
+      {
+        "stack_offset": "0x7e0",
+        "address": "0x7fff00000000",
+        "module": "nvrtum64.dll+0xe00000"
+      },
+      {
+        "stack_offset": "0x8f0",
+        "address": "0x7fff00000010",
+        "module": "nvrtum64.dll+0xe00010"
+      },
+      {
+        "stack_offset": "0x940",
+        "address": "0x7fffc9209a10",
+        "module": "nvwgf2umx.dll+0x3b29a10"
+      },
+      {
+        "stack_offset": "0x980",
+        "address": "0x7fffc5a50aa8",
+        "module": "nvwgf2umx.dll+0x370aa8"
+      },
+      {
+        "stack_offset": "0xcb0",
+        "address": "0x7fffe13f0000",
+        "module": "ntdll.dll+0x0"
+      },
+      {
+        "stack_offset": "0xd00",
+        "address": "0x7fffc5a0deca",
+        "module": "nvwgf2umx.dll+0x32deca"
+      },
+      {
+        "stack_offset": "0xd70",
+        "address": "0x7fffc58f5dba",
+        "module": "nvwgf2umx.dll+0x215dba"
+      },
+      {
+        "stack_offset": "0xd90",
+        "address": "0x7fffe141b86b",
+        "module": "ntdll.dll+0x2b86b"
+      },
+      {
+        "stack_offset": "0xde0",
+        "address": "0x7fffdeb55369",
+        "module": "KERNELBASE.dll+0x25369"
+      },
+      {
+        "stack_offset": "0xdf0",
+        "address": "0x7fff183383c8",
+        "module": "D3D12Core.dll+0x4b83c8"
+      },
+      {
+        "stack_offset": "0xe18",
+        "address": "0x7fffdeb55369",
+        "module": "KERNELBASE.dll+0x25369"
+      },
+      {
+        "stack_offset": "0xe38",
+        "address": "0x7fff183383c8",
+        "module": "D3D12Core.dll+0x4b83c8"
+      },
+      {
+        "stack_offset": "0xe40",
+        "address": "0x7fff17e80000",
+        "module": "D3D12Core.dll+0x0"
+      },
+      {
+        "stack_offset": "0xe70",
+        "address": "0x7fffe1424a5f",
+        "module": "ntdll.dll+0x34a5f"
+      },
+      {
+        "stack_offset": "0xe98",
+        "address": "0x7fff18365000",
+        "module": "D3D12Core.dll+0x4e5000"
+      },
+      {
+        "stack_offset": "0xea0",
+        "address": "0x7fff17e80000",
+        "module": "D3D12Core.dll+0x0"
+      },
+      {
+        "stack_offset": "0xeb0",
+        "address": "0x7fffc5de8bb3",
+        "module": "nvwgf2umx.dll+0x708bb3"
+      },
+      {
+        "stack_offset": "0xeb8",
+        "address": "0x7fff183383c8",
+        "module": "D3D12Core.dll+0x4b83c8"
+      },
+      {
+        "stack_offset": "0xec0",
+        "address": "0x7fff180cf34c",
+        "module": "D3D12Core.dll+0x24f34c"
+      },
+      {
+        "stack_offset": "0xee8",
+        "address": "0x7fff17e80000",
+        "module": "D3D12Core.dll+0x0"
+      },
+      {
+        "stack_offset": "0xf00",
+        "address": "0x7fff183383c8",
+        "module": "D3D12Core.dll+0x4b83c8"
+      },
+      {
+        "stack_offset": "0xf08",
+        "address": "0x7fff17e80000",
+        "module": "D3D12Core.dll+0x0"
+      },
+      {
+        "stack_offset": "0xf20",
+        "address": "0x7fff181dafe5",
+        "module": "D3D12Core.dll+0x35afe5"
+      },
+      {
+        "stack_offset": "0xf50",
+        "address": "0x7fff181e2990",
+        "module": "D3D12Core.dll+0x362990"
+      },
+      {
+        "stack_offset": "0xfc0",
+        "address": "0x7fff1818fd1f",
+        "module": "D3D12Core.dll+0x30fd1f"
+      }
+    ]
+  }
+]

@@ -2,7 +2,7 @@ param([switch]$ExperimentalRecompile)
 $ErrorActionPreference = 'Stop'
 $taskRoot = Split-Path (Split-Path $PSScriptRoot -Parent) -Parent
 if (-not $ExperimentalRecompile) {
-    $taskPython = 'C:\Users\Tim\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
+    $taskPython = (Join-Path $PSScriptRoot '..\..\.venv\Scripts\python.exe')
     Push-Location $taskRoot
     try { & $taskPython (Join-Path $taskRoot 'work/patch_working_dll_shortcut.py'); if ($LASTEXITCODE -ne 0) { throw 'Guarded shortcut patch failed.' } }
     finally { Pop-Location }

@@ -1,5 +1,7 @@
 # Bridge lighting: next diagnostic boundary
 
+**Current correction, 6 October:** lighting-v3 is runtime-tested with partial improvement; flicker and toggle/nearby-light issues remain. See `lighting-v3-runtime-followup.md`. The earlier observer update below incorrectly used the current filtered query count to read the old slot+68 gather buffer. That worker-output interpretation is retracted; the current observer reports the pointer only and never dereferences the retired allocation. Current query-array/submitted-record observations are separate. Query ownership is revalidated before array reads; 31 isolated tests pass. Earlier raw captures are preserved. Known native frame callers build fresh queries, as proven in `light-query-reuse-toggle-response-readonly.md`; do not infer cache reuse from a stable pointer.
+
 The completed Ctrl-ON comparison is retained in `bridge-light-cutoff-bracket.json`. Two of a tentative six-light bridge group drop out of the CPU pass67 submission list beyond the observed cutoff; the four retained members have unchanged RGB. This does not yet identify source objects or the rejection branch.
 
 Do not extend another fade distance or bypass every source eligibility test on this evidence. Current installed lighting-v2 remains the user-tested baseline, including Ctrl, the confirmed fog behavior and fading notice.

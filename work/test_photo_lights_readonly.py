@@ -117,7 +117,7 @@ class CaptureTest(unittest.TestCase):
         request = queries[0]['requests'][0]
         self.assertEqual(request['kind'], 'fixed')
         self.assertEqual(request['key'], hex(self.key()))
-        self.assertEqual(request['worker_output']['count'], 2)
+        self.assertFalse(request['worker_output']['read'])
         self.assertEqual(errors, [])
 
     def test_wrong_callback_not_treated_as_lights(self):
@@ -127,18 +127,21 @@ class CaptureTest(unittest.TestCase):
         queries, _ = registered_light_queries(self.read, self.base, self.view)
         self.assertEqual(queries, [])
 
-    def test_output_mismatch_reported_separately(self):
-        # Worker output need not equal the current query array (10BAC65).
+    def test_retired_gather_output_never_read(self):
+        # 10BB270 replaces query+8 and rewrites query+10. Neither the
+        # filtered count nor source ownership bounds the older allocation.
         self.request_slot(output=0x123000)
-        self.mem[0x123000] = struct.pack('<QQ', 0x50000, 0x125000)
-        self.mem[0x125000] = bytes(0xD0)
-        queries, errors = registered_light_queries(self.read, self.base, self.view)
+        def read(address, amount):
+            if address == 0x123000:
+                self.fail('Retired gather allocation must not be read')
+            return self.read(address, amount)
+        queries, errors = registered_light_queries(read, self.base, self.view)
         self.assertEqual(len(queries), 1)
         out = queries[0]['requests'][0]['worker_output']
         self.assertEqual(out['pointer'], hex(0x123000))
-        self.assertEqual(out['words'], [hex(0x50000), hex(0x125000)])
-        # Already-summarised source is not duplicated; output-only one is.
-        self.assertEqual(list(out['sources']), [hex(0x125000)])
+        self.assertFalse(out['read'])
+        self.assertNotIn('count', out)
+        self.assertNotIn('words', out)
         self.assertEqual(queries[0]['arrays']['input_fixed']['pointers'], [hex(0x50000), hex(0x60000)])
         self.assertEqual(errors, [])
 
@@ -199,7 +202,7 @@ class CaptureTest(unittest.TestCase):
         kinds = [r['kind'] for r in queries[0]['requests']]
         self.assertEqual(kinds, ['fixed', 'optional'])
         self.assertEqual(queries[0]['requests'][1]['key'], hex(self.key(1)))
-        self.assertEqual(queries[0]['requests'][1]['worker_output']['count'], 1)
+        self.assertFalse(queries[0]['requests'][1]['worker_output']['read'])
 
     def test_unbounded_output_count_refused(self):
         self.request_slot(output=0x123000)
@@ -210,19 +213,41 @@ class CaptureTest(unittest.TestCase):
         self.assertEqual(queries, [])
         self.assertTrue(errors)
 
-    def test_output_change_refused(self):
-        self.request_slot(output=0x123000)
-        self.mem[0x123000] = struct.pack('<QQ', 0x50000, 0x60000)
+    def test_query_ownership_change_before_arrays_refused(self):
+        self.request_slot()
         calls = 0
+        arrays = []
         def read(address, amount):
             nonlocal calls
-            if address == 0x123000:
+            if address == 0xA0000 and amount == 0x90:
                 calls += 1
-                if calls > 1: return bytes(amount)
+                if calls > 1:
+                    changed = bytearray(self.mem[address])
+                    struct.pack_into('<Q', changed, 0x70, self.key() + 2)
+                    return bytes(changed)
+            if address in (0xB0000, 0x50000, 0x60000):
+                arrays.append(address)
             return self.read(address, amount)
         queries, errors = registered_light_queries(read, self.base, self.view)
         self.assertEqual(queries, [])
-        self.assertIn('Request output changed during sample', errors)
+        self.assertEqual(arrays, [])
+        self.assertIn('Light query ownership changed before array reads', errors)
+
+    def test_query_generation_change_between_reads_refused(self):
+        self.request_slot()
+        calls = 0
+        def read(address, amount):
+            nonlocal calls
+            if address == 0xA0000 and amount == 0x90:
+                calls += 1
+                if calls >= 3:
+                    changed = bytearray(self.mem[address])
+                    struct.pack_into('<Q', changed, 0x70, self.key() + 2)
+                    return bytes(changed)
+            return self.read(address, amount)
+        queries, errors = registered_light_queries(read, self.base, self.view)
+        self.assertEqual(queries, [])
+        self.assertIn('Query header changed during sample', errors)
 
     def test_late_generation_change_refused(self):
         # Generation change after query/output reads still fails the sample.

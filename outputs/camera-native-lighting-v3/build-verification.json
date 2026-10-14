@@ -4,7 +4,7 @@
     "previous_dll_sha256":  "16dcd44057c3114b123e25974b9b563afc487650686d3985784614caba5f7cbd",
     "installed":  true,
     "install_blocked_reason":  null,
-    "runtime_status":  "Installed; awaiting bridge-lamp comparison with Ctrl on.",
+    "runtime_status":  "Partial lighting improvement; flicker, toggle response and nearby OFF-light disappearance unresolved.",
     "unchanged_sources":  [
                               "CameraBoost.c",
                               "CameraStubs.S",
@@ -64,5 +64,6 @@
                            "PASS: notifications stay dormant until validated lazy start; duplicate starts rejected; ON/OFF refresh, timer fade, hide, teardown and restart; test windows remained hidden."
                        ],
     "review":  "work/photo-cutoff-actual-source-review.txt",
-    "limitations":  "Lights beyond the cutoff now enter ranking; the 512-entry merge cap and ranking buckets, occlusion, near fade, type/colour, eligibility masks and shader capacity remain native. Runtime visual result and performance unconfirmed."
+    "limitations":  "Runtime improvement is partial. Distant flicker, poor toggle response and nearby OFF-light disappearance remain unresolved. Sargasso sky crash with Ctrl ON corresponds to graphics-device loss/driver recovery; its cause is unproven. Native occlusion, near fade, ranking, secondary merge cap and GPU limits remain.",
+    "runtime_feedback":  "outputs/tested-photo-lighting-v3/2026-10-06/runtime-feedback.json"
 }

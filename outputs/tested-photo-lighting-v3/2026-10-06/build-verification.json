@@ -1,0 +1,68 @@
+﻿{
+    "game_sha256":  "51299faca61866cf10ea9035a15b8f22600a56557dd5ffc1aad390d5a54e6d82",
+    "dll_sha256":  "c4be06b9e069829ba3c173ab3545353f38de04d6a98c5f58533af42ae9efbe66",
+    "previous_dll_sha256":  "16dcd44057c3114b123e25974b9b563afc487650686d3985784614caba5f7cbd",
+    "installed":  true,
+    "install_blocked_reason":  null,
+    "runtime_status":  "Installed; awaiting bridge-lamp comparison with Ctrl on.",
+    "unchanged_sources":  [
+                              "CameraBoost.c",
+                              "CameraStubs.S",
+                              "GeometryLOD.h",
+                              "hid.def",
+                              "HidExports.c",
+                              "PhotoFog.h",
+                              "PhotoIndicator.h",
+                              "PhotoLight.h",
+                              "PhotoSpecular.h",
+                              "export-manifest.json"
+                          ],
+    "changed_sources":  [
+                            "PhotoLOD.h",
+                            "PhotoCutoff.h"
+                        ],
+    "dependencies":  [
+                         "api-ms-win-crt-heap-l1-1-0.dll",
+                         "api-ms-win-crt-private-l1-1-0.dll",
+                         "api-ms-win-crt-runtime-l1-1-0.dll",
+                         "api-ms-win-crt-stdio-l1-1-0.dll",
+                         "api-ms-win-crt-string-l1-1-0.dll",
+                         "bcrypt.dll",
+                         "gdi32.dll",
+                         "kernel32.dll",
+                         "user32.dll"
+                     ],
+    "source_hashes":  {
+                          "CameraBoost.c":  "3866AFA0FBB4F18E0FDB64FC712AA9E60E16C52A2B8E77EAA5179A2041B53CDA",
+                          "CameraStubs.S":  "99668D3D1C6640B68356B192EB75E523C6A8895C4B757DABFA4DD2B5FDF81FCC",
+                          "GeometryLOD.h":  "FFE1B882A2DFDBC67C272F3EAFBE117E8020B286777A0C03204E64CB8124996A",
+                          "hid.def":  "D1DB129CDF7EFA14C18E14F72D2650E55FFC0125558552A2574716914957CF1F",
+                          "HidExports.c":  "E7752A2CCEF01B159F2C4D0B276887357B8DB8FF20E8DAFAC29646DB210DFFFB",
+                          "PhotoFog.h":  "85C488113FF5C1DBD3890402D66487C4DFDB529D21A8556D433C27BD14D7528C",
+                          "PhotoIndicator.h":  "D58B75EC8B4608A505B57B306372E96EFEBAD3A8FC4015ECAD3E67303EC21233",
+                          "PhotoLight.h":  "DACCE3F81C9888340FFAE08516BD867649532FFF11C7A0B5D48CD4CB915DF255",
+                          "PhotoLOD.h":  "8294F5ABD35ADC40CC18CC98F476D0502684B2D21013D135DE575AF8810A5D34",
+                          "PhotoSpecular.h":  "CAAA03AE8700D933DF988AB83514AAC7EE8778C5DB506A9118876DA6623A471E",
+                          "PhotoCutoff.h":  "4C8B83AF1FFA396C471E23D208DDC1637A27A5A24D8E42911768CBB86ECA4614"
+                      },
+    "new_behaviour":  "Light filter job 10B9A50: for the primary Photo view with Ctrl on, the bit18 pre-upload far drop (front distance \u003e rec+A0) is skipped; all other filters, source records and non-primary views unchanged.",
+    "native_sites":  [
+                         "1099270 and 10BE260 unchanged from v2",
+                         "10B9C00: aligned8 JMP to registered CHAININFO leaf relay; replays comiss/ja otherwise"
+                     ],
+    "isolated_tests":  [
+                           "Bridge lamp example (A0=150, front 155.8): Ctrl off kept=0, Photo/Ctrl kept=1.",
+                           "PhotoCutoffProbe passed: 64 native filter cases x5 gates, RAX/source preservation, exact site/call guards, ready/Ctrl/auxiliary-view gates, 19 relay unwind starts, adjacent bytes, atomic restore/reinstall.",
+                           "Ordinary specular example at85: prior RGB-only override specular=0/type=1; new specular=0.7/type=0.",
+                           "PhotoLightProbe passed: real native helper/relay, 1920 arithmetic cases, source immutable, Ctrl/ready/primary/caller gates, all 29 relay instruction starts unwind, atomic restore.",
+                           "Type4 specular example at85: native=0.5; retained=1.",
+                           "PhotoType4Probe passed: 24 native fade cases, near fade/source preservation, exact call/prolog guards, ready/Ctrl/auxiliary gates, adjacent-byte preservation, atomic restore.",
+                           "PhotoFogProbe passed: real relay ABI, exact guards, entry cache, toggle, auxiliary views, exit/reentry, untouched texture tail, callsite restoration; calls=12",
+                           "PASS: dormant startup UI, one active-Photo worker, ON/OFF/Ctrl rising-edge/focus/held guards, hide on exit, fog lifecycle and metadata guards.",
+                           "PASS: owner filtering, normal/Shift/release speeds, baseline restore, replacement camera identity, and hotkey restoration of collision plus both geometry selectors.",
+                           "PASS: native ON/OFF bitmap at 96/144/192 DPI, premultiplied transparency, monotonic timed fade, GDI resource cleanup, click-through/no-activation styles, hidden layered-window render, coalesced hide requests.",
+                           "PASS: notifications stay dormant until validated lazy start; duplicate starts rejected; ON/OFF refresh, timer fade, hide, teardown and restart; test windows remained hidden."
+                       ],
+    "review":  "work/photo-cutoff-actual-source-review.txt",
+    "limitations":  "Lights beyond the cutoff now enter ranking; the 512-entry merge cap and ranking buckets, occlusion, near fade, type/colour, eligibility masks and shader capacity remain native. Runtime visual result and performance unconfirmed."
+}

@@ -121,28 +121,6 @@ def request_key_valid(key, registry_bit, index, generation):
             (key & 0xFFFFFFFF) >> 1 == index and key >> 32 == generation)
 
 
-def request_output(read, output, count, known):
-    """Bounded worker-output words; never assumed equal to the query arrays."""
-    if not 0 <= count <= MAX_ENTRIES:
-        raise RuntimeError('Unbounded request output count')
-    if not count:
-        return {'pointer': hex(output), 'count': 0, 'words': [], 'sources': {}}
-    words = read(pointer(output), count * 8)
-    sources = {}
-    for (word,) in struct.iter_unpack('<Q', words):
-        if hex(word) in known or hex(word) in sources:
-            continue
-        try:
-            sources[hex(word)] = source_summary(read(pointer(word), 0xD0))
-        except (OSError, RuntimeError) as error:
-            sources[hex(word)] = {'error': str(error)}
-    if read(output, count * 8) != words:
-        raise RuntimeError('Request output changed during sample')
-    return {'pointer': hex(output), 'count': count,
-            'words': [hex(w) for (w,) in struct.iter_unpack('<Q', words)],
-            'sources': sources}
-
-
 def decode_planes(raw):
     """16-plane SoA shape (0x1600E30/0x1603D40): block i>>2 at +0x40*b,
     nx/ny/nz/d at +0/+0x10/+0x20/+0x30, lane i&3. Inside when n.p + d >= 0."""
@@ -188,9 +166,10 @@ def registered_light_queries(read, base, view, diagnostics=None):
 
     A slot is accepted only when callback 12B8740, manager 674EC10, its
     generation/index/registry key, and the derived query's owner view and
-    stored key all match. Request output (slot+68) and the query's current
-    ranking arrays are reported separately; their pointer equality is not
-    required or inferred.
+    stored key all match. Request output (slot+68) is metadata only: 10BB270
+    replaces query+8 and resets query+10 before filtering. That current count
+    cannot bound the retired gather allocation. Only the query's current
+    arrays are dereferenced; worker-output length/lifetime remain unproven.
     """
     results, errors = [], []
     by_query, registry_state = {}, []
@@ -253,7 +232,8 @@ def registered_light_queries(read, base, view, diagnostics=None):
                         by_query.setdefault(query, []).append({
                             'kind': kind, 'registry_rva': hex(registry),
                             'slot_address': address + offset, 'slot': slot, 'key': key,
-                            'output': output, 'count_offset': count_offset})
+                            'output': output, 'count_offset': count_offset,
+                            'key_offset': key_offset})
                         break
                     except (OSError, RuntimeError) as error:
                         if len(errors) < 12:
@@ -266,14 +246,20 @@ def registered_light_queries(read, base, view, diagnostics=None):
         registry_state.append((registry, header, generation_raw))
     for query, requests in by_query.items():
         try:
-            result = query_summary(read, query, view)
             head = read(query, 0x90)
-            known = set(result['sources'])
+            # Revalidate the query token immediately before its arrays; the
+            # earlier registry scan alone does not prove continued ownership.
+            if struct.unpack_from('<Q', head)[0] != view or any(
+                    struct.unpack_from('<Q', head, req['key_offset'])[0] != req['key']
+                    for req in requests):
+                raise RuntimeError('Light query ownership changed before array reads')
+            result = query_summary(read, query, view)
+            if read(query, 0x90) != head:
+                raise RuntimeError('Query header changed during sample')
             result['requests'] = []
             for request in requests:
-                count = struct.unpack_from('<i', head, request['count_offset'])[0]
-                out = request_output(read, request['output'], count, known)
-                known.update(out['sources'])
+                out = {'pointer': hex(request['output']), 'read': False,
+                       'reason': 'Gather allocation count and lifetime not proven; current query count cannot bound it.'}
                 if read(request['slot_address'], 0xC0) != request['slot']:
                     raise RuntimeError('Light query request changed during sample')
                 shape_ptr = struct.unpack_from('<Q', request['slot'], 0x48)[0]
@@ -286,7 +272,7 @@ def registered_light_queries(read, base, view, diagnostics=None):
             if read(query, 0x90) != head:
                 raise RuntimeError('Query header changed during sample')
             result['labels'] = {'arrays': 'Current query arrays: 10BA710 ranking input/selection.',
-                                'worker_output': 'Request slot+68 worker output; equivalence to query arrays unproven.'}
+                                'worker_output': 'Request slot+68 metadata only; allocation not dereferenced.'}
             results.append(result)
         except (OSError, RuntimeError) as error:
             if len(errors) < 12:
@@ -368,7 +354,9 @@ def sample(read, base):
             'limit': 'Transient CPU submissions only; queue order is not final callback order. Absence or >512 does not establish the cause of lost illumination.'}
 
 
-def capture(pid, seconds):
+def capture(pid, seconds, sample_limit=6, interval_ms=40):
+    if not 1 <= seconds <= 10 or not 1 <= sample_limit <= 32 or not 40 <= interval_ms <= 1000:
+        raise ValueError('Capture bounds exceeded')
     if hashlib.sha256(EXE.read_bytes()).hexdigest() != EXPECTED:
         raise RuntimeError('Unsupported executable')
     if hashlib.sha256(EXE.with_name('hid.dll').read_bytes()).hexdigest() not in DLL_HASHES:
@@ -421,18 +409,22 @@ def capture(pid, seconds):
 
         samples, errors = [], []
         deadline = time.monotonic() + seconds
-        while time.monotonic() < deadline and len(samples) < 6:
+        started = time.monotonic()
+        while time.monotonic() < deadline and len(samples) < sample_limit:
             try:
                 item = sample(read, base)
                 if item['records'] or item['queries']:
+                    item['elapsed_ms'] = round((time.monotonic() - started) * 1000)
                     samples.append(item)
             except (OSError, RuntimeError) as error:
                 if len(errors) < 20:
                     errors.append(str(error))
-            time.sleep(0.04)
+            time.sleep(min(interval_ms / 1000, max(0, deadline - time.monotonic())))
         return {'utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
                 'pid': pid, 'exe_sha256': EXPECTED, 'dll_sha256': hashlib.sha256(EXE.with_name('hid.dll').read_bytes()).hexdigest(),
                 'process_access': 'QUERY_LIMITED_INFORMATION | VM_READ only',
+                'observer_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+                'requested_sample_limit': sample_limit, 'interval_ms': interval_ms,
                 'ctrl_state': 'Not read automatically; operator supplies requested ON/OFF state in capture label.',
                 'samples': samples, 'errors': errors, 'writes': 0}
     finally:
@@ -443,11 +435,13 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('pid', type=int)
     parser.add_argument('--label', required=True)
-    parser.add_argument('--seconds', type=int, default=8, choices=range(1, 11))
+    parser.add_argument('--seconds', type=int, default=8, choices=range(1, 11), metavar='1..10')
+    parser.add_argument('--samples', type=int, default=6, choices=range(1, 33), metavar='1..32')
+    parser.add_argument('--interval-ms', type=int, default=40, choices=range(40, 1001), metavar='40..1000')
     args = parser.parse_args()
     if not re.fullmatch(r'[a-zA-Z0-9_-]{1,48}', args.label):
         parser.error('Invalid label')
-    report = capture(args.pid, args.seconds)
+    report = capture(args.pid, args.seconds, args.samples, args.interval_ms)
     report['label'] = args.label
     folder = ROOT / 'work/live-lights-readonly'
     folder.mkdir(exist_ok=True)

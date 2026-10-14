@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 $taskRoot = Split-Path (Split-Path $PSScriptRoot -Parent) -Parent
 $taskGame = 'C:\Program Files (x86)\Steam\steamapps\common\Ratchet & Clank - Rift Apart'
-$taskPython = 'C:\Users\Tim\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
+$taskPython = (Join-Path $PSScriptRoot '..\..\.venv\Scripts\python.exe')
 $taskManager = Join-Path $taskRoot 'outputs\Overstrike'
 if (Get-Process -Name RiftApart,Overstrike -ErrorAction SilentlyContinue) { throw 'Close Rift Apart and Overstrike before reinstalling.' }
 & (Join-Path $PSScriptRoot 'Assert-CleanBaseline.ps1')
