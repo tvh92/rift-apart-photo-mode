@@ -10,7 +10,7 @@
 ## Git state
 
 - Commit `61ada96` ("Install lighting-v3 far-cutoff candidate; update handoff") is already on `origin/main` (github.com/tvh92/rift-apart-photo-mode). Nothing was committed or pushed during the move, and there are no unpushed commits.
-- The 18 uncommitted changes from the move came across unchanged. Since then, the 16 build and install scripts were edited (see the Python section below), so `git status` now lists 35 entries. None of it is committed yet. Decide whether to commit before continuing.
+- The changes from the move and the Python change are committed as `7e5aadd` ("Move project out of Codex folder; repoint build scripts to local venv"), on top of `61ada96`. The commit is local and not pushed yet. `git status` is clean.
 - `.git` is owned by the Windows account `CodexSandboxOffline`, not `Tim`. Git refuses to run in the folder by default ("dubious ownership"). Commands here were run with `git -c safe.directory=*`. To fix it permanently, either take ownership of `.git` or add a `safe.directory` entry to your global Git config. Not done yet.
 
 ## Workspace path updates
